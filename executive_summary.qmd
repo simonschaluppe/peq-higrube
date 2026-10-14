@@ -1,0 +1,32 @@
+<!-- Redaktioneller Entwurf 0.1. Führende Fassung nach Übernahme: Repository peq-higrube. -->
+# Executive Summary
+## Von nationalen Klimazielen zu überprüfbaren Anforderungen an Quartiere
+Die Transformation des Gebäudebestands und der Energieversorgung ist eine wesentliche Voraussetzung für das Erreichen der österreichischen Klimaziele. Neubau- und Sanierungsprojekte müssen deshalb nicht nur den Energiebedarf einzelner Gebäude reduzieren, sondern zunehmend auch ihren Beitrag zu einem vollständig erneuerbaren und klimaneutralen Energiesystem berücksichtigen.
+Für die Planungspraxis ergibt sich daraus eine zentrale Frage: **Welche Anforderungen muss ein konkretes Bauvorhaben erfüllen, damit es einen angemessenen Beitrag zur Erreichung der übergeordneten Klimaziele leistet?**
+Diese Frage lässt sich nicht allein anhand der Energieeffizienz einzelner Gebäude beantworten. Die Klimawirkung eines Quartiers hängt ebenso von seiner baulichen Dichte, der verfügbaren Fläche für erneuerbare Energieerzeugung, der Energieversorgung, den Möglichkeiten zur zeitlichen Verschiebung des Energiebedarfs und der Alltagsmobilität ab. Hinzu kommen die Treibhausgasemissionen, die bereits bei der Herstellung von Baustoffen und der Errichtung von Gebäuden entstehen.
+Der klimaaktiv Standard für Plus-Energie-Quartiere bietet einen quantitativen Bewertungsrahmen, mit dem diese Zusammenhänge systematisch berücksichtigt werden können. Er übersetzt übergeordnete Energie- und Klimaziele in nachvollziehbare Anforderungen an konkrete Quartiersentwicklungen.
+### Ein quantitativer Maßstab für unterschiedliche Quartiere
+Der Standard beruht auf zwei zentralen Bewertungsgrößen:
+- **Primärenergiebilanz:** Sie beschreibt das Verhältnis zwischen dem gewichteten Energiebedarf eines Quartiers und seinem Beitrag zur erneuerbaren Energieversorgung. Dabei werden auch zeitliche Unterschiede zwischen Energiebedarf und Energieaufbringung berücksichtigt.
+- **Treibhausgasbilanz:** Sie bewertet die kumulierten Treibhausgasemissionen über den betrachteten Lebenszyklus und stellt diese einem aus übergeordneten Klimazielen abgeleiteten Emissionsbudget gegenüber.
+Der Standard unterscheidet drei aufeinander aufbauende Qualitätsstufen:
+1. **Plus-Energie-Quartier:** Positive Primärenergiebilanz für die Betriebsenergie.
+2. **Plus-Energie-Quartier mit Mobilität:** Positive Primärenergiebilanz unter zusätzlicher Berücksichtigung der motorisierten Individualmobilität.
+3. **Klimaneutrales Plus-Energie-Quartier:** Zusätzlich zur positiven Primärenergiebilanz wird ein kumuliertes Treibhausgasbudget eingehalten, das auch die Emissionen aus Errichtung, Instandhaltung und Mobilität berücksichtigt.
+
+Die Anforderungen berücksichtigen unterschiedliche Ausgangsbedingungen. Ein dicht bebautes Stadtquartier verfügt beispielsweise über weniger geeignete Flächen zur lokalen Energieerzeugung pro Quadratmeter Nutzfläche als eine locker bebaute Siedlung. Gleichzeitig kann es durch kürzere Wege und gute öffentliche Verkehrsanbindungen einen geringeren motorisierten Mobilitätsbedarf aufweisen.
+Solche Unterschiede werden durch quantitative **Kontextfaktoren** berücksichtigt. Sie dienen dazu, die Anforderungen unter verschiedenen räumlichen und baulichen Bedingungen vergleichbar und erreichbar zu gestalten, ohne den Beitrag zum übergeordneten Klimaziel aus dem Blick zu verlieren.
+### Zwei methodische Perspektiven
+Der Standard verbindet zwei Betrachtungsebenen.
+**Auf nationaler Ebene** werden Energie- und Klimaziele auf einzelne Sektoren und schließlich auf Quartierstypologien übertragen. Daraus entstehen quantitative Anforderungen und Kontextfaktoren. Diese Ebene beantwortet die Fragen, welcher Beitrag insgesamt erforderlich ist, wie die Anforderungen verteilt werden und innerhalb welcher zeitlichen Rahmenbedingungen die Transformation erfolgen muss.
+**Auf Quartiersebene** werden die Eigenschaften eines konkreten Projekts erfasst und seine Energie- und Treibhausgasbilanzen berechnet. Diese Ebene zeigt, mit welchen baulichen, technischen und organisatorischen Maßnahmen ein Projekt die Anforderungen erfüllen kann.
+Die Verbindung dieser beiden Perspektiven ist wesentlich: Ein Standard muss sowohl mit den übergeordneten Zielen vereinbar als auch in konkreten Planungsvorhaben anwendbar sein.
+### Stündliche Bilanzierung und integrierte Bewertung
+Die energetische Bewertung erfolgt anhand eines stündlich aufgelösten Simulationsmodells. Dadurch können nicht nur jährliche Energiebedarfe und Erträge, sondern auch ihre zeitliche Verteilung berücksichtigt werden.
+Dies ist insbesondere für die Bewertung von Photovoltaik, Wärmepumpen, Speichern, Elektromobilität und energieflexiblen Betriebsweisen relevant. Beispielsweise unterscheiden sich die systemischen Auswirkungen einer Stromeinspeisung im Sommer und eines Strombezugs im Winter, selbst wenn beide Energiemengen gleich groß sind.
+Das PEQ-Nachweistool ermöglicht die einheitliche Berechnung dieser Zusammenhänge. Es ist für die Bewertung von Quartierskonzepten, den Vergleich von Planungsvarianten und die strukturierte Nachweisführung ausgelegt. Detaillierte Fachplanungen und anlagenspezifische Simulationen werden dadurch nicht ersetzt.
+### Wissenschaftliche Grundlage und Weiterentwicklung
+Die Methodik wurde im Rahmen mehrerer Forschungsprojekte und wissenschaftlicher Publikationen entwickelt und für die Anwendung im österreichischen klimaaktiv Standard operationalisiert.
+Die quantitativen Anforderungen beruhen auf Annahmen über die Entwicklung des österreichischen Energie- und Klimasystems. Dazu zählen insbesondere die zukünftige Energieversorgung, die Dekarbonisierung einzelner Sektoren und die zeitliche Entwicklung von Treibhausgasemissionen.
+Diese Annahmen sind nicht zeitlich unveränderlich. Die Methodik sieht daher eine dokumentierte Fortschreibung der zugrunde liegenden Szenarien und Parameter vor. Im Rahmen der laufenden klimaaktiv-Betreuung werden die Grundlagen überprüft und gegebenenfalls aktualisiert. Wesentliche methodische Weiterentwicklungen sollen wissenschaftlich dokumentiert und publiziert werden.
+Der vorliegende Hintergrundbericht legt die wissenschaftlichen Grundlagen, Annahmen und Berechnungsverfahren des Standards offen. Er ergänzt die allgemeinverständliche klimaaktiv-Broschüre und das Handbuch zur Nachweisführung um die methodischen Herleitungen und die Dokumentation des Bewertungsmodells.
