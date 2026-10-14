@@ -1,8 +1,14 @@
-# Redaktioneller Vorschlag
+# Internes Redaktionsmemo und Arbeitsplan
 
-Stand: 14.10.2026. Vorschlag für die weitere Arbeit, keine bereits freigegebene Neufassung der Methodik.
+Stand: 14.10.2026, fortgeschrieben nach der fachlichen Rückmeldung. Die Arbeitsrichtung ist bestätigt; neue Parameter und noch ausstehende Daten sind damit nicht freigegeben. Maßgeblich sind die [dokumentierten Entscheidungen](offene-punkte.md).
 
-**Für die erste Durchsicht genügt:** Den Bericht auf Österreich und die Herleitung überprüfbarer Quartiersanforderungen konzentrieren. Zuerst den dokumentierten Methodenstand reproduzieren, anschließend Aktualisierungen behandeln. Budgetannahmen und Grenzen offenlegen. Als nächstes Ergebnis ein belegtes Musterkapitel zur nationalen Allokation vorlegen, mit höchstens drei fachlichen Entscheidungsfragen. Die folgenden Abschnitte begründen diesen Vorschlag und dienen als Arbeitsgrundlage.
+## Verbindliche redaktionelle Perspektive
+
+Der Bericht wird die zusammenhängende Primärdarstellung unserer Methodik. Dissertation und eigene Publikationen liefern die fachliche Grundlage und Belege; der Text erklärt das Verfahren direkt, etwa „Die Allokation verteilt …“ oder „wie in Schneider et al. beschrieben“. Keine distanzierende Erzählung über „die historische Veröffentlichung“.
+
+Rückrechnungen, Rundungsdifferenzen, uneinheitliche Quellenangaben und fehlende Ausgangsdaten werden ausschließlich intern dokumentiert. Sie sind keine Berichtspassagen und kein eigener Reviewauftrag. Tabellen und Grafiken dürfen mit Quellenangabe übernommen oder als klar bezeichnete Platzhalter vorgesehen werden; eine vollständige numerische Reproduktion ist keine Voraussetzung für die Textfassung. Materielle Fehler werden vor Freigabe geklärt, nicht durch eine vermeintlich sichere Aussage verdeckt.
+
+Im Bericht bleiben die fachlich relevanten Voraussetzungen und Grenzen: Zeitbezüge, Senkenannahme, sektorale PV-Abgrenzung, normative Sanierungsgutschrift und Entwicklungsoptionen. Prinzip, angewendete Parametrisierung und geplante Fortschreibung bleiben unterscheidbar. Neue Defaults, Fallzahlen oder Szenarien werden nicht erfunden.
 
 ## Urteil zur Ausgangslage
 
@@ -42,33 +48,44 @@ Jeder Methodenabschnitt folgt derselben Reihenfolge: **Frage → kurze Antwort �
 
 ## Nächste Arbeitspakete und Abnahmekriterien
 
+**Bearbeitungsstand 14.10.2026:** Nach erster Durchsicht wurden alle vorhandenen Kapitel, Kurzfassung und Startseite auf die Primärquellenperspektive überarbeitet. Quellenabgleiche stehen nur intern. Die fachliche Schlussfreigabe bleibt offen; derzeit keine neuen Entscheidungsfragen.
+
 ### 1. Methodenstand und drei zentrale Herleitungen
 
-Zuerst die im Quellenregister belegten Angaben in einer kompakten Evidenzmatrix verbinden: Aussage, Quelle/Fundort, Einheit, Jahr, Annahme oder Festlegung, Toolbezug, Status. Mit THG-Budget, Dichte und Mobilität beginnen. Die Sanierungsgutschrift auf eine eigene belastbare Begründung zurückführen.
+Zuerst die im Quellenregister belegten Angaben in einer kompakten Evidenzmatrix verbinden: Aussage, Quelle/Fundort, Einheit, Jahr, Annahme oder Festlegung, Toolbezug, Status. Mit THG-Budget, Dichte und Mobilität beginnen. Die Sanierungsgutschrift als inhaltlich motivierte normative Setzung ohne bisherige quantitative Absicherung kennzeichnen. Dissertation und zugehörige Publikationen führen; ältere Dokumente ergänzen die Herleitung, soweit sie nicht überholt sind.
 
-Historische Rechnungen zunächst reproduzieren; keine Aktualisierung nationaler Szenarien nebenbei. Kleine Python-Funktionen für Einheiten und Rechnungen reichen. Notebooks nur, wenn die explorative Herleitung davon profitiert. Eine zweite vollständige Implementierung von PEExcel wäre unnötiger Aufwand.
+Vorhandene Herleitungen direkt beschreiben und Tabellen übernehmen oder als Platzhalter führen. Rechenkontrollen erfolgen intern nach fachlicher Relevanz; sie sind kein vorgeschaltetes Vollreproduktionsprojekt. Keine Aktualisierung nationaler Szenarien nebenbei. Bei jeder Herleitung Prinzip, bisherige Operationalisierung und geplante Überarbeitung getrennt darstellen. Dichte-Notebooks, Mobilitäts-Konferenzpaper und neue Erhebungsdaten sind ausstehende Ergänzungen, keine Voraussetzung für das Schreiben der vorhandenen Grundlagen. Kleine Python-Funktionen für Einheiten und Rechnungen reichen. Notebooks nur, wenn die explorative Herleitung davon profitiert. Eine zweite vollständige Implementierung von PEExcel wäre unnötiger Aufwand.
 
-**Review:** Referenzstand, Darstellung der Budgetannahmen und Verbindlichkeit der Aussagen. **Abnahme:** Die zentralen Werte sind bis zur Quelle und Rechnung nachvollziehbar, Widersprüche entweder aufgelöst oder präzise eingegrenzt.
+**Review:** Nur verbleibende fachliche Unklarheiten, insbesondere die spätere Rekalibrierung. Referenz sind Dissertation/Publikationen; 320 kg CO₂e/m² BGF und die publizierte L3-Senkenannahme sind für die Darstellung bestätigt. **Abnahme:** Die zentralen Werte sind belegt, ihre methodische Bedeutung ist erklärt; Quellenkonflikte sind intern erfasst und wesentliche offene Fragen vor Freigabe geklärt.
 
 ### 2. Ein vollständiger Musterabschnitt
 
-Kapitel 3 als Muster ausarbeiten, beginnend mit einem klar abgegrenzten Rechenweg. Dazu eine Grafik, die nationale Ziele und Quartiersbewertung verbindet, sowie eine Tabelle mit den normativen Entscheidungen. Erst an diesem Abschnitt Verständlichkeit, Belegtiefe und Ton prüfen. Anschließend Kapitel 1–2 konsolidieren und die Kurzfassung am fertigen Inhalt ausrichten.
+Kapitel 3 liegt als Muster vor. Die weiteren Methodenkapitel folgen seiner direkten Darstellung des Verfahrens. Dazu eine Grafik, die nationale Ziele und Quartiersbewertung verbindet, sowie eine Tabelle mit den normativen Entscheidungen. Die Perspektivkorrektur umfasst bereits Kapitel 1–3 und die Kurzfassung. Mit den weiteren Kapiteln werden Wiederholungen gekürzt und die Kurzfassung am Gesamtbericht ausgerichtet.
 
 **Review:** eine kurze Lesefassung und maximal drei fachliche Fragen. **Abnahme:** Ein fachkundiger Leser kann erklären, warum der Zielwert so gewählt wurde und was bei anderen Annahmen anders wäre.
 
 ### 3. Zwei Fälle und eine Robustheitsprüfung
 
-Als Kandidaten eignen sich eine Bestandssanierung wie RUGInnovation und ein kontrastierender Neubau beziehungsweise ein Quartier anderer Dichte. Auswahl erst nach Prüfung der verfügbaren Eingaben und Veröffentlichungserlaubnis. Ein Fall sollte eine Grenze oder ein Nichterreichen zeigen. Erfolgsbeispiele allein erklären die Methode schlecht.
+Festgelegt sind **RUGInnovation** und **Am Bichl III**; konkrete Zahlen und Nachweise werden nachgeliefert. Am Bichl III hat laut Auftraggeber eine Fertigstellungsdeklaration als Plus-Energie-Quartier ohne Mobilität und Klimaneutralitätsstufe. Die niedrige Dichte führt dort zu einer Lastschrift. Der Vergleich erklärt unterschiedliche Kontexte und Deklarationsumfänge. Eine nicht deklarierte höhere Stufe ist kein Beleg dafür, dass diese rechnerisch verfehlt wird.
 
 Je Fall: Ausgangslage, Planungsentscheidung, Bilanz vor/nach Maßnahme, Kontextgutschriften separat, Tool-/Szenariostand und verbleibende Unsicherheit. Beim THG-Budget mindestens den Einfluss des Dekarbonisierungspfads und der Senkenannahme erläutern; quantitative Varianten nur mit belegten Daten berechnen. Unterschiede zwischen geplanten, umgesetzten und gemessenen Ergebnissen sichtbar halten.
 
-**Review:** Fallauswahl und Interpretation. **Abnahme:** Zahlen stammen aus einem konsistenten Stand; die Schlussfolgerung geht nicht über die Evidenz hinaus.
+**Review:** Interpretation der nachgelieferten Ergebnisse; die Fallauswahl ist entschieden. **Abnahme:** Zahlen stammen aus einem konsistenten Stand; die Schlussfolgerung geht nicht über die Evidenz hinaus.
+
+### Ergänzungen innerhalb des vereinbarten Berichts
+
+- **Implementierungsreferenz:** PEExcel 1.13.1. Für Presets und Defaults einen klar bezeichneten Anhangsplatz reservieren; Tabellen erst aus dem fachlich freigegebenen Stand übernehmen. Bis dahin gilt der interne Marker aus M05, ohne Ersatz durch ältere Parameter.
+- **Zeitbezug:** Ableitung und Flächenprognose für 2040; 50-jähriger Bewertungszeitraum 2025–2075; vereinfachende vollständige Dekarbonisierung ab 2050; GWP100 als davon unabhängiger Charakterisierungshorizont.
+- **Budget und PV:** Die publizierte L3-Annahme erklären. Rekalibrierung, sektorale Umverteilung und alternative Einbeziehung der PV-Errichtung als offene Weiterentwicklung darstellen. Keine stillschweigende Erhöhung des Budgets.
+- **„Auf dem Weg“:** Eigenen konzeptionellen Abschnitt zum Renovierungsfahrplan und möglichen Deklarationsetappen vorsehen. Europäische Forschung zu sinkenden grauen Emissionen recherchieren; Material-Dekarbonisierung und tatsächlich beschlossene Renovierungsschritte getrennt behandeln. Kriterien und formaler Prozess sind noch offen.
+- **Bewertungsfaktoren:** Den dokumentierten monatlichen Stand erklären; behauptete Änderungen der Norm und künftig verfügbare stündliche Daten vor einer Aktualisierung anhand konkreter Quellen prüfen.
+- **Kommunale Allokation:** Im Ausblick eine mögliche Anwendung etwa für Wien skizzieren, mit konsistenter Verknüpfung zum nationalen Budget.
 
 ### 4. Fachliche Gegenprüfung und Publikation
 
 Gezielte Gegenprüfung durch wenige Personen mit unterschiedlichen Blickwinkeln: eine Person aus LCA/THG-Budgetierung, eine aus kommunaler Planung oder Verwaltung und eine aus der Anwendung. Besonders kritisch prüfen lassen: Senken, PV-Abgrenzung, zeitabhängige Faktoren, Erreichbarkeit im Bestand. Eine allgemeine Bitte „um Feedback“ ist wenig ergiebig.
 
-Danach Redaktion, Metadaten, Abbildungsrechte und Export prüfen. Herausgeber, Publikationsplattform, Layout und Anforderungen an Barrierefreiheit vor dem finalen Satz verbindlich klären. Keine automatische Publikation aus diesem Arbeitsrepository.
+Danach Redaktion, Metadaten und Export prüfen. PDF und navigierbare Online-Fassung sind bestätigt. Rechte liegen laut Auftraggeber bei der FH Technikum Wien, Forschungsteam Climate-fit Buildings and Districts; die vollständige Autor:innenliste, institutionelle Rollen im Impressum, Publikationsplattform, Layout und Anforderungen an Barrierefreiheit bleiben organisatorisch fertigzustellen. Keine automatische Publikation aus diesem Arbeitsrepository.
 
 ## Perspektiven, die den Bericht stärker machen
 
@@ -94,20 +111,16 @@ Erfolg nach drei und sechs Monaten anhand tatsächlicher Nutzung beurteilen: qua
 
 ## Was zunächst entfallen sollte
 
-Kein vollständiges neues nationales Szenariomodell, keine umfassende wirtschaftliche Bewertung, keine flächendeckende internationale Standardvergleichsstudie und kein kompletter Preset-Anhang aus unbestätigten Toolständen. Diese Aufgaben können den Bericht auf unbestimmte Zeit verzögern. Eine sauber begrenzte, historisch verortete Erstausgabe ist machbar; ein zugleich vollständig aktualisiertes, international validiertes und rechtlich universell einsetzbares Verfahren lässt sich aus den vorhandenen Dokumenten nicht ableiten.
+Kein vollständiges neues nationales Szenariomodell, keine umfassende wirtschaftliche Bewertung, keine flächendeckende internationale Standardvergleichsstudie und kein kompletter Preset-Anhang aus unbestätigten Toolständen. Diese Aufgaben können den Bericht auf unbestimmte Zeit verzögern. Eine sauber begrenzte Erstausgabe mit benanntem Referenzstand ist machbar; ein zugleich vollständig aktualisiertes, international validiertes und rechtlich universell einsetzbares Verfahren lässt sich aus den vorhandenen Dokumenten nicht ableiten.
 
 ## Dein Reviewaufwand
 
-Zunächst sind nur drei Leitentscheidungen relevant: **Österreich als primärer Geltungsbereich; dokumentierter Referenzstand vor methodischer Aktualisierung; offener Umgang mit den Bedingungen des THG-Budgets.** Die Empfehlung ist in allen drei Fällen ja. Das weitere Material wird entlang dieser Empfehlung vorbereitet, bis eine abweichende Richtung vorgegeben wird.
+Die Leitentscheidungen sind mit der Rückmeldung getroffen. M01 ist fachlich geklärt; M03/M04 werden zunächst anhand der vorhandenen Herleitung geschrieben; M07 ist eine normative Setzung. P02 ist reine Redaktionsarbeit und benötigt kein Review. M11 betrifft eine spätere Übergangsregel für Deklarationen und blockiert die Methodendarstellung nicht.
 
 Danach höchstens drei konkrete Entscheidungen je Arbeitspaket, mit Textvorschlag und Quellenbeleg. Technische Änderungen und redaktionelle Kleinarbeit kommen nicht in die fachliche Freigabeschleife. Der vollständige Bericht geht erst nach den paketweisen Entscheidungen in eine Schlussdurchsicht.
 
 ## Technischer Stand
 
-Die Aufräumarbeiten legen eine explizite Quarto-Buchstruktur, Startseite, zentrale Literaturverwaltung und Git-Ausschlüsse an. Die bestehenden Kapitel bleiben fachlich unverändert; nur die Überschrift der Executive Summary wird von der Kapitelnummerierung ausgenommen. Alte HTML-Ausgaben werden lokal gesichert und aus der aktiven Quellstruktur entfernt. Originalquellen und Handoff bleiben erhalten.
+Quarto-Buchstruktur mit HTML-Navigation, Volltextsuche und zentraler Bibliografie vorhanden. Redaktion, Primärquellen und lokale Prüfdateien sind von der Ausgabe ausgeschlossen. Diagramme verwenden ausführbare Mermaid-Blöcke. Quellen-PDFs bleiben unverändert; Textänderungen erfolgen in den QMD-Dateien.
 
-Geprüft am 14.10.2026 mit Quarto 1.10.19: HTML-Build erfolgreich. Quarto benötigte außerhalb der eingeschränkten Laufzeit Zugriff auf seinen lokalen Cache. Der PDF-Build wurde versucht, scheitert jedoch an einer fehlenden TeX-Installation; es wurde keine Systeminstallation vorgenommen. Für PDF muss zunächst LuaLaTeX, beispielsweise über TinyTeX, bereitgestellt werden. Eine PDF-Layoutprüfung war deshalb noch nicht möglich. Die HTML-Ausgabe wurde anschließend neu erstellt, da ein Formatwechsel den Ausgabeordner bereinigt.
-
-Die bisherigen versionierten Renderbibliotheken sind als Löschungen im Git-Diff sichtbar; sie gehören künftig ausschließlich zur generierten Ausgabe. Lokale Sicherungen liegen unter `.local/alte-renderings/`. Es wurde weder committed noch gepusht oder veröffentlicht.
-
-Zusätzlich geprüft: fünf HTML-Seiten, interne Dateilinks und Sprungmarken ohne Fehler, Suchindex vorhanden, keine redaktionellen Dateien oder Primärquellen in der Ausgabe. Primärquellen sind byteidentisch zum Git-Stand; Kapitel 1, Kapitel 2 und Handoff sind textidentisch. `git diff --check` meldet keine Whitespace-Fehler. Eine vollständige fachliche Prüfung oder Barrierefreiheitsprüfung wird damit nicht behauptet.
+HTML nach der Perspektivkorrektur erfolgreich gerendert (Quarto 1.10.19, sechs Seiten). Lokale Links und Sprungmarken geprüft; Mermaid-Block in der Ausgabe vorhanden. Keine visuelle Browserprüfung durchgeführt. PDF bleibt wegen fehlendem LuaLaTeX ungeprüft; keine Systeminstallation beauftragt. Die frühere Aussage, Kapitel 1–2 und Handoff seien textidentisch, gilt nach dieser ausdrücklich beauftragten Redaktion nicht mehr. Keine Veröffentlichung, kein Commit oder Push.

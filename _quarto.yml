@@ -4,6 +4,7 @@ project:
   resources:
     - "!Redaktion/**"
     - "!.local/**"
+    - "!Berechnungen/**"
 
 lang: de
 bibliography: references.bib
@@ -17,6 +18,7 @@ book:
     - executive_summary.qmd
     - Kapitel/01-einführung.qmd
     - Kapitel/02-standard.qmd
+    - Kapitel/03-allokation.qmd
     - references.qmd
   search: true
 

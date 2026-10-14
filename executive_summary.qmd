@@ -1,4 +1,3 @@
-<!-- Redaktioneller Entwurf 0.1. Führende Fassung nach Übernahme: Repository peq-higrube. -->
 # Executive Summary {.unnumbered}
 ## Von nationalen Klimazielen zu überprüfbaren Anforderungen an Quartiere
 Die Transformation des Gebäudebestands und der Energieversorgung ist eine wesentliche Voraussetzung für das Erreichen der österreichischen Klimaziele. Neubau- und Sanierungsprojekte müssen deshalb nicht nur den Energiebedarf einzelner Gebäude reduzieren, sondern zunehmend auch ihren Beitrag zu einem vollständig erneuerbaren und klimaneutralen Energiesystem berücksichtigen.
@@ -14,7 +13,7 @@ Der Standard unterscheidet drei aufeinander aufbauende Qualitätsstufen:
 2. **Plus-Energie-Quartier mit Mobilität:** Positive Primärenergiebilanz unter zusätzlicher Berücksichtigung der motorisierten Individualmobilität.
 3. **Klimaneutrales Plus-Energie-Quartier:** Zusätzlich zur positiven Primärenergiebilanz wird ein kumuliertes Treibhausgasbudget eingehalten, das auch die Emissionen aus Errichtung, Instandhaltung und Mobilität berücksichtigt.
 
-Die Anforderungen berücksichtigen unterschiedliche Ausgangsbedingungen. Ein dicht bebautes Stadtquartier verfügt beispielsweise über weniger geeignete Flächen zur lokalen Energieerzeugung pro Quadratmeter Nutzfläche als eine locker bebaute Siedlung. Gleichzeitig kann es durch kürzere Wege und gute öffentliche Verkehrsanbindungen einen geringeren motorisierten Mobilitätsbedarf aufweisen.
+Die Primärenergiebilanz wird unter Einbeziehung der Kontextgutschriften und -lastschriften bewertet. Die Anforderungen berücksichtigen damit unterschiedliche Ausgangsbedingungen. Ein dicht bebautes Stadtquartier verfügt beispielsweise über weniger geeignete Flächen zur lokalen Energieerzeugung pro Quadratmeter Nutzfläche als eine locker bebaute Siedlung. Gleichzeitig kann es durch kürzere Wege und gute öffentliche Verkehrsanbindungen einen geringeren motorisierten Mobilitätsbedarf aufweisen.
 Solche Unterschiede werden durch quantitative **Kontextfaktoren** berücksichtigt. Sie dienen dazu, die Anforderungen unter verschiedenen räumlichen und baulichen Bedingungen vergleichbar und erreichbar zu gestalten, ohne den Beitrag zum übergeordneten Klimaziel aus dem Blick zu verlieren.
 ### Zwei methodische Perspektiven
 Der Standard verbindet zwei Betrachtungsebenen.
@@ -26,7 +25,7 @@ Die energetische Bewertung erfolgt anhand eines stündlich aufgelösten Simulati
 Dies ist insbesondere für die Bewertung von Photovoltaik, Wärmepumpen, Speichern, Elektromobilität und energieflexiblen Betriebsweisen relevant. Beispielsweise unterscheiden sich die systemischen Auswirkungen einer Stromeinspeisung im Sommer und eines Strombezugs im Winter, selbst wenn beide Energiemengen gleich groß sind.
 Das PEQ-Nachweistool ermöglicht die einheitliche Berechnung dieser Zusammenhänge. Es ist für die Bewertung von Quartierskonzepten, den Vergleich von Planungsvarianten und die strukturierte Nachweisführung ausgelegt. Detaillierte Fachplanungen und anlagenspezifische Simulationen werden dadurch nicht ersetzt.
 ### Wissenschaftliche Grundlage und Weiterentwicklung
-Die Methodik wurde im Rahmen mehrerer Forschungsprojekte und wissenschaftlicher Publikationen entwickelt und für die Anwendung im österreichischen klimaaktiv Standard operationalisiert.
+Unser Forschungsteam hat die Methodik in mehreren Forschungsprojekten entwickelt und für den österreichischen klimaaktiv Standard operationalisiert. Dieser Bericht dokumentiert das Bewertungsverfahren auf Grundlage unserer wissenschaftlichen Arbeiten [@schneider2026thesis; @schneider2023context; @schneider2025declaration].
 Die quantitativen Anforderungen beruhen auf Annahmen über die Entwicklung des österreichischen Energie- und Klimasystems. Dazu zählen insbesondere die zukünftige Energieversorgung, die Dekarbonisierung einzelner Sektoren und die zeitliche Entwicklung von Treibhausgasemissionen.
 Diese Annahmen sind nicht zeitlich unveränderlich. Die Methodik sieht daher eine dokumentierte Fortschreibung der zugrunde liegenden Szenarien und Parameter vor. Im Rahmen der laufenden klimaaktiv-Betreuung werden die Grundlagen überprüft und gegebenenfalls aktualisiert. Wesentliche methodische Weiterentwicklungen sollen wissenschaftlich dokumentiert und publiziert werden.
 Der vorliegende Hintergrundbericht legt die wissenschaftlichen Grundlagen, Annahmen und Berechnungsverfahren des Standards offen. Er ergänzt die allgemeinverständliche klimaaktiv-Broschüre und das Handbuch zur Nachweisführung um die methodischen Herleitungen und die Dokumentation des Bewertungsmodells.

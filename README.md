@@ -6,8 +6,9 @@ Der Bericht erklärt die nationale Herleitung der Anforderungen und ihre Anwendu
 
 ## Wo anfangen?
 
-- **Nächste inhaltliche Entscheidungen:** [Redaktioneller Vorschlag](Redaktion/arbeitsplan.md).
-- **Offene methodische Fragen:** [Offene Punkte](Redaktion/offene-punkte.md).
+- **Nächste inhaltliche Entscheidungen:** [Internes Redaktionsmemo](Redaktion/arbeitsplan.md).
+- **Aktueller Entwurf:** [Kapitel 3 – nationale Allokation](Kapitel/03-allokation.qmd), mit [dokumentiertem Reviewstand](Redaktion/review-kapitel-03.md).
+- **Fachliche Festlegungen und ausstehende Zuarbeiten:** [Entscheidungen und offene Punkte](Redaktion/offene-punkte.md).
 - **Quellen und belastbare Fundorte:** [Quellenübersicht](Redaktion/quellenuebersicht.md).
 - **Projektauftrag:** [Projektbrief/Handoff](Redaktion/projektbrief-handoff.qmd). Der übernommene Brief liegt als `.qmd`, nicht als `.md` vor; Dateinamen und Versionsangaben darin sind teilweise historisch.
 
@@ -17,7 +18,8 @@ Der Bericht erklärt die nationale Herleitung der Anforderungen und ihre Anwendu
 |---|---|
 | `index.qmd` | Einstieg und Arbeitsstand |
 | `executive_summary.qmd` | Bestehende Kurzfassung |
-| `Kapitel/` | Führende Berichtstexte; derzeit Kapitel 1 und 2 |
+| `Kapitel/` | Führende Berichtstexte; derzeit Kapitel 1 bis 3 |
+| `Berechnungen/` | Reproduzierbare Rechnungen; unabhängig vom Text-Build |
 | `references.bib`, `references.qmd` | Zentrale Bibliografie und Literaturverzeichnis |
 | `Abbildungen/` | Künftig freigegebene Abbildungen mit Quellen und Alternativtexten |
 | `Redaktion/` | Projektbrief, Quellenprüfung, Arbeitsplan und Entscheidungen |
@@ -46,15 +48,21 @@ quarto render --to pdf
 
 Die PDF-Konfiguration ist eine Arbeitsgrundlage, kein Ministeriums-Layout und kein Nachweis von PDF/UA-Konformität. Den tatsächlich geprüften Buildstand dokumentiert der [Arbeitsplan](Redaktion/arbeitsplan.md#technischer-stand).
 
+## Redaktionelle Perspektive
+
+Der Bericht ist die zusammenhängende Primärdarstellung unserer Methodik. Eigene Publikationen werden als Belege zitiert. Rückrechnungen, Rundungsdifferenzen und Quellenkonflikte bleiben in `Redaktion/`; fachliche Annahmen und Grenzen stehen im Bericht. Tabellen und Grafiken können mit Beleg übernommen oder zunächst als Platzhalter definiert werden. Vollständige Reproduktion ist keine Voraussetzung für die Textfassung.
+
 ## Quellen- und Versionsregeln
+
+Inhaltlich führen die Dissertation und die zugehörigen Publikationen im dokumentierten Letztstand. Ältere Leitfäden, Handbücher, Broschüren und Präsentationen sind nachrangig; die [fachlichen Entscheidungen vom 14.10.2026](Redaktion/offene-punkte.md) ergänzen die Quellenlage.
 
 1. Jede tragende Zahl und Gleichung bekommt einen passenden Beleg mit Seite, Tabelle oder Gleichung. Ein allgemeines Literaturverzeichnis ersetzt diese Einzelbelege nicht.
 2. Wissenschaftliche Herleitung, normative Festlegung, Modellannahme und Softwareimplementierung ausdrücklich unterscheiden.
 3. Szenariojahr, Bilanzzeitraum und Softwareversion getrennt angeben. Historische Parameter nicht stillschweigend aktualisieren.
-4. Toolwerte erst nach Festlegung einer konkreten Version beziehungsweise eines Commits übernehmen. Annex A dokumentiert Schema 1.11.4; das ist kein Nachweis des aktuellen Tools.
+4. Geplante Implementierungsreferenz ist PEExcel **1.13.1**, derzeit in Arbeit. Presets und Defaults erst nach fachlicher Freigabe mit Commit, Arbeitsmappe und Freigabestand übernehmen. Annex A dokumentiert Schema 1.11.4 und ersetzt diese Tabellen nicht.
 5. Unklarheiten in `Redaktion/offene-punkte.md` erfassen. Bestehende Prüfvermerke erst nach fachlicher Klärung auflösen.
 
-Die Primärquellen bleiben als Arbeitsmaterial im Repository. Daraus folgt keine Freigabe zur Weiterveröffentlichung: Insbesondere der Leitfaden von 2023 trägt einen Weitergabevorbehalt. Vor einer öffentlichen Bereitstellung des gesamten Repositories ist dessen Quellenbestand gesondert zu prüfen. Für die spätere Berichtspublikation ausschließlich die geprüfte Ausgabe bereitstellen.
+Publikationsform: druckfähiger Bericht als PDF und navigierbare Online-Fassung. Rechte liegen laut Auftraggeber bei der FH Technikum Wien, Forschungsteam Climate-fit Buildings and Districts. Autor:innenliste und Impressum werden vervollständigt. Die Primärquellen bleiben Arbeitsmaterial; veröffentlicht wird die geprüfte Berichtsausgabe, nicht automatisch der gesamte Quellenbestand.
 
 ## Review mit wenig Aufwand
 

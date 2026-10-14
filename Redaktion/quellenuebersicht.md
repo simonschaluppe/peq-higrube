@@ -1,8 +1,16 @@
 # Quellenübersicht und Befund der Sichtung
 
+**Internes Quellenregister:** Die folgenden Abgleiche und Konflikte dienen der Redaktion. Sie werden nicht in den Bericht übertragen. Eigene Publikationen belegen die direkt dargestellte Methodik; Übernahmen und Abbildungsplatzhalter sind zulässig. Maßgeblich ist die Perspektive im [Redaktionsmemo](arbeitsplan.md).
+
 Stand: 14.10.2026. Alle neun Dateien in `Primärquellen/` wurden textuell erschlossen und nach ihrer Funktion gesichtet. Vertieft gelesen wurden die methodischen Kernabschnitte der Dissertation, die Originalbeiträge 2023 und 2025 in Annex B, die Broschüre sowie die widersprüchlichen Stellen in Handbuch und Präsentationen. Das ist eine redaktionelle Bestandsaufnahme, noch keine vollständige Prüfung sämtlicher Formeln, Tabellen, Abbildungen und Softwareparameter. Die mehrhundertseitigen Anhänge sind gezielt ausgewertet, nicht vollständig fachlich auditiert.
 
 PDF-Seiten bezeichnen hier den Zähler der Datei; gedruckte Seiten sind ausdrücklich als solche bezeichnet. Bei DOCX werden Abschnitte statt ungesicherter Seitenzahlen genannt. Lokale Textauszüge liegen ausschließlich unter `.local/quellen/`.
+
+## Maßgeblicher Stand nach fachlicher Rückmeldung
+
+Festlegung vom 14.10.2026: Die Dissertation und ihre zugehörigen Publikationen bilden den inhaltlichen Letztstand. Andere Unterlagen, insbesondere der alte Leitfaden und überholte Veröffentlichungen, sind nachrangig. Die unten protokollierten Abweichungen bleiben als Befund der ersten Sichtung erhalten; ihre Bearbeitungsentscheidungen stehen in [Entscheidungen und offene Punkte](offene-punkte.md).
+
+Die Rückmeldung klärt insbesondere die 50-jährige Bewertung bis 2075 bei angenommener Dekarbonisierung ab 2050 sowie die davon unabhängige Bedeutung von GWP100. Sie bestätigt die Sanierungsgutschrift als normative Setzung ohne quantitative Absicherung. PEExcel 1.13.1 ist als künftige Implementierungsreferenz gewählt, aber noch nicht als fertiger Parameterstand geprüft. Die Broschüre bleibt eine Kommunikationsquelle; bei inhaltlichen Widersprüchen führt der oben genannte wissenschaftliche Letztstand.
 
 ## Quellen nach Funktion
 
@@ -24,7 +32,7 @@ PDF-Seiten bezeichnen hier den Zähler der Datei; gedruckte Seiten sind ausdrüc
 
 **320 ist ein bedingter Grenzwert.** Artikel 2025, §2.3 und Tabelle 2 (S. 6–7, Annex-PDF 332–333): L1 = 72, L2 = 196, L3 = 320 kg CO₂e/m² BGF. L3 setzt 1 t CO₂e pro Person und Jahr an natürlichen Senken voraus; der Anteil Gebäude plus MIV beträgt 50 %. Diese L-Werte sind Budgetvarianten innerhalb der THG-Bewertung und dürfen nicht mit den drei PEQ-Qualitätsstufen verwechselt werden. Tabelle A1 (S. 30, Annex-PDF 356) dokumentiert die Ausgangsgrößen. Die rechnerische Reproduktion steht aus.
 
-**Auch die wissenschaftliche Hauptquelle enthält redaktionelle Spannungen.** Artikel 2025 verwendet in §2.4 den Zeitraum 2025–2075; im Schluss auf S. 28 steht hingegen „budget to 2050“ und „next 25 years“. §2.3 nennt 2050 als Bezugsjahr der Flächenstatistik, Tabelle A1 nennt 2040. Das muss transparent aufgelöst werden, ohne die publizierten Werte stillschweigend umzudeuten.
+**Auch die wissenschaftliche Hauptquelle enthält redaktionelle Spannungen.** Artikel 2025 verwendet in §2.4 den Zeitraum 2025–2075; im Schluss auf S. 28 steht hingegen „budget to 2050“ und „next 25 years“. §2.3 nennt 2050 als Bezugsjahr der Flächenstatistik, Tabelle A1 nennt 2040. Fachliche Klarstellung vom 14.10.2026: Ableitung und Flächenprognose beziehen sich auf 2040; 2050 ist der vorsorglich spätere Dekarbonisierungszeitpunkt. Die unterschiedliche Funktion der Zeitangaben wird im Kapitel erläutert; eine spätere Fortschreibung der Flächenprognose ist damit nicht vorweggenommen.
 
 **Die Bilanz hat definierte Ausschlüsse.** Artikel 2025, Tabelle 3 und §2.4.1 (S. 7–9, Annex-PDF 333–335): u. a. B7 ausgeschlossen, A4/A5 abhängig von Datenverfügbarkeit; PV-Herstellung auf nationaler Sektorebene behandelt. „Alle Emissionen“ wäre zu weitgehend. §4.2 benennt die Abhängigkeit vom konsistenten nationalen Allokationsmodell ausdrücklich.
 
@@ -34,9 +42,7 @@ PDF-Seiten bezeichnen hier den Zähler der Datei; gedruckte Seiten sind ausdrüc
 
 ## Bestehende Berichtstexte
 
-`executive_summary.qmd` sowie Kapitel 1 und 2 haben einen verständlichen Grundaufbau, wiederholen aber mehrfach Motivation, zwei Bewertungsgrößen, drei Stufen und Fortschreibung. Die eigentliche Beweiskette fehlt noch. Kapitel 2 nennt 320 als „aktuellen“ Referenzwert ohne Einzelbeleg und Geltungsstand. Die Einführung enthält kleinere Sprachfehler, etwa „Expert der Qualitätssicherung“; diese lassen sich im nächsten Redaktionsschritt ohne gesondertes Review beheben.
-
-Empfehlung: Erst den methodischen Kern belegen, dann die drei Eingangstexte auf jeweils eine Funktion kürzen. Die jetzige Sichtung verändert ihre fachlichen Aussagen nicht.
+Kurzfassung, Startseite und Kapitel 1–3 wurden nach der ersten Durchsicht redaktionell überarbeitet. Kapitel 3 erklärt die eigene Methodik direkt; Rundungsabgleiche und Quellenkonflikte sind im internen Reviewvermerk gesichert. Kapitel 2 nennt die Zeit- und Senkenannahmen und verweist auf die Budgetherleitung. Der Sprachfehler in der Zielgruppenbeschreibung ist korrigiert. Weitere Straffung der Wiederholungen erfolgt mit dem Ausbau der Methodenkapitel.
 
 ## Ergänzende öffentliche Orientierung
 

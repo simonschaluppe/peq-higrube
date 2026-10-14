@@ -1,0 +1,185 @@
+# Von nationalen Zielen zu Anforderungen an Quartiere {#sec-allokation}
+
+Ein Quartier kann seinen Energiebedarf senken, erneuerbare Energie erzeugen und Emissionen vermeiden. Ob dieser Beitrag ausreicht, hängt auch davon ab, welche Aufgaben die übrigen Gebäude, die Mobilität und die Energieversorgung übernehmen. Das nationale Allokationsmodell stellt diesen Zusammenhang her: Es verteilt verfügbare erneuerbare Energie und ein begrenztes Emissionsbudget auf Sektoren und anschließend auf die Nutzungen und Flächen konkreter Quartiere.
+
+Die Quartierssimulation ermittelt, welche Bilanz ein Projekt unter bestimmten Annahmen erreicht. Das Allokationsmodell bestimmt den Maßstab, an dem dieses Ergebnis beurteilt wird. Das Bewertungsverfahren verbindet beide Ebenen: Systemgrenzen, Gewichtung und Anforderungen müssen gemeinsam festgelegt werden [@schneider2026thesis, Kap. 3.1–3.2, S. 43–60].
+
+## Welche Entscheidungen stecken in einem Zielwert?
+
+Ein nationales Ziel lässt sich nicht ohne weitere Festlegungen auf ein Bauvorhaben herunterbrechen. Zunächst braucht es ein Szenario für Energiebedarf und Energieversorgung. Anschließend ist festzulegen, welche Anteile der verfügbaren Ressourcen und Emissionsbudgets den Sektoren zugerechnet werden. Erst danach können Anforderungen für Quartiere unterschiedlicher Dichte und Nutzung bestimmt werden.
+
+```{mermaid}
+%%| label: fig-allokationskette
+%%| fig-cap: "Vom nationalen Szenario zur Quartiersbewertung. Methodik nach Schneider (2026), Kap. 3.1–3.3."
+%%| fig-alt: "Nationale Szenarien führen über sektorale Zuordnung und Bezugsgrößen zu Quartiersanforderungen. Projektdaten und Simulation liefern die Quartiersbilanz. Anforderungen und Bilanz treffen in der Bewertung zusammen."
+flowchart TB
+  A["Nationale Energie- und Klimaszenarien"] --> B["Sektorale Zuordnung"]
+  B --> C["Verteilung nach Dichte, Nutzung und Fläche"]
+  C --> D["Anforderungen und Budgets"]
+  E["Projektdaten und Maßnahmen"] --> F["Quartierssimulation und Bilanzierung"]
+  D --> G["Bewertung des Quartiers"]
+  F --> G
+```
+
+| Bestandteil | Funktion | Beispiel |
+|---|---|---|
+| Physikalischer Zusammenhang | Beschreibt Beziehungen zwischen Größen. | Mehr Geschossfläche auf gleicher Grundstücksfläche verändert das Verhältnis von Bedarf und lokalem Erzeugungspotenzial. |
+| Szenarioannahme | Beschreibt eine mögliche zukünftige Entwicklung. | Dekarbonisierung der Energieversorgung und der Herstellungsprozesse. |
+| Normative Festlegung | Verteilt Anforderungen und Budgets. | Anteil des nationalen Emissionsbudgets für Gebäude und MIV. |
+| Operationalisierung | Übersetzt den Ansatz in berechenbare Regeln. | Mobilitätsgutschrift je Nutzung und Quadratmeter Nettogrundfläche. |
+
+: Grundlagen eines Zielwerts [@schneider2026thesis, Kap. 3.1–3.2]. {#tbl-arten-festlegungen}
+
+Die wissenschaftliche Herleitung macht diese Entscheidungen prüfbar. Sie hebt ihren normativen Charakter nicht auf. Für die Verwaltung ist gerade diese Trennung hilfreich: Ein geändertes Szenario, eine andere Verteilungsregel und eine Korrektur der Software sind unterschiedliche Eingriffe.
+
+## Energieallokation: Welchen Beitrag muss der Gebäudesektor leisten?
+
+### Prinzip der sektoralen Zuordnung
+
+Das Allokationsmodell betrachtet ein vollständig erneuerbares österreichisches Energiesystem im Zieljahr 2040. Erneuerbare Erzeugung und verbleibende Energiebedarfe werden sektoral zugeordnet. Daraus ergeben sich der erforderliche Beitrag dezentraler Erzeugung im Gebäudesektor und ein Anteil zentral bereitgestellter erneuerbarer Energie für den motorisierten Individualverkehr [@schneider2023context, Abschn. 6.1–6.2, S. 12–16].
+
+Eine dem Quartier zugerechnete Energiemenge ist deshalb weder automatisch lokal erzeugte Energie noch ein vertraglich gesicherter Strombezug. Im Bewertungsverfahren kann sie als virtuelle Gutschrift erscheinen. Der physische Energiefluss muss davon getrennt bilanziert werden.
+
+Im Referenzszenario sind dem Gebäudesektor 114,8 PJ/a Photovoltaikerzeugung und 137,6 PJ/a Strombedarf nach sektoraler Allokation zugeordnet. Der Zielsaldo beträgt −22,7 PJ/a [@schneider2023context, Tab. 6, S. 13]. Diese jährlichen Größen beschreiben die sektorale Strombilanz. Für die primärenergetische Quartiersbewertung werden sie mit den zugehörigen Gewichtungen und Flächenbezügen verknüpft.
+
+Ein Quartier muss damit nicht die gesamte nationale Versorgung lokal nachbilden. Seine Anforderungen müssen aber zu einer Verteilung passen, die auch für den übrigen Gebäudebestand und die anderen Sektoren aufgeht.
+
+### Dichte: physikalisches Prinzip und kalibrierte Anforderung
+
+Der Grundgedanke lässt sich mit einer vereinfachten Beziehung zeigen. Sei \(A_G\) die Grundstücksfläche und \(A_B\) die Bruttogrundfläche. Die Geschoßflächenzahl ist \(d=A_B/A_G\). Werden eine jährliche lokale Erzeugung \(p\) je Grundstücksfläche und ein jährlicher Bedarf \(e\) je Bruttogrundfläche angesetzt, folgt:
+
+$$
+b(d)=\frac{p A_G-e A_B}{A_B}=\frac{p}{d}-e.
+$$ {#eq-dichte-prinzip}
+
+Erzeugung und Bedarf sind in derselben Energiegröße auszudrücken; \(b\) ist dann eine jährliche Bilanz je m² BGF. Die Beziehung zeigt, weshalb das Erzeugungspotenzial je Geschossfläche bei steigender Dichte abnimmt, wenn das Potenzial je Grundstücksfläche gleich bleibt. In realen Projekten hängen Erzeugung und Bedarf zusätzlich von Gebäudeform, Nutzung, Verschattung und Technik ab [@schneider2023context, S. 11–12].
+
+Aus diesem Zusammenhang wird noch kein verbindlicher Zielwert. Die Anforderungsfunktion ergänzt die Beziehung um eine Verschiebung auf der Dichteachse und eine Begrenzung. Ihre Parameter bestimmen die Lastenverteilung zwischen Quartierstypen. Die so festgelegte Kurve beschreibt eine Anforderung und kein technisches Potenzialmaximum [@schneider2023context, Gl. 7–8, S. 12–13].
+
+Bei niedriger Dichte kann die Regel einen zusätzlichen Überschuss verlangen; bei hoher Dichte kann sie einen negativen Saldo ohne Kontextkorrektur zulassen. Dies lässt sich entweder als unterschiedlicher Zielwert oder als Gut-/Lastschrift gegenüber einem gemeinsamen Nullmaßstab ausdrücken. Die Gutschrift verändert die Anforderung, nicht den realen Energiebedarf.
+
+### Operationalisierung über den Gebäudebestand
+
+Die nationale Kalibrierung braucht zusätzlich die Flächenverteilung des Bestands nach Dichte und Gebäudequalität. Ein Zielwert für einen häufigen Quartierstyp trägt zum nationalen Ergebnis stärker bei als derselbe Zielwert für einen seltenen Typ.
+
+Der nationale Sektorsaldo ergibt sich aus der flächengewichteten Summe der spezifischen Zielsalden:
+
+$$
+B_{\mathrm{Sektor}}
+=\sum_k\sum_j A_{k,j}\,t_k(d_j).
+$$ {#eq-sektor-aggregation}
+
+\(A_{k,j}\) bezeichnet die Fläche des Gebäudetyps \(k\) in der Dichteklasse \(j\), \(t_k(d_j)\) dessen jährlichen spezifischen Zielsaldo. Fläche und Zielsaldo müssen dieselbe Flächendefinition verwenden. Bei einem Zielsaldo in kWh/(m² a) ergibt sich der Sektorsaldo in kWh/a.
+
+Die Kalibrierung unterscheidet thermische Sanierung, Sanierung mit geringer PV-Ausstattung, PEQ-Sanierung und PEQ-Neubau mit Anteilen von 40 %, 20 %, 20 % und 20 %. Unsanierter Bestand hat im zugrunde gelegten Zielzustand einen Anteil von 0 %. Zusammen mit der Dichteverteilung bestimmen diese Annahmen den nationalen Sektorsaldo [@schneider2023context, Tab. 5 und Abb. 8, S. 12–14].
+
+Die Anforderungen an PEQ hängen somit auch davon ab, wie viel der übrige Gebäudebestand beiträgt. Eine andere Sanierungsentwicklung oder Dichteverteilung kann eine neue Kalibrierung erfordern. Dafür müssen sowohl die Bestandsdaten als auch die Verteilungsentscheidungen dokumentiert werden.
+
+**[Abbildungsplatzhalter: Dichteabhängige Anforderungen und Flächenverteilung des Gebäudebestands, übernommen aus Schneider et al. (2023), Abb. 8.]**
+
+## Mobilitätsbudget: vom nationalen Anteil zur Nutzung
+
+Der motorisierte Individualverkehr erweitert den Energiebedarf, für den das Quartier bilanziell Verantwortung übernimmt. Gleichzeitig erhält er einen Anteil der zentral bereitgestellten erneuerbaren Energie. Dieser Anteil wird über die Nutzungen auf Quartiere verteilt.
+
+Für den MIV sind 6,30 TWh/a Strom und 0,36 TWh/a Biomasse zugeordnet. Mit der primärenergetischen Gewichtung ergibt sich ein Budget von 10,68 TWh PE/a [@schneider2023context, Tab. 8, S. 16].
+
+Die Verteilung folgt den Anteilen der Nutzungen am österreichischen Zielverkehr und ihren nationalen Nutzflächen. Für eine Nutzung \(u\) gilt:
+
+$$
+c_{\mathrm{M},u}
+=\frac{E_{\mathrm{M},u}}{A_{\mathrm{NGF},u}}.
+$$ {#eq-mobilitaetsbudget}
+
+Die nationale Energiemenge \(E_{\mathrm{M},u}\) in kWh PE/a wird durch die zugehörige Nettogrundfläche geteilt. Das Ergebnis ist die jährliche Mobilitätsgutschrift je m² NGF. Bei gemischter Nutzung werden die Gutschriften mit den jeweiligen Quartiersnutzflächen gewichtet.
+
+| Nutzung | Budget [TWh PE/a] | Fläche [Mio. m² NGF] | Gutschrift [kWh PE/(m² NGF a)] |
+|---|---:|---:|---:|
+| Wohnen | 5,30 | 375,6 | 14,11 |
+| Büro und Gewerbe | 2,20 | 53,1 | 41,47 |
+| Bildung | 0,29 | 22,5 | 12,93 |
+| Handel und sonstige Nutzungen | 2,89 | 96,5 | 29,97 |
+
+: Nutzungsbezogene Mobilitätsallokation, übernommen aus Tabelle 9 [@schneider2023context, S. 16]. {#tbl-mobilitaetsallokation}
+
+Die Gutschrift richtet sich nach der Nutzung; der Mobilitätsbedarf hängt zusätzlich von Standort, Verkehrsverhalten und Fahrzeugflotte ab. Ein hoher Bedarf erzeugt keinen entsprechend hohen Budgetanspruch. Bei gleicher Nutzung bleibt ein Quartier mit geringerem MIV-Bedarf bilanziell im Vorteil [@schneider2026thesis, Abschn. 3.2.7, S. 56–57].
+
+Für die Bewertung wird der Zielverkehr dem Quartier zugeordnet. Die Simulation der Lade- und Speicherflüsse muss dagegen die tatsächliche Anwesenheit und Ladung der Fahrzeuge berücksichtigen. Ein zugeteiltes Mobilitätsbudget ist weder ein physisches Ladeangebot noch eine Aussage über die nutzbare Batteriekapazität.
+
+Die Mobilitätsallokation beruht auf den Mobilitätsdaten von 2013/2014 und dem nationalen Energieszenario. Neue Erhebungen zu Verkehrsverhalten, Fahrzeugflotte und Flächennutzung ermöglichen eine Aktualisierung der Gutschriften. Das Zuordnungsprinzip bleibt dabei bestehen; Ausgangsbudget und Verteilung werden gemeinsam überprüft.
+
+## THG-Budget: Wie entstehen 320 kg CO₂e je Quadratmeter?
+
+### Nationale Grundlage und sektorale Verteilung
+
+Zusätzlich zur jährlichen Primärenergiebilanz begrenzt ein kumuliertes THG-Budget die bilanzierten Emissionen aus Errichtung, Nutzung, Instandhaltung und MIV über den definierten Zeitraum.
+
+Das Verfahren unterscheidet drei Budgetvarianten. Ausgangspunkte sind das verbleibende nationale CO₂-Budget, Annahmen über natürliche Senken, ein Anteil von 50 % für Gebäude und MIV sowie eine nationale Bezugsfläche von 906,7 Mio. m² BGF. Der Klimabudgetansatz bezieht sich auf 1,5 °C mit 66 % Wahrscheinlichkeit; dokumentiert werden Varianten mit und ohne temporäre Überschreitung des Temperaturziels [@schneider2025declaration, Abschn. 2.3, Tab. 2 und A1, S. 6–7, 30].
+
+Die Budgetvarianten L1, L2 und L3 beruhen auf einem Klimabudget **ohne temporäre Überschreitung** des Temperaturziels: Von 280 Mt CO₂ ab 2022 verbleiben nach Abzug der bis Ende 2024 angesetzten Emissionen 130 Mt ab 2025. Dieses Ausgangsbudget bildet die Referenz der Bewertung [@schneider2025declaration, Tab. A1].
+
+Mit nationalem Restbudget \(B_{\mathrm{AT}}\), Bevölkerung \(P\), jährlicher Senkenleistung je Person \(s\), Zeitraum \(T\), Sektoranteil \(\alpha\) und Bezugsfläche \(A_B\) gilt:
+
+$$
+b_{\mathrm{THG}}
+=\frac{\alpha\left(B_{\mathrm{AT}}+P\,s\,T\right)}{A_B}.
+$$ {#eq-thg-allokation}
+
+Budget und Senkenleistung werden in einer gemeinsamen Masseneinheit angesetzt. Das nationale CO₂-Budget dient als Grundlage für die Zuteilung; auf Quartiersebene werden die Treibhausgase mit GWP100 in CO₂-Äquivalenten bewertet.
+
+| Größe | Referenzwert | Funktion |
+|---|---:|---|
+| Verbleibendes Budget ab 2025 | 130 Mt CO₂ | Ausgangsbudget ohne zusätzliche Senken |
+| Bevölkerung | 9,0 Mio. Personen | Bezug für die Senkenannahme |
+| Betrachtungsdauer | 50 Jahre | Kumulation der Senkenannahme |
+| Anteil Gebäude und MIV | 50 % | Sektorale Zuteilung |
+| Nationale Bruttogrundfläche im Zieljahr 2040 | 906,7 Mio. m² | Flächenbezogene Verteilung |
+
+: Eingangsgrößen der THG-Allokation [@schneider2025declaration, Tab. A1, S. 30]. {#tbl-thg-eingaben}
+
+Für L3 werden 1 t CO₂e pro Person und Jahr an natürlichen Senken angesetzt. Über 50 Jahre und 9 Mio. Personen entsprechen sie 450 Mt. Zusammen mit dem Ausgangsbudget ergeben sich 580 Mt, davon 290 Mt für Gebäude und MIV. Geteilt durch 906,7 Mio. m² ergibt dies gerundet **320 kg CO₂e/m² BGF**.
+
+| Variante | Senkenannahme [t CO₂e/(Person a)] | THG-Budget [kg CO₂e/m² BGF] |
+|---|---:|---:|
+| L1 | 0 | 72 |
+| L2 | 0,5 | 196 |
+| L3 | 1,0 | 320 |
+
+: Budgetvarianten nach Schneider et al. [@schneider2025declaration, Tab. 2, S. 7]. {#tbl-thg-budgetvarianten}
+
+Die L-Werte sind **Budgetvarianten innerhalb der THG-Bewertung**, nicht die drei PEQ-Qualitätsstufen. Der für diesen Bericht zugrunde gelegte Zertifizierungswert beträgt 320 kg CO₂e/m² BGF. Seine Einhaltung ist zusammen mit der L3-Senkenannahme und den Bilanzregeln zu lesen. Die unterstellte nationale Senkenleistung ist kein vom einzelnen Quartier nachgewiesener Emissionsausgleich.
+
+### Drei Zeitbegriffe
+
+Der Bewertungszeitraum beträgt **50 Jahre, von 2025 bis 2075**. Innerhalb dieses Horizonts werden die treibhauswirksamen Effekte bilanziert.
+
+Die Ableitung orientiert sich am österreichischen Klimaneutralitätsziel **2040**; auf dieses Jahr beziehen sich auch die zugrunde gelegten Flächenprognosen. **2050** wird als vorsorglich späterer Dekarbonisierungszeitpunkt angesetzt, um eine mögliche Verzögerung gegenüber dem ursprünglichen Ziel abzubilden. Damit wird das Prognosejahr der Bezugsfläche nicht automatisch auf 2050 verschoben. Eine spätere Umstellung erfordert eine dokumentierte Fortschreibung.
+
+Die vereinfachende Annahme einer vollständigen Dekarbonisierung der betrachteten Prozesse **ab 2050** führt dazu, dass danach im Modell keine zusätzlichen Emissionen mehr entstehen. Das emissionswirksame Zeitfenster liegt damit faktisch vor 2050, obwohl die Betrachtung bis 2075 reicht. Dies ist eine Szenarioannahme, keine Verkürzung des Bewertungszeitraums und keine Garantie der tatsächlichen Entwicklung [@schneider2025declaration, Abschn. 2.4, S. 7–8; @schneider2026thesis, Abschn. 3.2.8, S. 58–60].
+
+**GWP100** bezeichnet den 100-jährigen Charakterisierungshorizont des Treibhauspotenzials für die Bewertung unterschiedlicher Treibhausgase in CO₂-Äquivalenten. Diese 100 Jahre bestimmen nicht die Projektlaufzeit.
+
+Errichtungsemissionen beanspruchen das Budget unmittelbar. Eine rechnerische Verteilung auf 50 Jahresraten würde ihren Emissionszeitpunkt nicht ändern. Für Etappen eines Renovierungsfahrplans muss deshalb betrachtet werden, wann bauliche Emissionen entstehen und welche Betriebsemissionen bis zur jeweiligen Maßnahme anfallen.
+
+## Rekalibrierung: Welche Stellgrößen ändern sich?
+
+Eine Fortschreibung muss klären, ob Datenbasis, Szenario oder Verteilungsentscheidung verändert werden. Beim THG-Budget sind Restbudget, Senkenannahme, Sektoranteil und Bezugsfläche maßgeblich. Diese Größen sind bei einer Rekalibrierung gemeinsam zu überprüfen [@schneider2025declaration, Abschn. 4.2–4.3, S. 27–28].
+
+Zusätzlicher Baubedarf kann eine Entscheidung über die sektorale Verteilung auslösen. Ein höheres Budget je Quadratmeter entsteht daraus nicht von selbst: Bei unverändertem Sektorbudget verteilt sich dieselbe Menge auf mehr Fläche. Soll der Gebäudesektor mehr Budget erhalten, muss die entsprechende Entlastung anderer Sektoren oder eine begründete Änderung der Budgetgrundlage ausgewiesen werden. Eine Erhöhung ohne solche Deckung verändert den Gesamtanspruch.
+
+### PV-Errichtung und sektorale Konsistenz
+
+Die grauen Emissionen der PV-Anlagen bleiben außerhalb der Quartiersbilanz, weil die Erzeugungsanlagen im nationalen Sektormodell der Energieversorgung zugeordnet sind. Diese Abgrenzung setzt voraus, dass ihre Emissionen dort konsistent erfasst werden [@schneider2025declaration, Abschn. 2.4.1 und 4.2, S. 8–9, 27–28].
+
+Eine Alternative nimmt die PV-Errichtung in die Quartiersbilanz auf. Dann müssen Emissionen und Budgetzuordnung gemeinsam neu abgegrenzt werden. Eine zusätzliche Belastung bei unverändertem, anders abgegrenztem Budget würde zwei Bilanzmodelle vermischen. Wie sich die konsistente Alternative auf Grenzwert und Vorteil zusätzlicher PV auswirkt, ist zu berechnen. Die konkrete Abweichung zur gebäudebezogenen Normbilanz wird im Kapitel zu Systemgrenzen anhand der maßgeblichen Normfassung erläutert.
+
+### Sanierung und kommunale Perspektive
+
+Die Sanierungsgutschrift von 15 kWh PE/(m² NGF a) entlastet Bestandsprojekte gegenüber Neubauten [@klimaaktiv2026peq, S. 14]. Ihre Höhe ist normativ gesetzt und bislang nicht quantitativ kalibriert. Sie berücksichtigt, dass schwer sanierbare Gebäude andere Handlungsmöglichkeiten haben als Neubauten.
+
+Eine mögliche Differenzierung nach Gebäudealter, Denkmalschutz oder weiteren Sanierungserschwernissen erfordert eine eigene Begründung und eine Prüfung der Verteilungswirkung.
+
+Eine kommunale Zwischenebene, beispielsweise für Wien, könnte nationale Vorgaben zunächst auf kommunale Beiträge und dann auf Quartiere beziehen. Diese Erweiterung ist eine Entwicklungsperspektive; sie ist noch kein implementierter Kontextfaktor [@schneider2026thesis, Abschn. 3.5.1, S. 89–90]. Dieselben Energie- oder Emissionsbudgets dürfen dabei nicht mehrfach zugeteilt werden.
+
+## Folgerungen für Planung und Verwaltung
+
+Die Allokation zeigt, welche Beiträge ein Quartier selbst erbringen soll und welche Voraussetzungen es aus dem übergeordneten System übernimmt. Ein Nachweis sollte deshalb neben dem Ergebnis den Methodenstand, die Systemgrenzen, Flächenbezüge und Kontextgutschriften ausweisen. Erst damit lässt sich unterscheiden, ob eine Verbesserung aus einer Planungsmaßnahme, einer geänderten Annahme oder einem anderen Bewertungsmaßstab stammt.

@@ -40,11 +40,11 @@ Neben den Emissionen des laufenden Betriebs und der Mobilität werden insbesonde
 
 Das kumulierte Bewertungsergebnis wird einem definierten Treibhausgasbudget gegenübergestellt. Der im aktuellen Standard verwendete Referenzwert beträgt **320 kg CO₂e pro Quadratmeter Bruttogrundfläche**.
 
-[REDAKTIONELL PRÜFEN: Im Methodenkapitel Bewertungszeitraum, kumulatives Budget, Dekarbonisierungspfad bis 2050 sowie die einbezogenen Lebenszyklusmodule eindeutig abgrenzen.]
+Der Wert gilt für den Bewertungszeitraum 2025–2075 und die Budgetvariante L3 mit einer angenommenen natürlichen Senkenleistung von 1 t CO₂e pro Person und Jahr. Die betrachteten Prozesse werden ab 2050 als vollständig dekarbonisiert angesetzt. @sec-allokation erläutert die Herleitung, den Bezug zum Zieljahr 2040 und die Grenzen dieser Annahmen.
 
 Die dritte Qualitätsstufe trägt damit dem Umstand Rechnung, dass eine positive Energiebilanz im Betrieb allein keine ausreichende Aussage über die Klimaverträglichkeit eines Quartiers über seinen gesamten Lebenszyklus ermöglicht.
 
-**[ABBILDUNG 1: Systemgrenzen und Bilanzierungsumfang der drei Qualitätsstufen – adaptiert aus klimaaktiv-Broschüre 2026, S. 8.]**
+**[Abbildungsplatzhalter: Systemgrenzen und Bilanzierungsumfang der drei Qualitätsstufen – adaptiert aus klimaaktiv-Broschüre 2026, S. 8.]**
 
 ## Kontextabhängige Anforderungen
 
@@ -78,15 +78,17 @@ Ein eigener Kontextfaktor berücksichtigt diese besondere Ausgangssituation bei 
 
 Die Kontextfaktoren sind keine pauschalen Ausnahmen vom Klimaziel. Sie bilden vielmehr die Grundlage für eine differenzierte Verteilung der Anforderungen zwischen unterschiedlichen Quartierstypologien.
 
-Ihre quantitative Herleitung aus nationalen Zielsetzungen und Sektorallokationen wird in den folgenden Methodenkapiteln erläutert.
+@sec-allokation erläutert die Ableitung von Dichte- und Mobilitätsanforderungen aus der nationalen Allokation. Die Sanierungsgutschrift ist dagegen eine normativ festgelegte Entlastung, deren Höhe bislang nicht quantitativ kalibriert ist.
 
-**[ABBILDUNG 2: Prinzip der Kontextfaktoren und ihre Wirkung auf die Primärenergiebilanz.]**
+**[Abbildungsplatzhalter: Prinzip der Kontextfaktoren und ihre Wirkung auf die Primärenergiebilanz.]**
 
 ## Bilanzierung und Bewertung
 
 Die energetische Bewertung erfolgt durch die zeitlich aufgelöste Berechnung von Energiebedarf, lokaler Energieerzeugung, Speicherung und Austausch mit den umgebenden Energienetzen.
 
 Das Bewertungsmodell berücksichtigt unterschiedliche Energieträger und wendet zeitabhängige Konversionsfaktoren an. Dadurch werden beispielsweise der Strombezug aus dem öffentlichen Netz und die Einspeisung lokal erzeugten Stroms in Abhängigkeit vom jeweiligen Zeitpunkt bewertet.
+
+Im hier beschriebenen Bewertungsansatz werden stündliche Energieflüsse mit monatlichen Emissionsfaktoren bewertet. Simulationsauflösung und zeitliche Auflösung der Faktoren sind damit zu unterscheiden.
 
 Die stündliche Simulation ermöglicht darüber hinaus die Berücksichtigung von Energieflexibilität. Dazu zählen insbesondere die zeitliche Verschiebung von Wärme- und Strombedarf, die Nutzung thermischer und elektrischer Speicher sowie das flexible Laden von Elektrofahrzeugen.
 
@@ -108,7 +110,7 @@ Der Standard soll nicht die detaillierte Fachplanung ersetzen. Er definiert viel
 
 ## Wissenschaftliche Grundlagen und Weiterentwicklung
 
-Die Methodik des Standards beruht auf wissenschaftlichen Arbeiten zur quantitativen Definition von Plus-Energie-Quartieren, zur Verteilung nationaler Energie- und Klimaziele sowie zur integrierten Modellierung von Gebäudebetrieb, Mobilität und Lebenszyklusemissionen.
+Die Methodik verbindet die quantitative Definition von Plus-Energie-Quartieren mit der Verteilung nationaler Energie- und Klimaziele sowie der integrierten Modellierung von Gebäudebetrieb, Mobilität und Lebenszyklusemissionen, wie in Schneider et al. beschrieben [@schneider2023context; @schneider2025declaration; @schneider2026thesis].
 
 Die zugrunde liegenden Annahmen beziehen sich teilweise auf langfristige Entwicklungen des österreichischen Energiesystems. Dazu gehören insbesondere die zukünftige erneuerbare Energieversorgung, die Entwicklung der Mobilität und die Dekarbonisierung von Energieträgern und Herstellungsprozessen.
 
@@ -117,5 +119,3 @@ Solche Annahmen unterliegen Unsicherheiten und können sich durch neue wissensch
 Der Standard ist daher als **dokumentiertes und fortschreibbares Bewertungsverfahren** konzipiert. Die verwendeten Szenarien, Parameter und Bilanzierungsregeln sollen für den jeweiligen Methodenstand nachvollziehbar bleiben. Aktualisierungen sind entsprechend zu dokumentieren.
 
 Im Rahmen des laufenden klimaaktiv-Betreuungspakets werden die methodischen Grundlagen überprüft und bei Bedarf weiterentwickelt. Wesentliche Änderungen der Methodik sollen wissenschaftlich dokumentiert und veröffentlicht werden.
-
-[REDAKTIONELL PRÜFEN: Konkrete Festlegung zur Versionierung des Standards, zu verbindlichen Bewertungsständen und zum Umgang mit laufenden Deklarationsprojekten.]

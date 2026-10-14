@@ -1,3 +1,13 @@
+> **Fortschreibung vom 14.10.2026:** Die fachlichen Antworten und Entscheidungen in [Entscheidungen und offene Punkte](offene-punkte.md) ergänzen diesen übernommenen Projektbrief und haben bei Abweichungen Vorrang. Inhaltlicher Letztstand sind Dissertation und zugehörige Publikationen. Geplante Implementierungsreferenz ist PEExcel 1.13.1; Presets/Defaults und Fallzahlen werden noch nachgeliefert. Der nachfolgende Projektbrief ist um die beauftragte redaktionelle Perspektive fortgeschrieben.
+
+## Verbindliche redaktionelle Perspektive
+
+Der Bericht wird die zusammenhängende Primärdarstellung unserer Methodik. Dissertation und eigene Publikationen liefern die fachliche Grundlage und Belege; der Text erklärt das Verfahren direkt, etwa „Die Allokation verteilt …“ oder „wie in Schneider et al. beschrieben“. Keine distanzierende Erzählung über „die historische Veröffentlichung“.
+
+Rückrechnungen, Rundungsdifferenzen, uneinheitliche Quellenangaben und fehlende Ausgangsdaten werden ausschließlich intern dokumentiert. Sie sind keine Berichtspassagen und kein eigener Reviewauftrag. Tabellen und Grafiken dürfen mit Quellenangabe übernommen oder als klar bezeichnete Platzhalter vorgesehen werden; eine vollständige numerische Reproduktion ist keine Voraussetzung für die Textfassung. Materielle Fehler werden vor Freigabe geklärt, nicht durch eine vermeintlich sichere Aussage verdeckt.
+
+Im Bericht bleiben die fachlich relevanten Voraussetzungen und Grenzen: Zeitbezüge, Senkenannahme, sektorale PV-Abgrenzung, normative Sanierungsgutschrift und Entwicklungsoptionen. Prinzip, angewendete Parametrisierung und geplante Fortschreibung bleiben unterscheidbar. Neue Defaults, Fallzahlen oder Szenarien werden nicht erfunden.
+
 Das Konzept verbindet zwei Perspektiven:
 1. **Top-down: nationales Allokationsmodell.** Welche nationalen Energie- und Klimaziele gelten? Welcher Beitrag wird Quartieren und Sektoren zugerechnet? Wie werden Anforderungen über Standorte, Gebäudedichten, Nutzungstypen und Bestand verteilt? Wie verändern sich Zielwerte im Zeitverlauf?
 2. **Bottom-up: Quartiersbewertung.** Welche Betriebsenergie, Mobilitätsenergie, erneuerbaren Erträge, Flexibilitätsoptionen und Lebenszyklus-THG-Emissionen sind im konkreten Quartier vorhanden? Wie werden sie bilanziert und mit den Anforderungen verglichen?
@@ -14,7 +24,7 @@ Als methodische Referenz nennt die Publikation *Declaration-Ready Climate-Neutra
 Die methodische Anwendung ist stets ein **dokumentierter zeitlicher Snapshot**. Nationale Energie- und Emissionsszenarien, sektorale Allokationen, Konversionsfaktoren, Gutschriften und Technologieannahmen sind prinzipiell zu überprüfen und an neue Erkenntnisse anzupassen. **Regelmäßige fachliche Nachführung ist Teil des klimaaktiv-Betreuungspakets**; weiterentwickelte Grundlagen und Publikationen sollen folgen.
 Daraus folgen redaktionelle Vorgaben:
 - Bestehende wissenschaftliche Herleitungen **zunächst übernehmen und exakt belegen**, auch wenn neue Szenarien noch nicht eingearbeitet werden können.
-- Aktualisierungsbedarf klar mit `[ZU AKTUALISIEREN: ...]` markieren und in `redaktion/offene-punkte.md` vermerken.
+- Aktualisierungsbedarf ausschließlich intern in `Redaktion/offene-punkte.md` erfassen. Im Bericht fachliche Entwicklungsperspektiven erklären; keine redaktionellen Prüfmarker publizieren.
 - **Keine neuen nationalen Szenariowerte, Gutschriften oder Zielparameter erfinden.** Erst nach Recherche, Berechnung und fachlicher Freigabe als neuen Methodenstand behandeln.
 - Für veröffentlichte Fassungen den historischen Referenzstand präzise kennzeichnen; interne To-dos nicht unreflektiert publizieren.
 - Wissenschaftliche Herleitung, normative Festlegung, vereinfachende Modellannahme und aktuelle Implementierung kenntlich auseinanderhalten.
@@ -30,7 +40,7 @@ Die wichtigsten Ausgangsdokumente liegen im Chat beziehungsweise in Projektunter
 | **Älterer Leitfaden „PEQ – Definition und Operationalisierung“** | Frühere detaillierte Argumentation zu Definition, Zielwerten und Bilanzgrenzen; historischen Methodenstand berücksichtigen |
 | **PEExcel-Repository** (`simonschaluppe/peexcel`) | Aktuelle und versionierte technische Implementierung, IN/OUT/SIM-Schemata, CHANGELOG und Dokumentation |
 | **Präsentation PEQ-Nachweistool** (`PEQ Nachweistool 2026-07-05.pptx`) | Geeignete Systemgrafiken und Überblick für methodische Abbildungen |
-**Quellenregel:** Wissenschaftliche Herleitung aus Thesis und Originalpublikationen; Beschreibung der offiziellen Qualitätsstufen aus der veröffentlichten klimaaktiv-Broschüre; Software-/Preset-Aussagen nur anhand einer **konkret benannten PEExcel-Version**. Bei Widersprüchen Fakten nicht stillschweigend harmonisieren, sondern sie prüfen und als offenen Punkt kennzeichnen.
+**Quellenregel:** Wissenschaftliche Herleitung aus Thesis und Originalpublikationen; Beschreibung der offiziellen Qualitätsstufen aus der veröffentlichten klimaaktiv-Broschüre; Software-/Preset-Aussagen nur anhand einer **konkret benannten PEExcel-Version**. Widersprüche intern prüfen und dokumentieren. Der Bericht stellt den geklärten Methodenstand direkt dar; wesentliche ungeklärte Aussagen vor Freigabe klären.
 Das PEExcel-README nennt **v1.12.7 als Stable** und **v1.13.x als Development** (Stand der Sichtung Oktober 2026). In `data/schemas/v1_12_7/` liegen versionierte IN-, SIM-, OUT- und AUDIT-Daten; es existiert auch ein Entwicklungs-Schemastand. Das Thesis-Annex-A-Schema 1.11.4 ist ein historischer Nachweis, **keine automatisch aktuelle Parameterquelle**. Presets müssen bei Bedarf aus der tatsächlich definierten Excel-Arbeitsmappe extrahiert werden; CSV-Schemata allein reichen nicht für alle Preset-Werte.
 ## Zentrale wissenschaftliche Beiträge zum Zitieren
 - Schneider et al. (2023): *A Quantitative Positive Energy District Definition with Contextual Targets*. <https://www.mdpi.com/2075-5309/13/5/1210>
@@ -53,18 +63,18 @@ Belege mit DOI und Seitenangaben sauber in `references.bib` pflegen. Publizierte
 | **8. Methodenstand, Grenzen und Fortschreibung** | Was gilt wann, wie werden Szenarien aktualisiert und Änderungen dokumentiert? |
 | **Anhänge** | Detaillierte Formeln, Parameter, Presets, Tabellen, Abbildungen, Quellen |
 Die Kapitelaufteilung ist ein redaktioneller Vorschlag, kein freigegebener endgültiger Index. Insbesondere die **Top-down-/Bottom-up-Differenzierung** des alten Entwurfs soll erhalten bleiben.
-# Bereits erstellte Arbeitsfassungen
-- `executive-summary.qmd`: erster redaktioneller Entwurf der Executive Summary (im aktuellen Handoff enthalten).
-- Ein Chat-/Writing-Block-Entwurf der Kapitel 1 und 2 liegt vor. Er ist **noch nicht als Datei in diesem Handoff enthalten** und wurde im Chat durch den Auftraggeber teilweise sprachlich bearbeitet. Bei späterer Übernahme **die aktuell bearbeitete Fassung** verwenden, nicht eigenmächtig ältere Chat-Entwürfe rekonstruieren.
-- Der bestehende `.docx`-Hintergrundbericht ist überwiegend eine fachliche Gliederung und enthält einen umfangreichen Preset-Anhang; er ist kein fertig redigierter Bericht.
+# Vorhandene Arbeitsfassungen
+
+Startseite, Executive Summary und Kapitel 1–3 liegen im Repository vor und sind nach der ersten Durchsicht auf eine direkte Darstellung unserer Methodik überarbeitet. Der DOCX-Entwurf liefert Material für die weiteren Kapitel und den Preset-Anhang. Führend sind die QMD-Dateien; Details zum aktuellen Stand stehen im internen Arbeitsplan.
+
 # Gewünschter Workflow für Codex / Work
-1. **Repozustand prüfen** (Struktur, bestehende `.qmd`-Dateien, Branch, uncommitted changes, `_quarto.yml`). Keine bestehenden Inhalte überschreiben.
+1. **Repozustand prüfen** (Struktur, bestehende `.qmd`-Dateien, Branch, uncommitted changes, `_quarto.yml`). Bestehende Änderungen erhalten; Berichtstexte im beauftragten Umfang redigieren.
 2. **Quarto-Projekt schlank aufbauen**, wenn noch nicht vorhanden. Inhalt kapitelweise in lesbaren `.qmd`-Dateien führen. Eine zentrale `references.bib` vorsehen.
 3. **Zuerst die vorhandene Executive Summary integrieren**, Text nur auf expliziten redaktionellen Auftrag ändern.
 4. **Dann inhaltlich weiterarbeiten:** Kap. 1–2 konsolidieren, anschließend Kap. 3 mit Schwerpunkt Herleitung von nationalen Zielwerten, sektoraler Allokation und Gutschriften. Quellenkontrolle vor Formulierungen.
-5. **Jupyter für reproduzierbare Herleitungen:** explorative Notebooks für Dichtefaktor, nationales Energieallokationsmodell, Mobilitätsbudget und THG-Budget. Wissenschaftliche Rechenlogik in wiederverwendbaren Python-Funktionen ablegen; `ipynb` nicht als führende Langtextquelle nutzen.
-6. **Abbildungen und Tabellen:** vorhandene Thesis-/Publikationsgrafiken nach Möglichkeit fachlich korrekt übernehmen oder neu zeichnen, Urheberrechte und Quellen dokumentieren. Figurnummern und Verweise mit Quarto verwalten. Einfache Änderungen am Fließtext dürfen keine erneute Gesamtsimulation erfordern.
-7. **Redaktionelle To-dos:** Unsicherheiten und Lücken in `redaktion/offene-punkte.md`, idealerweise mit Priorität und zugehöriger Quelle, festhalten.
+5. **Rechenkontrollen nach Bedarf:** Bestehende Herleitungen verschriftlichen; vollständige Reproduktion ist keine Voraussetzung. Explorative Notebooks erst für neue Kalibrierungen oder relevante offene Rechnungen einsetzen. Wissenschaftliche Rechenlogik in wiederverwendbaren Python-Funktionen ablegen; `ipynb` nicht als führende Langtextquelle nutzen.
+6. **Abbildungen und Tabellen:** vorhandene Thesis-/Publikationsgrafiken mit Beleg übernehmen oder eindeutige Platzhalter definieren; Neuzeichnung und numerische Reproduktion sind für den Entwurf nicht erforderlich, Urheberrechte und Quellen dokumentieren. Figurnummern und Verweise mit Quarto verwalten. Einfache Änderungen am Fließtext dürfen keine erneute Gesamtsimulation erfordern.
+7. **Redaktionelle To-dos:** Unsicherheiten und Lücken in `Redaktion/offene-punkte.md`, idealerweise mit Priorität und zugehöriger Quelle, festhalten.
 8. **Review:** PDF zum Kommentieren an Kolleg:innen verteilen; bei ausdrücklichem Bedarf Word exportieren. Rückmeldungen ausschließlich in die Quarto-Quelle einarbeiten.
 9. **Build und Qualität:** HTML- und PDF-Rendering testen, Links, Zitationen und Verweise prüfen; Barrierefreiheit der finalen PDF-Ausgabe gesondert prüfen. Ein erfolgreicher PDF-Build garantiert nicht automatisch PDF/UA-Konformität.
 10. **Änderungen übersichtlich versionieren.** Inhaltliche Parameteränderungen und reine Redaktion möglichst getrennt committen. Keine direkte Änderung im PEExcel-Repository ohne ausdrücklichen Auftrag.
