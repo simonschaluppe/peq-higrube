@@ -1,0 +1,25 @@
+# Offene Punkte
+
+Stand: 14.10.2026. **P0** = vor belastbaren Kernaussagen klären; **P1** = vor Veröffentlichung; **P2** = mögliche spätere Vertiefung. Fundorte und Quelldateien siehe [Quellenübersicht](quellenuebersicht.md). Offene Punkte sind keine Aufforderung, alle Fragen sofort beim Auftraggeber abzuladen: zuerst Quellenvergleich und eine konkrete Empfehlung erarbeiten.
+
+| ID | Priorität | Befund und Fundort | Nächster Schritt / Abschlusskriterium |
+|---|---|---|---|
+| M01 | P0 | 50 Jahre 2025–2075, Dekarbonisierung bis 2050 und 100 Jahre im Handbuch sind vermischt. Artikel 2025 §2.4 versus Schluss S. 28; Handbuch PDF 5, 69–70. | Eine Tabelle zu Bilanzhorizont, Faktorpfad und Austausch-/End-of-life-Annahmen erstellen; methodischen Referenzstand fachlich bestätigen. |
+| M02 | P0 | 320 ist L3 mit Senkenannahme, neben L1 72 und L2 196. Artikel 2025 §2.3, Tab. 2 und A1. Bezugsjahr der 906,7 Mio. m²: Text 2050, Tabelle 2040. | Budgetrechnung mit Originalgrößen reproduzieren, Rundung und Bezugsjahr prüfen; Vorschlag zur Darstellung der drei Budgets freigeben. Keine neue 2026-Grenze ableiten. |
+| M03 | P0 | Dichtekurve: Szenario, Gebäudetypanteile, Einheiten und normative Parameter. Artikel 2023 Gl. 4–9, Tab. 4–6; BGF/NGF-Bezeichnungen im Text und Tabellen nicht durchgängig gleich. | Eine konsistente Herleitung mit Einheitenprüfung und expliziter Flächengewichtung aufstellen; historische Parameter und heutige Implementierung getrennt ausweisen. |
+| M04 | P0 | Mobilitätsbudget ist nutzungsabhängig: Artikel 2023 Tab. 9; Broschüre S. 13 vereinfacht auf ca. 26, S. 18 nutzt 14 kWh PE/(m² NGF a). | Nationale Allokation → Nutzung → Quartier nachvollziehen. Zielverkehrsbilanz von tatsächlichen Ladeflüssen trennen; kein pauschaler Einheitswert. |
+| M05 | P0 | PEExcel-Version offen. Annex A = Schema 1.11.4; v1.12.7/v1.13.x im Handoff sind unbestätigte Zeitstandsangaben. | Für den Bericht eine Version samt Commit, Datei und Parameterstand festlegen. Bis dahin keine „aktuelle Toolvorgabe“ behaupten. |
+| M06 | P0 | LCA-Umfang und PV-Ausschluss: Artikel 2025 Tab. 3, §2.4.1, §4.2; Handbuch PDF 5 versus 69–70. | Modulmatrix mit eingeschlossen / ausgeschlossen / bedingt / extern zugeordnet erstellen; Senken, biogenen Kohlenstoff und D2-Gutschriften auf Doppelzählung prüfen. |
+| M07 | P1 | Sanierungsgutschrift 15 kWh PE/(m² NGF a), Broschüre S. 14; quantitative Herleitung in den bisher vertieft geprüften Abschnitten nicht belegt. | Originalbegründung und Parametrisierung finden. Falls normative Festlegung: ausdrücklich so benennen; nicht als exakt naturwissenschaftlich abgeleitet darstellen. |
+| M08 | P1 | Stündliche Simulation, monatliche Konversionsfaktoren und Flexibilitätssignal erfüllen unterschiedliche Aufgaben. Broschüre S. 11; Thesis §3.2.3–3.2.4. | Rechenbeispiel für Sommer/Winter und flexiblen Bezug ausarbeiten. Modellierte Bewertung von belegter lokaler Netzentlastung unterscheiden. |
+| M09 | P1 | RUGInnovation: unterschiedliche Baujahre, GFZ und Ergebniszahlen in Broschüre, Thesis und Überblicksfolien. | Einen dokumentierten Projekt-/Szenariostand wählen; Eingaben, Toolversion und Ergebnisse zusammen prüfen. Planungsnachweis von gemessenem Betrieb trennen. |
+| M10 | P1 | „Auf dem Weg“: DOCX-Entwurf ausdrücklich konzeptionell/nicht umgesetzt; Überblicksfolie 37 nennt es als möglich. | Offizielle Prozessregel und technische Umsetzung separat verifizieren. Bis dahin kein verbindliches Angebot beschreiben. |
+| M11 | P1 | Fortschreibung und Bestandsschutz: keine überprüfte Verfahrensregel für laufende/abgeschlossene Deklarationen. | Zuständigkeit, Änderungsrhythmus und Umgang mit alten Nachweisen festhalten; Berichtsversion und Toolversion unterscheiden. |
+| P01 | P1 | Publikationsform, Herausgeberschaft, Rechte, Ministeriums-Vorlage und barrierefreie Ausgabe nicht festgelegt. Historischer Leitfaden enthält Weitergabevorbehalt. | Veröffentlichungsweg und Anforderungen bestätigen; Abbildungsrechte dokumentieren; Primärquellen nicht automatisch mitpublizieren. |
+| P02 | P1 | Bestehende Kapitel ohne Einzelbelege, mit Wiederholungen und sichtbaren Platzhaltern. | Nach Methodenkern konsolidieren; Zitate/Einheiten/Verweise prüfen; vor Freigabe keine offenen redaktionellen Marker in der Ausgabe. |
+| F01 | P2 | Kommunale Allokation noch keine implementierte Deklarationsregel (Thesis §3.5.1). | Als Anwendungsperspektive abgrenzen; nur bei Bedarf eigene Weiterentwicklung. |
+| F02 | P2 | Aktuelle nationale Szenarien, Monitoring, umfassende Unsicherheitsanalyse und Übertragbarkeit ins Ausland. | Separates Forschungs-/Fortschreibungspaket. Erstausgabe mit sauber bezeichnetem historischem Referenzstand ermöglichen. |
+
+## Entscheidungsformat
+
+Je Frage höchstens eine halbe Seite: **Empfehlung – Beleg – verbleibende Unsicherheit – Alternative – Auswirkung**. Erledigte Fragen mit Datum und beschlossener Fassung ergänzen. Nur Änderungen an Zielwerten, Bilanzgrenzen, Geltungsansprüchen oder formalen Freigaben erfordern fachliche Entscheidung; reine Redaktion wird direkt umgesetzt.

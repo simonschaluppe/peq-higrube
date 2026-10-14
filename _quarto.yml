@@ -1,0 +1,39 @@
+project:
+  type: book
+  output-dir: _book
+  resources:
+    - "!Redaktion/**"
+    - "!.local/**"
+
+lang: de
+bibliography: references.bib
+
+book:
+  title: "Klimaneutrale Plus-Energie-Quartiere"
+  subtitle: "Wissenschaftliche Grundlagen des klimaaktiv Standards – Arbeitsfassung"
+  date: "2026-10-14"
+  chapters:
+    - index.qmd
+    - executive_summary.qmd
+    - Kapitel/01-einführung.qmd
+    - Kapitel/02-standard.qmd
+    - references.qmd
+  search: true
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    link-external-newwindow: true
+  pdf:
+    documentclass: scrreprt
+    papersize: a4
+    pdf-engine: lualatex
+    toc: true
+    number-sections: true
+    colorlinks: true
+
+execute:
+  echo: false

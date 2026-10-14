@@ -1,0 +1,24 @@
+# Quarto: generierte Ausgaben und Caches
+/_book/
+/_site/
+/.quarto/
+/_freeze/
+/*_files/
+/Kapitel/*_files/
+/*.html
+/Kapitel/*.html
+
+# Lokale Quellenextrakte, Sicherungen und Prüfdateien
+/.local/
+/tmp/
+/.venv/
+__pycache__/
+.ipynb_checkpoints/
+
+# Betriebssystem und temporäre Office-Dateien
+.DS_Store
+Thumbs.db
+~$*
+*.tmp
+
+**/*.quarto_ipynb

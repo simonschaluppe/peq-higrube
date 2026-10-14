@@ -1,0 +1,21 @@
+# Zum Bericht {.unnumbered}
+
+**Was heißt klimaneutral bauen – und wie viel ist genug?** Dieser Hintergrundbericht erläutert, wie übergeordnete Energie- und Klimaziele in Anforderungen an konkrete Quartiere übersetzt werden. Im Mittelpunkt stehen die Herleitung der Zielwerte, die Verteilung der Anforderungen und die Bilanzierung auf Quartiersebene.
+
+::: {.callout-note}
+## Arbeitsfassung vom 14. Oktober 2026
+
+Vorhanden sind die Executive Summary sowie die Entwürfe von Einführung und Standardbeschreibung. Die quantitative Herleitung, vollständige Einzelbelege und Fallbeispiele folgen. Diese Fassung ist noch keine freigegebene Methoden- oder Nachweisgrundlage. Redaktionelle Prüfvermerke in den Kapiteln gehören zum Arbeitsstand.
+:::
+
+## Einstieg {.unnumbered}
+
+- Die [Executive Summary](executive_summary.qmd) fasst Anliegen und Bewertungsansatz zusammen.
+- Die [Einführung](Kapitel/01-einführung.qmd) erläutert die Leitfrage und den Zweck des Berichts.
+- Die [Standardbeschreibung](Kapitel/02-standard.qmd) stellt die Qualitätsstufen und die Bewertungslogik vor.
+
+## Quellen und Geltungsbereich {.unnumbered}
+
+Die wissenschaftliche Herleitung stützt sich auf die Dissertation von Schneider sowie die Veröffentlichungen zur kontextabhängigen Definition und zur Lebenszyklusbewertung [@schneider2026thesis; @schneider2023context; @schneider2025declaration]. Die klimaaktiv-Broschüre beschreibt die Qualitätsstufen und die Anwendung [@klimaaktiv2026peq]. Diese Quellen erfüllen unterschiedliche Aufgaben; ihre Methodenstände werden im weiteren Bericht getrennt ausgewiesen.
+
+Die hier dokumentierte Anwendung bezieht sich auf Österreich. Eine Übertragung auf andere Länder erfordert eine eigene Prüfung der Szenarien, Allokationen und Bewertungsfaktoren.

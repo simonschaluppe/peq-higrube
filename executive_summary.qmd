@@ -1,5 +1,5 @@
 <!-- Redaktioneller Entwurf 0.1. Führende Fassung nach Übernahme: Repository peq-higrube. -->
-# Executive Summary
+# Executive Summary {.unnumbered}
 ## Von nationalen Klimazielen zu überprüfbaren Anforderungen an Quartiere
 Die Transformation des Gebäudebestands und der Energieversorgung ist eine wesentliche Voraussetzung für das Erreichen der österreichischen Klimaziele. Neubau- und Sanierungsprojekte müssen deshalb nicht nur den Energiebedarf einzelner Gebäude reduzieren, sondern zunehmend auch ihren Beitrag zu einem vollständig erneuerbaren und klimaneutralen Energiesystem berücksichtigen.
 Für die Planungspraxis ergibt sich daraus eine zentrale Frage: **Welche Anforderungen muss ein konkretes Bauvorhaben erfüllen, damit es einen angemessenen Beitrag zur Erreichung der übergeordneten Klimaziele leistet?**

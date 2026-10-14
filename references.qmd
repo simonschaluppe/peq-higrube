@@ -1,0 +1,6 @@
+# Literatur {.unnumbered}
+
+Die hier aufgeführten Grundlagen bilden den Anfang der Quellenverwaltung. Die Einzelbelege für die bestehenden Kapitel werden bei deren fachlicher Konsolidierung ergänzt.
+
+::: {#refs}
+:::
