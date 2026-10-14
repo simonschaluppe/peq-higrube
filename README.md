@@ -7,7 +7,8 @@ Der Bericht erklärt die nationale Herleitung der Anforderungen und ihre Anwendu
 ## Wo anfangen?
 
 - **Nächste inhaltliche Entscheidungen:** [Internes Redaktionsmemo](Redaktion/arbeitsplan.md).
-- **Aktueller Entwurf:** [Kapitel 3 – nationale Allokation](Kapitel/03-allokation.qmd), mit [dokumentiertem Reviewstand](Redaktion/review-kapitel-03.md).
+- **Neue Kapitel:** [Bilanzregeln bis Weiterentwicklung](Kapitel/04-bilanzregeln.qmd), mit [kapitelweisem Konsistenz- und Planungsreview](Redaktion/review-kapitel-04-08.md).
+- **Methodischer Einstieg:** [Kapitel 3 – nationale Allokation](Kapitel/03-allokation.qmd), mit [dokumentiertem Reviewstand](Redaktion/review-kapitel-03.md).
 - **Fachliche Festlegungen und ausstehende Zuarbeiten:** [Entscheidungen und offene Punkte](Redaktion/offene-punkte.md).
 - **Quellen und belastbare Fundorte:** [Quellenübersicht](Redaktion/quellenuebersicht.md).
 - **Projektauftrag:** [Projektbrief/Handoff](Redaktion/projektbrief-handoff.qmd). Der übernommene Brief liegt als `.qmd`, nicht als `.md` vor; Dateinamen und Versionsangaben darin sind teilweise historisch.
@@ -18,7 +19,7 @@ Der Bericht erklärt die nationale Herleitung der Anforderungen und ihre Anwendu
 |---|---|
 | `index.qmd` | Einstieg und Arbeitsstand |
 | `executive_summary.qmd` | Bestehende Kurzfassung |
-| `Kapitel/` | Führende Berichtstexte; derzeit Kapitel 1 bis 3 |
+| `Kapitel/` | Führende Berichtstexte; Kapitel 1 bis 8 und Methodenanhang |
 | `Berechnungen/` | Reproduzierbare Rechnungen; unabhängig vom Text-Build |
 | `references.bib`, `references.qmd` | Zentrale Bibliografie und Literaturverzeichnis |
 | `Abbildungen/` | Künftig freigegebene Abbildungen mit Quellen und Alternativtexten |

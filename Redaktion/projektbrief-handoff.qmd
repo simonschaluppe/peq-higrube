@@ -65,7 +65,7 @@ Belege mit DOI und Seitenangaben sauber in `references.bib` pflegen. Publizierte
 Die Kapitelaufteilung ist ein redaktioneller Vorschlag, kein freigegebener endgültiger Index. Insbesondere die **Top-down-/Bottom-up-Differenzierung** des alten Entwurfs soll erhalten bleiben.
 # Vorhandene Arbeitsfassungen
 
-Startseite, Executive Summary und Kapitel 1–3 liegen im Repository vor und sind nach der ersten Durchsicht auf eine direkte Darstellung unserer Methodik überarbeitet. Der DOCX-Entwurf liefert Material für die weiteren Kapitel und den Preset-Anhang. Führend sind die QMD-Dateien; Details zum aktuellen Stand stehen im internen Arbeitsplan.
+Startseite, Executive Summary, Kapitel 1–8 und Methodenanhang liegen im Repository vor. Kapitel 4–8 sind nach der Perspektivkorrektur ausgearbeitet und kapitelweise aus Architektur- und HT-Sicht geprüft. Fallzahlen, finale Abbildungen und freigegebene 1.13.1-Tabellen bleiben als definierte Zulieferungen offen. Der DOCX-Entwurf bleibt ergänzendes Arbeitsmaterial. Führend sind die QMD-Dateien; Details zum aktuellen Stand stehen im internen Arbeitsplan.
 
 # Gewünschter Workflow für Codex / Work
 1. **Repozustand prüfen** (Struktur, bestehende `.qmd`-Dateien, Branch, uncommitted changes, `_quarto.yml`). Bestehende Änderungen erhalten; Berichtstexte im beauftragten Umfang redigieren.

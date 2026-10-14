@@ -1,0 +1,79 @@
+# Systemgrenzen und Bilanzierungsregeln {#sec-bilanzregeln}
+
+Eine Bilanz beantwortet nur die Frage, für die sie abgegrenzt wurde. Vor der Berechnung wird deshalb festgelegt, welche Gebäude, Flächen, Energiedienstleistungen und Lebenszyklusprozesse zum Quartier gehören. Dieselbe Abgrenzung muss für Bedarf, Erzeugung, Gutschriften und Zielwerte gelten. Andernfalls kann ein rechnerisch gutes Ergebnis allein durch die Auswahl der berücksichtigten Teile entstehen.
+
+## Das Quartier als räumliche und funktionale Einheit
+
+Die räumliche Grenze umfasst die für die Funktion des Quartiers erforderlichen Flächen. Sie folgt einem zusammenhängenden Projektzuschnitt. Zusätzliche Erzeugungsflächen werden nicht allein deshalb einbezogen, weil sie die Bilanz verbessern; ihre funktionale Zuordnung muss begründet sein. Umgekehrt dürfen Gebäude mit hohem Bedarf oder gemeinsam genutzte Anlagen nicht aus der Bilanz herausfallen. Diese Abgrenzung folgt der in Schneider beschriebenen räumlichen Systemgrenze [@schneider2026thesis, Abschn. 3.2.2, S. 51–53].
+
+Für die Planung bedeutet das: Grundstücksfläche, Bruttogrundfläche (BGF), Nettogrundfläche (NGF), Nutzungen und gemeinsam versorgte Bereiche werden vor dem Variantenvergleich festgehalten. Eine Erweiterung des Quartiers verändert gegebenenfalls gleichzeitig den Energiebedarf, die Dichte und die zugeteilten Budgets. Sie ist daher eine Änderung des Bewertungsgegenstands.
+
+Die Qualitätsstufe bestimmt den funktionalen Umfang:
+
+| Qualitätsstufe | Jährliche Primärenergiebilanz | Kumulierte THG-Bilanz |
+|---|---|---|
+| Plus-Energie-Quartier | Gebäudebetrieb einschließlich gebäudebezogener Stromanwendungen | Kein zusätzliches THG-Budgetkriterium dieser Stufe |
+| Plus-Energie-Quartier mit Mobilität | Gebäudebetrieb und zugeordneter motorisierter Individualverkehr (MIV) | Kein zusätzliches THG-Budgetkriterium dieser Stufe |
+| Klimaneutrales Plus-Energie-Quartier | Gebäudebetrieb und zugeordneter MIV | Bauliche Prozesse, Betrieb und MIV innerhalb der festgelegten Lebenszyklusgrenzen |
+
+: Bilanzumfang der drei Qualitätsstufen [@schneider2025declaration, Tab. 1; @klimaaktiv2026peq, S. 8–11]. {#tbl-bilanzumfang}
+
+Zum Betrieb gehören Raumheizung und -kühlung, Warmwasser, Lüftung, Beleuchtung, Hilfsenergie und die weiteren berücksichtigten Stromanwendungen. Ein auf Heizung und Warmwasser beschränkter Energieausweis ersetzt diese Quartiersbilanz nicht. Bei gemeinsam genutzten Anlagen müssen die versorgten Nutzungen und ihre Anteile erkennbar bleiben.
+
+## Energiefluss und Bewertung getrennt lesen
+
+Das Modell berechnet zunächst die physischen Energiemengen: lokale Erzeugung, direkten Verbrauch, Speicherung sowie Bezug und Abgabe über die Quartiersgrenze. Anschließend werden die Flüsse mit Primärenergie- beziehungsweise Emissionsfaktoren gewichtet. Ein Speicher erzeugt dabei keine Energie. Er verschiebt ihre Verfügbarkeit und verursacht Verluste.
+
+Für die Primärenergiebilanz gilt die Vorzeichenkonvention: Ein bewerteter Überschuss ist positiv, ein Bedarfssaldo negativ. Kontextgutschriften und -lastschriften verändern diesen Bewertungssaldo, ohne den physischen Energiefluss zu ändern. @sec-kontext zeigt ihre Anwendung. Für die THG-Bilanz werden verursachte Emissionen dagegen positiv angegeben; anrechenbare Entlastungen vermindern sie. Die Qualitätsstufe verlangt eine positive Primärenergiebilanz einschließlich Kontext sowie die Einhaltung des THG-Budgets, sofern die Klimaneutralitätsstufe beansprucht wird [@schneider2025declaration, Abschn. 2.2].
+
+Die Flächenbezüge unterscheiden sich bewusst: Die betrieblichen Primärenergiekennwerte beziehen sich auf die konditionierte NGF, das kumulierte THG-Budget auf die BGF. Beide Flächen sind mit ihrer Abgrenzung anzugeben. Ein Kennwert in kWh PE/(m² NGF a) lässt sich nicht unmittelbar mit einem auf BGF bezogenen Kennwert vergleichen. Neben spezifischen Werten helfen absolute Energiemengen und Emissionen, die Größenordnung eines Vorhabens zu verstehen.
+
+## Zeitauflösung und Dekarbonisierung
+
+Die Betriebsbilanz entsteht aus einer stündlichen Simulation eines vollständigen Jahres. Im hier beschriebenen Bewertungsansatz werden monatliche Konversionsfaktoren auf diese stündlichen Energieflüsse angewendet. Damit bleibt beispielsweise der unterschiedliche Wert von Sommerstrom und Winterstrom sichtbar. Eine Verschiebung innerhalb desselben Monats erhält jedoch allein durch einen unveränderten Monatsfaktor keinen zusätzlichen Bewertungsvorteil. Sie kann weiterhin Eigenverbrauch, Verluste und Leistungsspitzen verändern [@schneider2026thesis, Abschn. 3.2.3–3.2.4; @schneider2025declaration, Abschn. 2.6].
+
+Für die Lebenszyklusbilanz werden die Emissionen der einzelnen Jahre und baulichen Ereignisse über 2025–2075 kumuliert. Die Emissionsfaktoren folgen energieträgerspezifischen Pfaden. Eine sinkende Emissionsintensität des Stromsystems darf nicht pauschal auf eine unverändert betriebene fossile Heizung übertragen werden. Die vollständige Dekarbonisierung ab 2050 setzt im Modell die entsprechende Umstellung der Versorgung und Prozesse voraus. Der Bewertungszeitraum, das Ziel- und Prognosejahr 2040 und GWP100 haben unterschiedliche Funktionen, wie in @sec-allokation erläutert.
+
+## Welche Lebenszyklusprozesse zählen?
+
+Die bauliche Betrachtung umfasst das Gebäude einschließlich technischer Anlagen und zugehöriger Anlagen auf dem Grundstück. Dazu gehören etwa Keller, unbeheizte Nebenbereiche und Außenanlagen. Die folgende Übersicht gibt den Bilanzumfang des PEQ-Verfahrens wieder; sie ist keine allgemeine Konformitätserklärung zu einer Gebäudenorm [@schneider2025declaration, Abschn. 2.4 und Tab. 3].
+
+| Prozess | Behandlung im PEQ-Verfahren |
+|---|---|
+| Produktherstellung A1–A3 | Rohstoffbereitstellung, Transporte zur Herstellung und Herstellung einbezogen |
+| Bauprozess A4–A5 | Einbeziehung nach praktischer Erfassbarkeit und Datenverfügbarkeit; Umfang im Nachweis ausweisen |
+| Nutzung B1, Wasser B7 | Nicht Bestandteil der Kernbilanz |
+| Wartung, Reparatur, Ersatz und Erneuerung B2–B5 | Einbezogen; Zeitpunkt und Dekarbonisierungsannahme bestimmen die Emissionswirkung |
+| Betriebsenergie B6 | Zeitlich bewertete Energieflüsse |
+| Mobilität, als Teile von B8 zugeordnet | Zugeordneter MIV einschließlich der im Verfahren erfassten Fahrzeugherstellung |
+| Lebensende C1–C4 | Einbezogen; Prozesse ab 2050 werden im Szenario als dekarbonisiert angesetzt |
+| Wirkungen außerhalb der Gebäudegrenze D | Wiederverwendung und Verwertung nach gewähltem LCA-Ansatz; exportierte Energie als Substitutionswirkung |
+| Öffentliche Infrastruktur außerhalb des Grundstücks | Außerhalb der Kernbilanz; bei Bedarf gesondert berichten |
+
+: Lebenszyklusumfang, zusammengefasst nach Schneider et al. [@schneider2025declaration, Tab. 3 und Abschn. 2.4.4]. {#tbl-lca-umfang}
+
+Die angenommene Dekarbonisierung macht spätere Ersatzvorgänge physisch nicht entbehrlich. Sie verändert deren modellierte Emissionswirkung. Technische Lebensdauer, Austauschbarkeit und Wartungszugänglichkeit bleiben deshalb eigenständige Planungsaufgaben. Auch eine fehlende Erfassung von A4 oder A5 bedeutet nicht, dass auf der Baustelle keine Emissionen entstehen.
+
+### Photovoltaik, Eigenverbrauch und Export
+
+Lokaler PV-Strom vermindert den Netzbezug; eingespeister Überschuss wird als Substitution von Netzstrom bewertet. Im Referenzverfahren gelten dafür dieselben zeitbezogenen operativen Faktoren wie für den Bezug. Bei gleichem Zeitpunkt sind Eigenverbrauch und Einspeisung damit hinsichtlich dieser Bewertung gleichwertig. Unterschiede entstehen unter anderem durch Speicherverluste, die zeitliche Verlagerung und die tatsächlich möglichen Einspeisemengen [@schneider2025declaration, Abschn. 2.4.1].
+
+Die Herstellung der PV-Anlage bleibt außerhalb der Quartiers-THG-Bilanz, weil sie dem nationalen Energieversorgungssektor zugeordnet wird. Das weicht von einer gebäudebezogenen Bilanz mit Einbeziehung der PV-Errichtung ab. Für einen Vergleich mit einer Bewertung nach EN 15978 müssen insbesondere Bauteilumfang, Modulgrenzen und Behandlung exportierter Energie abgeglichen werden. Die Norm beschreibt eine Lebenszyklusbewertung für neue und bestehende Gebäude sowie Sanierungen; die PEQ-Bewertung ergänzt sie um eine eigene sektorale Budgetlogik [@cen2026en15978].
+
+Eine alternative Einbeziehung der PV-Errichtung erfordert zugleich eine angepasste sektorale Budgetzuordnung. Der Vergleich ist deshalb mit zwei konsistenten Bilanzmodellen durchzuführen. Ein höherer PV-Ausbau darf nicht allein durch eine Vermischung unterschiedlicher Systemgrenzen schlechter erscheinen. Die dafür erforderliche Weiterentwicklung ist in @sec-fortschreibung beschrieben.
+
+### Biogener Kohlenstoff
+
+Baustoffe aus nachwachsenden Rohstoffen können Kohlenstoff während ihrer Nutzung speichern. Diese Speicherung ist von den Emissionen der Herstellung und Verarbeitung zu unterscheiden. Im vereinfachten Verfahren wird der biogene CO₂-Gehalt je nach Materialherkunft anteilig angerechnet: 100 % bei schnell nachwachsenden pflanzlichen Materialien, 55 % bei üblichem Holz aus bewirtschafteten Wäldern und 100 % bei nachgewiesenem Kalamitätsholz. Bei Verbundmaterialien erfolgt eine massengewichtete Zuordnung [@schneider2025declaration, Abschn. 2.5.2].
+
+Diese Anrechnung ist eine Konvention des beschriebenen Verfahrens. Sie darf nicht zusätzlich zu einer bereits im übernommenen LCA-Ergebnis enthaltenen identischen Speicherwirkung angesetzt werden. Für die Materialentscheidung sind Herkunft, Datensatz, Bilanzgrenze und Behandlung des Lebensendes gemeinsam zu dokumentieren. Eine Holzbauweise ist dadurch nicht automatisch klimaneutral.
+
+Eine zeitdynamische LCA kann Speicherzeit, Nachwachsen und Freisetzung differenzierter bewerten [@schneider2025declaration, Abschn. 2.5.1]. Ihre Ergebnisse müssen mit ihrem Charakterisierungshorizont ausgewiesen werden; sie dürfen nicht ohne methodischen Abgleich wie ein statischer GWP100-Wert mit demselben Grenzwert verglichen werden.
+
+## Mobilität: Verantwortung folgt dem Zielverkehr
+
+Die Mobilitätsbilanz ordnet dem Quartier den MIV zu, dessen Fahrtziel im Quartier liegt. Das umfasst je nach Nutzung beispielsweise Heimwege, Arbeitswege oder Einkaufswege. Fahrten zu anderen Zielen werden dem jeweiligen Zielort zugerechnet. Der öffentliche Verkehr wird nicht unmittelbar in der Quartiersbilanz erfasst; ein Umstieg kann jedoch den zugeordneten MIV-Bedarf vermindern [@schneider2025declaration, Abschn. 2.4.2].
+
+Bei Elektrofahrzeugen fallen bilanziell zugeordnete Fahrt und physischer Ladevorgang nicht zwangsläufig am selben Ort an. Das Modell bildet deshalb Laden innerhalb und außerhalb des Quartiers ab und korrigiert die Zuordnung für Fahrten zu anderen Zielen. Eine Rückspeisung aus Fahrzeugen ins Gebäude wird als Speicherbetrieb behandelt. Die zugehörige Ladeenergie darf dabei nicht verschwinden oder ein zweites Mal als erneuerbare Erzeugung erscheinen.
+
+Zur THG-Bilanz gehört außerdem die im Verfahren einmalig angesetzte Fahrzeugherstellung. Eine vollständig fortgeschriebene Flotten-LCA mit sämtlichen späteren Fahrzeugwechseln wird damit nicht behauptet [@schneider2025declaration, Abschn. 2.4.2]. Für die Auslegung von Ladeinfrastruktur bleiben die tatsächliche Fahrzeuganwesenheit, Ladeleistung und Gleichzeitigkeit maßgeblich. Das nutzungsbezogene Mobilitätsbudget ist weder eine Anschlussleistung noch eine verfügbare Speicherkapazität.

@@ -1,0 +1,67 @@
+# Methodenstand, Grenzen und Weiterentwicklung {#sec-fortschreibung}
+
+Der PEQ-Ansatz verbindet einen nationalen Bewertungsmaßstab mit dem konkreten Quartierskonzept. Seine Aussagekraft hängt davon ab, dass beide Seiten zusammenpassen: Das Budget muss zu den bilanzierten Emissionen gehören, die Energieanforderung zum angenommenen Versorgungssystem und die Simulation zum umsetzbaren Projekt. Eine Fortschreibung überprüft deshalb Daten, Annahmen und Verteilungsregeln gemeinsam.
+
+## Was ein positives Ergebnis aussagt
+
+Eine positive Primärenergiebilanz zeigt, dass das Quartier unter den festgelegten Faktoren und Kontextregeln die energetische Anforderung erfüllt. Die Klimaneutralitätsstufe verlangt zusätzlich die Einhaltung des kumulierten THG-Budgets. Der Referenzwert von 320 kg CO₂e/m² BGF setzt die L3-Senkenannahme und die beschriebenen Systemgrenzen voraus. Er bedeutet weder Emissionsfreiheit am Standort noch einen vom Projekt erbrachten Nachweis der national angenommenen Senkenleistung.
+
+Ebenso wenig ist eine positive Jahresbilanz ein Autarkienachweis. Ein Quartier kann erhebliche Mengen Strom oder Wärme beziehen und zu anderen Zeiten Energie abgeben. Für die technische Planung bleiben Anschlussleistungen und zeitliche Versorgungslücken relevant. Ein energetisch günstiges Konzept muss außerdem Komfort, Nutzbarkeit und andere Anforderungen an ein nachhaltiges Gebäude erfüllen.
+
+## Drei Arten von Änderungen
+
+Für einen nachvollziehbaren Methodenstand sind drei Ebenen zu unterscheiden:
+
+| Ebene | Beispiel | Konsequenz |
+|---|---|---|
+| Projektdaten | Geänderte PV-Fläche, andere Hülle, präzisierter Wärmebedarf | Neues Ergebnis für das Projekt bei gleichem Bewertungsmaßstab |
+| Szenario und Parametrisierung | Neue Mobilitätsdaten, Emissionsfaktoren oder Gebäudebestandsdaten | Geänderte Berechnungsgrundlage; bisherige und neue Ergebnisse nur mit benanntem Stand vergleichen |
+| Normative Verteilung | Anderer Sektoranteil, Sanierungskontext oder Senkenansatz | Geänderter Bewertungsmaßstab mit eigener fachlicher Begründung |
+
+: Ebenen der Fortschreibung. {#tbl-fortschreibung}
+
+Eine Softwarekorrektur kann zusätzlich die Umsetzung einer Regel verändern, ohne deren beabsichtigte Bedeutung zu ändern. Deshalb reichen Versionsnummern allein nicht aus: Zu einer Änderung gehört die Erklärung, welche Eingaben, Regeln oder Ergebnisse betroffen sind.
+
+Bei einer Neuauflage bleiben die zuvor verwendeten Faktoren und Annahmen nachvollziehbar. Ob laufende oder abgeschlossene Deklarationen auf neue Grundlagen umzustellen sind, ist eine eigene Verfahrensentscheidung. Aus einer wissenschaftlichen Weiterentwicklung folgt nicht automatisch eine rückwirkende Neubewertung.
+
+## Wo die nächsten fachlichen Verbesserungen liegen
+
+### Gebäudebestand und Dichte
+
+Die Dichteanforderung hängt von der Verteilung der Gebäudequalitäten und Flächen im nationalen Bestand ab. Neue Bestandsdaten ermöglichen eine aktualisierte Kalibrierung. Dabei ist zuerst zu prüfen, welche Anteile saniert, neu gebaut oder weiterbetrieben werden und welchen Beitrag diese Gruppen leisten können. Die Anpassung einzelner Kurvenparameter ohne diesen nationalen Zusammenhang würde die ursprüngliche Lastenverteilung verändern, ohne ihre Wirkung zu erklären.
+
+Eine aktualisierte Dichtekurve muss daher gemeinsam mit den zugrunde gelegten Flächen, Nutzungen und Sanierungsszenarien dokumentiert werden. Auch die Wirkung auf niedrige und hohe Dichten ist auszuweisen. Das physikalische Grundprinzip bleibt davon unabhängig, wie in @sec-allokation erläutert.
+
+### Mobilität und zeitliche Bewertungsfaktoren
+
+Neue Mobilitätserhebungen können Wege, Verkehrsmittelwahl und Standortunterschiede besser abbilden. Für eine Aktualisierung müssen sowohl der zugeordnete Bedarf als auch die Verteilung des nationalen Mobilitätsbudgets geprüft werden. Ein neues Fahrprofil allein begründet noch keinen veränderten Budgetanspruch.
+
+Bei den Energiefaktoren ist eine höhere zeitliche Auflösung fachlich interessant, insbesondere für Speicher, gesteuertes Laden und externe Flexibilität. Das Modell kann stündliche Faktoren verarbeiten. Ihr Einsatz braucht jedoch geeignete, dokumentierte Daten und eine klare Bedeutung der Faktoren. Die durchschnittliche Emissionsintensität eines Strommixes und die durch zusätzlichen Verbrauch verursachte Änderung der Erzeugung sind unterschiedliche Bewertungsansätze und dürfen nicht unbegründet ausgetauscht werden.
+
+Eine Fortschreibung sollte deshalb zunächst dieselben Projektvarianten mit dem bisherigen und dem neuen Faktorsatz vergleichen. So wird sichtbar, ob ein Ergebnis durch die technische Maßnahme oder durch den geänderten Maßstab besser wird. Stündliche Faktoren sind damit ein möglicher nächster Schritt, keine Voraussetzung dafür, den bisherigen monatlichen Ansatz nachvollziehbar anzuwenden [@schneider2026thesis, Abschn. 3.2.3–3.2.4; @schneider2025declaration, Abschn. 2.6 und 4.2–4.3].
+
+### THG-Budget, PV und Senken
+
+Beim THG-Budget bestimmen nationales Restbudget, Senkenannahme, Sektoranteil und Bezugsfläche den verfügbaren Wert je Quadratmeter. Mehr Bauaufgaben können eine Neuverteilung notwendig machen. Sie vergrößern das Gesamtbudget jedoch nicht von selbst. Jede zusätzliche Zuteilung ist deshalb mit ihrer Deckung oder der damit verbundenen Änderung des Klimaziels zu begründen.
+
+Für die PV-Abgrenzung ist eine konsistente Alternative mit Einbeziehung der Errichtungsemissionen auf Quartiersebene zu untersuchen. Dabei werden die zugehörigen Emissionen und Budgetanteile aus dem Energieversorgungssektor entsprechend zugeordnet. Die Untersuchung sollte zeigen, wie sich Grenzwert, Quartiersbilanz und Anreiz zum PV-Ausbau gemeinsam verändern. Das ist eine methodische Weiterentwicklung und keine bloße Ergänzung einer fehlenden Bauteilposition.
+
+Senken bleiben eine besonders wirksame Annahme. Eine weniger günstige Senkenentwicklung verkleinert den Spielraum für Emissionen. Die Varianten L1 bis L3 machen diese Abhängigkeit sichtbar. Für robuste Planung lohnt es sich daher, neben dem Erfüllen des Referenzwerts auch den Abstand zu den strengeren Varianten zu kennen [@schneider2025declaration, Abschn. 2.3 und 4.2–4.3].
+
+### Sanierung und bauliche Absenkpfade
+
+Die pauschale Sanierungsgutschrift lässt sich künftig nach tatsächlich unterschiedlichen Erschwernissen differenzieren. Dafür braucht es eine belastbare Datengrundlage und eine Regel, die in der Planung mit vertretbarem Aufwand nachweisbar ist. Eine kleinteilige Differenzierung wäre wenig hilfreich, wenn die erforderlichen Informationen erst spät oder nur mit unverhältnismäßigem Aufwand verfügbar sind.
+
+Für Renovierungsfahrpläne sind außerdem die künftigen Herstellungsemissionen von Bauteilen relevant. Europäische Arbeiten zur Lebenszyklusbewertung liefern dafür Szenarien und Vergleichsgrundlagen. Die EU-Roadmap verbindet Gebäude- und Bestandsmodelle mit Maßnahmen an Materialproduktion, Materialeinsatz und Bautätigkeit [@leden2024roadmap]. Die INDICATE-Arbeiten zeigen ergänzend, wie nationale Ausgangswerte mit einheitlichen Erhebungsgrundlagen aufgebaut werden können und warum Unterschiede der Bilanzmethoden den Vergleich erschweren [@bpie2024benchmarks]. Daraus lassen sich Prüfaufgaben für die Fortschreibung ableiten; konkrete österreichische Materialpfade müssen gesondert ausgewählt und auf den PEQ-Bilanzumfang abgestimmt werden.
+
+## Kommunale Allokation als zusätzliche Ebene
+
+Eine kommunale Allokation könnte nationale Vorgaben zunächst auf eine Stadt oder Gemeinde und anschließend auf ihre Quartiere beziehen. Für eine Stadt wie Wien wären dabei etwa Gebäudebestand, erwartete Flächenentwicklung, Energieinfrastruktur und Mobilitätsstruktur gemeinsam zu betrachten. Diese Ebene ist als Erweiterung angelegt und bislang kein eigener implementierter Kontextfaktor [@schneider2026thesis, Abschn. 3.5.1, S. 89–90].
+
+Eine Kommune könnte damit verdeutlichen, welche Beiträge sie aus Bestandssanierung, Neubau und Infrastruktur erwartet. Voraussetzung ist eine konsistente Verschachtelung: Ein bereits national oder kommunal zugeteiltes Budget darf nicht mehrfach als zusätzliche Entlastung auf Quartiersebene erscheinen. Unterschiedliche lokale Ausgangslagen sind begründbar zu berücksichtigen, ohne die Gesamtmenge aus dem Blick zu verlieren.
+
+## Lernen aus Planung und Betrieb
+
+Die weitere Absicherung des Verfahrens braucht neben neuen Szenarien auch Erfahrungen aus realisierten Projekten. Ein Abgleich mit Betriebsdaten kann zeigen, ob Bedarfsprofile, Regelung und Speicherbetrieb die vorgesehenen Beiträge erbringen. Abweichungen sind zunächst auf Nutzung, Wetter, Ausführung und Betrieb zu untersuchen, bevor daraus eine Änderung des Bewertungsmaßstabs abgeleitet wird.
+
+Für die Anwendung bleibt entscheidend, dass ein Ergebnis erklärbar ist: welche Maßnahmen wirken, welche Annahmen es tragen und welche Beiträge außerhalb des Projekts liegen. Genau diese Verbindung macht den Bericht als Grundlage für Entwurfsentscheidungen, fachliche Prüfung und Gespräche zwischen Bauherrschaften, Planung und Verwaltung nutzbar.

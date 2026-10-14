@@ -30,7 +30,7 @@ Die Rückmeldung klärt insbesondere die 50-jährige Bewertung bis 2075 bei ange
 
 **Die Verteilung der Anforderungen ist eine normative Entscheidung auf wissenschaftlicher Grundlage.** Der Artikel 2023 erklärt die Dichteparameter ausdrücklich als Stellgrößen der Lastenverteilung; die Kurve ist kein technisches Potenzialmaximum (Artikel S. 12–14, Annex-PDF 89–91). Die nationale Kalibrierung setzt Anteile verschiedener Gebäudetypen und Sanierungsqualitäten voraus. Der Bericht muss diese Annahmen zeigen, statt allein „wissenschaftlich hergeleitet“ zu schreiben.
 
-**320 ist ein bedingter Grenzwert.** Artikel 2025, §2.3 und Tabelle 2 (S. 6–7, Annex-PDF 332–333): L1 = 72, L2 = 196, L3 = 320 kg CO₂e/m² BGF. L3 setzt 1 t CO₂e pro Person und Jahr an natürlichen Senken voraus; der Anteil Gebäude plus MIV beträgt 50 %. Diese L-Werte sind Budgetvarianten innerhalb der THG-Bewertung und dürfen nicht mit den drei PEQ-Qualitätsstufen verwechselt werden. Tabelle A1 (S. 30, Annex-PDF 356) dokumentiert die Ausgangsgrößen. Die rechnerische Reproduktion steht aus.
+**320 ist ein bedingter Grenzwert.** Artikel 2025, §2.3 und Tabelle 2 (S. 6–7, Annex-PDF 332–333): L1 = 72, L2 = 196, L3 = 320 kg CO₂e/m² BGF. L3 setzt 1 t CO₂e pro Person und Jahr an natürlichen Senken voraus; der Anteil Gebäude plus MIV beträgt 50 %. Diese L-Werte sind Budgetvarianten innerhalb der THG-Bewertung und dürfen nicht mit den drei PEQ-Qualitätsstufen verwechselt werden. Tabelle A1 (S. 30, Annex-PDF 356) dokumentiert die Ausgangsgrößen. Der Rechenabgleich ist erfolgt und bleibt im internen Reviewvermerk dokumentiert.
 
 **Auch die wissenschaftliche Hauptquelle enthält redaktionelle Spannungen.** Artikel 2025 verwendet in §2.4 den Zeitraum 2025–2075; im Schluss auf S. 28 steht hingegen „budget to 2050“ und „next 25 years“. §2.3 nennt 2050 als Bezugsjahr der Flächenstatistik, Tabelle A1 nennt 2040. Fachliche Klarstellung vom 14.10.2026: Ableitung und Flächenprognose beziehen sich auf 2040; 2050 ist der vorsorglich spätere Dekarbonisierungszeitpunkt. Die unterschiedliche Funktion der Zeitangaben wird im Kapitel erläutert; eine spätere Fortschreibung der Flächenprognose ist damit nicht vorweggenommen.
 
@@ -49,3 +49,13 @@ Kurzfassung, Startseite und Kapitel 1–3 wurden nach der ersten Durchsicht reda
 Die aktuelle [klimaaktiv-Publikationsseite](https://www.klimaaktiv.at/publikationen/plus-energie-quartiere) bestätigt die Rolle eines allgemeinverständlichen Einstiegs. Die [Seite zu Siedlungen und Quartieren](https://www.klimaaktiv.at/gemeinden/energie-bau/siedlungen-quartiere) bietet bereits kommunale Arbeitsmittel. Der neue Bericht sollte daran anschließen und seine quantitative Vertiefung klar ausweisen. Sichtung: 14.10.2026; keine umfassende Recherche zu Rechtslage oder Förderinstrumenten.
 
 Die MDPI-Webseiten waren bei direktem Abruf nicht erreichbar (HTTP 429); die oben genannten Artikel wurden aus den lokal vorhandenen Originalabdrücken in Annex B gelesen. Der aktuelle PEExcel-Repository-Stand wurde in dieser Bestandsaufnahme nicht verifiziert.
+
+## Ergänzende Quellen für Kapitel 4–8 (14.10.2026)
+
+Dissertation 3.2.2–3.2.8 und 3.3.1–3.3.6 sowie Artikel 2025 2.2–2.6 gezielt gelesen: Systemgrenzen, Faktoren, Mobilitätszuordnung, Fahrzeugherstellung, biogener Kohlenstoff, Zwei-Zonen-Modell, Einsatzreihenfolge und Eignungsgrenzen. Broschüre S. 14–19 für Sanierungsanteil und qualitative RUG-Beschreibung verwendet.
+
+- CEN-CENELEC, Mitteilung 17.04.2026 zu EN 15978:2026: allgemeiner Normumfang, kein Ersatz für den Normvolltext.
+- Le Den et al. 2024, EU-Roadmap, DOI 10.2779/849252: bibliografische Daten und Zusammenfassung beim EU-Publikationsamt geprüft; keine Detailwerte aus dem Vollbericht übernommen.
+- BPIE 07.10.2024, INDICATE-Benchmarks: Projekt-/Publikationsseite gelesen; methodische Vergleichbarkeit und Ausgangswerte, keine ungesicherten österreichischen Absenkraten.
+
+Die gesuchten konkreten EU-Projekte der Kollegen sind damit nicht als identifiziert behauptet. Die Quellen liefern bereits einen belastbaren Anschluss für den Ausblick.

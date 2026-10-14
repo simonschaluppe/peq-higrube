@@ -1,0 +1,48 @@
+# Bezugsgrößen und Parameterdokumentation {#sec-anhang}
+
+## Begriffe und Bezugsgrößen
+
+| Begriff | Bedeutung im Bericht |
+|---|---|
+| BGF | Bruttogrundfläche; Bezug für das kumulierte THG-Budget |
+| NGF | Nettogrundfläche; die betrieblichen PE-Kennwerte beziehen sich auf die konditionierte NGF |
+| GFZ | Geschoßflächenzahl, Verhältnis von BGF zu Grundstücksfläche |
+| PE | Primärenergie; berücksichtigt die Bewertung der Energieträger und ihrer Bereitstellung |
+| THG | Treibhausgase, bewertet in CO₂-Äquivalenten |
+| GWP100 | Treibhauspotenzial mit einem Charakterisierungshorizont von 100 Jahren |
+| LCA | Lebenszyklusbewertung; hier mit Schwerpunkt auf Treibhausgasemissionen |
+| MIV | Motorisierter Individualverkehr; im Verfahren nach Zielverkehr zugeordnet |
+| PV | Photovoltaik |
+| Kontextgutschrift/-lastschrift | Virtuelle Anpassung der Anforderung, kein physischer Energiefluss |
+| L1/L2/L3 | THG-Budgetvarianten mit unterschiedlicher Senkenannahme; keine PEQ-Qualitätsstufen |
+
+## Zeit- und Budgetbezüge
+
+| Größe | Referenz | Erläuterung |
+|---|---|---|
+| Ziel- und Flächenprognosejahr | 2040 | Grundlage der nationalen Ableitung |
+| Vollständige Dekarbonisierung | Ab 2050 | Vorsorglich späterer Zeitpunkt im vereinfachten Szenario |
+| Bewertungszeitraum | 2025–2075 | 50-jährige Lebenszyklusbetrachtung |
+| GWP-Charakterisierung | 100 Jahre | Bewertung verschiedener Treibhausgase; keine Projektlaufzeit |
+| THG-Referenzbudget L3 | 320 kg CO₂e/m² BGF | Kumuliert über den Bewertungszeitraum, mit L3-Senkenannahme |
+| L3-Senkenannahme | 1 t CO₂e/(Person a) | Bestandteil der nationalen Budgetableitung |
+| Sanierungsgutschrift | 15 kWh PE/(m² NGF a) | Normativer Wert für den berücksichtigten Sanierungsanteil |
+
+Die Herleitungen und Anwendungsgrenzen stehen in @sec-allokation und @sec-kontext. Diese Übersicht ersetzt die dort beschriebenen Bedingungen nicht.
+
+## Presets und Defaultwerte
+
+**[Tabellenplatzhalter: fachlich freigegebene Presets und Defaultwerte von PEExcel 1.13.1.]**
+
+Die Parameterdokumentation ordnet jedem Wert seine Bedeutung, Einheit, Quelle und Gültigkeit zu. Zum Datensatz gehören die genaue Toolfassung, die zugehörige Arbeitsmappe und der Freigabestand. Dadurch bleibt nachvollziehbar, ob eine abweichende Projektbewertung auf geänderten Eingaben oder einem anderen Parametersatz beruht.
+
+| Parametergruppe | Inhalt der vorgesehenen Tabellen |
+|---|---|
+| Gebäude und Nutzungen | Energetische Kennwerte, Flächenbezüge, Nutzungs- und Bedarfsprofile |
+| Versorgung und Speicherung | Wirkungsgrade, Leistungs- und Kapazitätsansätze, Verluste und Betriebsgrenzen |
+| Mobilität | Nutzungsbezüge, Fahrleistungen, Flottenanteile, Anwesenheit und Laden |
+| Bewertung | Primärenergie- und Emissionsfaktoren einschließlich Zeitauflösung und Pfad |
+| Kontext | Dichteparameter, nutzungsbezogene Mobilitätswerte und Sanierungszuordnung |
+| Lebenszyklus | Bauteilumfang, Materialansätze, Nutzungsdauern und Behandlung biogenen Kohlenstoffs |
+
+Die Tabellen dokumentieren den Referenzstand. Projektspezifische Abweichungen werden im jeweiligen Nachweis begründet und bleiben von den freigegebenen Standardwerten unterscheidbar.

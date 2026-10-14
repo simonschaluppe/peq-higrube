@@ -42,6 +42,8 @@ Das kumulierte Bewertungsergebnis wird einem definierten Treibhausgasbudget gege
 
 Der Wert gilt für den Bewertungszeitraum 2025–2075 und die Budgetvariante L3 mit einer angenommenen natürlichen Senkenleistung von 1 t CO₂e pro Person und Jahr. Die betrachteten Prozesse werden ab 2050 als vollständig dekarbonisiert angesetzt. @sec-allokation erläutert die Herleitung, den Bezug zum Zieljahr 2040 und die Grenzen dieser Annahmen.
 
+Die Systemgrenzen und die Behandlung einzelner Lebenszyklusprozesse erläutert @sec-bilanzregeln.
+
 Die dritte Qualitätsstufe trägt damit dem Umstand Rechnung, dass eine positive Energiebilanz im Betrieb allein keine ausreichende Aussage über die Klimaverträglichkeit eines Quartiers über seinen gesamten Lebenszyklus ermöglicht.
 
 **[Abbildungsplatzhalter: Systemgrenzen und Bilanzierungsumfang der drei Qualitätsstufen – adaptiert aus klimaaktiv-Broschüre 2026, S. 8.]**
@@ -80,7 +82,7 @@ Die Kontextfaktoren sind keine pauschalen Ausnahmen vom Klimaziel. Sie bilden vi
 
 @sec-allokation erläutert die Ableitung von Dichte- und Mobilitätsanforderungen aus der nationalen Allokation. Die Sanierungsgutschrift ist dagegen eine normativ festgelegte Entlastung, deren Höhe bislang nicht quantitativ kalibriert ist.
 
-**[Abbildungsplatzhalter: Prinzip der Kontextfaktoren und ihre Wirkung auf die Primärenergiebilanz.]**
+Die Anwendung auf das konkrete Quartier und die getrennte Darstellung der Kontextkomponenten erläutert @sec-kontext.
 
 ## Bilanzierung und Bewertung
 

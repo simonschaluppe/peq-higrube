@@ -19,7 +19,14 @@ book:
     - Kapitel/01-einführung.qmd
     - Kapitel/02-standard.qmd
     - Kapitel/03-allokation.qmd
+    - Kapitel/04-bilanzregeln.qmd
+    - Kapitel/05-kontextfaktoren.qmd
+    - Kapitel/06-quartiersmodell.qmd
+    - Kapitel/07-anwendung.qmd
+    - Kapitel/08-fortschreibung.qmd
     - references.qmd
+  appendices:
+    - Kapitel/anhang-methodenstand.qmd
   search: true
 
 format:

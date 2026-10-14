@@ -5,7 +5,7 @@
 ::: {.callout-note}
 ## Arbeitsfassung vom 14. Oktober 2026
 
-Diese Fassung umfasst die Kurzfassung sowie Einführung, Standardbeschreibung und nationale Allokation. Weitere Methodenkapitel und Fallbeispiele folgen. Abbildungsplatzhalter kennzeichnen noch einzufügende Darstellungen. Die Fassung ist noch keine freigegebene Nachweisgrundlage.
+Diese Fassung umfasst die Kurzfassung, acht Kapitel und einen Anhang mit Bezugsgrößen. Tabellen- und Abbildungsplatzhalter kennzeichnen insbesondere die noch einzufügenden Fallzahlen, Darstellungen und freigegebenen Presets. Die Fassung ist noch keine freigegebene Nachweisgrundlage.
 :::
 
 ## Einstieg {.unnumbered}
@@ -14,6 +14,13 @@ Diese Fassung umfasst die Kurzfassung sowie Einführung, Standardbeschreibung un
 - Die [Einführung](Kapitel/01-einführung.qmd) erläutert die Leitfrage und den Zweck des Berichts.
 - Die [Standardbeschreibung](Kapitel/02-standard.qmd) stellt die Qualitätsstufen und die Bewertungslogik vor.
 - Die [nationale Allokation](Kapitel/03-allokation.qmd) erläutert Zielwerte, Kontextfaktoren und THG-Budgets mit Rechenwegen und Quellen.
+
+- Die [Bilanzregeln](Kapitel/04-bilanzregeln.qmd) klären Systemgrenzen, Zeitbezüge und Lebenszyklusumfang.
+- Die [Kontextfaktoren](Kapitel/05-kontextfaktoren.qmd) übertragen die Anforderungen auf das konkrete Quartier.
+- Das [Quartiersmodell](Kapitel/06-quartiersmodell.qmd) erläutert Simulation, Planungsnutzen und Grenzen.
+- Die [Anwendung](Kapitel/07-anwendung.qmd) verbindet Nachweisführung, Fallbeispiele und Renovierungsfahrplan.
+- Die [Weiterentwicklung](Kapitel/08-fortschreibung.qmd) behandelt Fortschreibung und kommunale Perspektiven.
+- Der [Anhang](Kapitel/anhang-methodenstand.qmd) bündelt Bezugsgrößen und Parameterdokumentation.
 
 ## Quellen und Geltungsbereich {.unnumbered}
 

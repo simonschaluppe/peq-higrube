@@ -1,0 +1,80 @@
+# Nachweisführung und Anwendung in der Planung {#sec-anwendung}
+
+Ein PEQ-Nachweis soll eine Planungsentscheidung nachvollziehbar machen. Dafür müssen Projektabgrenzung, Eingaben, Maßnahmen und Ergebnisse zusammenpassen. Die erreichte Qualitätsstufe ist das verdichtete Ergebnis dieser Arbeit. Für weitere Entscheidungen bleibt entscheidend, welche Voraussetzungen das Ergebnis tragen.
+
+## Vom ersten Konzept zum nachvollziehbaren Nachweis
+
+Zu Beginn werden Quartiersgrenze, Nutzungen und angestrebte Qualitätsstufe festgelegt. Ein erstes Modell prüft, ob das Konzept grundsätzlich tragfähig ist und welche Beiträge von Gebäudehülle, Versorgung, Erzeugung und Mobilität erforderlich sind. Unsichere Eingaben bleiben dabei als Annahmen erkennbar.
+
+Mit dem Entwurf werden die entscheidenden Eingaben durch Fachberechnungen konkretisiert: beispielsweise Bauphysik, PV-Ertragsberechnung, Mobilitätskonzept und bauliche Ökobilanz. Die Ergebnisse fließen in das gemeinsame Quartiersmodell zurück. Damit entsteht eine Verbindung zwischen den einzelnen Fachplanungen und der Gesamtbewertung [@schneider2026thesis, Abschn. 3.3.6 und 3.4.2].
+
+| Schritt | Ergebnis | Wesentliche Abstimmung |
+|---|---|---|
+| Abgrenzung und Ziel | Bewertetes Quartier und Qualitätsstufe | Bauherrschaft, Architektur und Nachweisführung |
+| Konzeptvergleich | Varianten mit gleicher Bewertungsgrundlage | Architektur, Bauphysik, Haustechnik und Mobilitätsplanung |
+| Vertiefung | Projektspezifische Eingaben und umsetzbares Betriebskonzept | Fachplanungen und gegebenenfalls Netz-/Versorgungsunternehmen |
+| Dokumentation | Nachvollziehbare Eingaben, Bilanzen und Annahmen | Nachweisführung und fachliche Prüfung |
+| Fertigstellung | Abgleich des Nachweises mit der ausgeführten Lösung | Planung, Ausführung und Qualitätssicherung |
+| Betrieb | Vergleich von Prognose und tatsächlichem Verhalten | Betrieb und Monitoring, soweit vorgesehen |
+
+: Empfohlener Arbeitsablauf zur durchgängigen Qualitätssicherung. Die Tabelle ergänzt die Methodik um Planungsaufgaben; sie definiert keine zusätzlichen formalen Deklarationsstufen. {#tbl-nachweisprozess}
+
+Ein Rechenergebnis allein ist noch keine abgeschlossene Deklaration. Ebenso ist eine Fertigstellungsdeklaration von einem gemessenen Betriebsnachweis zu unterscheiden. Werden Anlagen oder wesentliche Flächen während der Ausführung verändert, ist zu prüfen, ob die Annahmen des Nachweises noch zutreffen.
+
+## Was in einer Ergebnisdarstellung stehen sollte
+
+Ein kompakter Nachweis verbindet eine Übersicht mit prüfbaren Grundlagen. In die Übersicht gehören Qualitätsstufe und Projektphase, Quartiersgrenze, BGF und NGF, Methoden- und Toolstand sowie die beiden relevanten Bilanzen. Die Primärenergiebilanz zeigt den Saldo vor Kontextkorrektur und die einzelnen Gutschriften beziehungsweise Lastschriften. Die THG-Bilanz zeigt die baulichen und betrieblichen Beiträge, den Zeitraum und den Abstand zum gewählten Budget.
+
+Daneben werden die entscheidenden Voraussetzungen benannt: etwa die nutzbare PV-Fläche, die angenommene Wärmeversorgung, das Mobilitätsverhalten oder die Verfügbarkeit flexibler Verbraucher. Für kritische Annahmen ist eine weniger günstige Variante aussagekräftiger als zusätzliche Nachkommastellen im Hauptergebnis.
+
+Für den Vergleich zweier Konzepte werden möglichst dieselbe Nutzungsaufgabe, dieselben Flächenbezüge und derselbe Methodenstand verwendet. Sind diese unterschiedlich, wird die Änderung ausdrücklich mitbewertet. Ein flächenspezifisch besserer Neubau mit deutlich mehr Gesamtfläche ist beispielsweise nicht ohne Weiteres eine absolute Emissionsminderung.
+
+## RUGInnovation: Sanierung als integrierte Entwurfsaufgabe
+
+RUGInnovation in Wien verbindet die Sanierung einer Wohnanlage mit einer veränderten Energieversorgung und der Integration von PV in Dach- und Fassadenflächen. Das Konzept umfasst Verbesserungen an Fassade, Dach und Fenstern, eine Grundwasserwärmepumpe sowie Maßnahmen zur Mobilität [@klimaaktiv2026peq, S. 15–19].
+
+Der Fall eignet sich, um die Wechselwirkung von Architektur und Haustechnik zu zeigen. Eine geringere Heizlast kann andere Betriebsbedingungen der Wärmeversorgung ermöglichen. Zugleich muss die energetische Nutzung der Gebäudehülle mit Verschattung, Gestaltung, Wartung und baulicher Ausführung vereinbar sein. Die Sanierungsgutschrift erleichtert den Bewertungsmaßstab; die tatsächlichen Energieeinsparungen entstehen durch die Maßnahmen selbst.
+
+Für die Interpretation werden drei Fragen getrennt betrachtet: Wie verändert sich die Betriebsenergiebilanz? Was kommt mit der Mobilität hinzu? Wie belasten die baulichen Maßnahmen das kumulierte THG-Budget? Die Darstellung folgt damit den drei Qualitätsstufen, ohne ihre Ergebnisse zu vermischen.
+
+**[Tabellenplatzhalter: RUGInnovation – abgestimmter Projektstand mit Flächen, GFZ, Sanierungsumfang, Energieversorgung und Mobilitätsannahmen; Primärenergiesaldo vor Kontext, Einzelgutschriften, Endsaldo, bauliche und betriebliche THG-Beiträge sowie Budgetabstand.]**
+
+**[Abbildungsplatzhalter: RUGInnovation – Bilanzdarstellungen für die drei Qualitätsstufen, auf Grundlage der freigegebenen Projektergebnisse; Aufbau entsprechend klimaaktiv-Broschüre, Abb. 5–7.]**
+
+## Am Bichl III: Zusätzliche Anforderung bei niedriger Dichte
+
+Am Bichl III wird als fertiggestelltes Plus-Energie-Quartier betrachtet. Der Deklarationsumfang umfasst die Betriebsenergie; Mobilität und Klimaneutralitätsstufe sind nicht Bestandteil dieser Deklaration. Der Fall zeigt die andere Seite der Dichtekontextualisierung: Bei niedriger Dichte wird ein zusätzlicher Beitrag zur Energieversorgung verlangt. Die Dichte wirkt damit als Lastschrift.
+
+Für die Bewertung ist deshalb interessant, welcher Überschuss vor Kontextkorrektur erreicht wird und welcher Teil davon die zusätzliche Anforderung erfüllt. Ein einfaches Gegenüberstellen der Endsalden mit einem dichten Sanierungsquartier würde diese unterschiedlichen Aufgaben verdecken.
+
+Die begrenzte Deklarationsstufe erlaubt keine Aussage darüber, ob die höheren Stufen rechnerisch erreicht oder verfehlt würden. Dafür wären ein entsprechend erweiterter Bilanzumfang und die zugehörigen Eingaben erforderlich.
+
+**[Tabellenplatzhalter: Am Bichl III – Fertigstellungsstand und Deklarationsnachweis mit Quartiersgrenze, Flächen, GFZ, Versorgung, Erzeugung, Primärenergiesaldo vor Kontext, Dichtelastschrift und Endsaldo.]**
+
+**[Abbildungsplatzhalter: Am Bichl III – Betriebsenergiebilanz mit sichtbar ausgewiesener Dichtelastschrift.]**
+
+## „Auf dem Weg“: Etappen eines Renovierungsfahrplans
+
+Bestandsquartiere werden häufig in mehreren Schritten umgebaut. Ein Renovierungsfahrplan kann deshalb mit einer Folge von Quartiersbewertungen verbunden werden. Jeder Schritt zeigt den erreichten Zustand, die noch erforderlichen Maßnahmen und die bis dahin verursachten Emissionen. Dieser Ansatz ist eine Entwicklungsperspektive; verbindliche Etappen und Deklarationskriterien sind dafür noch festzulegen.
+
+Die Etappen sollten sich an konkreten Maßnahmen orientieren: beispielsweise an einer Hüllensanierung, einem Wechsel der Wärmeversorgung oder dem Ausbau lokaler Erzeugung. Ihre Reihenfolge ist auch technisch relevant. Eine frühe Erneuerung der Wärmeerzeugung muss mit dem späteren Wärmebedarf und den vorgesehenen Systemtemperaturen zusammenpassen. Umgekehrt kann das Warten auf eine umfassende Sanierung weitere Betriebsemissionen verursachen.
+
+Für ein Kalenderjahr \(t\) innerhalb des Bewertungszeitraums lässt sich der bis dahin beanspruchte Teil des Budgets schematisch schreiben als:
+
+$$
+G_{\mathrm{kumuliert}}(t)
+=\sum_{j:\,t_j\leq t}G_{\mathrm{baulich},j}
++\sum_{y=2025}^{t}G_{\mathrm{Betrieb+MIV},y}.
+$$ {#eq-etappenbudget}
+
+Alle Beiträge werden in derselben Einheit, beispielsweise kg CO₂e für das gesamte Quartier, angegeben. Die baulichen Beiträge werden im Jahr der jeweiligen Maßnahme angesetzt; Betrieb und MIV gehen mit den jeweils geltenden Szenariofaktoren ein. Die Bilanzregeln aus @sec-bilanzregeln gelten auch hier. Für die Beurteilung eines Fahrplans zählt zusätzlich die erwartete Bilanz bis 2075. Ein später guter Betriebszustand allein belegt noch nicht, dass das kumulierte Budget eingehalten wird.
+
+Künftige Baustoffe und Bauweisen können geringere Herstellungsemissionen aufweisen. Europäische Szenarioarbeiten verbinden dafür Materialproduktion, Materialeffizienz, alternative Baustoffe sowie Neubau-, Sanierungs- und Rückbauaktivitäten [@leden2024roadmap]. Für die Quartiersplanung folgt daraus: Eine angenommene Emissionsminderung bei späteren Maßnahmen muss zum Material, Zeitraum und Szenario passen. Sie ersetzt nicht die Festlegung, wann und mit welchem Umfang tatsächlich saniert wird.
+
+**[Abbildungsplatzhalter: Renovierungsfahrplan mit Maßnahmenzeitpunkten, jährlichen Emissionen und kumuliertem Budgetverbrauch; konkrete Projektwerte nach Freigabe.]**
+
+## Nutzen für kommunale Planung und Bauherrschaften
+
+Die Bewertung macht Zuständigkeiten sichtbar. Bauherrschaft und Planung können Gebäudequalität, Flächennutzung, Versorgungskonzept und Teile des Mobilitätsangebots beeinflussen. Netzinfrastruktur und übergeordnete Verkehrsanbindung erfordern weitere Akteure. Nationale Dekarbonisierung und Senkenleistung bleiben Voraussetzungen des Bewertungsrahmens.
+
+Für eine kommunale Konzeptentscheidung empfiehlt sich deshalb eine gemeinsame Darstellung von Zielerreichung, notwendigen Maßnahmen und externen Voraussetzungen. Sie zeigt, welche Anforderungen ein Vorhaben selbst erfüllen kann und wo abgestimmte Infrastrukturentscheidungen nötig sind. Wirtschaftlichkeit, Leistbarkeit, Freiraumqualität und soziale Belange bleiben ergänzende Entscheidungsgrößen; die beiden PEQ-Bilanzen decken diese nicht vollständig ab.

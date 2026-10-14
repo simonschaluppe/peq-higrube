@@ -48,7 +48,7 @@ Jeder Methodenabschnitt folgt derselben Reihenfolge: **Frage → kurze Antwort �
 
 ## Nächste Arbeitspakete und Abnahmekriterien
 
-**Bearbeitungsstand 14.10.2026:** Nach erster Durchsicht wurden alle vorhandenen Kapitel, Kurzfassung und Startseite auf die Primärquellenperspektive überarbeitet. Quellenabgleiche stehen nur intern. Die fachliche Schlussfreigabe bleibt offen; derzeit keine neuen Entscheidungsfragen.
+**Bearbeitungsstand 14.10.2026:** Kapitel 4–8 sind ausgearbeitet, jeweils aus Architektur- und HT-Planungssicht gegengelesen und mit den vorhergehenden Kapiteln abgeglichen. Korrekturen sind eingearbeitet, verbleibende Punkte im [Reviewvermerk](review-kapitel-04-08.md) gesammelt. Der Methodenanhang enthält Bezugsgrößen und Platzhalter für 1.13.1. Fallzahlen, finale Abbildungen und freigegebene Presets bleiben ausständig. Keine kritische Rückfrage für die Textausarbeitung. Fachliche Schlussfreigabe bleibt offen.
 
 ### 1. Methodenstand und drei zentrale Herleitungen
 
@@ -123,4 +123,4 @@ Danach höchstens drei konkrete Entscheidungen je Arbeitspaket, mit Textvorschla
 
 Quarto-Buchstruktur mit HTML-Navigation, Volltextsuche und zentraler Bibliografie vorhanden. Redaktion, Primärquellen und lokale Prüfdateien sind von der Ausgabe ausgeschlossen. Diagramme verwenden ausführbare Mermaid-Blöcke. Quellen-PDFs bleiben unverändert; Textänderungen erfolgen in den QMD-Dateien.
 
-HTML nach der Perspektivkorrektur erfolgreich gerendert (Quarto 1.10.19, sechs Seiten). Lokale Links und Sprungmarken geprüft; Mermaid-Block in der Ausgabe vorhanden. Keine visuelle Browserprüfung durchgeführt. PDF bleibt wegen fehlendem LuaLaTeX ungeprüft; keine Systeminstallation beauftragt. Die frühere Aussage, Kapitel 1–2 und Handoff seien textidentisch, gilt nach dieser ausdrücklich beauftragten Redaktion nicht mehr. Keine Veröffentlichung, kein Commit oder Push.
+HTML nach Ausarbeitung der Kapitel 4–8 und des Anhangs erfolgreich gerendert (Quarto 1.10.19, zwölf Seiten). Alle Zitationsschlüssel und Querverweise auflösbar; lokale Links und Sprungmarken geprüft; Mermaid-Block in der Ausgabe vorhanden. Redaktion, Primärquellen und Prüfdateien sind von der Ausgabe ausgeschlossen. Keine visuelle Browserprüfung durchgeführt. PDF bleibt wegen fehlendem LuaLaTeX ungeprüft; keine Systeminstallation beauftragt. Die frühere Aussage, Kapitel 1–2 und Handoff seien textidentisch, gilt nach dieser ausdrücklich beauftragten Redaktion nicht mehr. Der frühere Stand ist in Commit 57a9395 gesichert. Die anschließende Kapitelausarbeitung ist noch nicht committed oder veröffentlicht.
