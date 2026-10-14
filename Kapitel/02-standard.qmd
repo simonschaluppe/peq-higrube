@@ -1,0 +1,121 @@
+# Der klimaaktiv Standard für Plus-Energie-Quartiere
+
+## Zielsetzung und Grundprinzip
+
+Der klimaaktiv Standard für Plus-Energie-Quartiere definiert quantitative Anforderungen an die energetische und klimabezogene Leistungsfähigkeit von Quartieren.
+
+Ausgangspunkt ist die Übertragung übergeordneter Energie- und Klimaziele auf konkrete Planungs- und Bauvorhaben. Dabei wird berücksichtigt, dass Quartiere sehr unterschiedliche bauliche, räumliche und infrastrukturelle Voraussetzungen aufweisen.
+
+Die Bewertung konzentriert sich auf zwei zentrale Zielgrößen: eine positive Primärenergiebilanz und – für die umfassendste Qualitätsstufe – die Einhaltung eines kumulierten Treibhausgasbudgets.
+
+Die Primärenergiebilanz berücksichtigt Energiebedarf und Energieaufbringung sowie die zeitliche und systemische Bewertung der auftretenden Energieflüsse. Die Treibhausgasbilanz erweitert die Betrachtung auf klimawirksame Emissionen aus dem Betrieb, der Mobilität und dem Lebenszyklus der baulichen Infrastruktur.
+
+Die Anforderungen werden durch projektspezifische Kontextfaktoren ergänzt. Diese berücksichtigen strukturelle Rahmenbedingungen, die von den Projektverantwortlichen nur teilweise beeinflusst werden können.
+
+Damit verbindet der Standard zwei Ziele: die Vergleichbarkeit unterschiedlicher Quartiersentwicklungen und die Ausrichtung ihrer Anforderungen an übergeordneten Klimazielen.
+
+## Die drei Qualitätsstufen
+
+Der Standard unterscheidet drei aufeinander aufbauende Qualitätsstufen, die sich durch den Umfang der betrachteten Energiedienstleistungen und Emissionsquellen unterscheiden.
+
+### Plus-Energie-Quartier
+
+Die erste Qualitätsstufe betrachtet die Betriebsenergie des Quartiers. Dazu zählen insbesondere die Energiebedarfe für Raumheizung, Kühlung, Warmwasser, Lüftung, Beleuchtung und weitere gebäudebezogene Stromanwendungen.
+
+Die Energiebedarfe werden der lokalen erneuerbaren Energieaufbringung und weiteren im Standard definierten Bilanzkomponenten gegenübergestellt. Eine positive Primärenergiebilanz bildet das zentrale Bewertungskriterium.
+
+### Plus-Energie-Quartier mit Mobilität
+
+Die zweite Qualitätsstufe erweitert die Primärenergiebilanz um die motorisierte Individualmobilität.
+
+Damit werden nicht nur die energetischen Eigenschaften der Gebäude, sondern auch die Auswirkungen der Mobilität der Nutzer berücksichtigt. Relevante Einflussgrößen sind unter anderem der Standort, die Verkehrsanbindung, das Mobilitätsverhalten und die eingesetzten Fahrzeugtechnologien.
+
+Die zusätzliche Berücksichtigung der Mobilität macht sichtbar, in welchem Ausmaß Quartiersplanung und Standortwahl den Energiebedarf über die Gebäudegrenzen hinaus beeinflussen.
+
+### Klimaneutrales Plus-Energie-Quartier
+
+Die dritte Qualitätsstufe ergänzt die positive Primärenergiebilanz einschließlich Mobilität um eine Lebenszyklus-Treibhausgasbilanz.
+
+Neben den Emissionen des laufenden Betriebs und der Mobilität werden insbesondere die Emissionen aus der Herstellung und Instandhaltung der baulichen Infrastruktur berücksichtigt.
+
+Das kumulierte Bewertungsergebnis wird einem definierten Treibhausgasbudget gegenübergestellt. Der im aktuellen Standard verwendete Referenzwert beträgt **320 kg CO₂e pro Quadratmeter Bruttogrundfläche**.
+
+[REDAKTIONELL PRÜFEN: Im Methodenkapitel Bewertungszeitraum, kumulatives Budget, Dekarbonisierungspfad bis 2050 sowie die einbezogenen Lebenszyklusmodule eindeutig abgrenzen.]
+
+Die dritte Qualitätsstufe trägt damit dem Umstand Rechnung, dass eine positive Energiebilanz im Betrieb allein keine ausreichende Aussage über die Klimaverträglichkeit eines Quartiers über seinen gesamten Lebenszyklus ermöglicht.
+
+**[ABBILDUNG 1: Systemgrenzen und Bilanzierungsumfang der drei Qualitätsstufen – adaptiert aus klimaaktiv-Broschüre 2026, S. 8.]**
+
+## Kontextabhängige Anforderungen
+
+Die Voraussetzungen für eine positive Energiebilanz unterscheiden sich erheblich zwischen verschiedenen Quartierstypologien.
+
+Eine locker bebaute Siedlung verfügt in der Regel über ein größeres Potenzial zur lokalen erneuerbaren Energieerzeugung pro Quadratmeter Nutzfläche als ein dicht bebautes Stadtquartier. Gleichzeitig können sich die Anforderungen an Mobilität und Gebäudesanierung stark unterscheiden.
+
+Der Standard berücksichtigt solche Unterschiede durch quantitative Kontextfaktoren.
+
+### Bauliche Dichte
+
+Der Kontextfaktor für die bauliche Dichte berücksichtigt das Verhältnis zwischen dem Energiebedarf der Gebäude und den lokal verfügbaren Flächen für erneuerbare Energieerzeugung.
+
+Als maßgebliche Kenngröße dient die Geschoßflächenzahl. Bei niedrigen Dichten wird die Bilanz durch eine zusätzliche Anforderung belastet, während höhere bauliche Dichten eine Gutschrift erhalten können.
+
+Damit wird vermieden, dass Quartiere allein aufgrund ihrer geringen baulichen Dichte systematisch bevorzugt werden.
+
+### Mobilität
+
+Die Integration der motorisierten Individualmobilität erweitert die energetische Verantwortung des Quartiers über den Gebäudebetrieb hinaus.
+
+Der Mobilitätskontextfaktor berücksichtigt einen aus dem nationalen Energiesystem abgeleiteten Anteil erneuerbarer Energie, der der motorisierten Individualmobilität zugeordnet wird.
+
+Die tatsächlich zu bilanzierenden Mobilitätsbedarfe hängen unter anderem von den Standortbedingungen, dem Mobilitätskonzept und der Fahrzeugflotte ab.
+
+### Sanierung
+
+Bestandsquartiere weisen häufig höhere spezifische Betriebsenergiebedarfe auf als vergleichbare Neubauquartiere. Gleichzeitig kann die Weiterverwendung bestehender Bausubstanz erhebliche Emissionen aus Abbruch und Neuerrichtung vermeiden.
+
+Ein eigener Kontextfaktor berücksichtigt diese besondere Ausgangssituation bei der energetischen Bewertung von Sanierungsvorhaben.
+
+Die Kontextfaktoren sind keine pauschalen Ausnahmen vom Klimaziel. Sie bilden vielmehr die Grundlage für eine differenzierte Verteilung der Anforderungen zwischen unterschiedlichen Quartierstypologien.
+
+Ihre quantitative Herleitung aus nationalen Zielsetzungen und Sektorallokationen wird in den folgenden Methodenkapiteln erläutert.
+
+**[ABBILDUNG 2: Prinzip der Kontextfaktoren und ihre Wirkung auf die Primärenergiebilanz.]**
+
+## Bilanzierung und Bewertung
+
+Die energetische Bewertung erfolgt durch die zeitlich aufgelöste Berechnung von Energiebedarf, lokaler Energieerzeugung, Speicherung und Austausch mit den umgebenden Energienetzen.
+
+Das Bewertungsmodell berücksichtigt unterschiedliche Energieträger und wendet zeitabhängige Konversionsfaktoren an. Dadurch werden beispielsweise der Strombezug aus dem öffentlichen Netz und die Einspeisung lokal erzeugten Stroms in Abhängigkeit vom jeweiligen Zeitpunkt bewertet.
+
+Die stündliche Simulation ermöglicht darüber hinaus die Berücksichtigung von Energieflexibilität. Dazu zählen insbesondere die zeitliche Verschiebung von Wärme- und Strombedarf, die Nutzung thermischer und elektrischer Speicher sowie das flexible Laden von Elektrofahrzeugen.
+
+Für die Lebenszyklus-Treibhausgasbilanz werden die Emissionen aus den definierten Lebenszyklusphasen mit den betrieblichen und mobilitätsbezogenen Emissionen zusammengeführt.
+
+Die Bewertung erfolgt auf Grundlage eines einheitlichen Modells, das für die Anwendung im Rahmen der klimaaktiv-Nachweisführung bereitgestellt wird.
+
+## Anwendung im Planungs- und Qualitätssicherungsprozess
+
+Der Standard ist darauf ausgelegt, bereits in frühen Planungsphasen angewendet zu werden.
+
+In dieser Phase können unterschiedliche Gebäudekonzepte, Energieversorgungssysteme, Mobilitätsmaßnahmen und erneuerbare Erzeugungspotenziale untersucht werden. Das Bewertungsmodell ermöglicht den Vergleich von Varianten anhand einheitlicher Bilanzierungsregeln.
+
+Mit fortschreitender Planung werden die Annahmen durch detailliertere Projektdaten ersetzt. Die Nachweisführung bildet damit eine Grundlage für die Qualitätssicherung über verschiedene Projektphasen.
+
+Die formale Bewertung erfolgt im Rahmen des klimaaktiv-Deklarationsprozesses. Dazu werden die relevanten Projektinformationen und Berechnungsergebnisse dokumentiert und einer fachlichen Plausibilitätsprüfung unterzogen.
+
+Der Standard soll nicht die detaillierte Fachplanung ersetzen. Er definiert vielmehr einen gemeinsamen quantitativen Maßstab, an dem unterschiedliche Planungsentscheidungen und Projektvarianten beurteilt werden können.
+
+## Wissenschaftliche Grundlagen und Weiterentwicklung
+
+Die Methodik des Standards beruht auf wissenschaftlichen Arbeiten zur quantitativen Definition von Plus-Energie-Quartieren, zur Verteilung nationaler Energie- und Klimaziele sowie zur integrierten Modellierung von Gebäudebetrieb, Mobilität und Lebenszyklusemissionen.
+
+Die zugrunde liegenden Annahmen beziehen sich teilweise auf langfristige Entwicklungen des österreichischen Energiesystems. Dazu gehören insbesondere die zukünftige erneuerbare Energieversorgung, die Entwicklung der Mobilität und die Dekarbonisierung von Energieträgern und Herstellungsprozessen.
+
+Solche Annahmen unterliegen Unsicherheiten und können sich durch neue wissenschaftliche Erkenntnisse, aktualisierte Szenarien oder veränderte politische Rahmenbedingungen ändern.
+
+Der Standard ist daher als **dokumentiertes und fortschreibbares Bewertungsverfahren** konzipiert. Die verwendeten Szenarien, Parameter und Bilanzierungsregeln sollen für den jeweiligen Methodenstand nachvollziehbar bleiben. Aktualisierungen sind entsprechend zu dokumentieren.
+
+Im Rahmen des laufenden klimaaktiv-Betreuungspakets werden die methodischen Grundlagen überprüft und bei Bedarf weiterentwickelt. Wesentliche Änderungen der Methodik sollen wissenschaftlich dokumentiert und veröffentlicht werden.
+
+[REDAKTIONELL PRÜFEN: Konkrete Festlegung zur Versionierung des Standards, zu verbindlichen Bewertungsständen und zum Umgang mit laufenden Deklarationsprojekten.]

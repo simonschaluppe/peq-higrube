@@ -1,0 +1,68 @@
+# Einführung
+
+## Ausgangslage: Was bedeutet klimaneutrales Bauen?
+
+Die Dekarbonisierung des Gebäudesektors erfordert eine grundlegende Veränderung der Planung, Errichtung und Nutzung von Gebäuden und Quartieren. Neben der Reduktion des Energiebedarfs müssen fossile Energieträger ersetzt, erneuerbare Energiequellen erschlossen und die Emissionen aus der Herstellung und Instandhaltung von Gebäuden reduziert werden.
+
+Zugleich verändern sich die Anforderungen an das Zusammenspiel von Gebäuden und Energieinfrastruktur. Mit dem zunehmenden Anteil wetterabhängiger erneuerbarer Energieerzeugung gewinnt nicht nur die Menge, sondern auch der Zeitpunkt des Energiebedarfs an Bedeutung. Gebäude und Quartiere können durch thermische Speicher, Batteriespeicher, flexible Wärmeerzeugung und gesteuertes Laden von Elektrofahrzeugen zur Integration erneuerbarer Energien beitragen.
+
+Eine weitere Herausforderung ergibt sich aus der räumlichen Verteilung von Energiebedarf und Energieerzeugung. Während der Energiebedarf mit der baulichen Dichte zunimmt, wächst das Potenzial für lokale erneuerbare Energieerzeugung nicht im gleichen Ausmaß. Insbesondere bei hochverdichteten Quartieren kann daher eine vollständige Deckung des Energiebedarfs durch Erzeugungsanlagen innerhalb der Quartiersgrenzen technisch nur eingeschränkt möglich sein.
+
+Die Bewertung einzelner Gebäude reicht nicht aus, um diese Zusammenhänge vollständig abzubilden. Auf Quartiersebene können Energieversorgung, Speicherung, Mobilität und lokale erneuerbare Erzeugung gemeinsam betrachtet werden. Dadurch werden sowohl Synergien als auch Zielkonflikte sichtbar, die auf Gebäudeebene nicht oder nur eingeschränkt erfasst werden.
+
+## Von allgemeinen Nachhaltigkeitsanforderungen zu quantitativen Klimazielen
+
+Für die Bewertung der Nachhaltigkeit von Gebäuden und Quartieren stehen bereits zahlreiche Instrumente zur Verfügung. Diese berücksichtigen unter anderem Energieeffizienz, Ressourcenschonung, Standortqualität, Komfort, Mobilität und soziale Aspekte.
+
+Solche Bewertungssysteme erfüllen wichtige Aufgaben bei der ganzheitlichen Qualitätssicherung. Die Erfüllung einer bestimmten Anzahl von Kriterien oder das Erreichen einer Gesamtpunktzahl beantwortet jedoch nicht unmittelbar, ob ein Bauvorhaben einen quantitativ ausreichenden Beitrag zu einem nationalen Klimaziel leistet.
+
+Hierfür sind zusätzliche Festlegungen erforderlich:
+
+- Welche Energieverbräuche und Emissionsquellen werden berücksichtigt?
+- Innerhalb welcher räumlichen und zeitlichen Grenzen wird bilanziert?
+- Wie werden unterschiedliche Energieträger und zeitlich veränderliche Emissionsintensitäten bewertet?
+- Welches Ergebnis gilt als ausreichend?
+- Wie werden die Anforderungen auf Projekte mit unterschiedlichen Standortbedingungen verteilt?
+
+Diese Fragen betreffen nicht nur die technische Berechnung, sondern auch die Definition des Bewertungsmaßstabs selbst.
+
+Ein quantitatives Bewertungssystem muss deshalb sowohl **die Bilanzierungsmethode** als auch **die Herleitung der Zielwerte** transparent festlegen.
+
+Der klimaaktiv Standard für Plus-Energie-Quartiere verfolgt diesen Ansatz. Er ergänzt bestehende Instrumente der Gebäude- und Quartiersqualität durch eine auf Energie- und Treibhausgasbilanzen konzentrierte Bewertung.
+
+## Warum Plus-Energie-Quartiere?
+
+Das Konzept der Plus-Energie-Quartiere erweitert den Fokus von der möglichst effizienten Energieversorgung einzelner Gebäude auf die gemeinsame Betrachtung von Energiebedarf, erneuerbarer Erzeugung und Flexibilität innerhalb eines Quartiers.
+
+Die positive Energiebilanz bildet dabei einen zentralen Ausgangspunkt. Sie setzt einen Anreiz, den Energiebedarf zu reduzieren, lokale erneuerbare Energiepotenziale zu erschließen und Energieflüsse möglichst systemdienlich zu gestalten.
+
+Eine rein mengenmäßige jährliche Bilanz ist allerdings nur eingeschränkt aussagekräftig. Beispielsweise kann ein Quartier im Sommer große Stromüberschüsse erzeugen und gleichzeitig im Winter erhebliche Mengen aus dem öffentlichen Netz beziehen. Eine Jahresbilanz ohne zeitliche Gewichtung würde die Unterschiede zwischen diesen Situationen nicht ausreichend abbilden.
+
+Ebenso kann eine positive Betriebsenergiebilanz mit erheblichen Treibhausgasemissionen aus der Errichtung von Gebäuden verbunden sein. Insbesondere bei Neubauprojekten fallen große Teile dieser Emissionen bereits zu Beginn des Lebenszyklus an.
+
+Eine umfassendere Bewertung muss deshalb drei Anforderungen erfüllen:
+
+**Erstens:** Die Betriebsenergie muss in einer geeigneten zeitlichen Auflösung bilanziert werden.
+
+**Zweitens:** Die Bewertung muss räumliche und strukturelle Unterschiede zwischen Quartieren berücksichtigen.
+
+**Drittens:** Für eine Aussage zur Klimaneutralität müssen zusätzlich die Treibhausgasemissionen über den Lebenszyklus einbezogen werden.
+
+Diese Anforderungen bilden die Grundlage der drei Qualitätsstufen des klimaaktiv Standards.
+
+## Ziel und Aufbau des Hintergrundberichts
+
+Der vorliegende Bericht erläutert die wissenschaftlichen und methodischen Grundlagen des klimaaktiv Standards für Plus-Energie-Quartiere.
+
+Er verfolgt insbesondere vier Ziele:
+
+1. Die Herleitung der quantitativen Anforderungen aus übergeordneten Energie- und Klimazielen nachvollziehbar darzustellen.
+2. Die Systemgrenzen, Bilanzierungsverfahren und Kontextfaktoren des Standards zu erläutern.
+3. Die Annahmen, Berechnungsverfahren und Grenzen des verwendeten Bewertungsmodells offenzulegen.
+4. Die Grundlage für eine transparente Anwendung und dokumentierte Weiterentwicklung der Methodik zu schaffen.
+
+Der Bericht richtet sich insbesondere an Fachplaner, Energieberater, Projektentwickler, Expert der Qualitätssicherung sowie an Personen in Verwaltung und Forschung, die sich mit der Bewertung klimaneutraler Quartiere beschäftigen.
+
+Er ergänzt zwei weitere klimaaktiv-Publikationen: Die Broschüre *Plus-Energie-Quartiere* bietet einen Überblick über den Standard und seine Anwendungsmöglichkeiten. Das *Handbuch zum PEQ-Nachweistool* beschreibt die praktische Durchführung der Nachweisführung.
+
+Der vorliegende Hintergrundbericht konzentriert sich dagegen auf die Frage, **warum die Anforderungen in dieser Form definiert wurden und wie sie rechnerisch zustande kommen**.
