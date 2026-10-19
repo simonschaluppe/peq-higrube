@@ -1,0 +1,836 @@
+# Heizung, Kühlung, Warmwasser und Lüftung {#sec-presets-haustechnik}
+
+::: {.preset-anhang}
+
+Diese Tabellen sind eine **Prüffassung aus dem Entwicklungsschema 1.13.1_dev**, keine freigegebenen Standardwerte. Leseschlüssel und Rückmeldeverfahren stehen in @sec-preset-leseschluessel.
+
+## T11: Wärmeerzeugung {#sec-preset-t11}
+
+Leistungsbezug, Wirkungsgrad/COP, Hilfsenergie, Verteilung und Systemtemperaturen prüfen.
+
+**PEExcel-Bezug:** Schemablatt `heating_system`, Bereich `A1:M22`. Auswahlparameter: `preset_recorded_heating_system`
+
+### Parameter und fachliche Quellen
+
+| Zeile | Parameter / PEExcel-Kennung | Einheit laut Schema | Fundstelle | Fachquelle / Gültigkeit |
+|---|---|---|---|---|
+| T11.R04 | Thermische Leistung HZEL1 / `QHmax_1el_m2` | W/m² (IN) | IN!H338 | zu ergänzen |
+| T11.R05 | Wirkungsgrad Erzeugung HZEL1 / `heat_cop_1el` | ratio (IN) | IN!H346 | zu ergänzen |
+| T11.R06 | Verteilverluste HZEL1 / `QH_distr_loss_1el` | ratio (IN) | IN!H342 | zu ergänzen |
+| T11.R07 | Hilfsstromanteil HZEL1 / `QH_aux_el_to_th_1el` | ratio (IN) | IN!H355 | zu ergänzen |
+| T11.R08 | Energieträger HZTH2 / `heat_th2_carrier_type` | offen | IN!H359 | zu ergänzen |
+| T11.R09 | Thermische Leistung HZTH2 / `QHmax_2th_m2` | W/m² (IN) | IN!H339 | zu ergänzen |
+| T11.R10 | Wirkungsgrad Erzeugung HZTH2 / `heat_cop_2th` | ratio (IN) | IN!H347 | zu ergänzen |
+| T11.R11 | Verteilverluste HZTH2 / `QH_distr_loss_2th` | ratio (IN) | IN!H343 | zu ergänzen |
+| T11.R12 | Hilfsstromanteil HZTH2 / `QH_aux_el_to_th_2th` | ratio (IN) | IN!H356 | zu ergänzen |
+| T11.R13 | Thermische Leistung HZEL3 / `QHmax_3el_m2` | W/m² (IN) | IN!H340 | zu ergänzen |
+| T11.R14 | Wirkungsgrad Erzeugung HZEL3 / `heat_cop_3el` | ratio (IN) | IN!H348 | zu ergänzen |
+| T11.R15 | Verteilverluste HZEL3 / `QH_distr_loss_3el` | ratio (IN) | IN!H344 | zu ergänzen |
+| T11.R16 | Hilfsstromanteil HZEL3 / `QH_aux_el_to_th_3el` | ratio (IN) | IN!H357 | zu ergänzen |
+| T11.R17 | Energieträger HZTH4 / `heat_th4_carrier_type` | offen | IN!H360 | zu ergänzen |
+| T11.R18 | Thermische Leistung HZTH4 / `QHmax_4th_m2` | W/m² (IN) | IN!H341 | zu ergänzen |
+| T11.R19 | Wirkungsgrad Erzeugung HZTH4 / `heat_cop_4th` | ratio (IN) | IN!H349 | zu ergänzen |
+| T11.R20 | Verteilverluste HZTH4 / `QH_distr_loss_4th` | ratio (IN) | IN!H345 | zu ergänzen |
+| T11.R21 | Hilfsstromanteil HZTH4 / `QH_aux_el_to_th_4th` | ratio (IN) | IN!H358 | zu ergänzen |
+| T11.R22 | Hilfsstromanteil HZAbwärme / `QH_aux_wasteheat` | ratio (IN) | IN!H354 | zu ergänzen |
+
+
+### Presets und Varianten
+
+| Preset-ID / Excel-Spalte | Spaltenname im Schema | Anzeige | Einordnung | Anwendung laut Export |
+|---|---|---|---|---|
+| T11.PD | DEFAULT | Auswählen | Auswahl-/Defaultspalte, Freigabe offen | — |
+| T11.PE | Biomasse | Biomasse | Preset, ungeprüft | — |
+| T11.PF | Erdgas | Erdgas | Preset, ungeprüft | — |
+| T11.PG | Fernwärme Wien | Fernwärme Wien | Preset, ungeprüft | — |
+| T11.PH | Wärmepumpe (Erdwärme) | Wärmepumpe (Erdwärme) | Preset, ungeprüft | — |
+| T11.PI | Wärmepumpe (Grundwasser) | Wärmepumpe (Grundwasser) | Preset, ungeprüft | — |
+| T11.PJ | Wärmepumpe (Luft-Wasser) | Wärmepumpe (Luft-Wasser) | Preset, ungeprüft | — |
+| T11.PK | Klimasplitgerät | Klimasplitgerät | Preset, ungeprüft | — |
+| T11.PL | Ölheizung | Ölheizung | Preset, ungeprüft | — |
+| T11.PM | Strom direkt (z.B. Infrarotpaneele) | Strom direkt | Preset, ungeprüft | — |
+
+
+### Werte zur fachlichen Prüfung
+
+Zeilen-IDs verweisen auf den Parameterkatalog oben; Preset-IDs auf die Excel-Spalten. **— bedeutet leer im Export, nicht null.** Zahlen bleiben in der ausgewiesenen Schemaeinheit; Verhältniswerte werden nicht stillschweigend zu Prozentwerten umgerechnet.
+
+| Parameter | T11.PD: DEFAULT | T11.PE: Biomasse | T11.PF: Erdgas | T11.PG: Fernwärme Wien |
+|---|---|---|---|---|
+| T11.R04: Thermische Leistung HZEL1 | 0 | 0 | 0 | 0 |
+| T11.R05: Wirkungsgrad Erzeugung HZEL1 | 0 | 0 | 0 | 0 |
+| T11.R06: Verteilverluste HZEL1 | 0 | 0 | 0 | 0 |
+| T11.R07: Hilfsstromanteil HZEL1 | 0 | 0 | 0 | 0 |
+| T11.R08: Energieträger HZTH2 | Erdgas | Biomasse fest | Erdgas | Fernwärme Wien |
+| T11.R09: Thermische Leistung HZTH2 | 150 | 150 | 150 | 150 |
+| T11.R10: Wirkungsgrad Erzeugung HZTH2 | 0,95 | 0,9 | 0,95 | 0,95 |
+| T11.R11: Verteilverluste HZTH2 | 0,05 | 0,05 | 0,05 | 0,05 |
+| T11.R12: Hilfsstromanteil HZTH2 | 0,02 | 0,02 | 0,02 | 0,02 |
+| T11.R13: Thermische Leistung HZEL3 | 0 | 0 | 0 | 0 |
+| T11.R14: Wirkungsgrad Erzeugung HZEL3 | 0 | 0 | 0 | 0 |
+| T11.R15: Verteilverluste HZEL3 | 0 | 0 | 0 | 0 |
+| T11.R16: Hilfsstromanteil HZEL3 | 0 | 0 | 0 | 0 |
+| T11.R17: Energieträger HZTH4 | — | — | — | — |
+| T11.R18: Thermische Leistung HZTH4 | 0 | 0 | 0 | 0 |
+| T11.R19: Wirkungsgrad Erzeugung HZTH4 | 0 | 0 | 0 | 0 |
+| T11.R20: Verteilverluste HZTH4 | 0 | 0 | 0 | 0 |
+| T11.R21: Hilfsstromanteil HZTH4 | 0 | 0 | 0 | 0 |
+| T11.R22: Hilfsstromanteil HZAbwärme | — | 0 | 0 | 0 |
+
+
+| Parameter | T11.PH: Wärmepumpe (Erdwärme) | T11.PI: Wärmepumpe (Grundwasser) | T11.PJ: Wärmepumpe (Luft-Wasser) | T11.PK: Klimasplitgerät |
+|---|---|---|---|---|
+| T11.R04: Thermische Leistung HZEL1 | 150 | 150 | 150 | 150 |
+| T11.R05: Wirkungsgrad Erzeugung HZEL1 | 4,5 | 5,5 | 2,8 | 2,5 |
+| T11.R06: Verteilverluste HZEL1 | 0,05 | 0,05 | 0,05 | 0,05 |
+| T11.R07: Hilfsstromanteil HZEL1 | 0,02 | 0,02 | 0,02 | 0,02 |
+| T11.R08: Energieträger HZTH2 | — | — | — | — |
+| T11.R09: Thermische Leistung HZTH2 | 0 | 0 | 0 | 0 |
+| T11.R10: Wirkungsgrad Erzeugung HZTH2 | 0 | 0 | 0 | 0 |
+| T11.R11: Verteilverluste HZTH2 | 0 | 0 | 0 | 0 |
+| T11.R12: Hilfsstromanteil HZTH2 | 0 | 0 | 0 | 0 |
+| T11.R13: Thermische Leistung HZEL3 | 0 | 0 | 0 | 0 |
+| T11.R14: Wirkungsgrad Erzeugung HZEL3 | 0 | 0 | 0 | 0 |
+| T11.R15: Verteilverluste HZEL3 | 0 | 0 | 0 | 0 |
+| T11.R16: Hilfsstromanteil HZEL3 | 0 | 0 | 0 | 0 |
+| T11.R17: Energieträger HZTH4 | — | — | — | — |
+| T11.R18: Thermische Leistung HZTH4 | 0 | 0 | 0 | 0 |
+| T11.R19: Wirkungsgrad Erzeugung HZTH4 | 0 | 0 | 0 | 0 |
+| T11.R20: Verteilverluste HZTH4 | 0 | 0 | 0 | 0 |
+| T11.R21: Hilfsstromanteil HZTH4 | 0 | 0 | 0 | 0 |
+| T11.R22: Hilfsstromanteil HZAbwärme | 0 | 0 | 0 | 0 |
+
+
+| Parameter | T11.PL: Ölheizung | T11.PM: Strom direkt (z.B. Infrarotpaneele) |
+|---|---|---|
+| T11.R04: Thermische Leistung HZEL1 | — | — |
+| T11.R05: Wirkungsgrad Erzeugung HZEL1 | — | — |
+| T11.R06: Verteilverluste HZEL1 | — | — |
+| T11.R07: Hilfsstromanteil HZEL1 | — | — |
+| T11.R08: Energieträger HZTH2 | Heizöl | — |
+| T11.R09: Thermische Leistung HZTH2 | 150 | — |
+| T11.R10: Wirkungsgrad Erzeugung HZTH2 | 0,85 | — |
+| T11.R11: Verteilverluste HZTH2 | 0,05 | — |
+| T11.R12: Hilfsstromanteil HZTH2 | 0,02 | — |
+| T11.R13: Thermische Leistung HZEL3 | 0 | — |
+| T11.R14: Wirkungsgrad Erzeugung HZEL3 | 0 | — |
+| T11.R15: Verteilverluste HZEL3 | 0 | — |
+| T11.R16: Hilfsstromanteil HZEL3 | 0 | — |
+| T11.R17: Energieträger HZTH4 | — | — |
+| T11.R18: Thermische Leistung HZTH4 | 0 | — |
+| T11.R19: Wirkungsgrad Erzeugung HZTH4 | 0 | — |
+| T11.R20: Verteilverluste HZTH4 | 0 | — |
+| T11.R21: Hilfsstromanteil HZTH4 | 0 | — |
+| T11.R22: Hilfsstromanteil HZAbwärme | 0 | — |
+
+
+### Festlegung nach Prüfung
+
+| Prüffrage | Rückmeldung |
+|---|---|
+| Fehlende / überflüssige Presets oder Parameter | offen |
+| Empfohlener Standard und zulässige Alternativen | offen |
+| Gültigkeit, Quellen und Anwendungsvoraussetzungen | offen |
+| Freigabe durch / Datum | ausständig |
+
+
+## T12: Wärme- und Kälteabgabe {#sec-preset-t12}
+
+Heiz- und Kühlleistung der Abgabesysteme einschließlich Komfort- und Temperaturgrenzen prüfen.
+
+**PEExcel-Bezug:** Schemablatt `emission_system`, Bereich `A1:I5`. Auswahlparameter: `preset_recorded_heating_emission_system`
+
+### Parameter und fachliche Quellen
+
+| Zeile | Parameter / PEExcel-Kennung | Einheit laut Schema | Fundstelle | Fachquelle / Gültigkeit |
+|---|---|---|---|---|
+| T12.R04 | spez. thermische Leistung Abgabesystem / `QHmax_room_m2` | W/m² (IN) | IN!H335 | zu ergänzen |
+| T12.R05 | spez. thermische Leistung Aufnahmesystem / `QCmax_room_m2` | W/m² (IN) | IN!H393 | zu ergänzen |
+
+
+### Presets und Varianten
+
+| Preset-ID / Excel-Spalte | Spaltenname im Schema | Anzeige | Einordnung | Anwendung laut Export |
+|---|---|---|---|---|
+| T12.PD | DEFAULT | Auswählen | Auswahl-/Defaultspalte, Freigabe offen | — |
+| T12.PE | Bauteilaktivierung | Bauteilaktivierung | Preset, ungeprüft | — |
+| T12.PF | Fußbodenheizung | Fußbodenheizung | Preset, ungeprüft | — |
+| T12.PG | Hochtemperatur-Heizkörper | Hochtemperatur-Heizkörper | Preset, ungeprüft | — |
+| T12.PH | Kühlpaneele | Kühlpaneele | Preset, ungeprüft | — |
+| T12.PI | NT-WP-Heizkörper | NT-WP-Heizkörper | Preset, ungeprüft | — |
+
+
+### Werte zur fachlichen Prüfung
+
+Zeilen-IDs verweisen auf den Parameterkatalog oben; Preset-IDs auf die Excel-Spalten. **— bedeutet leer im Export, nicht null.** Zahlen bleiben in der ausgewiesenen Schemaeinheit; Verhältniswerte werden nicht stillschweigend zu Prozentwerten umgerechnet.
+
+| Parameter | T12.PD: DEFAULT | T12.PE: Bauteilaktivierung | T12.PF: Fußbodenheizung | T12.PG: Hochtemperatur-Heizkörper |
+|---|---|---|---|---|
+| T12.R04: spez. thermische Leistung Abgabesystem | 60 | 25 | 40 | 125 |
+| T12.R05: spez. thermische Leistung Aufnahmesystem | 15 | 20 | 30 | 15 |
+
+
+| Parameter | T12.PH: Kühlpaneele | T12.PI: NT-WP-Heizkörper |
+|---|---|---|
+| T12.R04: spez. thermische Leistung Abgabesystem | — | 60 |
+| T12.R05: spez. thermische Leistung Aufnahmesystem | 15 | 15 |
+
+
+### Festlegung nach Prüfung
+
+| Prüffrage | Rückmeldung |
+|---|---|
+| Fehlende / überflüssige Presets oder Parameter | offen |
+| Empfohlener Standard und zulässige Alternativen | offen |
+| Gültigkeit, Quellen und Anwendungsvoraussetzungen | offen |
+| Freigabe durch / Datum | ausständig |
+
+
+## T13: Heizperioden {#sec-preset-t13}
+
+Monatliche Freigabe und Ganzjahresbetrieb von tatsächlich auftretendem Heizbedarf unterscheiden.
+
+**PEExcel-Bezug:** Schemablatt `heating_period`, Bereich `A1:H15`. Auswahlparameter: `preset_recorded_heating_period`
+
+### Parameter und fachliche Quellen
+
+| Zeile | Parameter / PEExcel-Kennung | Einheit laut Schema | Fundstelle | Fachquelle / Gültigkeit |
+|---|---|---|---|---|
+| T13.R04 | Heizperiode Jänner / `heating_month1` | bool (IN) | IN!H322 | zu ergänzen |
+| T13.R05 | Heizperiode Februar / `heating_month2` | bool (IN) | IN!H323 | zu ergänzen |
+| T13.R06 | Heizperiode März / `heating_month3` | bool (IN) | IN!H324 | zu ergänzen |
+| T13.R07 | Heizperiode April / `heating_month4` | bool (IN) | IN!H325 | zu ergänzen |
+| T13.R08 | Heizperiode Mai / `heating_month5` | bool (IN) | IN!H326 | zu ergänzen |
+| T13.R09 | Heizperiode Juni / `heating_month6` | bool (IN) | IN!H327 | zu ergänzen |
+| T13.R10 | Heizperiode Juli / `heating_month7` | bool (IN) | IN!H328 | zu ergänzen |
+| T13.R11 | Heizperiode August / `heating_month8` | bool (IN) | IN!H329 | zu ergänzen |
+| T13.R12 | Heizperiode September / `heating_month9` | bool (IN) | IN!H330 | zu ergänzen |
+| T13.R13 | Heizperiode Oktober / `heating_month10` | bool (IN) | IN!H331 | zu ergänzen |
+| T13.R14 | Heizperiode November / `heating_month11` | bool (IN) | IN!H332 | zu ergänzen |
+| T13.R15 | Heizperiode Dezember / `heating_month12` | bool (IN) | IN!H333 | zu ergänzen |
+
+
+### Presets und Varianten
+
+| Preset-ID / Excel-Spalte | Spaltenname im Schema | Anzeige | Einordnung | Anwendung laut Export |
+|---|---|---|---|---|
+| T13.PD | DEFAULT | Auswählen | Auswahl-/Defaultspalte, Freigabe offen | — |
+| T13.PE | Keine | Keine | Preset, ungeprüft | Heizsystem wird nie verwendet |
+| T13.PF | Immer | Immer | Preset, ungeprüft | Heizung wird das ganze Jahr über zur Aufrechterhaltung der Mindestraumtemperatur verwendet |
+| T13.PG | Oktober bis März | Oktober bis März | Preset, ungeprüft | Oktober bis März |
+| T13.PH | September bis April | September bis April | Preset, ungeprüft | — |
+
+
+### Werte zur fachlichen Prüfung
+
+Zeilen-IDs verweisen auf den Parameterkatalog oben; Preset-IDs auf die Excel-Spalten. **— bedeutet leer im Export, nicht null.** Zahlen bleiben in der ausgewiesenen Schemaeinheit; Verhältniswerte werden nicht stillschweigend zu Prozentwerten umgerechnet.
+
+| Parameter | T13.PD: DEFAULT | T13.PE: Keine | T13.PF: Immer | T13.PG: Oktober bis März |
+|---|---|---|---|---|
+| T13.R04: Heizperiode Jänner | ja | nein | ja | ja |
+| T13.R05: Heizperiode Februar | ja | nein | ja | ja |
+| T13.R06: Heizperiode März | ja | nein | ja | ja |
+| T13.R07: Heizperiode April | ja | nein | ja | nein |
+| T13.R08: Heizperiode Mai | nein | nein | ja | nein |
+| T13.R09: Heizperiode Juni | nein | nein | ja | nein |
+| T13.R10: Heizperiode Juli | nein | nein | ja | nein |
+| T13.R11: Heizperiode August | nein | nein | ja | nein |
+| T13.R12: Heizperiode September | ja | nein | ja | nein |
+| T13.R13: Heizperiode Oktober | ja | nein | ja | ja |
+| T13.R14: Heizperiode November | ja | nein | ja | ja |
+| T13.R15: Heizperiode Dezember | ja | nein | ja | ja |
+
+
+| Parameter | T13.PH: September bis April |
+|---|---|
+| T13.R04: Heizperiode Jänner | ja |
+| T13.R05: Heizperiode Februar | ja |
+| T13.R06: Heizperiode März | ja |
+| T13.R07: Heizperiode April | ja |
+| T13.R08: Heizperiode Mai | nein |
+| T13.R09: Heizperiode Juni | nein |
+| T13.R10: Heizperiode Juli | nein |
+| T13.R11: Heizperiode August | nein |
+| T13.R12: Heizperiode September | ja |
+| T13.R13: Heizperiode Oktober | ja |
+| T13.R14: Heizperiode November | ja |
+| T13.R15: Heizperiode Dezember | ja |
+
+
+### Festlegung nach Prüfung
+
+| Prüffrage | Rückmeldung |
+|---|---|
+| Fehlende / überflüssige Presets oder Parameter | offen |
+| Empfohlener Standard und zulässige Alternativen | offen |
+| Gültigkeit, Quellen und Anwendungsvoraussetzungen | offen |
+| Freigabe durch / Datum | ausständig |
+
+
+## T14: Kälteerzeugung {#sec-preset-t14}
+
+Freecooling, aktive Kälte, Leistungsbezüge und Hilfsenergie getrennt prüfen.
+
+**PEExcel-Bezug:** Schemablatt `cooling_system`, Bereich `A1:L18`. Auswahlparameter: `preset_recorded_cooling_system`
+
+### Parameter und fachliche Quellen
+
+| Zeile | Parameter / PEExcel-Kennung | Einheit laut Schema | Fundstelle | Fachquelle / Gültigkeit |
+|---|---|---|---|---|
+| T14.R04 | Thermische Leistung Freecooling / `QCmax_freecooling` | W/m² (IN) | IN!H396 | zu ergänzen |
+| T14.R05 | Hilfsstromanteil Freecooling / `QC_aux_fc` | ratio (IN) | IN!H410 | zu ergänzen |
+| T14.R06 | Thermische Leistung 1 EL / `QCmax_1el` | W/m² (IN) | IN!H397 | zu ergänzen |
+| T14.R07 | Wirkungsgrad Erzeugung 1 El / `cool_cop_1el` | ratio (IN) | IN!H403 | zu ergänzen |
+| T14.R08 | Verteilverluste 1 El / `QC_distr_losses_1el` | ratio (IN) | IN!H400 | zu ergänzen |
+| T14.R09 | Hilfsstromanteil KLEL1 / `QC_aux_1el` | ratio (IN) | IN!H411 | zu ergänzen |
+| T14.R10 | Energieträger System 2 Thermisch / `cool_th2_carrier_type` | offen | IN!H414 | zu ergänzen |
+| T14.R11 | Thermische Leistung 2 TH / `QCmax_2th` | W/m² (IN) | IN!H398 | zu ergänzen |
+| T14.R12 | Wirkungsgrad Erzeugung 2 TH / `cool_cop_2th` | ratio (IN) | IN!H404 | zu ergänzen |
+| T14.R13 | Verteilverluste 2th / `QC_distr_losses_2th` | ratio (IN) | IN!H401 | zu ergänzen |
+| T14.R14 | Hilfsstromanteil KLTh2 / `QC_aux_2th` | ratio (IN) | IN!H412 | zu ergänzen |
+| T14.R15 | Thermische Leistung 3 EL / `QCmax_3el` | W/m² (IN) | IN!H399 | zu ergänzen |
+| T14.R16 | Wirkungsgrad Erzeugung 3 EL / `cool_cop_3el` | ratio (IN) | IN!H405 | zu ergänzen |
+| T14.R17 | Verteilverluste 3el / `QC_distr_losses_3el` | ratio (IN) | IN!H402 | zu ergänzen |
+| T14.R18 | Hilfsstromanteil KLEL3 / `QC_aux_3el` | ratio (IN) | IN!H413 | zu ergänzen |
+
+
+### Presets und Varianten
+
+| Preset-ID / Excel-Spalte | Spaltenname im Schema | Anzeige | Einordnung | Anwendung laut Export |
+|---|---|---|---|---|
+| T14.PD | DEFAULT | Auswählen | Auswahl-/Defaultspalte, Freigabe offen | — |
+| T14.PE | Freecooling | Freecooling | Preset, ungeprüft | — |
+| T14.PF | Fernkälte | Fernkälte | Preset, ungeprüft | — |
+| T14.PG | Klimaanlage (Luft-Luft) | Klimaanlage (Luft-Luft) | Preset, ungeprüft | — |
+| T14.PH | KKM zentral | KKM zentral | Preset, ungeprüft | — |
+| T14.PI | Mono-/Mulit-Splitgerät, Einzelraum | Mono-/Mulit-Splitgerät, Einzelraum | Preset, ungeprüft | — |
+| T14.PJ | Wärmepumpe mit Grundwasser oder Erdwärme | Wärmepumpe mit Grundwasser oder Erdwärme | Preset, ungeprüft | — |
+| T14.PK | WP reversibel - FreeCooling Anteil | WP reversibel - FreeCooling Anteil | Preset, ungeprüft | — |
+| T14.PL | WP reversibel | WP reversibel | Preset, ungeprüft | — |
+
+
+### Werte zur fachlichen Prüfung
+
+Zeilen-IDs verweisen auf den Parameterkatalog oben; Preset-IDs auf die Excel-Spalten. **— bedeutet leer im Export, nicht null.** Zahlen bleiben in der ausgewiesenen Schemaeinheit; Verhältniswerte werden nicht stillschweigend zu Prozentwerten umgerechnet.
+
+| Parameter | T14.PD: DEFAULT | T14.PE: Freecooling | T14.PF: Fernkälte | T14.PG: Klimaanlage (Luft-Luft) |
+|---|---|---|---|---|
+| T14.R04: Thermische Leistung Freecooling | 0 | 30 | 0 | 0 |
+| T14.R05: Hilfsstromanteil Freecooling | 0 | 0,02 | 0 | 0 |
+| T14.R06: Thermische Leistung 1 EL | 20 | 0 | 0 | 20 |
+| T14.R07: Wirkungsgrad Erzeugung 1 El | 4 | 0 | 0 | 4 |
+| T14.R08: Verteilverluste 1 El | 0,01 | 0 | 0 | 0,01 |
+| T14.R09: Hilfsstromanteil KLEL1 | 0,05 | 0 | 0 | 0,05 |
+| T14.R10: Energieträger System 2 Thermisch | — | — | Fernkälte Wien | — |
+| T14.R11: Thermische Leistung 2 TH | 0 | 0 | 20 | 0 |
+| T14.R12: Wirkungsgrad Erzeugung 2 TH | 0 | 0 | 0,95 | 0 |
+| T14.R13: Verteilverluste 2th | 0 | 0 | 0,05 | 0 |
+| T14.R14: Hilfsstromanteil KLTh2 | 0 | 0 | 0,05 | 0 |
+| T14.R15: Thermische Leistung 3 EL | 0 | 0 | 0 | 0 |
+| T14.R16: Wirkungsgrad Erzeugung 3 EL | 0 | 0 | 0 | 0 |
+| T14.R17: Verteilverluste 3el | 0 | 0 | 0 | 0 |
+| T14.R18: Hilfsstromanteil KLEL3 | 0 | 0 | 0 | 0 |
+
+
+| Parameter | T14.PH: KKM zentral | T14.PI: Mono-/Mulit-Splitgerät, Einzelraum | T14.PJ: Wärmepumpe mit Grundwasser oder Erdwärme | T14.PK: WP reversibel - FreeCooling Anteil |
+|---|---|---|---|---|
+| T14.R04: Thermische Leistung Freecooling | 0 | 0 | 0 | 30 |
+| T14.R05: Hilfsstromanteil Freecooling | 0 | 0 | 0 | 0,02 |
+| T14.R06: Thermische Leistung 1 EL | 40 | 40 | 125 | 10 |
+| T14.R07: Wirkungsgrad Erzeugung 1 El | 3 | 2,5 | 6,5 | 15 |
+| T14.R08: Verteilverluste 1 El | 0 | 0 | 0,02 | 0 |
+| T14.R09: Hilfsstromanteil KLEL1 | 0,02 | 0 | 0,05 | 0,02 |
+| T14.R10: Energieträger System 2 Thermisch | — | — | — | — |
+| T14.R11: Thermische Leistung 2 TH | 0 | 0 | 0 | 0 |
+| T14.R12: Wirkungsgrad Erzeugung 2 TH | 0 | 0 | 0 | 0 |
+| T14.R13: Verteilverluste 2th | 0 | 0 | 0 | 0 |
+| T14.R14: Hilfsstromanteil KLTh2 | 0 | 0 | 0 | 0 |
+| T14.R15: Thermische Leistung 3 EL | 0 | 0 | 0 | 0 |
+| T14.R16: Wirkungsgrad Erzeugung 3 EL | 0 | 0 | 0 | 0 |
+| T14.R17: Verteilverluste 3el | 0 | 0 | 0 | 0 |
+| T14.R18: Hilfsstromanteil KLEL3 | 0 | 0 | 0 | 0 |
+
+
+| Parameter | T14.PL: WP reversibel |
+|---|---|
+| T14.R04: Thermische Leistung Freecooling | 0 |
+| T14.R05: Hilfsstromanteil Freecooling | 0 |
+| T14.R06: Thermische Leistung 1 EL | 40 |
+| T14.R07: Wirkungsgrad Erzeugung 1 El | 6 |
+| T14.R08: Verteilverluste 1 El | 0 |
+| T14.R09: Hilfsstromanteil KLEL1 | 0,02 |
+| T14.R10: Energieträger System 2 Thermisch | — |
+| T14.R11: Thermische Leistung 2 TH | 0 |
+| T14.R12: Wirkungsgrad Erzeugung 2 TH | 0 |
+| T14.R13: Verteilverluste 2th | 0 |
+| T14.R14: Hilfsstromanteil KLTh2 | 0 |
+| T14.R15: Thermische Leistung 3 EL | 0 |
+| T14.R16: Wirkungsgrad Erzeugung 3 EL | 0 |
+| T14.R17: Verteilverluste 3el | 0 |
+| T14.R18: Hilfsstromanteil KLEL3 | 0 |
+
+
+### Festlegung nach Prüfung
+
+| Prüffrage | Rückmeldung |
+|---|---|
+| Fehlende / überflüssige Presets oder Parameter | offen |
+| Empfohlener Standard und zulässige Alternativen | offen |
+| Gültigkeit, Quellen und Anwendungsvoraussetzungen | offen |
+| Freigabe durch / Datum | ausständig |
+
+
+## T15: Anteile aktiv gekühlter Nutzungen {#sec-preset-t15}
+
+Gekühlte Flächenanteile mit dem Nutzungskonzept und Zwei-Zonen-Modell abgleichen.
+
+**PEExcel-Bezug:** Schemablatt `cooling_modes`, Bereich `A1:G10`. Auswahlparameter: `preset_recorded_cooling_modes`
+
+### Parameter und fachliche Quellen
+
+| Zeile | Parameter / PEExcel-Kennung | Einheit laut Schema | Fundstelle | Fachquelle / Gültigkeit |
+|---|---|---|---|---|
+| T15.R04 | Aktive Kühlung Anteil Wohnen / `cool_share_residential` | ratio (IN) | IN!H376 | zu ergänzen |
+| T15.R05 | Aktive Kühlung Anteil Büro / `cool_share_office` | ratio (IN) | IN!H377 | zu ergänzen |
+| T15.R06 | Aktive Kühlung Anteil Schule sekundär / `cool_share_schoolsec` | ratio (IN) | IN!H378 | zu ergänzen |
+| T15.R07 | Aktive Kühlung Anteil Schule primär / `cool_share_schoolprim` | ratio (IN) | IN!H379 | zu ergänzen |
+| T15.R08 | Aktive Kühlung Anteil Handel Lebensmittel / `cool_share_retailfood` | ratio (IN) | IN!H380 | zu ergänzen |
+| T15.R09 | Aktive Kühlung Anteil Handel Sonstige / `cool_share_retailother` | ratio (IN) | IN!H381 | zu ergänzen |
+| T15.R10 | Aktive Kühlung Anteil Sonstige Nutzung / `cool_share_other` | ratio (IN) | IN!H382 | zu ergänzen |
+
+
+### Presets und Varianten
+
+| Preset-ID / Excel-Spalte | Spaltenname im Schema | Anzeige | Einordnung | Anwendung laut Export |
+|---|---|---|---|---|
+| T15.PD | Default | Auswählen | Auswahl-/Defaultspalte, Freigabe offen | — |
+| T15.PE | Keine | Keine Kühlung im Quartier | Preset, ungeprüft | — |
+| T15.PF | Nichtwohnen | Kühlung in Nicht-Wohn-Nutzungen | Preset, ungeprüft | — |
+| T15.PG | Alle | Aktive Kühlung in allen Nutzungen | Preset, ungeprüft | — |
+
+
+### Werte zur fachlichen Prüfung
+
+Zeilen-IDs verweisen auf den Parameterkatalog oben; Preset-IDs auf die Excel-Spalten. **— bedeutet leer im Export, nicht null.** Zahlen bleiben in der ausgewiesenen Schemaeinheit; Verhältniswerte werden nicht stillschweigend zu Prozentwerten umgerechnet.
+
+| Parameter | T15.PD: Default | T15.PE: Keine | T15.PF: Nichtwohnen | T15.PG: Alle |
+|---|---|---|---|---|
+| T15.R04: Aktive Kühlung Anteil Wohnen | 0 | 0 | 0 | 1 |
+| T15.R05: Aktive Kühlung Anteil Büro | 1 | 0 | 1 | 1 |
+| T15.R06: Aktive Kühlung Anteil Schule sekundär | 1 | 0 | 1 | 1 |
+| T15.R07: Aktive Kühlung Anteil Schule primär | 1 | 0 | 1 | 1 |
+| T15.R08: Aktive Kühlung Anteil Handel Lebensmittel | 1 | 0 | 1 | 1 |
+| T15.R09: Aktive Kühlung Anteil Handel Sonstige | 1 | 0 | 1 | 1 |
+| T15.R10: Aktive Kühlung Anteil Sonstige Nutzung | 1 | 0 | 1 | 1 |
+
+
+### Festlegung nach Prüfung
+
+| Prüffrage | Rückmeldung |
+|---|---|
+| Fehlende / überflüssige Presets oder Parameter | offen |
+| Empfohlener Standard und zulässige Alternativen | offen |
+| Gültigkeit, Quellen und Anwendungsvoraussetzungen | offen |
+| Freigabe durch / Datum | ausständig |
+
+
+## T16: Kühlperioden {#sec-preset-t16}
+
+Monatliche Freigabe, Komfortanforderung und tatsächlichen Bedarf unterscheiden.
+
+**PEExcel-Bezug:** Schemablatt `cooling_period`, Bereich `A1:H15`. Auswahlparameter: `preset_recorded_cooling_period`
+
+### Parameter und fachliche Quellen
+
+| Zeile | Parameter / PEExcel-Kennung | Einheit laut Schema | Fundstelle | Fachquelle / Gültigkeit |
+|---|---|---|---|---|
+| T16.R04 | Kühlperiode Jänner / `cooling_month1` | Bool (IN) | IN!H363 | zu ergänzen |
+| T16.R05 | Kühlperiode Februar / `cooling_month2` | Bool (IN) | IN!H364 | zu ergänzen |
+| T16.R06 | Kühlperiode März / `cooling_month3` | Bool (IN) | IN!H365 | zu ergänzen |
+| T16.R07 | Kühlperiode April / `cooling_month4` | Bool (IN) | IN!H366 | zu ergänzen |
+| T16.R08 | Kühlperiode Mai / `cooling_month5` | Bool (IN) | IN!H367 | zu ergänzen |
+| T16.R09 | Kühlperiode Juni / `cooling_month6` | Bool (IN) | IN!H368 | zu ergänzen |
+| T16.R10 | Kühlperiode Juli / `cooling_month7` | Bool (IN) | IN!H369 | zu ergänzen |
+| T16.R11 | Kühlperiode August / `cooling_month8` | Bool (IN) | IN!H370 | zu ergänzen |
+| T16.R12 | Kühlperiode September / `cooling_month9` | Bool (IN) | IN!H371 | zu ergänzen |
+| T16.R13 | Kühlperiode Oktober / `cooling_month10` | Bool (IN) | IN!H372 | zu ergänzen |
+| T16.R14 | Kühlperiode November / `cooling_month11` | Bool (IN) | IN!H373 | zu ergänzen |
+| T16.R15 | Kühlperiode Dezember / `cooling_month12` | Bool (IN) | IN!H374 | zu ergänzen |
+
+
+### Presets und Varianten
+
+| Preset-ID / Excel-Spalte | Spaltenname im Schema | Anzeige | Einordnung | Anwendung laut Export |
+|---|---|---|---|---|
+| T16.PD | DEFAULT | — | Auswahl-/Defaultspalte, Freigabe offen | — |
+| T16.PE | Keine | Keine | Preset, ungeprüft | Keine aktive Kühlung |
+| T16.PF | Immer | Immer | Preset, ungeprüft | Kühlung wird das ganze Jahr über zur Aufrechterhaltung der Maximaltemperatur verwendet |
+| T16.PG | Mai bis September | Mai bis September | Preset, ungeprüft | — |
+| T16.PH | April bis Oktober | April bis Oktober | Preset, ungeprüft | — |
+
+
+### Werte zur fachlichen Prüfung
+
+Zeilen-IDs verweisen auf den Parameterkatalog oben; Preset-IDs auf die Excel-Spalten. **— bedeutet leer im Export, nicht null.** Zahlen bleiben in der ausgewiesenen Schemaeinheit; Verhältniswerte werden nicht stillschweigend zu Prozentwerten umgerechnet.
+
+| Parameter | T16.PD: DEFAULT | T16.PE: Keine | T16.PF: Immer | T16.PG: Mai bis September |
+|---|---|---|---|---|
+| T16.R04: Kühlperiode Jänner | nein | nein | ja | nein |
+| T16.R05: Kühlperiode Februar | nein | nein | ja | nein |
+| T16.R06: Kühlperiode März | nein | nein | ja | nein |
+| T16.R07: Kühlperiode April | ja | nein | ja | nein |
+| T16.R08: Kühlperiode Mai | ja | nein | ja | ja |
+| T16.R09: Kühlperiode Juni | ja | nein | ja | ja |
+| T16.R10: Kühlperiode Juli | ja | nein | ja | ja |
+| T16.R11: Kühlperiode August | ja | nein | ja | ja |
+| T16.R12: Kühlperiode September | ja | nein | ja | ja |
+| T16.R13: Kühlperiode Oktober | ja | nein | ja | nein |
+| T16.R14: Kühlperiode November | nein | nein | ja | nein |
+| T16.R15: Kühlperiode Dezember | nein | nein | ja | nein |
+
+
+| Parameter | T16.PH: April bis Oktober |
+|---|---|
+| T16.R04: Kühlperiode Jänner | nein |
+| T16.R05: Kühlperiode Februar | nein |
+| T16.R06: Kühlperiode März | nein |
+| T16.R07: Kühlperiode April | ja |
+| T16.R08: Kühlperiode Mai | ja |
+| T16.R09: Kühlperiode Juni | ja |
+| T16.R10: Kühlperiode Juli | ja |
+| T16.R11: Kühlperiode August | ja |
+| T16.R12: Kühlperiode September | ja |
+| T16.R13: Kühlperiode Oktober | ja |
+| T16.R14: Kühlperiode November | nein |
+| T16.R15: Kühlperiode Dezember | nein |
+
+
+### Festlegung nach Prüfung
+
+| Prüffrage | Rückmeldung |
+|---|---|
+| Fehlende / überflüssige Presets oder Parameter | offen |
+| Empfohlener Standard und zulässige Alternativen | offen |
+| Gültigkeit, Quellen und Anwendungsvoraussetzungen | offen |
+| Freigabe durch / Datum | ausständig |
+
+
+## T17: Warmwasserbereitung und Verteilung {#sec-preset-t17}
+
+Systemanteile, Speicher- und Verteilverluste sowie Temperaturniveau gemeinsam prüfen.
+
+**PEExcel-Bezug:** Schemablatt `dhw_system`, Bereich `A1:K21`. Auswahlparameter: `preset_recorded_dhw_system`
+
+### Parameter und fachliche Quellen
+
+| Zeile | Parameter / PEExcel-Kennung | Einheit laut Schema | Fundstelle | Fachquelle / Gültigkeit |
+|---|---|---|---|---|
+| T17.R04 | Warmwasser System 1 Energieträger / `DHW_carriertype_1` | - (Preset) | IN!H446 | zu ergänzen |
+| T17.R05 | Warmwasser System 1 Wirkungsgrad / `DHW_1_efficiency` | kWhHE/kWhEE (Preset) | IN!H450 | zu ergänzen |
+| T17.R06 | Warmwasser Verluste: Wirkungsgrad Verteilsystem 1 / `DHW_efficiency_distribution_1` | offen | IN!H442 | zu ergänzen |
+| T17.R07 | Warmwasser Verluste: Speicher1 / `DHW_losses_1` | 1/h (Preset) | IN!H440 | zu ergänzen |
+| T17.R08 | WW-System 1 Hilfsstromanteil / `DHW_1_el_aux` | offen | IN!H454 | zu ergänzen |
+| T17.R09 | Warmwasser System 2 Energieträger / `DHW_carriertype_2` | - (Preset) | IN!H448 | zu ergänzen |
+| T17.R10 | Warmwasser System 2 Wirkungsgrad / `DHW_2_efficiency` | kWhHE/kWhEE (Preset) | IN!H451 | zu ergänzen |
+| T17.R11 | Warmwasser Verluste: Wirkungsgrad Verteilsystem 2 / `DHW_efficiency_distribution_2` | offen | IN!H443 | zu ergänzen |
+| T17.R12 | Warmwasser Verluste: Speicher2 / `DHW_losses_2` | 1/h (Preset) | IN!H441 | zu ergänzen |
+| T17.R13 | WW-System 2 Hilfsstromanteil / `DHW_2_el_aux` | offen | IN!H455 | zu ergänzen |
+| T17.R14 | Warmwasser System 1 Anteil Wohnen / `DHW_1_share_residential` | ratio (Preset) | IN!H420 | zu ergänzen |
+| T17.R15 | Warmwasser System 1 Anteil Büro / `DHW_1_share_office` | ratio (Preset) | IN!H421 | zu ergänzen |
+| T17.R16 | Warmwasser System 1 Anteil Schule sekundär / `DHW_1_share_schoolsec` | ratio (Preset) | IN!H422 | zu ergänzen |
+| T17.R17 | Warmwasser System 1 Anteil Schule primär / `DHW_1_share_schoolprim` | ratio (Preset) | IN!H423 | zu ergänzen |
+| T17.R18 | Warmwasser System 1 Anteil Handel Lebensmittel / `DHW_1_share_retailfood` | ratio (Preset) | IN!H424 | zu ergänzen |
+| T17.R19 | Warmwasser System 1 Anteil Handel Sonstige / `DHW_1_share_retailother` | ratio (Preset) | IN!H425 | zu ergänzen |
+| T17.R20 | Warmwasser System 1 Anteil Sonstige Nutzung / `DHW_1_share_other` | ratio (Preset) | IN!H426 | zu ergänzen |
+| T17.R21 | Temperatur Minimum / `DHW_Tmin` | °C (Preset) | IN!H416 | zu ergänzen |
+
+
+### Presets und Varianten
+
+| Preset-ID / Excel-Spalte | Spaltenname im Schema | Anzeige | Einordnung | Anwendung laut Export |
+|---|---|---|---|---|
+| T17.PD | DEFAULT | Auswählen | Auswahl-/Defaultspalte, Freigabe offen | — |
+| T17.PE | Gas dezentral | Therme (Erdgas) | Preset, ungeprüft | — |
+| T17.PF | Gas Zentral | Zentral (Gas) mit Zirkulationsleitungen | Preset, ungeprüft | — |
+| T17.PG | Direkt Elektrisch | Direktelektrisch (Untertisch-Geräte) | Preset, ungeprüft | — |
+| T17.PH | Fernwärme | Fernwärme | Preset, ungeprüft | — |
+| T17.PI | Wärmepumpe dezentral | Wärmepumpe dezentral | Preset, ungeprüft | — |
+| T17.PJ | zentrale WP | Wärmepumpe zentral | Preset, ungeprüft | — |
+| T17.PK | Biomasse | Biomasse | Preset, ungeprüft | — |
+
+
+### Werte zur fachlichen Prüfung
+
+Zeilen-IDs verweisen auf den Parameterkatalog oben; Preset-IDs auf die Excel-Spalten. **— bedeutet leer im Export, nicht null.** Zahlen bleiben in der ausgewiesenen Schemaeinheit; Verhältniswerte werden nicht stillschweigend zu Prozentwerten umgerechnet.
+
+| Parameter | T17.PD: DEFAULT | T17.PE: Gas dezentral | T17.PF: Gas Zentral | T17.PG: Direkt Elektrisch |
+|---|---|---|---|---|
+| T17.R04: Warmwasser System 1 Energieträger | Erdgas | Erdgas | Erdgas | Strom |
+| T17.R05: Warmwasser System 1 Wirkungsgrad | 0,9 | 0,9 | 0,9 | 1 |
+| T17.R06: Warmwasser Verluste: Wirkungsgrad Verteilsystem 1 | 0,95 | 0,95 | 0,6 | 1 |
+| T17.R07: Warmwasser Verluste: Speicher1 | 0,005 | 0,005 | 0,005 | 0,005 |
+| T17.R08: WW-System 1 Hilfsstromanteil | 0,02 | 0,02 | 0,05 | 0,02 |
+| T17.R09: Warmwasser System 2 Energieträger | — | — | — | — |
+| T17.R10: Warmwasser System 2 Wirkungsgrad | — | — | — | — |
+| T17.R11: Warmwasser Verluste: Wirkungsgrad Verteilsystem 2 | — | — | — | — |
+| T17.R12: Warmwasser Verluste: Speicher2 | — | — | — | — |
+| T17.R13: WW-System 2 Hilfsstromanteil | — | — | — | — |
+| T17.R14: Warmwasser System 1 Anteil Wohnen | 1 | 1 | 1 | 1 |
+| T17.R15: Warmwasser System 1 Anteil Büro | 1 | 1 | 1 | 1 |
+| T17.R16: Warmwasser System 1 Anteil Schule sekundär | 1 | 1 | 1 | 1 |
+| T17.R17: Warmwasser System 1 Anteil Schule primär | 1 | 1 | 1 | 1 |
+| T17.R18: Warmwasser System 1 Anteil Handel Lebensmittel | 1 | 1 | 1 | 1 |
+| T17.R19: Warmwasser System 1 Anteil Handel Sonstige | 1 | 1 | 1 | 1 |
+| T17.R20: Warmwasser System 1 Anteil Sonstige Nutzung | 1 | 1 | 1 | 1 |
+| T17.R21: Temperatur Minimum | 60 | 60 | 60 | 60 |
+
+
+| Parameter | T17.PH: Fernwärme | T17.PI: Wärmepumpe dezentral | T17.PJ: zentrale WP | T17.PK: Biomasse |
+|---|---|---|---|---|
+| T17.R04: Warmwasser System 1 Energieträger | Fernwärme Wien | Strom | Strom | Biomasse fest |
+| T17.R05: Warmwasser System 1 Wirkungsgrad | 0,9 | 3 | 3 | 0,9 |
+| T17.R06: Warmwasser Verluste: Wirkungsgrad Verteilsystem 1 | 0,9 | 0,95 | 0,6 | 0,9 |
+| T17.R07: Warmwasser Verluste: Speicher1 | 0,005 | 0,005 | 0,005 | 0,005 |
+| T17.R08: WW-System 1 Hilfsstromanteil | 0,02 | 0,02 | 0,05 | 0,02 |
+| T17.R09: Warmwasser System 2 Energieträger | — | — | — | — |
+| T17.R10: Warmwasser System 2 Wirkungsgrad | — | — | — | — |
+| T17.R11: Warmwasser Verluste: Wirkungsgrad Verteilsystem 2 | — | — | — | — |
+| T17.R12: Warmwasser Verluste: Speicher2 | — | — | — | — |
+| T17.R13: WW-System 2 Hilfsstromanteil | — | — | — | — |
+| T17.R14: Warmwasser System 1 Anteil Wohnen | 1 | 1 | 1 | 1 |
+| T17.R15: Warmwasser System 1 Anteil Büro | 1 | 1 | 1 | 1 |
+| T17.R16: Warmwasser System 1 Anteil Schule sekundär | 1 | 1 | 1 | 1 |
+| T17.R17: Warmwasser System 1 Anteil Schule primär | 1 | 1 | 1 | 1 |
+| T17.R18: Warmwasser System 1 Anteil Handel Lebensmittel | 1 | 1 | 1 | 1 |
+| T17.R19: Warmwasser System 1 Anteil Handel Sonstige | 1 | 1 | 1 | 1 |
+| T17.R20: Warmwasser System 1 Anteil Sonstige Nutzung | 1 | 1 | 1 | 1 |
+| T17.R21: Temperatur Minimum | 60 | 60 | 60 | 60 |
+
+
+### Festlegung nach Prüfung
+
+| Prüffrage | Rückmeldung |
+|---|---|
+| Fehlende / überflüssige Presets oder Parameter | offen |
+| Empfohlener Standard und zulässige Alternativen | offen |
+| Gültigkeit, Quellen und Anwendungsvoraussetzungen | offen |
+| Freigabe durch / Datum | ausständig |
+
+
+## T18: Lüftungstechnik und Wärmerückgewinnung {#sec-preset-t18}
+
+Lüfterstrom-Skalierung, Wirkungsgrade und Sommerbetrieb prüfen; Skalierungsfaktor ist kein absoluter Strombedarf.
+
+**PEExcel-Bezug:** Schemablatt `ventilation_system`, Bereich `A1:H24`. Auswahlparameter: `preset_recorded_ventilation_system`
+
+### Parameter und fachliche Quellen
+
+| Zeile | Parameter / PEExcel-Kennung | Einheit laut Schema | Fundstelle | Fachquelle / Gültigkeit |
+|---|---|---|---|---|
+| T18.R04 | Lüfterstrom mech. Wohnen / `Ev_scale_residential` | Anteil (IN) | IN!H227 | zu ergänzen |
+| T18.R05 | Lüfterstrom mech. Büro / `Ev_scale_office` | Anteil (IN) | IN!H228 | zu ergänzen |
+| T18.R06 | Lüfterstrom mech.  Bildung sekundär / `Ev_scale_school_sec` | Anteil (IN) | IN!H229 | zu ergänzen |
+| T18.R07 | Lüfterstrom mech.  Bildung primär / `Ev_scale_school_prim` | Anteil (IN) | IN!H230 | zu ergänzen |
+| T18.R08 | Lüfterstrom mech.  Handel Lebensmittel / `Ev_scale_retail_food` | Anteil (IN) | IN!H231 | zu ergänzen |
+| T18.R09 | Lüfterstrom mech.  Handel sonstiger / `Ev_scale_retail_other` | Anteil (IN) | IN!H232 | zu ergänzen |
+| T18.R10 | Lüfterstrom mech.  Sonstige Nutzung / `Ev_scale_other` | Anteil (IN) | IN!H233 | zu ergänzen |
+| T18.R11 | Wärmerückgewinnung Winter Wohnen / `vent_heat_recovery_winter_residential` | ratio (IN) | IN!H234 | zu ergänzen |
+| T18.R12 | Wärmerückgewinnung Winter Büro / `vent_heat_recovery_winter_office` | ratio (IN) | IN!H235 | zu ergänzen |
+| T18.R13 | Wärmerückgewinnung Winter Bildung sekundär / `vent_heat_recovery_winter_schoolsec` | ratio (IN) | IN!H236 | zu ergänzen |
+| T18.R14 | Wärmerückgewinnung Winter Bildung primär / `vent_heat_recovery_winter_schoolprim` | ratio (IN) | IN!H237 | zu ergänzen |
+| T18.R15 | Wärmerückgewinnung Winter Handel Lebensmittel / `vent_heat_recovery_winter_retailfood` | ratio (IN) | IN!H238 | zu ergänzen |
+| T18.R16 | Wärmerückgewinnung Winter Handel sonstiger / `vent_heat_recovery_winter_retailother` | ratio (IN) | IN!H239 | zu ergänzen |
+| T18.R17 | Wärmerückgewinnung Winter Sonstige Nutzung / `vent_heat_recovery_winter_other` | ratio (IN) | IN!H240 | zu ergänzen |
+| T18.R18 | Wärmerückgewinnung Sommer Wohnen / `vent_heat_recovery_summer_residential` | ratio (IN) | IN!H241 | zu ergänzen |
+| T18.R19 | Wärmerückgewinnung Sommer Büro / `vent_heat_recovery_summer_office` | ratio (IN) | IN!H242 | zu ergänzen |
+| T18.R20 | Wärmerückgewinnung Sommer Bildung sekundär / `vent_heat_recovery_summer_schoolsec` | ratio (IN) | IN!H243 | zu ergänzen |
+| T18.R21 | Wärmerückgewinnung Sommer Bildung primär / `vent_heat_recovery_summer_schoolprim` | ratio (IN) | IN!H244 | zu ergänzen |
+| T18.R22 | Wärmerückgewinnung Sommer Handel Lebensmittel / `vent_heat_recovery_summer_retailfood` | ratio (IN) | IN!H245 | zu ergänzen |
+| T18.R23 | Wärmerückgewinnung Sommer Handel sonstiger / `vent_heat_recovery_summer_retailother` | ratio (IN) | IN!H246 | zu ergänzen |
+| T18.R24 | Wärmerückgewinnung Sommer Sonstige Nutzung / `vent_heat_recovery_summer_other` | ratio (IN) | IN!H247 | zu ergänzen |
+
+
+### Presets und Varianten
+
+| Preset-ID / Excel-Spalte | Spaltenname im Schema | Anzeige | Einordnung | Anwendung laut Export |
+|---|---|---|---|---|
+| T18.PD | DEFAULT | Auswählen | Auswahl-/Defaultspalte, Freigabe offen | — |
+| T18.PE | ABL-Anlage | Abluftanlage ohne Wärmerückgewinnung | Preset, ungeprüft | — |
+| T18.PF | ABL-Anlage mit WRG | Abluftanlage mit WRG (50%) | Preset, ungeprüft | — |
+| T18.PG | Mech. Lüftung mit WRG | Mech. Lüftung mit WRG (80%) | Preset, ungeprüft | — |
+| T18.PH | Mech. Lüftung ohne WRG | Mech. Lüftung ohne WRG | Preset, ungeprüft | — |
+
+
+### Werte zur fachlichen Prüfung
+
+Zeilen-IDs verweisen auf den Parameterkatalog oben; Preset-IDs auf die Excel-Spalten. **— bedeutet leer im Export, nicht null.** Zahlen bleiben in der ausgewiesenen Schemaeinheit; Verhältniswerte werden nicht stillschweigend zu Prozentwerten umgerechnet.
+
+| Parameter | T18.PD: DEFAULT | T18.PE: ABL-Anlage | T18.PF: ABL-Anlage mit WRG | T18.PG: Mech. Lüftung mit WRG |
+|---|---|---|---|---|
+| T18.R04: Lüfterstrom mech. Wohnen | 0,5 | 0,5 | 0,6 | 1 |
+| T18.R05: Lüfterstrom mech. Büro | 0,5 | 0,5 | 0,6 | 1 |
+| T18.R06: Lüfterstrom mech.  Bildung sekundär | 0,5 | 0,5 | 0,6 | 1 |
+| T18.R07: Lüfterstrom mech.  Bildung primär | 0,5 | 0,5 | 0,6 | 1 |
+| T18.R08: Lüfterstrom mech.  Handel Lebensmittel | 0,5 | 0,5 | 0,6 | 1 |
+| T18.R09: Lüfterstrom mech.  Handel sonstiger | 0,5 | 0,5 | 0,6 | 1 |
+| T18.R10: Lüfterstrom mech.  Sonstige Nutzung | 0,5 | 0,5 | 0,6 | 1 |
+| T18.R11: Wärmerückgewinnung Winter Wohnen | 0 | 0 | 0,5 | 0,8 |
+| T18.R12: Wärmerückgewinnung Winter Büro | 0 | 0 | 0,5 | 0,8 |
+| T18.R13: Wärmerückgewinnung Winter Bildung sekundär | 0 | 0 | 0,5 | 0,8 |
+| T18.R14: Wärmerückgewinnung Winter Bildung primär | 0 | 0 | 0,5 | 0,8 |
+| T18.R15: Wärmerückgewinnung Winter Handel Lebensmittel | 0 | 0 | 0,5 | 0,8 |
+| T18.R16: Wärmerückgewinnung Winter Handel sonstiger | 0 | 0 | 0,5 | 0,8 |
+| T18.R17: Wärmerückgewinnung Winter Sonstige Nutzung | 0 | 0 | 0,5 | 0,8 |
+| T18.R18: Wärmerückgewinnung Sommer Wohnen | 0 | 0 | 0 | 0,3 |
+| T18.R19: Wärmerückgewinnung Sommer Büro | 0 | 0 | 0 | 0,3 |
+| T18.R20: Wärmerückgewinnung Sommer Bildung sekundär | 0 | 0 | 0 | 0,3 |
+| T18.R21: Wärmerückgewinnung Sommer Bildung primär | 0 | 0 | 0 | 0,3 |
+| T18.R22: Wärmerückgewinnung Sommer Handel Lebensmittel | 0 | 0 | 0 | 0,3 |
+| T18.R23: Wärmerückgewinnung Sommer Handel sonstiger | 0 | 0 | 0 | 0,3 |
+| T18.R24: Wärmerückgewinnung Sommer Sonstige Nutzung | 0 | 0 | 0 | 0,3 |
+
+
+| Parameter | T18.PH: Mech. Lüftung ohne WRG |
+|---|---|
+| T18.R04: Lüfterstrom mech. Wohnen | 0,5 |
+| T18.R05: Lüfterstrom mech. Büro | 0,5 |
+| T18.R06: Lüfterstrom mech.  Bildung sekundär | 0,5 |
+| T18.R07: Lüfterstrom mech.  Bildung primär | 0,5 |
+| T18.R08: Lüfterstrom mech.  Handel Lebensmittel | 0,5 |
+| T18.R09: Lüfterstrom mech.  Handel sonstiger | 0,5 |
+| T18.R10: Lüfterstrom mech.  Sonstige Nutzung | 0,5 |
+| T18.R11: Wärmerückgewinnung Winter Wohnen | 0 |
+| T18.R12: Wärmerückgewinnung Winter Büro | 0 |
+| T18.R13: Wärmerückgewinnung Winter Bildung sekundär | 0 |
+| T18.R14: Wärmerückgewinnung Winter Bildung primär | 0 |
+| T18.R15: Wärmerückgewinnung Winter Handel Lebensmittel | 0 |
+| T18.R16: Wärmerückgewinnung Winter Handel sonstiger | 0 |
+| T18.R17: Wärmerückgewinnung Winter Sonstige Nutzung | 0 |
+| T18.R18: Wärmerückgewinnung Sommer Wohnen | 0 |
+| T18.R19: Wärmerückgewinnung Sommer Büro | 0 |
+| T18.R20: Wärmerückgewinnung Sommer Bildung sekundär | 0 |
+| T18.R21: Wärmerückgewinnung Sommer Bildung primär | 0 |
+| T18.R22: Wärmerückgewinnung Sommer Handel Lebensmittel | 0 |
+| T18.R23: Wärmerückgewinnung Sommer Handel sonstiger | 0 |
+| T18.R24: Wärmerückgewinnung Sommer Sonstige Nutzung | 0 |
+
+
+### Festlegung nach Prüfung
+
+| Prüffrage | Rückmeldung |
+|---|---|
+| Fehlende / überflüssige Presets oder Parameter | offen |
+| Empfohlener Standard und zulässige Alternativen | offen |
+| Gültigkeit, Quellen und Anwendungsvoraussetzungen | offen |
+| Freigabe durch / Datum | ausständig |
+
+
+## T19: Anteile mechanisch belüfteter Nutzungen {#sec-preset-t19}
+
+Anteile je Nutzung und hygienisch erforderlichen Luftwechsel zusammen prüfen.
+
+**PEExcel-Bezug:** Schemablatt `vent_modes`, Bereich `A1:G10`. Auswahlparameter: `preset_recorded_vent_modes`
+
+### Parameter und fachliche Quellen
+
+| Zeile | Parameter / PEExcel-Kennung | Einheit laut Schema | Fundstelle | Fachquelle / Gültigkeit |
+|---|---|---|---|---|
+| T19.R04 | Mechanische Lüftung Wohnen / `vent_share_mechanical_residential` | ratio (IN) | IN!H185 | zu ergänzen |
+| T19.R05 | Mechanische Lüftung Büro / `vent_share_mechanical_office` | ratio (IN) | IN!H186 | zu ergänzen |
+| T19.R06 | Mechanische Lüftung Bildung sekundär / `vent_share_mechanical_schoolsec` | ratio (IN) | IN!H187 | zu ergänzen |
+| T19.R07 | Mechanische Lüftung Bildung primär / `vent_share_mechanical_schoolprim` | ratio (IN) | IN!H188 | zu ergänzen |
+| T19.R08 | Mechanische Lüftung Handel Lebensmittel / `vent_share_mechanical_retailfood` | ratio (IN) | IN!H189 | zu ergänzen |
+| T19.R09 | Mechanische Lüftung Handel sonstiger / `vent_share_mechanical_retailother` | ratio (IN) | IN!H190 | zu ergänzen |
+| T19.R10 | Mechanische Lüftung Sonstige Nutzung / `vent_share_mechanical_other` | ratio (IN) | IN!H191 | zu ergänzen |
+
+
+### Presets und Varianten
+
+| Preset-ID / Excel-Spalte | Spaltenname im Schema | Anzeige | Einordnung | Anwendung laut Export |
+|---|---|---|---|---|
+| T19.PD | DEFAULT | Auswählen | Auswahl-/Defaultspalte, Freigabe offen | — |
+| T19.PE | Keine | Nur Fensterlüftung im Quartier | Preset, ungeprüft | — |
+| T19.PF | Nichtwohnen | Mechanische Lüftung in Nicht-Wohn-Nutzungen | Preset, ungeprüft | — |
+| T19.PG | Alle | Mechanische Lüftung in allen Nutzungen | Preset, ungeprüft | — |
+
+
+### Werte zur fachlichen Prüfung
+
+Zeilen-IDs verweisen auf den Parameterkatalog oben; Preset-IDs auf die Excel-Spalten. **— bedeutet leer im Export, nicht null.** Zahlen bleiben in der ausgewiesenen Schemaeinheit; Verhältniswerte werden nicht stillschweigend zu Prozentwerten umgerechnet.
+
+| Parameter | T19.PD: DEFAULT | T19.PE: Keine | T19.PF: Nichtwohnen | T19.PG: Alle |
+|---|---|---|---|---|
+| T19.R04: Mechanische Lüftung Wohnen | 0 | 0 | 0 | 1 |
+| T19.R05: Mechanische Lüftung Büro | 1 | 0 | 1 | 1 |
+| T19.R06: Mechanische Lüftung Bildung sekundär | 1 | 0 | 1 | 1 |
+| T19.R07: Mechanische Lüftung Bildung primär | 1 | 0 | 1 | 1 |
+| T19.R08: Mechanische Lüftung Handel Lebensmittel | 1 | 0 | 1 | 1 |
+| T19.R09: Mechanische Lüftung Handel sonstiger | 1 | 0 | 1 | 1 |
+| T19.R10: Mechanische Lüftung Sonstige Nutzung | 1 | 0 | 1 | 1 |
+
+
+### Festlegung nach Prüfung
+
+| Prüffrage | Rückmeldung |
+|---|---|
+| Fehlende / überflüssige Presets oder Parameter | offen |
+| Empfohlener Standard und zulässige Alternativen | offen |
+| Gültigkeit, Quellen und Anwendungsvoraussetzungen | offen |
+| Freigabe durch / Datum | ausständig |
+
+
+## T20: Nachtauskühlung {#sec-preset-t20}
+
+Fensterstellung und Verfügbarkeit prüfen; Lärm, Sicherheit und Regelung als Anwendungsvoraussetzungen benennen.
+
+**PEExcel-Bezug:** Schemablatt `vent_night_modes`, Bereich `A1:G10`. Auswahlparameter: `preset_recorded_vent_night_modes`
+
+### Parameter und fachliche Quellen
+
+| Zeile | Parameter / PEExcel-Kennung | Einheit laut Schema | Fundstelle | Fachquelle / Gültigkeit |
+|---|---|---|---|---|
+| T20.R04 | Nachtauskühlung Fensterstellung Wohnen / `vent_night_residential` | offen | IN!H204 | zu ergänzen |
+| T20.R05 | Nachtauskühlung Fensterstellung Büro / `vent_night_office` | offen | IN!H205 | zu ergänzen |
+| T20.R06 | Nachtauskühlung Fensterstellung Bildung sekundär / `vent_night_schoolsec` | offen | IN!H206 | zu ergänzen |
+| T20.R07 | Nachtauskühlung Fensterstellung Bildung primär / `vent_night_schoolprim` | offen | IN!H207 | zu ergänzen |
+| T20.R08 | Nachtauskühlung Fensterstellung Handel Lebensmittel / `vent_night_retailfood` | offen | IN!H208 | zu ergänzen |
+| T20.R09 | Nachtauskühlung Fensterstellung Handel sonstiger / `vent_night_retailother` | offen | IN!H209 | zu ergänzen |
+| T20.R10 | Nachtauskühlung Fensterstellung Sonstige Nutzung / `vent_night_other` | offen | IN!H210 | zu ergänzen |
+
+
+### Presets und Varianten
+
+| Preset-ID / Excel-Spalte | Spaltenname im Schema | Anzeige | Einordnung | Anwendung laut Export |
+|---|---|---|---|---|
+| T20.PD | DEFAULT | Auswählen | Auswahl-/Defaultspalte, Freigabe offen | — |
+| T20.PE | Wohnen Einseitig | Nachtauskühlung Wohnen: Einseitig 50% | Preset, ungeprüft | — |
+| T20.PF | Wohnen Querlüftung | Nachtauskühlung Wohnen: Querlüftung 50% (19,5cm Spalt) | Preset, ungeprüft | — |
+| T20.PG | Wohnen Querlüftung2 | Nachtauskühlung Wohnen: Querlüftung 100% (45,5cm) | Preset, ungeprüft | — |
+
+
+### Werte zur fachlichen Prüfung
+
+Zeilen-IDs verweisen auf den Parameterkatalog oben; Preset-IDs auf die Excel-Spalten. **— bedeutet leer im Export, nicht null.** Zahlen bleiben in der ausgewiesenen Schemaeinheit; Verhältniswerte werden nicht stillschweigend zu Prozentwerten umgerechnet.
+
+| Parameter | T20.PD: DEFAULT | T20.PE: Wohnen Einseitig | T20.PF: Wohnen Querlüftung | T20.PG: Wohnen Querlüftung2 |
+|---|---|---|---|---|
+| T20.R04: Nachtauskühlung Fensterstellung Wohnen | Einseitig 50% | Einseitig 50% | Querlüftung 50% (19,5cm Spalt) | Querlüftung 100% (45,5cm) |
+| T20.R05: Nachtauskühlung Fensterstellung Büro | geschlossen | geschlossen | geschlossen | geschlossen |
+| T20.R06: Nachtauskühlung Fensterstellung Bildung sekundär | geschlossen | geschlossen | geschlossen | geschlossen |
+| T20.R07: Nachtauskühlung Fensterstellung Bildung primär | geschlossen | geschlossen | geschlossen | geschlossen |
+| T20.R08: Nachtauskühlung Fensterstellung Handel Lebensmittel | geschlossen | geschlossen | geschlossen | geschlossen |
+| T20.R09: Nachtauskühlung Fensterstellung Handel sonstiger | geschlossen | geschlossen | geschlossen | geschlossen |
+| T20.R10: Nachtauskühlung Fensterstellung Sonstige Nutzung | geschlossen | geschlossen | geschlossen | geschlossen |
+
+
+### Festlegung nach Prüfung
+
+| Prüffrage | Rückmeldung |
+|---|---|
+| Fehlende / überflüssige Presets oder Parameter | offen |
+| Empfohlener Standard und zulässige Alternativen | offen |
+| Gültigkeit, Quellen und Anwendungsvoraussetzungen | offen |
+| Freigabe durch / Datum | ausständig |
+
+
+:::

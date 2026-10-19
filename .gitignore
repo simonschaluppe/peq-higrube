@@ -1,6 +1,7 @@
 # Quarto: generierte Ausgaben und Caches
 /_book/
 /_site/
+/site_libs/
 /.quarto/
 /_freeze/
 /*_files/

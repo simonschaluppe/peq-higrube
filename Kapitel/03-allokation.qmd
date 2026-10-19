@@ -1,5 +1,7 @@
-# Von nationalen Zielen zu Anforderungen an Quartiere {#sec-allokation}
-
+# Zielwerte {#sec-allokation}
+::: {.lead}
+Von nationalen Zielen zu konkreten Anforderungen an Quartiere
+:::
 Ein Quartier kann seinen Energiebedarf senken, erneuerbare Energie erzeugen und Emissionen vermeiden. Ob dieser Beitrag ausreicht, hängt auch davon ab, welche Aufgaben die übrigen Gebäude, die Mobilität und die Energieversorgung übernehmen. Das nationale Allokationsmodell stellt diesen Zusammenhang her: Es verteilt verfügbare erneuerbare Energie und ein begrenztes Emissionsbudget auf Sektoren und anschließend auf die Nutzungen und Flächen konkreter Quartiere.
 
 Die Quartierssimulation ermittelt, welche Bilanz ein Projekt unter bestimmten Annahmen erreicht. Das Allokationsmodell bestimmt den Maßstab, an dem dieses Ergebnis beurteilt wird. Das Bewertungsverfahren verbindet beide Ebenen: Systemgrenzen, Gewichtung und Anforderungen müssen gemeinsam festgelegt werden [@schneider2026thesis, Kap. 3.1–3.2, S. 43–60].

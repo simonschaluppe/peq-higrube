@@ -1,4 +1,7 @@
-# Kontextfaktoren: Anforderungen auf das Quartier übertragen {#sec-kontext}
+# Kontextfaktoren {#sec-kontext}
+::: {.lead}
+Anforderungen auf das Quartier übertragen 
+:::
 
 Ein dichtes Quartier, eine locker bebaute Siedlung und ein Sanierungsvorhaben können nicht denselben lokalen Energieüberschuss bereitstellen. Kontextfaktoren übersetzen die in @sec-allokation hergeleitete Lastenverteilung in die Bewertung des einzelnen Projekts. Sie machen sichtbar, welcher Beitrag unter den jeweiligen Rahmenbedingungen verlangt wird.
 
@@ -61,18 +64,7 @@ Bei einem Sanierungsanteil von 50 % sind dies 7,5 kWh PE/(m² NGF a), wie in der
 
 Die Höhe ist normativ festgelegt. Sie berücksichtigt erschwerte Handlungsmöglichkeiten im Bestand, beispielsweise geometrische oder konstruktive Grenzen einer energetischen Verbesserung. Sie ist keine Berechnung der eingesparten grauen Emissionen. Erhaltene Bausubstanz und neue Bauteile wirken über die eigene THG-Bilanz; die Primärenergiegutschrift darf nicht noch einmal als vermiedene CO₂-Menge angesetzt werden.
 
+::: {.callout-note appearance="simple"  icon="true"}
 Für eine Weiterentwicklung kommen differenzierte Regeln nach Sanierungserschwernis, Gebäudealter oder Denkmalschutz in Betracht. Solche Regeln brauchen eine begründete Verteilungswirkung und handhabbare Nachweise. Bis dahin wird die festgelegte Gutschrift angewendet, ohne eine bislang nicht vorliegende quantitative Kalibrierung zu unterstellen.
 
-## Was ein Variantenvergleich zeigen sollte
-
-| Veränderung | Wirkung im Modell | Zusätzlich zu prüfen |
-|---|---|---|
-| Kompakterer oder dichterer Entwurf | Bedarf, Erzeugungspotenzial und Dichtekontext ändern sich | Absolute Flächen, Verschattung, Freiraum und graue Emissionen |
-| Bessere Hülle | Betriebsbedarf sinkt | Zusätzliche Herstellungsemissionen, Feuchte- und Sommerverhalten |
-| Mehr nutzbare PV-Fläche | Erzeugung und Export können steigen | Umsetzbarkeit, Ertragsprofil und Einspeisebegrenzung |
-| Weniger MIV | Zugeordneter Mobilitätsbedarf sinkt | Wirksamkeit der Maßnahmen und verbleibende Ladeleistungen |
-| Erhalt und Sanierung | Sanierungskontext sowie Betriebs- und bauliche Bilanz verändern sich | Tatsächlich erhaltene Bauteile, Sanierungsumfang und Nutzungsqualität |
-
-: Planerische Interpretation der Kontextbewertung. {#tbl-kontext-planung}
-
-Der Vergleich beginnt mit einer gemeinsamen Abgrenzung und demselben Methodenstand. Anschließend werden physische Maßnahmen und Bewertungswirkungen getrennt erklärt. So wird erkennbar, ob ein Entwurf tatsächlich weniger Energie benötigt, mehr erneuerbare Energie bereitstellt oder aufgrund eines anderen Kontexts eine andere Anforderung erhält.
+:::

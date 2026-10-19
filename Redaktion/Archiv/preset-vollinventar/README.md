@@ -1,0 +1,1 @@
+Frühere vollständige Schemaauswertung, durch den zweigeteilten fachlichen Anhang ersetzt. Kein Bestandteil der Berichtsausgabe. Werte und Quellen unverändert erhalten; frühere Prüfanleitungen gelten nicht als aktueller Arbeitsauftrag.

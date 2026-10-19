@@ -1,4 +1,7 @@
 # Methodenstand, Grenzen und Weiterentwicklung {#sec-fortschreibung}
+::: {.lead}
+
+:::
 
 Der PEQ-Ansatz verbindet einen nationalen Bewertungsmaßstab mit dem konkreten Quartierskonzept. Seine Aussagekraft hängt davon ab, dass beide Seiten zusammenpassen: Das Budget muss zu den bilanzierten Emissionen gehören, die Energieanforderung zum angenommenen Versorgungssystem und die Simulation zum umsetzbaren Projekt. Eine Fortschreibung überprüft deshalb Daten, Annahmen und Verteilungsregeln gemeinsam.
 
@@ -19,8 +22,6 @@ Für einen nachvollziehbaren Methodenstand sind drei Ebenen zu unterscheiden:
 | Normative Verteilung | Anderer Sektoranteil, Sanierungskontext oder Senkenansatz | Geänderter Bewertungsmaßstab mit eigener fachlicher Begründung |
 
 : Ebenen der Fortschreibung. {#tbl-fortschreibung}
-
-Eine Softwarekorrektur kann zusätzlich die Umsetzung einer Regel verändern, ohne deren beabsichtigte Bedeutung zu ändern. Deshalb reichen Versionsnummern allein nicht aus: Zu einer Änderung gehört die Erklärung, welche Eingaben, Regeln oder Ergebnisse betroffen sind.
 
 Bei einer Neuauflage bleiben die zuvor verwendeten Faktoren und Annahmen nachvollziehbar. Ob laufende oder abgeschlossene Deklarationen auf neue Grundlagen umzustellen sind, ist eine eigene Verfahrensentscheidung. Aus einer wissenschaftlichen Weiterentwicklung folgt nicht automatisch eine rückwirkende Neubewertung.
 

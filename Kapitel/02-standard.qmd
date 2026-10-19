@@ -1,5 +1,4 @@
-# Der klimaaktiv Standard für Plus-Energie-Quartiere
-
+# Der Standard
 ## Zielsetzung und Grundprinzip
 
 Der klimaaktiv Standard für Plus-Energie-Quartiere definiert quantitative Anforderungen an die energetische und klimabezogene Leistungsfähigkeit von Quartieren.

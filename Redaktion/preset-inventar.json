@@ -1,0 +1,248 @@
+{
+  "source": "Redaktion\\Primärquellen\\schema_1.13.1_dev.xlsx",
+  "sha256": "696820fe22f01b35bf4b0639c5521519bd74be43ac6231ceb4af7e17d6eeeb7c",
+  "schema_version": "1.13.1_dev",
+  "inventory": [
+    {
+      "id": "T01",
+      "sheet": "renovation",
+      "title": "Sanierungsanteile",
+      "file": "anhang-presets-quartier.qmd",
+      "rows": 7,
+      "columns": 3
+    },
+    {
+      "id": "T02",
+      "sheet": "geometry",
+      "title": "Gebäudetypen und Bauteilmengen",
+      "file": "anhang-presets-quartier.qmd",
+      "rows": 49,
+      "columns": 85
+    },
+    {
+      "id": "T03",
+      "sheet": "declaration_type",
+      "title": "Bilanzumfang der Qualitätsstufen",
+      "file": "anhang-presets-quartier.qmd",
+      "rows": 1,
+      "columns": 4
+    },
+    {
+      "id": "T04",
+      "sheet": "plugloads",
+      "title": "Nutzerstrom",
+      "file": "anhang-presets-nutzung.qmd",
+      "rows": 7,
+      "columns": 3
+    },
+    {
+      "id": "T05",
+      "sheet": "dhw_demand",
+      "title": "Warmwasserwärmebedarf",
+      "file": "anhang-presets-nutzung.qmd",
+      "rows": 7,
+      "columns": 4
+    },
+    {
+      "id": "T06",
+      "sheet": "hulls",
+      "title": "Wärmeschutz der Gebäudehülle",
+      "file": "anhang-presets-huelle.qmd",
+      "rows": 14,
+      "columns": 14
+    },
+    {
+      "id": "T07",
+      "sheet": "air_tightness",
+      "title": "Luftdichtheit",
+      "file": "anhang-presets-huelle.qmd",
+      "rows": 1,
+      "columns": 7
+    },
+    {
+      "id": "T08",
+      "sheet": "building_mass",
+      "title": "Wirksame Speichermasse",
+      "file": "anhang-presets-huelle.qmd",
+      "rows": 1,
+      "columns": 4
+    },
+    {
+      "id": "T09",
+      "sheet": "shading_geometry",
+      "title": "Geometrische Einstrahlungsfaktoren",
+      "file": "anhang-presets-huelle.qmd",
+      "rows": 10,
+      "columns": 2
+    },
+    {
+      "id": "T10",
+      "sheet": "mobile_shading",
+      "title": "Beweglicher Sonnenschutz",
+      "file": "anhang-presets-huelle.qmd",
+      "rows": 7,
+      "columns": 6
+    },
+    {
+      "id": "T11",
+      "sheet": "heating_system",
+      "title": "Wärmeerzeugung",
+      "file": "anhang-presets-haustechnik.qmd",
+      "rows": 19,
+      "columns": 10
+    },
+    {
+      "id": "T12",
+      "sheet": "emission_system",
+      "title": "Wärme- und Kälteabgabe",
+      "file": "anhang-presets-haustechnik.qmd",
+      "rows": 2,
+      "columns": 6
+    },
+    {
+      "id": "T13",
+      "sheet": "heating_period",
+      "title": "Heizperioden",
+      "file": "anhang-presets-haustechnik.qmd",
+      "rows": 12,
+      "columns": 5
+    },
+    {
+      "id": "T14",
+      "sheet": "cooling_system",
+      "title": "Kälteerzeugung",
+      "file": "anhang-presets-haustechnik.qmd",
+      "rows": 15,
+      "columns": 9
+    },
+    {
+      "id": "T15",
+      "sheet": "cooling_modes",
+      "title": "Anteile aktiv gekühlter Nutzungen",
+      "file": "anhang-presets-haustechnik.qmd",
+      "rows": 7,
+      "columns": 4
+    },
+    {
+      "id": "T16",
+      "sheet": "cooling_period",
+      "title": "Kühlperioden",
+      "file": "anhang-presets-haustechnik.qmd",
+      "rows": 12,
+      "columns": 5
+    },
+    {
+      "id": "T17",
+      "sheet": "dhw_system",
+      "title": "Warmwasserbereitung und Verteilung",
+      "file": "anhang-presets-haustechnik.qmd",
+      "rows": 18,
+      "columns": 8
+    },
+    {
+      "id": "T18",
+      "sheet": "ventilation_system",
+      "title": "Lüftungstechnik und Wärmerückgewinnung",
+      "file": "anhang-presets-haustechnik.qmd",
+      "rows": 21,
+      "columns": 5
+    },
+    {
+      "id": "T19",
+      "sheet": "vent_modes",
+      "title": "Anteile mechanisch belüfteter Nutzungen",
+      "file": "anhang-presets-haustechnik.qmd",
+      "rows": 7,
+      "columns": 4
+    },
+    {
+      "id": "T20",
+      "sheet": "vent_night_modes",
+      "title": "Nachtauskühlung",
+      "file": "anhang-presets-haustechnik.qmd",
+      "rows": 7,
+      "columns": 4
+    },
+    {
+      "id": "T21",
+      "sheet": "PV_system",
+      "title": "Photovoltaikbelegung",
+      "file": "anhang-presets-energie.qmd",
+      "rows": 2,
+      "columns": 16
+    },
+    {
+      "id": "T22",
+      "sheet": "battery_system",
+      "title": "Batteriespeicher",
+      "file": "anhang-presets-energie.qmd",
+      "rows": 5,
+      "columns": 4
+    },
+    {
+      "id": "T23",
+      "sheet": "flexibility_system",
+      "title": "Nutzung erneuerbarer Überschüsse",
+      "file": "anhang-presets-energie.qmd",
+      "rows": 5,
+      "columns": 4
+    },
+    {
+      "id": "T24",
+      "sheet": "flexibility_thermal",
+      "title": "Thermische Flexibilität",
+      "file": "anhang-presets-energie.qmd",
+      "rows": 4,
+      "columns": 5
+    },
+    {
+      "id": "T25",
+      "sheet": "mobility",
+      "title": "Mobilitätsregionen",
+      "file": "anhang-presets-mobilitaet.qmd",
+      "rows": 1,
+      "columns": 12
+    },
+    {
+      "id": "T26",
+      "sheet": "construction_type",
+      "title": "Bauweisen und Bauteilzuordnungen",
+      "file": "anhang-presets-bauweise.qmd",
+      "rows": 34,
+      "columns": 24
+    }
+  ],
+  "covered_cells": 6218,
+  "issues": [
+    "T02.R03: Einheit fehlt (Bauperiode)",
+    "T02.R04: Einheit fehlt (Nutzung)",
+    "T02.R07: Einheit fehlt (lc Wert)",
+    "T11.R08: Einheit fehlt (heat_th2_carrier_type)",
+    "T11.R17: Einheit fehlt (heat_th4_carrier_type)",
+    "T14.R10: Einheit fehlt (cool_th2_carrier_type)",
+    "T17.R06: Einheit fehlt (DHW_efficiency_distribution_1)",
+    "T17.R08: Einheit fehlt (DHW_1_el_aux)",
+    "T17.R11: Einheit fehlt (DHW_efficiency_distribution_2)",
+    "T17.R13: Einheit fehlt (DHW_2_el_aux)",
+    "T20.R04: Einheit fehlt (vent_night_residential)",
+    "T20.R05: Einheit fehlt (vent_night_office)",
+    "T20.R06: Einheit fehlt (vent_night_schoolsec)",
+    "T20.R07: Einheit fehlt (vent_night_schoolprim)",
+    "T20.R08: Einheit fehlt (vent_night_retailfood)",
+    "T20.R09: Einheit fehlt (vent_night_retailother)",
+    "T20.R10: Einheit fehlt (vent_night_other)",
+    "T25.R04: Einheit fehlt (municipality_name)",
+    "T26.R06: Einheit fehlt (Bauweise)",
+    "T26.R07: Einheit fehlt (Fossil / Öko)",
+    "T26.R08: Einheit fehlt (Berechnungsverfahren)"
+  ],
+  "pages": [
+    "anhang-presets-quartier.qmd",
+    "anhang-presets-nutzung.qmd",
+    "anhang-presets-huelle.qmd",
+    "anhang-presets-haustechnik.qmd",
+    "anhang-presets-energie.qmd",
+    "anhang-presets-mobilitaet.qmd",
+    "anhang-presets-bauweise.qmd"
+  ]
+}

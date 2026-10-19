@@ -52,3 +52,7 @@ Je Frage höchstens eine halbe Seite: **Empfehlung – Beleg – verbleibende Un
 Die Kapitel sind als Lesefassung ausgearbeitet und kapitelweise aus Architektur-/HT-Sicht geprüft; siehe [Reviewvermerk](review-kapitel-04-08.md). M03/M04/M05/M09 bleiben Datenzulieferungen, keine Schreibblockaden. M10 ist als Konzept mit europäischem Forschungsanschluss dargestellt; formale Etappen bleiben offen. M11 wurde nicht eigenmächtig entschieden.
 
 Zusätzlicher interner Prüfpunkt M12: Vergleichbarkeit dynamischer biogener Charakterisierung mit statischem GWP100 und dem THG-Budget vor einer entsprechenden Beispielrechnung klären. Kapitel 4 beschreibt die vereinfachte Referenzmethode und nennt die dynamische Alternative ohne ungesicherte Zahlenvergleiche. Kein Widerspruch wird durch neue Defaults oder verdeckte Umrechnung aufgelöst.
+
+## Anhang und Schema 1.13.1_dev – Stand 15.10.2026
+
+Das Schema bleibt unverändert. Der Bericht enthält zwei fachliche Anhänge: Zielwertberechnung und Quartiersbilanzierung. Das vollständige Presetinventar und die frühere Prüfanleitung liegen im Archiv und sind nicht Teil der Ausgabe. M05 bleibt hinsichtlich verbindlicher Werte und Quellen offen. Nutzerstrom und Warmwasser sind als vorläufige Schemawerte übernommen; weitere fehlende Grundlagen sind unmittelbar in den Tabellen markiert. Keine zusätzliche schriftliche Anleitung für Kollegen; die interne Abstimmung erfolgt mündlich.

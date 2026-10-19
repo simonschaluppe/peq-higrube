@@ -65,6 +65,13 @@ Inhaltlich führen die Dissertation und die zugehörigen Publikationen im dokume
 
 Publikationsform: druckfähiger Bericht als PDF und navigierbare Online-Fassung. Rechte liegen laut Auftraggeber bei der FH Technikum Wien, Forschungsteam Climate-fit Buildings and Districts. Autor:innenliste und Impressum werden vervollständigt. Die Primärquellen bleiben Arbeitsmaterial; veröffentlicht wird die geprüfte Berichtsausgabe, nicht automatisch der gesamte Quellenbestand.
 
+## Zweigeteilter Anhang
+
+- [Annahmen der Zielwertberechnung](Kapitel/anhang-methodenstand.qmd): nationale Energiebilanzen, Flächen- und Dichteallokation, Mobilitätsbudget, THG-Budget und Absenkpfade.
+- [Annahmen der Quartiersbilanzierung](Kapitel/anhang-quartiersbilanzierung.qmd): Nutzungsbedarfe, Beleuchtung, innere Wärmegewinne, Mobilität und gemeinsame Modellbedingungen.
+
+Beide Teile sind als Berichtstext nach außen formuliert. Fehlende Angaben sind direkt markiert; Projektwerte werden von vorläufigen Referenzwerten unterschieden. Das vollständige Presetinventar bleibt als Quellenarbeit unter `Redaktion/Archiv/preset-vollinventar/` erhalten und wird nicht veröffentlicht. Die frühere einzelne HTML-Prüffassung ist überholt; maßgeblich ist die neu gerenderte Buchfassung.
+
 ## Review mit wenig Aufwand
 
 Pro Arbeitspaket gibt es einen kurzen Entscheidungsvermerk mit Empfehlung, Beleg, Alternative und Auswirkung. Fachliches Review konzentriert sich auf Zielwerte, Grenzen, Interpretation und Freigaben. Rechtschreibung, Quarto, Literaturformat und Verweise werden redaktionell erledigt. Maximal drei fachliche Entscheidungen pro Runde; keine parallelen Fassungen in Word und Quarto.

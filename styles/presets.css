@@ -1,0 +1,4 @@
+.preset-anhang table { font-size: .88rem; }
+.preset-anhang th, .preset-anhang td { vertical-align: top; overflow-wrap: anywhere; }
+.preset-anhang code { white-space: normal; overflow-wrap: anywhere; }
+.preset-anhang .callout-body { overflow-x: auto; }

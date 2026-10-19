@@ -1,0 +1,356 @@
+# Gebäudehülle und sommerlicher Wärmeschutz {#sec-presets-huelle}
+
+::: {.preset-anhang}
+
+Diese Tabellen sind eine **Prüffassung aus dem Entwicklungsschema 1.13.1_dev**, keine freigegebenen Standardwerte. Leseschlüssel und Rückmeldeverfahren stehen in @sec-preset-leseschluessel.
+
+## T06: Wärmeschutz der Gebäudehülle {#sec-preset-t06}
+
+U-Werte, g-Werte und Wärmebrückenzuschlag gemeinsam nach Bauqualität und Gültigkeit prüfen.
+
+**PEExcel-Bezug:** Schemablatt `hulls`, Bereich `A1:Q17`. Auswahlparameter: `preset_recorded_hulls`
+
+### Parameter und fachliche Quellen
+
+| Zeile | Parameter / PEExcel-Kennung | Einheit laut Schema | Fundstelle | Fachquelle / Gültigkeit |
+|---|---|---|---|---|
+| T06.R04 | U-Wert Außenwände / `hull_transmittance_walls` | W/m²K (Preset) | IN!H103 | zu ergänzen |
+| T06.R05 | U-Wert Dach / `hull_transmittance_roof` | W/m²K (Preset) | IN!H104 | zu ergänzen |
+| T06.R06 | U-Wert Kellerdecke / Fundament / `hull_transmittance_fundament` | W/m²K (Preset) | IN!H105 | zu ergänzen |
+| T06.R07 | U-Wert Fenster Nord / `hull_transmittance_windows_north` | W/m²K (Preset) | IN!H106 | zu ergänzen |
+| T06.R08 | U-Wert Fenster Ost / `hull_transmittance_windows_east` | W/m²K (Preset) | IN!H107 | zu ergänzen |
+| T06.R09 | U-Wert Fenster Süd / `hull_transmittance_windows_south` | W/m²K (Preset) | IN!H108 | zu ergänzen |
+| T06.R10 | U-Wert Fenster West / `hull_transmittance_windows_west` | W/m²K (Preset) | IN!H109 | zu ergänzen |
+| T06.R11 | U-Wert Fenster Horizontal / `hull_transmittance_windows_horizontal` | W/m²K (Preset) | IN!H110 | zu ergänzen |
+| T06.R12 | g-Wert Fenster Nord / `window_total_transmittance_north` | ratio (Preset) | IN!H124 | zu ergänzen |
+| T06.R13 | g-Wert Fenster Ost / `window_total_transmittance_east` | ratio (Preset) | IN!H125 | zu ergänzen |
+| T06.R14 | g-Wert Fenster Süd / `window_total_transmittance_south` | ratio (Preset) | IN!H126 | zu ergänzen |
+| T06.R15 | g-Wert Fenster West / `window_total_transmittance_west` | ratio (Preset) | IN!H127 | zu ergänzen |
+| T06.R16 | g-Wert Fenster Horizontal / `window_total_transmittance_horizontal` | ratio (Preset) | IN!H128 | zu ergänzen |
+| T06.R17 | Wärmebrückenzuschlag / `hull_transmittance_heatbridge` | ratio (Preset) | IN!H111 | zu ergänzen |
+
+
+### Presets und Varianten
+
+| Preset-ID / Excel-Spalte | Spaltenname im Schema | Anzeige | Einordnung | Anwendung laut Export |
+|---|---|---|---|---|
+| T06.PD | Auswählen | Auswählen | Auswahl-/Defaultspalte, Freigabe offen | — |
+| T06.PE | 80er Bestand | 80er Bestand | Preset, ungeprüft | — |
+| T06.PF | Gründerzeitenbau  - Standard | Gründerzeitenbau  - Standard | Preset, ungeprüft | — |
+| T06.PG | OIB-RL6 10er Linie | OIB-RL6 10er Linie | Preset, ungeprüft | — |
+| T06.PH | OIB-RL6 12er Linie | OIB-RL6 12er Linie | Preset, ungeprüft | — |
+| T06.PI | OIB-RL6 14er Linie | OIB-RL6 14er Linie | Preset, ungeprüft | — |
+| T06.PJ | OIB-RL6 16er Linie | OIB-RL6 16er Linie | Preset, ungeprüft | — |
+| T06.PK | Passivhaus | Passivhaus | Preset, ungeprüft | — |
+| T06.PL | Sanierung | Sanierung | Preset, ungeprüft | — |
+| T06.PM | Standard - Leichtbau | Standard - Leichtbau | Preset, ungeprüft | — |
+| T06.PN | Standard - Massivbau | Standard - Massivbau | Preset, ungeprüft | — |
+| T06.PO | WD1 nach OIB (1/3) | WD1 nach OIB (1/3) | Preset, ungeprüft | — |
+| T06.PP | WD2 NEH (2/3) | WD2 NEH (2/3) | Preset, ungeprüft | — |
+| T06.PQ | WD3 PH (3/3, 30 cm) | WD3 PH (3/3, 30 cm) | Preset, ungeprüft | — |
+
+
+### Werte zur fachlichen Prüfung
+
+Zeilen-IDs verweisen auf den Parameterkatalog oben; Preset-IDs auf die Excel-Spalten. **— bedeutet leer im Export, nicht null.** Zahlen bleiben in der ausgewiesenen Schemaeinheit; Verhältniswerte werden nicht stillschweigend zu Prozentwerten umgerechnet.
+
+| Parameter | T06.PD: Auswählen | T06.PE: 80er Bestand | T06.PF: Gründerzeitenbau  - Standard | T06.PG: OIB-RL6 10er Linie |
+|---|---|---|---|---|
+| T06.R04: U-Wert Außenwände | 0,18 | 0,5 | 1,25 | 0,1 |
+| T06.R05: U-Wert Dach | 0,12 | 1,2 | 2,341 | 0,08 |
+| T06.R06: U-Wert Kellerdecke / Fundament | 0,19 | 1 | 0,877 | 0,12 |
+| T06.R07: U-Wert Fenster Nord | 0,93 | 1,2 | 1,462 | 0,71 |
+| T06.R08: U-Wert Fenster Ost | 0,93 | 1,2 | 1,462 | 0,71 |
+| T06.R09: U-Wert Fenster Süd | 0,93 | 1,2 | 1,462 | 0,71 |
+| T06.R10: U-Wert Fenster West | 0,93 | 1,2 | 1,462 | 0,71 |
+| T06.R11: U-Wert Fenster Horizontal | 0,93 | 1,2 | 1,462 | 0,71 |
+| T06.R12: g-Wert Fenster Nord | 0,7 | 0,8 | 0,92 | 0,5 |
+| T06.R13: g-Wert Fenster Ost | 0,7 | 0,8 | 0,92 | 0,5 |
+| T06.R14: g-Wert Fenster Süd | 0,7 | 0,8 | 0,92 | 0,5 |
+| T06.R15: g-Wert Fenster West | 0,7 | 0,8 | 0,92 | 0,5 |
+| T06.R16: g-Wert Fenster Horizontal | 0,7 | 0,8 | 0,92 | 0,5 |
+| T06.R17: Wärmebrückenzuschlag | 0,1 | 0,1 | 0,1 | 0,1 |
+
+
+| Parameter | T06.PH: OIB-RL6 12er Linie | T06.PI: OIB-RL6 14er Linie | T06.PJ: OIB-RL6 16er Linie | T06.PK: Passivhaus |
+|---|---|---|---|---|
+| T06.R04: U-Wert Außenwände | 0,12666667 | 0,15333333 | 0,18 | 0,15 |
+| T06.R05: U-Wert Dach | 0,093333333 | 0,10666667 | 0,12 | 0,12 |
+| T06.R06: U-Wert Kellerdecke / Fundament | 0,14333333 | 0,16666667 | 0,19 | 0,1 |
+| T06.R07: U-Wert Fenster Nord | 0,78333333 | 0,85666667 | 0,93 | 0,849 |
+| T06.R08: U-Wert Fenster Ost | 0,78333333 | 0,85666667 | 0,93 | 0,849 |
+| T06.R09: U-Wert Fenster Süd | 0,78333333 | 0,85666667 | 0,93 | 0,849 |
+| T06.R10: U-Wert Fenster West | 0,78333333 | 0,85666667 | 0,93 | 0,849 |
+| T06.R11: U-Wert Fenster Horizontal | 0,78333333 | 0,85666667 | 0,93 | 0,849 |
+| T06.R12: g-Wert Fenster Nord | 0,56666667 | 0,63333333 | 0,7 | 0,5 |
+| T06.R13: g-Wert Fenster Ost | 0,56666667 | 0,63333333 | 0,7 | 0,5 |
+| T06.R14: g-Wert Fenster Süd | 0,56666667 | 0,63333333 | 0,7 | 0,5 |
+| T06.R15: g-Wert Fenster West | 0,56666667 | 0,63333333 | 0,7 | 0,5 |
+| T06.R16: g-Wert Fenster Horizontal | 0,56666667 | 0,63333333 | 0,7 | 0,5 |
+| T06.R17: Wärmebrückenzuschlag | 0,1 | 0,1 | 0,1 | 0,1 |
+
+
+| Parameter | T06.PL: Sanierung | T06.PM: Standard - Leichtbau | T06.PN: Standard - Massivbau | T06.PO: WD1 nach OIB (1/3) |
+|---|---|---|---|---|
+| T06.R04: U-Wert Außenwände | 0,19 | 0,167 | 0,167 | 0,20246914 |
+| T06.R05: U-Wert Dach | 0,2 | 0,091 | 0,091 | 0,1600964 |
+| T06.R06: U-Wert Kellerdecke / Fundament | 0,144 | 0,181 | 0,181 | 0,30580146 |
+| T06.R07: U-Wert Fenster Nord | 0,886 | 0,9 | 0,9 | 1,4 |
+| T06.R08: U-Wert Fenster Ost | 0,886 | 0,9 | 0,9 | 1,4 |
+| T06.R09: U-Wert Fenster Süd | 0,886 | 0,9 | 0,9 | 1,4 |
+| T06.R10: U-Wert Fenster West | 0,886 | 0,9 | 0,9 | 1,4 |
+| T06.R11: U-Wert Fenster Horizontal | 0,886 | 0,9 | 0,9 | 1,4 |
+| T06.R12: g-Wert Fenster Nord | 0,7 | 0,5 | 0,5 | 0,6 |
+| T06.R13: g-Wert Fenster Ost | 0,7 | 0,5 | 0,5 | 0,6 |
+| T06.R14: g-Wert Fenster Süd | 0,7 | 0,5 | 0,5 | 0,6 |
+| T06.R15: g-Wert Fenster West | 0,7 | 0,5 | 0,5 | 0,6 |
+| T06.R16: g-Wert Fenster Horizontal | 0,7 | 0,5 | 0,5 | 0,6 |
+| T06.R17: Wärmebrückenzuschlag | 0,1 | 0,1 | 0,1 | 0,1 |
+
+
+| Parameter | T06.PP: WD2 NEH (2/3) | T06.PQ: WD3 PH (3/3, 30 cm) |
+|---|---|---|
+| T06.R04: U-Wert Außenwände | 0,13442623 | 0,1006135 |
+| T06.R05: U-Wert Dach | 0,10442516 | 0,07748192 |
+| T06.R06: U-Wert Kellerdecke / Fundament | 0,20256191 | 0,15143648 |
+| T06.R07: U-Wert Fenster Nord | 1,1 | 0,8 |
+| T06.R08: U-Wert Fenster Ost | 1,1 | 0,8 |
+| T06.R09: U-Wert Fenster Süd | 1,1 | 0,8 |
+| T06.R10: U-Wert Fenster West | 1,1 | 0,8 |
+| T06.R11: U-Wert Fenster Horizontal | 1,1 | 0,8 |
+| T06.R12: g-Wert Fenster Nord | 0,55 | 0,5 |
+| T06.R13: g-Wert Fenster Ost | 0,55 | 0,5 |
+| T06.R14: g-Wert Fenster Süd | 0,55 | 0,5 |
+| T06.R15: g-Wert Fenster West | 0,55 | 0,5 |
+| T06.R16: g-Wert Fenster Horizontal | 0,55 | 0,5 |
+| T06.R17: Wärmebrückenzuschlag | 0,1 | 0,1 |
+
+
+### Festlegung nach Prüfung
+
+| Prüffrage | Rückmeldung |
+|---|---|
+| Fehlende / überflüssige Presets oder Parameter | offen |
+| Empfohlener Standard und zulässige Alternativen | offen |
+| Gültigkeit, Quellen und Anwendungsvoraussetzungen | offen |
+| Freigabe durch / Datum | ausständig |
+
+
+## T07: Luftdichtheit {#sec-preset-t07}
+
+n50, Bauzustand und Nachweisannahme prüfen; ähnlich benannte Presets auf Redundanz prüfen.
+
+**PEExcel-Bezug:** Schemablatt `air_tightness`, Bereich `A1:J4`. Auswahlparameter: `preset_recorded_air_tightness`
+
+### Parameter und fachliche Quellen
+
+| Zeile | Parameter / PEExcel-Kennung | Einheit laut Schema | Fundstelle | Fachquelle / Gültigkeit |
+|---|---|---|---|---|
+| T07.R04 | Luftdichtheit n50 / `vent_air_tightness` | 1/h (Preset) | IN!H181 | zu ergänzen |
+
+
+### Presets und Varianten
+
+| Preset-ID / Excel-Spalte | Spaltenname im Schema | Anzeige | Einordnung | Anwendung laut Export |
+|---|---|---|---|---|
+| T07.PD | Auswählen | Auswählen | Auswahl-/Defaultspalte, Freigabe offen | — |
+| T07.PE | Altbau (n50 4.5) | Altbau (n50 4.5) | Preset, ungeprüft | — |
+| T07.PF | Mittel (konv. Neubau, n50=1,5h-1) | Mittel (konv. Neubau, n50=1,5h-1) | Preset, ungeprüft | — |
+| T07.PG | Passivhaus (n50 0.6) | Passivhaus (n50 0.6) | Preset, ungeprüft | — |
+| T07.PH | San/Neu (n50 1.5) | San/Neu (n50 1.5) | Preset, ungeprüft | — |
+| T07.PI | Schlecht (Altbau, n50=4,0h-1) | Schlecht (Altbau, n50=4,0h-1) | Preset, ungeprüft | — |
+| T07.PJ | Sehr Gut (Passivhaus, n50=0,6h-1) | Sehr Gut (Passivhaus, n50=0,6h-1) | Preset, ungeprüft | — |
+
+
+### Werte zur fachlichen Prüfung
+
+Zeilen-IDs verweisen auf den Parameterkatalog oben; Preset-IDs auf die Excel-Spalten. **— bedeutet leer im Export, nicht null.** Zahlen bleiben in der ausgewiesenen Schemaeinheit; Verhältniswerte werden nicht stillschweigend zu Prozentwerten umgerechnet.
+
+| Parameter | T07.PD: Auswählen | T07.PE: Altbau (n50 4.5) | T07.PF: Mittel (konv. Neubau, n50=1,5h-1) | T07.PG: Passivhaus (n50 0.6) |
+|---|---|---|---|---|
+| T07.R04: Luftdichtheit n50 | 1,5 | 4,5 | 1,5 | 0,6 |
+
+
+| Parameter | T07.PH: San/Neu (n50 1.5) | T07.PI: Schlecht (Altbau, n50=4,0h-1) | T07.PJ: Sehr Gut (Passivhaus, n50=0,6h-1) |
+|---|---|---|---|
+| T07.R04: Luftdichtheit n50 | 1,5 | 4 | 0,6 |
+
+
+### Festlegung nach Prüfung
+
+| Prüffrage | Rückmeldung |
+|---|---|
+| Fehlende / überflüssige Presets oder Parameter | offen |
+| Empfohlener Standard und zulässige Alternativen | offen |
+| Gültigkeit, Quellen und Anwendungsvoraussetzungen | offen |
+| Freigabe durch / Datum | ausständig |
+
+
+## T08: Wirksame Speichermasse {#sec-preset-t08}
+
+Wirksame Wärmekapazität und Flächenbezug prüfen; keine Gleichsetzung mit der gesamten Bauteilmasse.
+
+**PEExcel-Bezug:** Schemablatt `building_mass`, Bereich `A1:G4`. Auswahlparameter: `preset_recorded_building_mass`
+
+### Parameter und fachliche Quellen
+
+| Zeile | Parameter / PEExcel-Kennung | Einheit laut Schema | Fundstelle | Fachquelle / Gültigkeit |
+|---|---|---|---|---|
+| T08.R04 | Spezif. wirksame Wärmekapazität / `heat_capacity_effective_m2` | Wh/m²K (Preset) | IN!H121 | zu ergänzen |
+
+
+### Presets und Varianten
+
+| Preset-ID / Excel-Spalte | Spaltenname im Schema | Anzeige | Einordnung | Anwendung laut Export |
+|---|---|---|---|---|
+| T08.PD | Auswählen | Auswählen | Auswahl-/Defaultspalte, Freigabe offen | — |
+| T08.PE | leicht (60 Wh/m²K) | Leicht (z.B. Holzbau, 60 Wh/m²K) | Preset, ungeprüft | — |
+| T08.PF | mittel (124 Wh/m²K) | mittel (z.B. Hybridbauweise, 124 Wh/m²K) | Preset, ungeprüft | — |
+| T08.PG | schwer (204 Wh/m²K) | schwer (z.B Stahlbeton, Ziegelbauweise, 204 Wh/m²K) | Preset, ungeprüft | — |
+
+
+### Werte zur fachlichen Prüfung
+
+Zeilen-IDs verweisen auf den Parameterkatalog oben; Preset-IDs auf die Excel-Spalten. **— bedeutet leer im Export, nicht null.** Zahlen bleiben in der ausgewiesenen Schemaeinheit; Verhältniswerte werden nicht stillschweigend zu Prozentwerten umgerechnet.
+
+| Parameter | T08.PD: Auswählen | T08.PE: leicht (60 Wh/m²K) | T08.PF: mittel (124 Wh/m²K) | T08.PG: schwer (204 Wh/m²K) |
+|---|---|---|---|---|
+| T08.R04: Spezif. wirksame Wärmekapazität | 204 | 60 | 124 | 204 |
+
+
+### Festlegung nach Prüfung
+
+| Prüffrage | Rückmeldung |
+|---|---|
+| Fehlende / überflüssige Presets oder Parameter | offen |
+| Empfohlener Standard und zulässige Alternativen | offen |
+| Gültigkeit, Quellen und Anwendungsvoraussetzungen | offen |
+| Freigabe durch / Datum | ausständig |
+
+
+## T09: Geometrische Einstrahlungsfaktoren {#sec-preset-t09}
+
+Orientierung, Sommer/Winter, Rahmenanteil und Bezugsnorm klären.
+
+**PEExcel-Bezug:** Schemablatt `shading_geometry`, Bereich `A1:E13`. Auswahlparameter: `preset_recorded_shading_geometry`
+
+### Parameter und fachliche Quellen
+
+| Zeile | Parameter / PEExcel-Kennung | Einheit laut Schema | Fundstelle | Fachquelle / Gültigkeit |
+|---|---|---|---|---|
+| T09.R04 | Einstrahlungsfaktor Fenster Nord / `window_irradiation_factor_winter_north` | ratio (Preset) | IN!H130 | zu ergänzen |
+| T09.R05 | Einstrahlungsfaktor Fenster Ost / `window_irradiation_factor_winter_east` | ratio (Preset) | IN!H131 | zu ergänzen |
+| T09.R06 | Einstrahlungsfaktor Fenster Süd / `window_irradiation_factor_winter_south` | ratio (Preset) | IN!H132 | zu ergänzen |
+| T09.R07 | Einstrahlungsfaktor Fenster West / `window_irradiation_factor_winter_west` | ratio (Preset) | IN!H133 | zu ergänzen |
+| T09.R08 | Einstrahlungsfaktor Fenster Horizontal / `window_irradiation_factor_winter_horizontal` | ratio (Preset) | IN!H134 | zu ergänzen |
+| T09.R09 | Einstrahlungsfaktor Sommer Nord / `window_irradiation_factor_summer_north` | ratio (Preset) | IN!H135 | zu ergänzen |
+| T09.R10 | Einstrahlungsfaktor Sommer Ost / `window_irradiation_factor_summer_east` | ratio (Preset) | IN!H136 | zu ergänzen |
+| T09.R11 | Einstrahlungsfaktor Sommer Süd / `window_irradiation_factor_summer_south` | ratio (Preset) | IN!H137 | zu ergänzen |
+| T09.R12 | Einstrahlungsfaktor Sommer  West / `window_irradiation_factor_summer_west` | ratio (Preset) | IN!H138 | zu ergänzen |
+| T09.R13 | Einstrahlungsfaktor Sommer  Horizontal / `window_irradiation_factor_summer_horizontal` | ratio (Preset) | IN!H139 | zu ergänzen |
+
+
+### Presets und Varianten
+
+| Preset-ID / Excel-Spalte | Spaltenname im Schema | Anzeige | Einordnung | Anwendung laut Export |
+|---|---|---|---|---|
+| T09.PD | Auswählen | Auswählen | Auswahl-/Defaultspalte, Freigabe offen | — |
+| T09.PE | ÖNORM 8110:6 (57% exkl. Rahmenanteil) | ÖNORM 8110:6 (57% exkl. Rahmenanteil) | Preset, ungeprüft | — |
+
+
+### Werte zur fachlichen Prüfung
+
+Zeilen-IDs verweisen auf den Parameterkatalog oben; Preset-IDs auf die Excel-Spalten. **— bedeutet leer im Export, nicht null.** Zahlen bleiben in der ausgewiesenen Schemaeinheit; Verhältniswerte werden nicht stillschweigend zu Prozentwerten umgerechnet.
+
+| Parameter | T09.PD: Auswählen | T09.PE: ÖNORM 8110:6 (57% exkl. Rahmenanteil) |
+|---|---|---|
+| T09.R04: Einstrahlungsfaktor Fenster Nord | 0,57 | 0,57 |
+| T09.R05: Einstrahlungsfaktor Fenster Ost | 0,57 | 0,57 |
+| T09.R06: Einstrahlungsfaktor Fenster Süd | 0,57 | 0,57 |
+| T09.R07: Einstrahlungsfaktor Fenster West | 0,57 | 0,57 |
+| T09.R08: Einstrahlungsfaktor Fenster Horizontal | 0,57 | 0,57 |
+| T09.R09: Einstrahlungsfaktor Sommer Nord | 0,57 | 0,57 |
+| T09.R10: Einstrahlungsfaktor Sommer Ost | 0,57 | 0,57 |
+| T09.R11: Einstrahlungsfaktor Sommer Süd | 0,57 | 0,57 |
+| T09.R12: Einstrahlungsfaktor Sommer  West | 0,57 | 0,57 |
+| T09.R13: Einstrahlungsfaktor Sommer  Horizontal | 0,57 | 0,57 |
+
+
+### Festlegung nach Prüfung
+
+| Prüffrage | Rückmeldung |
+|---|---|
+| Fehlende / überflüssige Presets oder Parameter | offen |
+| Empfohlener Standard und zulässige Alternativen | offen |
+| Gültigkeit, Quellen und Anwendungsvoraussetzungen | offen |
+| Freigabe durch / Datum | ausständig |
+
+
+## T10: Beweglicher Sonnenschutz {#sec-preset-t10}
+
+Fc-Werte, Verfügbarkeit und Bedienannahme je Nutzung prüfen.
+
+**PEExcel-Bezug:** Schemablatt `mobile_shading`, Bereich `A1:I10`. Auswahlparameter: `preset_recorded_mobile_shading`
+
+### Parameter und fachliche Quellen
+
+| Zeile | Parameter / PEExcel-Kennung | Einheit laut Schema | Fundstelle | Fachquelle / Gültigkeit |
+|---|---|---|---|---|
+| T10.R04 | Fc-Wert Wohnen / `fc_residential` | ratio (Preset) | IN!H157 | zu ergänzen |
+| T10.R05 | Fc-Wert Büro / `fc_office` | ratio (Preset) | IN!H158 | zu ergänzen |
+| T10.R06 | Fc-Wert Sekundäre Bildungseinrichtung oder Universität / `fc_schoolsec` | ratio (Preset) | IN!H159 | zu ergänzen |
+| T10.R07 | Fc-Wert Kindergarten und Volksschule / `fc_schoolprim` | ratio (Preset) | IN!H160 | zu ergänzen |
+| T10.R08 | Fc-Wert Lebensmittelhandel / `fc_retailfood` | ratio (Preset) | IN!H161 | zu ergänzen |
+| T10.R09 | Fc-Wert Handel / `fc_retailother` | ratio (Preset) | IN!H162 | zu ergänzen |
+| T10.R10 | Fc-Wert Sonstige / `fc_other` | ratio (Preset) | IN!H163 | zu ergänzen |
+
+
+### Presets und Varianten
+
+| Preset-ID / Excel-Spalte | Spaltenname im Schema | Anzeige | Einordnung | Anwendung laut Export |
+|---|---|---|---|---|
+| T10.PD | Auswählen | Auswählen | Auswahl-/Defaultspalte, Freigabe offen | — |
+| T10.PE | Aluminiumraffstore | Aluminiumraffstore | Preset, ungeprüft | — |
+| T10.PF | Kein Mobiler Sonnenschutz | Kein Mobiler Sonnenschutz | Preset, ungeprüft | — |
+| T10.PG | Teilweise | Teilweise (fc=75%) | Preset, ungeprüft | — |
+| T10.PH | Größtenteils | Größtenteils (fc=40%) | Preset, ungeprüft | — |
+| T10.PI | Flächendeckend | Flächendeckend (fc=15%) | Preset, ungeprüft | — |
+
+
+### Werte zur fachlichen Prüfung
+
+Zeilen-IDs verweisen auf den Parameterkatalog oben; Preset-IDs auf die Excel-Spalten. **— bedeutet leer im Export, nicht null.** Zahlen bleiben in der ausgewiesenen Schemaeinheit; Verhältniswerte werden nicht stillschweigend zu Prozentwerten umgerechnet.
+
+| Parameter | T10.PD: Auswählen | T10.PE: Aluminiumraffstore | T10.PF: Kein Mobiler Sonnenschutz | T10.PG: Teilweise |
+|---|---|---|---|---|
+| T10.R04: Fc-Wert Wohnen | 1 | 0,25 | 1 | 0,75 |
+| T10.R05: Fc-Wert Büro | 0,4 | 0,25 | 1 | 0,75 |
+| T10.R06: Fc-Wert Sekundäre Bildungseinrichtung oder Universität | 0,4 | 0,25 | 1 | 0,75 |
+| T10.R07: Fc-Wert Kindergarten und Volksschule | 0,4 | 0,25 | 1 | 0,75 |
+| T10.R08: Fc-Wert Lebensmittelhandel | 0,4 | 0,25 | 1 | 0,75 |
+| T10.R09: Fc-Wert Handel | 0,4 | 0,25 | 1 | 0,75 |
+| T10.R10: Fc-Wert Sonstige | 0,4 | 0,25 | 1 | 0,75 |
+
+
+| Parameter | T10.PH: Größtenteils | T10.PI: Flächendeckend |
+|---|---|---|
+| T10.R04: Fc-Wert Wohnen | 0,4 | 0,15 |
+| T10.R05: Fc-Wert Büro | 0,4 | 0,15 |
+| T10.R06: Fc-Wert Sekundäre Bildungseinrichtung oder Universität | 0,4 | 0,15 |
+| T10.R07: Fc-Wert Kindergarten und Volksschule | 0,4 | 0,15 |
+| T10.R08: Fc-Wert Lebensmittelhandel | 0,4 | 0,15 |
+| T10.R09: Fc-Wert Handel | 0,4 | 0,15 |
+| T10.R10: Fc-Wert Sonstige | 0,4 | 0,15 |
+
+
+### Festlegung nach Prüfung
+
+| Prüffrage | Rückmeldung |
+|---|---|
+| Fehlende / überflüssige Presets oder Parameter | offen |
+| Empfohlener Standard und zulässige Alternativen | offen |
+| Gültigkeit, Quellen und Anwendungsvoraussetzungen | offen |
+| Freigabe durch / Datum | ausständig |
+
+
+:::

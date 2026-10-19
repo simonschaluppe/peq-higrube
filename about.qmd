@@ -1,0 +1,52 @@
+# Über diesen Bericht {.unnumbered #sec-about}
+::: {.callout-note}
+## Arbeitsfassung vom 14. Oktober 2026
+:::
+## Ziel und Zielgruppe
+
+Dieser Hintergrundbericht erläutert die wissenschaftlichen und methodischen Grundlagen des klimaaktiv Standards für Plus-Energie-Quartiere. Im Mittelpunkt steht die Frage, wie übergeordnete Energie- und Klimaziele in quantitative, überprüfbare Anforderungen an konkrete Quartiersentwicklungen übersetzt werden können.
+
+Der Bericht richtet sich insbesondere an Architekt:innen, Fachplaner:innen, Energieberater:innen, Projektentwickler:innen sowie Fachleute aus Verwaltung, Forschung und Qualitätssicherung. Er ergänzt die klimaaktiv-Broschüre und das Handbuch zum PEQ-Nachweistool um die Herleitung der Zielwerte, Bilanzierungsregeln und Kontextfaktoren.
+
+## Entstehung und wissenschaftliche Grundlagen
+
+Die Methodik wurde von der Forschungsgruppe *Climate-fit Buildings and Districts* der FH Technikum Wien im Rahmen von Forschungs- und Entwicklungsarbeiten zu klimaneutralen Plus-Energie-Quartieren erarbeitet.
+
+Wesentliche wissenschaftliche Grundlagen bilden die Dissertation von Schneider (2026) sowie die zugehörigen Publikationen zur quantitativen Definition von Plus-Energie-Quartieren, zur nationalen Allokation von Energie- und Treibhausgasbudgets und zur integrierten Quartiersbewertung [@schneider2026thesis; @schneider2023context; @schneider2025declaration].
+
+Der Bericht führt diese Arbeiten zusammen und dokumentiert ihre Operationalisierung im österreichischen klimaaktiv Standard.
+
+## Methodenstand und Versionierung
+
+Die dargestellten Anforderungen beruhen auf einem definierten Methodenstand und den zugrunde liegenden nationalen Energie- und Klimaszenarien.
+
+Da sich Szenarien, wissenschaftliche Erkenntnisse und Rahmenbedingungen weiterentwickeln, ist eine regelmäßige Überprüfung und Fortschreibung der Methodik vorgesehen. Änderungen an Zielwerten, Kontextfaktoren und Bilanzierungsregeln sollen nachvollziehbar dokumentiert werden.
+
+Zwischen dem **Methodenstand des Standards** und der **Softwareversion des PEQ-Nachweistools (PEExcel)** wird ausdrücklich unterschieden. Weiterentwicklungen der Software bedeuten nicht zwangsläufig eine Änderung der Bewertungsmethodik.
+
+## Autor:innen und Mitwirkende
+
+Der Bericht wird von der Forschungsgruppe *Climate-fit Buildings and Districts* der FH Technikum Wien erarbeitet.
+
+**Wissenschaftliche Bearbeitung:** Thomas Zelger, Simon Schneider
+
+**Institution:** FH Technikum Wien
+
+[Autor:innenliste, weitere Mitwirkende, Auftraggeber und institutionelle Angaben vor Veröffentlichung ergänzen.]
+
+## Zitierempfehlung
+
+Für die wissenschaftliche Bezugnahme auf die Methodik wird empfohlen, die jeweils einschlägigen Originalpublikationen zu zitieren.
+
+Für Verweise auf die zusammenfassende Darstellung dieses Hintergrundberichts ist folgende Zitierweise vorgesehen:
+
+Schneider, S. et al. (2026): *Klimaneutrale Plus-Energie-Quartiere. Wissenschaftliche Grundlagen des klimaaktiv Standards für Plus-Energie-Quartiere.* FH Technikum Wien, Wien.
+
+## Quellen und Geltungsbereich
+
+Dieser Bericht dokumentiert die von unserem Forschungsteam entwickelte Methodik des klimaaktiv Standards für Plus-Energie-Quartiere. Er führt die in Schneider (2026) und den zugehörigen Publikationen beschriebenen Grundlagen zu einer zusammenhängenden Methodendarstellung zusammen [@schneider2026thesis; @schneider2023context; @schneider2025declaration]. Die klimaaktiv-Broschüre ergänzt diese Darstellung um einen kompakten Überblick zur Anwendung [@klimaaktiv2026peq].
+
+Die hier dokumentierte Anwendung bezieht sich auf Österreich. Eine Übertragung auf andere Länder erfordert eine eigene Prüfung der Szenarien, Allokationen und Bewertungsfaktoren.
+
+Der Bericht erläutert die wissenschaftlichen Grundlagen des Standards, ersetzt jedoch weder die jeweils gültigen offiziellen Anforderungen noch das Handbuch zur Nachweisführung. Für konkrete Deklarationsvorhaben sind die freigegebenen Dokumente und der jeweils maßgebliche Methoden- und Toolstand heranzuziehen.
+

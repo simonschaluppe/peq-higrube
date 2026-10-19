@@ -1,48 +1,105 @@
-# Bezugsgrößen und Parameterdokumentation {#sec-anhang}
+# Annahmen der Zielwertberechnung {#sec-anhang}
 
-## Begriffe und Bezugsgrößen
+::: {.preset-anhang}
 
-| Begriff | Bedeutung im Bericht |
-|---|---|
-| BGF | Bruttogrundfläche; Bezug für das kumulierte THG-Budget |
-| NGF | Nettogrundfläche; die betrieblichen PE-Kennwerte beziehen sich auf die konditionierte NGF |
-| GFZ | Geschoßflächenzahl, Verhältnis von BGF zu Grundstücksfläche |
-| PE | Primärenergie; berücksichtigt die Bewertung der Energieträger und ihrer Bereitstellung |
-| THG | Treibhausgase, bewertet in CO₂-Äquivalenten |
-| GWP100 | Treibhauspotenzial mit einem Charakterisierungshorizont von 100 Jahren |
-| LCA | Lebenszyklusbewertung; hier mit Schwerpunkt auf Treibhausgasemissionen |
-| MIV | Motorisierter Individualverkehr; im Verfahren nach Zielverkehr zugeordnet |
-| PV | Photovoltaik |
-| Kontextgutschrift/-lastschrift | Virtuelle Anpassung der Anforderung, kein physischer Energiefluss |
-| L1/L2/L3 | THG-Budgetvarianten mit unterschiedlicher Senkenannahme; keine PEQ-Qualitätsstufen |
+Dieser Teil bündelt die Grundlagen der Anforderungen an Quartiere: nationale Zukunftsszenarien, sektorale Budgets und deren Verteilung auf Flächen und Nutzungen. Die Herleitung steht in @sec-allokation, die Anwendung in @sec-kontext. Die Annahmen zur Berechnung der Quartiersbilanz folgen in @sec-anhang-quartiersbilanzierung.
 
-## Zeit- und Budgetbezüge
+**Noch zu ergänzen** kennzeichnet eine für die vollständige Darstellung benötigte Angabe, die in dieser Fassung fehlt. **Weiterzuentwickeln** bezeichnet eine bestehende Annahme mit ausstehender methodischer Absicherung oder Aktualisierung. Fehlende Angaben sind keine Nullwerte.
 
-| Größe | Referenz | Erläuterung |
+## Zeit-, Flächen- und Bewertungsbezüge
+
+| Größe | Ansatz | Bedeutung |
 |---|---|---|
-| Ziel- und Flächenprognosejahr | 2040 | Grundlage der nationalen Ableitung |
-| Vollständige Dekarbonisierung | Ab 2050 | Vorsorglich späterer Zeitpunkt im vereinfachten Szenario |
-| Bewertungszeitraum | 2025–2075 | 50-jährige Lebenszyklusbetrachtung |
-| GWP-Charakterisierung | 100 Jahre | Bewertung verschiedener Treibhausgase; keine Projektlaufzeit |
-| THG-Referenzbudget L3 | 320 kg CO₂e/m² BGF | Kumuliert über den Bewertungszeitraum, mit L3-Senkenannahme |
-| L3-Senkenannahme | 1 t CO₂e/(Person a) | Bestandteil der nationalen Budgetableitung |
-| Sanierungsgutschrift | 15 kWh PE/(m² NGF a) | Normativer Wert für den berücksichtigten Sanierungsanteil |
+| Nationales Zieljahr | 2040 | Referenz für Energieallokation und Flächenprognose |
+| Vorsorglicher Dekarbonisierungszeitpunkt | Ab 2050 | Vereinfachtes Szenario ohne zusätzliche Emissionen der betrachteten Prozesse danach; keine Verschiebung der Flächenprognose |
+| Lebenszyklusbetrachtung | 2025–2075, 50 Jahre | Zeitraum der kumulierten THG-Bilanz |
+| THG-Charakterisierung | GWP100 | 100-jähriger Charakterisierungshorizont; unabhängig von der Projektlaufzeit |
+| Nationale Bezugsfläche | 906,7 Mio. m² BGF im Jahr 2040 | Bezugsfläche der THG-Allokation |
+| Betriebliche PE-Bilanz und Kontextfaktoren | kWh PE/(m² NGF a) | Bezug auf konditionierte Nettogrundfläche |
+| Kumuliertes THG-Budget | kg CO₂e/m² BGF | Bezug auf Bruttogrundfläche |
+| Städtebauliche Dichte | GFZ = BGF/Grundstücksfläche | Grundlage der Dichtekorrektur |
 
-Die Herleitungen und Anwendungsgrenzen stehen in @sec-allokation und @sec-kontext. Diese Übersicht ersetzt die dort beschriebenen Bedingungen nicht.
+: Zeit- und Bezugsgrößen nach @schneider2026thesis, Abschn. 3.2, und @schneider2025declaration, Abschn. 2.3–2.4 und Tab. A1.
 
-## Presets und Defaultwerte
+## Energiebilanzen der Zukunftsszenarien
 
-**[Tabellenplatzhalter: fachlich freigegebene Presets und Defaultwerte von PEExcel 1.13.1.]**
+Die Energieallokation bezieht sich auf ein vollständig erneuerbares österreichisches Energiesystem im Zieljahr. Die Werte beschreiben die sektorale Zuordnung; sie sind keine lokalen Erzeugungsvorgaben für jedes einzelne Quartier.
 
-Die Parameterdokumentation ordnet jedem Wert seine Bedeutung, Einheit, Quelle und Gültigkeit zu. Zum Datensatz gehören die genaue Toolfassung, die zugehörige Arbeitsmappe und der Freigabestand. Dadurch bleibt nachvollziehbar, ob eine abweichende Projektbewertung auf geänderten Eingaben oder einem anderen Parametersatz beruht.
+| Größe | Referenzansatz | Grundlage / Stand |
+|---|---|---|
+| PV-Erzeugung des Gebäudesektors | 114,8 PJ/a | @schneider2023context, Tab. 6 |
+| Strombedarf des Gebäudesektors nach Allokation | 137,6 PJ/a | @schneider2023context, Tab. 6 |
+| Zielsaldo des Gebäudesektors | −22,7 PJ/a | Übernommener Sektorsaldo, @schneider2023context, Tab. 6 |
+| Dem MIV zugeteilter Strom | 6,30 TWh/a | @schneider2023context, Tab. 8 |
+| Dem MIV zugeteilte Biomasse | 0,36 TWh/a | @schneider2023context, Tab. 8 |
+| Primärenergiebudget des MIV | 10,68 TWh PE/a | Gewichtete Zuteilung, @schneider2023context, Tab. 8 |
+| Vollständige nationale Energiebilanz | **Noch zu ergänzen** | Erzeugung und Bedarf nach Energieträger und Sektor, einschließlich Umwandlungsverlusten, Importen/Exporten und zentraler/dezentraler Versorgung |
+| Nationale PV-Aufteilung | **Noch zu ergänzen** | Zuordnung von Gebäude-PV, Freiflächen-PV und weiteren Anlagen zum Potenzial und zu den Sektoren |
+| Umrechnung der sektoralen Energiegrößen in PE | **Noch zu ergänzen** | Zusammenhängende Faktortabelle mit Energieträger, Bezugsjahr und Allokationsregel |
+| Entwicklung bis zum Zieljahr | **Noch zu ergänzen** | Stützjahre für Bedarf, Erzeugung und Elektrifizierung mit Zuordnung zum Szenario |
 
-| Parametergruppe | Inhalt der vorgesehenen Tabellen |
-|---|---|
-| Gebäude und Nutzungen | Energetische Kennwerte, Flächenbezüge, Nutzungs- und Bedarfsprofile |
-| Versorgung und Speicherung | Wirkungsgrade, Leistungs- und Kapazitätsansätze, Verluste und Betriebsgrenzen |
-| Mobilität | Nutzungsbezüge, Fahrleistungen, Flottenanteile, Anwesenheit und Laden |
-| Bewertung | Primärenergie- und Emissionsfaktoren einschließlich Zeitauflösung und Pfad |
-| Kontext | Dichteparameter, nutzungsbezogene Mobilitätswerte und Sanierungszuordnung |
-| Lebenszyklus | Bauteilumfang, Materialansätze, Nutzungsdauern und Behandlung biogenen Kohlenstoffs |
+## Gebäudebestand und Dichteallokation
 
-Die Tabellen dokumentieren den Referenzstand. Projektspezifische Abweichungen werden im jeweiligen Nachweis begründet und bleiben von den freigegebenen Standardwerten unterscheidbar.
+| Annahme | Ansatz | Grundlage / Stand |
+|---|---|---|
+| Thermisch sanierter Bestand | 40 % | Anteil im kalibrierten Zielzustand |
+| Sanierung mit geringer PV-Ausstattung | 20 % | Anteil im kalibrierten Zielzustand |
+| PEQ-Sanierung | 20 % | Anteil im kalibrierten Zielzustand |
+| PEQ-Neubau | 20 % | Anteil im kalibrierten Zielzustand |
+| Unsanierter Bestand | 0 % | Annahme des Zielzustands, keine Beschreibung des heutigen Bestands |
+| Nationale Aggregation | Flächengewichtung nach Gebäudetyp und Dichteklasse | @eq-sektor-aggregation |
+| Dichteverteilung des Bestands | Bestehende Kalibrierung | **Noch zu ergänzen:** Dichteklassen und Flächenanteile; **weiterzuentwickeln:** aktualisierte österreichische Datenbasis |
+| Dichteabhängige Anforderung | Kalibrierte Funktion mit Verschiebung und Begrenzung | **Noch zu ergänzen:** Parametertabelle mit Einheiten, Geltungsbereich und Flächenumrechnung |
+| Flächenentwicklung bis 2040 | Nationale Bezugsfläche 906,7 Mio. m² BGF | **Noch zu ergänzen:** Aufteilung nach Nutzung, Bestand, Neubau, Abbruch und Sanierung mit Stützjahren |
+
+: Bestandsanteile und Dichtekalibrierung nach @schneider2023context, Tab. 5 und Abb. 8; Flächenbezug der THG-Allokation nach @schneider2025declaration, Tab. A1. Die jeweiligen Bezugsflächen sind getrennt zu führen.
+
+## Mobilitätsallokation und Sanierung
+
+| Nutzung | MIV-Budget [TWh PE/a] | Bezugsfläche [Mio. m² NGF] | Gutschrift [kWh PE/(m² NGF a)] |
+|---|---:|---:|---:|
+| Wohnen | 5,30 | 375,6 | 14,11 |
+| Büro und Gewerbe | 2,20 | 53,1 | 41,47 |
+| Bildung | 0,29 | 22,5 | 12,93 |
+| Handel und sonstige Nutzungen | 2,89 | 96,5 | 29,97 |
+
+: Mobilitätsallokation nach @schneider2023context, Tab. 9. Die Gutschrift gilt gemeinsam mit dem zugeordneten MIV-Bedarf.
+
+| Annahme | Ansatz | Ergänzungs- oder Entwicklungsbedarf |
+|---|---|---|
+| Verkehrszuordnung | Zielverkehr nach Nutzung; Datenbasis 2013/2014 | **Noch zu ergänzen:** vollständige Zuordnung der Verkehrsanteile zu den nationalen Nutzflächen; **weiterzuentwickeln:** Aktualisierung mit neuer Mobilitätserhebung |
+| Gemischte Nutzung | Flächengewichteter Mittelwert der Gutschriften | Berechnung nach @eq-mobilitaet-mischnutzung |
+| Sanierungsgutschrift | 15 kWh PE/(m² NGF a), gewichtet mit dem Sanierungsanteil | Normative Festlegung nach @klimaaktiv2026peq, S. 14; **weiterzuentwickeln:** quantitative Kalibrierung und gegebenenfalls Differenzierung nach Sanierungserschwernis |
+
+## THG-Budget und Senkenannahmen
+
+| Größe | Ansatz | Funktion |
+|---|---|---|
+| Klimabudgetansatz | 1,5 °C mit 66 % Wahrscheinlichkeit, ohne temporäre Überschreitung | Referenz der Budgetvarianten L1–L3 |
+| Nationales Ausgangsbudget ab 2022 | 280 Mt CO₂ | Vor Abzug der angesetzten Emissionen bis Ende 2024 |
+| Verbleibendes Budget ab 2025 | 130 Mt CO₂ | Ausgangspunkt der Zuteilung |
+| Bevölkerung | 9,0 Mio. Personen | Bezug für die Senkenannahme |
+| Dauer der Senkenanrechnung | 50 Jahre | Kumulation über den Bewertungszeitraum |
+| Anteil Gebäude und MIV | 50 % | Normative sektorale Zuteilung |
+| L1: keine zusätzliche Senke | 0 t CO₂e/(Person a) → 72 kg CO₂e/m² BGF | Budgetvariante |
+| L2: mittlere Senkenannahme | 0,5 t CO₂e/(Person a) → 196 kg CO₂e/m² BGF | Budgetvariante |
+| L3: Referenz der Zertifizierung | 1,0 t CO₂e/(Person a) → 320 kg CO₂e/m² BGF | Referenzbudget dieses Berichts |
+
+: Budgetgrundlagen nach @schneider2025declaration, Tab. 2 und A1. L1–L3 sind Budgetvarianten, keine PEQ-Qualitätsstufen.
+
+Die natürliche Senkenleistung ist eine nationale Szenarioannahme, keine vom Quartier nachgewiesene Kompensation. Bei einer Rekalibrierung sind Restbudget, Senken, sektorale Zuteilung und Bezugsfläche gemeinsam zu behandeln. Mehr Baufläche erhöht das Gesamtbudget nicht.
+
+## THG-Absenkpfade und sektorale Abgrenzung
+
+| Gegenstand | Ansatz im Verfahren | Noch benötigte Konkretisierung |
+|---|---|---|
+| Vollständige Dekarbonisierung | Ab 2050 keine zusätzlichen Emissionen der betrachteten Prozesse | **Noch zu ergänzen:** zusammenhängende Pfadtabelle 2025–2050 mit Stützjahren und Interpolationsregel; der Endpunkt allein legt keinen Verlauf fest |
+| Betriebsenergie | Zeitabhängige Emissionsfaktoren der Energieträger | **Noch zu ergänzen:** Ausgangswerte und Absenkpfade für Strom, Wärme und Brennstoffe samt Quellen |
+| Bauliche Emissionen | Bewertung zum Zeitpunkt von Errichtung, Ersatz und Erneuerung | **Noch zu ergänzen:** material-/prozessbezogene Absenkpfade und Abgleich mit europäischen Gebäudestudien |
+| Mobilität | Flottenentwicklung und Dekarbonisierung der zugeordneten Prozesse | **Noch zu ergänzen:** Antriebsanteile, Energieverbräuche und Herstellungsemissionen nach Stützjahren |
+| Etappen eines Renovierungsfahrplans | Zeitliche Erfassung von Maßnahmen und verbleibenden Betriebsemissionen | **Weiterzuentwickeln:** quantitative Zwischenziele; noch keine festgelegten Deklarationsstufen |
+| PV-Errichtung | Zuordnung zum Energieversorgungssektor, außerhalb der Quartiers-THG-Bilanz | **Weiterzuentwickeln:** konsistente Alternative mit Einbeziehung von PV-Emissionen und zugehörigem Budget im Gebäudesektor |
+
+Die Pfadannahmen gelten auch für die zeitliche Bewertung der Quartiersbilanz. Technische Nutzungsdauern bleiben davon unabhängig: Ersatzvorgänge bleiben erforderlich, auch wenn sie im Szenario keine zusätzlichen Emissionen mehr verursachen. Bilanzumfang und biogene Anrechnung stehen in @sec-bilanzregeln [@schneider2025declaration, Abschn. 2.4–2.5].
+
+:::

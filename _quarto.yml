@@ -9,32 +9,58 @@ project:
 lang: de
 bibliography: references.bib
 
+
 book:
   title: "Klimaneutrale Plus-Energie-Quartiere"
   subtitle: "Wissenschaftliche Grundlagen des klimaaktiv Standards – Arbeitsfassung"
   date: "2026-10-14"
+
   chapters:
     - index.qmd
-    - executive_summary.qmd
-    - Kapitel/01-einführung.qmd
-    - Kapitel/02-standard.qmd
-    - Kapitel/03-allokation.qmd
-    - Kapitel/04-bilanzregeln.qmd
-    - Kapitel/05-kontextfaktoren.qmd
-    - Kapitel/06-quartiersmodell.qmd
-    - Kapitel/07-anwendung.qmd
-    - Kapitel/08-fortschreibung.qmd
+    - part: "Der Standard"
+      chapters:
+      - Kapitel/01-einführung.qmd
+      - Kapitel/02-standard.qmd
+    - part: "Methodik"
+      chapters:
+      - Kapitel/03-allokation.qmd
+      - Kapitel/05-kontextfaktoren.qmd
+      - Kapitel/04-bilanzregeln.qmd
+      - Kapitel/08-fortschreibung.qmd
+    - part: "Anwendung"
+      chapters:
+      - Kapitel/06-quartiersmodell.qmd
+      - Kapitel/07-anwendung.qmd
+
+
     - references.qmd
+    - about.qmd
   appendices:
     - Kapitel/anhang-methodenstand.qmd
+    - Kapitel/anhang-quartiersbilanzierung.qmd
+
+
+    
   search: true
+  sidebar:
+    collapse-level: 1
+  navbar:
+    left:
+      - {href: index.qmd, text: "Der Standard"}
+      - text: "Das Nachweistool"
+        href: https://simonschaluppe.github.io/peexcel/
+        target: _blank
+
 
 format:
   html:
     theme: cosmo
+    css: styles/presets.css
     toc: true
     toc-depth: 3
-    number-sections: true
+    number-sections: false
+    number-depth: 1
+    collapse-level: 1
     link-external-newwindow: true
   pdf:
     documentclass: scrreprt

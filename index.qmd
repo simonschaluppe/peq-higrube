@@ -1,29 +1,37 @@
-# Zum Bericht {.unnumbered}
-
-**Was heißt klimaneutral bauen – und wie viel ist genug?** Dieser Hintergrundbericht erläutert, wie übergeordnete Energie- und Klimaziele in Anforderungen an konkrete Quartiere übersetzt werden. Im Mittelpunkt stehen die Herleitung der Zielwerte, die Verteilung der Anforderungen und die Bilanzierung auf Quartiersebene.
-
-::: {.callout-note}
-## Arbeitsfassung vom 14. Oktober 2026
-
-Diese Fassung umfasst die Kurzfassung, acht Kapitel und einen Anhang mit Bezugsgrößen. Tabellen- und Abbildungsplatzhalter kennzeichnen insbesondere die noch einzufügenden Fallzahlen, Darstellungen und freigegebenen Presets. Die Fassung ist noch keine freigegebene Nachweisgrundlage.
+::: {.callout-note appearance="simple" icon=true}
+{{< var versionstyp >}} vom {{< var versionsdatum >}}
 :::
 
-## Einstieg {.unnumbered}
+# Kurzfassung {.unnumbered}
 
-- Die [Executive Summary](executive_summary.qmd) fasst Anliegen und Bewertungsansatz zusammen.
-- Die [Einführung](Kapitel/01-einführung.qmd) erläutert die Leitfrage und den Zweck des Berichts.
-- Die [Standardbeschreibung](Kapitel/02-standard.qmd) stellt die Qualitätsstufen und die Bewertungslogik vor.
-- Die [nationale Allokation](Kapitel/03-allokation.qmd) erläutert Zielwerte, Kontextfaktoren und THG-Budgets mit Rechenwegen und Quellen.
+**Was heißt klimaneutral bauen – und wie viel ist genug?**
 
-- Die [Bilanzregeln](Kapitel/04-bilanzregeln.qmd) klären Systemgrenzen, Zeitbezüge und Lebenszyklusumfang.
-- Die [Kontextfaktoren](Kapitel/05-kontextfaktoren.qmd) übertragen die Anforderungen auf das konkrete Quartier.
-- Das [Quartiersmodell](Kapitel/06-quartiersmodell.qmd) erläutert Simulation, Planungsnutzen und Grenzen.
-- Die [Anwendung](Kapitel/07-anwendung.qmd) verbindet Nachweisführung, Fallbeispiele und Renovierungsfahrplan.
-- Die [Weiterentwicklung](Kapitel/08-fortschreibung.qmd) behandelt Fortschreibung und kommunale Perspektiven.
-- Der [Anhang](Kapitel/anhang-methodenstand.qmd) bündelt Bezugsgrößen und Parameterdokumentation.
+Der klimaaktiv Standard für Plus-Energie-Quartiere übersetzt übergeordnete Energie- und Klimaziele in **quantitative, überprüfbare Anforderungen an konkrete Bau- und Sanierungsvorhaben**. Er berücksichtigt dabei nicht nur die Energieeffizienz der Gebäude, sondern auch erneuerbare Energieerzeugung, bauliche Dichte, Mobilität und Treibhausgasemissionen über den Lebenszyklus.
 
-## Quellen und Geltungsbereich {.unnumbered}
+## Was wird bewertet?
 
-Dieser Bericht dokumentiert die von unserem Forschungsteam entwickelte Methodik des klimaaktiv Standards für Plus-Energie-Quartiere. Er führt die in Schneider (2026) und den zugehörigen Publikationen beschriebenen Grundlagen zu einer zusammenhängenden Methodendarstellung zusammen [@schneider2026thesis; @schneider2023context; @schneider2025declaration]. Die klimaaktiv-Broschüre ergänzt diese Darstellung um einen kompakten Überblick zur Anwendung [@klimaaktiv2026peq].
+Der Standard verwendet zwei zentrale Bewertungsgrößen: eine **zeitlich gewichtete Primärenergiebilanz** und ein **kumuliertes Treibhausgasbudget**. Daraus ergeben sich drei aufeinander aufbauende Qualitätsstufen:
 
-Die hier dokumentierte Anwendung bezieht sich auf Österreich. Eine Übertragung auf andere Länder erfordert eine eigene Prüfung der Szenarien, Allokationen und Bewertungsfaktoren.
+1. **Plus-Energie-Quartier:** Positive Primärenergiebilanz im Gebäudebetrieb.
+2. **Plus-Energie-Quartier mit Mobilität:** Zusätzlich wird die motorisierte Individualmobilität berücksichtigt.
+3. **Klimaneutrales Plus-Energie-Quartier:** Zusätzlich wird ein Lebenszyklus-THG-Budget von **320 kg CO₂e/m² BGF** eingehalten.
+
+Die Bilanzierungsregeln werden in @sec-bilanzregeln erläutert.
+
+## Wie werden die Anforderungen hergeleitet?
+
+Der Bewertungsansatz verbindet zwei Perspektiven:
+
+**Top-down:** Nationale Energie- und Klimaziele werden auf Sektoren und Quartierstypologien übertragen. Daraus entstehen Zielwerte und Budgets (@sec-allokation).
+
+**Bottom-up:** Gebäude, Energieversorgung, Mobilität und Lebenszyklusemissionen werden für das konkrete Quartier bilanziert. Eine stündliche Simulation berücksichtigt dabei insbesondere Photovoltaik, Speicher und Energieflexibilität.
+
+**Kontextfaktoren** für Dichte, Mobilität und Sanierung ermöglichen eine differenzierte Verteilung der Anforderungen. Ihre Gutschriften und Lastschriften verändern den Bewertungsmaßstab, nicht die tatsächlichen Energieflüsse (@sec-kontext).
+
+## Anwendung und wissenschaftliche Grundlage
+
+Das [PEExcel-Nachweistool](https://simonschaluppe.github.io/peexcel/) unterstützt den Variantenvergleich und die strukturierte Nachweisführung (@sec-anwendung).
+
+Die Methodik beruht auf wissenschaftlichen Arbeiten zur quantitativen Definition und Bewertung von Plus-Energie-Quartieren [@schneider2026thesis; @schneider2023context; @schneider2025declaration]. Da die Zielwerte von nationalen Energie- und Klimaszenarien abhängen, ist ihre **dokumentierte Fortschreibung** Bestandteil des methodischen Ansatzes.
+
+Dieser Hintergrundbericht legt die Herleitungen, Annahmen und Grenzen des Standards offen. Eine kompakte Einführung bietet die klimaaktiv-Broschüre [@klimaaktiv2026peq]; Angaben zum Bericht und seinem Geltungsbereich finden sich unter @sec-about.
