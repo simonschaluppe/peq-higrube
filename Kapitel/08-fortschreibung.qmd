@@ -1,3 +1,6 @@
+::: {.callout-note appearance="simple" icon=true}
+{{< var versionstyp >}} vom {{< var versionsdatum >}}
+:::
 # Methodenstand, Grenzen und Weiterentwicklung {#sec-fortschreibung}
 ::: {.lead}
 

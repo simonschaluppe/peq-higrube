@@ -33,7 +33,11 @@ Bei niedriger Dichte verlangt die Regel einen zusätzlichen Überschuss. Bei hoh
 
 Die Architektur beeinflusst das tatsächliche Potenzial durch Baukörperstellung, Verschattung, Dach- und Fassadennutzung. Der Dichtefaktor ersetzt diese Prüfung nicht. Zwei Quartiere mit derselben GFZ können unterschiedliche nutzbare PV-Flächen haben. Ebenso konkurrieren auf dem Dach PV, technische Aufbauten, Begrünung, Aufenthalt und Wartungswege um Fläche. Der nachgewiesene Ertrag muss aus einem umsetzbaren Entwurf stammen.
 
-**[Abbildungsplatzhalter: Dichteabhängiger Zielwert und Kontextfaktor mit entgegengesetztem Vorzeichen; Grundlage Schneider (2026), Abb. 20, und Schneider et al. (2023).]**
+Die Dichtekorrektur verändert die Anforderungen abhängig von der Geschoßflächenzahl. Niedrige Dichten führen zu zusätzlichen Anforderungen, während höhere Dichten eine Gutschrift erhalten können.
+
+![Dichteabhängiger Primärenergie-Kontextfaktor mit Gutschriften und Lastschriften gegenüber dem Nullmaßstab.](../Abbildungen/dichtekurve.png){#fig-dichtekurve width="95%"}
+
+@fig-dichtekurve veranschaulicht die Verteilung der energetischen Anforderungen zwischen unterschiedlichen baulichen Dichten. Die dargestellten Werte sind von den tatsächlich erreichten Energieflüssen des Quartiers zu unterscheiden.
 
 ## Mobilität: Nutzung bestimmt das Budget, Standort bestimmt den Bedarf
 
@@ -46,6 +50,14 @@ c_{\mathrm{Mobilität}}
 $$ {#eq-mobilitaet-mischnutzung}
 
 Die nutzungsspezifischen Werte stehen in @tbl-mobilitaetsallokation. Ihre Flächenzuordnung muss mit jener des zugeordneten Verkehrsbedarfs übereinstimmen. Eine zusätzliche Büronutzung verändert sowohl die Gutschrift als auch die zu bilanzierenden Wege; sie ist kein reiner Bilanzbonus.
+
+Für die standortabhängige Abschätzung des Mobilitätsbedarfs werden Gemeinden beziehungsweise Standorte unterschiedlichen Mobilitätsregionen zugeordnet.
+
+![Räumliche Verteilung der Mobilitätsregionen in Österreich als Grundlage für standortabhängige Mobilitätsannahmen. (Datenquelle: Österreich unterwegs 2014)](../Abbildungen/verkehrsgueteklasse.png){#fig-mobilitaetsregionen width="100%"}
+
+Die räumlichen Unterschiede spiegeln sich im angesetzten motorisierten Individualverkehr wider. Sie beeinflussen den zugeordneten Mobilitätsbedarf, nicht automatisch das nutzungsbezogene Energiebudget.
+
+![Jährliche MIV-Verkehrsleistung nach Mobilitätsregion, dargestellt als Personen-Kilometer pro Bezugsgröße und Jahr. (Datenquelle: Österreich unterwegs 2014)](../Abbildungen/verkehrsleisting.svg){#fig-miv-verkehrsleistung width="90%"}
 
 Der Standort wirkt vor allem auf der Bedarfsseite. Kurze Wege, ein geeigneter Nutzungsmix, öffentlicher Verkehr und ein wirksames Mobilitätskonzept können den MIV vermindern. Diese Wirkung ist mit nachvollziehbaren Annahmen über Wege, Verkehrsmittelwahl und Fahrzeugflotte anzusetzen. Die bloße Bereitstellung von Fahrradabstellplätzen oder Ladepunkten begründet noch keine beliebig große Verkehrsreduktion.
 

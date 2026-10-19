@@ -1,0 +1,65 @@
+# Praxisbeispiele {#sec-praxisbeispiele}
+
+::: {.lead}
+Was die Bewertungsregeln für unterschiedliche Quartiere bedeuten
+:::
+
+Zwei Beispiele illustrieren unterschiedliche Planungsaufgaben: die energetische Weiterentwicklung eines bestehenden Wohnquartiers und die zusätzliche Anforderung an ein Quartier mit niedriger baulicher Dichte. Die Beispiele dienen der **Interpretation des jeweiligen Deklarationsumfangs**, nicht dem pauschalen Vergleich von Qualitätsstufen unterschiedlicher Projekte.
+
+## RUGInnovation – Sanierung und integrierte Energieversorgung
+
+Das Wiener Projekt RUGInnovation kombiniert die Sanierung einer Wohnanlage mit einer veränderten Energieversorgung und Photovoltaik auf Dach- und Fassadenflächen. Dokumentiert sind unter anderem Arbeiten an Fassade, Dach und Fenstern, eine Grundwasserwärmepumpe sowie Mobilitätsmaßnahmen [@klimaaktiv2026peq, S. 15–19].
+
+Der Fall zeigt, wie Gebäudehülle, Wärmeversorgung, erneuerbare Erzeugung und Mobilität gemeinsam wirken. Die Sanierungsgutschrift verändert die energetische Anforderung; tatsächliche Einsparungen entstehen dagegen durch die umgesetzten Maßnahmen. Deshalb sollten zunächst Betriebsenergie, danach die Erweiterung um Mobilität und schließlich die baulichen THG-Beiträge getrennt betrachtet werden.
+
+::: {.callout-note appearance="simple" icon=false title="Abbildungsvorschlag P1 · RUGInnovation – Projekt und System"}
+**Bildgalerie:** Bestands-/Projektansicht, Energieversorgungsschema, PV-Integration. Nur freigegebene Bilder mit dokumentierter Quelle und Bildrechten verwenden.
+
+<!-- ![RUGInnovation: Quartier und Energieversorgung](../Abbildungen/praxis/ruginnovation-projekt.svg){#fig-rug-projekt width="100%"} -->
+:::
+
+::: {.callout-note appearance="simple" icon=false title="Abbildungsvorschlag P2 · RUGInnovation – drei Bilanzebenen"}
+**Plotly:** Betriebsenergie → inklusive MIV → THG-Lebenszyklusbewertung. Einmal mit tatsächlichem Datenstand und geeigneten Anmerkungen zu Sanierung, PV, Wärmeversorgung und Budget; für PDF statischer Export. Die drei Stufen nur zeigen, soweit dafür freigegebene Berechnungen vorliegen.
+
+<!-- ![RUGInnovation: Energie- und THG-Bilanz](../Abbildungen/praxis/ruginnovation-bilanz.svg){#fig-rug-bilanz width="100%"} -->
+:::
+
+| Zu dokumentierende Größe | Projektstand |
+|---|---|
+| Projektgrenze, BGF, NGF, GFZ | **Mit freigegebenem Projektstand ergänzen** |
+| Sanierungsumfang und Wärmeversorgung | **Mit Nachweisunterlagen abgleichen** |
+| PV-Flächen und Ertrag | **Mit Nachweisunterlagen abgleichen** |
+| Primärenergiesaldo und Kontextfaktoren | **Mit freigegebenem PEExcel-Export ergänzen** |
+| Bauliche und betriebliche THG-Beiträge | **Nur soweit im Deklarationsumfang vorhanden** |
+
+: RUGInnovation – für die publizierte Beispielbewertung benötigte Projektdaten. {#tbl-rugdaten}
+
+## Am Bichl III – Dichte als zusätzliche Anforderung
+
+Am Bichl III wird als fertiggestelltes Plus-Energie-Quartier betrachtet. Der hier dokumentierte Deklarationsumfang umfasst die Betriebsenergie; eine Bilanz einschließlich Mobilität oder für die Klimaneutralitätsstufe wird daraus nicht abgeleitet.
+
+Das Beispiel verdeutlicht die Wirkung des Dichtekontexts: Bei geringer baulicher Dichte wird ein zusätzlicher energetischer Beitrag verlangt. Entscheidend ist deshalb der Vergleich zwischen dem Primärenergiesaldo **vor Kontextkorrektur**, der **Dichtelastschrift** und dem **bewerteten Endsaldo**.
+
+::: {.callout-note appearance="simple" icon=false title="Abbildungsvorschlag P3 · Am Bichl III – Quartier"}
+**Bildgalerie:** Projektansicht, Lage-/Dichteplan, örtliche PV-Flächen. Nutzung nur mit bestätigter Bildfreigabe.
+
+<!-- ![Am Bichl III: Quartiersansicht](../Abbildungen/praxis/am-bichl-projekt.svg){#fig-bichl-projekt width="100%"} -->
+:::
+
+::: {.callout-note appearance="simple" icon=false title="Abbildungsvorschlag P4 · Am Bichl III – Bilanz und Dichte"}
+**Diagramm:** Primärenergiebilanz vor Kontext, Dichtelastschrift und bewerteter Saldo; optional Marker auf der Dichtekontextkurve aus @sec-kontext.
+
+<!-- ![Am Bichl III: Betriebsbilanz und Dichte](../Abbildungen/praxis/am-bichl-bilanz.svg){#fig-bichl-bilanz width="100%"} -->
+:::
+
+::: {.callout-important appearance="simple" icon=false title="Bewertungsumfang beachten"}
+Ein Nachweis der ersten Qualitätsstufe erlaubt **keine Aussage**, ob dasselbe Quartier auch die Mobilitäts- und Klimaneutralitätsstufe erfüllt oder verfehlt. Dafür wären zusätzliche, entsprechend abgegrenzte Berechnungen erforderlich.
+:::
+
+## Was der Vergleich der Beispiele lehrt
+
+Eine sinnvolle Gegenüberstellung erklärt nicht nur die erreichte Qualitätsstufe, sondern auch die Ausgangsbedingungen: Gebäudebestand, GFZ, verfügbare Erzeugungsflächen, Mobilitätsannahmen und Deklarationsphase. Wo die Nachweisumfänge unterschiedlich sind, sollte kein unmittelbares Ranking der Endsalden vorgenommen werden.
+
+::: {.callout-tip appearance="minimal" icon=false title="Weitere Visualisierung"}
+**Vergleichsgalerie:** Zwei Projektkarten mit denselben Metadaten und je einem kleinen Bilanzdiagramm. Fehlende Daten sichtbar als „nicht Teil des Nachweises“ statt als Nullwert ausweisen.
+:::

@@ -30,8 +30,8 @@ Der Bewertungsansatz verbindet zwei Perspektiven:
 
 ## Anwendung und wissenschaftliche Grundlage
 
-Das [PEExcel-Nachweistool](https://simonschaluppe.github.io/peexcel/) unterstützt den Variantenvergleich und die strukturierte Nachweisführung (@sec-anwendung).
+Das [PEExcel-Nachweistool](https://simonschaluppe.github.io/peexcel/) ermöglicht die strukturierte Nachweisführung (@sec-anwendung).
 
 Die Methodik beruht auf wissenschaftlichen Arbeiten zur quantitativen Definition und Bewertung von Plus-Energie-Quartieren [@schneider2026thesis; @schneider2023context; @schneider2025declaration]. Da die Zielwerte von nationalen Energie- und Klimaszenarien abhängen, ist ihre **dokumentierte Fortschreibung** Bestandteil des methodischen Ansatzes.
 
-Dieser Hintergrundbericht legt die Herleitungen, Annahmen und Grenzen des Standards offen. Eine kompakte Einführung bietet die klimaaktiv-Broschüre [@klimaaktiv2026peq]; Angaben zum Bericht und seinem Geltungsbereich finden sich unter @sec-about.
+Dieser Hintergrundbericht legt die Herleitungen, Annahmen und Grenzen des Standards offen. Eine kompakte Einführung für Interessierte bietet die klimaaktiv-Broschüre [@klimaaktiv2026peq]; Angaben zum Bericht und seinem Geltungsbereich finden sich [hier](about.qmd).

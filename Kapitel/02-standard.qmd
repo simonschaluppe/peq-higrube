@@ -1,122 +1,76 @@
-# Der Standard
-## Zielsetzung und Grundprinzip
+::: {.lead}
+Der klimaaktiv Standard für Plus-Energie-Quartiere 
+:::
+::: {.callout-note appearance="simple" icon=true}
+{{< var versionstyp >}} vom {{< var versionsdatum >}}
+:::
 
-Der klimaaktiv Standard für Plus-Energie-Quartiere definiert quantitative Anforderungen an die energetische und klimabezogene Leistungsfähigkeit von Quartieren.
+# Der Standard {#sec-standard}
 
-Ausgangspunkt ist die Übertragung übergeordneter Energie- und Klimaziele auf konkrete Planungs- und Bauvorhaben. Dabei wird berücksichtigt, dass Quartiere sehr unterschiedliche bauliche, räumliche und infrastrukturelle Voraussetzungen aufweisen.
 
-Die Bewertung konzentriert sich auf zwei zentrale Zielgrößen: eine positive Primärenergiebilanz und – für die umfassendste Qualitätsstufe – die Einhaltung eines kumulierten Treibhausgasbudgets.
+Der klimaaktiv Standard für Plus-Energie-Quartiere definiert quantitative Anforderungen an die Energie- und Treibhausgasbilanz von Quartieren. Er ermöglicht es, Neubau- und Sanierungsvorhaben anhand eines gemeinsamen, aus übergeordneten Energie- und Klimazielen abgeleiteten Bewertungsmaßstabs zu beurteilen.
 
-Die Primärenergiebilanz berücksichtigt Energiebedarf und Energieaufbringung sowie die zeitliche und systemische Bewertung der auftretenden Energieflüsse. Die Treibhausgasbilanz erweitert die Betrachtung auf klimawirksame Emissionen aus dem Betrieb, der Mobilität und dem Lebenszyklus der baulichen Infrastruktur.
+## Ziel und Bewertungsanspruch
 
-Die Anforderungen werden durch projektspezifische Kontextfaktoren ergänzt. Diese berücksichtigen strukturelle Rahmenbedingungen, die von den Projektverantwortlichen nur teilweise beeinflusst werden können.
+Ein Quartier soll nicht nur möglichst wenig Energie benötigen, sondern einen angemessenen Beitrag zu einem erneuerbaren und klimaneutralen Energiesystem leisten. Der Standard betrachtet dafür das Zusammenspiel von Energiebedarf, erneuerbarer Energieaufbringung, Mobilität und Lebenszyklusemissionen.
 
-Damit verbindet der Standard zwei Ziele: die Vergleichbarkeit unterschiedlicher Quartiersentwicklungen und die Ausrichtung ihrer Anforderungen an übergeordneten Klimazielen.
+Die Anforderungen sind **quantitativ, kontextabhängig und überprüfbar**. Sie berücksichtigen unterschiedliche bauliche und räumliche Ausgangsbedingungen, ohne die Ausrichtung an den übergeordneten Zielen aufzugeben.
 
 ## Die drei Qualitätsstufen
 
-Der Standard unterscheidet drei aufeinander aufbauende Qualitätsstufen, die sich durch den Umfang der betrachteten Energiedienstleistungen und Emissionsquellen unterscheiden.
+Der Standard unterscheidet drei aufeinander aufbauende Qualitätsstufen:
 
-### Plus-Energie-Quartier
+| Qualitätsstufe | Bewertungsumfang | Zentrales Kriterium |
+|---|---|---|
+| **Plus-Energie-Quartier** | Gebäudebetrieb einschließlich gebäudebezogener Stromanwendungen | Positive bewertete Primärenergiebilanz |
+| **Plus-Energie-Quartier mit Mobilität** | Gebäudebetrieb und zugeordnete motorisierte Individualmobilität | Positive bewertete Primärenergiebilanz einschließlich Mobilität |
+| **Klimaneutrales Plus-Energie-Quartier** | Zusätzlich Lebenszyklusemissionen aus baulichen Prozessen, Betrieb und Mobilität | Positive bewertete Primärenergiebilanz und Einhaltung des kumulierten THG-Budgets |
 
-Die erste Qualitätsstufe betrachtet die Betriebsenergie des Quartiers. Dazu zählen insbesondere die Energiebedarfe für Raumheizung, Kühlung, Warmwasser, Lüftung, Beleuchtung und weitere gebäudebezogene Stromanwendungen.
+Die dritte Qualitätsstufe verwendet im dokumentierten Referenzverfahren ein Treibhausgasbudget von **320 kg CO₂e/m² BGF**. Dieses gilt unter den festgelegten Systemgrenzen und Szenarioannahmen. Seine Herleitung wird in @sec-allokation erläutert; die berücksichtigten Lebenszyklusprozesse beschreibt @sec-bilanzregeln.
 
-Die Energiebedarfe werden der lokalen erneuerbaren Energieaufbringung und weiteren im Standard definierten Bilanzkomponenten gegenübergestellt. Eine positive Primärenergiebilanz bildet das zentrale Bewertungskriterium.
+![Die drei Qualitätsstufen des klimaaktiv Standards und die Erweiterung ihrer energetischen und treibhausgasbezogenen Bilanzgrenzen.](../Abbildungen/standard_systemgrenzen.svg){#fig-standard-systemgrenzen width="100%"}
 
-### Plus-Energie-Quartier mit Mobilität
+## Bewertungsgrößen und Erfüllungskriterien
 
-Die zweite Qualitätsstufe erweitert die Primärenergiebilanz um die motorisierte Individualmobilität.
+Die Bewertung beruht auf zwei komplementären Größen:
 
-Damit werden nicht nur die energetischen Eigenschaften der Gebäude, sondern auch die Auswirkungen der Mobilität der Nutzer berücksichtigt. Relevante Einflussgrößen sind unter anderem der Standort, die Verkehrsanbindung, das Mobilitätsverhalten und die eingesetzten Fahrzeugtechnologien.
+**Primärenergiebilanz:** Energiebedarf, erneuerbare Aufbringung und Energieaustausch mit den umgebenden Netzen werden nach den festgelegten Bilanzierungsregeln bewertet. Die stündlich berechneten Energieflüsse werden mit zeitabhängigen Faktoren gewichtet. Eine positive Bewertungsbilanz ist Voraussetzung für alle drei Qualitätsstufen.
 
-Die zusätzliche Berücksichtigung der Mobilität macht sichtbar, in welchem Ausmaß Quartiersplanung und Standortwahl den Energiebedarf über die Gebäudegrenzen hinaus beeinflussen.
+**Treibhausgasbilanz:** Für die Klimaneutralitätsstufe werden die Emissionen aus den definierten baulichen Prozessen, dem Gebäudebetrieb und der Mobilität über den Bewertungszeitraum kumuliert und mit dem zugeteilten THG-Budget verglichen.
 
-### Klimaneutrales Plus-Energie-Quartier
+Die Bewertung unterscheidet damit zwischen **dem berechneten Energie- und Emissionsergebnis eines Quartiers** und **dem Maßstab, an dem dieses Ergebnis beurteilt wird**.
 
-Die dritte Qualitätsstufe ergänzt die positive Primärenergiebilanz einschließlich Mobilität um eine Lebenszyklus-Treibhausgasbilanz.
-
-Neben den Emissionen des laufenden Betriebs und der Mobilität werden insbesondere die Emissionen aus der Herstellung und Instandhaltung der baulichen Infrastruktur berücksichtigt.
-
-Das kumulierte Bewertungsergebnis wird einem definierten Treibhausgasbudget gegenübergestellt. Der im aktuellen Standard verwendete Referenzwert beträgt **320 kg CO₂e pro Quadratmeter Bruttogrundfläche**.
-
-Der Wert gilt für den Bewertungszeitraum 2025–2075 und die Budgetvariante L3 mit einer angenommenen natürlichen Senkenleistung von 1 t CO₂e pro Person und Jahr. Die betrachteten Prozesse werden ab 2050 als vollständig dekarbonisiert angesetzt. @sec-allokation erläutert die Herleitung, den Bezug zum Zieljahr 2040 und die Grenzen dieser Annahmen.
-
-Die Systemgrenzen und die Behandlung einzelner Lebenszyklusprozesse erläutert @sec-bilanzregeln.
-
-Die dritte Qualitätsstufe trägt damit dem Umstand Rechnung, dass eine positive Energiebilanz im Betrieb allein keine ausreichende Aussage über die Klimaverträglichkeit eines Quartiers über seinen gesamten Lebenszyklus ermöglicht.
-
-**[Abbildungsplatzhalter: Systemgrenzen und Bilanzierungsumfang der drei Qualitätsstufen – adaptiert aus klimaaktiv-Broschüre 2026, S. 8.]**
+Die entsprechenden Bilanzierungsverfahren und Systemgrenzen erläutert @sec-bilanzregeln.
 
 ## Kontextabhängige Anforderungen
 
-Die Voraussetzungen für eine positive Energiebilanz unterscheiden sich erheblich zwischen verschiedenen Quartierstypologien.
+Nicht jedes Quartier verfügt über dieselben Voraussetzungen. Insbesondere bauliche Dichte, Standort und Gebäudebestand beeinflussen, welche Beiträge zur Energiewende lokal erbracht werden können.
 
-Eine locker bebaute Siedlung verfügt in der Regel über ein größeres Potenzial zur lokalen erneuerbaren Energieerzeugung pro Quadratmeter Nutzfläche als ein dicht bebautes Stadtquartier. Gleichzeitig können sich die Anforderungen an Mobilität und Gebäudesanierung stark unterscheiden.
+Der Standard berücksichtigt dies über drei Kontextfaktoren:
 
-Der Standard berücksichtigt solche Unterschiede durch quantitative Kontextfaktoren.
+- **Dichte:** Bei geringer baulicher Dichte wird ein höherer energetischer Beitrag verlangt; dichte Quartiere können eine Gutschrift erhalten.
+- **Mobilität:** Ein aus der nationalen Energieallokation abgeleitetes Budget wird den Nutzungen zugeordnet und dem tatsächlich bilanzierten Mobilitätsbedarf gegenübergestellt.
+- **Sanierung:** Bestandsvorhaben erhalten eine festgelegte Entlastung, die besonderen Einschränkungen bei der energetischen Verbesserung Rechnung trägt.
 
-### Bauliche Dichte
+Die Kontextfaktoren verändern die **energetische Bewertungsanforderung**, nicht die tatsächlich benötigte oder erzeugte Energie. Eine positive Bewertungsbilanz kann daher auch dann erreicht werden, wenn das Quartier physisch keinen Nettoenergieüberschuss aufweist.
 
-Der Kontextfaktor für die bauliche Dichte berücksichtigt das Verhältnis zwischen dem Energiebedarf der Gebäude und den lokal verfügbaren Flächen für erneuerbare Energieerzeugung.
+Die Herleitung der Zielwerte beschreibt @sec-allokation, die Berechnung und Anwendung der Kontextfaktoren @sec-kontext.
 
-Als maßgebliche Kenngröße dient die Geschoßflächenzahl. Bei niedrigen Dichten wird die Bilanz durch eine zusätzliche Anforderung belastet, während höhere bauliche Dichten eine Gutschrift erhalten können.
+## Auf dem richtigen Weg?
 
-Damit wird vermieden, dass Quartiere allein aufgrund ihrer geringen baulichen Dichte systematisch bevorzugt werden.
+::: {.callout-warning}
 
-### Mobilität
 
-Die Integration der motorisierten Individualmobilität erweitert die energetische Verantwortung des Quartiers über den Gebäudebetrieb hinaus.
+[platzhalter]
 
-Der Mobilitätskontextfaktor berücksichtigt einen aus dem nationalen Energiesystem abgeleiteten Anteil erneuerbarer Energie, der der motorisierten Individualmobilität zugeordnet wird.
+:::
 
-Die tatsächlich zu bilanzierenden Mobilitätsbedarfe hängen unter anderem von den Standortbedingungen, dem Mobilitätskonzept und der Fahrzeugflotte ab.
+## Bedeutung und Grenzen der Bewertung
 
-### Sanierung
+Eine erfüllte Qualitätsstufe zeigt, dass ein Quartier die definierten Anforderungen **unter den festgelegten Systemgrenzen, Faktoren und Projektannahmen** erreicht.
 
-Bestandsquartiere weisen häufig höhere spezifische Betriebsenergiebedarfe auf als vergleichbare Neubauquartiere. Gleichzeitig kann die Weiterverwendung bestehender Bausubstanz erhebliche Emissionen aus Abbruch und Neuerrichtung vermeiden.
+Die Bewertung soll  eine konsistente Grundlage bieten, um Quartierskonzepte zu beurteilen, Varianten zu vergleichen und die Zielerreichung im Planungsprozess nachzuweisen.
 
-Ein eigener Kontextfaktor berücksichtigt diese besondere Ausgangssituation bei der energetischen Bewertung von Sanierungsvorhaben.
+Dafür steht das PEQ-Nachweistool zur Verfügung. Den Modellaufbau und seine Vereinfachungen erläutert @sec-quartiersmodell; Anwendung und Deklarationsprozess beschreibt @sec-anwendung.
 
-Die Kontextfaktoren sind keine pauschalen Ausnahmen vom Klimaziel. Sie bilden vielmehr die Grundlage für eine differenzierte Verteilung der Anforderungen zwischen unterschiedlichen Quartierstypologien.
-
-@sec-allokation erläutert die Ableitung von Dichte- und Mobilitätsanforderungen aus der nationalen Allokation. Die Sanierungsgutschrift ist dagegen eine normativ festgelegte Entlastung, deren Höhe bislang nicht quantitativ kalibriert ist.
-
-Die Anwendung auf das konkrete Quartier und die getrennte Darstellung der Kontextkomponenten erläutert @sec-kontext.
-
-## Bilanzierung und Bewertung
-
-Die energetische Bewertung erfolgt durch die zeitlich aufgelöste Berechnung von Energiebedarf, lokaler Energieerzeugung, Speicherung und Austausch mit den umgebenden Energienetzen.
-
-Das Bewertungsmodell berücksichtigt unterschiedliche Energieträger und wendet zeitabhängige Konversionsfaktoren an. Dadurch werden beispielsweise der Strombezug aus dem öffentlichen Netz und die Einspeisung lokal erzeugten Stroms in Abhängigkeit vom jeweiligen Zeitpunkt bewertet.
-
-Im hier beschriebenen Bewertungsansatz werden stündliche Energieflüsse mit monatlichen Emissionsfaktoren bewertet. Simulationsauflösung und zeitliche Auflösung der Faktoren sind damit zu unterscheiden.
-
-Die stündliche Simulation ermöglicht darüber hinaus die Berücksichtigung von Energieflexibilität. Dazu zählen insbesondere die zeitliche Verschiebung von Wärme- und Strombedarf, die Nutzung thermischer und elektrischer Speicher sowie das flexible Laden von Elektrofahrzeugen.
-
-Für die Lebenszyklus-Treibhausgasbilanz werden die Emissionen aus den definierten Lebenszyklusphasen mit den betrieblichen und mobilitätsbezogenen Emissionen zusammengeführt.
-
-Die Bewertung erfolgt auf Grundlage eines einheitlichen Modells, das für die Anwendung im Rahmen der klimaaktiv-Nachweisführung bereitgestellt wird.
-
-## Anwendung im Planungs- und Qualitätssicherungsprozess
-
-Der Standard ist darauf ausgelegt, bereits in frühen Planungsphasen angewendet zu werden.
-
-In dieser Phase können unterschiedliche Gebäudekonzepte, Energieversorgungssysteme, Mobilitätsmaßnahmen und erneuerbare Erzeugungspotenziale untersucht werden. Das Bewertungsmodell ermöglicht den Vergleich von Varianten anhand einheitlicher Bilanzierungsregeln.
-
-Mit fortschreitender Planung werden die Annahmen durch detailliertere Projektdaten ersetzt. Die Nachweisführung bildet damit eine Grundlage für die Qualitätssicherung über verschiedene Projektphasen.
-
-Die formale Bewertung erfolgt im Rahmen des klimaaktiv-Deklarationsprozesses. Dazu werden die relevanten Projektinformationen und Berechnungsergebnisse dokumentiert und einer fachlichen Plausibilitätsprüfung unterzogen.
-
-Der Standard soll nicht die detaillierte Fachplanung ersetzen. Er definiert vielmehr einen gemeinsamen quantitativen Maßstab, an dem unterschiedliche Planungsentscheidungen und Projektvarianten beurteilt werden können.
-
-## Wissenschaftliche Grundlagen und Weiterentwicklung
-
-Die Methodik verbindet die quantitative Definition von Plus-Energie-Quartieren mit der Verteilung nationaler Energie- und Klimaziele sowie der integrierten Modellierung von Gebäudebetrieb, Mobilität und Lebenszyklusemissionen, wie in Schneider et al. beschrieben [@schneider2023context; @schneider2025declaration; @schneider2026thesis].
-
-Die zugrunde liegenden Annahmen beziehen sich teilweise auf langfristige Entwicklungen des österreichischen Energiesystems. Dazu gehören insbesondere die zukünftige erneuerbare Energieversorgung, die Entwicklung der Mobilität und die Dekarbonisierung von Energieträgern und Herstellungsprozessen.
-
-Solche Annahmen unterliegen Unsicherheiten und können sich durch neue wissenschaftliche Erkenntnisse, aktualisierte Szenarien oder veränderte politische Rahmenbedingungen ändern.
-
-Der Standard ist daher als **dokumentiertes und fortschreibbares Bewertungsverfahren** konzipiert. Die verwendeten Szenarien, Parameter und Bilanzierungsregeln sollen für den jeweiligen Methodenstand nachvollziehbar bleiben. Aktualisierungen sind entsprechend zu dokumentieren.
-
-Im Rahmen des laufenden klimaaktiv-Betreuungspakets werden die methodischen Grundlagen überprüft und bei Bedarf weiterentwickelt. Wesentliche Änderungen der Methodik sollen wissenschaftlich dokumentiert und veröffentlicht werden.
+Die Gültigkeit des Bewertungsmaßstabs hängt von den verwendeten Szenarien, Parametern und methodischen Festlegungen ab. Grenzen und Weiterentwicklung werden in @sec-fortschreibung dokumentiert.

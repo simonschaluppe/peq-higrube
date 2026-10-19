@@ -17,21 +17,21 @@ book:
 
   chapters:
     - index.qmd
-    - part: "Der Standard"
-      chapters:
-      - Kapitel/01-einführung.qmd
-      - Kapitel/02-standard.qmd
+
+    - Kapitel/01-einführung.qmd
+    - Kapitel/02-standard.qmd
     - part: "Methodik"
       chapters:
       - Kapitel/03-allokation.qmd
-      - Kapitel/05-kontextfaktoren.qmd
       - Kapitel/04-bilanzregeln.qmd
+      - Kapitel/05-kontextfaktoren.qmd
       - Kapitel/08-fortschreibung.qmd
     - part: "Anwendung"
       chapters:
-      - Kapitel/06-quartiersmodell.qmd
-      - Kapitel/07-anwendung.qmd
-
+        - Kapitel/07-anwendung.qmd
+        - Kapitel/07-ergebnisse.qmd
+        - Kapitel/07-praxisbeispiele.qmd
+        - Kapitel/07-renovierungsfahrplan.qmd
 
     - references.qmd
     - about.qmd

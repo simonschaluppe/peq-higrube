@@ -2,15 +2,35 @@
 ::: {.callout-note}
 ## Arbeitsfassung vom 14. Oktober 2026
 :::
-## Ziel und Zielgruppe
 
-Dieser Hintergrundbericht erläutert die wissenschaftlichen und methodischen Grundlagen des klimaaktiv Standards für Plus-Energie-Quartiere. Im Mittelpunkt steht die Frage, wie übergeordnete Energie- und Klimaziele in quantitative, überprüfbare Anforderungen an konkrete Quartiersentwicklungen übersetzt werden können.
 
-Der Bericht richtet sich insbesondere an Architekt:innen, Fachplaner:innen, Energieberater:innen, Projektentwickler:innen sowie Fachleute aus Verwaltung, Forschung und Qualitätssicherung. Er ergänzt die klimaaktiv-Broschüre und das Handbuch zum PEQ-Nachweistool um die Herleitung der Zielwerte, Bilanzierungsregeln und Kontextfaktoren.
+## Ziel des Hintergrundberichts
+
+Dieser Bericht dokumentiert die von unserem Forschungsteam entwickelte Methodik des klimaaktiv Standards für Plus-Energie-Quartiere. Er führt die bereits in Schneider et al. publizierten Herleitungen und das Bewertungsmodell zu einer gemeinsamen Referenz für Planung, Verwaltung und Forschung zusammen [@schneider2023context; @schneider2025declaration; @schneider2026thesis].
+
+Er ergänzt zwei weitere klimaaktiv-Publikationen: Die Broschüre *Plus-Energie-Quartiere* bietet einen Überblick über den Standard und seine Anwendungsmöglichkeiten. Das *Handbuch zum PEQ-Nachweistool* beschreibt die praktische Durchführung der Nachweisführung. 
+
+Der vorliegende Hintergrundbericht konzentriert sich dagegen auf die Frage, **warum die Anforderungen in dieser Form definiert wurden und wie sie rechnerisch zustande kommen**.
+Er verfolgt insbesondere vier Ziele:
+
+1. Die Herleitung der quantitativen Anforderungen aus übergeordneten Energie- und Klimazielen nachvollziehbar darzustellen.
+2. Die Systemgrenzen, Bilanzierungsverfahren und Kontextfaktoren des Standards zu erläutern.
+3. Die Annahmen, Berechnungsverfahren und Grenzen des verwendeten Bewertungsmodells offenzulegen.
+4. Die Grundlage für eine transparente Anwendung und dokumentierte Weiterentwicklung der Methodik zu schaffen.
+
+
+
+
+### Zielgruppe
+Der Bericht richtet sich insbesondere an Architekt:innen, Fachplaner:innen, Energieberater:innen, Projektentwickler:innen sowie Fachleute aus Verwaltung, Forschung und Qualitätssicherung, die sich mit der Bewertung klimaneutraler Gebäude, Quartiere und Städte beschäftigen.
 
 ## Entstehung und wissenschaftliche Grundlagen
 
 Die Methodik wurde von der Forschungsgruppe *Climate-fit Buildings and Districts* der FH Technikum Wien im Rahmen von Forschungs- und Entwicklungsarbeiten zu klimaneutralen Plus-Energie-Quartieren erarbeitet.
+
+Die Entwicklung der Bewertungsmethodik und des PEExcel-Nachweistools erfolgte über mehrere Forschungs- und Entwicklungsschritte. Ausgehend von frühen Energiemodellen wurde die Betrachtung schrittweise auf Mobilität, Lebenszyklusemissionen und die klimaaktiv-Nachweisführung erweitert.
+
+![Historische Entwicklung der PEQ-Bewertungsmethodik und des Nachweistools von ersten Forschungsanwendungen bis zur klimaaktiv-Operationalisierung.](Abbildungen/journey.svg){#fig-peq-entwicklung width="100%"}
 
 Wesentliche wissenschaftliche Grundlagen bilden die Dissertation von Schneider (2026) sowie die zugehörigen Publikationen zur quantitativen Definition von Plus-Energie-Quartieren, zur nationalen Allokation von Energie- und Treibhausgasbudgets und zur integrierten Quartiersbewertung [@schneider2026thesis; @schneider2023context; @schneider2025declaration].
 

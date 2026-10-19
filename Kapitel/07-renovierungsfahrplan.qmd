@@ -1,0 +1,51 @@
+# Sanierungsfahrpläne und Entwicklungspfade {#sec-renovierungsfahrplan}
+
+::: {.lead}
+„Auf dem Weg“ zum klimaneutralen Plus-Energie-Quartier
+:::
+
+Bestandsquartiere werden häufig schrittweise saniert. Ein Renovierungsfahrplan kann deshalb mit einer Folge von Quartiersbewertungen verbunden werden. Die Darstellung zeigt den erwarteten Zustand nach jeder Etappe, die noch erforderlichen Maßnahmen und die bis dahin verursachten Emissionen.
+
+::: {.callout-warning appearance="simple" icon=false title="Entwicklungsperspektive – keine zusätzliche Deklarationsstufe"}
+Der hier beschriebene Ansatz „Auf dem Weg“ ist **noch kein verbindlich operationalisierter klimaaktiv-Deklarationsweg**. Kriterien für Etappen, zulässige Übergangsfristen und Nachweise sind gesondert festzulegen.
+:::
+
+## Maßnahmenfolge als Planungsentscheidung
+
+Ein Fahrplan kann beispielsweise zuerst die Wärmeversorgung, anschließend die Gebäudehülle und danach die lokale Erzeugung verändern – oder eine andere Reihenfolge wählen. Dabei sind technische Abhängigkeiten zu beachten: Erneuerte Wärmeerzeuger müssen zum späteren Leistungsbedarf und zu den Systemtemperaturen passen. Umgekehrt kann das Warten auf eine umfassende Sanierung fortgesetzte Betriebsemissionen bedeuten.
+
+::: {.callout-note appearance="simple" icon=false title="Abbildungsvorschlag F1 · Etappenfahrplan"}
+**Zeitachse:** Ausgangszustand → Hüllensanierung → Umstellung Wärmeversorgung → PV-/Flexibilitätsausbau, jeweils mit Zustand und bilanzieller Wirkung. Die Reihenfolge ist ein **illustratives Beispiel**, kein vorgeschriebener Pfad.
+
+<!-- ![Beispielhafter Renovierungsfahrplan](../Abbildungen/anwendung/renovierungsfahrplan.svg){#fig-renovierungsfahrplan width="100%"} -->
+:::
+
+## Emissionen entstehen zu unterschiedlichen Zeitpunkten
+
+Bauliche Maßnahmen beanspruchen das THG-Budget zum Zeitpunkt ihres Anfalls; Betrieb und Mobilität verursachen im gewählten Szenario jährliche Beiträge. Schematisch ergibt sich innerhalb des Bewertungszeitraums:
+
+$$
+G_{\mathrm{kumuliert}}(t)
+=\sum_{j:\,t_j\leq t}G_{\mathrm{baulich},j}
++\sum_{y=2025}^{t}G_{\mathrm{Betrieb+MIV},y}.
+$$ {#eq-etappenbudget}
+
+Alle Beiträge sind in einer gemeinsamen Einheit und auf dieselbe Quartiersgrenze zu beziehen. Der für eine Etappe erreichte Betriebszustand allein belegt nicht, dass das kumulierte Budget über den gesamten Bewertungszeitraum bis 2075 eingehalten wird; hierfür gelten die Regeln aus @sec-bilanzregeln.
+
+::: {.callout-note appearance="simple" icon=false title="Abbildungsvorschlag F2 · Kumulierte THG-Emissionen"}
+**Interaktiver Plot:** Jährliche Betriebs- und Mobilitätsemissionen, bauliche Emissionssprünge bei Maßnahmen und kumulierte Summe gegenüber dem Budget. Etappen als anklickbare Marker; statische PDF-Fassung ergänzen.
+
+<!-- ![THG-Budget bei Etappen](../Abbildungen/anwendung/etappen-thg.svg){#fig-etappen-thg width="100%"} -->
+:::
+
+## Welche Annahmen sind besonders kritisch?
+
+Die Emissionen späterer Baustoffe und Bauweisen können sich durch Veränderungen in der Produktion und im Materialeinsatz verringern. Eine solche Entlastung ist jedoch nur mit einem dokumentierten Szenario und passenden Ökobilanzdaten anzusetzen. Europäische Szenarioarbeiten liefern dafür methodische Anknüpfungspunkte [@leden2024roadmap].
+
+Bei einer Gegenüberstellung unterschiedlicher Pfade sind insbesondere Zeitpunkt und Umfang der Eingriffe, technische Nutzungsdauern, Energieversorgung, Mobilität und verwendete Dekarbonisierungsannahmen offenzulegen.
+
+::: {.callout-tip appearance="minimal" icon=false title="Abbildungsvorschlag F3 · Pfadvergleich"}
+**Variantenvergleich:** Frühe versus gestaffelte Sanierung: kumuliertes THG-Ergebnis, verbleibender Budgetspielraum und Energiebedarf. Keine vorgetäuschte Prognosesicherheit; alle Werte als Szenarioannahmen ausweisen.
+:::
+
+Die Diskussion um Etappen ergänzt die Nachweisführung aus @sec-anwendung und die Darstellung von Projektergebnissen aus @sec-ergebnisse. Die normative Weiterentwicklung ist in @sec-fortschreibung eingeordnet.

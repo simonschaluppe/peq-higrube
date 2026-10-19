@@ -1,68 +1,32 @@
-# Einführung
+# Warum ein Quartiersstandard? {#sec-einfuehrung}
 
-## Ausgangslage: Was bedeutet klimaneutrales Bauen?
+::: {.lead}
+Von klimaneutralem Bauen zu quantitativen Anforderungen an Quartiere
+:::
 
-Die Dekarbonisierung des Gebäudesektors erfordert eine grundlegende Veränderung der Planung, Errichtung und Nutzung von Gebäuden und Quartieren. Neben der Reduktion des Energiebedarfs müssen fossile Energieträger ersetzt, erneuerbare Energiequellen erschlossen und die Emissionen aus der Herstellung und Instandhaltung von Gebäuden reduziert werden.
+## Herausforderungen des klimaneutralen Bauens
 
-Zugleich verändern sich die Anforderungen an das Zusammenspiel von Gebäuden und Energieinfrastruktur. Mit dem zunehmenden Anteil wetterabhängiger erneuerbarer Energieerzeugung gewinnt nicht nur die Menge, sondern auch der Zeitpunkt des Energiebedarfs an Bedeutung. Gebäude und Quartiere können durch thermische Speicher, Batteriespeicher, flexible Wärmeerzeugung und gesteuertes Laden von Elektrofahrzeugen zur Integration erneuerbarer Energien beitragen.
+Klimaneutrales Bauen erfordert mehr als die Reduktion des Heizwärmebedarfs. Gebäude müssen mit erneuerbarer Energie versorgt werden, fossile Energieträger ersetzen und die Treibhausgasemissionen aus Errichtung, Instandhaltung und Betrieb begrenzen. Hinzu kommen die Auswirkungen der Alltagsmobilität, die wesentlich von Standort und Quartiersgestaltung beeinflusst werden.
 
-Eine weitere Herausforderung ergibt sich aus der räumlichen Verteilung von Energiebedarf und Energieerzeugung. Während der Energiebedarf mit der baulichen Dichte zunimmt, wächst das Potenzial für lokale erneuerbare Energieerzeugung nicht im gleichen Ausmaß. Insbesondere bei hochverdichteten Quartieren kann daher eine vollständige Deckung des Energiebedarfs durch Erzeugungsanlagen innerhalb der Quartiersgrenzen technisch nur eingeschränkt möglich sein.
+Gleichzeitig verändert die Umstellung auf erneuerbare Energieträger die Rolle der Gebäude im Energiesystem. Bei Photovoltaik und anderen zeitlich schwankenden erneuerbaren Quellen kommt es nicht nur auf die jährlich erzeugte Energiemenge an, sondern auch darauf, wann Energie benötigt, gespeichert, bezogen oder abgegeben wird. Gebäudebetrieb, Energieversorgung und Mobilität sind deshalb zunehmend gemeinsam zu betrachten. 
+Energieeffizienz, lokale erneuerbare Energieerzeugung und Energieflexibilität bilden drei sich ergänzende Handlungsfelder. Ihre gemeinsame Betrachtung ist insbesondere auf Quartiersebene relevant.
 
-Die Bewertung einzelner Gebäude reicht nicht aus, um diese Zusammenhänge vollständig abzubilden. Auf Quartiersebene können Energieversorgung, Speicherung, Mobilität und lokale erneuerbare Erzeugung gemeinsam betrachtet werden. Dadurch werden sowohl Synergien als auch Zielkonflikte sichtbar, die auf Gebäudeebene nicht oder nur eingeschränkt erfasst werden.
+![Drei zentrale Handlungsfelder der energetischen Quartiersentwicklung: Energieeffizienz, lokale erneuerbare Energie und Energieflexibilität.](../Abbildungen/peq_saeulen.svg){#fig-peq-saeulen width="65%"}
 
-## Von allgemeinen Nachhaltigkeitsanforderungen zu quantitativen Klimazielen
+## Warum die Gebäudeebene nicht ausreicht
 
-Für die Bewertung der Nachhaltigkeit von Gebäuden und Quartieren stehen bereits zahlreiche Instrumente zur Verfügung. Diese berücksichtigen unter anderem Energieeffizienz, Ressourcenschonung, Standortqualität, Komfort, Mobilität und soziale Aspekte.
+Die Möglichkeiten zur lokalen Energieerzeugung und die Anforderungen an die Versorgung hängen wesentlich von der städtebaulichen Struktur ab. Mit steigender baulicher Dichte nimmt die Nutzfläche und damit typischerweise der Energiebedarf je Grundstücksfläche zu; die für lokale Erzeugung verfügbare Fläche wächst jedoch nicht im selben Verhältnis. Ein dichtes Stadtquartier kann daher andere Voraussetzungen für eine positive Energiebilanz haben als eine locker bebaute Siedlung.
 
-Solche Bewertungssysteme erfüllen wichtige Aufgaben bei der ganzheitlichen Qualitätssicherung. Die Erfüllung einer bestimmten Anzahl von Kriterien oder das Erreichen einer Gesamtpunktzahl beantwortet jedoch nicht unmittelbar, ob ein Bauvorhaben einen quantitativ ausreichenden Beitrag zu einem nationalen Klimaziel leistet.
+Dichte kann zugleich Vorteile mit sich bringen: kürzere Wege, eine bessere Erreichbarkeit mit öffentlichen Verkehrsmitteln sowie gemeinsame Versorgungs- und Speicherlösungen. Eine Bewertung, die ausschließlich den Energiebedarf oder die lokal erzeugte Energiemenge einzelner Gebäude betrachtet, bildet diese Wechselwirkungen nur unzureichend ab.
 
-Hierfür sind zusätzliche Festlegungen erforderlich:
+Die Quartiersebene erlaubt es, Gebäude, gemeinsame Energieinfrastruktur, erneuerbare Erzeugung und die zugeordnete Mobilität als zusammenhängende Planungsaufgabe zu untersuchen. Sie macht Synergien ebenso sichtbar wie Zielkonflikte – beispielsweise zwischen hoher baulicher Dichte und begrenzten PV-Flächen oder zwischen zusätzlichem Materialeinsatz und späteren Betriebseinsparungen.
 
-- Welche Energieverbräuche und Emissionsquellen werden berücksichtigt?
-- Innerhalb welcher räumlichen und zeitlichen Grenzen wird bilanziert?
-- Wie werden unterschiedliche Energieträger und zeitlich veränderliche Emissionsintensitäten bewertet?
-- Welches Ergebnis gilt als ausreichend?
-- Wie werden die Anforderungen auf Projekte mit unterschiedlichen Standortbedingungen verteilt?
+## Vom Nachhaltigkeitskriterium zum quantitativen Klimaziel
 
-Diese Fragen betreffen nicht nur die technische Berechnung, sondern auch die Definition des Bewertungsmaßstabs selbst.
+Bestehende Instrumente zur Gebäude- und Quartiersbewertung berücksichtigen wichtige Qualitäten wie Energieeffizienz, Ressourcenschonung, Komfort und Standort. Eine gute Gesamtbewertung beantwortet jedoch nicht automatisch die Frage, **welchen messbaren Beitrag ein konkretes Vorhaben zur Erreichung übergeordneter Energie- und Klimaziele leisten muss**.
 
-Ein quantitatives Bewertungssystem muss deshalb sowohl **die Bilanzierungsmethode** als auch **die Herleitung der Zielwerte** transparent festlegen.
+Dafür sind zwei Festlegungen erforderlich: Einerseits müssen Energie- und Treibhausgaswirkungen innerhalb nachvollziehbarer räumlicher, zeitlicher und funktionaler Grenzen bilanziert werden. Andererseits ist zu begründen, **welches Ergebnis als ausreichend gilt** und wie Anforderungen auf Quartiere mit unterschiedlichen Voraussetzungen verteilt werden.
 
-Der klimaaktiv Standard für Plus-Energie-Quartiere verfolgt diesen Ansatz. Er ergänzt bestehende Instrumente der Gebäude- und Quartiersqualität durch eine auf Energie- und Treibhausgasbilanzen konzentrierte Bewertung.
+Eine reine Jahresenergiemenge kann beispielsweise sommerliche Überschüsse und winterlichen Netzbezug verdecken. Eine positive Betriebsenergiebilanz wiederum sagt für sich genommen noch nichts darüber aus, ob die Emissionen aus Baustoffen und Errichtung mit einem langfristigen Klimaziel vereinbar sind. Für eine quantitative Bewertung müssen solche Unterschiede ausdrücklich berücksichtigt werden.
 
-## Warum Plus-Energie-Quartiere?
-
-Das Konzept der Plus-Energie-Quartiere erweitert den Fokus von der möglichst effizienten Energieversorgung einzelner Gebäude auf die gemeinsame Betrachtung von Energiebedarf, erneuerbarer Erzeugung und Flexibilität innerhalb eines Quartiers.
-
-Die positive Energiebilanz bildet dabei einen zentralen Ausgangspunkt. Sie setzt einen Anreiz, den Energiebedarf zu reduzieren, lokale erneuerbare Energiepotenziale zu erschließen und Energieflüsse möglichst systemdienlich zu gestalten.
-
-Eine rein mengenmäßige jährliche Bilanz ist allerdings nur eingeschränkt aussagekräftig. Beispielsweise kann ein Quartier im Sommer große Stromüberschüsse erzeugen und gleichzeitig im Winter erhebliche Mengen aus dem öffentlichen Netz beziehen. Eine Jahresbilanz ohne zeitliche Gewichtung würde die Unterschiede zwischen diesen Situationen nicht ausreichend abbilden.
-
-Ebenso kann eine positive Betriebsenergiebilanz mit erheblichen Treibhausgasemissionen aus der Errichtung von Gebäuden verbunden sein. Insbesondere bei Neubauprojekten fallen große Teile dieser Emissionen bereits zu Beginn des Lebenszyklus an.
-
-Eine umfassendere Bewertung muss deshalb drei Anforderungen erfüllen:
-
-**Erstens:** Die Betriebsenergie muss in einer geeigneten zeitlichen Auflösung bilanziert werden.
-
-**Zweitens:** Die Bewertung muss räumliche und strukturelle Unterschiede zwischen Quartieren berücksichtigen.
-
-**Drittens:** Für eine Aussage zur Klimaneutralität müssen zusätzlich die Treibhausgasemissionen über den Lebenszyklus einbezogen werden.
-
-Diese Anforderungen bilden die Grundlage der drei Qualitätsstufen des klimaaktiv Standards.
-
-## Ziel und Aufbau des Hintergrundberichts
-
-Dieser Bericht dokumentiert die von unserem Forschungsteam entwickelte Methodik des klimaaktiv Standards für Plus-Energie-Quartiere. Er führt die bereits in Schneider et al. publizierten Herleitungen und das Bewertungsmodell zu einer gemeinsamen Referenz für Planung, Verwaltung und Forschung zusammen [@schneider2023context; @schneider2025declaration; @schneider2026thesis].
-
-Er verfolgt insbesondere vier Ziele:
-
-1. Die Herleitung der quantitativen Anforderungen aus übergeordneten Energie- und Klimazielen nachvollziehbar darzustellen.
-2. Die Systemgrenzen, Bilanzierungsverfahren und Kontextfaktoren des Standards zu erläutern.
-3. Die Annahmen, Berechnungsverfahren und Grenzen des verwendeten Bewertungsmodells offenzulegen.
-4. Die Grundlage für eine transparente Anwendung und dokumentierte Weiterentwicklung der Methodik zu schaffen.
-
-Der Bericht richtet sich insbesondere an Fachplaner, Energieberater, Projektentwickler, Fachleute der Qualitätssicherung sowie an Personen in Verwaltung und Forschung, die sich mit der Bewertung klimaneutraler Quartiere beschäftigen.
-
-Er ergänzt zwei weitere klimaaktiv-Publikationen: Die Broschüre *Plus-Energie-Quartiere* bietet einen Überblick über den Standard und seine Anwendungsmöglichkeiten. Das *Handbuch zum PEQ-Nachweistool* beschreibt die praktische Durchführung der Nachweisführung.
-
-Der vorliegende Hintergrundbericht konzentriert sich dagegen auf die Frage, **warum die Anforderungen in dieser Form definiert wurden und wie sie rechnerisch zustande kommen**.
+Hier setzt der klimaaktiv Standard für Plus-Energie-Quartiere an. Er verbindet einen aus nationalen Energie- und Klimazielen abgeleiteten Bewertungsmaßstab mit der Bilanzierung konkreter Quartiere. **Was** der Standard fordert, beschreibt @sec-standard. **Wie** die Zielwerte hergeleitet werden, erläutert @sec-allokation; die Systemgrenzen und Bilanzierungsregeln sind in @sec-bilanzregeln dokumentiert.

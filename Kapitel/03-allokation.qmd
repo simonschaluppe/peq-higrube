@@ -42,6 +42,11 @@ Das Allokationsmodell betrachtet ein vollständig erneuerbares österreichisches
 
 Eine dem Quartier zugerechnete Energiemenge ist deshalb weder automatisch lokal erzeugte Energie noch ein vertraglich gesicherter Strombezug. Im Bewertungsverfahren kann sie als virtuelle Gutschrift erscheinen. Der physische Energiefluss muss davon getrennt bilanziert werden.
 
+Die Anforderungen an Quartiere werden aus einem nationalen Bilanzmodell abgeleitet. Dieses verknüpft die verfügbare erneuerbare Energie mit den Bedarfen der einzelnen Sektoren.
+
+![Schematische Zuordnung erneuerbarer Energie und sektoraler Energiebedarfe im österreichischen Zielszenario 2040.](../Abbildungen/nationales_bilanzmodell.svg){#fig-nationales-bilanzmodell width="20
+0%"}
+
 Im Referenzszenario sind dem Gebäudesektor 114,8 PJ/a Photovoltaikerzeugung und 137,6 PJ/a Strombedarf nach sektoraler Allokation zugeordnet. Der Zielsaldo beträgt −22,7 PJ/a [@schneider2023context, Tab. 6, S. 13]. Diese jährlichen Größen beschreiben die sektorale Strombilanz. Für die primärenergetische Quartiersbewertung werden sie mit den zugehörigen Gewichtungen und Flächenbezügen verknüpft.
 
 Ein Quartier muss damit nicht die gesamte nationale Versorgung lokal nachbilden. Seine Anforderungen müssen aber zu einer Verteilung passen, die auch für den übrigen Gebäudebestand und die anderen Sektoren aufgeht.
