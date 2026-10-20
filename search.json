@@ -1,0 +1,858 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Klimaneutrale Plus-Energie-Quartiere",
+    "section": "",
+    "text": "Kurzfassung\nWas heißt klimaneutral bauen – und wie viel ist genug?\nDer klimaaktiv Standard für Plus-Energie-Quartiere übersetzt übergeordnete Energie- und Klimaziele in quantitative, überprüfbare Anforderungen an konkrete Bau- und Sanierungsvorhaben. Er berücksichtigt dabei nicht nur die Energieeffizienz der Gebäude, sondern auch erneuerbare Energieerzeugung, bauliche Dichte, Mobilität und Treibhausgasemissionen über den Lebenszyklus.",
+    "crumbs": [
+      "Der Standard",
+      "Kurzfassung"
+    ]
+  },
+  {
+    "objectID": "index.html#was-wird-bewertet",
+    "href": "index.html#was-wird-bewertet",
+    "title": "Klimaneutrale Plus-Energie-Quartiere",
+    "section": "Was wird bewertet?",
+    "text": "Was wird bewertet?\nDer Standard verwendet zwei zentrale Bewertungsgrößen: eine zeitlich gewichtete Primärenergiebilanz und ein kumuliertes Treibhausgasbudget. Daraus ergeben sich drei aufeinander aufbauende Qualitätsstufen:\n\nPlus-Energie-Quartier: Positive Primärenergiebilanz im Gebäudebetrieb.\nPlus-Energie-Quartier mit Mobilität: Zusätzlich wird die motorisierte Individualmobilität berücksichtigt.\nKlimaneutrales Plus-Energie-Quartier: Zusätzlich wird ein Lebenszyklus-THG-Budget von 320 kg CO₂e/m² BGF eingehalten.\n\nDie Bilanzierungsregeln werden in Systemgrenzen und Bilanzierungsregeln erläutert.",
+    "crumbs": [
+      "Der Standard",
+      "Kurzfassung"
+    ]
+  },
+  {
+    "objectID": "index.html#wie-werden-die-anforderungen-hergeleitet",
+    "href": "index.html#wie-werden-die-anforderungen-hergeleitet",
+    "title": "Klimaneutrale Plus-Energie-Quartiere",
+    "section": "Wie werden die Anforderungen hergeleitet?",
+    "text": "Wie werden die Anforderungen hergeleitet?\nDer Bewertungsansatz verbindet zwei Perspektiven:\nTop-down: Nationale Energie- und Klimaziele werden auf Sektoren und Quartierstypologien übertragen. Daraus entstehen Zielwerte und Budgets (Zielwerte).\nBottom-up: Gebäude, Energieversorgung, Mobilität und Lebenszyklusemissionen werden für das konkrete Quartier bilanziert. Eine stündliche Simulation berücksichtigt dabei insbesondere Photovoltaik, Speicher und Energieflexibilität.\nKontextfaktoren für Dichte, Mobilität und Sanierung ermöglichen eine differenzierte Verteilung der Anforderungen. Ihre Gutschriften und Lastschriften verändern den Bewertungsmaßstab, nicht die tatsächlichen Energieflüsse (Kontextfaktoren).",
+    "crumbs": [
+      "Der Standard",
+      "Kurzfassung"
+    ]
+  },
+  {
+    "objectID": "index.html#anwendung-und-wissenschaftliche-grundlage",
+    "href": "index.html#anwendung-und-wissenschaftliche-grundlage",
+    "title": "Klimaneutrale Plus-Energie-Quartiere",
+    "section": "Anwendung und wissenschaftliche Grundlage",
+    "text": "Anwendung und wissenschaftliche Grundlage\nDas PEExcel-Nachweistool ermöglicht die strukturierte Nachweisführung (Deklaration von Bauprojekten).\nDie Methodik beruht auf wissenschaftlichen Arbeiten zur quantitativen Definition und Bewertung von Plus-Energie-Quartieren (Schneider 2026; Schneider u. a. 2023, 2025). Da die Zielwerte von nationalen Energie- und Klimaszenarien abhängen, ist ihre dokumentierte Fortschreibung Bestandteil des methodischen Ansatzes.\nDieser Hintergrundbericht legt die Herleitungen, Annahmen und Grenzen des Standards offen. Eine kompakte Einführung für Interessierte bietet die klimaaktiv-Broschüre (Schneider u. a. 2026); Angaben zum Bericht und seinem Geltungsbereich finden sich hier.\n\n\n\n\nSchneider, Simon. 2026. „Quantitative Positive Energy District Definition, Contextualization and Assessment“. Phdthesis, Universidade de Trás-os-Montes e Alto Douro.\n\n\nSchneider, Simon, Thomas Zelger, Raphael Drexel, Manfred Schindler, Paul Krainer, und José Baptista. 2025. „Declaration-Ready Climate-Neutral PEDs: Budget-Based, Hourly LCA Including Mobility and Flexibility“. Designs 9 (6): 123. https://doi.org/10.3390/designs9060123.\n\n\nSchneider, Simon, Thomas Zelger, und Oskar Mair am Tinkhof. 2026. Plus-Energie-Quartiere: Effizient, erneuerbar und flexibel versorgt mit dem klimaaktiv Standard. Bundesministerium für Land- und Forstwirtschaft, Klima- und Umweltschutz, Regionen und Wasserwirtschaft.\n\n\nSchneider, Simon, Thomas Zelger, David Sengl, und José Baptista. 2023. „A Quantitative Positive Energy District Definition with Contextual Targets“. Buildings 13 (5): 1210. https://doi.org/10.3390/buildings13051210.",
+    "crumbs": [
+      "Der Standard",
+      "Kurzfassung"
+    ]
+  },
+  {
+    "objectID": "Kapitel/01-einführung.html",
+    "href": "Kapitel/01-einführung.html",
+    "title": "Noch ein Standard?",
+    "section": "",
+    "text": "Herausforderungen des klimaneutralen Bauens\nKlimaneutrales Bauen erfordert mehr als die Reduktion des Heizwärmebedarfs. Gebäude müssen mit erneuerbarer Energie versorgt werden, fossile Energieträger ersetzen und die Treibhausgasemissionen aus Errichtung, Instandhaltung und Betrieb begrenzen. Hinzu kommen die Auswirkungen der Alltagsmobilität, die wesentlich von Standort und Quartiersgestaltung beeinflusst werden.\nGleichzeitig verändert die Umstellung auf erneuerbare Energieträger die Rolle der Gebäude im Energiesystem. Bei Photovoltaik und anderen zeitlich schwankenden erneuerbaren Quellen kommt es auch darauf an, wann Energie benötigt, gespeichert, bezogen oder abgegeben wird. Gebäudebetrieb, Energieversorgung und Mobilität sind deshalb zunehmend gemeinsam zu betrachten.\nEin künftig erneuerbares Energiesystem macht Energieeffizienz und Flexibilität auf Gebäudeebene nicht überflüssig – im Gegenteil: Nationale Energie- und Klimaszenarien setzen erhebliche Energieeinsparungen voraus. Damit die angestrebten Ausbau- und Klimaziele erreicht werden können, müssen Gebäude ihren Energiebedarf entsprechend reduzieren und zunehmend flexibel gestalten.\nEnergieeffizienz, lokale erneuerbare Energieerzeugung und Energieflexibilität bilden daher drei sich ergänzende Handlungsfelder. Ihr Zusammenspiel ist sowohl auf Gebäude- als auch auf Quartiersebene relevant.",
+    "crumbs": [
+      "Der Standard",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Noch ein Standard?</span>"
+    ]
+  },
+  {
+    "objectID": "Kapitel/01-einführung.html#herausforderungen-des-klimaneutralen-bauens",
+    "href": "Kapitel/01-einführung.html#herausforderungen-des-klimaneutralen-bauens",
+    "title": "Noch ein Standard?",
+    "section": "",
+    "text": "Abbildung 1.1: Plus-Energie-Quartiere verbinden drei zentrale Handlungsfelder der energetischen Quartiersentwicklung: Energieeffizienz, lokale erneuerbare Energie und Energieflexibilität.",
+    "crumbs": [
+      "Der Standard",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Noch ein Standard?</span>"
+    ]
+  },
+  {
+    "objectID": "Kapitel/01-einführung.html#vom-nachhaltigkeitskriterium-zum-quantitativen-klimaziel",
+    "href": "Kapitel/01-einführung.html#vom-nachhaltigkeitskriterium-zum-quantitativen-klimaziel",
+    "title": "Noch ein Standard?",
+    "section": "Vom Nachhaltigkeitskriterium zum quantitativen Klimaziel",
+    "text": "Vom Nachhaltigkeitskriterium zum quantitativen Klimaziel\nBestehende Instrumente zur Gebäude- und Quartiersbewertung berücksichtigen wichtige Qualitäten wie Energieeffizienz, Ressourcenschonung, Komfort und Standort. Eine gute Gesamtbewertung beantwortet jedoch nicht automatisch die Frage, welchen messbaren Beitrag ein konkretes Vorhaben zur Erreichung übergeordneter Energie- und Klimaziele leisten muss.\nDafür sind zwei Festlegungen erforderlich: Einerseits müssen Energie- und Treibhausgaswirkungen innerhalb nachvollziehbarer räumlicher, zeitlicher und funktionaler Grenzen bilanziert werden. Andererseits ist zu begründen, welches Ergebnis als ausreichend gilt und wie Anforderungen auf Projekte mit unterschiedlichen Voraussetzungen verteilt werden.\nEine reine Jahresbetrachtung kann sommerliche Überschüsse und winterlichen Netzbezug verdecken. Eine positive Betriebsenergiebilanz wiederum sagt für sich genommen noch nichts darüber aus, ob die Emissionen aus Baustoffen und Errichtung mit einem langfristigen Klimaziel vereinbar sind. Für eine quantitative Bewertung müssen solche Unterschiede ausdrücklich berücksichtigt werden.\nHier setzt der klimaaktiv Standard für Plus-Energie-Quartiere an. Er verbindet einen aus nationalen Energie- und Klimazielen abgeleiteten Bewertungsmaßstab mit der Bilanzierung konkreter Projekte. Was der Standard fordert, beschreibt Der Standard. Wie die Zielwerte hergeleitet werden, erläutert Zielwerte; die Systemgrenzen und Bilanzierungsregeln sind in Systemgrenzen und Bilanzierungsregeln dokumentiert.\n\n\n\n\n\n\nHinweisGebäude oder Quartier?\n\n\n\nObwohl der Standard aus dem Konzept der Plus-Energie-Quartiere hervorgegangen ist, lässt sich seine Bewertungsmethodik sowohl auf einzelne Gebäude als auch auf Gebäudegruppen und ganze Quartiere anwenden. Unterschiedliche Standort- und Bebauungsbedingungen werden durch entsprechende Kontextfaktoren berücksichtigt.",
+    "crumbs": [
+      "Der Standard",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Noch ein Standard?</span>"
+    ]
+  },
+  {
+    "objectID": "Kapitel/02-standard.html",
+    "href": "Kapitel/02-standard.html",
+    "title": "Der Standard",
+    "section": "",
+    "text": "Ziel und Bewertungsanspruch\nDer klimaaktiv Standard für Plus-Energie-Quartiere definiert quantitative Anforderungen an die Energie- und Treibhausgasbilanz von Quartieren. Er ermöglicht es, Neubau- und Sanierungsvorhaben anhand eines gemeinsamen, aus übergeordneten Energie- und Klimazielen abgeleiteten Bewertungsmaßstabs zu beurteilen.\nEin Quartier soll nicht nur möglichst wenig Energie benötigen, sondern einen angemessenen Beitrag zu einem erneuerbaren und klimaneutralen Energiesystem leisten. Der Standard betrachtet dafür das Zusammenspiel von Energiebedarf, erneuerbarer Energieaufbringung, Mobilität und Lebenszyklusemissionen.\nDie Anforderungen sind quantitativ, kontextabhängig und überprüfbar. Sie berücksichtigen unterschiedliche bauliche und räumliche Ausgangsbedingungen, ohne die Ausrichtung an den übergeordneten Zielen aufzugeben.",
+    "crumbs": [
+      "Der Standard",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Der Standard</span>"
+    ]
+  },
+  {
+    "objectID": "Kapitel/02-standard.html#die-drei-qualitätsstufen",
+    "href": "Kapitel/02-standard.html#die-drei-qualitätsstufen",
+    "title": "Der Standard",
+    "section": "Die drei Qualitätsstufen",
+    "text": "Die drei Qualitätsstufen\nDer Standard unterscheidet drei aufeinander aufbauende Qualitätsstufen:\n\n\n\n\n\n\n\n\nQualitätsstufe\nBewertungsumfang\nZentrales Kriterium\n\n\n\n\nPlus-Energie-Quartier\nGebäudebetrieb einschließlich gebäudebezogener Stromanwendungen\nPositive bewertete Primärenergiebilanz\n\n\nPlus-Energie-Quartier mit Mobilität\nGebäudebetrieb und zugeordnete motorisierte Individualmobilität\nPositive bewertete Primärenergiebilanz einschließlich Mobilität\n\n\nKlimaneutrales Plus-Energie-Quartier\nZusätzlich Lebenszyklusemissionen aus baulichen Prozessen, Betrieb und Mobilität\nPositive bewertete Primärenergiebilanz und Einhaltung des kumulierten THG-Budgets\n\n\n\nDie dritte Qualitätsstufe verwendet im dokumentierten Referenzverfahren ein Treibhausgasbudget von 320 kg CO₂e/m² BGF. Dieses gilt unter den festgelegten Systemgrenzen und Szenarioannahmen. Seine Herleitung wird in Zielwerte erläutert; die berücksichtigten Lebenszyklusprozesse beschreibt Systemgrenzen und Bilanzierungsregeln.\n\n\n\n\n\n\nAbbildung 2.1: Die drei Qualitätsstufen des klimaaktiv Standards und die Erweiterung ihrer energetischen und treibhausgasbezogenen Bilanzgrenzen.",
+    "crumbs": [
+      "Der Standard",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Der Standard</span>"
+    ]
+  },
+  {
+    "objectID": "Kapitel/02-standard.html#bewertungsgrößen-und-erfüllungskriterien",
+    "href": "Kapitel/02-standard.html#bewertungsgrößen-und-erfüllungskriterien",
+    "title": "Der Standard",
+    "section": "Bewertungsgrößen und Erfüllungskriterien",
+    "text": "Bewertungsgrößen und Erfüllungskriterien\nDie Bewertung beruht auf zwei komplementären Größen:\nPrimärenergiebilanz: Energiebedarf, erneuerbare Aufbringung und Energieaustausch mit den umgebenden Netzen werden nach den festgelegten Bilanzierungsregeln bewertet. Die stündlich berechneten Energieflüsse werden mit zeitabhängigen Faktoren gewichtet. Eine positive Bewertungsbilanz ist Voraussetzung für alle drei Qualitätsstufen.\nTreibhausgasbilanz: Für die Klimaneutralitätsstufe werden die Emissionen aus den definierten baulichen Prozessen, dem Gebäudebetrieb und der Mobilität über den Bewertungszeitraum kumuliert und mit dem zugeteilten THG-Budget verglichen.\nDie Bewertung unterscheidet damit zwischen dem berechneten Energie- und Emissionsergebnis eines Quartiers und dem Maßstab, an dem dieses Ergebnis beurteilt wird.\nDie entsprechenden Bilanzierungsverfahren und Systemgrenzen erläutert Systemgrenzen und Bilanzierungsregeln.",
+    "crumbs": [
+      "Der Standard",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Der Standard</span>"
+    ]
+  },
+  {
+    "objectID": "Kapitel/02-standard.html#kontextabhängige-anforderungen",
+    "href": "Kapitel/02-standard.html#kontextabhängige-anforderungen",
+    "title": "Der Standard",
+    "section": "Kontextabhängige Anforderungen",
+    "text": "Kontextabhängige Anforderungen\nNicht jedes Quartier verfügt über dieselben Voraussetzungen. Insbesondere bauliche Dichte, Standort und Gebäudebestand beeinflussen, welche Beiträge zur Energiewende lokal erbracht werden können.\nDer Standard berücksichtigt dies über drei Kontextfaktoren:\n\nDichte: Bei geringer baulicher Dichte wird ein höherer energetischer Beitrag verlangt; dichte Quartiere können eine Gutschrift erhalten.\nMobilität: Ein aus der nationalen Energieallokation abgeleitetes Budget wird den Nutzungen zugeordnet und dem tatsächlich bilanzierten Mobilitätsbedarf gegenübergestellt.\nSanierung: Bestandsvorhaben erhalten eine festgelegte Entlastung, die besonderen Einschränkungen bei der energetischen Verbesserung Rechnung trägt.\n\nDie Kontextfaktoren verändern die energetische Bewertungsanforderung, nicht die tatsächlich benötigte oder erzeugte Energie. Eine positive Bewertungsbilanz kann daher auch dann erreicht werden, wenn das Quartier physisch keinen Nettoenergieüberschuss aufweist.\nDie Herleitung der Zielwerte beschreibt Zielwerte, die Berechnung und Anwendung der Kontextfaktoren Kontextfaktoren.",
+    "crumbs": [
+      "Der Standard",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Der Standard</span>"
+    ]
+  },
+  {
+    "objectID": "Kapitel/02-standard.html#bedeutung-und-grenzen-der-bewertung",
+    "href": "Kapitel/02-standard.html#bedeutung-und-grenzen-der-bewertung",
+    "title": "Der Standard",
+    "section": "Bedeutung und Grenzen der Bewertung",
+    "text": "Bedeutung und Grenzen der Bewertung\nEine erfüllte Qualitätsstufe zeigt, dass ein Quartier die definierten Anforderungen unter den festgelegten Systemgrenzen, Faktoren und Projektannahmen erreicht.\nDie Bewertung soll eine konsistente Grundlage bieten, um Quartierskonzepte zu beurteilen, Varianten zu vergleichen und die Zielerreichung im Planungsprozess nachzuweisen.\nFür die quantitative Bewertung steht das klimaaktiv PEQ-Nachweistool zur Verfügung. Die Wissensplattform bietet weiterführende Informationen zum Bewertungsmodell und zur Anwendung des Tools.\nDie Gültigkeit des Bewertungsmaßstabs hängt von den verwendeten Szenarien, Parametern und methodischen Festlegungen ab. Grenzen und Weiterentwicklung werden in Methodenstand, Grenzen und Weiterentwicklung dokumentiert.",
+    "crumbs": [
+      "Der Standard",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Der Standard</span>"
+    ]
+  },
+  {
+    "objectID": "Kapitel/03-allokation.html",
+    "href": "Kapitel/03-allokation.html",
+    "title": "Zielwerte",
+    "section": "",
+    "text": "Welche Entscheidungen stecken in einem Zielwert?\nEin Quartier kann seinen Energiebedarf senken, erneuerbare Energie erzeugen und Emissionen vermeiden. Ob dieser Beitrag ausreicht, hängt auch davon ab, welche Aufgaben die übrigen Gebäude, die Mobilität und die Energieversorgung übernehmen. Das nationale Allokationsmodell stellt diesen Zusammenhang her: Es verteilt verfügbare erneuerbare Energie und ein begrenztes Emissionsbudget auf Sektoren und anschließend auf die Nutzungen und Flächen konkreter Quartiere.\nDie Quartierssimulation ermittelt, welche Bilanz ein Projekt unter bestimmten Annahmen erreicht. Das Allokationsmodell bestimmt den Maßstab, an dem dieses Ergebnis beurteilt wird. Das Bewertungsverfahren verbindet beide Ebenen: Systemgrenzen, Gewichtung und Anforderungen müssen gemeinsam festgelegt werden (Schneider 2026, 3.1–3.2, S. 43–60).\nEin nationales Ziel lässt sich nicht ohne weitere Festlegungen auf ein Bauvorhaben herunterbrechen. Zunächst braucht es ein Szenario für Energiebedarf und Energieversorgung. Anschließend ist festzulegen, welche Anteile der verfügbaren Ressourcen und Emissionsbudgets den Sektoren zugerechnet werden. Erst danach können Anforderungen für Quartiere unterschiedlicher Dichte und Nutzung bestimmt werden.\nflowchart TB\n  A[\"Nationale Energie- und Klimaszenarien\"] --&gt; B[\"Sektorale Zuordnung\"]\n  B --&gt; C[\"Verteilung nach Dichte, Nutzung und Fläche\"]\n  C --&gt; D[\"Anforderungen und Budgets\"]\n  E[\"Projektdaten und Maßnahmen\"] --&gt; F[\"Quartierssimulation und Bilanzierung\"]\n  D --&gt; G[\"Bewertung des Quartiers\"]\n  F --&gt; G\n\n\n\n\nAbbildung 3.1: Vom nationalen Szenario zur Quartiersbewertung. Methodik nach Schneider (2026), Kap. 3.1–3.3.\nDie wissenschaftliche Herleitung macht diese Entscheidungen prüfbar. Sie hebt ihren normativen Charakter nicht auf. Für die Verwaltung ist gerade diese Trennung hilfreich: Ein geändertes Szenario, eine andere Verteilungsregel und eine Korrektur der Software sind unterschiedliche Eingriffe.",
+    "crumbs": [
+      "Der Standard",
+      "Methodik",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Zielwerte</span>"
+    ]
+  },
+  {
+    "objectID": "Kapitel/03-allokation.html#welche-entscheidungen-stecken-in-einem-zielwert",
+    "href": "Kapitel/03-allokation.html#welche-entscheidungen-stecken-in-einem-zielwert",
+    "title": "Zielwerte",
+    "section": "",
+    "text": "Tabelle 3.1: Grundlagen eines Zielwerts (Schneider 2026, 3.1–3.2).\n\n\n\n\n\n\n\n\n\n\nBestandteil\nFunktion\nBeispiel\n\n\n\n\nPhysikalischer Zusammenhang\nBeschreibt Beziehungen zwischen Größen.\nMehr Geschossfläche auf gleicher Grundstücksfläche verändert das Verhältnis von Bedarf und lokalem Erzeugungspotenzial.\n\n\nSzenarioannahme\nBeschreibt eine mögliche zukünftige Entwicklung.\nDekarbonisierung der Energieversorgung und der Herstellungsprozesse.\n\n\nNormative Festlegung\nVerteilt Anforderungen und Budgets.\nAnteil des nationalen Emissionsbudgets für Gebäude und MIV.\n\n\nOperationalisierung\nÜbersetzt den Ansatz in berechenbare Regeln.\nMobilitätsgutschrift je Nutzung und Quadratmeter Nettogrundfläche.",
+    "crumbs": [
+      "Der Standard",
+      "Methodik",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Zielwerte</span>"
+    ]
+  },
+  {
+    "objectID": "Kapitel/03-allokation.html#energieallokation-welchen-beitrag-muss-der-gebäudesektor-leisten",
+    "href": "Kapitel/03-allokation.html#energieallokation-welchen-beitrag-muss-der-gebäudesektor-leisten",
+    "title": "Zielwerte",
+    "section": "Energieallokation: Welchen Beitrag muss der Gebäudesektor leisten?",
+    "text": "Energieallokation: Welchen Beitrag muss der Gebäudesektor leisten?\n\nPrinzip der sektoralen Zuordnung\nDas Allokationsmodell betrachtet ein vollständig erneuerbares österreichisches Energiesystem im Zieljahr 2040. Erneuerbare Erzeugung und verbleibende Energiebedarfe werden sektoral zugeordnet. Daraus ergeben sich der erforderliche Beitrag dezentraler Erzeugung im Gebäudesektor und ein Anteil zentral bereitgestellter erneuerbarer Energie für den motorisierten Individualverkehr (Schneider u. a. 2023, Abschn. 6.1–6.2, S. 12–16).\nEine dem Quartier zugerechnete Energiemenge ist deshalb weder automatisch lokal erzeugte Energie noch ein vertraglich gesicherter Strombezug. Im Bewertungsverfahren kann sie als virtuelle Gutschrift erscheinen. Der physische Energiefluss muss davon getrennt bilanziert werden.\nDie Anforderungen an Quartiere werden aus einem nationalen Bilanzmodell abgeleitet. Dieses verknüpft die verfügbare erneuerbare Energie mit den Bedarfen der einzelnen Sektoren.\n\n\n\n\n\n\nAbbildung 3.2: Schematische Zuordnung erneuerbarer Energie und sektoraler Energiebedarfe im österreichischen Zielszenario 2040.\n\n\n\nIm Referenzszenario sind dem Gebäudesektor 114,8 PJ/a Photovoltaikerzeugung und 137,6 PJ/a Strombedarf nach sektoraler Allokation zugeordnet. Der Zielsaldo beträgt −22,7 PJ/a (Schneider u. a. 2023, Tab. 6, S. 13). Diese jährlichen Größen beschreiben die sektorale Strombilanz. Für die primärenergetische Quartiersbewertung werden sie mit den zugehörigen Gewichtungen und Flächenbezügen verknüpft.\nEin Quartier muss damit nicht die gesamte nationale Versorgung lokal nachbilden. Seine Anforderungen müssen aber zu einer Verteilung passen, die auch für den übrigen Gebäudebestand und die anderen Sektoren aufgeht.\n\n\nDichte: physikalisches Prinzip und kalibrierte Anforderung\nDer Grundgedanke lässt sich mit einer vereinfachten Beziehung zeigen. Sei (A_G) die Grundstücksfläche und (A_B) die Bruttogrundfläche. Die Geschoßflächenzahl ist (d=A_B/A_G). Werden eine jährliche lokale Erzeugung (p) je Grundstücksfläche und ein jährlicher Bedarf (e) je Bruttogrundfläche angesetzt, folgt:\n\\[\nb(d)=\\frac{p A_G-e A_B}{A_B}=\\frac{p}{d}-e.\n\\tag{3.1}\\]\nErzeugung und Bedarf sind in derselben Energiegröße auszudrücken; (b) ist dann eine jährliche Bilanz je m² BGF. Die Beziehung zeigt, weshalb das Erzeugungspotenzial je Geschossfläche bei steigender Dichte abnimmt, wenn das Potenzial je Grundstücksfläche gleich bleibt. In realen Projekten hängen Erzeugung und Bedarf zusätzlich von Gebäudeform, Nutzung, Verschattung und Technik ab (Schneider u. a. 2023, 11–12).\nAus diesem Zusammenhang wird noch kein verbindlicher Zielwert. Die Anforderungsfunktion ergänzt die Beziehung um eine Verschiebung auf der Dichteachse und eine Begrenzung. Ihre Parameter bestimmen die Lastenverteilung zwischen Quartierstypen. Die so festgelegte Kurve beschreibt eine Anforderung und kein technisches Potenzialmaximum (Schneider u. a. 2023, Gl. 7–8, S. 12–13).\nBei niedriger Dichte kann die Regel einen zusätzlichen Überschuss verlangen; bei hoher Dichte kann sie einen negativen Saldo ohne Kontextkorrektur zulassen. Dies lässt sich entweder als unterschiedlicher Zielwert oder als Gut-/Lastschrift gegenüber einem gemeinsamen Nullmaßstab ausdrücken. Die Gutschrift verändert die Anforderung, nicht den realen Energiebedarf.\n\n\nOperationalisierung über den Gebäudebestand\nDie nationale Kalibrierung braucht zusätzlich die Flächenverteilung des Bestands nach Dichte und Gebäudequalität. Ein Zielwert für einen häufigen Quartierstyp trägt zum nationalen Ergebnis stärker bei als derselbe Zielwert für einen seltenen Typ.\nDer nationale Sektorsaldo ergibt sich aus der flächengewichteten Summe der spezifischen Zielsalden:\n\\[\nB_{\\mathrm{Sektor}}\n=\\sum_k\\sum_j A_{k,j}\\,t_k(d_j).\n\\tag{3.2}\\]\n(A_{k,j}) bezeichnet die Fläche des Gebäudetyps (k) in der Dichteklasse (j), (t_k(d_j)) dessen jährlichen spezifischen Zielsaldo. Fläche und Zielsaldo müssen dieselbe Flächendefinition verwenden. Bei einem Zielsaldo in kWh/(m² a) ergibt sich der Sektorsaldo in kWh/a.\nDie Kalibrierung unterscheidet thermische Sanierung, Sanierung mit geringer PV-Ausstattung, PEQ-Sanierung und PEQ-Neubau mit Anteilen von 40 %, 20 %, 20 % und 20 %. Unsanierter Bestand hat im zugrunde gelegten Zielzustand einen Anteil von 0 %. Zusammen mit der Dichteverteilung bestimmen diese Annahmen den nationalen Sektorsaldo (Schneider u. a. 2023, Tab. 5 und Abb. 8, S. 12–14).\nDie Anforderungen an PEQ hängen somit auch davon ab, wie viel der übrige Gebäudebestand beiträgt. Eine andere Sanierungsentwicklung oder Dichteverteilung kann eine neue Kalibrierung erfordern. Dafür müssen sowohl die Bestandsdaten als auch die Verteilungsentscheidungen dokumentiert werden.\n[Abbildungsplatzhalter: Dichteabhängige Anforderungen und Flächenverteilung des Gebäudebestands, übernommen aus Schneider et al. (2023), Abb. 8.]",
+    "crumbs": [
+      "Der Standard",
+      "Methodik",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Zielwerte</span>"
+    ]
+  },
+  {
+    "objectID": "Kapitel/03-allokation.html#mobilitätsbudget-vom-nationalen-anteil-zur-nutzung",
+    "href": "Kapitel/03-allokation.html#mobilitätsbudget-vom-nationalen-anteil-zur-nutzung",
+    "title": "Zielwerte",
+    "section": "Mobilitätsbudget: vom nationalen Anteil zur Nutzung",
+    "text": "Mobilitätsbudget: vom nationalen Anteil zur Nutzung\nDer motorisierte Individualverkehr erweitert den Energiebedarf, für den das Quartier bilanziell Verantwortung übernimmt. Gleichzeitig erhält er einen Anteil der zentral bereitgestellten erneuerbaren Energie. Dieser Anteil wird über die Nutzungen auf Quartiere verteilt.\nFür den MIV sind 6,30 TWh/a Strom und 0,36 TWh/a Biomasse zugeordnet. Mit der primärenergetischen Gewichtung ergibt sich ein Budget von 10,68 TWh PE/a (Schneider u. a. 2023, Tab. 8, S. 16).\nDie Verteilung folgt den Anteilen der Nutzungen am österreichischen Zielverkehr und ihren nationalen Nutzflächen. Für eine Nutzung (u) gilt:\n\\[\nc_{\\mathrm{M},u}\n=\\frac{E_{\\mathrm{M},u}}{A_{\\mathrm{NGF},u}}.\n\\tag{3.3}\\]\nDie nationale Energiemenge (E_{,u}) in kWh PE/a wird durch die zugehörige Nettogrundfläche geteilt. Das Ergebnis ist die jährliche Mobilitätsgutschrift je m² NGF. Bei gemischter Nutzung werden die Gutschriften mit den jeweiligen Quartiersnutzflächen gewichtet.\n\n\n\nTabelle 3.2: Nutzungsbezogene Mobilitätsallokation, übernommen aus Tabelle 9 (Schneider u. a. 2023, 16).\n\n\n\n\n\n\n\n\n\n\n\nNutzung\nBudget [TWh PE/a]\nFläche [Mio. m² NGF]\nGutschrift [kWh PE/(m² NGF a)]\n\n\n\n\nWohnen\n5,30\n375,6\n14,11\n\n\nBüro und Gewerbe\n2,20\n53,1\n41,47\n\n\nBildung\n0,29\n22,5\n12,93\n\n\nHandel und sonstige Nutzungen\n2,89\n96,5\n29,97\n\n\n\n\n\n\nDie Gutschrift richtet sich nach der Nutzung; der Mobilitätsbedarf hängt zusätzlich von Standort, Verkehrsverhalten und Fahrzeugflotte ab. Ein hoher Bedarf erzeugt keinen entsprechend hohen Budgetanspruch. Bei gleicher Nutzung bleibt ein Quartier mit geringerem MIV-Bedarf bilanziell im Vorteil (Schneider 2026, Abschn. 3.2.7, S. 56–57).\nFür die Bewertung wird der Zielverkehr dem Quartier zugeordnet. Die Simulation der Lade- und Speicherflüsse muss dagegen die tatsächliche Anwesenheit und Ladung der Fahrzeuge berücksichtigen. Ein zugeteiltes Mobilitätsbudget ist weder ein physisches Ladeangebot noch eine Aussage über die nutzbare Batteriekapazität.\nDie Mobilitätsallokation beruht auf den Mobilitätsdaten von 2013/2014 und dem nationalen Energieszenario. Neue Erhebungen zu Verkehrsverhalten, Fahrzeugflotte und Flächennutzung ermöglichen eine Aktualisierung der Gutschriften. Das Zuordnungsprinzip bleibt dabei bestehen; Ausgangsbudget und Verteilung werden gemeinsam überprüft.",
+    "crumbs": [
+      "Der Standard",
+      "Methodik",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Zielwerte</span>"
+    ]
+  },
+  {
+    "objectID": "Kapitel/03-allokation.html#thg-budget-wie-entstehen-320-kg-co₂e-je-quadratmeter",
+    "href": "Kapitel/03-allokation.html#thg-budget-wie-entstehen-320-kg-co₂e-je-quadratmeter",
+    "title": "Zielwerte",
+    "section": "THG-Budget: Wie entstehen 320 kg CO₂e je Quadratmeter?",
+    "text": "THG-Budget: Wie entstehen 320 kg CO₂e je Quadratmeter?\n\nNationale Grundlage und sektorale Verteilung\nZusätzlich zur jährlichen Primärenergiebilanz begrenzt ein kumuliertes THG-Budget die bilanzierten Emissionen aus Errichtung, Nutzung, Instandhaltung und MIV über den definierten Zeitraum.\nDas Verfahren unterscheidet drei Budgetvarianten. Ausgangspunkte sind das verbleibende nationale CO₂-Budget, Annahmen über natürliche Senken, ein Anteil von 50 % für Gebäude und MIV sowie eine nationale Bezugsfläche von 906,7 Mio. m² BGF. Der Klimabudgetansatz bezieht sich auf 1,5 °C mit 66 % Wahrscheinlichkeit; dokumentiert werden Varianten mit und ohne temporäre Überschreitung des Temperaturziels (Schneider u. a. 2025, Abschn. 2.3, Tab. 2 und A1, S. 6–7, 30).\nDie Budgetvarianten L1, L2 und L3 beruhen auf einem Klimabudget ohne temporäre Überschreitung des Temperaturziels: Von 280 Mt CO₂ ab 2022 verbleiben nach Abzug der bis Ende 2024 angesetzten Emissionen 130 Mt ab 2025. Dieses Ausgangsbudget bildet die Referenz der Bewertung (Schneider u. a. 2025, Tab. A1).\nMit nationalem Restbudget (B_{}), Bevölkerung (P), jährlicher Senkenleistung je Person (s), Zeitraum (T), Sektoranteil () und Bezugsfläche (A_B) gilt:\n\\[\nb_{\\mathrm{THG}}\n=\\frac{\\alpha\\left(B_{\\mathrm{AT}}+P\\,s\\,T\\right)}{A_B}.\n\\tag{3.4}\\]\nBudget und Senkenleistung werden in einer gemeinsamen Masseneinheit angesetzt. Das nationale CO₂-Budget dient als Grundlage für die Zuteilung; auf Quartiersebene werden die Treibhausgase mit GWP100 in CO₂-Äquivalenten bewertet.\n\n\n\nTabelle 3.3: Eingangsgrößen der THG-Allokation (Schneider u. a. 2025, Tab. A1, S. 30).\n\n\n\n\n\n\n\n\n\n\nGröße\nReferenzwert\nFunktion\n\n\n\n\nVerbleibendes Budget ab 2025\n130 Mt CO₂\nAusgangsbudget ohne zusätzliche Senken\n\n\nBevölkerung\n9,0 Mio. Personen\nBezug für die Senkenannahme\n\n\nBetrachtungsdauer\n50 Jahre\nKumulation der Senkenannahme\n\n\nAnteil Gebäude und MIV\n50 %\nSektorale Zuteilung\n\n\nNationale Bruttogrundfläche im Zieljahr 2040\n906,7 Mio. m²\nFlächenbezogene Verteilung\n\n\n\n\n\n\nFür L3 werden 1 t CO₂e pro Person und Jahr an natürlichen Senken angesetzt. Über 50 Jahre und 9 Mio. Personen entsprechen sie 450 Mt. Zusammen mit dem Ausgangsbudget ergeben sich 580 Mt, davon 290 Mt für Gebäude und MIV. Geteilt durch 906,7 Mio. m² ergibt dies gerundet 320 kg CO₂e/m² BGF.\n\n\n\nTabelle 3.4: Budgetvarianten nach Schneider et al. (Schneider u. a. 2025, Tab. 2, S. 7).\n\n\n\n\n\n\n\n\n\n\nVariante\nSenkenannahme [t CO₂e/(Person a)]\nTHG-Budget [kg CO₂e/m² BGF]\n\n\n\n\nL1\n0\n72\n\n\nL2\n0,5\n196\n\n\nL3\n1,0\n320\n\n\n\n\n\n\nDie L-Werte sind Budgetvarianten innerhalb der THG-Bewertung, nicht die drei PEQ-Qualitätsstufen. Der für diesen Bericht zugrunde gelegte Zertifizierungswert beträgt 320 kg CO₂e/m² BGF. Seine Einhaltung ist zusammen mit der L3-Senkenannahme und den Bilanzregeln zu lesen. Die unterstellte nationale Senkenleistung ist kein vom einzelnen Quartier nachgewiesener Emissionsausgleich.\n\n\nDrei Zeitbegriffe\nDer Bewertungszeitraum beträgt 50 Jahre, von 2025 bis 2075. Innerhalb dieses Horizonts werden die treibhauswirksamen Effekte bilanziert.\nDie Ableitung orientiert sich am österreichischen Klimaneutralitätsziel 2040; auf dieses Jahr beziehen sich auch die zugrunde gelegten Flächenprognosen. 2050 wird als vorsorglich späterer Dekarbonisierungszeitpunkt angesetzt, um eine mögliche Verzögerung gegenüber dem ursprünglichen Ziel abzubilden. Damit wird das Prognosejahr der Bezugsfläche nicht automatisch auf 2050 verschoben. Eine spätere Umstellung erfordert eine dokumentierte Fortschreibung.\nDie vereinfachende Annahme einer vollständigen Dekarbonisierung der betrachteten Prozesse ab 2050 führt dazu, dass danach im Modell keine zusätzlichen Emissionen mehr entstehen. Das emissionswirksame Zeitfenster liegt damit faktisch vor 2050, obwohl die Betrachtung bis 2075 reicht. Dies ist eine Szenarioannahme, keine Verkürzung des Bewertungszeitraums und keine Garantie der tatsächlichen Entwicklung (Schneider u. a. 2025, Abschn. 2.4, S. 7–8; Schneider 2026, Abschn. 3.2.8, S. 58–60).\nGWP100 bezeichnet den 100-jährigen Charakterisierungshorizont des Treibhauspotenzials für die Bewertung unterschiedlicher Treibhausgase in CO₂-Äquivalenten. Diese 100 Jahre bestimmen nicht die Projektlaufzeit.\nErrichtungsemissionen beanspruchen das Budget unmittelbar. Eine rechnerische Verteilung auf 50 Jahresraten würde ihren Emissionszeitpunkt nicht ändern. Für Etappen eines Renovierungsfahrplans muss deshalb betrachtet werden, wann bauliche Emissionen entstehen und welche Betriebsemissionen bis zur jeweiligen Maßnahme anfallen.",
+    "crumbs": [
+      "Der Standard",
+      "Methodik",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Zielwerte</span>"
+    ]
+  },
+  {
+    "objectID": "Kapitel/03-allokation.html#rekalibrierung-welche-stellgrößen-ändern-sich",
+    "href": "Kapitel/03-allokation.html#rekalibrierung-welche-stellgrößen-ändern-sich",
+    "title": "Zielwerte",
+    "section": "Rekalibrierung: Welche Stellgrößen ändern sich?",
+    "text": "Rekalibrierung: Welche Stellgrößen ändern sich?\nEine Fortschreibung muss klären, ob Datenbasis, Szenario oder Verteilungsentscheidung verändert werden. Beim THG-Budget sind Restbudget, Senkenannahme, Sektoranteil und Bezugsfläche maßgeblich. Diese Größen sind bei einer Rekalibrierung gemeinsam zu überprüfen (Schneider u. a. 2025, Abschn. 4.2–4.3, S. 27–28).\nZusätzlicher Baubedarf kann eine Entscheidung über die sektorale Verteilung auslösen. Ein höheres Budget je Quadratmeter entsteht daraus nicht von selbst: Bei unverändertem Sektorbudget verteilt sich dieselbe Menge auf mehr Fläche. Soll der Gebäudesektor mehr Budget erhalten, muss die entsprechende Entlastung anderer Sektoren oder eine begründete Änderung der Budgetgrundlage ausgewiesen werden. Eine Erhöhung ohne solche Deckung verändert den Gesamtanspruch.\n\nPV-Errichtung und sektorale Konsistenz\nDie grauen Emissionen der PV-Anlagen bleiben außerhalb der Quartiersbilanz, weil die Erzeugungsanlagen im nationalen Sektormodell der Energieversorgung zugeordnet sind. Diese Abgrenzung setzt voraus, dass ihre Emissionen dort konsistent erfasst werden (Schneider u. a. 2025, Abschn. 2.4.1 und 4.2, S. 8–9, 27–28).\nEine Alternative nimmt die PV-Errichtung in die Quartiersbilanz auf. Dann müssen Emissionen und Budgetzuordnung gemeinsam neu abgegrenzt werden. Eine zusätzliche Belastung bei unverändertem, anders abgegrenztem Budget würde zwei Bilanzmodelle vermischen. Wie sich die konsistente Alternative auf Grenzwert und Vorteil zusätzlicher PV auswirkt, ist zu berechnen. Systemgrenzen und Bilanzierungsregeln erläutert die Abgrenzung der PV-Errichtung und die Voraussetzungen eines Vergleichs mit einer gebäudebezogenen Normbilanz.\n\n\nSanierung und kommunale Perspektive\nDie Sanierungsgutschrift von 15 kWh PE/(m² NGF a) entlastet Bestandsprojekte gegenüber Neubauten (Schneider u. a. 2026, 14). Ihre Höhe ist normativ gesetzt und bislang nicht quantitativ kalibriert. Sie berücksichtigt, dass schwer sanierbare Gebäude andere Handlungsmöglichkeiten haben als Neubauten.\nEine mögliche Differenzierung nach Gebäudealter, Denkmalschutz oder weiteren Sanierungserschwernissen erfordert eine eigene Begründung und eine Prüfung der Verteilungswirkung.\nEine kommunale Zwischenebene, beispielsweise für Wien, könnte nationale Vorgaben zunächst auf kommunale Beiträge und dann auf Quartiere beziehen. Diese Erweiterung ist eine Entwicklungsperspektive; sie ist noch kein implementierter Kontextfaktor (Schneider 2026, Abschn. 3.5.1, S. 89–90). Dieselben Energie- oder Emissionsbudgets dürfen dabei nicht mehrfach zugeteilt werden.",
+    "crumbs": [
+      "Der Standard",
+      "Methodik",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Zielwerte</span>"
+    ]
+  },
+  {
+    "objectID": "Kapitel/03-allokation.html#folgerungen-für-planung-und-verwaltung",
+    "href": "Kapitel/03-allokation.html#folgerungen-für-planung-und-verwaltung",
+    "title": "Zielwerte",
+    "section": "Folgerungen für Planung und Verwaltung",
+    "text": "Folgerungen für Planung und Verwaltung\nDie Allokation zeigt, welche Beiträge ein Quartier selbst erbringen soll und welche Voraussetzungen es aus dem übergeordneten System übernimmt. Ein Nachweis sollte deshalb neben dem Ergebnis den Methodenstand, die Systemgrenzen, Flächenbezüge und Kontextgutschriften ausweisen. Erst damit lässt sich unterscheiden, ob eine Verbesserung aus einer Planungsmaßnahme, einer geänderten Annahme oder einem anderen Bewertungsmaßstab stammt.\n\n\n\n\nSchneider, Simon. 2026. „Quantitative Positive Energy District Definition, Contextualization and Assessment“. Phdthesis, Universidade de Trás-os-Montes e Alto Douro.\n\n\nSchneider, Simon, Thomas Zelger, Raphael Drexel, Manfred Schindler, Paul Krainer, und José Baptista. 2025. „Declaration-Ready Climate-Neutral PEDs: Budget-Based, Hourly LCA Including Mobility and Flexibility“. Designs 9 (6): 123. https://doi.org/10.3390/designs9060123.\n\n\nSchneider, Simon, Thomas Zelger, und Oskar Mair am Tinkhof. 2026. Plus-Energie-Quartiere: Effizient, erneuerbar und flexibel versorgt mit dem klimaaktiv Standard. Bundesministerium für Land- und Forstwirtschaft, Klima- und Umweltschutz, Regionen und Wasserwirtschaft.\n\n\nSchneider, Simon, Thomas Zelger, David Sengl, und José Baptista. 2023. „A Quantitative Positive Energy District Definition with Contextual Targets“. Buildings 13 (5): 1210. https://doi.org/10.3390/buildings13051210.",
+    "crumbs": [
+      "Der Standard",
+      "Methodik",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Zielwerte</span>"
+    ]
+  },
+  {
+    "objectID": "Kapitel/04-bilanzregeln.html",
+    "href": "Kapitel/04-bilanzregeln.html",
+    "title": "Systemgrenzen und Bilanzierungsregeln",
+    "section": "",
+    "text": "Räumliche Systemgrenze: Was gehört zum Quartier?\nDie Aussage einer Energie- oder Treibhausgasbilanz hängt wesentlich davon ab, was einbezogen, wie zugeordnet und über welchen Zeitraum bewertet wird. Der klimaaktiv Standard legt deshalb räumliche, funktionale und zeitliche Systemgrenzen fest. Diese gelten für Energiebedarf, erneuerbare Erzeugung, Mobilität und Lebenszyklusemissionen ebenso wie für die zugehörigen Zielwerte und Kontextfaktoren.\nDie drei Qualitätsstufen und ihre Erfüllungskriterien werden im Kapitel Der Standard eingeführt. Dieses Kapitel erläutert die konkreten Bilanzierungsregeln. Die nationale Herleitung der Anforderungen steht in Zielwerte; ihre kontextabhängige Anwendung in Kontextfaktoren.\nDas bewertete Quartier wird als räumlich und funktional zusammenhängende Einheit abgegrenzt. Zum Projektumfang gehören die einbezogenen Gebäude, ihre zugehörigen Flächen sowie gemeinschaftliche Versorgungs- und Erzeugungsanlagen. Auch unbeheizte Gebäudeteile, Keller und zugehörige Außenanlagen können für die bauliche Treibhausgasbilanz relevant sein, selbst wenn sie nicht zur konditionierten Nutzfläche zählen (Schneider 2026, Abschn. 3.2.2, S. 51–53).\nFür die Bewertung sind insbesondere folgende Bezugsgrößen zu dokumentieren:\nDie Flächenbezüge sind nicht austauschbar: Ein spezifischer Wert in kWh PE/(m² NGF a) ist ohne Flächenumrechnung nicht mit einem Wert in kg CO₂e/m² BGF vergleichbar. Änderungen der Quartiersgrenze können gleichzeitig Bedarf, lokale Erzeugung, GFZ und verfügbare Budgets verändern. Varianten sind daher nur bei dokumentierter Abgrenzung sinnvoll vergleichbar.",
+    "crumbs": [
+      "Der Standard",
+      "Methodik",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Systemgrenzen und Bilanzierungsregeln</span>"
+    ]
+  },
+  {
+    "objectID": "Kapitel/04-bilanzregeln.html#räumliche-systemgrenze-was-gehört-zum-quartier",
+    "href": "Kapitel/04-bilanzregeln.html#räumliche-systemgrenze-was-gehört-zum-quartier",
+    "title": "Systemgrenzen und Bilanzierungsregeln",
+    "section": "",
+    "text": "Wichtig\n\n\n\nDie Grenze darf nicht allein mit dem Ziel gewählt werden, günstige Erzeugungsflächen einzuschließen oder besonders energieintensive Nutzungen auszuklammern. Bei Anlagen, die mehrere Gebäude oder auch Bereiche außerhalb des Quartiers versorgen, muss die Zuordnung der Energieflüsse und baulichen Aufwendungen nachvollziehbar sein.\n\n\n\n\nGrundstücks- beziehungsweise Quartiersfläche: maßgeblich für die räumliche Abgrenzung und die Geschoßflächenzahl (GFZ).\nBruttogrundfläche (BGF): Bezugsgröße des kumulierten THG-Budgets und Bestandteil der GFZ.\nKonditionierte Nettogrundfläche (NGF): Bezugsgröße der spezifischen betrieblichen Primärenergiebilanz.\nNutzungsanteile: Grundlage für Bedarfsprofile und die flächengewichtete Zuordnung von Mobilitätsbudgets.\n\n\n\n\n\n\n\n\nHinweisAbbildung – Räumliche und funktionale Quartiersgrenze (Platzhalter)\n\n\n\nSchematische Quartierszeichnung mit Umrandung des bewerteten Gebiets, konditionierten Gebäudeflächen, unbeheizten Bauteilen, gemeinschaftlicher Wärmeversorgung, lokaler PV und Netzschnittstellen. Beschriftung der verschiedenen Flächenbezüge (Grundstück, BGF, NGF). Außerhalb liegende Infrastruktur und Erzeugung getrennt kennzeichnen. Ziel: zeigen, dass die physische Quartiersgrenze nicht mit jeder sektoralen Bilanzgrenze identisch ist.\nVorgesehene Grundlage: Schneider (2026), Abschn. 3.2.2; grafisch neu aufbereiten.",
+    "crumbs": [
+      "Der Standard",
+      "Methodik",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Systemgrenzen und Bilanzierungsregeln</span>"
+    ]
+  },
+  {
+    "objectID": "Kapitel/04-bilanzregeln.html#funktionale-bilanzgrenze-welche-nutzungen-und-prozesse-zählen",
+    "href": "Kapitel/04-bilanzregeln.html#funktionale-bilanzgrenze-welche-nutzungen-und-prozesse-zählen",
+    "title": "Systemgrenzen und Bilanzierungsregeln",
+    "section": "Funktionale Bilanzgrenze: Welche Nutzungen und Prozesse zählen?",
+    "text": "Funktionale Bilanzgrenze: Welche Nutzungen und Prozesse zählen?\nDer Umfang der Bewertung steigt mit der angestrebten Qualitätsstufe. Der Gebäudebetrieb ist Bestandteil aller Stufen; bei den beiden erweiterten Stufen kommt der zugeordnete motorisierte Individualverkehr (MIV) hinzu. Erst die Klimaneutralitätsstufe verlangt darüber hinaus die Einhaltung eines kumulierten THG-Budgets einschließlich der definierten baulichen Lebenszyklusprozesse (Schneider u. a. 2025, Tab. 1; Schneider u. a. 2026, 8–11).\nFür die Abgrenzung der einzelnen Bilanzbestandteile gilt:\n\n\n\nTabelle 4.1: Funktionale Abgrenzung der PEQ-Bewertung. Die erforderlichen Bilanzbestandteile richten sich nach der Qualitätsstufe; eine Übersicht dazu bietet das Kapitel Der Standard.\n\n\n\n\n\n\n\n\n\nBilanzbestandteil\nEinbezogene Größen und Zuordnung\n\n\n\n\nGebäudebetrieb\nRaumheizung, Kühlung, Warmwasser, Lüftung, Beleuchtung, Hilfsenergie und weitere im Verfahren erfasste gebäudebezogene Stromanwendungen\n\n\nErneuerbare Energieaufbringung\nDem Quartier zugeordnete Erzeugung sowie Nutzung, Speicherung, Bezug und Abgabe nach den festgelegten Bilanzregeln\n\n\nMotorisierter Individualverkehr\nDem Quartier nach dem Zielverkehrsprinzip zugeordnete Fahrenergie; bei der THG-Bilanz zusätzlich die im Verfahren erfasste Fahrzeugherstellung\n\n\nBauliche Lebenszyklusprozesse\nHerstellung, Errichtung, Instandhaltung, Ersatz und Lebensende nach dem unten beschriebenen Modulumfang\n\n\nKontextfaktoren\nVirtuelle Gut- und Lastschriften für Dichte, Mobilität und Sanierung; keine physischen Energiemengen\n\n\n\n\n\n\nEin Energieausweis, der vor allem Heizung und Warmwasser beschreibt, bildet damit nicht automatisch den vollständigen betrieblichen Quartiersbedarf ab. Bei gemeinsam versorgten Nutzungen muss erkennbar bleiben, welchem Teil des Quartiers die berechneten Mengen zugeordnet werden.",
+    "crumbs": [
+      "Der Standard",
+      "Methodik",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Systemgrenzen und Bilanzierungsregeln</span>"
+    ]
+  },
+  {
+    "objectID": "Kapitel/04-bilanzregeln.html#primärenergiebilanz-physische-flüsse-und-bewertung-trennen",
+    "href": "Kapitel/04-bilanzregeln.html#primärenergiebilanz-physische-flüsse-und-bewertung-trennen",
+    "title": "Systemgrenzen und Bilanzierungsregeln",
+    "section": "Primärenergiebilanz: Physische Flüsse und Bewertung trennen",
+    "text": "Primärenergiebilanz: Physische Flüsse und Bewertung trennen\nDas Quartiersmodell bestimmt zunächst die physischen Energieflüsse über ein Jahr: Bedarf der Anwendungen, lokale Erzeugung, direkten Eigenverbrauch, Lade- und Entladevorgänge, Speicherverluste sowie Bezug und Abgabe über die Quartiersgrenze. Ein Speicher stellt dabei keine zusätzliche Energiequelle dar; er verschiebt verfügbare Energie und verursacht Verluste.\nAnschließend werden die bilanzierten Energiemengen mit den festgelegten Primärenergiefaktoren bewertet. Der bewertete Primärenergiesaldo ist positiv bei einem Überschuss und negativ bei einem Bedarfssaldo. Auf diesen Wert wirken die Kontextgutschriften und -lastschriften. Für die Erfüllung der jeweiligen Qualitätsstufe ist die Bilanz einschließlich der relevanten Kontextfaktoren maßgeblich (Schneider u. a. 2025, Abschn. 2.2).\nEine Kontextgutschrift ist daher weder zusätzlich erzeugte Energie noch eine tatsächliche Verringerung des Netzbezugs. Auch ein positiver Bewertungssaldo ist nicht mit elektrischer Autarkie gleichzusetzen. Die formale Kombination von Saldo und Kontextkomponenten wird in Kontextfaktoren angegeben.\nDie Quartiersbilanz verknüpft Energiequellen, Umwandlungsanlagen, Speicher und Nutzungen. Energiebezug und Energieabgabe werden an der Systemgrenze erfasst.\n\n\n\n\n\n\nAbbildung 4.1: Schematisches Quartiersenergiesystem mit elektrischen und thermischen Energieflüssen, Speichern, erneuerbarer Erzeugung und Netzaustausch.\n\n\n\n\n\n\n\n\n\nHinweisAbbildung – Vom Energiefluss zur Bewertungsbilanz (Platzhalter)\n\n\n\nDreistufige Grafik: (1) physische Energieflüsse (PV, Anwendungen, Speicher, Netzbezug/-export), (2) zeitlich gewichteter Primärenergiesaldo, (3) Addition virtueller Kontextfaktoren zum bewerteten Endsaldo. Physische und virtuelle Größen grafisch deutlich unterscheiden. Optional eine interaktive HTML-Version mit Tooltip zu jeder Komponente und einem feststehenden, druckbaren Zustand für PDF/DOCX.\nVorgesehene Grundlage: Bilanzlogik nach Schneider et al. (2025) sowie Gleichung 5.1.",
+    "crumbs": [
+      "Der Standard",
+      "Methodik",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Systemgrenzen und Bilanzierungsregeln</span>"
+    ]
+  },
+  {
+    "objectID": "Kapitel/04-bilanzregeln.html#mobilität-zugeordnete-fahrten-sind-nicht-gleich-lokale-ladevorgänge",
+    "href": "Kapitel/04-bilanzregeln.html#mobilität-zugeordnete-fahrten-sind-nicht-gleich-lokale-ladevorgänge",
+    "title": "Systemgrenzen und Bilanzierungsregeln",
+    "section": "Mobilität: Zugeordnete Fahrten sind nicht gleich lokale Ladevorgänge",
+    "text": "Mobilität: Zugeordnete Fahrten sind nicht gleich lokale Ladevorgänge\nDer MIV wird nach dem Zielverkehrsprinzip zugeordnet: Relevant sind Fahrten, deren Ziel im betrachteten Quartier liegt, beispielsweise Heim-, Arbeits- oder Einkaufswege. Fahrten zu anderen Zielen werden den jeweiligen Zielorten zugeordnet. Der öffentliche Verkehr wird im beschriebenen Verfahren nicht unmittelbar als Quartiersmobilität bilanziert; ein geringerer MIV-Anteil vermindert jedoch den zugeordneten Fahrenergiebedarf (Schneider u. a. 2025, Abschn. 2.4.2).\nBei Elektrofahrzeugen können Fahrenergie und Ladevorgang räumlich auseinanderfallen. Das Modell berücksichtigt deshalb das Laden innerhalb und außerhalb des Quartiers und die Zuordnung von Fahrten zu verschiedenen Zielen. Wenn Fahrzeugbatterien zusätzlich zur Versorgung des Gebäudes beitragen, handelt es sich um einen Speicherfluss, nicht um eine zweite erneuerbare Energiequelle. Die für die Fahrt erforderliche Energie muss weiterhin berücksichtigt werden.\nIn der THG-Bilanz wird außerdem die Fahrzeugherstellung in dem im Referenzverfahren vorgesehenen Umfang angesetzt. Daraus folgt keine vollständige Flotten-LCA aller künftigen Fahrzeugwechsel. Das nutzungsbezogene Mobilitätsbudget ist ebenfalls von realen Ladeleistungen, Anschlusskapazitäten und der tatsächlichen Anwesenheit von Fahrzeugen zu unterscheiden. Die Budgetzuordnung beschreibt Zielwerte, die Anwendung des Mobilitätskontextfaktors Kontextfaktoren und die stündliche Fahrzeugmodellierung ist in (schneider_annual_2025?) beschrieben.\n\n\n\n\n\n\nHinweisAbbildung – Zielverkehr und Ladeort (Platzhalter)\n\n\n\nVereinfachte Karte mit Wohn-, Arbeits- und Einkaufsquartier. Pfeile zeigen nach dem Zielverkehrsprinzip zugeordnete Fahrten; Ladepunkte zeigen davon getrennt die physischen Orte der Stromaufnahme. Ergänzend schematische Zuordnung zu Mobilitätsbedarf, Nutzungsgutschrift und Fahrzeugherstellung. Ziel: Doppelzählung von Fahrtenergie, Ladevorgang und Budgetgutschrift anschaulich vermeiden.\nVorgesehene Grundlage: Schneider et al. (2025), Abschn. 2.4.2.\n\n\nDie energetische Zuordnung von Mobilität und die tatsächlichen Ladevorgänge folgen unterschiedlichen Systemgrenzen. Fahrenergie wird dem Zielverkehr zugerechnet; geladen werden kann auch außerhalb des betrachteten Quartiers.\n\n\n\n\n\n\nAbbildung 4.2: Unterscheidung zwischen zugeordnetem Zielverkehr, Mobilitätsbudget und tatsächlichen Ladevorgängen nach Nutzungsarten.",
+    "crumbs": [
+      "Der Standard",
+      "Methodik",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Systemgrenzen und Bilanzierungsregeln</span>"
+    ]
+  },
+  {
+    "objectID": "Kapitel/04-bilanzregeln.html#lebenszyklus-treibhausgasbilanz-welche-module-werden-berücksichtigt",
+    "href": "Kapitel/04-bilanzregeln.html#lebenszyklus-treibhausgasbilanz-welche-module-werden-berücksichtigt",
+    "title": "Systemgrenzen und Bilanzierungsregeln",
+    "section": "Lebenszyklus-Treibhausgasbilanz: Welche Module werden berücksichtigt?",
+    "text": "Lebenszyklus-Treibhausgasbilanz: Welche Module werden berücksichtigt?\nDie Klimaneutralitätsstufe berücksichtigt neben Betrieb und MIV die definierten Emissionen der baulichen Infrastruktur. Diese umfasst insbesondere Gebäude und zugehörige Anlagen auf dem Grundstück, einschließlich technisch relevanter Anlagen und nicht konditionierter Bauteile. Die folgende Tabelle dokumentiert den in den wissenschaftlichen Arbeiten beschriebenen PEQ-Umfang; sie ist nicht als pauschale Übereinstimmung mit einem anderen Gebäudebilanzierungsstandard zu lesen (Schneider u. a. 2025, Abschn. 2.4 und Tab. 3).\n\n\n\nTabelle 4.2: Lebenszyklusumfang nach Schneider et al. (2025), Tab. 3, und dem im Bericht dokumentierten Referenzverfahren.\n\n\n\n\n\n\n\n\n\nLebenszyklusmodul oder Prozess\nBehandlung im beschriebenen PEQ-Verfahren\n\n\n\n\nA1–A3: Herstellung\nRohstoffe, Transport zur Herstellung und Produktionsprozesse werden erfasst.\n\n\nA4–A5: Transport und Errichtung\nErfassung abhängig von praktischer Erhebbarkeit und Datenverfügbarkeit; tatsächlich berücksichtigten Umfang dokumentieren.\n\n\nB1 und B7: Nutzung und Wasser\nNicht Teil der Kernbilanz.\n\n\nB2–B5: Wartung, Reparatur, Ersatz und Erneuerung\nBerücksichtigt; Ersatzzeitpunkt und Dekarbonisierungsannahmen beeinflussen das kumulierte Ergebnis.\n\n\nB6: Betriebsenergie\nBewertung der Energieflüsse mit den zeitlich zugeordneten Emissionsfaktoren.\n\n\nB8: Zugeordnete Mobilität\nMIV einschließlich des im Verfahren berücksichtigten Anteils der Fahrzeugherstellung.\n\n\nC1–C4: Lebensende\nBerücksichtigt; für Ereignisse ab 2050 gilt der angenommene Dekarbonisierungspfad.\n\n\nD: Wirkungen außerhalb der Gebäudegrenze\nWiederverwendung und Verwertung nach der gewählten LCA-Konvention; exportierte Energie als Substitutionswirkung.\n\n\nÖffentliche Infrastruktur außerhalb des Grundstücks\nNicht Teil der baulichen Kernbilanz; gegebenenfalls separat auszuweisen.\n\n\n\n\n\n\nDie Lebenszyklusbilanz verbindet zeitlich auftretende Betriebsemissionen mit den Emissionen aus Errichtung, Instandhaltung und Lebensende. Hinzu kommen die im Verfahren berücksichtigten Gutschriften und Speicherwirkungen.\n\n\n\n\n\n\nAbbildung 4.3: Schematische Lebenszyklus-THG-Bilanz von 2025 bis 2075 mit Bauprozessen, Betrieb, Mobilität, Emissionsgutschriften und biogener Kohlenstoffspeicherung.\n\n\n\nDie zeitliche Abbildung der Emissionen ist relevant: Emissionen einer heute ausgeführten Maßnahme entstehen heute; sie werden nicht durch die Verteilung auf 50 rechnerische Jahresraten zeitlich verschoben. Spätere Ersatz- und Instandhaltungsmaßnahmen bleiben technisch erforderlich, auch wenn die angenommene Dekarbonisierung ihre modellierte Emissionswirkung reduziert.\n\nPhotovoltaik, Eigenverbrauch und Netzeinspeisung\nLokal erzeugter PV-Strom kann direkt verwendet, gespeichert oder – soweit technisch möglich – in das öffentliche Netz abgegeben werden. Ein direkter PV-Verbrauch vermeidet Netzbezug; exportierter Strom wird im beschriebenen Referenzverfahren als Substitution von Netzstrom bewertet. Für Bezug und Export gelten zum jeweiligen Zeitpunkt dieselben operativen Bewertungsfaktoren. Der konkrete Effekt hängt daher auch von zeitlicher Verfügbarkeit, Verlusten und realisierbarer Einspeisung ab (Schneider u. a. 2025, Abschn. 2.4.1).\nDie Errichtungsemissionen der PV-Anlage werden im publizierten Referenzansatz dem nationalen Energieversorgungssektor und nicht der Quartiers-THG-Bilanz zugeordnet. Das ist eine bewusste sektorale Bilanzgrenze und kann von einer gebäudebezogenen Ökobilanz abweichen. Ein Vergleich mit einer Bilanz nach EN 15978 muss deshalb unter anderem Bauteilumfang, Lebenszyklusmodule und den Umgang mit exportierter Energie abgleichen (CEN-CENELEC 2026). Eine alternative Einbeziehung der PV-Errichtung in die Quartiersbilanz würde gleichzeitig eine konsistente Anpassung der Budgetzuordnung erfordern (Methodenstand, Grenzen und Weiterentwicklung).\n\n\n\nBiogener Kohlenstoff\nBaustoffe aus nachwachsenden Rohstoffen können Kohlenstoff während ihrer Nutzungsdauer speichern. Diese Speicherwirkung muss von Herstellungs- und End-of-Life-Emissionen getrennt betrachtet werden. Das dokumentierte vereinfachte Verfahren rechnet den biogenen CO₂-Gehalt materialabhängig an: 100 % bei schnell nachwachsenden pflanzlichen Materialien, 55 % bei Holz aus üblich bewirtschafteten Wäldern und 100 % bei nachgewiesenem Kalamitätsholz. Verbundmaterialien werden massengewichtet behandelt (Schneider u. a. 2025, Abschn. 2.5.2).\nDies ist eine Bilanzierungskonvention, keine Aussage, dass jeder Holzbau emissionsfrei wäre. Die gleiche Speicherwirkung darf nicht doppelt angesetzt werden, etwa wenn sie bereits in einem übernommenen LCA-Datensatz enthalten ist. Eine dynamische Bewertung von Speicherung, Nachwachsen und späterer Freisetzung wäre methodisch differenzierter, benötigt aber eine zum Budget konsistente Bewertung und ist nicht ohne Weiteres mit dem statischen GWP100-Kennwert vergleichbar (Schneider u. a. 2025, Abschn. 2.5.1).",
+    "crumbs": [
+      "Der Standard",
+      "Methodik",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Systemgrenzen und Bilanzierungsregeln</span>"
+    ]
+  },
+  {
+    "objectID": "Kapitel/04-bilanzregeln.html#zeitliche-bilanzierung-und-emissionsentwicklung",
+    "href": "Kapitel/04-bilanzregeln.html#zeitliche-bilanzierung-und-emissionsentwicklung",
+    "title": "Systemgrenzen und Bilanzierungsregeln",
+    "section": "Zeitliche Bilanzierung und Emissionsentwicklung",
+    "text": "Zeitliche Bilanzierung und Emissionsentwicklung\n\nStündliche Energiesimulation, monatliche Bewertungsfaktoren\nDie Betriebsenergie wird über ein vollständiges Jahr stündlich berechnet. Damit werden die zeitliche Überlagerung von Bedarf und erneuerbarer Erzeugung sowie der Betrieb von Wärmepumpen, Speichern und flexiblen Verbrauchern berücksichtigt. Im hier dokumentierten Referenzverfahren werden die stündlichen Stromflüsse anschließend mit monatlichen Primärenergie- und THG-Faktoren bewertet (Schneider 2026, Abschn. 3.2.3–3.2.4; Schneider u. a. 2025, Abschn. 2.6).\nFür die Lebenszyklusbewertung werden zeitabhängige Emissionsfaktoren verwendet. Ihre Entwicklung bildet einen angenommenen Dekarbonisierungspfad ab und beeinflusst insbesondere die Bewertung zukünftiger Betriebsemissionen.\n\n\n\n\n\n\nAbbildung 4.4: Angenommene Entwicklung der spezifischen Treibhausgasemissionen verschiedener Energieträger und Versorgungssysteme bis 2050.\n\n\n\nDie in Abbildung 4.4 dargestellten Verläufe sind Szenarioannahmen und keine Prognose tatsächlich gemessener zukünftiger Emissionen.\nDie beiden Auflösungen erfüllen unterschiedliche Aufgaben: Die stündliche Simulation bildet beispielsweise Eigenverbrauch, Speicherverluste und Lastverschiebungen ab. Ein unveränderter Monatsfaktor bewertet dagegen zwei gleich große Netzstrommengen innerhalb desselben Monats identisch – selbst wenn sie zu unterschiedlichen Tageszeiten auftreten. Eine Flexibilitätsmaßnahme kann somit physisch sinnvoll sein, ohne allein über den Monatsfaktor einen zusätzlichen Bewertungsbonus zu erhalten.\n\n\n\n\n\n\nHinweisAbbildung – Stundenflüsse und monatliche Bewertung (Platzhalter)\n\n\n\nGemeinsame Zeitachse für beispielhafte stündliche PV-Erzeugung, Strombedarf, Netzbezug und -export; darunter die zugeordneten monatlichen Primärenergiefaktoren. Eine Markierung erklärt, weshalb die Simulation stündlich ist, die Gewichtung aber monatlich erfolgt. Daten aus einer freigegebenen PEExcel-Beispielvariante, nicht aus einem erfundenen Referenzprojekt.\nVorgesehene Umsetzung: Plotly-Zeitreihen im HTML, SVG/PNG im PDF und DOCX.\n\n\n\n\n\n\n\n\nAbbildung 4.5: Abbildung – Stundenflüsse und monatliche Bewertung.\n\n\n\n\n\nBewertungszeitraum der Treibhausgasbilanz\nDie Lebenszyklus-THG-Bilanz betrachtet den Zeitraum 2025–2075 (50 Jahre). Emissionen aus Errichtung, späteren Maßnahmen, Gebäudebetrieb und Mobilität werden innerhalb dieses Zeitraums kumuliert. Die Emissionsfaktoren folgen im Referenzverfahren energieträger- und prozessbezogenen Entwicklungspfaden. Die angenommene vollständige Dekarbonisierung der betrachteten Versorgung und Prozesse ab 2050 ist eine Szenarioannahme und kein Nachweis einer bereits tatsächlich emissionsfreien Versorgung (Schneider u. a. 2025, Abschn. 2.4; Schneider 2026, Abschn. 3.2.8).\nDrei Zeitangaben sind auseinanderzuhalten: 2040 als Bezugspunkt des österreichischen Klimaneutralitätsziels und der nationalen Allokation, 2025–2075 als Zeitraum der kumulierten Quartiersbewertung sowie GWP100 als 100-jähriger Charakterisierungshorizont von Treibhausgasen. GWP100 bedeutet nicht, dass die Quartiersbilanz über 100 Jahre geführt wird. Die Budgetherleitung und die Bedeutung dieser Annahmen stehen in Zielwerte.",
+    "crumbs": [
+      "Der Standard",
+      "Methodik",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Systemgrenzen und Bilanzierungsregeln</span>"
+    ]
+  },
+  {
+    "objectID": "Kapitel/04-bilanzregeln.html#konsequenzen-für-die-nachweisführung",
+    "href": "Kapitel/04-bilanzregeln.html#konsequenzen-für-die-nachweisführung",
+    "title": "Systemgrenzen und Bilanzierungsregeln",
+    "section": "Konsequenzen für die Nachweisführung",
+    "text": "Konsequenzen für die Nachweisführung\nEin nachvollziehbarer Quartiersnachweis dokumentiert die Quartiersgrenze, die Bezugsflächen, die Nutzungen, die zugeordneten Energie- und Mobilitätsflüsse, die Lebenszyklusmodule sowie die verwendeten Zeitreihen, Bewertungsfaktoren und Methodenstände. Neben dem Ergebnis nach Kontextkorrektur sollte die physische beziehungsweise bewertete Bilanz vor Kontextfaktoren getrennt ausgewiesen werden.\nDie hier festgelegten Grenzen sind Teil des Bewertungsmaßstabs. Sie ersetzen keine vertiefende bauphysikalische, anlagentechnische oder gebäudebezogene Ökobilanz. Wie die Ergebnisse in Planung und Deklaration zu verwenden sind, wird in Deklaration von Bauprojekten beschrieben.\n\n\n\n\nCEN-CENELEC. 2026. EN 15978:2026 – A Harmonized Method to Assess the Environmental Performance of Buildings. https://www.cencenelec.eu/news-events/news/2026/en-in-the-spotlight/2026-04-17-en-15978-2026/.\n\n\nSchneider, Simon. 2026. „Quantitative Positive Energy District Definition, Contextualization and Assessment“. Phdthesis, Universidade de Trás-os-Montes e Alto Douro.\n\n\nSchneider, Simon, Thomas Zelger, Raphael Drexel, Manfred Schindler, Paul Krainer, und José Baptista. 2025. „Declaration-Ready Climate-Neutral PEDs: Budget-Based, Hourly LCA Including Mobility and Flexibility“. Designs 9 (6): 123. https://doi.org/10.3390/designs9060123.\n\n\nSchneider, Simon, Thomas Zelger, und Oskar Mair am Tinkhof. 2026. Plus-Energie-Quartiere: Effizient, erneuerbar und flexibel versorgt mit dem klimaaktiv Standard. Bundesministerium für Land- und Forstwirtschaft, Klima- und Umweltschutz, Regionen und Wasserwirtschaft.",
+    "crumbs": [
+      "Der Standard",
+      "Methodik",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Systemgrenzen und Bilanzierungsregeln</span>"
+    ]
+  },
+  {
+    "objectID": "Kapitel/05-kontextfaktoren.html",
+    "href": "Kapitel/05-kontextfaktoren.html",
+    "title": "Kontextfaktoren",
+    "section": "",
+    "text": "Eine Bilanz, zwei gleichwertige Darstellungen\nEin dichtes Quartier, eine locker bebaute Siedlung und ein Sanierungsvorhaben können nicht denselben lokalen Energieüberschuss bereitstellen. Kontextfaktoren übersetzen die in Zielwerte hergeleitete Lastenverteilung in die Bewertung des einzelnen Projekts. Sie machen sichtbar, welcher Beitrag unter den jeweiligen Rahmenbedingungen verlangt wird.\nEine angepasste Anforderung kann als eigener Zielwert oder als virtuelle Gut- beziehungsweise Lastschrift gegenüber einem gemeinsamen Nullmaßstab dargestellt werden. Beide Darstellungen sind rechnerisch gleichwertig (Schneider 2026, Abschn. 3.2.5–3.2.7).\nMit dem jährlichen spezifischen Primärenergiesaldo (b_{}) vor Kontextkorrektur lautet die Bewertungsbilanz:\n\\[\nb_{\\mathrm{Bewertung}}\n=b_{\\mathrm{PE}}+c_{\\mathrm{Dichte}}+c_{\\mathrm{Mobilität}}+c_{\\mathrm{Sanierung}}.\n\\tag{5.1}\\]\nAlle Größen sind in kWh PE/(m² NGF a) anzugeben. Positive Kontextwerte entlasten die Anforderung, negative Werte erhöhen sie. Die Mobilitätskomponente wird nur gemeinsam mit dem entsprechenden Mobilitätsbedarf in der erweiterten Bilanz angesetzt. Die Bedingung (b_{}&gt;0) lässt sich auch als Anforderung an den Saldo vor Kontextkorrektur schreiben:\n\\[\nb_{\\mathrm{PE}}&gt;-\n\\left(c_{\\mathrm{Dichte}}+c_{\\mathrm{Mobilität}}+c_{\\mathrm{Sanierung}}\\right).\n\\]\nEine positive Bewertungsbilanz bedeutet daher nicht zwingend einen physischen Exportüberschuss. Für Planung und Kommunikation sind der Saldo vor Kontextkorrektur und die einzelnen Kontextkomponenten getrennt auszuweisen. Das kumulierte THG-Budget wird zusätzlich geprüft; es wird nicht in diese jährliche Primärenergiebilanz eingerechnet.",
+    "crumbs": [
+      "Der Standard",
+      "Methodik",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Kontextfaktoren</span>"
+    ]
+  },
+  {
+    "objectID": "Kapitel/05-kontextfaktoren.html#dichte-der-städtebauliche-entwurf-verändert-beide-seiten",
+    "href": "Kapitel/05-kontextfaktoren.html#dichte-der-städtebauliche-entwurf-verändert-beide-seiten",
+    "title": "Kontextfaktoren",
+    "section": "Dichte: Der städtebauliche Entwurf verändert beide Seiten",
+    "text": "Dichte: Der städtebauliche Entwurf verändert beide Seiten\nDie Geschoßflächenzahl beschreibt das Verhältnis von Bruttogrundfläche zu Grundstücksfläche. Mit steigender Dichte nimmt die verfügbare lokale Erzeugungsfläche je Geschossfläche typischerweise ab. Der Dichtefaktor berücksichtigt diesen strukturellen Zusammenhang durch eine kalibrierte Anforderungsfunktion. Ihre Form und nationale Einordnung sind in Zielwerte beschrieben.\nBei niedriger Dichte verlangt die Regel einen zusätzlichen Überschuss. Bei hoher Dichte kann sie einen negativen Saldo vor Kontextkorrektur zulassen. Daraus folgt keine pauschale Empfehlung, durch zusätzliche Geschossfläche eine günstigere Bewertung herzustellen: Mehr Fläche verändert zugleich Bedarf, Herstellungsemissionen und absolute Ressourceninanspruchnahme. Ein Variantenvergleich muss alle diese Änderungen erfassen.\nDie Architektur beeinflusst das tatsächliche Potenzial durch Baukörperstellung, Verschattung, Dach- und Fassadennutzung. Der Dichtefaktor ersetzt diese Prüfung nicht. Zwei Quartiere mit derselben GFZ können unterschiedliche nutzbare PV-Flächen haben. Ebenso konkurrieren auf dem Dach PV, technische Aufbauten, Begrünung, Aufenthalt und Wartungswege um Fläche. Der nachgewiesene Ertrag muss aus einem umsetzbaren Entwurf stammen.\nDie Dichtekorrektur verändert die Anforderungen abhängig von der Geschoßflächenzahl. Niedrige Dichten führen zu zusätzlichen Anforderungen, während höhere Dichten eine Gutschrift erhalten können.\n\n\n\n\n\n\nAbbildung 5.1: Dichteabhängiger Primärenergie-Kontextfaktor mit Gutschriften und Lastschriften gegenüber dem Nullmaßstab.\n\n\n\nAbbildung 5.1 veranschaulicht die Verteilung der energetischen Anforderungen zwischen unterschiedlichen baulichen Dichten. Die dargestellten Werte sind von den tatsächlich erreichten Energieflüssen des Quartiers zu unterscheiden.",
+    "crumbs": [
+      "Der Standard",
+      "Methodik",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Kontextfaktoren</span>"
+    ]
+  },
+  {
+    "objectID": "Kapitel/05-kontextfaktoren.html#mobilität-nutzung-bestimmt-das-budget-standort-bestimmt-den-bedarf",
+    "href": "Kapitel/05-kontextfaktoren.html#mobilität-nutzung-bestimmt-das-budget-standort-bestimmt-den-bedarf",
+    "title": "Kontextfaktoren",
+    "section": "Mobilität: Nutzung bestimmt das Budget, Standort bestimmt den Bedarf",
+    "text": "Mobilität: Nutzung bestimmt das Budget, Standort bestimmt den Bedarf\nDie Mobilitätsgutschrift wird aus der nationalen Allokation nach Nutzungen verteilt. Für ein gemischt genutztes Quartier ergibt sich der spezifische Kontextwert aus der Flächengewichtung:\n\\[\nc_{\\mathrm{Mobilität}}\n=\\frac{\\sum_u A_{\\mathrm{NGF},u}\\,c_{\\mathrm{M},u}}\n{\\sum_u A_{\\mathrm{NGF},u}}.\n\\tag{5.2}\\]\nDie nutzungsspezifischen Werte stehen in Tabelle 3.2. Ihre Flächenzuordnung muss mit jener des zugeordneten Verkehrsbedarfs übereinstimmen. Eine zusätzliche Büronutzung verändert sowohl die Gutschrift als auch die zu bilanzierenden Wege; sie ist kein reiner Bilanzbonus.\nFür die standortabhängige Abschätzung des Mobilitätsbedarfs werden Gemeinden beziehungsweise Standorte unterschiedlichen Mobilitätsregionen zugeordnet.\n\n\n\n\n\n\nAbbildung 5.2: Räumliche Verteilung der Mobilitätsregionen in Österreich als Grundlage für standortabhängige Mobilitätsannahmen. (Datenquelle: Österreich unterwegs 2014)\n\n\n\nDie räumlichen Unterschiede spiegeln sich im angesetzten motorisierten Individualverkehr wider. Sie beeinflussen den zugeordneten Mobilitätsbedarf, nicht automatisch das nutzungsbezogene Energiebudget.\n\n\n\n\n\n\nAbbildung 5.3: Jährliche MIV-Verkehrsleistung nach Mobilitätsregion, dargestellt als Personen-Kilometer pro Bezugsgröße und Jahr. (Datenquelle: Österreich unterwegs 2014)\n\n\n\nDer Standort wirkt vor allem auf der Bedarfsseite. Kurze Wege, ein geeigneter Nutzungsmix, öffentlicher Verkehr und ein wirksames Mobilitätskonzept können den MIV vermindern. Diese Wirkung ist mit nachvollziehbaren Annahmen über Wege, Verkehrsmittelwahl und Fahrzeugflotte anzusetzen. Die bloße Bereitstellung von Fahrradabstellplätzen oder Ladepunkten begründet noch keine beliebig große Verkehrsreduktion.\nFür Architektur und Haustechnik entstehen daraus gemeinsame Aufgaben: Mobilitätsangebote müssen räumlich nutzbar sein, die elektrische Ladeinfrastruktur muss die erwarteten Fahrzeuge bedienen können. Ein geringerer zugeordneter Mobilitätsbedarf senkt nicht zwangsläufig jede lokale Ladespitze. Für die Netz- und Ladeplanung bleiben die Anwesenheitsprofile entscheidend (Schneider 2026, Abschn. 3.3.4, S. 65–67).",
+    "crumbs": [
+      "Der Standard",
+      "Methodik",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Kontextfaktoren</span>"
+    ]
+  },
+  {
+    "objectID": "Kapitel/05-kontextfaktoren.html#sanierung-entlastung-für-die-bedingungen-des-bestands",
+    "href": "Kapitel/05-kontextfaktoren.html#sanierung-entlastung-für-die-bedingungen-des-bestands",
+    "title": "Kontextfaktoren",
+    "section": "Sanierung: Entlastung für die Bedingungen des Bestands",
+    "text": "Sanierung: Entlastung für die Bedingungen des Bestands\nDie Sanierungsgutschrift beträgt 15 kWh PE/(m² NGF a) für den berücksichtigten Sanierungsanteil. Für einen Anteil (f_{}) ergibt sich:\n\\[\nc_{\\mathrm{Sanierung}}=15\\,f_{\\mathrm{Sanierung}}\n\\quad\\text{in kWh PE/(m² NGF a)}.\n\\tag{5.3}\\]\nBei einem Sanierungsanteil von 50 % sind dies 7,5 kWh PE/(m² NGF a), wie in der klimaaktiv-Broschüre erläutert (Schneider u. a. 2026, 14). Im Nachweis sind die zugeordneten Sanierungsflächen offenzulegen. Neubauanteile werden nicht allein durch ihre Einbindung in ein Bestandsquartier zu Sanierungsflächen.\nDie Höhe ist normativ festgelegt. Sie berücksichtigt erschwerte Handlungsmöglichkeiten im Bestand, beispielsweise geometrische oder konstruktive Grenzen einer energetischen Verbesserung. Sie ist keine Berechnung der eingesparten grauen Emissionen. Erhaltene Bausubstanz und neue Bauteile wirken über die eigene THG-Bilanz; die Primärenergiegutschrift darf nicht noch einmal als vermiedene CO₂-Menge angesetzt werden.\n\n\n\n\n\n\nFür eine Weiterentwicklung kommen differenzierte Regeln nach Sanierungserschwernis, Gebäudealter oder Denkmalschutz in Betracht. Solche Regeln brauchen eine begründete Verteilungswirkung und handhabbare Nachweise. Bis dahin wird die festgelegte Gutschrift angewendet, ohne eine bislang nicht vorliegende quantitative Kalibrierung zu unterstellen.",
+    "crumbs": [
+      "Der Standard",
+      "Methodik",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Kontextfaktoren</span>"
+    ]
+  },
+  {
+    "objectID": "Kapitel/05-kontextfaktoren.html#auf-dem-richtigen-weg",
+    "href": "Kapitel/05-kontextfaktoren.html#auf-dem-richtigen-weg",
+    "title": "Kontextfaktoren",
+    "section": "Auf dem richtigen Weg?",
+    "text": "Auf dem richtigen Weg?\n\n\n\n\n\n\nWarnung\n\n\n\n[platzhalter]\n\n\n\n\n\n\nSchneider, Simon. 2026. „Quantitative Positive Energy District Definition, Contextualization and Assessment“. Phdthesis, Universidade de Trás-os-Montes e Alto Douro.\n\n\nSchneider, Simon, Thomas Zelger, und Oskar Mair am Tinkhof. 2026. Plus-Energie-Quartiere: Effizient, erneuerbar und flexibel versorgt mit dem klimaaktiv Standard. Bundesministerium für Land- und Forstwirtschaft, Klima- und Umweltschutz, Regionen und Wasserwirtschaft.",
+    "crumbs": [
+      "Der Standard",
+      "Methodik",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Kontextfaktoren</span>"
+    ]
+  },
+  {
+    "objectID": "Kapitel/08-fortschreibung.html",
+    "href": "Kapitel/08-fortschreibung.html",
+    "title": "Methodenstand, Grenzen und Weiterentwicklung",
+    "section": "",
+    "text": "Was ein positives Ergebnis aussagt\nDer PEQ-Ansatz verbindet einen nationalen Bewertungsmaßstab mit dem konkreten Quartierskonzept. Seine Aussagekraft hängt davon ab, dass beide Seiten zusammenpassen: Das Budget muss zu den bilanzierten Emissionen gehören, die Energieanforderung zum angenommenen Versorgungssystem und die Simulation zum umsetzbaren Projekt. Eine Fortschreibung überprüft deshalb Daten, Annahmen und Verteilungsregeln gemeinsam.\nEine positive Primärenergiebilanz zeigt, dass das Quartier unter den festgelegten Faktoren und Kontextregeln die energetische Anforderung erfüllt. Die Klimaneutralitätsstufe verlangt zusätzlich die Einhaltung des kumulierten THG-Budgets. Der Referenzwert von 320 kg CO₂e/m² BGF setzt die L3-Senkenannahme und die beschriebenen Systemgrenzen voraus. Er bedeutet weder Emissionsfreiheit am Standort noch einen vom Projekt erbrachten Nachweis der national angenommenen Senkenleistung.\nEbenso wenig ist eine positive Jahresbilanz ein Autarkienachweis. Ein Quartier kann erhebliche Mengen Strom oder Wärme beziehen und zu anderen Zeiten Energie abgeben. Für die technische Planung bleiben Anschlussleistungen und zeitliche Versorgungslücken relevant. Ein energetisch günstiges Konzept muss außerdem Komfort, Nutzbarkeit und andere Anforderungen an ein nachhaltiges Gebäude erfüllen.",
+    "crumbs": [
+      "Der Standard",
+      "Methodik",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Methodenstand, Grenzen und Weiterentwicklung</span>"
+    ]
+  },
+  {
+    "objectID": "Kapitel/08-fortschreibung.html#drei-arten-von-änderungen",
+    "href": "Kapitel/08-fortschreibung.html#drei-arten-von-änderungen",
+    "title": "Methodenstand, Grenzen und Weiterentwicklung",
+    "section": "Drei Arten von Änderungen",
+    "text": "Drei Arten von Änderungen\nFür einen nachvollziehbaren Methodenstand sind drei Ebenen zu unterscheiden:\n\n\n\nTabelle 6.1: Ebenen der Fortschreibung.\n\n\n\n\n\n\n\n\n\n\nEbene\nBeispiel\nKonsequenz\n\n\n\n\nProjektdaten\nGeänderte PV-Fläche, andere Hülle, präzisierter Wärmebedarf\nNeues Ergebnis für das Projekt bei gleichem Bewertungsmaßstab\n\n\nSzenario und Parametrisierung\nNeue Mobilitätsdaten, Emissionsfaktoren oder Gebäudebestandsdaten\nGeänderte Berechnungsgrundlage; bisherige und neue Ergebnisse nur mit benanntem Stand vergleichen\n\n\nNormative Verteilung\nAnderer Sektoranteil, Sanierungskontext oder Senkenansatz\nGeänderter Bewertungsmaßstab mit eigener fachlicher Begründung\n\n\n\n\n\n\nBei einer Neuauflage bleiben die zuvor verwendeten Faktoren und Annahmen nachvollziehbar. Ob laufende oder abgeschlossene Deklarationen auf neue Grundlagen umzustellen sind, ist eine eigene Verfahrensentscheidung. Aus einer wissenschaftlichen Weiterentwicklung folgt nicht automatisch eine rückwirkende Neubewertung.",
+    "crumbs": [
+      "Der Standard",
+      "Methodik",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Methodenstand, Grenzen und Weiterentwicklung</span>"
+    ]
+  },
+  {
+    "objectID": "Kapitel/08-fortschreibung.html#wo-die-nächsten-fachlichen-verbesserungen-liegen",
+    "href": "Kapitel/08-fortschreibung.html#wo-die-nächsten-fachlichen-verbesserungen-liegen",
+    "title": "Methodenstand, Grenzen und Weiterentwicklung",
+    "section": "Wo die nächsten fachlichen Verbesserungen liegen",
+    "text": "Wo die nächsten fachlichen Verbesserungen liegen\n\nGebäudebestand und Dichte\nDie Dichteanforderung hängt von der Verteilung der Gebäudequalitäten und Flächen im nationalen Bestand ab. Neue Bestandsdaten ermöglichen eine aktualisierte Kalibrierung. Dabei ist zuerst zu prüfen, welche Anteile saniert, neu gebaut oder weiterbetrieben werden und welchen Beitrag diese Gruppen leisten können. Die Anpassung einzelner Kurvenparameter ohne diesen nationalen Zusammenhang würde die ursprüngliche Lastenverteilung verändern, ohne ihre Wirkung zu erklären.\nEine aktualisierte Dichtekurve muss daher gemeinsam mit den zugrunde gelegten Flächen, Nutzungen und Sanierungsszenarien dokumentiert werden. Auch die Wirkung auf niedrige und hohe Dichten ist auszuweisen. Das physikalische Grundprinzip bleibt davon unabhängig, wie in Zielwerte erläutert.\n\n\nMobilität und zeitliche Bewertungsfaktoren\nNeue Mobilitätserhebungen können Wege, Verkehrsmittelwahl und Standortunterschiede besser abbilden. Für eine Aktualisierung müssen sowohl der zugeordnete Bedarf als auch die Verteilung des nationalen Mobilitätsbudgets geprüft werden. Ein neues Fahrprofil allein begründet noch keinen veränderten Budgetanspruch.\nBei den Energiefaktoren ist eine höhere zeitliche Auflösung fachlich interessant, insbesondere für Speicher, gesteuertes Laden und externe Flexibilität. Das Modell kann stündliche Faktoren verarbeiten. Ihr Einsatz braucht jedoch geeignete, dokumentierte Daten und eine klare Bedeutung der Faktoren. Die durchschnittliche Emissionsintensität eines Strommixes und die durch zusätzlichen Verbrauch verursachte Änderung der Erzeugung sind unterschiedliche Bewertungsansätze und dürfen nicht unbegründet ausgetauscht werden.\nEine Fortschreibung sollte deshalb zunächst dieselben Projektvarianten mit dem bisherigen und dem neuen Faktorsatz vergleichen. So wird sichtbar, ob ein Ergebnis durch die technische Maßnahme oder durch den geänderten Maßstab besser wird. Stündliche Faktoren sind damit ein möglicher nächster Schritt, keine Voraussetzung dafür, den bisherigen monatlichen Ansatz nachvollziehbar anzuwenden (Schneider 2026, Abschn. 3.2.3–3.2.4; Schneider u. a. 2025, Abschn. 2.6 und 4.2–4.3).\n\n\nTHG-Budget, PV und Senken\nBeim THG-Budget bestimmen nationales Restbudget, Senkenannahme, Sektoranteil und Bezugsfläche den verfügbaren Wert je Quadratmeter. Mehr Bauaufgaben können eine Neuverteilung notwendig machen. Sie vergrößern das Gesamtbudget jedoch nicht von selbst. Jede zusätzliche Zuteilung ist deshalb mit ihrer Deckung oder der damit verbundenen Änderung des Klimaziels zu begründen.\nFür die PV-Abgrenzung ist eine konsistente Alternative mit Einbeziehung der Errichtungsemissionen auf Quartiersebene zu untersuchen. Dabei werden die zugehörigen Emissionen und Budgetanteile aus dem Energieversorgungssektor entsprechend zugeordnet. Die Untersuchung sollte zeigen, wie sich Grenzwert, Quartiersbilanz und Anreiz zum PV-Ausbau gemeinsam verändern. Das ist eine methodische Weiterentwicklung und keine bloße Ergänzung einer fehlenden Bauteilposition.\nSenken bleiben eine besonders wirksame Annahme. Eine weniger günstige Senkenentwicklung verkleinert den Spielraum für Emissionen. Die Varianten L1 bis L3 machen diese Abhängigkeit sichtbar. Für robuste Planung lohnt es sich daher, neben dem Erfüllen des Referenzwerts auch den Abstand zu den strengeren Varianten zu kennen (Schneider u. a. 2025, Abschn. 2.3 und 4.2–4.3).\n\n\nSanierung und bauliche Absenkpfade\nDie pauschale Sanierungsgutschrift lässt sich künftig nach tatsächlich unterschiedlichen Erschwernissen differenzieren. Dafür braucht es eine belastbare Datengrundlage und eine Regel, die in der Planung mit vertretbarem Aufwand nachweisbar ist. Eine kleinteilige Differenzierung wäre wenig hilfreich, wenn die erforderlichen Informationen erst spät oder nur mit unverhältnismäßigem Aufwand verfügbar sind.\nFür Renovierungsfahrpläne sind außerdem die künftigen Herstellungsemissionen von Bauteilen relevant. Europäische Arbeiten zur Lebenszyklusbewertung liefern dafür Szenarien und Vergleichsgrundlagen. Die EU-Roadmap verbindet Gebäude- und Bestandsmodelle mit Maßnahmen an Materialproduktion, Materialeinsatz und Bautätigkeit (Le Den u. a. 2024). Die INDICATE-Arbeiten zeigen ergänzend, wie nationale Ausgangswerte mit einheitlichen Erhebungsgrundlagen aufgebaut werden können und warum Unterschiede der Bilanzmethoden den Vergleich erschweren (BPIE 2024). Daraus lassen sich Prüfaufgaben für die Fortschreibung ableiten; konkrete österreichische Materialpfade müssen gesondert ausgewählt und auf den PEQ-Bilanzumfang abgestimmt werden.",
+    "crumbs": [
+      "Der Standard",
+      "Methodik",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Methodenstand, Grenzen und Weiterentwicklung</span>"
+    ]
+  },
+  {
+    "objectID": "Kapitel/08-fortschreibung.html#kommunale-allokation-als-zusätzliche-ebene",
+    "href": "Kapitel/08-fortschreibung.html#kommunale-allokation-als-zusätzliche-ebene",
+    "title": "Methodenstand, Grenzen und Weiterentwicklung",
+    "section": "Kommunale Allokation als zusätzliche Ebene",
+    "text": "Kommunale Allokation als zusätzliche Ebene\nEine kommunale Allokation könnte nationale Vorgaben zunächst auf eine Stadt oder Gemeinde und anschließend auf ihre Quartiere beziehen. Für eine Stadt wie Wien wären dabei etwa Gebäudebestand, erwartete Flächenentwicklung, Energieinfrastruktur und Mobilitätsstruktur gemeinsam zu betrachten. Diese Ebene ist als Erweiterung angelegt und bislang kein eigener implementierter Kontextfaktor (Schneider 2026, Abschn. 3.5.1, S. 89–90).\nEine Kommune könnte damit verdeutlichen, welche Beiträge sie aus Bestandssanierung, Neubau und Infrastruktur erwartet. Voraussetzung ist eine konsistente Verschachtelung: Ein bereits national oder kommunal zugeteiltes Budget darf nicht mehrfach als zusätzliche Entlastung auf Quartiersebene erscheinen. Unterschiedliche lokale Ausgangslagen sind begründbar zu berücksichtigen, ohne die Gesamtmenge aus dem Blick zu verlieren.",
+    "crumbs": [
+      "Der Standard",
+      "Methodik",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Methodenstand, Grenzen und Weiterentwicklung</span>"
+    ]
+  },
+  {
+    "objectID": "Kapitel/08-fortschreibung.html#lernen-aus-planung-und-betrieb",
+    "href": "Kapitel/08-fortschreibung.html#lernen-aus-planung-und-betrieb",
+    "title": "Methodenstand, Grenzen und Weiterentwicklung",
+    "section": "Lernen aus Planung und Betrieb",
+    "text": "Lernen aus Planung und Betrieb\nDie weitere Absicherung des Verfahrens braucht neben neuen Szenarien auch Erfahrungen aus realisierten Projekten. Ein Abgleich mit Betriebsdaten kann zeigen, ob Bedarfsprofile, Regelung und Speicherbetrieb die vorgesehenen Beiträge erbringen. Abweichungen sind zunächst auf Nutzung, Wetter, Ausführung und Betrieb zu untersuchen, bevor daraus eine Änderung des Bewertungsmaßstabs abgeleitet wird.\nFür die Anwendung bleibt entscheidend, dass ein Ergebnis erklärbar ist: welche Maßnahmen wirken, welche Annahmen es tragen und welche Beiträge außerhalb des Projekts liegen. Genau diese Verbindung macht den Bericht als Grundlage für Entwurfsentscheidungen, fachliche Prüfung und Gespräche zwischen Bauherrschaften, Planung und Verwaltung nutzbar.\n\n\n\n\nBPIE. 2024. How to establish Whole Life Carbon benchmarks: Insights and lessons learned from emerging approaches in Ireland, Czechia and Spain. https://www.bpie.eu/publication/how-to-establish-whole-life-carbon-benchmarks-insights-and-lessons-learned-from-emerging-approaches-in-ireland-czechia-and-spain/.\n\n\nLe Den, Xavier, Jacob Steinmann, Attila Kovacs, u. a. 2024. Supporting the development of a roadmap for the reduction of whole life carbon of buildings: Final technical report. European Commission, Directorate-General for Environment. https://doi.org/10.2779/849252.\n\n\nSchneider, Simon. 2026. „Quantitative Positive Energy District Definition, Contextualization and Assessment“. Phdthesis, Universidade de Trás-os-Montes e Alto Douro.\n\n\nSchneider, Simon, Thomas Zelger, Raphael Drexel, Manfred Schindler, Paul Krainer, und José Baptista. 2025. „Declaration-Ready Climate-Neutral PEDs: Budget-Based, Hourly LCA Including Mobility and Flexibility“. Designs 9 (6): 123. https://doi.org/10.3390/designs9060123.",
+    "crumbs": [
+      "Der Standard",
+      "Methodik",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Methodenstand, Grenzen und Weiterentwicklung</span>"
+    ]
+  },
+  {
+    "objectID": "Kapitel/07-anwendung.html",
+    "href": "Kapitel/07-anwendung.html",
+    "title": "Deklaration von Bauprojekten",
+    "section": "",
+    "text": "Drei Deklarationsphasen\nDer klimaaktiv Standard kann in unterschiedlichen Projektphasen angewendet werden. Dabei sind zwei Fragen zu unterscheiden: Welche Qualitätsstufe wird rechnerisch erreicht? Und wie belastbar ist der zugrunde liegende Projektstand? Die Qualitätsstufen beschreibt Der Standard; die Deklarationsphase kennzeichnet den Stand der Nachweisführung.\nDie Nachweisführung kann in der Planung, nach Fertigstellung sowie auf Grundlage gemessener Betriebsdaten erfolgen. Mit fortschreitendem Projektstand verändert sich die Datengrundlage und damit die Aussagekraft der Deklaration.",
+    "crumbs": [
+      "Der Standard",
+      "Anwendung",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Deklaration von Bauprojekten</span>"
+    ]
+  },
+  {
+    "objectID": "Kapitel/07-anwendung.html#drei-deklarationsphasen",
+    "href": "Kapitel/07-anwendung.html#drei-deklarationsphasen",
+    "title": "Deklaration von Bauprojekten",
+    "section": "",
+    "text": "Abbildung 7.1: Deklaration je nach Projektstand: Planungsdeklaration, Fertigstellungsdeklaration und Betriebsdeklaration mit zunehmender Verfügbarkeit von Ausführungs- und Messdaten.\n\n\n\n\n📐 Planungsdeklaration – Potenziale und Varianten nachweisen\nEine Planungsdeklaration zeichnet die fundierte Untersuchung eines Quartierskonzepts aus. Sie zeigt, unter welchen planerischen, technischen und organisatorischen Voraussetzungen eine angestrebte Qualitätsstufe erreicht werden könnte. Insbesondere in frühen Phasen ermöglicht sie die Beantwortung von Was-wäre-wenn-Fragen: Welche PV-Flächen wären erforderlich? Welche Wärmeversorgung oder Mobilitätsmaßnahmen würden den Ausschlag geben? Wie stark beeinflussen unterschiedliche Bauweisen die THG-Bilanz?\nDie betrachtete Variante muss nicht später genau so umgesetzt werden. Eine Planungsdeklaration ist daher weder eine Ausführungsverpflichtung noch ein Nachweis der später tatsächlich erreichten Performance. Entscheidend sind eine ausreichend detaillierte, nachvollziehbare Untersuchung sowie die transparente Kennzeichnung der zugrunde liegenden Annahmen und Abhängigkeiten.\n\n\n🏗️ Fertigstellungsdeklaration – Umsetzung überprüfen\nDie Fertigstellungsdeklaration bewertet das tatsächlich errichtete beziehungsweise sanierte Quartier. Die in der Planung angesetzten Maßnahmen werden mit dem Ausführungsstand abgeglichen: etwa Gebäudehülle, installierte Wärmeerzeugung, tatsächlich verfügbare PV-Flächen und -Leistungen, Speicher, Ladeinfrastruktur sowie realisierte Mobilitätsangebote.\nAbweichungen von früheren Varianten sind zu dokumentieren und, soweit bilanzrelevant, neu zu bewerten. Maßgeblich ist die nachvollziehbar belegte Ausführung und die daraus berechnete Zielerreichung – nicht allein das ursprüngliche Planungsergebnis.\n\n\n🔍 Betriebs- bzw. Monitoringdeklaration – Wirkung im Betrieb belegen\nDie Betriebsdeklaration ergänzt die modellbasierte Bewertung um gemessene Betriebsdaten aus einer mindestens einjährigen Monitoringphase. Insbesondere Energiebezug, Erzeugung und Einspeisung sowie – soweit erfassbar und für die gewählte Qualitätsstufe relevant – weitere Energieflüsse und Nutzungsbedingungen werden mit den Annahmen der Bewertung abgeglichen.\nEine sachgerechte Interpretation berücksichtigt unter anderem Wetter, Belegung, Nutzungsänderungen und die Verfügbarkeit der technischen Anlagen. Das Monitoring ermöglicht es, Abweichungen zwischen prognostizierter und tatsächlicher Performance zu erkennen. Es ersetzt jedoch nicht die Bilanzierung jener Lebenszyklus- oder Mobilitätsemissionen, die nicht unmittelbar gemessen werden können.\n\n\n\nTabelle 7.1: Bewertungsgrundlagen und Aussagekraft der Deklarationsphasen.\n\n\n\n\n\n\n\n\n\n\nPhase\nBewertungsgrundlage\nAussage der Deklaration\n\n\n\n\n📐 Planung\nQuartierskonzept, Fachannahmen und untersuchte Varianten\nUnter welchen Bedingungen eine Qualitätsstufe erreichbar ist\n\n\n🏗️ Fertigstellung\nNachgewiesene Ausführung und aktualisierte Berechnung\nOb das ausgeführte Projekt die Anforderungen erfüllt\n\n\n🔍 Betrieb / Monitoring\nMessdaten und dokumentierte Betriebsbedingungen\nInwieweit die prognostizierte Performance im Betrieb bestätigt wird\n\n\n\n\n\n\n\n\n\n\n\n\nWarnungQualitätsstufe ist nicht Deklarationsphase\n\n\n\nDie Qualitätsstufe bezeichnet den Umfang der erfüllten Energie- und THG-Anforderungen. Die Deklarationsphase beschreibt, ob die Beurteilung auf Planungsannahmen, der realisierten Ausführung oder gemessenen Betriebsdaten beruht. Beide Angaben sind unabhängig voneinander und müssen gemeinsam ausgewiesen werden.",
+    "crumbs": [
+      "Der Standard",
+      "Anwendung",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Deklaration von Bauprojekten</span>"
+    ]
+  },
+  {
+    "objectID": "Kapitel/07-anwendung.html#auf-dem-weg-zielerreichung-in-etappen",
+    "href": "Kapitel/07-anwendung.html#auf-dem-weg-zielerreichung-in-etappen",
+    "title": "Deklaration von Bauprojekten",
+    "section": "🧭 „Auf dem Weg“ – Zielerreichung in Etappen",
+    "text": "🧭 „Auf dem Weg“ – Zielerreichung in Etappen\nNicht jedes Quartier erfüllt bereits zum Nachweiszeitpunkt sämtliche Anforderungen einer angestrebten Qualitätsstufe. Vor allem im Bestand oder bei abschnittsweiser Entwicklung können wesentliche Maßnahmen erst später wirksam werden.\nDie Deklaration „Auf dem Weg zum Plus-Energie-Quartier“ berücksichtigt solche Entwicklungspfade, sofern eine spätere Zielerreichung innerhalb des vorgesehenen Zeitraums plausibel nachgewiesen werden kann. Das Konzept sieht hierfür einen Zeitraum von bis zu fünf Jahren vor.\nEntscheidend ist die Unterscheidung zwischen einer allgemeinen Absicht und einem technisch sowie zeitlich glaubhaften Umsetzungspfad. Geeignete Nachweise können insbesondere sein:\n\nPV-Vorhalteflächen: planerisch gesicherte Dach- oder Fassadenflächen einschließlich Tragfähigkeit, Verschattung, Leitungsführung und künftiger Anschlussmöglichkeit.\nVorbereitete Energieflexibilität: Mess-, Steuer- und Kommunikationsinfrastruktur sowie ein umsetzbares Regelungskonzept.\nTechnische Vorhaltungen: Leerrohre, Platzreserven, Trassen oder elektrische Anschlussreserven für einen späteren Ausbau.\nNachvollziehbare Etappen: konkrete Maßnahmen, Verantwortlichkeiten, Voraussetzungen und Zeitpunkte der Umsetzung.\n\nEin solcher Pfad ist kein Nachweis einer bereits erreichten Qualitätsstufe. Der aktuelle Zustand und die angestrebte vollständige Zielerreichung müssen getrennt dargestellt werden.\nFür die THG-Bewertung sind außerdem die Emissionen bis zur späteren Umsetzung und die zusätzlichen Herstellungsemissionen der Maßnahmen zu berücksichtigen. Ein zukünftiges gutes Ergebnis macht bereits entstandene Emissionen nicht rückgängig.\nDie vertiefte Darstellung von Renovierungsetappen findet sich unter Sanierungsfahrpläne.\n\n\n\n\n\n\nHinweisMethodische Einordnung\n\n\n\nDie verbindlichen Bedingungen für eine Deklaration „Auf dem Weg“, insbesondere Fristen, erforderliche Nachweise und die Zuordnung zur Qualitätsstufe, richten sich nach den jeweils gültigen Deklarationsvorgaben.",
+    "crumbs": [
+      "Der Standard",
+      "Anwendung",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Deklaration von Bauprojekten</span>"
+    ]
+  },
+  {
+    "objectID": "Kapitel/07-anwendung.html#ablauf-der-nachweisführung",
+    "href": "Kapitel/07-anwendung.html#ablauf-der-nachweisführung",
+    "title": "Deklaration von Bauprojekten",
+    "section": "Ablauf der Nachweisführung",
+    "text": "Ablauf der Nachweisführung\nDer Weg zur klimaaktiv Auszeichnung wird durch ein Netzwerk aus Anlaufstelle, Kompetenzpartner:innen und Expert:innengremium begleitet. Der Ablauf lässt sich aus Sicht der Projektverantwortlichen in drei Schritte gliedern.\n\n\n\n\n\n\nAbbildung 7.2: Ihr Weg zum Plus-Energie-Quartier: Von der ersten Prüfung der Mindestanforderungen über die Auswahl einer fachlichen Projektbegleitung bis zur Einreichung und Qualitätssicherung.\n\n\n\n\nSchritt 1 – Mindestanforderungen und Aussichten prüfen\nZu Beginn werden die grundsätzlichen Voraussetzungen des Vorhabens und die Aussichten auf eine erfolgreiche Deklaration geklärt. Ein PEQ-Quick-Check kann eine erste Einschätzung ermöglichen.\nDabei werden mögliche Anpassungen des Projektkonzepts, offene Anforderungen und ein geeigneter Zeitplan besprochen. Für diese erste Orientierung steht die Anlaufstelle Plus-Energie-Quartiere zur Verfügung.\n\n\nSchritt 2 – Kompetenzpartner:in auswählen\nFür die vertiefte Bearbeitung können Projektverantwortliche eine:n klimaaktiv Kompetenzpartner:in auswählen.\nGemeinsam werden der Projektumfang, die Bilanzgrenzen, die untersuchten Varianten und der Leistungsumfang der Begleitung festgelegt. Dazu gehören gegebenenfalls die Datenerhebung, Berechnung, fachliche Beratung und Vorbereitung der Deklarationsunterlagen.\nDie Kompetenzpartner:innen unterstützen die Anwendung des Standards und die nachvollziehbare Aufbereitung der erforderlichen Nachweise.\n\n\nSchritt 3 – Einreichung und Qualitätssicherung\nNach Abschluss der Projektbegleitung werden die erforderlichen Ergebnisse und Unterlagen zur fachlichen Prüfung übermittelt.\nDas klimaaktiv Expert:innengremium prüft die Nachweisführung und kann Rückfragen zu einzelnen Annahmen, Berechnungen oder Belegen stellen. Nach erfolgreicher Prüfung erfolgt die entsprechende Deklaration beziehungsweise Auszeichnung.\nDie Qualitätssicherung dient insbesondere der fachlichen Plausibilisierung, Nachvollziehbarkeit und einheitlichen Anwendung des Standards.",
+    "crumbs": [
+      "Der Standard",
+      "Anwendung",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Deklaration von Bauprojekten</span>"
+    ]
+  },
+  {
+    "objectID": "Kapitel/07-anwendung.html#akteure-und-zuständigkeiten",
+    "href": "Kapitel/07-anwendung.html#akteure-und-zuständigkeiten",
+    "title": "Deklaration von Bauprojekten",
+    "section": "Akteure und Zuständigkeiten",
+    "text": "Akteure und Zuständigkeiten\nDie Nachweisführung ist in die Organisationsstruktur des klimaaktiv Programms für Siedlungen und Quartiere eingebettet. Die beteiligten Akteure übernehmen unterschiedliche, aufeinander abgestimmte Aufgaben.\n\n\n\n\n\n\nAbbildung 7.3: Das klimaaktiv Programmteam: Anlaufstelle, Siedlungen-und-Quartiere-Team, Kompetenzpartner:innen und Expert:innengremium sowie ihre Zusammenarbeit mit Projektverantwortlichen und Fachplanenden.\n\n\n\nDie wesentlichen Rollen sind:\n\nAnlaufstelle Plus-Energie-Quartiere: Erstinformation, Beratung zur grundsätzlichen Anwendbarkeit des Standards und Unterstützung bei Fragen zur Nachweisführung.\nklimaaktiv Siedlungen und Quartiere: Programmkoordination und Unterstützung der entsprechenden Qualitätssicherungs- und Beratungsstrukturen.\nklimaaktiv Kompetenzpartner:innen: Projektbezogene Beratung, Bewertung und Unterstützung bei der Erarbeitung der Nachweisunterlagen.\nklimaaktiv Expert:innengremium: Fachliche Qualitätssicherung und Prüfung der eingereichten Ergebnisse.\nProjektverantwortliche und Fachplanende: Erarbeitung des Projekts, Bereitstellung der notwendigen Daten, Umsetzung der Maßnahmen und Dokumentation der Nachweise.\n\nDie Zusammenarbeit zwischen den beteiligten Stellen soll eine nachvollziehbare Bewertung ermöglichen, ohne die Verantwortlichkeiten für Projektplanung, Berechnung und Qualitätssicherung zu vermischen.",
+    "crumbs": [
+      "Der Standard",
+      "Anwendung",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Deklaration von Bauprojekten</span>"
+    ]
+  },
+  {
+    "objectID": "Kapitel/07-anwendung.html#anforderungen-an-datenqualität-und-nachvollziehbarkeit",
+    "href": "Kapitel/07-anwendung.html#anforderungen-an-datenqualität-und-nachvollziehbarkeit",
+    "title": "Deklaration von Bauprojekten",
+    "section": "Anforderungen an Datenqualität und Nachvollziehbarkeit",
+    "text": "Anforderungen an Datenqualität und Nachvollziehbarkeit\nDie Nachweisführung bündelt Angaben aus Architektur, Bauphysik, Haustechnik, Mobilitätsplanung und Ökobilanz. Für ergebnisrelevante Eingaben ist zu kennzeichnen, ob es sich um Referenzannahmen, projektspezifische Berechnungen, bestätigte Ausführungsangaben oder Messwerte handelt. Abhängigkeiten von nicht gesicherten Maßnahmen sind sichtbar auszuweisen.\nFür Variantenvergleiche sind Quartiersabgrenzung, Nutzungsumfang, Flächenbezüge und Bewertungsstand konsistent zu halten. Werden sie verändert, muss die Auswirkung auf Bedarf, Kontextfaktoren und zugeteilte Budgets kenntlich gemacht werden. Die Interpretation der Ergebnisse wird unter Ergebnisse verstehen erläutert.",
+    "crumbs": [
+      "Der Standard",
+      "Anwendung",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Deklaration von Bauprojekten</span>"
+    ]
+  },
+  {
+    "objectID": "Kapitel/07-anwendung.html#peexcel-als-nachweiswerkzeug",
+    "href": "Kapitel/07-anwendung.html#peexcel-als-nachweiswerkzeug",
+    "title": "Deklaration von Bauprojekten",
+    "section": " PEExcel als Nachweiswerkzeug",
+    "text": "PEExcel als Nachweiswerkzeug\nDie Berechnungen und Variantenvergleiche werden mit dem PEExcel-Nachweistool unterstützt. Bedienung, Datenmodell, Auswertungsfunktionen, Softwareversionen und technische Modellimplementierung sind auf der eigenständigen Toolwebsite beschrieben.\nDieser Bericht erläutert die Bewertungsgrundlagen (Zielwerte, Kontextfaktoren, Systemgrenzen und Bilanzierungsregeln) und ihre Interpretation (Ergebnisse verstehen); er ersetzt keine detaillierte Fachplanung.\n\n\n\n\n\n\nTippWeiterführende Informationen\n\n\n\nPEExcel Wissensplattform · Ergebnisinterpretation · Praxisbeispiele · Sanierungsfahrpläne",
+    "crumbs": [
+      "Der Standard",
+      "Anwendung",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Deklaration von Bauprojekten</span>"
+    ]
+  },
+  {
+    "objectID": "Kapitel/07-ergebnisse.html",
+    "href": "Kapitel/07-ergebnisse.html",
+    "title": "Ergebnisse verstehen",
+    "section": "",
+    "text": "Primärenergiebilanz\nDie erreichte Qualitätsstufe fasst die Bewertung zusammen. Für die Planung ist ebenso wichtig, welche realen Energie- und Emissionsflüsse, Kontextfaktoren und Annahmen dahinterstehen. Eine nachvollziehbare Ergebnisdarstellung zeigt deshalb die einzelnen Beiträge und nicht nur „bestanden“ oder „nicht bestanden“.\nDer berechnete Energiebedarf, die lokale Erzeugung sowie Bezug und Export über die Quartiersgrenze sind physische Größen. Erst die Gewichtung ergibt den Primärenergiesaldo. Dichte-, Mobilitäts- und Sanierungskontext verändern den Bewertungsmaßstab, nicht den realen Energiefluss. Die zugrunde liegenden Regeln erläutern Systemgrenzen und Bilanzierungsregeln und Kontextfaktoren.\nEine positive Bewertungsbilanz ist nicht gleichbedeutend mit Autarkie oder einem physischen Nettoexport. Für aussagekräftige Vergleiche sind Rohsaldo und jede Kontextkorrektur getrennt auszuweisen.\nDie Ergebnisdarstellung stellt Energiebedarf und Energieaufbringung gegenüber und weist die Kontextkomponenten gesondert aus. Die Erweiterung um Mobilität verändert sowohl die bilanzierten Bedarfe als auch die zugerechneten Budgets.",
+    "crumbs": [
+      "Der Standard",
+      "Anwendung",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Ergebnisse verstehen</span>"
+    ]
+  },
+  {
+    "objectID": "Kapitel/07-ergebnisse.html#primärenergiebilanz",
+    "href": "Kapitel/07-ergebnisse.html#primärenergiebilanz",
+    "title": "Ergebnisse verstehen",
+    "section": "",
+    "text": "HinweisAbbildungsvorschlag E2 · Bilanzzerlegung (Plotly)\n\n\n\nInteraktives Diagramm: Energiebilanz vor Kontext → Dichtegutschrift/-lastschrift → Mobilitätsbudget → Sanierungsgutschrift → bewerteter Saldo. Tooltips mit Definition, Einheit, Vorzeichen und Quelle. Für PDF eine statische Fassung vorsehen.\n\n\n\n\n\n\n\n\n\nAbbildung 8.1: Exemplarische Primärenergiebilanzen eines Plus-Energie-Quartiers mit und ohne Berücksichtigung der Mobilität.",
+    "crumbs": [
+      "Der Standard",
+      "Anwendung",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Ergebnisse verstehen</span>"
+    ]
+  },
+  {
+    "objectID": "Kapitel/07-ergebnisse.html#treibhausgasbudget-und-zeitlicher-verlauf",
+    "href": "Kapitel/07-ergebnisse.html#treibhausgasbudget-und-zeitlicher-verlauf",
+    "title": "Ergebnisse verstehen",
+    "section": "Treibhausgasbudget und zeitlicher Verlauf",
+    "text": "Treibhausgasbudget und zeitlicher Verlauf\nDie THG-Bewertung der dritten Qualitätsstufe umfasst die im Standard festgelegten baulichen, betrieblichen und mobilitätsbezogenen Emissionen. Die kumulierte Bilanz wird dem zugeteilten Budget gegenübergestellt. Zeitpunkt und Art der Emissionen sind für die Interpretation wesentlich: Herstellungsemissionen entstehen bei der baulichen Maßnahme, während Betriebsemissionen über die Jahre anfallen.\nDas für den dokumentierten Methodenstand verwendete Referenzbudget und seine Annahmen werden in Zielwerte erläutert; die Systemgrenzen stehen in Systemgrenzen und Bilanzierungsregeln.\nDie kumulierte THG-Bilanz setzt sich aus den einzelnen baulichen, betrieblichen und mobilitätsbezogenen Emissionsbeiträgen zusammen. Die Gegenüberstellung mit dem Budget zeigt den verbleibenden Spielraum beziehungsweise eine Überschreitung.\n\n\n\n\n\n\nAbbildung 8.2: Beispielhafte Zusammensetzung der kumulierten Lebenszyklus-Treibhausgasbilanz und Vergleich mit dem Budget von 320 kg CO₂e/m² BGF.",
+    "crumbs": [
+      "Der Standard",
+      "Anwendung",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Ergebnisse verstehen</span>"
+    ]
+  },
+  {
+    "objectID": "Kapitel/07-praxisbeispiele.html",
+    "href": "Kapitel/07-praxisbeispiele.html",
+    "title": "Praxisbeispiele",
+    "section": "",
+    "text": "Am Bichl III – Dichte als zusätzliche Anforderung\nDie Beispiele illustrieren unterschiedliche Planungsaufgaben: Die zusätzliche Anforderung an ein Neubau-Quartier mit niedriger baulicher Dichte, die Herausforderungen im Kontext des hochverdichteten gemischten Neubaus und die energetische Sanierung eines bestehenden Wohnquartiers.\nAm Bichl III wurde im Oktober 2026 als erstes Quartier in Österreich die 🏗️ Fertigsstellungsdeklaration Plus-Energie-Quartier verliehen. Der hier dokumentierte Deklarationsumfang umfasst die Betriebsenergie.\nDas Beispiel verdeutlicht die Wirkung des Dichtekontexts: Bei geringer baulicher Dichte wird ein zusätzlicher energetischer Beitrag verlangt. Im Fall von Am Bichl III konnte diese Anforderung durch die Ermöglichung zukünftig von energieflexiblem Heizen und Kühlen kompensiert werden.",
+    "crumbs": [
+      "Der Standard",
+      "Anwendung",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Praxisbeispiele</span>"
+    ]
+  },
+  {
+    "objectID": "Kapitel/07-praxisbeispiele.html#ruginnovation-sanierung-und-integrierte-energieversorgung",
+    "href": "Kapitel/07-praxisbeispiele.html#ruginnovation-sanierung-und-integrierte-energieversorgung",
+    "title": "Praxisbeispiele",
+    "section": "RUGInnovation – Sanierung und integrierte Energieversorgung",
+    "text": "RUGInnovation – Sanierung und integrierte Energieversorgung\nDas Wiener Projekt RUGInnovation kombiniert die Sanierung einer Wohnanlage mit einer veränderten Energieversorgung und Photovoltaik auf Dach- und Fassadenflächen. Dokumentiert sind unter anderem Arbeiten an Fassade, Dach und Fenstern, eine Grundwasserwärmepumpe sowie Mobilitätsmaßnahmen (Schneider u. a. 2026, 15–19).\nDer Fall zeigt, wie Gebäudehülle, Wärmeversorgung, erneuerbare Erzeugung und Mobilität gemeinsam wirken. Die Sanierungsgutschrift entschärft die energetische Anforderung; tatsächliche Einsparungen entstehen dagegen durch die umgesetzten Maßnahmen. Deshalb sollten zunächst Betriebsenergie, danach die Erweiterung um Mobilität und schließlich die baulichen THG-Beiträge getrennt betrachtet werden.\n\n\n\n\n\n\n\nHinweisAbbildungsvorschlag P2 · RUGInnovation – drei Bilanzebenen\n\n\n\nPlotly: Betriebsenergie → inklusive MIV → THG-Lebenszyklusbewertung. Einmal mit tatsächlichem Datenstand und geeigneten Anmerkungen zu Sanierung, PV, Wärmeversorgung und Budget; für PDF statischer Export. Die drei Stufen nur zeigen, soweit dafür freigegebene Berechnungen vorliegen.\n\n\n\n\n\n\n\nSchneider, Simon, Thomas Zelger, und Oskar Mair am Tinkhof. 2026. Plus-Energie-Quartiere: Effizient, erneuerbar und flexibel versorgt mit dem klimaaktiv Standard. Bundesministerium für Land- und Forstwirtschaft, Klima- und Umweltschutz, Regionen und Wasserwirtschaft.",
+    "crumbs": [
+      "Der Standard",
+      "Anwendung",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Praxisbeispiele</span>"
+    ]
+  },
+  {
+    "objectID": "Kapitel/07-renovierungsfahrplan.html",
+    "href": "Kapitel/07-renovierungsfahrplan.html",
+    "title": "Sanierungsfahrpläne und Entwicklungspfade",
+    "section": "",
+    "text": "Maßnahmenfolge als Planungsentscheidung\nBestandsquartiere werden häufig schrittweise saniert. Ein Renovierungsfahrplan kann deshalb mit einer Folge von Quartiersbewertungen verbunden werden. Die Darstellung zeigt den erwarteten Zustand nach jeder Etappe, die noch erforderlichen Maßnahmen und die bis dahin verursachten Emissionen.\nEin Fahrplan kann beispielsweise zuerst die Wärmeversorgung, anschließend die Gebäudehülle und danach die lokale Erzeugung verändern – oder eine andere Reihenfolge wählen. Dabei sind technische Abhängigkeiten zu beachten: Erneuerte Wärmeerzeuger müssen zum späteren Leistungsbedarf und zu den Systemtemperaturen passen. Umgekehrt kann das Warten auf eine umfassende Sanierung fortgesetzte Betriebsemissionen bedeuten.",
+    "crumbs": [
+      "Der Standard",
+      "Anwendung",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Sanierungsfahrpläne und Entwicklungspfade</span>"
+    ]
+  },
+  {
+    "objectID": "Kapitel/07-renovierungsfahrplan.html#maßnahmenfolge-als-planungsentscheidung",
+    "href": "Kapitel/07-renovierungsfahrplan.html#maßnahmenfolge-als-planungsentscheidung",
+    "title": "Sanierungsfahrpläne und Entwicklungspfade",
+    "section": "",
+    "text": "HinweisAbbildungsvorschlag F1 · Etappenfahrplan\n\n\n\nZeitachse: Ausgangszustand → Hüllensanierung → Umstellung Wärmeversorgung → PV-/Flexibilitätsausbau, jeweils mit Zustand und bilanzieller Wirkung. Die Reihenfolge ist ein illustratives Beispiel, kein vorgeschriebener Pfad.",
+    "crumbs": [
+      "Der Standard",
+      "Anwendung",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Sanierungsfahrpläne und Entwicklungspfade</span>"
+    ]
+  },
+  {
+    "objectID": "Kapitel/07-renovierungsfahrplan.html#emissionen-entstehen-zu-unterschiedlichen-zeitpunkten",
+    "href": "Kapitel/07-renovierungsfahrplan.html#emissionen-entstehen-zu-unterschiedlichen-zeitpunkten",
+    "title": "Sanierungsfahrpläne und Entwicklungspfade",
+    "section": "Emissionen entstehen zu unterschiedlichen Zeitpunkten",
+    "text": "Emissionen entstehen zu unterschiedlichen Zeitpunkten\nBauliche Maßnahmen beanspruchen das THG-Budget zum Zeitpunkt ihres Anfalls; Betrieb und Mobilität verursachen im gewählten Szenario jährliche Beiträge. Schematisch ergibt sich innerhalb des Bewertungszeitraums:\n\\[\nG_{\\mathrm{kumuliert}}(t)\n=\\sum_{j:\\,t_j\\leq t}G_{\\mathrm{baulich},j}\n+\\sum_{y=2025}^{t}G_{\\mathrm{Betrieb+MIV},y}.\n\\tag{10.1}\\]\nAlle Beiträge sind in einer gemeinsamen Einheit und auf dieselbe Quartiersgrenze zu beziehen. Der für eine Etappe erreichte Betriebszustand allein belegt nicht, dass das kumulierte Budget über den gesamten Bewertungszeitraum bis 2075 eingehalten wird; hierfür gelten die Regeln aus Systemgrenzen und Bilanzierungsregeln.\n\n\n\n\n\n\nHinweisAbbildungsvorschlag F2 · Kumulierte THG-Emissionen\n\n\n\nInteraktiver Plot: Jährliche Betriebs- und Mobilitätsemissionen, bauliche Emissionssprünge bei Maßnahmen und kumulierte Summe gegenüber dem Budget. Etappen als anklickbare Marker; statische PDF-Fassung ergänzen.",
+    "crumbs": [
+      "Der Standard",
+      "Anwendung",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Sanierungsfahrpläne und Entwicklungspfade</span>"
+    ]
+  },
+  {
+    "objectID": "Kapitel/07-renovierungsfahrplan.html#welche-annahmen-sind-besonders-kritisch",
+    "href": "Kapitel/07-renovierungsfahrplan.html#welche-annahmen-sind-besonders-kritisch",
+    "title": "Sanierungsfahrpläne und Entwicklungspfade",
+    "section": "Welche Annahmen sind besonders kritisch?",
+    "text": "Welche Annahmen sind besonders kritisch?\nDie Emissionen späterer Baustoffe und Bauweisen können sich durch Veränderungen in der Produktion und im Materialeinsatz verringern. Eine solche Entlastung ist jedoch nur mit einem dokumentierten Szenario und passenden Ökobilanzdaten anzusetzen. Europäische Szenarioarbeiten liefern dafür methodische Anknüpfungspunkte (Le Den u. a. 2024).\nBei einer Gegenüberstellung unterschiedlicher Pfade sind insbesondere Zeitpunkt und Umfang der Eingriffe, technische Nutzungsdauern, Energieversorgung, Mobilität und verwendete Dekarbonisierungsannahmen offenzulegen.\n\n\n\n\n\n\nTippAbbildungsvorschlag F3 · Pfadvergleich\n\n\n\nVariantenvergleich: Frühe versus gestaffelte Sanierung: kumuliertes THG-Ergebnis, verbleibender Budgetspielraum und Energiebedarf. Keine vorgetäuschte Prognosesicherheit; alle Werte als Szenarioannahmen ausweisen.\n\n\nDie Diskussion um Etappen ergänzt die Nachweisführung aus Deklaration von Bauprojekten und die Darstellung von Projektergebnissen aus Ergebnisse verstehen. Die normative Weiterentwicklung ist in Methodenstand, Grenzen und Weiterentwicklung eingeordnet.\n\n\n\n\nLe Den, Xavier, Jacob Steinmann, Attila Kovacs, u. a. 2024. Supporting the development of a roadmap for the reduction of whole life carbon of buildings: Final technical report. European Commission, Directorate-General for Environment. https://doi.org/10.2779/849252.",
+    "crumbs": [
+      "Der Standard",
+      "Anwendung",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Sanierungsfahrpläne und Entwicklungspfade</span>"
+    ]
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "Literatur",
+    "section": "",
+    "text": "BPIE. 2024. How to Establish Whole Life Carbon Benchmarks: Insights\nand Lessons Learned from Emerging Approaches in Ireland, Czechia and\nSpain. https://www.bpie.eu/publication/how-to-establish-whole-life-carbon-benchmarks-insights-and-lessons-learned-from-emerging-approaches-in-ireland-czechia-and-spain/.\n\n\nCEN-CENELEC. 2026. EN 15978:2026 – a Harmonized Method\nto Assess the Environmental Performance of Buildings. https://www.cencenelec.eu/news-events/news/2026/en-in-the-spotlight/2026-04-17-en-15978-2026/.\n\n\nLe Den, Xavier, Jacob Steinmann, Attila Kovacs, et al. 2024.\nSupporting the Development of a Roadmap for the Reduction of Whole\nLife Carbon of Buildings: Final Technical Report. European\nCommission, Directorate-General for Environment. https://doi.org/10.2779/849252.\n\n\nSchneider, Simon. 2026. “Quantitative Positive Energy District\nDefinition, Contextualization and Assessment.” PhD thesis,\nUniversidade de Trás-os-Montes e Alto Douro.\n\n\nSchneider, Simon, Thomas Zelger, Raphael Drexel, Manfred Schindler, Paul\nKrainer, and José Baptista. 2025. “Declaration-Ready\nClimate-Neutral PEDs: Budget-Based, Hourly LCA\nIncluding Mobility and Flexibility.” Designs 9 (6): 123.\nhttps://doi.org/10.3390/designs9060123.\n\n\nSchneider, Simon, Thomas Zelger, and Oskar Mair am Tinkhof. 2026.\nPlus-Energie-Quartiere: Effizient, Erneuerbar Und Flexibel Versorgt\nMit Dem Klimaaktiv Standard. Bundesministerium für Land- und\nForstwirtschaft, Klima- und Umweltschutz, Regionen und Wasserwirtschaft.\n\n\nSchneider, Simon, Thomas Zelger, David Sengl, and José Baptista. 2023.\n“A Quantitative Positive Energy District Definition with\nContextual Targets.” Buildings 13 (5): 1210. https://doi.org/10.3390/buildings13051210.",
+    "crumbs": [
+      "Der Standard",
+      "Literatur"
+    ]
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Über diesen Bericht",
+    "section": "",
+    "text": "Ziel des Hintergrundberichts\nDieser Bericht dokumentiert die von unserem Forschungsteam entwickelte Methodik des klimaaktiv Standards für Plus-Energie-Quartiere. Er führt die bereits in Schneider et al. publizierten Herleitungen und das Bewertungsmodell zu einer gemeinsamen Referenz für Planung, Verwaltung und Forschung zusammen (Schneider u. a. 2023, 2025; Schneider 2026).\nEr ergänzt zwei weitere klimaaktiv-Publikationen: Die Broschüre Plus-Energie-Quartiere bietet einen Überblick über den Standard und seine Anwendungsmöglichkeiten. Das Handbuch zum PEQ-Nachweistool beschreibt die praktische Durchführung der Nachweisführung.\nDer vorliegende Hintergrundbericht konzentriert sich dagegen auf die Frage, warum die Anforderungen in dieser Form definiert wurden und wie sie rechnerisch zustande kommen. Er verfolgt insbesondere vier Ziele:",
+    "crumbs": [
+      "Der Standard",
+      "Über diesen Bericht"
+    ]
+  },
+  {
+    "objectID": "about.html#ziel-des-hintergrundberichts",
+    "href": "about.html#ziel-des-hintergrundberichts",
+    "title": "Über diesen Bericht",
+    "section": "",
+    "text": "Die Herleitung der quantitativen Anforderungen aus übergeordneten Energie- und Klimazielen nachvollziehbar darzustellen.\nDie Systemgrenzen, Bilanzierungsverfahren und Kontextfaktoren des Standards zu erläutern.\nDie Annahmen, Berechnungsverfahren und Grenzen des verwendeten Bewertungsmodells offenzulegen.\nDie Grundlage für eine transparente Anwendung und dokumentierte Weiterentwicklung der Methodik zu schaffen.\n\n\nZielgruppe\nDer Bericht richtet sich insbesondere an Architekt:innen, Fachplaner:innen, Energieberater:innen, Projektentwickler:innen sowie Fachleute aus Verwaltung, Forschung und Qualitätssicherung, die sich mit der Bewertung klimaneutraler Gebäude, Quartiere und Städte beschäftigen.",
+    "crumbs": [
+      "Der Standard",
+      "Über diesen Bericht"
+    ]
+  },
+  {
+    "objectID": "about.html#entstehung-und-wissenschaftliche-grundlagen",
+    "href": "about.html#entstehung-und-wissenschaftliche-grundlagen",
+    "title": "Über diesen Bericht",
+    "section": "Entstehung und wissenschaftliche Grundlagen",
+    "text": "Entstehung und wissenschaftliche Grundlagen\nDie Methodik wurde von der Forschungsgruppe Climate-fit Buildings and Districts der FH Technikum Wien im Rahmen von Forschungs- und Entwicklungsarbeiten zu klimaneutralen Plus-Energie-Quartieren erarbeitet.\nDie Entwicklung der Bewertungsmethodik und des PEExcel-Nachweistools erfolgte über mehrere Forschungs- und Entwicklungsschritte. Ausgehend von frühen Energiemodellen wurde die Betrachtung schrittweise auf Mobilität, Lebenszyklusemissionen und die klimaaktiv-Nachweisführung erweitert.\n\n\n\n\n\n\nAbbildung 1: Historische Entwicklung der PEQ-Bewertungsmethodik und des Nachweistools von ersten Forschungsanwendungen bis zur klimaaktiv-Operationalisierung.\n\n\n\nWesentliche wissenschaftliche Grundlagen bilden die Dissertation von Schneider (2026) sowie die zugehörigen Publikationen zur quantitativen Definition von Plus-Energie-Quartieren, zur nationalen Allokation von Energie- und Treibhausgasbudgets und zur integrierten Quartiersbewertung (Schneider 2026; Schneider u. a. 2023, 2025).\nDer Bericht führt diese Arbeiten zusammen und dokumentiert ihre Operationalisierung im österreichischen klimaaktiv Standard.",
+    "crumbs": [
+      "Der Standard",
+      "Über diesen Bericht"
+    ]
+  },
+  {
+    "objectID": "about.html#methodenstand-und-versionierung",
+    "href": "about.html#methodenstand-und-versionierung",
+    "title": "Über diesen Bericht",
+    "section": "Methodenstand und Versionierung",
+    "text": "Methodenstand und Versionierung\nDie dargestellten Anforderungen beruhen auf einem definierten Methodenstand und den zugrunde liegenden nationalen Energie- und Klimaszenarien.\nDa sich Szenarien, wissenschaftliche Erkenntnisse und Rahmenbedingungen weiterentwickeln, ist eine regelmäßige Überprüfung und Fortschreibung der Methodik vorgesehen. Änderungen an Zielwerten, Kontextfaktoren und Bilanzierungsregeln sollen nachvollziehbar dokumentiert werden.\nZwischen dem Methodenstand des Standards und der Softwareversion des PEQ-Nachweistools (PEExcel) wird ausdrücklich unterschieden. Weiterentwicklungen der Software bedeuten nicht zwangsläufig eine Änderung der Bewertungsmethodik.",
+    "crumbs": [
+      "Der Standard",
+      "Über diesen Bericht"
+    ]
+  },
+  {
+    "objectID": "about.html#autorinnen-und-mitwirkende",
+    "href": "about.html#autorinnen-und-mitwirkende",
+    "title": "Über diesen Bericht",
+    "section": "Autor:innen und Mitwirkende",
+    "text": "Autor:innen und Mitwirkende\nDer Bericht wird von der Forschungsgruppe Climate-fit Buildings and Districts der FH Technikum Wien erarbeitet.\nWissenschaftliche Bearbeitung: Thomas Zelger, Simon Schneider\nInstitution: FH Technikum Wien\n[Autor:innenliste, weitere Mitwirkende, Auftraggeber und institutionelle Angaben vor Veröffentlichung ergänzen.]",
+    "crumbs": [
+      "Der Standard",
+      "Über diesen Bericht"
+    ]
+  },
+  {
+    "objectID": "about.html#zitierempfehlung",
+    "href": "about.html#zitierempfehlung",
+    "title": "Über diesen Bericht",
+    "section": "Zitierempfehlung",
+    "text": "Zitierempfehlung\nFür die wissenschaftliche Bezugnahme auf die Methodik wird empfohlen, die jeweils einschlägigen Originalpublikationen zu zitieren.\nFür Verweise auf die zusammenfassende Darstellung dieses Hintergrundberichts ist folgende Zitierweise vorgesehen:\nSchneider, S. et al. (2026): Klimaneutrale Plus-Energie-Quartiere. Wissenschaftliche Grundlagen des klimaaktiv Standards für Plus-Energie-Quartiere. FH Technikum Wien, Wien.",
+    "crumbs": [
+      "Der Standard",
+      "Über diesen Bericht"
+    ]
+  },
+  {
+    "objectID": "about.html#quellen-und-geltungsbereich",
+    "href": "about.html#quellen-und-geltungsbereich",
+    "title": "Über diesen Bericht",
+    "section": "Quellen und Geltungsbereich",
+    "text": "Quellen und Geltungsbereich\nDieser Bericht dokumentiert die von unserem Forschungsteam entwickelte Methodik des klimaaktiv Standards für Plus-Energie-Quartiere. Er führt die in Schneider (2026) und den zugehörigen Publikationen beschriebenen Grundlagen zu einer zusammenhängenden Methodendarstellung zusammen (Schneider 2026; Schneider u. a. 2023, 2025). Die klimaaktiv-Broschüre ergänzt diese Darstellung um einen kompakten Überblick zur Anwendung (Schneider u. a. 2026).\nDie hier dokumentierte Anwendung bezieht sich auf Österreich. Eine Übertragung auf andere Länder erfordert eine eigene Prüfung der Szenarien, Allokationen und Bewertungsfaktoren.\nDer Bericht erläutert die wissenschaftlichen Grundlagen des Standards, ersetzt jedoch weder die jeweils gültigen offiziellen Anforderungen noch das Handbuch zur Nachweisführung. Für konkrete Deklarationsvorhaben sind die freigegebenen Dokumente und der jeweils maßgebliche Methoden- und Toolstand heranzuziehen.\n\n\n\n\nSchneider, Simon. 2026. „Quantitative Positive Energy District Definition, Contextualization and Assessment“. Phdthesis, Universidade de Trás-os-Montes e Alto Douro.\n\n\nSchneider, Simon, Thomas Zelger, Raphael Drexel, Manfred Schindler, Paul Krainer, und José Baptista. 2025. „Declaration-Ready Climate-Neutral PEDs: Budget-Based, Hourly LCA Including Mobility and Flexibility“. Designs 9 (6): 123. https://doi.org/10.3390/designs9060123.\n\n\nSchneider, Simon, Thomas Zelger, und Oskar Mair am Tinkhof. 2026. Plus-Energie-Quartiere: Effizient, erneuerbar und flexibel versorgt mit dem klimaaktiv Standard. Bundesministerium für Land- und Forstwirtschaft, Klima- und Umweltschutz, Regionen und Wasserwirtschaft.\n\n\nSchneider, Simon, Thomas Zelger, David Sengl, und José Baptista. 2023. „A Quantitative Positive Energy District Definition with Contextual Targets“. Buildings 13 (5): 1210. https://doi.org/10.3390/buildings13051210.",
+    "crumbs": [
+      "Der Standard",
+      "Über diesen Bericht"
+    ]
+  },
+  {
+    "objectID": "Kapitel/anhang-methodenstand.html#zeit--flächen--und-bewertungsbezüge",
+    "href": "Kapitel/anhang-methodenstand.html#zeit--flächen--und-bewertungsbezüge",
+    "title": "Anhang A — Annahmen der Zielwertberechnung",
+    "section": "Zeit-, Flächen- und Bewertungsbezüge",
+    "text": "Zeit-, Flächen- und Bewertungsbezüge\n\nZeit- und Bezugsgrößen nach Schneider (2026), Abschn. 3.2, und Schneider u. a. (2025), Abschn. 2.3–2.4 und Tab. A1.\n\n\n\n\n\n\n\nGröße\nAnsatz\nBedeutung\n\n\n\n\nNationales Zieljahr\n2040\nReferenz für Energieallokation und Flächenprognose\n\n\nVorsorglicher Dekarbonisierungszeitpunkt\nAb 2050\nVereinfachtes Szenario ohne zusätzliche Emissionen der betrachteten Prozesse danach; keine Verschiebung der Flächenprognose\n\n\nLebenszyklusbetrachtung\n2025–2075, 50 Jahre\nZeitraum der kumulierten THG-Bilanz\n\n\nTHG-Charakterisierung\nGWP100\n100-jähriger Charakterisierungshorizont; unabhängig von der Projektlaufzeit\n\n\nNationale Bezugsfläche\n906,7 Mio. m² BGF im Jahr 2040\nBezugsfläche der THG-Allokation\n\n\nBetriebliche PE-Bilanz und Kontextfaktoren\nkWh PE/(m² NGF a)\nBezug auf konditionierte Nettogrundfläche\n\n\nKumuliertes THG-Budget\nkg CO₂e/m² BGF\nBezug auf Bruttogrundfläche\n\n\nStädtebauliche Dichte\nGFZ = BGF/Grundstücksfläche\nGrundlage der Dichtekorrektur",
+    "crumbs": [
+      "Der Standard",
+      "Anhang",
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Annahmen der Zielwertberechnung</span>"
+    ]
+  },
+  {
+    "objectID": "Kapitel/anhang-methodenstand.html#energiebilanzen-der-zukunftsszenarien",
+    "href": "Kapitel/anhang-methodenstand.html#energiebilanzen-der-zukunftsszenarien",
+    "title": "Anhang A — Annahmen der Zielwertberechnung",
+    "section": "Energiebilanzen der Zukunftsszenarien",
+    "text": "Energiebilanzen der Zukunftsszenarien\nDie Energieallokation bezieht sich auf ein vollständig erneuerbares österreichisches Energiesystem im Zieljahr. Die Werte beschreiben die sektorale Zuordnung; sie sind keine lokalen Erzeugungsvorgaben für jedes einzelne Quartier.\n\n\n\n\n\n\n\n\nGröße\nReferenzansatz\nGrundlage / Stand\n\n\n\n\nPV-Erzeugung des Gebäudesektors\n114,8 PJ/a\nSchneider u. a. (2023), Tab. 6\n\n\nStrombedarf des Gebäudesektors nach Allokation\n137,6 PJ/a\nSchneider u. a. (2023), Tab. 6\n\n\nZielsaldo des Gebäudesektors\n−22,7 PJ/a\nÜbernommener Sektorsaldo, Schneider u. a. (2023), Tab. 6\n\n\nDem MIV zugeteilter Strom\n6,30 TWh/a\nSchneider u. a. (2023), Tab. 8\n\n\nDem MIV zugeteilte Biomasse\n0,36 TWh/a\nSchneider u. a. (2023), Tab. 8\n\n\nPrimärenergiebudget des MIV\n10,68 TWh PE/a\nGewichtete Zuteilung, Schneider u. a. (2023), Tab. 8\n\n\nVollständige nationale Energiebilanz\nNoch zu ergänzen\nErzeugung und Bedarf nach Energieträger und Sektor, einschließlich Umwandlungsverlusten, Importen/Exporten und zentraler/dezentraler Versorgung\n\n\nNationale PV-Aufteilung\nNoch zu ergänzen\nZuordnung von Gebäude-PV, Freiflächen-PV und weiteren Anlagen zum Potenzial und zu den Sektoren\n\n\nUmrechnung der sektoralen Energiegrößen in PE\nNoch zu ergänzen\nZusammenhängende Faktortabelle mit Energieträger, Bezugsjahr und Allokationsregel\n\n\nEntwicklung bis zum Zieljahr\nNoch zu ergänzen\nStützjahre für Bedarf, Erzeugung und Elektrifizierung mit Zuordnung zum Szenario",
+    "crumbs": [
+      "Der Standard",
+      "Anhang",
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Annahmen der Zielwertberechnung</span>"
+    ]
+  },
+  {
+    "objectID": "Kapitel/anhang-methodenstand.html#gebäudebestand-und-dichteallokation",
+    "href": "Kapitel/anhang-methodenstand.html#gebäudebestand-und-dichteallokation",
+    "title": "Anhang A — Annahmen der Zielwertberechnung",
+    "section": "Gebäudebestand und Dichteallokation",
+    "text": "Gebäudebestand und Dichteallokation\n\nBestandsanteile und Dichtekalibrierung nach Schneider u. a. (2023), Tab. 5 und Abb. 8; Flächenbezug der THG-Allokation nach Schneider u. a. (2025), Tab. A1. Die jeweiligen Bezugsflächen sind getrennt zu führen.\n\n\n\n\n\n\n\nAnnahme\nAnsatz\nGrundlage / Stand\n\n\n\n\nThermisch sanierter Bestand\n40 %\nAnteil im kalibrierten Zielzustand\n\n\nSanierung mit geringer PV-Ausstattung\n20 %\nAnteil im kalibrierten Zielzustand\n\n\nPEQ-Sanierung\n20 %\nAnteil im kalibrierten Zielzustand\n\n\nPEQ-Neubau\n20 %\nAnteil im kalibrierten Zielzustand\n\n\nUnsanierter Bestand\n0 %\nAnnahme des Zielzustands, keine Beschreibung des heutigen Bestands\n\n\nNationale Aggregation\nFlächengewichtung nach Gebäudetyp und Dichteklasse\nGleichung 3.2\n\n\nDichteverteilung des Bestands\nBestehende Kalibrierung\nNoch zu ergänzen: Dichteklassen und Flächenanteile; weiterzuentwickeln: aktualisierte österreichische Datenbasis\n\n\nDichteabhängige Anforderung\nKalibrierte Funktion mit Verschiebung und Begrenzung\nNoch zu ergänzen: Parametertabelle mit Einheiten, Geltungsbereich und Flächenumrechnung\n\n\nFlächenentwicklung bis 2040\nNationale Bezugsfläche 906,7 Mio. m² BGF\nNoch zu ergänzen: Aufteilung nach Nutzung, Bestand, Neubau, Abbruch und Sanierung mit Stützjahren",
+    "crumbs": [
+      "Der Standard",
+      "Anhang",
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Annahmen der Zielwertberechnung</span>"
+    ]
+  },
+  {
+    "objectID": "Kapitel/anhang-methodenstand.html#mobilitätsallokation-und-sanierung",
+    "href": "Kapitel/anhang-methodenstand.html#mobilitätsallokation-und-sanierung",
+    "title": "Anhang A — Annahmen der Zielwertberechnung",
+    "section": "Mobilitätsallokation und Sanierung",
+    "text": "Mobilitätsallokation und Sanierung\n\nMobilitätsallokation nach Schneider u. a. (2023), Tab. 9. Die Gutschrift gilt gemeinsam mit dem zugeordneten MIV-Bedarf.\n\n\n\n\n\n\n\n\nNutzung\nMIV-Budget [TWh PE/a]\nBezugsfläche [Mio. m² NGF]\nGutschrift [kWh PE/(m² NGF a)]\n\n\n\n\nWohnen\n5,30\n375,6\n14,11\n\n\nBüro und Gewerbe\n2,20\n53,1\n41,47\n\n\nBildung\n0,29\n22,5\n12,93\n\n\nHandel und sonstige Nutzungen\n2,89\n96,5\n29,97\n\n\n\n\n\n\n\n\n\n\n\nAnnahme\nAnsatz\nErgänzungs- oder Entwicklungsbedarf\n\n\n\n\nVerkehrszuordnung\nZielverkehr nach Nutzung; Datenbasis 2013/2014\nNoch zu ergänzen: vollständige Zuordnung der Verkehrsanteile zu den nationalen Nutzflächen; weiterzuentwickeln: Aktualisierung mit neuer Mobilitätserhebung\n\n\nGemischte Nutzung\nFlächengewichteter Mittelwert der Gutschriften\nBerechnung nach Gleichung 5.2\n\n\nSanierungsgutschrift\n15 kWh PE/(m² NGF a), gewichtet mit dem Sanierungsanteil\nNormative Festlegung nach Schneider u. a. (2026), S. 14; weiterzuentwickeln: quantitative Kalibrierung und gegebenenfalls Differenzierung nach Sanierungserschwernis",
+    "crumbs": [
+      "Der Standard",
+      "Anhang",
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Annahmen der Zielwertberechnung</span>"
+    ]
+  },
+  {
+    "objectID": "Kapitel/anhang-methodenstand.html#thg-budget-und-senkenannahmen",
+    "href": "Kapitel/anhang-methodenstand.html#thg-budget-und-senkenannahmen",
+    "title": "Anhang A — Annahmen der Zielwertberechnung",
+    "section": "THG-Budget und Senkenannahmen",
+    "text": "THG-Budget und Senkenannahmen\n\nBudgetgrundlagen nach Schneider u. a. (2025), Tab. 2 und A1. L1–L3 sind Budgetvarianten, keine PEQ-Qualitätsstufen.\n\n\n\n\n\n\n\nGröße\nAnsatz\nFunktion\n\n\n\n\nKlimabudgetansatz\n1,5 °C mit 66 % Wahrscheinlichkeit, ohne temporäre Überschreitung\nReferenz der Budgetvarianten L1–L3\n\n\nNationales Ausgangsbudget ab 2022\n280 Mt CO₂\nVor Abzug der angesetzten Emissionen bis Ende 2024\n\n\nVerbleibendes Budget ab 2025\n130 Mt CO₂\nAusgangspunkt der Zuteilung\n\n\nBevölkerung\n9,0 Mio. Personen\nBezug für die Senkenannahme\n\n\nDauer der Senkenanrechnung\n50 Jahre\nKumulation über den Bewertungszeitraum\n\n\nAnteil Gebäude und MIV\n50 %\nNormative sektorale Zuteilung\n\n\nL1: keine zusätzliche Senke\n0 t CO₂e/(Person a) → 72 kg CO₂e/m² BGF\nBudgetvariante\n\n\nL2: mittlere Senkenannahme\n0,5 t CO₂e/(Person a) → 196 kg CO₂e/m² BGF\nBudgetvariante\n\n\nL3: Referenz der Zertifizierung\n1,0 t CO₂e/(Person a) → 320 kg CO₂e/m² BGF\nReferenzbudget dieses Berichts\n\n\n\nDie natürliche Senkenleistung ist eine nationale Szenarioannahme, keine vom Quartier nachgewiesene Kompensation. Bei einer Rekalibrierung sind Restbudget, Senken, sektorale Zuteilung und Bezugsfläche gemeinsam zu behandeln. Mehr Baufläche erhöht das Gesamtbudget nicht.",
+    "crumbs": [
+      "Der Standard",
+      "Anhang",
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Annahmen der Zielwertberechnung</span>"
+    ]
+  },
+  {
+    "objectID": "Kapitel/anhang-methodenstand.html#thg-absenkpfade-und-sektorale-abgrenzung",
+    "href": "Kapitel/anhang-methodenstand.html#thg-absenkpfade-und-sektorale-abgrenzung",
+    "title": "Anhang A — Annahmen der Zielwertberechnung",
+    "section": "THG-Absenkpfade und sektorale Abgrenzung",
+    "text": "THG-Absenkpfade und sektorale Abgrenzung\n\n\n\n\n\n\n\n\nGegenstand\nAnsatz im Verfahren\nNoch benötigte Konkretisierung\n\n\n\n\nVollständige Dekarbonisierung\nAb 2050 keine zusätzlichen Emissionen der betrachteten Prozesse\nNoch zu ergänzen: zusammenhängende Pfadtabelle 2025–2050 mit Stützjahren und Interpolationsregel; der Endpunkt allein legt keinen Verlauf fest\n\n\nBetriebsenergie\nZeitabhängige Emissionsfaktoren der Energieträger\nNoch zu ergänzen: Ausgangswerte und Absenkpfade für Strom, Wärme und Brennstoffe samt Quellen\n\n\nBauliche Emissionen\nBewertung zum Zeitpunkt von Errichtung, Ersatz und Erneuerung\nNoch zu ergänzen: material-/prozessbezogene Absenkpfade und Abgleich mit europäischen Gebäudestudien\n\n\nMobilität\nFlottenentwicklung und Dekarbonisierung der zugeordneten Prozesse\nNoch zu ergänzen: Antriebsanteile, Energieverbräuche und Herstellungsemissionen nach Stützjahren\n\n\nEtappen eines Renovierungsfahrplans\nZeitliche Erfassung von Maßnahmen und verbleibenden Betriebsemissionen\nWeiterzuentwickeln: quantitative Zwischenziele; noch keine festgelegten Deklarationsstufen\n\n\nPV-Errichtung\nZuordnung zum Energieversorgungssektor, außerhalb der Quartiers-THG-Bilanz\nWeiterzuentwickeln: konsistente Alternative mit Einbeziehung von PV-Emissionen und zugehörigem Budget im Gebäudesektor\n\n\n\nDie Pfadannahmen gelten auch für die zeitliche Bewertung der Quartiersbilanz. Technische Nutzungsdauern bleiben davon unabhängig: Ersatzvorgänge bleiben erforderlich, auch wenn sie im Szenario keine zusätzlichen Emissionen mehr verursachen. Bilanzumfang und biogene Anrechnung stehen in Systemgrenzen und Bilanzierungsregeln.",
+    "crumbs": [
+      "Der Standard",
+      "Anhang",
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Annahmen der Zielwertberechnung</span>"
+    ]
+  },
+  {
+    "objectID": "Kapitel/anhang-quartiersbilanzierung.html#nutzerstrom-und-warmwasserwärmebedarf",
+    "href": "Kapitel/anhang-quartiersbilanzierung.html#nutzerstrom-und-warmwasserwärmebedarf",
+    "title": "Anhang B — Annahmen der Quartiersbilanzierung",
+    "section": "Nutzerstrom und Warmwasserwärmebedarf",
+    "text": "Nutzerstrom und Warmwasserwärmebedarf\nDie Jahresbedarfe beziehen sich auf die Nettogrundfläche der jeweiligen Nutzung. Warmwasserwärmebedarf bezeichnet die benötigte Nutzwärme; Erzeugungs-, Speicher- und Verteilverluste werden zusätzlich im Versorgungssystem berücksichtigt. Die Werte sind auf zwei Dezimalstellen gerundet.\n\nVorläufige Referenzwerte: Schema 1.13.1_dev, Blatt plugloads, E5:E11, und dhw_demand, G4:G10, jeweils Variante „Deklaration“. Fachliche Quellen und endgültige Gültigkeit sind noch zu ergänzen. Der Variantenname allein begründet keine verbindliche Vorgabe. Der exportierte Nullwert für sonstige Nutzung ist keine allgemeine Annahme eines stromfreien Betriebs; ein geeigneter Referenzbedarf fehlt.\n\n\n\n\n\n\n\n\nNutzung\nNutzerstrom [kWh/(m² NGF a)]\nWarmwasserwärmebedarf [kWh/(m² NGF a)]\nPEExcel-Nutzungsschlüssel\n\n\n\n\nWohnen\n20,53\n12,78\nresidential\n\n\nBüro\n24,64\n3,03\noffice\n\n\nBildung sekundär\n51,32\n3,36\nschoolsec\n\n\nBildung primär\n30,79\n3,36\nschoolprim\n\n\nLebensmittelhandel\n30,80\n6,34\nretailfood\n\n\nSonstiger Handel\n30,80\n6,34\nretailother\n\n\nSonstige Nutzung\n0,00*\n6,34\nother\n\n\n\nPEExcel-Zuordnung: plugloads_&lt;Nutzungsschlüssel&gt; und DHW_demand_&lt;Nutzungsschlüssel&gt;_kWhm2.\n\n\n\n\n\n\n\n\nErgänzende Annahme\nStand\nBedeutung\n\n\n\n\nZeitliche Verteilung der Jahresbedarfe\nNoch zu ergänzen: Stundenprofile, Wochen-/Feiertags- und Jahresverlauf je Nutzung\nBestimmt Gleichzeitigkeit mit PV und Wirkung von Speichern\n\n\nAbgrenzung des Nutzerstroms\nNoch zu ergänzen: enthaltene Anwendungen je Nutzung\nVermeidet Überschneidungen mit Beleuchtung, Allgemeinstrom, Haustechnik und Prozessenergie\n\n\nWarmwassernutzung\nNoch zu ergänzen: Zapfprofile und Nutzungsintensität\nVerknüpft Jahreswärmebedarf mit Leistungs- und Speicherbedarf\n\n\nSondernutzungen\nNoch zu ergänzen: Zuordnungsregel und Referenzbedarfe\nFür Nutzungen, die durch die vorhandenen Kategorien nicht angemessen beschrieben werden",
+    "crumbs": [
+      "Der Standard",
+      "Anhang",
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Annahmen der Quartiersbilanzierung</span>"
+    ]
+  },
+  {
+    "objectID": "Kapitel/anhang-quartiersbilanzierung.html#allgemeinstrom-beleuchtung-und-innere-wärmegewinne",
+    "href": "Kapitel/anhang-quartiersbilanzierung.html#allgemeinstrom-beleuchtung-und-innere-wärmegewinne",
+    "title": "Anhang B — Annahmen der Quartiersbilanzierung",
+    "section": "Allgemeinstrom, Beleuchtung und innere Wärmegewinne",
+    "text": "Allgemeinstrom, Beleuchtung und innere Wärmegewinne\n\n\n\n\n\n\n\n\nGröße\nBenötigter Ansatz\nStand / PEExcel-Bezug\n\n\n\n\nAllgemeinstrom\nJahresbedarf je Nutzung in kWh/(m² NGF a), enthaltene Anwendungen\nNoch zu ergänzen; aux_el_demand_&lt;Nutzungsschlüssel&gt;_kWhm2\n\n\nBeleuchtungsleistung\nInstallierte bzw. angesetzte Leistung in W/m² und Mindestleistung\nNoch zu ergänzen; Plight_max_*, Plight_min_* für Büro und Bildungsnutzungen\n\n\nBeleuchtungsbetrieb\nNutzungszeiten, Regelung und Skalierung\nNoch zu ergänzen; lighting_factor_* und Zeitprofile\n\n\nTageslichtnutzung\nTageslichtkoeffizient und Anteil tageslichtgesteuerter Beleuchtung\nNoch zu ergänzen; Daylightcoefficient_*, daylightcontr_* für Büro und Bildungsnutzungen\n\n\nBeleuchtung weiterer Nutzungen\nEinbeziehung in Nutzerstrom oder gesonderte Berechnung\nNoch zu ergänzen: Abgrenzung für Wohnen, Handel und sonstige Nutzungen\n\n\nPersonenwärme\nWärmeabgabe je Person, Belegung und Anwesenheit\nNoch zu ergänzen: Werte, Quellen und Zuordnung der Wärmeanteile\n\n\nGeräte- und Beleuchtungswärme\nRaumwirksamer Anteil der elektrischen Energie\nNoch zu ergänzen: Anteile und zeitliche Zuordnung, einschließlich außerhalb der thermischen Zone abgeführter Wärme\n\n\nGleichzeitigkeit innerer Wärmegewinne\nNutzungsbezogene Sommer-/Winteransätze\nNoch zu ergänzen; usage_concurrency_summer_*, usage_concurrency_winter_*\n\n\n\nElektrischer Bedarf und innere Wärmegewinne beschreiben unterschiedliche Wirkungen derselben Nutzung. Ein zusätzlicher pauschaler Wärmegewinn darf bereits aus Personen, Geräten und Beleuchtung erfasste Beiträge nicht doppelt enthalten.",
+    "crumbs": [
+      "Der Standard",
+      "Anhang",
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Annahmen der Quartiersbilanzierung</span>"
+    ]
+  },
+  {
+    "objectID": "Kapitel/anhang-quartiersbilanzierung.html#belegung-komfort-und-thermische-randbedingungen",
+    "href": "Kapitel/anhang-quartiersbilanzierung.html#belegung-komfort-und-thermische-randbedingungen",
+    "title": "Anhang B — Annahmen der Quartiersbilanzierung",
+    "section": "Belegung, Komfort und thermische Randbedingungen",
+    "text": "Belegung, Komfort und thermische Randbedingungen\n\n\n\n\n\n\n\n\nGröße\nAnsatz / Einheit\nStand / PEExcel-Bezug\n\n\n\n\nNutzflächen nach Nutzung\nProjektwert in m² NGF\nGrundlage der Bedarfsgewichtung\n\n\nNGF/BGF-Verhältnis\nProjektwert oder begründeter Referenzwert je Nutzung\nNoch zu ergänzen: Referenzwerte und Flächendefinition; NFA_to_GFA_ratio_*\n\n\nBelegungsdichte\nm² je Person, ergänzt um Anwesenheit\nNoch zu ergänzen: nutzungsspezifische Werte; density_NFApPers_*\n\n\nHeiz- und Kühlsolltemperaturen\n°C, einschließlich Absenkung und Nutzungszeiten\nNoch zu ergänzen: Referenzbedingungen je Nutzung\n\n\nHygienischer Außenluftbedarf\nPersonen- oder flächenbezogener Luftvolumenstrom\nNoch zu ergänzen: Referenzwerte, Betriebszeiten und Grundlage\n\n\nThermische Zonen\nZwei aggregierte Zonen, mit und ohne aktive Kühlung\nModellansatz nach Schneider (2026), Abschn. 3.3.3\n\n\nKühlung und Lüftung\nProjektbezogene Flächenanteile und Betriebsweise\ncooling_modes, vent_modes, vent_night_modes; keine pauschale Vorgabe einer Anlagenausstattung\n\n\nSommerbetrieb / Nachtauskühlung\nProjektwert unter realisierbaren Betriebsbedingungen\nNoch zu ergänzen: Referenzannahmen zu Freigaben, Temperaturgrenzen und Verfügbarkeit",
+    "crumbs": [
+      "Der Standard",
+      "Anhang",
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Annahmen der Quartiersbilanzierung</span>"
+    ]
+  },
+  {
+    "objectID": "Kapitel/anhang-quartiersbilanzierung.html#mobilitätsannahmen",
+    "href": "Kapitel/anhang-quartiersbilanzierung.html#mobilitätsannahmen",
+    "title": "Anhang B — Annahmen der Quartiersbilanzierung",
+    "section": "Mobilitätsannahmen",
+    "text": "Mobilitätsannahmen\nDie Mobilitätsbilanz umfasst den dem Quartier zugeordneten MIV nach dem Zielverkehrsprinzip. Die nutzungsbezogenen Gutschriften stehen in Anhang A — Annahmen der Zielwertberechnung. Standort und Mobilitätskonzept beeinflussen den Bedarf, nicht automatisch den Budgetanspruch.\n\n\n\n\n\n\n\n\nGröße\nAnsatz\nStand / Zuordnung\n\n\n\n\nVerkehrsgrundlage\nMobilitätserhebung 2013/2014 im beschriebenen Ansatz\nNoch zu ergänzen: Datentabelle nach Region, Nutzung und Wegezweck; Aktualisierung mit neuer Erhebung vorgesehen\n\n\nStandortzuordnung\nGemeinde / Mobilitätsregion\nProjektwert; Presetgruppe mobility dient der Auswahl\n\n\nWege, Wegelängen und MIV-Anteile\nNutzungs- und standortbezogene Referenzwerte\nNoch zu ergänzen: Werte und Quellen einschließlich Umrechnung in jährliche Personen- bzw. Fahrzeugkilometer\n\n\nMotorisierung\nFahrzeuge je 100 m² Bezugsfläche\nNoch zu ergänzen: Flächenbezug und Werte; mob_motorization_perNFA_residential, _work, _retail\n\n\nGleichzeitigkeit\nNutzungsabhängiger Ansatz für Arbeit, Bildung und Einkauf\nNoch zu ergänzen: Werte und Definition; mob_simultaneity_office, _edu, _retail\n\n\nWirkung von Mobilitätsmaßnahmen\nBegründete Veränderung der MIV-Fahrleistung\nNoch zu ergänzen: Referenz und Herleitung; mob_pkm_factor\n\n\nFahrzeugflotte\nAntriebsanteile, Verbrauch, Besetzungsgrad und Entwicklung\nNoch zu ergänzen: Werte je Bezugsjahr; Absenkpfade siehe Anhang A — Annahmen der Zielwertberechnung\n\n\nLaden und Anwesenheit\nZeitprofile für Ankunft, Abfahrt und angeschlossene Fahrzeuge\nNoch zu ergänzen: Profile, Ladeleistungen, Ladeverluste und Mindestladezustände\n\n\nFahrzeugrückspeisung\nIm beschriebenen Modell auf Wohnnutzung begrenzt\nProjektabhängige Verfügbarkeit; noch zu ergänzen: Teilnahmeanteil und Betriebsgrenzen\n\n\nAußerhalb des Quartiers geladene Energie\nErfasst und entsprechend der Verkehrszuordnung bilanziert\nModellregel nach Schneider (2026), Abschn. 3.3.4\n\n\nFahrzeugherstellung\nEinmaliger Ansatz im beschriebenen THG-Verfahren\nNoch zu ergänzen: Kennwerte und Datensätze; keine vollständige Fortschreibung aller Fahrzeugwechsel",
+    "crumbs": [
+      "Der Standard",
+      "Anhang",
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Annahmen der Quartiersbilanzierung</span>"
+    ]
+  },
+  {
+    "objectID": "Kapitel/anhang-quartiersbilanzierung.html#klima-energiesignale-und-bewertung",
+    "href": "Kapitel/anhang-quartiersbilanzierung.html#klima-energiesignale-und-bewertung",
+    "title": "Anhang B — Annahmen der Quartiersbilanzierung",
+    "section": "Klima, Energiesignale und Bewertung",
+    "text": "Klima, Energiesignale und Bewertung\n\n\n\n\n\n\n\n\nGrundlage\nAnsatz\nStand / PEExcel-Bezug\n\n\n\n\nSimulationsauflösung\nStündlich über ein vollständiges Jahr\nModell nach Schneider (2026), Abschn. 3.3\n\n\nWetter\nZusammengehörige Temperatur- und Strahlungszeitreihen\nNoch zu ergänzen: Datensatz, Standort, Referenzjahr und Quelle; weather_name\n\n\nPV-Ertrag\nProjektbezogene Leistung, Orientierung und Verschattung mit Zeitprofil\nNoch zu ergänzen: Referenzdatensatz, Verluste und Profildefinition; PV_profile_name\n\n\nPE- und THG-Bewertung\nMonatsfaktoren im beschriebenen Deklarationsansatz\nNoch zu ergänzen: Faktorwerte, Einheiten, Bezugsjahr und Quelle; fPE_grid_profile, fGHG_grid_profile\n\n\nFernwärme und weitere Energieträger\nVersorgungsspezifische Faktoren\nNoch zu ergänzen: Faktortabelle und Gültigkeit; u. a. district_heating_conversion_profile\n\n\nBezug und Export\nGleiche zeitbezogene operative Faktoren im Referenzverfahren\nSchneider u. a. (2025), Abschn. 2.4.1; reale Einspeisebegrenzungen bleiben Projektgrößen\n\n\nExterne Flexibilität\nSignalabhängige Nutzung und Bewertung erneuerbarer Überschüsse\nNoch zu ergänzen: Signaldefinition, Faktoransatz und Zeitreihen; FLEX_signal_name, fPE_flex_factor\n\n\nLangfristige Emissionsentwicklung\nAnwendung der Absenkpfade aus Teil A\nNoch zu ergänzen: Zuordnung der Faktoren zu Stützjahren und Prozessen\n\n\n\nWetter, Erzeugung, Verbrauchsprofile und Flexibilitätssignale müssen zeitlich zusammenpassen. Die spätere Verwendung stündlicher Bewertungsfaktoren ist eine mögliche Weiterentwicklung; sie ist nicht durch die stündliche Simulation allein bereits festgelegt.",
+    "crumbs": [
+      "Der Standard",
+      "Anhang",
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Annahmen der Quartiersbilanzierung</span>"
+    ]
+  },
+  {
+    "objectID": "Kapitel/anhang-quartiersbilanzierung.html#projektspezifische-technik-und-lebenszyklus",
+    "href": "Kapitel/anhang-quartiersbilanzierung.html#projektspezifische-technik-und-lebenszyklus",
+    "title": "Anhang B — Annahmen der Quartiersbilanzierung",
+    "section": "Projektspezifische Technik und Lebenszyklus",
+    "text": "Projektspezifische Technik und Lebenszyklus\n\n\n\n\n\n\n\n\nGegenstand\nProjektbezogene Angaben\nÜbergreifend noch benötigte Annahmen\n\n\n\n\nGebäudehülle\nGeometrie, Bauteilflächen, U-Werte, Luftdichtheit, Speichermasse und Sonnenschutz\nNoch zu ergänzen: Referenzbedingungen und Grenzen vereinfachter Ansätze; keine vollständige Vorgabe aller Hüllpresets\n\n\nWärme, Kälte und Warmwasser\nErzeuger, Systemtemperaturen, Wirkungsgrade, Leistungen und Verteilung\nNoch zu ergänzen: Behandlung von Teillast, Hilfsenergie, Speicher- und Verteilverlusten\n\n\nSpeicher und Regelung\nKapazität, Leistung, Verluste, Betriebsgrenzen\nNoch zu ergänzen: dokumentierte Einsatzprioritäten und Komfortgrenzen\n\n\nBauteile und Anlagen\nMengen und zugehörige Ökobilanzdatensätze\nNoch zu ergänzen: Referenzdaten mit funktioneller Einheit, Version, Modulen und technischen Nutzungsdauern\n\n\nLebenszyklusumfang\nProzesse und Abgrenzung gemäß Tabelle 4.2\nNoch zu ergänzen: gemeinsame Erfassungsregel für A4–A5 und dokumentierte Ersatzannahmen\n\n\nBiogener Kohlenstoff\nVereinfachte Anrechnung: 100 % schnell nachwachsend, 55 % bewirtschaftetes Holz, 100 % belegtes Kalamitätsholz\nKonvention nach Schneider u. a. (2025), Abschn. 2.5.2; Herkunft und bereits enthaltene Speicherwirkungen berücksichtigen\n\n\nPV-Errichtung\nIm Referenzverfahren dem Energieversorgungssektor zugeordnet\nAlternative Budget- und Systemgrenze in Teil A\n\n\n\nFür die Vergleichbarkeit werden Modellstand sowie verwendete Referenzwerte und Projektwerte mit der Bilanz dokumentiert. Ein technisches Auswahlpreset ersetzt weder diese Angaben noch einen Nachweis der Umsetzbarkeit.",
+    "crumbs": [
+      "Der Standard",
+      "Anhang",
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Annahmen der Quartiersbilanzierung</span>"
+    ]
+  }
+]
