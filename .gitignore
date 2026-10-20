@@ -10,6 +10,7 @@
 /Kapitel/*.html
 
 # Lokale Quellenextrakte, Sicherungen und Prüfdateien
+/Redaktion/
 /.local/
 /tmp/
 /.venv/

@@ -2,7 +2,7 @@
 
 ::: {.preset-anhang}
 
-Die Quartiersbilanz verbindet projektspezifische Gebäude- und Anlagendaten mit Annahmen über Nutzung, Mobilität, Klima und Betriebsweise. Dieser Teil dokumentiert die für vergleichbare Ergebnisse wesentlichen Ansätze. Die Ableitung der Anforderungen steht in @sec-anhang; der Modellaufbau ist in @sec-quartiersmodell beschrieben.
+Die Quartiersbilanz verbindet projektspezifische Gebäude- und Anlagendaten mit Annahmen über Nutzung, Mobilität, Klima und Betriebsweise. Dieser Teil dokumentiert die für vergleichbare Ergebnisse wesentlichen Ansätze. Die Ableitung der Anforderungen steht in @sec-anhang.
 
 Technische Presets erleichtern die Eingabe von Projektvarianten. Sie sind nicht allein durch ihre Verfügbarkeit verbindliche Deklarationsvorgaben. Gebäudehülle, Anlagenwahl und Dimensionierung werden deshalb als Projektgrößen beschrieben; nutzungsbezogene Referenzbedarfe und übergreifende Modellannahmen werden tabellarisch ausgewiesen.
 

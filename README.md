@@ -41,7 +41,18 @@ quarto render --to html
 
 Der Einstieg liegt anschließend unter `_book/index.html`. HTML enthält Navigation und Volltextsuche. Die Kapitelreihenfolge ist in `_quarto.yml` ausdrücklich festgelegt. Redaktion und Primärquellen sind vom Kopieren als Ressourcen ausgeschlossen.
 
-Für eine PDF-Arbeitsfassung ist LuaLaTeX mit den benötigten Paketen erforderlich:
+Für die Veröffentlichung auf GitHub Pages zuerst ausschließlich HTML rendern und nur bei erfolgreichem Rendern veröffentlichen:
+
+```powershell
+quarto render --to html
+if ($LASTEXITCODE -eq 0) {
+    quarto publish gh-pages --no-render
+}
+```
+
+So benötigt die Website keine PDF- oder Word-Werkzeuge. `Redaktion/` bleibt lokal erhalten und wird von Git ignoriert; die oben verlinkten Redaktionsunterlagen sind nur lokal verfügbar.
+
+Für eine PDF-Arbeitsfassung sind LuaLaTeX mit den benötigten Paketen und `rsvg-convert` für SVG-Abbildungen erforderlich:
 
 ```powershell
 quarto render --to pdf
