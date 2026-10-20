@@ -1,73 +1,106 @@
-# Nachweisführung in der Planung {#sec-anwendung}
+# Nachweisführung von Projekten {#sec-anwendung}
 
 ::: {.lead}
-Vom Quartierskonzept zum überprüfbaren Ergebnis
+Vom untersuchten Konzept über die realisierte Lösung bis zum nachgewiesenen Betrieb
 :::
 
-Ein PEQ-Nachweis soll zeigen, **welche Anforderungen ein Quartier erfüllt, auf welchen Eingaben das Ergebnis beruht und welche Maßnahmen dafür erforderlich sind**. Dafür werden Quartiersabgrenzung, Fachplanungen, Varianten und Bewertungsstand nachvollziehbar zusammengeführt.
+Der klimaaktiv Standard kann in unterschiedlichen Projektphasen angewendet werden. Dabei sind zwei Fragen zu unterscheiden: **Welche Qualitätsstufe wird rechnerisch erreicht?** Und **wie belastbar ist der zugrunde liegende Projektstand?** Die Qualitätsstufen beschreibt [Der Standard](02-standard.qmd); die Deklarationsphase kennzeichnet den Stand der Nachweisführung.
 
-## Vom Konzept zur überprüfbaren Deklaration
+## Drei Deklarationsphasen
 
-Bereits in der frühen Planung werden Quartiersgrenze, Nutzungen und angestrebte Qualitätsstufe festgelegt. Ein erster Variantenvergleich zeigt, welche Beiträge Gebäudehülle, Energieversorgung, erneuerbare Erzeugung und Mobilität leisten müssen. Unsichere Eingaben sind zunächst als Annahmen zu kennzeichnen.
+### Planungsdeklaration – Potenziale und Varianten nachweisen
 
-Im weiteren Planungsverlauf werden diese Annahmen durch Fachberechnungen präzisiert: etwa Bauphysik, PV-Ertragsberechnung, Mobilitätskonzept und bauliche Ökobilanz. Für die Bewertung werden die Ergebnisse innerhalb derselben Systemgrenzen zusammengeführt [@schneider2026thesis, Abschn. 3.3.6 und 3.4.2].
+Eine **Planungsdeklaration** zeichnet die fundierte Untersuchung eines Quartierskonzepts aus. Sie zeigt, **unter welchen planerischen, technischen und organisatorischen Voraussetzungen** eine angestrebte Qualitätsstufe erreicht werden könnte. Insbesondere in frühen Phasen ermöglicht sie die Beantwortung von *Was-wäre-wenn-Fragen*: Welche PV-Flächen wären erforderlich? Welche Wärmeversorgung oder Mobilitätsmaßnahmen würden den Ausschlag geben? Wie stark beeinflussen unterschiedliche Bauweisen die THG-Bilanz?
 
-| Arbeitsschritt | Ergebnis | Wesentliche Abstimmung |
-|---|---|---|
-| Abgrenzung und Ziel | Bewertetes Quartier, Nutzungen und Qualitätsstufe | Bauherrschaft, Architektur, Nachweisführung |
-| Konzeptvergleich | Vergleichbare Varianten und kritische Annahmen | Architektur, Bauphysik, Haustechnik, Mobilität |
-| Vertiefung | Plausibilisierte Eingaben und Betriebskonzept | Fachplanungen, gegebenenfalls Netzbetreiber |
-| Dokumentation | Nachvollziehbare Eingaben, Bilanzen und Quellen | Nachweisführung, Qualitätssicherung |
-| Fertigstellung | Abgleich mit der tatsächlich ausgeführten Lösung | Planung, Ausführung, Qualitätssicherung |
-| Betrieb | Abgleich von Prognose und gemessenem Verhalten, sofern vorgesehen | Betrieb, Monitoring |
+Die betrachtete Variante **muss nicht später genau so umgesetzt werden**. Eine Planungsdeklaration ist daher weder eine Ausführungsverpflichtung noch ein Nachweis der später tatsächlich erreichten Performance. Entscheidend sind eine ausreichend detaillierte, nachvollziehbare Untersuchung sowie die transparente Kennzeichnung der zugrunde liegenden Annahmen und Abhängigkeiten.
 
-: Empfohlener Arbeitsablauf; die Tabelle begründet keine zusätzlichen formalen Deklarationsstufen. {#tbl-nachweisprozess}
+### Fertigstellungsdeklaration – Umsetzung überprüfen
 
-::: {.callout-note appearance="simple" icon=false title="Abbildungsvorschlag A1 · Nachweisprozess"}
-**Prozessdiagramm:** Konzept → Variantenprüfung → Planungsdeklaration → Ausführungsabgleich/Fertigstellungsdeklaration → optionales Monitoring. Zuständigkeiten und zunehmende Datengenauigkeit mit darstellen.
+Die **Fertigstellungsdeklaration** bewertet das **tatsächlich errichtete beziehungsweise sanierte Quartier**. Die in der Planung angesetzten Maßnahmen werden mit dem Ausführungsstand abgeglichen: etwa Gebäudehülle, installierte Wärmeerzeugung, tatsächlich verfügbare PV-Flächen und -Leistungen, Speicher, Ladeinfrastruktur sowie realisierte Mobilitätsangebote.
 
-<!-- Später ersetzen durch z. B.:
-![Vom Konzept zur Deklaration](../Abbildungen/anwendung/nachweisprozess.svg){#fig-nachweisprozess width="100%"}
+Abweichungen von früheren Varianten sind zu dokumentieren und, soweit bilanzrelevant, neu zu bewerten. Maßgeblich ist die nachvollziehbar belegte Ausführung und die daraus berechnete Zielerreichung – nicht allein das ursprüngliche Planungsergebnis.
+
+### Monitoringdeklaration – Wirkung im Betrieb belegen
+
+Die **Monitoringdeklaration** ergänzt die modellbasierte Bewertung um **gemessene Betriebsdaten**. Insbesondere Energiebezug, Erzeugung und Einspeisung sowie – soweit erfassbar und für die gewählte Qualitätsstufe relevant – weitere Energieflüsse und Nutzungsbedingungen werden mit den Annahmen der Bewertung abgeglichen.
+
+Eine sachgerechte Interpretation berücksichtigt unter anderem Wetter, Belegung, Nutzungsänderungen und die Verfügbarkeit der technischen Anlagen. Monitoring schafft damit eine zusätzliche Qualität der Nachweisführung; es ersetzt nicht automatisch die Bilanzierung derjenigen Lebenszyklus- oder Mobilitätsemissionen, die nicht direkt gemessen werden können.
+
+::: {.callout-note appearance="simple" icon=false title="Abbildungsvorschlag A1 · Drei Deklarationsphasen"}
+**Grafik:** Drei nebeneinanderstehende Phasen mit wachsender Evidenz: **Planung – berechnetes Potenzial**, **Fertigstellung – nachgewiesene Ausführung**, **Monitoring – gemessener Betrieb**. Darunter die jeweils verwendeten Datengrundlagen und die Aussagegrenzen.
+
+<!--
+![Von der Variantenuntersuchung zur Betriebsüberprüfung](../Abbildungen/anwendung/deklarationsphasen.svg){#fig-deklarationsphasen width="100%"}
 -->
 :::
 
-## Qualitätsstufe und Deklarationsphase unterscheiden
+| Phase | Bewertungsgrundlage | Was die Deklaration aussagt |
+|---|---|---|
+| **Planung** | Detailliertes Quartierskonzept, Fachannahmen und untersuchte Varianten | Unter welchen Bedingungen eine Qualitätsstufe erreichbar ist |
+| **Fertigstellung** | Tatsächlich umgesetzte Maßnahmen und aktualisierte Berechnung | Ob das ausgeführte Projekt die Anforderungen erfüllt |
+| **Monitoring** | Messdaten und dokumentierte Betriebsbedingungen | Inwieweit die angenommene energetische Performance im Betrieb bestätigt wird |
 
-Die **Qualitätsstufe** legt fest, welche energetischen und klimabezogenen Anforderungen geprüft werden (siehe [Standard](02-standard.qmd)). Die **Deklarationsphase** bezeichnet hingegen den Stand des Projekts und seiner Nachweisunterlagen. Eine Planungsdeklaration basiert auf dokumentierten Planungsannahmen; eine Fertigstellungsdeklaration muss die tatsächlich realisierte Lösung abbilden. Ein gemessener Betriebsnachweis ist davon wiederum zu unterscheiden.
-Die drei Qualitätsstufen unterscheiden sich durch ihren Bilanzumfang. Unabhängig davon ist festzuhalten, auf welchem Planungs- oder Nachweisstand die jeweilige Bewertung beruht.
+: Unterschiedliche Erkenntnisstände derselben Quartiersbewertung. {#tbl-deklarationsphasen}
 
-![Die drei PEQ-Qualitätsstufen mit zunehmendem Umfang der Primärenergie- und Treibhausgasbewertung.](../Abbildungen/deklaration_bilanzgrenzen.png){#fig-deklarationsumfang width="100%"}
-
-::: {.callout-important appearance="simple" icon=false title="Zwei unabhängige Dimensionen"}
-**Stufe ≠ Phase:** Ein klimaneutrales Plus-Energie-Quartier kann in der Planung bewertet werden, ohne dass seine spätere Betriebsperformance damit bereits nachgewiesen wäre.
+::: {.callout-important appearance="simple" icon=false title="Qualitätsstufe ist nicht Deklarationsphase"}
+Eine hohe **Qualitätsstufe** bezeichnet den Umfang der erfüllten Energie- und THG-Anforderungen. Die **Deklarationsphase** sagt aus, ob die Beurteilung auf einer Untersuchung, der realisierten Ausführung oder Betriebsdaten beruht. Beide Angaben müssen gemeinsam ausgewiesen werden.
 :::
 
-## Verantwortlichkeiten und Datenqualität
+## „Auf dem Weg“ – glaubhaft nachgewiesene Zielerreichung in Etappen
 
-Die Fachplanungen liefern für ihren Bereich überprüfbare Grundlagen: Flächen und Nutzungen, Gebäudehülle und Komfort, Wärme- und Stromversorgung, lokale Erzeugung, Mobilität sowie Bauteilmengen und Ökobilanzdaten. Die gemeinsame Quartiersbewertung verbindet diese Informationen, ersetzt aber weder detaillierte Anlagenplanung noch einzelne Fachnachweise.
+Nicht jedes Quartier erfüllt bereits **zum Nachweiszeitpunkt** sämtliche Anforderungen einer angestrebten Qualitätsstufe. Vor allem im Bestand oder bei abschnittsweiser Entwicklung können wesentliche Maßnahmen erst später wirksam werden. Der Ansatz **„Auf dem Weg“** soll sichtbar machen, ob und **bis wann** eine vollständige Zielerreichung auf Grundlage eines plausiblen und überprüfbaren Maßnahmenpfads erwartet werden kann.
 
-Für jede maßgebliche Eingabe ist festzuhalten, ob sie ein Referenzwert, eine projektspezifische Berechnung oder eine bestätigte Ausführungsangabe ist. Besonders ergebnisrelevante Annahmen sollten durch eine weniger günstige Variante auf Robustheit geprüft werden.
+Entscheidend ist die Unterscheidung zwischen einer allgemeinen Absicht und einem **technisch sowie zeitlich glaubhaften Umsetzungspfad**. Geeignete Nachweise können insbesondere sein:
 
-::: {.callout-note appearance="simple" icon=false title="Abbildungsvorschlag A2 · Daten und Verantwortlichkeiten"}
-**Matrix oder Datenflussdiagramm:** Architektur, Bauphysik, Haustechnik, Mobilitätsplanung und Ökobilanz → gemeinsame Quartiersbewertung → Ergebnis und Qualitätssicherung. Optional Eingaben nach Planungsstand farblich kennzeichnen.
+- **PV-Vorhalteflächen:** geeignete, planerisch gesicherte Dach- oder Fassadenflächen einschließlich Tragfähigkeit, Verschattung, Leitungsführung und künftiger Anschlussmöglichkeit;
+- **vorbereitete Energieflexibilität:** installierte beziehungsweise vorgerüstete Mess-, Steuer- und Kommunikationsinfrastruktur, betriebliche Voraussetzungen und ein umsetzbares Regelungskonzept;
+- **technische Vorhaltungen:** Leerrohre, Platzreserven, Trassen, elektrische Anschlussreserven oder vorbereitete Leitungswege für einen späteren Ausbau;
+- **verbindlich beschreibbare Etappen:** Maßnahmen, Verantwortlichkeiten, Voraussetzungen und ein nachvollziehbarer Zeitpunkt der Inbetriebnahme bzw. vollständigen Zielerreichung.
 
-<!-- ![Datenflüsse und Verantwortlichkeiten](../Abbildungen/anwendung/fachplanungen.svg){#fig-datenfluss width="90%"} -->
+Ein solcher Pfad ist **kein Ersatz für die aktuell noch fehlende Zielerfüllung**. Der Nachweis sollte sowohl den erreichten Ist-Stand als auch den erwarteten Endzustand darstellen und die bis dahin notwendigen Schritte getrennt ausweisen. Für die THG-Bewertung sind außerdem die Emissionen bis zur späteren Umsetzung und die zusätzlichen Herstellungsemissionen der Maßnahmen zu berücksichtigen; ein zukünftiges gutes Ergebnis macht bereits entstandene Emissionen nicht rückgängig. Die vertiefte Darstellung von Renovierungsetappen findet sich unter [Sanierungsfahrpläne](07-renovierungsfahrplan.qmd).
+
+::: {.callout-warning appearance="simple" icon=false title="Methodische Abgrenzung: „Auf dem Weg""}
+„Auf dem Weg“ ist hier als **ergänzender Entwicklungspfad** beschrieben, nicht als automatisch bereits erfüllte Qualitätsstufe. Verbindliche Kriterien, zulässige Fristen, erforderliche Belege und die formale Zuordnung zu Deklarationsphasen müssen im Standard beziehungsweise Deklarationsverfahren festgelegt und vor einer offiziellen Anwendung geprüft werden.
+:::
+
+::: {.callout-note appearance="simple" icon=false title="Abbildungsvorschlag A2 · Etappen und Vorhaltemaßnahmen"}
+**Zeitachse:** heutiger Bilanzstand → baulich gesicherte Vorhaltungen → Ausbau von PV, Flexibilität und Infrastruktur → Zielerreichung im Jahr X. Mit Markierungen für den geplanten Maßnahmenzeitpunkt, ausstehende Nachweise und die Entwicklung des Primärenergiesaldos bzw. des kumulierten THG-Budgets.
+
+<!--
+![Nachvollziehbarer Maßnahmenpfad bis zur angestrebten Qualitätsstufe](../Abbildungen/anwendung/auf-dem-weg-zeitachse.svg){#fig-auf-dem-weg width="100%"}
+-->
+:::
+
+::: {.callout-note appearance="minimal" icon=false title="Abbildungsvorschlag A3 · Technische Vorhaltungen"}
+**Bildgalerie:** PV-Vorhalteflächen, Leerrohre/Steigschächte, Platzreserve für Technik, Regelungs- und Messinfrastruktur. Jedes Bild mit kurzer Beschriftung: *Was ist vorbereitet? Welche spätere Maßnahme wird dadurch ermöglicht?*
+
+<!--
+::: {layout-ncol=3}
+![PV-Vorhaltefläche](../Abbildungen/anwendung/pv-vorhalteflaeche.jpg){#fig-vorhaltung-pv}
+![Leerrohre und Trassen](../Abbildungen/anwendung/leerverrohrung.jpg){#fig-vorhaltung-leerrohre}
+![Mess- und Regelungstechnik](../Abbildungen/anwendung/flex-vorhaltung.jpg){#fig-vorhaltung-flex}
+:::
+-->
+:::
+
+## Anforderungen an Datenqualität und Nachvollziehbarkeit
+
+Die Nachweisführung bündelt Angaben aus Architektur, Bauphysik, Haustechnik, Mobilitätsplanung und Ökobilanz. Für ergebnisrelevante Eingaben ist zu kennzeichnen, ob es sich um **Referenzannahmen**, **projektspezifische Berechnungen**, **bestätigte Ausführungsangaben** oder **Messwerte** handelt. Abhängigkeiten von nicht gesicherten Maßnahmen sind sichtbar auszuweisen.
+
+Für Variantenvergleiche sind Quartiersabgrenzung, Nutzungsumfang, Flächenbezüge und Bewertungsstand konsistent zu halten. Werden sie verändert, muss die Auswirkung auf Bedarf, Kontextfaktoren und zugeteilte Budgets kenntlich gemacht werden. Die Interpretation der Ergebnisse wird unter @sec-ergebnisse erläutert.
+
+::: {.callout-note appearance="minimal" icon=false title="Abbildungsvorschlag A4 · Fachbeiträge und Nachweise"}
+**Datenflussgrafik:** Architektur / Bauphysik / Haustechnik / Mobilität / Ökobilanz → Quartiersbewertung → drei Deklarationsphasen. Eingaben nach *Annahme – Ausführung – Messung* farblich differenzieren.
+
+<!--
+![Fachbeiträge zur Quartiersbewertung](../Abbildungen/anwendung/datenfluss-nachweis.svg){#fig-datenfluss-nachweis width="100%"}
+-->
 :::
 
 ## PEExcel als Nachweiswerkzeug
 
-Die Berechnung und der Variantenvergleich erfolgen mit dem [PEExcel-Nachweistool](https://simonschaluppe.github.io/peexcel/). **Bedienung, Datenmodell, Exportformate, Softwareversionen und technische Modellimplementierung werden auf der eigenständigen Toolwebsite dokumentiert.** Dieser Hintergrundbericht erläutert stattdessen die Bewertungsgrundlagen (@sec-allokation, @sec-kontext und @sec-bilanzregeln) sowie die fachliche Interpretation der Ergebnisse (@sec-ergebnisse).
+Die Berechnungen und Variantenvergleiche werden mit dem [PEExcel-Nachweistool](https://simonschaluppe.github.io/peexcel/) unterstützt. **Bedienung, Datenmodell, Auswertungsfunktionen, Softwareversionen und technische Modellimplementierung** sind auf der eigenständigen Toolwebsite beschrieben. Dieser Bericht erläutert die Bewertungsgrundlagen (@sec-allokation, @sec-kontext, @sec-bilanzregeln) und ihre Interpretation (@sec-ergebnisse); er ersetzt keine detaillierte Fachplanung.
 
-::: {.callout-tip appearance="minimal" icon=false title="Weiterführende Unterlagen"}
-[PEExcel-Dokumentation und Download](https://simonschaluppe.github.io/peexcel/) · [Ergebnisinterpretation](07-ergebnisse.qmd) · [Praxisbeispiele](07-praxisbeispiele.qmd)
-:::
-
-## Abbildungs- und Callout-Galerie (redaktionelle Auswahl)
-
-::: {.callout-note appearance="minimal" icon=false title="Option A3 · Ablauf am Tool"}
-**Screenshot-Folge:** Projektdaten → Szenarioauswahl → Bilanzübersicht. Nur verwenden, wenn die Screenshots zum dokumentierten Toolstand passen.
-:::
-
-::: {.callout-warning appearance="minimal" icon=false title="Option A4 · Typischer Fehler"}
-**Grenzänderung beim Variantenvergleich:** Wird die Quartiersfläche verändert, ändern sich möglicherweise gleichzeitig Bedarf, Dichtekontext und Budgetzuordnung. Solche Varianten nur mit ausgewiesenen Flächenbezügen vergleichen.
+::: {.callout-tip appearance="minimal" icon=false title="Weiterführende Informationen"}
+[PEExcel-Dokumentation](https://simonschaluppe.github.io/peexcel/) · [Ergebnisinterpretation](07-ergebnisse.qmd) · [Praxisbeispiele](07-praxisbeispiele.qmd) · [Sanierungsfahrpläne](07-renovierungsfahrplan.qmd)
 :::
