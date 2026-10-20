@@ -80,3 +80,11 @@ Die Höhe ist normativ festgelegt. Sie berücksichtigt erschwerte Handlungsmögl
 Für eine Weiterentwicklung kommen differenzierte Regeln nach Sanierungserschwernis, Gebäudealter oder Denkmalschutz in Betracht. Solche Regeln brauchen eine begründete Verteilungswirkung und handhabbare Nachweise. Bis dahin wird die festgelegte Gutschrift angewendet, ohne eine bislang nicht vorliegende quantitative Kalibrierung zu unterstellen.
 
 :::
+
+## Auf dem richtigen Weg?
+
+::: {.callout-warning}
+
+[platzhalter]
+
+:::

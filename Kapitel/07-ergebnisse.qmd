@@ -6,21 +6,12 @@ Von der Zielerreichung zur nachvollziehbaren Planungsentscheidung
 
 Die erreichte Qualitätsstufe fasst die Bewertung zusammen. Für die Planung ist ebenso wichtig, **welche realen Energie- und Emissionsflüsse, Kontextfaktoren und Annahmen** dahinterstehen. Eine nachvollziehbare Ergebnisdarstellung zeigt deshalb die einzelnen Beiträge und nicht nur „bestanden“ oder „nicht bestanden“.
 
-## Die Ergebnisübersicht
 
-Eine kompakte Übersicht sollte mindestens Projektgrenze, Nutzungen, BGF und NGF, bewertete Qualitätsstufe, Deklarationsphase sowie Methoden-, Software- und Datenstand nennen. Hinzu kommen die Primärenergiebilanz einschließlich getrennt ausgewiesener Kontextkomponenten und – bei der Klimaneutralitätsstufe – die kumulierte THG-Bilanz mit Budgetabstand.
-
-::: {.callout-note appearance="simple" icon=false title="Abbildungsvorschlag E1 · Ergebnisübersicht"}
-**Grafik / Layout:** Drei nebeneinanderstehende Bilanzkarten für die Qualitätsstufen mit Bewertungsstatus, physischem Saldo und Kontextkorrektur sowie THG-Budget nur für Stufe 3. **Nicht** durch die drei L1/L2/L3-Budgetvarianten ersetzen.
-
-<!-- ![Ergebnisübersicht PEQ](../Abbildungen/anwendung/ergebnisuebersicht.svg){#fig-ergebnisuebersicht width="100%"} -->
-:::
-
-## Primärenergie: Flüsse und Kontext getrennt darstellen
+## Primärenergiebilanz
 
 Der berechnete Energiebedarf, die lokale Erzeugung sowie Bezug und Export über die Quartiersgrenze sind **physische Größen**. Erst die Gewichtung ergibt den Primärenergiesaldo. Dichte-, Mobilitäts- und Sanierungskontext verändern den Bewertungsmaßstab, nicht den realen Energiefluss. Die zugrunde liegenden Regeln erläutern @sec-bilanzregeln und @sec-kontext.
 
-Eine positive Bewertungsbilanz ist deshalb nicht gleichbedeutend mit Autarkie oder einem physischen Nettoexport. Für aussagekräftige Vergleiche sind Rohsaldo und jede Kontextkorrektur getrennt auszuweisen.
+Eine positive Bewertungsbilanz ist nicht gleichbedeutend mit Autarkie oder einem physischen Nettoexport. Für aussagekräftige Vergleiche sind Rohsaldo und jede Kontextkorrektur getrennt auszuweisen.
 
 Die Ergebnisdarstellung stellt Energiebedarf und Energieaufbringung gegenüber und weist die Kontextkomponenten gesondert aus. Die Erweiterung um Mobilität verändert sowohl die bilanzierten Bedarfe als auch die zugerechneten Budgets.
 
@@ -40,32 +31,10 @@ Die THG-Bewertung der dritten Qualitätsstufe umfasst die im Standard festgelegt
 
 Das für den dokumentierten Methodenstand verwendete Referenzbudget und seine Annahmen werden in @sec-allokation erläutert; die Systemgrenzen stehen in @sec-bilanzregeln.
 
-::: {.callout-note appearance="simple" icon=false title="Abbildungsvorschlag E3 · THG-Budget"}
-**Plotly:** Kumulierte Emissionen aus Herstellung, Betrieb und MIV; zusätzlich Budgetlinie, Abstand zum Budget und ausgewiesener Bewertungszeitraum. Keine fiktiven Projektwerte eintragen.
 
-<!-- ![Kumulierte THG-Emissionen](../Abbildungen/anwendung/thg-budget.svg){#fig-thg-bilanz width="100%"} -->
-:::
 Die kumulierte THG-Bilanz setzt sich aus den einzelnen baulichen, betrieblichen und mobilitätsbezogenen Emissionsbeiträgen zusammen. Die Gegenüberstellung mit dem Budget zeigt den verbleibenden Spielraum beziehungsweise eine Überschreitung.
 
 ![Beispielhafte Zusammensetzung der kumulierten Lebenszyklus-Treibhausgasbilanz und Vergleich mit dem Budget von 320 kg CO₂e/m² BGF.](../Abbildungen/emissionsbilanz_erklaert.svg){#fig-emissionsbilanz-erklaert width="95%"}
 
-## Variantenvergleich und Robustheit
 
-Vergleichbar sind vor allem Varianten mit derselben Nutzungsaufgabe, einheitlichen Flächenbezügen und demselben Methodenstand. Ändern sich BGF, NGF oder Quartiersgrenze, müssen die absoluten Energiemengen und Emissionen zusätzlich zu spezifischen Kennwerten sichtbar sein. Ein günstigerer spezifischer Kennwert kann bei größerer Gesamtfläche dennoch mit höheren Gesamtemissionen verbunden sein.
 
-Drei Prüfungen unterstützen die Entscheidung: **Plausibilität** der Bedarfe und Erträge, **Robustheit** gegenüber weniger günstigen Eingaben und **Umsetzbarkeit** der technischen Maßnahmen. Stundenwerte helfen bei der zeitlichen Interpretation; sie ersetzen keinen detaillierten Auslegungs- oder Komfortnachweis [@schneider2026thesis, Abschn. 3.3.1–3.3.4].
-
-::: {.callout-note appearance="simple" icon=false title="Abbildungsvorschlag E4 · Variantenvergleich"}
-**Interaktiv:** Szenario A/B wählen, Bilanzdiagramm und THG-Abstand vergleichen; optional PV-Erzeugung, Netzbezug und elektrische Bedarfsprofile als Wochen- oder Stundenprofil. Einheitliche y-Achsen verwenden und Filterzustand im Bildtitel ausweisen.
-
-<!-- ![Variantenvergleich](../Abbildungen/anwendung/variantenvergleich.svg){#fig-variantenvergleich width="100%"} -->
-:::
-Der Vergleich unterschiedlicher Quartierstypologien zeigt, wie Gebäudeenergiebedarf, lokale Erzeugung und Kontextfaktoren zusammenwirken. Dabei müssen die unterschiedlichen Nutzungen und Bewertungsumfänge berücksichtigt werden.
-
-![Vergleich exemplarischer Quartierstypologien anhand ihrer Primärenergiebedarfe, Energieaufbringung und Kontextkomponenten.](../Abbildungen/beispiele.svg){#fig-quartierstypologien-vergleich width="100%"}
-
-::: {.callout-warning appearance="simple" icon=false title="Interpretationsgrenze"}
-Ein positives Modellergebnis ist eine Prognose auf Basis definierter Annahmen. Es sagt für sich genommen nichts über raumweisen Komfort, hydraulische Funktion oder eine tatsächliche Anschlusszusage aus.
-:::
-
-Die Diagramme können mit den bestehenden Reporting- und Plotly-Funktionen aus [PEExcel](https://simonschaluppe.github.io/peexcel/) erzeugt und als interaktive HTML-Abbildungen sowie statische PDF-Fassungen eingebunden werden.

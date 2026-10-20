@@ -56,14 +56,7 @@ Die Kontextfaktoren verändern die **energetische Bewertungsanforderung**, nicht
 
 Die Herleitung der Zielwerte beschreibt @sec-allokation, die Berechnung und Anwendung der Kontextfaktoren @sec-kontext.
 
-## Auf dem richtigen Weg?
 
-::: {.callout-warning}
-
-
-[platzhalter]
-
-:::
 
 ## Bedeutung und Grenzen der Bewertung
 
@@ -71,6 +64,6 @@ Eine erfüllte Qualitätsstufe zeigt, dass ein Quartier die definierten Anforder
 
 Die Bewertung soll  eine konsistente Grundlage bieten, um Quartierskonzepte zu beurteilen, Varianten zu vergleichen und die Zielerreichung im Planungsprozess nachzuweisen.
 
-Dafür steht das PEQ-Nachweistool zur Verfügung. Den Modellaufbau und seine Vereinfachungen erläutert @sec-quartiersmodell; Anwendung und Deklarationsprozess beschreibt @sec-anwendung.
+Für die quantitative Bewertung steht das klima**aktiv** PEQ-Nachweistool zur Verfügung. Die [Wissensplattform](https://simonschaluppe.github.io/peexcel/) bietet weiterführende Informationen zum Bewertungsmodell und zur Anwendung des Tools.
 
 Die Gültigkeit des Bewertungsmaßstabs hängt von den verwendeten Szenarien, Parametern und methodischen Festlegungen ab. Grenzen und Weiterentwicklung werden in @sec-fortschreibung dokumentiert.

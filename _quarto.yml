@@ -9,7 +9,11 @@ project:
 lang: de
 bibliography: references.bib
 
-
+comments:
+  hypothesis:
+    theme: clean
+    openSidebar: false
+    
 book:
   title: "Klimaneutrale Plus-Energie-Quartiere"
   subtitle: "Wissenschaftliche Grundlagen des klimaaktiv Standards – Arbeitsfassung"
@@ -69,6 +73,12 @@ format:
     toc: true
     number-sections: true
     colorlinks: true
+  docx:
+    toc: true
+    toc-depth: 3
+    toc-title: Inhaltsverzeichnis
+    number-sections: true
+    syntax-highlighting: github
 
 execute:
   echo: false
