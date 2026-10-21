@@ -1,0 +1,7 @@
+﻿scenario,label,target_year,role,source_id,notes
+legacy_streicher,Operationalisierung 2023 (Streicher-basiert),2050/2040,"gültiger, historischer Referenzansatz",SCHNEIDER2020;SCHNEIDER2023,Die ursprüngliche Energieautarkie-Studie für 2050 wurde 2023 für die 2040-Bewertung weiterentwickelt; kein direkter UBA-Szenariodatensatz.
+wem_2023,WEM 2023,2040,Vergleich – konsistente Modellgeneration mit Transition,UBA2023,WEM-Werte als historisches Vergleichsszenario aus REP-0882
+wam_2023,WAM 2023,2040,Vergleich – konsistente Modellgeneration mit Transition,UBA2023,WAM-Werte als historisches Vergleichsszenario aus REP-0882
+transition_2040,Transition 2040,2040,Vorgesehene Rekalibrierung,TRANSITION,"Stand UBA 2023; Stromerzeugung REP-0880 Tabelle 16, Bedarf Tabelle 15"
+wem_2025,WEM 2025,2040,aktuelles Vergleichsszenario,UBA2025,neuere Modellgeneration; nicht stillschweigend mit 2023 gleichsetzen
+wam_2025,WAM 2025,2040,aktuelles Vergleichsszenario,UBA2025,energetisch identisch WAM NEKP 2024 laut UBA

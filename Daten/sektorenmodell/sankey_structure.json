@@ -1,0 +1,2551 @@
+{
+  "schema_version": 1,
+  "unit": "PJ/a, energy_basis required per layer",
+  "sources": [
+    {
+      "source_id": "TRANSITION",
+      "bibkey": "uba2023transition",
+      "url": "https://www.umweltbundesamt.at/fileadmin/site/publikationen/rep0880.pdf",
+      "scope": "Tab. A S. 7; Tab. 15 S. 60; Tab. 16 S. 63"
+    },
+    {
+      "source_id": "UBA2023",
+      "bibkey": "uba2023szenarien",
+      "url": "https://www.umweltbundesamt.at/fileadmin/site/publikationen/rep0882.pdf",
+      "scope": "Tab. 12 S. 39"
+    },
+    {
+      "source_id": "UBA2023_SUM",
+      "bibkey": "uba2023zusammenfassung",
+      "url": "https://www.umweltbundesamt.at/fileadmin/site/publikationen/rep0882_bfz.pdf",
+      "scope": "Tab. B S. 5; Tab. D S. 8"
+    },
+    {
+      "source_id": "UBA2025",
+      "bibkey": "uba2025szenarien",
+      "url": "https://www.umweltbundesamt.at/fileadmin/site/publikationen/rep0995.pdf",
+      "scope": "Tab. B S. 10; Tab. E S. 12; Tab. 18 S. 62"
+    },
+    {
+      "source_id": "SCHNEIDER2020",
+      "bibkey": "schneider2020lokal",
+      "url": "",
+      "scope": "Nutzeroriginal 10 Seiten; Abschn. 3.1.4 und 5.1; Abb. 4 und 5"
+    },
+    {
+      "source_id": "SCHNEIDER2023",
+      "bibkey": "schneider2023context",
+      "url": "https://doi.org/10.3390/buildings13051210",
+      "scope": "Abschn. 6.1 und 6.2; Tab. 6 und 8 und 9"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "hydro",
+      "label": "Wasserkraft"
+    },
+    {
+      "id": "wind",
+      "label": "Windkraft"
+    },
+    {
+      "id": "pv",
+      "label": "Photovoltaik"
+    },
+    {
+      "id": "biomass",
+      "label": "Biomasse inkl. Biomethan"
+    },
+    {
+      "id": "geothermal",
+      "label": "Geothermie / sonstige Erzeugung¹"
+    },
+    {
+      "id": "hydrogen_electricity",
+      "label": "Wasserstoff-Rückverstromung"
+    },
+    {
+      "id": "fossil",
+      "label": "Fossile Erzeugung"
+    },
+    {
+      "id": "electricity_system",
+      "label": "electricity_system"
+    },
+    {
+      "id": "imports",
+      "label": "imports"
+    },
+    {
+      "id": "exports",
+      "label": "exports"
+    },
+    {
+      "id": "verkehr",
+      "label": "Verkehr"
+    },
+    {
+      "id": "gebaeude",
+      "label": "Gebäude"
+    },
+    {
+      "id": "industrie",
+      "label": "Industrie"
+    },
+    {
+      "id": "landwirtschaft",
+      "label": "Landwirtschaft"
+    },
+    {
+      "id": "verbrauch_sektor_energie",
+      "label": "Verbrauch Sektor Energie"
+    },
+    {
+      "id": "transportverluste",
+      "label": "Transportverluste"
+    },
+    {
+      "id": "umwandlungseinsatz",
+      "label": "Umwandlungseinsatz"
+    },
+    {
+      "id": "central_pool",
+      "label": "central_pool"
+    },
+    {
+      "id": "decentral_pool",
+      "label": "decentral_pool"
+    },
+    {
+      "id": "miv",
+      "label": "miv"
+    },
+    {
+      "id": "other_transport",
+      "label": "other_transport"
+    },
+    {
+      "id": "credit_budget_pe",
+      "label": "credit_budget_pe"
+    },
+    {
+      "id": "mobility_credit_pe",
+      "label": "mobility_credit_pe"
+    }
+  ],
+  "scenarios": {
+    "legacy_streicher": {
+      "label": "Legacy 2023",
+      "links": [
+        {
+          "source": "central_pool",
+          "target": "industrie",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": "Priority and eligibility rule outstanding",
+          "status": "pending"
+        },
+        {
+          "source": "central_pool",
+          "target": "other_transport",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": "Priority and eligibility rule outstanding",
+          "status": "pending"
+        },
+        {
+          "source": "central_pool",
+          "target": "miv",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": "Priority and eligibility rule outstanding",
+          "status": "pending"
+        },
+        {
+          "source": "credit_budget_pe",
+          "target": "mobility_credit_pe",
+          "value_pj": 38.448,
+          "energy_basis": "primary_energy",
+          "flow_kind": "virtual_credit",
+          "source_id": "SCHNEIDER2023",
+          "source_location": "Table 8; TWh × 3.6 = PJ",
+          "status": "documented"
+        }
+      ],
+      "target_year": "2050/2040",
+      "role": "gültiger, historischer Referenzansatz",
+      "legacy_documented_metrics": [
+        {
+          "metric": "scenario_base",
+          "value": "Streicher Energieautarkie Österreich 2050; Anpassungen Schneider/Zelger/Klauda 2020 und Schneider et al. 2023",
+          "unit": "text",
+          "interpretation": "Szenariobasis und aktuelle Kalibrierung unterscheiden",
+          "source": "SCHNEIDER2020;SCHNEIDER2023"
+        },
+        {
+          "metric": "schematic_central_generation_share",
+          "value": "60",
+          "unit": "percent",
+          "interpretation": "Nur schematischer Anteil auf Folie; keine direkt UBA-kompatible Quote",
+          "source": "User slide"
+        },
+        {
+          "metric": "schematic_decentral_generation_share",
+          "value": "40",
+          "unit": "percent",
+          "interpretation": "Nur schematischer Anteil auf Folie; keine direkt UBA-kompatible Quote",
+          "source": "User slide"
+        },
+        {
+          "metric": "historic_2020_credit_per_person",
+          "value": "1080",
+          "unit": "kWh_end/person/year",
+          "interpretation": "Frühere 2050-Endenergie-Gutschrift pro Person; nicht mit PE-Flächengutschrift 2023 gleichsetzen",
+          "source": "SCHNEIDER2020 p8"
+        },
+        {
+          "metric": "mobilitaetsbudget_strom",
+          "value": "6.3",
+          "unit": "TWh_electric/year",
+          "interpretation": "Publizierter Saldo zentraler Anlagen",
+          "source": "SCHNEIDER2023 Table 8"
+        },
+        {
+          "metric": "mobilitaetsbudget_biomasse",
+          "value": "0.36",
+          "unit": "TWh_end/year",
+          "interpretation": "Publizierter Saldo Biomasse",
+          "source": "SCHNEIDER2023 Table 8"
+        },
+        {
+          "metric": "mobilitaetsbudget_primärenergie",
+          "value": "10.68",
+          "unit": "TWh_PE_total/year",
+          "interpretation": "Publizierte Primärenergie-Gutschrift",
+          "source": "SCHNEIDER2023 Table 8"
+        },
+        {
+          "metric": "gebaeude_pv_stromerzeugung",
+          "value": "114.8",
+          "unit": "PJ_electric/year",
+          "interpretation": "Gebäudesektor-Zuordnung in 2023-Paper",
+          "source": "SCHNEIDER2023 Table 6"
+        },
+        {
+          "metric": "gebaeude_strombedarf",
+          "value": "137.6",
+          "unit": "PJ_electric/year",
+          "interpretation": "Gebäudesektor-Zuordnung in 2023-Paper",
+          "source": "SCHNEIDER2023 Table 6"
+        },
+        {
+          "metric": "gebaeude_saldo",
+          "value": "-22.7",
+          "unit": "PJ_electric/year",
+          "interpretation": "Publizierter Saldo aus ungerundeten Werten; gerundete Differenz -22.8",
+          "source": "SCHNEIDER2023 Table 6"
+        }
+      ],
+      "physical_data_complete": false,
+      "normative_allocation_complete": false,
+      "residuals": null,
+      "plotly_physical": {
+        "type": "sankey",
+        "node": {
+          "label": [
+            "Wasserkraft",
+            "Windkraft",
+            "Photovoltaik",
+            "Biomasse inkl. Biomethan",
+            "Geothermie / sonstige Erzeugung¹",
+            "Wasserstoff-Rückverstromung",
+            "Fossile Erzeugung",
+            "electricity_system",
+            "imports",
+            "exports",
+            "Verkehr",
+            "Gebäude",
+            "Industrie",
+            "Landwirtschaft",
+            "Verbrauch Sektor Energie",
+            "Transportverluste",
+            "Umwandlungseinsatz",
+            "central_pool",
+            "decentral_pool",
+            "miv",
+            "other_transport",
+            "credit_budget_pe",
+            "mobility_credit_pe"
+          ]
+        },
+        "link": {
+          "source": [],
+          "target": [],
+          "value": []
+        }
+      },
+      "notes": "Printed rounding and source discrepancies retained; no artificial balancing flows. Legacy has no complete comparable electricity table."
+    },
+    "transition_2040": {
+      "label": "Transition 2040",
+      "links": [
+        {
+          "source": "hydro",
+          "target": "electricity_system",
+          "value_pj": 173.0,
+          "energy_basis": "electricity",
+          "flow_kind": "physical",
+          "source_id": "TRANSITION",
+          "source_location": "Tabelle 16, S. 63",
+          "status": "documented"
+        },
+        {
+          "source": "wind",
+          "target": "electricity_system",
+          "value_pj": 105.0,
+          "energy_basis": "electricity",
+          "flow_kind": "physical",
+          "source_id": "TRANSITION",
+          "source_location": "Tabelle 16, S. 63",
+          "status": "documented"
+        },
+        {
+          "source": "pv",
+          "target": "electricity_system",
+          "value_pj": 149.0,
+          "energy_basis": "electricity",
+          "flow_kind": "physical",
+          "source_id": "TRANSITION",
+          "source_location": "Tabelle 16, S. 63",
+          "status": "documented"
+        },
+        {
+          "source": "biomass",
+          "target": "electricity_system",
+          "value_pj": 21.0,
+          "energy_basis": "electricity",
+          "flow_kind": "physical",
+          "source_id": "TRANSITION",
+          "source_location": "Tabelle 16, S. 63",
+          "status": "documented"
+        },
+        {
+          "source": "geothermal",
+          "target": "electricity_system",
+          "value_pj": 4.0,
+          "energy_basis": "electricity",
+          "flow_kind": "physical",
+          "source_id": "TRANSITION",
+          "source_location": "Tabelle 16, S. 63",
+          "status": "documented"
+        },
+        {
+          "source": "hydrogen_electricity",
+          "target": "electricity_system",
+          "value_pj": 4.0,
+          "energy_basis": "electricity",
+          "flow_kind": "physical",
+          "source_id": "TRANSITION",
+          "source_location": "Tabelle 16, S. 63",
+          "status": "documented"
+        },
+        {
+          "source": "fossil",
+          "target": "electricity_system",
+          "value_pj": 1.0,
+          "energy_basis": "electricity",
+          "flow_kind": "physical",
+          "source_id": "TRANSITION",
+          "source_location": "Tabelle 16, S. 63",
+          "status": "documented"
+        },
+        {
+          "source": "electricity_system",
+          "target": "exports",
+          "value_pj": 7.0,
+          "energy_basis": "electricity",
+          "flow_kind": "physical",
+          "source_id": "TRANSITION",
+          "source_location": "Tabelle 16, S. 63",
+          "status": "documented"
+        },
+        {
+          "source": "electricity_system",
+          "target": "verkehr",
+          "value_pj": 90.0,
+          "energy_basis": "electricity",
+          "flow_kind": "physical",
+          "source_id": "TRANSITION",
+          "source_location": "Tabelle 15, S. 60",
+          "status": "documented"
+        },
+        {
+          "source": "electricity_system",
+          "target": "gebaeude",
+          "value_pj": 108.0,
+          "energy_basis": "electricity",
+          "flow_kind": "physical",
+          "source_id": "TRANSITION",
+          "source_location": "Tabelle 15, S. 60",
+          "status": "documented"
+        },
+        {
+          "source": "electricity_system",
+          "target": "industrie",
+          "value_pj": 140.0,
+          "energy_basis": "electricity",
+          "flow_kind": "physical",
+          "source_id": "TRANSITION",
+          "source_location": "Tabelle 15, S. 60",
+          "status": "documented"
+        },
+        {
+          "source": "electricity_system",
+          "target": "landwirtschaft",
+          "value_pj": 4.0,
+          "energy_basis": "electricity",
+          "flow_kind": "physical",
+          "source_id": "TRANSITION",
+          "source_location": "Tabelle 15, S. 60",
+          "status": "documented"
+        },
+        {
+          "source": "electricity_system",
+          "target": "verbrauch_sektor_energie",
+          "value_pj": 34.0,
+          "energy_basis": "electricity",
+          "flow_kind": "physical",
+          "source_id": "TRANSITION",
+          "source_location": "Tabelle 15, S. 60",
+          "status": "documented"
+        },
+        {
+          "source": "electricity_system",
+          "target": "transportverluste",
+          "value_pj": 19.0,
+          "energy_basis": "electricity",
+          "flow_kind": "physical",
+          "source_id": "TRANSITION",
+          "source_location": "Tabelle 15, S. 60",
+          "status": "documented"
+        },
+        {
+          "source": "electricity_system",
+          "target": "umwandlungseinsatz",
+          "value_pj": 57.0,
+          "energy_basis": "electricity",
+          "flow_kind": "physical",
+          "source_id": "TRANSITION",
+          "source_location": "Tabelle 15, S. 60",
+          "status": "documented"
+        },
+        {
+          "source": "hydro",
+          "target": "central_pool",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": null,
+          "status": "pending"
+        },
+        {
+          "source": "hydro",
+          "target": "decentral_pool",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": null,
+          "status": "pending"
+        },
+        {
+          "source": "wind",
+          "target": "central_pool",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": null,
+          "status": "pending"
+        },
+        {
+          "source": "wind",
+          "target": "decentral_pool",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": null,
+          "status": "pending"
+        },
+        {
+          "source": "pv",
+          "target": "central_pool",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": null,
+          "status": "pending"
+        },
+        {
+          "source": "pv",
+          "target": "decentral_pool",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": null,
+          "status": "pending"
+        },
+        {
+          "source": "biomass",
+          "target": "central_pool",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": null,
+          "status": "pending"
+        },
+        {
+          "source": "biomass",
+          "target": "decentral_pool",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": null,
+          "status": "pending"
+        },
+        {
+          "source": "geothermal",
+          "target": "central_pool",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": null,
+          "status": "pending"
+        },
+        {
+          "source": "geothermal",
+          "target": "decentral_pool",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": null,
+          "status": "pending"
+        },
+        {
+          "source": "hydrogen_electricity",
+          "target": "central_pool",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": null,
+          "status": "pending"
+        },
+        {
+          "source": "hydrogen_electricity",
+          "target": "decentral_pool",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": null,
+          "status": "pending"
+        },
+        {
+          "source": "fossil",
+          "target": "central_pool",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": null,
+          "status": "pending"
+        },
+        {
+          "source": "fossil",
+          "target": "decentral_pool",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": null,
+          "status": "pending"
+        },
+        {
+          "source": "verkehr",
+          "target": "miv",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": null,
+          "status": "pending"
+        },
+        {
+          "source": "verkehr",
+          "target": "other_transport",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": null,
+          "status": "pending"
+        },
+        {
+          "source": "central_pool",
+          "target": "industrie",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": "Priority and eligibility rule outstanding",
+          "status": "pending"
+        },
+        {
+          "source": "central_pool",
+          "target": "other_transport",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": "Priority and eligibility rule outstanding",
+          "status": "pending"
+        },
+        {
+          "source": "central_pool",
+          "target": "miv",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": "Priority and eligibility rule outstanding",
+          "status": "pending"
+        },
+        {
+          "source": "credit_budget_pe",
+          "target": "mobility_credit_pe",
+          "value_pj": null,
+          "energy_basis": "primary_energy",
+          "flow_kind": "virtual_credit",
+          "source_id": "PARAMETER",
+          "source_location": "PE factors and allocation pending",
+          "status": "pending"
+        }
+      ],
+      "target_year": "2040",
+      "role": "Vorgesehene Rekalibrierung",
+      "legacy_documented_metrics": [],
+      "physical_data_complete": true,
+      "normative_allocation_complete": false,
+      "residuals": {
+        "scenario": "transition_2040",
+        "eev_rounding_difference_pj": 0.0,
+        "generation_rounding_difference_pj": 0.0,
+        "electricity_rounding_difference_pj": 2.0,
+        "electricity_balance_residual_pj": 0.0
+      },
+      "plotly_physical": {
+        "type": "sankey",
+        "node": {
+          "label": [
+            "Wasserkraft",
+            "Windkraft",
+            "Photovoltaik",
+            "Biomasse inkl. Biomethan",
+            "Geothermie / sonstige Erzeugung¹",
+            "Wasserstoff-Rückverstromung",
+            "Fossile Erzeugung",
+            "electricity_system",
+            "imports",
+            "exports",
+            "Verkehr",
+            "Gebäude",
+            "Industrie",
+            "Landwirtschaft",
+            "Verbrauch Sektor Energie",
+            "Transportverluste",
+            "Umwandlungseinsatz",
+            "central_pool",
+            "decentral_pool",
+            "miv",
+            "other_transport",
+            "credit_budget_pe",
+            "mobility_credit_pe"
+          ]
+        },
+        "link": {
+          "source": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            7,
+            7,
+            7,
+            7,
+            7,
+            7,
+            7
+          ],
+          "target": [
+            7,
+            7,
+            7,
+            7,
+            7,
+            7,
+            7,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
+          ],
+          "value": [
+            173.0,
+            105.0,
+            149.0,
+            21.0,
+            4.0,
+            4.0,
+            1.0,
+            7.0,
+            90.0,
+            108.0,
+            140.0,
+            4.0,
+            34.0,
+            19.0,
+            57.0
+          ]
+        }
+      },
+      "notes": "Printed rounding and source discrepancies retained; no artificial balancing flows. Legacy has no complete comparable electricity table."
+    },
+    "wem_2025": {
+      "label": "WEM 2025",
+      "links": [
+        {
+          "source": "hydro",
+          "target": "electricity_system",
+          "value_pj": 167.0,
+          "energy_basis": "electricity",
+          "flow_kind": "physical",
+          "source_id": "UBA2025",
+          "source_location": "Tabelle E, S. 12",
+          "status": "documented"
+        },
+        {
+          "source": "wind",
+          "target": "electricity_system",
+          "value_pj": 65.0,
+          "energy_basis": "electricity",
+          "flow_kind": "physical",
+          "source_id": "UBA2025",
+          "source_location": "Tabelle E, S. 12",
+          "status": "documented"
+        },
+        {
+          "source": "pv",
+          "target": "electricity_system",
+          "value_pj": 53.0,
+          "energy_basis": "electricity",
+          "flow_kind": "physical",
+          "source_id": "UBA2025",
+          "source_location": "Tabelle E, S. 12",
+          "status": "documented"
+        },
+        {
+          "source": "biomass",
+          "target": "electricity_system",
+          "value_pj": 21.0,
+          "energy_basis": "electricity",
+          "flow_kind": "physical",
+          "source_id": "UBA2025",
+          "source_location": "Tabelle E, S. 12",
+          "status": "documented"
+        },
+        {
+          "source": "geothermal",
+          "target": "electricity_system",
+          "value_pj": 0.0,
+          "energy_basis": "electricity",
+          "flow_kind": "physical",
+          "source_id": "UBA2025",
+          "source_location": "Tabelle E, S. 12",
+          "status": "documented"
+        },
+        {
+          "source": "hydrogen_electricity",
+          "target": "electricity_system",
+          "value_pj": 0.0,
+          "energy_basis": "electricity",
+          "flow_kind": "physical",
+          "source_id": "UBA2025",
+          "source_location": "Tabelle E, S. 12",
+          "status": "documented"
+        },
+        {
+          "source": "fossil",
+          "target": "electricity_system",
+          "value_pj": 33.0,
+          "energy_basis": "electricity",
+          "flow_kind": "physical",
+          "source_id": "UBA2025",
+          "source_location": "Tabelle E, S. 12",
+          "status": "documented"
+        },
+        {
+          "source": "imports",
+          "target": "electricity_system",
+          "value_pj": 38.0,
+          "energy_basis": "electricity",
+          "flow_kind": "physical",
+          "source_id": "UBA2025",
+          "source_location": "Tabelle E, S. 12",
+          "status": "documented"
+        },
+        {
+          "source": "electricity_system",
+          "target": "verkehr",
+          "value_pj": 76.0,
+          "energy_basis": "electricity",
+          "flow_kind": "physical",
+          "source_id": "UBA2025",
+          "source_location": "Tabelle 18, S. 62",
+          "status": "documented"
+        },
+        {
+          "source": "electricity_system",
+          "target": "gebaeude",
+          "value_pj": 132.0,
+          "energy_basis": "electricity",
+          "flow_kind": "physical",
+          "source_id": "UBA2025",
+          "source_location": "Tabelle 18, S. 62",
+          "status": "documented"
+        },
+        {
+          "source": "electricity_system",
+          "target": "industrie",
+          "value_pj": 115.0,
+          "energy_basis": "electricity",
+          "flow_kind": "physical",
+          "source_id": "UBA2025",
+          "source_location": "Tabelle 18, S. 62",
+          "status": "documented"
+        },
+        {
+          "source": "electricity_system",
+          "target": "landwirtschaft",
+          "value_pj": 5.0,
+          "energy_basis": "electricity",
+          "flow_kind": "physical",
+          "source_id": "UBA2025",
+          "source_location": "Tabelle 18, S. 62",
+          "status": "documented"
+        },
+        {
+          "source": "electricity_system",
+          "target": "verbrauch_sektor_energie",
+          "value_pj": 28.0,
+          "energy_basis": "electricity",
+          "flow_kind": "physical",
+          "source_id": "UBA2025",
+          "source_location": "Tabelle 18, S. 62",
+          "status": "documented"
+        },
+        {
+          "source": "electricity_system",
+          "target": "transportverluste",
+          "value_pj": 16.0,
+          "energy_basis": "electricity",
+          "flow_kind": "physical",
+          "source_id": "UBA2025",
+          "source_location": "Tabelle 18, S. 62",
+          "status": "documented"
+        },
+        {
+          "source": "electricity_system",
+          "target": "umwandlungseinsatz",
+          "value_pj": 3.0,
+          "energy_basis": "electricity",
+          "flow_kind": "physical",
+          "source_id": "UBA2025",
+          "source_location": "Tabelle 18, S. 62",
+          "status": "documented"
+        },
+        {
+          "source": "hydro",
+          "target": "central_pool",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": null,
+          "status": "pending"
+        },
+        {
+          "source": "hydro",
+          "target": "decentral_pool",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": null,
+          "status": "pending"
+        },
+        {
+          "source": "wind",
+          "target": "central_pool",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": null,
+          "status": "pending"
+        },
+        {
+          "source": "wind",
+          "target": "decentral_pool",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": null,
+          "status": "pending"
+        },
+        {
+          "source": "pv",
+          "target": "central_pool",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": null,
+          "status": "pending"
+        },
+        {
+          "source": "pv",
+          "target": "decentral_pool",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": null,
+          "status": "pending"
+        },
+        {
+          "source": "biomass",
+          "target": "central_pool",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": null,
+          "status": "pending"
+        },
+        {
+          "source": "biomass",
+          "target": "decentral_pool",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": null,
+          "status": "pending"
+        },
+        {
+          "source": "geothermal",
+          "target": "central_pool",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": null,
+          "status": "pending"
+        },
+        {
+          "source": "geothermal",
+          "target": "decentral_pool",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": null,
+          "status": "pending"
+        },
+        {
+          "source": "hydrogen_electricity",
+          "target": "central_pool",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": null,
+          "status": "pending"
+        },
+        {
+          "source": "hydrogen_electricity",
+          "target": "decentral_pool",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": null,
+          "status": "pending"
+        },
+        {
+          "source": "fossil",
+          "target": "central_pool",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": null,
+          "status": "pending"
+        },
+        {
+          "source": "fossil",
+          "target": "decentral_pool",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": null,
+          "status": "pending"
+        },
+        {
+          "source": "verkehr",
+          "target": "miv",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": null,
+          "status": "pending"
+        },
+        {
+          "source": "verkehr",
+          "target": "other_transport",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": null,
+          "status": "pending"
+        },
+        {
+          "source": "central_pool",
+          "target": "industrie",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": "Priority and eligibility rule outstanding",
+          "status": "pending"
+        },
+        {
+          "source": "central_pool",
+          "target": "other_transport",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": "Priority and eligibility rule outstanding",
+          "status": "pending"
+        },
+        {
+          "source": "central_pool",
+          "target": "miv",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": "Priority and eligibility rule outstanding",
+          "status": "pending"
+        },
+        {
+          "source": "credit_budget_pe",
+          "target": "mobility_credit_pe",
+          "value_pj": null,
+          "energy_basis": "primary_energy",
+          "flow_kind": "virtual_credit",
+          "source_id": "PARAMETER",
+          "source_location": "PE factors and allocation pending",
+          "status": "pending"
+        }
+      ],
+      "target_year": "2040",
+      "role": "aktuelles Vergleichsszenario",
+      "legacy_documented_metrics": [],
+      "physical_data_complete": true,
+      "normative_allocation_complete": false,
+      "residuals": {
+        "scenario": "wem_2025",
+        "eev_rounding_difference_pj": -1.0,
+        "generation_rounding_difference_pj": 0.0,
+        "electricity_rounding_difference_pj": -1.0,
+        "electricity_balance_residual_pj": 1.0
+      },
+      "plotly_physical": {
+        "type": "sankey",
+        "node": {
+          "label": [
+            "Wasserkraft",
+            "Windkraft",
+            "Photovoltaik",
+            "Biomasse inkl. Biomethan",
+            "Geothermie / sonstige Erzeugung¹",
+            "Wasserstoff-Rückverstromung",
+            "Fossile Erzeugung",
+            "electricity_system",
+            "imports",
+            "exports",
+            "Verkehr",
+            "Gebäude",
+            "Industrie",
+            "Landwirtschaft",
+            "Verbrauch Sektor Energie",
+            "Transportverluste",
+            "Umwandlungseinsatz",
+            "central_pool",
+            "decentral_pool",
+            "miv",
+            "other_transport",
+            "credit_budget_pe",
+            "mobility_credit_pe"
+          ]
+        },
+        "link": {
+          "source": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            8,
+            7,
+            7,
+            7,
+            7,
+            7,
+            7,
+            7
+          ],
+          "target": [
+            7,
+            7,
+            7,
+            7,
+            7,
+            7,
+            7,
+            7,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
+          ],
+          "value": [
+            167.0,
+            65.0,
+            53.0,
+            21.0,
+            0.0,
+            0.0,
+            33.0,
+            38.0,
+            76.0,
+            132.0,
+            115.0,
+            5.0,
+            28.0,
+            16.0,
+            3.0
+          ]
+        }
+      },
+      "notes": "Printed rounding and source discrepancies retained; no artificial balancing flows. Legacy has no complete comparable electricity table."
+    },
+    "wam_2025": {
+      "label": "WAM 2025",
+      "links": [
+        {
+          "source": "hydro",
+          "target": "electricity_system",
+          "value_pj": 176.0,
+          "energy_basis": "electricity",
+          "flow_kind": "physical",
+          "source_id": "UBA2025",
+          "source_location": "Tabelle E, S. 12",
+          "status": "documented"
+        },
+        {
+          "source": "wind",
+          "target": "electricity_system",
+          "value_pj": 87.0,
+          "energy_basis": "electricity",
+          "flow_kind": "physical",
+          "source_id": "UBA2025",
+          "source_location": "Tabelle E, S. 12",
+          "status": "documented"
+        },
+        {
+          "source": "pv",
+          "target": "electricity_system",
+          "value_pj": 107.0,
+          "energy_basis": "electricity",
+          "flow_kind": "physical",
+          "source_id": "UBA2025",
+          "source_location": "Tabelle E, S. 12",
+          "status": "documented"
+        },
+        {
+          "source": "biomass",
+          "target": "electricity_system",
+          "value_pj": 21.0,
+          "energy_basis": "electricity",
+          "flow_kind": "physical",
+          "source_id": "UBA2025",
+          "source_location": "Tabelle E, S. 12",
+          "status": "documented"
+        },
+        {
+          "source": "geothermal",
+          "target": "electricity_system",
+          "value_pj": 0.0,
+          "energy_basis": "electricity",
+          "flow_kind": "physical",
+          "source_id": "UBA2025",
+          "source_location": "Tabelle E, S. 12",
+          "status": "documented"
+        },
+        {
+          "source": "hydrogen_electricity",
+          "target": "electricity_system",
+          "value_pj": 0.0,
+          "energy_basis": "electricity",
+          "flow_kind": "physical",
+          "source_id": "UBA2025",
+          "source_location": "Tabelle E, S. 12",
+          "status": "documented"
+        },
+        {
+          "source": "fossil",
+          "target": "electricity_system",
+          "value_pj": 15.0,
+          "energy_basis": "electricity",
+          "flow_kind": "physical",
+          "source_id": "UBA2025",
+          "source_location": "Tabelle E, S. 12",
+          "status": "documented"
+        },
+        {
+          "source": "electricity_system",
+          "target": "exports",
+          "value_pj": 10.0,
+          "energy_basis": "electricity",
+          "flow_kind": "physical",
+          "source_id": "UBA2025",
+          "source_location": "Tabelle E, S. 12",
+          "status": "documented"
+        },
+        {
+          "source": "electricity_system",
+          "target": "verkehr",
+          "value_pj": 72.0,
+          "energy_basis": "electricity",
+          "flow_kind": "physical",
+          "source_id": "UBA2025",
+          "source_location": "Tabelle 18, S. 62",
+          "status": "documented"
+        },
+        {
+          "source": "electricity_system",
+          "target": "gebaeude",
+          "value_pj": 123.0,
+          "energy_basis": "electricity",
+          "flow_kind": "physical",
+          "source_id": "UBA2025",
+          "source_location": "Tabelle 18, S. 62",
+          "status": "documented"
+        },
+        {
+          "source": "electricity_system",
+          "target": "industrie",
+          "value_pj": 107.0,
+          "energy_basis": "electricity",
+          "flow_kind": "physical",
+          "source_id": "UBA2025",
+          "source_location": "Tabelle 18, S. 62",
+          "status": "documented"
+        },
+        {
+          "source": "electricity_system",
+          "target": "landwirtschaft",
+          "value_pj": 4.0,
+          "energy_basis": "electricity",
+          "flow_kind": "physical",
+          "source_id": "UBA2025",
+          "source_location": "Tabelle 18, S. 62",
+          "status": "documented"
+        },
+        {
+          "source": "electricity_system",
+          "target": "verbrauch_sektor_energie",
+          "value_pj": 40.0,
+          "energy_basis": "electricity",
+          "flow_kind": "physical",
+          "source_id": "UBA2025",
+          "source_location": "Tabelle 18, S. 62",
+          "status": "documented"
+        },
+        {
+          "source": "electricity_system",
+          "target": "transportverluste",
+          "value_pj": 14.0,
+          "energy_basis": "electricity",
+          "flow_kind": "physical",
+          "source_id": "UBA2025",
+          "source_location": "Tabelle 18, S. 62",
+          "status": "documented"
+        },
+        {
+          "source": "electricity_system",
+          "target": "umwandlungseinsatz",
+          "value_pj": 34.0,
+          "energy_basis": "electricity",
+          "flow_kind": "physical",
+          "source_id": "UBA2025",
+          "source_location": "Tabelle 18, S. 62",
+          "status": "documented"
+        },
+        {
+          "source": "hydro",
+          "target": "central_pool",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": null,
+          "status": "pending"
+        },
+        {
+          "source": "hydro",
+          "target": "decentral_pool",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": null,
+          "status": "pending"
+        },
+        {
+          "source": "wind",
+          "target": "central_pool",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": null,
+          "status": "pending"
+        },
+        {
+          "source": "wind",
+          "target": "decentral_pool",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": null,
+          "status": "pending"
+        },
+        {
+          "source": "pv",
+          "target": "central_pool",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": null,
+          "status": "pending"
+        },
+        {
+          "source": "pv",
+          "target": "decentral_pool",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": null,
+          "status": "pending"
+        },
+        {
+          "source": "biomass",
+          "target": "central_pool",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": null,
+          "status": "pending"
+        },
+        {
+          "source": "biomass",
+          "target": "decentral_pool",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": null,
+          "status": "pending"
+        },
+        {
+          "source": "geothermal",
+          "target": "central_pool",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": null,
+          "status": "pending"
+        },
+        {
+          "source": "geothermal",
+          "target": "decentral_pool",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": null,
+          "status": "pending"
+        },
+        {
+          "source": "hydrogen_electricity",
+          "target": "central_pool",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": null,
+          "status": "pending"
+        },
+        {
+          "source": "hydrogen_electricity",
+          "target": "decentral_pool",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": null,
+          "status": "pending"
+        },
+        {
+          "source": "fossil",
+          "target": "central_pool",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": null,
+          "status": "pending"
+        },
+        {
+          "source": "fossil",
+          "target": "decentral_pool",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": null,
+          "status": "pending"
+        },
+        {
+          "source": "verkehr",
+          "target": "miv",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": null,
+          "status": "pending"
+        },
+        {
+          "source": "verkehr",
+          "target": "other_transport",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": null,
+          "status": "pending"
+        },
+        {
+          "source": "central_pool",
+          "target": "industrie",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": "Priority and eligibility rule outstanding",
+          "status": "pending"
+        },
+        {
+          "source": "central_pool",
+          "target": "other_transport",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": "Priority and eligibility rule outstanding",
+          "status": "pending"
+        },
+        {
+          "source": "central_pool",
+          "target": "miv",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": "Priority and eligibility rule outstanding",
+          "status": "pending"
+        },
+        {
+          "source": "credit_budget_pe",
+          "target": "mobility_credit_pe",
+          "value_pj": null,
+          "energy_basis": "primary_energy",
+          "flow_kind": "virtual_credit",
+          "source_id": "PARAMETER",
+          "source_location": "PE factors and allocation pending",
+          "status": "pending"
+        }
+      ],
+      "target_year": "2040",
+      "role": "aktuelles Vergleichsszenario",
+      "legacy_documented_metrics": [],
+      "physical_data_complete": true,
+      "normative_allocation_complete": false,
+      "residuals": {
+        "scenario": "wam_2025",
+        "eev_rounding_difference_pj": 0.0,
+        "generation_rounding_difference_pj": 0.0,
+        "electricity_rounding_difference_pj": 0.0,
+        "electricity_balance_residual_pj": 2.0
+      },
+      "plotly_physical": {
+        "type": "sankey",
+        "node": {
+          "label": [
+            "Wasserkraft",
+            "Windkraft",
+            "Photovoltaik",
+            "Biomasse inkl. Biomethan",
+            "Geothermie / sonstige Erzeugung¹",
+            "Wasserstoff-Rückverstromung",
+            "Fossile Erzeugung",
+            "electricity_system",
+            "imports",
+            "exports",
+            "Verkehr",
+            "Gebäude",
+            "Industrie",
+            "Landwirtschaft",
+            "Verbrauch Sektor Energie",
+            "Transportverluste",
+            "Umwandlungseinsatz",
+            "central_pool",
+            "decentral_pool",
+            "miv",
+            "other_transport",
+            "credit_budget_pe",
+            "mobility_credit_pe"
+          ]
+        },
+        "link": {
+          "source": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            7,
+            7,
+            7,
+            7,
+            7,
+            7,
+            7
+          ],
+          "target": [
+            7,
+            7,
+            7,
+            7,
+            7,
+            7,
+            7,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
+          ],
+          "value": [
+            176.0,
+            87.0,
+            107.0,
+            21.0,
+            0.0,
+            0.0,
+            15.0,
+            10.0,
+            72.0,
+            123.0,
+            107.0,
+            4.0,
+            40.0,
+            14.0,
+            34.0
+          ]
+        }
+      },
+      "notes": "Printed rounding and source discrepancies retained; no artificial balancing flows. Legacy has no complete comparable electricity table."
+    },
+    "wem_2023": {
+      "label": "WEM 2023",
+      "links": [
+        {
+          "source": "hydro",
+          "target": "electricity_system",
+          "value_pj": 174.0,
+          "energy_basis": "electricity",
+          "flow_kind": "physical",
+          "source_id": "UBA2023_SUM",
+          "source_location": "Tabelle D, S. 8",
+          "status": "documented"
+        },
+        {
+          "source": "wind",
+          "target": "electricity_system",
+          "value_pj": 69.0,
+          "energy_basis": "electricity",
+          "flow_kind": "physical",
+          "source_id": "UBA2023_SUM",
+          "source_location": "Tabelle D, S. 8",
+          "status": "documented"
+        },
+        {
+          "source": "pv",
+          "target": "electricity_system",
+          "value_pj": 54.0,
+          "energy_basis": "electricity",
+          "flow_kind": "physical",
+          "source_id": "UBA2023_SUM",
+          "source_location": "Tabelle D, S. 8",
+          "status": "documented"
+        },
+        {
+          "source": "biomass",
+          "target": "electricity_system",
+          "value_pj": 21.0,
+          "energy_basis": "electricity",
+          "flow_kind": "physical",
+          "source_id": "UBA2023_SUM",
+          "source_location": "Tabelle D, S. 8",
+          "status": "documented"
+        },
+        {
+          "source": "geothermal",
+          "target": "electricity_system",
+          "value_pj": 0.0,
+          "energy_basis": "electricity",
+          "flow_kind": "physical",
+          "source_id": "UBA2023_SUM",
+          "source_location": "Tabelle D, S. 8",
+          "status": "documented"
+        },
+        {
+          "source": "hydrogen_electricity",
+          "target": "electricity_system",
+          "value_pj": 0.0,
+          "energy_basis": "electricity",
+          "flow_kind": "physical",
+          "source_id": "UBA2023_SUM",
+          "source_location": "Tabelle D, S. 8",
+          "status": "documented"
+        },
+        {
+          "source": "fossil",
+          "target": "electricity_system",
+          "value_pj": 27.0,
+          "energy_basis": "electricity",
+          "flow_kind": "physical",
+          "source_id": "UBA2023_SUM",
+          "source_location": "Tabelle D, S. 8",
+          "status": "documented"
+        },
+        {
+          "source": "imports",
+          "target": "electricity_system",
+          "value_pj": 21.0,
+          "energy_basis": "electricity",
+          "flow_kind": "physical",
+          "source_id": "UBA2023_SUM",
+          "source_location": "Tabelle D, S. 8",
+          "status": "documented"
+        },
+        {
+          "source": "electricity_system",
+          "target": "verkehr",
+          "value_pj": 67.0,
+          "energy_basis": "electricity",
+          "flow_kind": "physical",
+          "source_id": "UBA2023",
+          "source_location": "Tabelle 12, S. 39",
+          "status": "documented"
+        },
+        {
+          "source": "electricity_system",
+          "target": "gebaeude",
+          "value_pj": 134.0,
+          "energy_basis": "electricity",
+          "flow_kind": "physical",
+          "source_id": "UBA2023",
+          "source_location": "Tabelle 12, S. 39",
+          "status": "documented"
+        },
+        {
+          "source": "electricity_system",
+          "target": "industrie",
+          "value_pj": 120.0,
+          "energy_basis": "electricity",
+          "flow_kind": "physical",
+          "source_id": "UBA2023",
+          "source_location": "Tabelle 12, S. 39",
+          "status": "documented"
+        },
+        {
+          "source": "electricity_system",
+          "target": "landwirtschaft",
+          "value_pj": 5.0,
+          "energy_basis": "electricity",
+          "flow_kind": "physical",
+          "source_id": "UBA2023",
+          "source_location": "Tabelle 12, S. 39",
+          "status": "documented"
+        },
+        {
+          "source": "electricity_system",
+          "target": "verbrauch_sektor_energie",
+          "value_pj": 25.0,
+          "energy_basis": "electricity",
+          "flow_kind": "physical",
+          "source_id": "UBA2023",
+          "source_location": "Tabelle 12, S. 39",
+          "status": "documented"
+        },
+        {
+          "source": "electricity_system",
+          "target": "transportverluste",
+          "value_pj": 15.0,
+          "energy_basis": "electricity",
+          "flow_kind": "physical",
+          "source_id": "UBA2023",
+          "source_location": "Tabelle 12, S. 39",
+          "status": "documented"
+        },
+        {
+          "source": "electricity_system",
+          "target": "umwandlungseinsatz",
+          "value_pj": 0.0,
+          "energy_basis": "electricity",
+          "flow_kind": "physical",
+          "source_id": "UBA2023",
+          "source_location": "Tabelle 12, S. 39",
+          "status": "documented"
+        },
+        {
+          "source": "hydro",
+          "target": "central_pool",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": null,
+          "status": "pending"
+        },
+        {
+          "source": "hydro",
+          "target": "decentral_pool",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": null,
+          "status": "pending"
+        },
+        {
+          "source": "wind",
+          "target": "central_pool",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": null,
+          "status": "pending"
+        },
+        {
+          "source": "wind",
+          "target": "decentral_pool",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": null,
+          "status": "pending"
+        },
+        {
+          "source": "pv",
+          "target": "central_pool",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": null,
+          "status": "pending"
+        },
+        {
+          "source": "pv",
+          "target": "decentral_pool",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": null,
+          "status": "pending"
+        },
+        {
+          "source": "biomass",
+          "target": "central_pool",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": null,
+          "status": "pending"
+        },
+        {
+          "source": "biomass",
+          "target": "decentral_pool",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": null,
+          "status": "pending"
+        },
+        {
+          "source": "geothermal",
+          "target": "central_pool",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": null,
+          "status": "pending"
+        },
+        {
+          "source": "geothermal",
+          "target": "decentral_pool",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": null,
+          "status": "pending"
+        },
+        {
+          "source": "hydrogen_electricity",
+          "target": "central_pool",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": null,
+          "status": "pending"
+        },
+        {
+          "source": "hydrogen_electricity",
+          "target": "decentral_pool",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": null,
+          "status": "pending"
+        },
+        {
+          "source": "fossil",
+          "target": "central_pool",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": null,
+          "status": "pending"
+        },
+        {
+          "source": "fossil",
+          "target": "decentral_pool",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": null,
+          "status": "pending"
+        },
+        {
+          "source": "verkehr",
+          "target": "miv",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": null,
+          "status": "pending"
+        },
+        {
+          "source": "verkehr",
+          "target": "other_transport",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": null,
+          "status": "pending"
+        },
+        {
+          "source": "central_pool",
+          "target": "industrie",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": "Priority and eligibility rule outstanding",
+          "status": "pending"
+        },
+        {
+          "source": "central_pool",
+          "target": "other_transport",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": "Priority and eligibility rule outstanding",
+          "status": "pending"
+        },
+        {
+          "source": "central_pool",
+          "target": "miv",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": "Priority and eligibility rule outstanding",
+          "status": "pending"
+        },
+        {
+          "source": "credit_budget_pe",
+          "target": "mobility_credit_pe",
+          "value_pj": null,
+          "energy_basis": "primary_energy",
+          "flow_kind": "virtual_credit",
+          "source_id": "PARAMETER",
+          "source_location": "PE factors and allocation pending",
+          "status": "pending"
+        }
+      ],
+      "target_year": "2040",
+      "role": "Vergleich – konsistente Modellgeneration mit Transition",
+      "legacy_documented_metrics": [],
+      "physical_data_complete": true,
+      "normative_allocation_complete": false,
+      "residuals": {
+        "scenario": "wem_2023",
+        "eev_rounding_difference_pj": 0.0,
+        "generation_rounding_difference_pj": -1.0,
+        "electricity_rounding_difference_pj": -1.0,
+        "electricity_balance_residual_pj": 0.0
+      },
+      "plotly_physical": {
+        "type": "sankey",
+        "node": {
+          "label": [
+            "Wasserkraft",
+            "Windkraft",
+            "Photovoltaik",
+            "Biomasse inkl. Biomethan",
+            "Geothermie / sonstige Erzeugung¹",
+            "Wasserstoff-Rückverstromung",
+            "Fossile Erzeugung",
+            "electricity_system",
+            "imports",
+            "exports",
+            "Verkehr",
+            "Gebäude",
+            "Industrie",
+            "Landwirtschaft",
+            "Verbrauch Sektor Energie",
+            "Transportverluste",
+            "Umwandlungseinsatz",
+            "central_pool",
+            "decentral_pool",
+            "miv",
+            "other_transport",
+            "credit_budget_pe",
+            "mobility_credit_pe"
+          ]
+        },
+        "link": {
+          "source": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            8,
+            7,
+            7,
+            7,
+            7,
+            7,
+            7,
+            7
+          ],
+          "target": [
+            7,
+            7,
+            7,
+            7,
+            7,
+            7,
+            7,
+            7,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
+          ],
+          "value": [
+            174.0,
+            69.0,
+            54.0,
+            21.0,
+            0.0,
+            0.0,
+            27.0,
+            21.0,
+            67.0,
+            134.0,
+            120.0,
+            5.0,
+            25.0,
+            15.0,
+            0.0
+          ]
+        }
+      },
+      "notes": "Printed rounding and source discrepancies retained; no artificial balancing flows. Legacy has no complete comparable electricity table."
+    },
+    "wam_2023": {
+      "label": "WAM 2023",
+      "links": [
+        {
+          "source": "hydro",
+          "target": "electricity_system",
+          "value_pj": 176.0,
+          "energy_basis": "electricity",
+          "flow_kind": "physical",
+          "source_id": "UBA2023_SUM",
+          "source_location": "Tabelle D, S. 8",
+          "status": "documented"
+        },
+        {
+          "source": "wind",
+          "target": "electricity_system",
+          "value_pj": 87.0,
+          "energy_basis": "electricity",
+          "flow_kind": "physical",
+          "source_id": "UBA2023_SUM",
+          "source_location": "Tabelle D, S. 8",
+          "status": "documented"
+        },
+        {
+          "source": "pv",
+          "target": "electricity_system",
+          "value_pj": 107.0,
+          "energy_basis": "electricity",
+          "flow_kind": "physical",
+          "source_id": "UBA2023_SUM",
+          "source_location": "Tabelle D, S. 8",
+          "status": "documented"
+        },
+        {
+          "source": "biomass",
+          "target": "electricity_system",
+          "value_pj": 21.0,
+          "energy_basis": "electricity",
+          "flow_kind": "physical",
+          "source_id": "UBA2023_SUM",
+          "source_location": "Tabelle D, S. 8",
+          "status": "documented"
+        },
+        {
+          "source": "geothermal",
+          "target": "electricity_system",
+          "value_pj": 0.0,
+          "energy_basis": "electricity",
+          "flow_kind": "physical",
+          "source_id": "UBA2023_SUM",
+          "source_location": "Tabelle D, S. 8",
+          "status": "documented"
+        },
+        {
+          "source": "hydrogen_electricity",
+          "target": "electricity_system",
+          "value_pj": 0.0,
+          "energy_basis": "electricity",
+          "flow_kind": "physical",
+          "source_id": "UBA2023_SUM",
+          "source_location": "Tabelle D, S. 8",
+          "status": "documented"
+        },
+        {
+          "source": "fossil",
+          "target": "electricity_system",
+          "value_pj": 15.0,
+          "energy_basis": "electricity",
+          "flow_kind": "physical",
+          "source_id": "UBA2023_SUM",
+          "source_location": "Tabelle D, S. 8",
+          "status": "documented"
+        },
+        {
+          "source": "imports",
+          "target": "electricity_system",
+          "value_pj": 1.0,
+          "energy_basis": "electricity",
+          "flow_kind": "physical",
+          "source_id": "UBA2023_SUM",
+          "source_location": "Tabelle D, S. 8",
+          "status": "documented"
+        },
+        {
+          "source": "electricity_system",
+          "target": "verkehr",
+          "value_pj": 70.0,
+          "energy_basis": "electricity",
+          "flow_kind": "physical",
+          "source_id": "UBA2023",
+          "source_location": "Tabelle 12, S. 39",
+          "status": "documented"
+        },
+        {
+          "source": "electricity_system",
+          "target": "gebaeude",
+          "value_pj": 122.0,
+          "energy_basis": "electricity",
+          "flow_kind": "physical",
+          "source_id": "UBA2023",
+          "source_location": "Tabelle 12, S. 39",
+          "status": "documented"
+        },
+        {
+          "source": "electricity_system",
+          "target": "industrie",
+          "value_pj": 126.0,
+          "energy_basis": "electricity",
+          "flow_kind": "physical",
+          "source_id": "UBA2023",
+          "source_location": "Tabelle 12, S. 39",
+          "status": "documented"
+        },
+        {
+          "source": "electricity_system",
+          "target": "landwirtschaft",
+          "value_pj": 4.0,
+          "energy_basis": "electricity",
+          "flow_kind": "physical",
+          "source_id": "UBA2023",
+          "source_location": "Tabelle 12, S. 39",
+          "status": "documented"
+        },
+        {
+          "source": "electricity_system",
+          "target": "verbrauch_sektor_energie",
+          "value_pj": 34.0,
+          "energy_basis": "electricity",
+          "flow_kind": "physical",
+          "source_id": "UBA2023",
+          "source_location": "Tabelle 12, S. 39",
+          "status": "documented"
+        },
+        {
+          "source": "electricity_system",
+          "target": "transportverluste",
+          "value_pj": 15.0,
+          "energy_basis": "electricity",
+          "flow_kind": "physical",
+          "source_id": "UBA2023",
+          "source_location": "Tabelle 12, S. 39",
+          "status": "documented"
+        },
+        {
+          "source": "electricity_system",
+          "target": "umwandlungseinsatz",
+          "value_pj": 36.0,
+          "energy_basis": "electricity",
+          "flow_kind": "physical",
+          "source_id": "UBA2023",
+          "source_location": "Tabelle 12, S. 39",
+          "status": "documented"
+        },
+        {
+          "source": "hydro",
+          "target": "central_pool",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": null,
+          "status": "pending"
+        },
+        {
+          "source": "hydro",
+          "target": "decentral_pool",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": null,
+          "status": "pending"
+        },
+        {
+          "source": "wind",
+          "target": "central_pool",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": null,
+          "status": "pending"
+        },
+        {
+          "source": "wind",
+          "target": "decentral_pool",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": null,
+          "status": "pending"
+        },
+        {
+          "source": "pv",
+          "target": "central_pool",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": null,
+          "status": "pending"
+        },
+        {
+          "source": "pv",
+          "target": "decentral_pool",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": null,
+          "status": "pending"
+        },
+        {
+          "source": "biomass",
+          "target": "central_pool",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": null,
+          "status": "pending"
+        },
+        {
+          "source": "biomass",
+          "target": "decentral_pool",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": null,
+          "status": "pending"
+        },
+        {
+          "source": "geothermal",
+          "target": "central_pool",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": null,
+          "status": "pending"
+        },
+        {
+          "source": "geothermal",
+          "target": "decentral_pool",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": null,
+          "status": "pending"
+        },
+        {
+          "source": "hydrogen_electricity",
+          "target": "central_pool",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": null,
+          "status": "pending"
+        },
+        {
+          "source": "hydrogen_electricity",
+          "target": "decentral_pool",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": null,
+          "status": "pending"
+        },
+        {
+          "source": "fossil",
+          "target": "central_pool",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": null,
+          "status": "pending"
+        },
+        {
+          "source": "fossil",
+          "target": "decentral_pool",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": null,
+          "status": "pending"
+        },
+        {
+          "source": "verkehr",
+          "target": "miv",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": null,
+          "status": "pending"
+        },
+        {
+          "source": "verkehr",
+          "target": "other_transport",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": null,
+          "status": "pending"
+        },
+        {
+          "source": "central_pool",
+          "target": "industrie",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": "Priority and eligibility rule outstanding",
+          "status": "pending"
+        },
+        {
+          "source": "central_pool",
+          "target": "other_transport",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": "Priority and eligibility rule outstanding",
+          "status": "pending"
+        },
+        {
+          "source": "central_pool",
+          "target": "miv",
+          "value_pj": null,
+          "energy_basis": "electricity",
+          "flow_kind": "normative_allocation",
+          "source_id": "PARAMETER",
+          "source_location": "Priority and eligibility rule outstanding",
+          "status": "pending"
+        },
+        {
+          "source": "credit_budget_pe",
+          "target": "mobility_credit_pe",
+          "value_pj": null,
+          "energy_basis": "primary_energy",
+          "flow_kind": "virtual_credit",
+          "source_id": "PARAMETER",
+          "source_location": "PE factors and allocation pending",
+          "status": "pending"
+        }
+      ],
+      "target_year": "2040",
+      "role": "Vergleich – konsistente Modellgeneration mit Transition",
+      "legacy_documented_metrics": [],
+      "physical_data_complete": true,
+      "normative_allocation_complete": false,
+      "residuals": {
+        "scenario": "wam_2023",
+        "eev_rounding_difference_pj": -1.0,
+        "generation_rounding_difference_pj": 0.0,
+        "electricity_rounding_difference_pj": 0.0,
+        "electricity_balance_residual_pj": 0.0
+      },
+      "plotly_physical": {
+        "type": "sankey",
+        "node": {
+          "label": [
+            "Wasserkraft",
+            "Windkraft",
+            "Photovoltaik",
+            "Biomasse inkl. Biomethan",
+            "Geothermie / sonstige Erzeugung¹",
+            "Wasserstoff-Rückverstromung",
+            "Fossile Erzeugung",
+            "electricity_system",
+            "imports",
+            "exports",
+            "Verkehr",
+            "Gebäude",
+            "Industrie",
+            "Landwirtschaft",
+            "Verbrauch Sektor Energie",
+            "Transportverluste",
+            "Umwandlungseinsatz",
+            "central_pool",
+            "decentral_pool",
+            "miv",
+            "other_transport",
+            "credit_budget_pe",
+            "mobility_credit_pe"
+          ]
+        },
+        "link": {
+          "source": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            8,
+            7,
+            7,
+            7,
+            7,
+            7,
+            7,
+            7
+          ],
+          "target": [
+            7,
+            7,
+            7,
+            7,
+            7,
+            7,
+            7,
+            7,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
+          ],
+          "value": [
+            176.0,
+            87.0,
+            107.0,
+            21.0,
+            0.0,
+            0.0,
+            15.0,
+            1.0,
+            70.0,
+            122.0,
+            126.0,
+            4.0,
+            34.0,
+            15.0,
+            36.0
+          ]
+        }
+      },
+      "notes": "Printed rounding and source discrepancies retained; no artificial balancing flows. Legacy has no complete comparable electricity table."
+    }
+  }
+}

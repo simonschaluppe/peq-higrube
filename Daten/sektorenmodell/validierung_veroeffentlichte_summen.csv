@@ -1,0 +1,6 @@
+﻿scenario,eev_sector_sum_pj,eev_published_pj,eev_rounding_difference_pj,generation_component_sum_pj,generation_published_pj,generation_rounding_difference_pj,electricity_component_sum_pj,electricity_demand_published_pj,electricity_rounding_difference_pj,electricity_balance_residual_pj,assessment
+wem_2023,1079,1079,0,345,346,-1,366,367,-1,0,"Publizierte PJ-Zahlen sind gerundet; Werte und Bilanzreste dokumentieren, NICHT künstlich normalisieren."
+wam_2023,983,984,-1,406,406,0,407,407,0,0,"Publizierte PJ-Zahlen sind gerundet; Werte und Bilanzreste dokumentieren, NICHT künstlich normalisieren."
+transition_2040,722,722,0,457,457,0,452,450,2,0,"Publizierte PJ-Zahlen sind gerundet; Werte und Bilanzreste dokumentieren, NICHT künstlich normalisieren."
+wem_2025,1002,1003,-1,339,339,0,375,376,-1,1,"Publizierte PJ-Zahlen sind gerundet; Werte und Bilanzreste dokumentieren, NICHT künstlich normalisieren."
+wam_2025,948,948,0,406,406,0,394,394,0,2,"Publizierte PJ-Zahlen sind gerundet; Werte und Bilanzreste dokumentieren, NICHT künstlich normalisieren."

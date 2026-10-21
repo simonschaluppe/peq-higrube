@@ -1,0 +1,46 @@
+scenario,year,metric,value_pj,energy_basis,source_id,source_location,notes
+wem_2023,2040,fossil,27,electricity_generation_or_net_import,UBA2023_SUM,"Tabelle D, S. 8",
+wem_2023,2040,hydro,174,electricity_generation_or_net_import,UBA2023_SUM,"Tabelle D, S. 8",
+wem_2023,2040,biomass,21,electricity_generation_or_net_import,UBA2023_SUM,"Tabelle D, S. 8",
+wem_2023,2040,geothermal,0,electricity_generation_or_net_import,UBA2023_SUM,"Tabelle D, S. 8", Originalkategorie: Umgebungswärme etc.; nicht ausschließlich Geothermie. Quellwert Strich; in übergebener Normierung als null behandelt.
+wem_2023,2040,pv,54,electricity_generation_or_net_import,UBA2023_SUM,"Tabelle D, S. 8",
+wem_2023,2040,wind,69,electricity_generation_or_net_import,UBA2023_SUM,"Tabelle D, S. 8",
+wem_2023,2040,hydrogen_electricity,0,electricity_generation_or_net_import,UBA2023_SUM,"Tabelle D, S. 8", Quellwert Strich; in übergebener Normierung als null behandelt.
+wem_2023,2040,generation_published_total,346,electricity_generation_or_net_import,UBA2023_SUM,"Tabelle D, S. 8",
+wem_2023,2040,net_imports,21,electricity_generation_or_net_import,UBA2023_SUM,"Tabelle D, S. 8",Negative Nettoimporte bedeuten Nettoexporte.
+wam_2023,2040,fossil,15,electricity_generation_or_net_import,UBA2023_SUM,"Tabelle D, S. 8",
+wam_2023,2040,hydro,176,electricity_generation_or_net_import,UBA2023_SUM,"Tabelle D, S. 8",
+wam_2023,2040,biomass,21,electricity_generation_or_net_import,UBA2023_SUM,"Tabelle D, S. 8",
+wam_2023,2040,geothermal,0,electricity_generation_or_net_import,UBA2023_SUM,"Tabelle D, S. 8", Originalkategorie: Umgebungswärme etc.; nicht ausschließlich Geothermie. Quellwert Strich; in übergebener Normierung als null behandelt.
+wam_2023,2040,pv,107,electricity_generation_or_net_import,UBA2023_SUM,"Tabelle D, S. 8",
+wam_2023,2040,wind,87,electricity_generation_or_net_import,UBA2023_SUM,"Tabelle D, S. 8",
+wam_2023,2040,hydrogen_electricity,0,electricity_generation_or_net_import,UBA2023_SUM,"Tabelle D, S. 8", Quellwert Strich; in übergebener Normierung als null behandelt.
+wam_2023,2040,generation_published_total,406,electricity_generation_or_net_import,UBA2023_SUM,"Tabelle D, S. 8",
+wam_2023,2040,net_imports,1,electricity_generation_or_net_import,UBA2023_SUM,"Tabelle D, S. 8",Negative Nettoimporte bedeuten Nettoexporte.
+transition_2040,2040,fossil,1,electricity_generation_or_net_import,TRANSITION,"Tabelle 16, S. 63",
+transition_2040,2040,hydro,173,electricity_generation_or_net_import,TRANSITION,"Tabelle 16, S. 63",
+transition_2040,2040,biomass,21,electricity_generation_or_net_import,TRANSITION,"Tabelle 16, S. 63",
+transition_2040,2040,geothermal,4,electricity_generation_or_net_import,TRANSITION,"Tabelle 16, S. 63",
+transition_2040,2040,pv,149,electricity_generation_or_net_import,TRANSITION,"Tabelle 16, S. 63",
+transition_2040,2040,wind,105,electricity_generation_or_net_import,TRANSITION,"Tabelle 16, S. 63",
+transition_2040,2040,hydrogen_electricity,4,electricity_generation_or_net_import,TRANSITION,"Tabelle 16, S. 63",
+transition_2040,2040,generation_published_total,457,electricity_generation_or_net_import,TRANSITION,"Tabelle 16, S. 63",
+transition_2040,2040,net_imports,-7,electricity_generation_or_net_import,TRANSITION,"Tabelle 16, S. 63",Negative Nettoimporte bedeuten Nettoexporte.
+wem_2025,2040,fossil,33,electricity_generation_or_net_import,UBA2025,"Tabelle E, S. 12", Maßgeblich ist die übergebene Normierung aus Tabelle E; Tabelle 19 S. 64 enthält abweichende Werte.
+wem_2025,2040,hydro,167,electricity_generation_or_net_import,UBA2025,"Tabelle E, S. 12", Maßgeblich ist die übergebene Normierung aus Tabelle E; Tabelle 19 S. 64 enthält abweichende Werte.
+wem_2025,2040,biomass,21,electricity_generation_or_net_import,UBA2025,"Tabelle E, S. 12", Maßgeblich ist die übergebene Normierung aus Tabelle E; Tabelle 19 S. 64 enthält abweichende Werte.
+wem_2025,2040,geothermal,0,electricity_generation_or_net_import,UBA2025,"Tabelle E, S. 12", Maßgeblich ist die übergebene Normierung aus Tabelle E; Tabelle 19 S. 64 enthält abweichende Werte. Originalkategorie: Umgebungswärme etc.; nicht ausschließlich Geothermie.
+wem_2025,2040,pv,53,electricity_generation_or_net_import,UBA2025,"Tabelle E, S. 12", Maßgeblich ist die übergebene Normierung aus Tabelle E; Tabelle 19 S. 64 enthält abweichende Werte.
+wem_2025,2040,wind,65,electricity_generation_or_net_import,UBA2025,"Tabelle E, S. 12", Maßgeblich ist die übergebene Normierung aus Tabelle E; Tabelle 19 S. 64 enthält abweichende Werte.
+wem_2025,2040,hydrogen_electricity,0,electricity_generation_or_net_import,UBA2025,"Tabelle E, S. 12", Maßgeblich ist die übergebene Normierung aus Tabelle E; Tabelle 19 S. 64 enthält abweichende Werte.
+wem_2025,2040,generation_published_total,339,electricity_generation_or_net_import,UBA2025,"Tabelle E, S. 12", Maßgeblich ist die übergebene Normierung aus Tabelle E; Tabelle 19 S. 64 enthält abweichende Werte.
+wem_2025,2040,net_imports,38,electricity_generation_or_net_import,UBA2025,"Tabelle E, S. 12",Negative Nettoimporte bedeuten Nettoexporte. Maßgeblich ist die übergebene Normierung aus Tabelle E; Tabelle 19 S. 64 enthält abweichende Werte.
+wam_2025,2040,fossil,15,electricity_generation_or_net_import,UBA2025,"Tabelle E, S. 12", Maßgeblich ist die übergebene Normierung aus Tabelle E; Tabelle 19 S. 64 enthält abweichende Werte.
+wam_2025,2040,hydro,176,electricity_generation_or_net_import,UBA2025,"Tabelle E, S. 12", Maßgeblich ist die übergebene Normierung aus Tabelle E; Tabelle 19 S. 64 enthält abweichende Werte.
+wam_2025,2040,biomass,21,electricity_generation_or_net_import,UBA2025,"Tabelle E, S. 12", Maßgeblich ist die übergebene Normierung aus Tabelle E; Tabelle 19 S. 64 enthält abweichende Werte.
+wam_2025,2040,geothermal,0,electricity_generation_or_net_import,UBA2025,"Tabelle E, S. 12", Maßgeblich ist die übergebene Normierung aus Tabelle E; Tabelle 19 S. 64 enthält abweichende Werte. Originalkategorie: Umgebungswärme etc.; nicht ausschließlich Geothermie.
+wam_2025,2040,pv,107,electricity_generation_or_net_import,UBA2025,"Tabelle E, S. 12", Maßgeblich ist die übergebene Normierung aus Tabelle E; Tabelle 19 S. 64 enthält abweichende Werte.
+wam_2025,2040,wind,87,electricity_generation_or_net_import,UBA2025,"Tabelle E, S. 12", Maßgeblich ist die übergebene Normierung aus Tabelle E; Tabelle 19 S. 64 enthält abweichende Werte.
+wam_2025,2040,hydrogen_electricity,0,electricity_generation_or_net_import,UBA2025,"Tabelle E, S. 12", Maßgeblich ist die übergebene Normierung aus Tabelle E; Tabelle 19 S. 64 enthält abweichende Werte.
+wam_2025,2040,generation_published_total,406,electricity_generation_or_net_import,UBA2025,"Tabelle E, S. 12", Maßgeblich ist die übergebene Normierung aus Tabelle E; Tabelle 19 S. 64 enthält abweichende Werte.
+wam_2025,2040,net_imports,-10,electricity_generation_or_net_import,UBA2025,"Tabelle E, S. 12",Negative Nettoimporte bedeuten Nettoexporte. Maßgeblich ist die übergebene Normierung aus Tabelle E; Tabelle 19 S. 64 enthält abweichende Werte.

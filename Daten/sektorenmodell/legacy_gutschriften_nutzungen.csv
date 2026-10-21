@@ -1,0 +1,5 @@
+﻿usage,budget_twh_pe,area_mio_m2_ngf,credit_kwh_pe_per_m2_ngf_a,rounded_destination_trip_percent,source
+wohnen,5.3,375.6,14.11,50,SCHNEIDER2023 Table 9
+buero_gewerbe,2.2,53.1,41.47,21,SCHNEIDER2023 Table 9
+bildung,0.29,22.5,12.93,3,SCHNEIDER2023 Table 9
+handel_sonstige,2.89,96.5,29.97,27,SCHNEIDER2023 Table 9

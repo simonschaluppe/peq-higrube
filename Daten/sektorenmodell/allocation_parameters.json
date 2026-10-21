@@ -1,0 +1,98 @@
+{
+  "legacy_streicher": {
+    "central_generation_share": {
+      "hydro": null,
+      "wind": null,
+      "pv": null,
+      "biomass": null,
+      "geothermal": null,
+      "hydrogen_electricity": null,
+      "fossil": null
+    },
+    "miv_share_of_transport_electricity": null,
+    "priority_rule": null,
+    "import_allocation_rule": null,
+    "primary_energy_factors": null,
+    "parameter_source": null
+  },
+  "transition_2040": {
+    "central_generation_share": {
+      "hydro": null,
+      "wind": null,
+      "pv": null,
+      "biomass": null,
+      "geothermal": null,
+      "hydrogen_electricity": null,
+      "fossil": null
+    },
+    "miv_share_of_transport_electricity": null,
+    "priority_rule": null,
+    "import_allocation_rule": null,
+    "primary_energy_factors": null,
+    "parameter_source": null
+  },
+  "wem_2025": {
+    "central_generation_share": {
+      "hydro": null,
+      "wind": null,
+      "pv": null,
+      "biomass": null,
+      "geothermal": null,
+      "hydrogen_electricity": null,
+      "fossil": null
+    },
+    "miv_share_of_transport_electricity": null,
+    "priority_rule": null,
+    "import_allocation_rule": null,
+    "primary_energy_factors": null,
+    "parameter_source": null
+  },
+  "wam_2025": {
+    "central_generation_share": {
+      "hydro": null,
+      "wind": null,
+      "pv": null,
+      "biomass": null,
+      "geothermal": null,
+      "hydrogen_electricity": null,
+      "fossil": null
+    },
+    "miv_share_of_transport_electricity": null,
+    "priority_rule": null,
+    "import_allocation_rule": null,
+    "primary_energy_factors": null,
+    "parameter_source": null
+  },
+  "wem_2023": {
+    "central_generation_share": {
+      "hydro": null,
+      "wind": null,
+      "pv": null,
+      "biomass": null,
+      "geothermal": null,
+      "hydrogen_electricity": null,
+      "fossil": null
+    },
+    "miv_share_of_transport_electricity": null,
+    "priority_rule": null,
+    "import_allocation_rule": null,
+    "primary_energy_factors": null,
+    "parameter_source": null
+  },
+  "wam_2023": {
+    "central_generation_share": {
+      "hydro": null,
+      "wind": null,
+      "pv": null,
+      "biomass": null,
+      "geothermal": null,
+      "hydrogen_electricity": null,
+      "fossil": null
+    },
+    "miv_share_of_transport_electricity": null,
+    "priority_rule": null,
+    "import_allocation_rule": null,
+    "primary_energy_factors": null,
+    "parameter_source": null
+  }
+}

@@ -1,0 +1,37 @@
+[
+  {
+    "scenario": "transition_2040",
+    "eev_rounding_difference_pj": 0.0,
+    "generation_rounding_difference_pj": 0.0,
+    "electricity_rounding_difference_pj": 2.0,
+    "electricity_balance_residual_pj": 0.0
+  },
+  {
+    "scenario": "wem_2025",
+    "eev_rounding_difference_pj": -1.0,
+    "generation_rounding_difference_pj": 0.0,
+    "electricity_rounding_difference_pj": -1.0,
+    "electricity_balance_residual_pj": 1.0
+  },
+  {
+    "scenario": "wam_2025",
+    "eev_rounding_difference_pj": 0.0,
+    "generation_rounding_difference_pj": 0.0,
+    "electricity_rounding_difference_pj": 0.0,
+    "electricity_balance_residual_pj": 2.0
+  },
+  {
+    "scenario": "wem_2023",
+    "eev_rounding_difference_pj": 0.0,
+    "generation_rounding_difference_pj": -1.0,
+    "electricity_rounding_difference_pj": -1.0,
+    "electricity_balance_residual_pj": 0.0
+  },
+  {
+    "scenario": "wam_2023",
+    "eev_rounding_difference_pj": -1.0,
+    "generation_rounding_difference_pj": 0.0,
+    "electricity_rounding_difference_pj": 0.0,
+    "electricity_balance_residual_pj": 0.0
+  }
+]

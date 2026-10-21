@@ -1,0 +1,4 @@
+﻿scenario,source,target,value_pj,energy_basis,flow_kind,origin,status,comment
+transition_2040,PV,Stromsystem,149,electricity,physical,TRANSITION Table 16,documented,"Zunächst nur Eingabe in Stromsystem, noch keine direkte sektorale Zuordnung"
+transition_2040,Zentraler erneuerbarer Pool,Industrie (bilanzielle Zuordnung),,electricity,normative_allocation,ausstehende Regel,TBD,Nicht aus PV-Zahl ableiten: Regel zentral/dezentral und Reihenfolge zuerst festlegen
+legacy_streicher,Zentraler Überschuss,Mobilitätsgutschrift,,primary_energy,virtual_credit,SCHNEIDER2023 Table 8,TBD,"10.68 TWh PE/a ist ein Primärenergie-Wert, nicht ohne Umrechnung als Stromfluss zeichnen"

@@ -38,14 +38,13 @@ Die wissenschaftliche Herleitung macht diese Entscheidungen prüfbar. Sie hebt i
 
 ### Prinzip der sektoralen Zuordnung
 
-Das Allokationsmodell betrachtet ein vollständig erneuerbares österreichisches Energiesystem im Zieljahr 2040. Erneuerbare Erzeugung und verbleibende Energiebedarfe werden sektoral zugeordnet. Daraus ergeben sich der erforderliche Beitrag dezentraler Erzeugung im Gebäudesektor und ein Anteil zentral bereitgestellter erneuerbarer Energie für den motorisierten Individualverkehr [@schneider2023context, Abschn. 6.1–6.2, S. 12–16].
+Die derzeitige Operationalisierung beruht auf der Streicher-basierten Herleitung: Das Szenario „Energieautarkie für Österreich 2050“ wurde von Schneider, Zelger und Klauda (2020) angepasst und im PEQ-Modell 2023 für den Zielhorizont 2040 weiterentwickelt [@schneider2020lokal, Abschn. 3.1, S. 3–6; @schneider2023context, Abschn. 6.1–6.2]. Dieses historische Referenzmodell betrachtet ein vollständig erneuerbares österreichisches Energiesystem. Erneuerbare Erzeugung und verbleibende Energiebedarfe werden sektoral zugeordnet. Daraus ergeben sich der erforderliche Beitrag dezentraler Erzeugung im Gebäudesektor und ein Anteil zentral bereitgestellter erneuerbarer Energie für den motorisierten Individualverkehr [@schneider2023context, Abschn. 6.1–6.2, S. 12–16].
 
 Eine dem Quartier zugerechnete Energiemenge ist deshalb weder automatisch lokal erzeugte Energie noch ein vertraglich gesicherter Strombezug. Im Bewertungsverfahren kann sie als virtuelle Gutschrift erscheinen. Der physische Energiefluss muss davon getrennt bilanziert werden.
 
 Die Anforderungen an Quartiere werden aus einem nationalen Bilanzmodell abgeleitet. Dieses verknüpft die verfügbare erneuerbare Energie mit den Bedarfen der einzelnen Sektoren.
 
-![Schematische Zuordnung erneuerbarer Energie und sektoraler Energiebedarfe im österreichischen Zielszenario 2040.](../Abbildungen/nationales_bilanzmodell.svg){#fig-nationales-bilanzmodell width="20
-0%"}
+![Historisches nationales Bilanz- und Zuordnungsmodell für die PEQ-Operationalisierung 2020/2023. Die dargestellte 60/40-Aufteilung ist schematisch und umfasst unterschiedliche Energiearten; sie ist weder eine maßstäbliche Strombilanz noch eine Zuordnungsregel für Transition 2040.](../Abbildungen/nationales_bilanzmodell.svg){#fig-nationales-bilanzmodell width="100%"}
 
 Im Referenzszenario sind dem Gebäudesektor 114,8 PJ/a Photovoltaikerzeugung und 137,6 PJ/a Strombedarf nach sektoraler Allokation zugeordnet. Der Zielsaldo beträgt −22,7 PJ/a [@schneider2023context, Tab. 6, S. 13]. Diese jährlichen Größen beschreiben die sektorale Strombilanz. Für die primärenergetische Quartiersbewertung werden sie mit den zugehörigen Gewichtungen und Flächenbezügen verknüpft.
 
@@ -140,6 +139,12 @@ Die Übertragbarkeit der Salzburger Stichprobe auf andere Bundesländer, der ein
 
 ## Mobilitätsbudget: vom nationalen Anteil zur Nutzung
 
+### Derzeitige Operationalisierung
+
+Die folgenden Streicher-basierten Mobilitätsgutschriften bleiben der geltende Bewertungsstand dieser Berichtsfassung. Die veröffentlichte klimaaktiv-Broschüre 2026 beschreibt den Kontextfaktor Mobilität; das bereitgestellte Tool-Handbuch Version 1.08 dokumentiert die nutzungsabhängige virtuelle Deckung und beispielhaft den Wohnwert von 14,11 kWh PE/(m² NGF a) [@klimaaktiv2026peq, S. 10; @peq2026handbuch, S. 66]. Die vollständigen vier Referenzwerte stammen aus der Kalibrierung 2023. Damit wird keine vollständige Prüfung der aktuell produktiven Softwareversion behauptet.
+
+Zentral beziehungsweise regional erzeugte erneuerbare Energie wird in der historischen Zuordnung zunächst für übergeordnete Bedarfe, insbesondere Industrie und öffentlichen Verkehr, reserviert. Der verbleibende Saldo begründet das Mobilitätsbudget. Gebäude übernehmen zugleich dezentrale Erzeugungsaufgaben und die Bilanzierung des ihnen zugeordneten MIV. Diese Priorität ist eine Allokationsentscheidung und keine physische Trennung des Stromnetzes [@schneider2020lokal, Abschn. 3.1.4 und 5.1; @schneider2023context, Abschn. 6.2].
+
 Der motorisierte Individualverkehr erweitert den Energiebedarf, für den das Quartier bilanziell Verantwortung übernimmt. Gleichzeitig erhält er einen Anteil der zentral bereitgestellten erneuerbaren Energie. Dieser Anteil wird über die Nutzungen auf Quartiere verteilt.
 
 Für den MIV sind 6,30 TWh/a Strom und 0,36 TWh/a Biomasse zugeordnet. Mit der primärenergetischen Gewichtung ergibt sich ein Budget von 10,68 TWh PE/a [@schneider2023context, Tab. 8, S. 16].
@@ -167,6 +172,35 @@ Die Gutschrift richtet sich nach der Nutzung; der Mobilitätsbedarf hängt zusä
 Für die Bewertung wird der Zielverkehr dem Quartier zugeordnet. Die Simulation der Lade- und Speicherflüsse muss dagegen die tatsächliche Anwesenheit und Ladung der Fahrzeuge berücksichtigen. Ein zugeteiltes Mobilitätsbudget ist weder ein physisches Ladeangebot noch eine Aussage über die nutzbare Batteriekapazität.
 
 Die Mobilitätsallokation beruht auf den Mobilitätsdaten von 2013/2014 und dem nationalen Energieszenario. Neue Erhebungen zu Verkehrsverhalten, Fahrzeugflotte und Flächennutzung ermöglichen eine Aktualisierung der Gutschriften. Das Zuordnungsprinzip bleibt dabei bestehen; Ausgangsbudget und Verteilung werden gemeinsam überprüft.
+
+### Laufende Rekalibrierung auf Transition 2040
+
+::: {.callout-note title="In Überarbeitung: Rekalibrierung auf UBA Transition 2040"}
+Die geltenden Gutschriften bleiben unverändert. Die Übertragung der sektoralen Zuordnung auf *Transition 2040* des Umweltbundesamts ist in Bearbeitung. Die folgenden UBA-Werte sind eine veröffentlichte Szenariogrundlage und noch keine neue Allokation oder Deklarationsanforderung. WEM/WAM 2025 dienen als neuere Vergleichsszenarien, WEM/WAM 2023 als Vergleich derselben Modellgeneration wie Transition. WAM 2025 entspricht im Energieteil WAM NEKP 2024 [@uba2025szenarien, S. 62].
+:::
+
+Die Fortschreibung konzentriert sich auf die **Elektrizitätsbilanz**. Stromerzeugung, Strombedarf und Nettoimporte werden in PJ elektrischer Energie pro Jahr verglichen. Der energetische Endverbrauch aller Energieträger bleibt ein separater Sektorausweis im Datenmodell und geht nicht als Strombedarf in das Allokationsmodell ein. Verbrauch des Energiesektors, Transportverluste und elektrischer Umwandlungseinsatz sind gesonderte Bedarfspositionen. Der Umwandlungseinsatz ist bereits ein Strombedarf; der später erzeugte Wasserstoff darf nicht nochmals als Endstrom addiert werden.
+
+{{< include _generated/transition-stromtabellen.qmd >}}
+
+Die publizierten Gesamtsummen bleiben neben den Komponentensummen erhalten. Die Bilanzreste werden weder auf Bedarfe verteilt noch durch erfundene Erzeugung oder Verlustflüsse ausgeglichen. Für WEM/WAM 2025 folgt die gelieferte Normierung **Tabelle E auf S. 12** von REP-0995. Tabelle 19 auf S. 64 desselben Berichts enthält abweichende Erzeugungswerte, etwa 403 statt 406 PJ für WAM 2040. Dieser Quellenwiderspruch ist zusätzlich zu den Rundungsresten offen; die beiden Fassungen werden nicht vermischt [@uba2025szenarien, Tab. E und 19]. Für Transition bleibt REP-0880 Tabelle 16 maßgeblich, nicht die abweichend zusammengefasste Erzeugung in REP-0882.
+
+Die Legacy-Kalibrierung wird über ihre belegten sektoralen Zuordnungen und Mobilitätsbudgets verglichen. Eine vollständige nationale Streicher-Stromtabelle in derselben Abgrenzung wie die UBA-Tabellen liegt im normierten Datenpaket nicht vor. Fehlende Werte werden deshalb nicht mit null oder einer UBA-Zahl ersetzt; auch die historischen Horizonte 2050 und 2040 werden nicht gleichgesetzt.
+
+### Parametrische Struktur der weiteren Allokation
+
+![Vorbereitete Modellstruktur mit drei getrennten Ebenen. Pfeile zeigen Beziehungen, keine maßstäblichen Energiemengen. Wärme bleibt außerhalb der hier vorbereiteten Elektrizitätsrechnung.](../Abbildungen/transition_allokation_schema.svg){#fig-transition-allokation-schema}
+
+Die gemeinsame Knoten- und Verbindungsstruktur unterstützt Legacy, Transition sowie WEM/WAM. Quellenbelegte Stromflüsse können als eigene Sankey-Ebene dargestellt werden. Normative Zuordnungen und virtuelle Primärenergie-Gutschriften bleiben separate Ebenen. Offene Werte sind als fehlend markiert und erhalten keine erfundene Linienbreite. Insbesondere darf ein Budget in PJ Primärenergie nicht mit einem Fluss in PJ elektrischer Energie verbunden werden.
+
+Für eine neue Mobilitätsgutschrift sind folgende Entscheidungen erforderlich:
+
+- **Zentral/dezentral:** Anteile je Erzeugungstechnologie, insbesondere Gebäude-PV gegenüber Freiflächen und größeren PV-Anlagen. Ein Fall mit 100 % dezentraler PV ist als ausdrücklich gekennzeichnete Parameterstudie möglich, aber kein Standardwert.
+- **Verkehr:** belegte Trennung von MIV, öffentlichem Verkehr und weiteren Verkehrsbedarfen. Eine proportionale Übertragung historischer Anteile wäre eine zusätzliche Annahme und ist derzeit nicht gesetzt.
+- **Priorität und Berechtigung:** Reihenfolge und Deckungsanteile der Sektoren, Umgang mit fossiler Erzeugung, Importen und Herkunft der Rückverstromung. Der gesamte Strompool ist nicht automatisch ein zentraler erneuerbarer Pool.
+- **Primärenergie und Zeitbezug:** gesicherte Konversionsfaktoren und zeitliche Bewertung sowie konsistente Behandlung von Umwandlung, Speicherung und Verlusten. Erst danach kann ein verfügbares Budget auf Nutzflächen verteilt werden.
+
+Die nationalen Jahresstrombilanzen allein bestimmen keine dieser normativen Regeln. Eine pauschale Skalierung der bisherigen Gutschrift mit dem Verhältnis neuer zu alter Stromerzeugung ist deshalb nicht vorgesehen.
 
 ## THG-Budget: Wie entstehen 320 kg CO₂e je Quadratmeter?
 

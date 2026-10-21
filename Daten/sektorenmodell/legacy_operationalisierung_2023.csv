@@ -1,0 +1,11 @@
+﻿metric,value,unit,interpretation,source
+scenario_base,Streicher Energieautarkie Österreich 2050; Anpassungen Schneider/Zelger/Klauda 2020 und Schneider et al. 2023,text,Szenariobasis und aktuelle Kalibrierung unterscheiden,SCHNEIDER2020;SCHNEIDER2023
+schematic_central_generation_share,60,percent,Nur schematischer Anteil auf Folie; keine direkt UBA-kompatible Quote,User slide
+schematic_decentral_generation_share,40,percent,Nur schematischer Anteil auf Folie; keine direkt UBA-kompatible Quote,User slide
+historic_2020_credit_per_person,1080,kWh_end/person/year,Frühere 2050-Endenergie-Gutschrift pro Person; nicht mit PE-Flächengutschrift 2023 gleichsetzen,SCHNEIDER2020 p8
+mobilitaetsbudget_strom,6.3,TWh_electric/year,Publizierter Saldo zentraler Anlagen,SCHNEIDER2023 Table 8
+mobilitaetsbudget_biomasse,0.36,TWh_end/year,Publizierter Saldo Biomasse,SCHNEIDER2023 Table 8
+mobilitaetsbudget_primärenergie,10.68,TWh_PE_total/year,Publizierte Primärenergie-Gutschrift,SCHNEIDER2023 Table 8
+gebaeude_pv_stromerzeugung,114.8,PJ_electric/year,Gebäudesektor-Zuordnung in 2023-Paper,SCHNEIDER2023 Table 6
+gebaeude_strombedarf,137.6,PJ_electric/year,Gebäudesektor-Zuordnung in 2023-Paper,SCHNEIDER2023 Table 6
+gebaeude_saldo,-22.7,PJ_electric/year,Publizierter Saldo aus ungerundeten Werten; gerundete Differenz -22.8,SCHNEIDER2023 Table 6
