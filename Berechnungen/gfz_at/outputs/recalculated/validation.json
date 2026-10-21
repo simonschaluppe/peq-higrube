@@ -1,0 +1,48 @@
+{
+  "description": "AT GFZ: Vienna sample for Vienna, Salzburg sample elsewhere, explicitly flagged fallbacks",
+  "GFZ_bins": {
+    "step": 0.1,
+    "max": 20.0,
+    "centers": true
+  },
+  "input_files": {
+    "buildings": "data\\rohdaten_python.xlsx",
+    "statistics": "data\\GFZ_Analyse_AT.xlsx"
+  },
+  "input_sha256": {
+    "buildings": "c1c5b3d9e78384465c18e2bf83364cec5e2fb345b6075badcd14ad939dd74a91",
+    "statistics": "dfd871b2e143dba421e39d3b13296e55ac5a952cc2c3b0ccef5641ce4bbc4b33"
+  },
+  "options": {
+    "fallback": "vienna",
+    "method": "kde",
+    "min_samples": 5
+  },
+  "sample_rows_original": 170163,
+  "sample_rows_usable": 158350,
+  "excluded_other_uses": 11811,
+  "excluded_invalid_numeric": 0,
+  "excluded_gfz_above_max": 2,
+  "excluded_unexpected_region": 0,
+  "excluded_bgf_m2_total": 3843501.6,
+  "sample_gfz_max": 36.52210884353742,
+  "statistics_ngf_total_m2": 847147914.0,
+  "statistics_bgf_total_m2": 1058934892.5,
+  "national_minus_provinces_ngf_m2": 0.0,
+  "ngf_per_bgf_assumption": 0.8,
+  "excluded_legacy_aggregate_rows": {
+    "AT ohne Wien und Salzburg": 7,
+    "Alles": 1
+  },
+  "n_positive_statistical_cells": 516,
+  "n_fallback_cells": 91,
+  "fallback_bgf_m2": 17960405.0,
+  "fallback_share_of_total_bgf": 0.016960820846688644,
+  "allocated_bgf_m2": 1058934892.4999999,
+  "total_allocation_residual_m2": -1.1920928955078125e-07,
+  "fallback_by_type": {
+    "fallback-salzburg-nearest-storey": 66302.5,
+    "fallback-vienna-exact": 17361748.75,
+    "fallback-wien-nearest-storey": 532353.75
+  }
+}

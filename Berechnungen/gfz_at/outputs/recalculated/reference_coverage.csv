@@ -1,0 +1,517 @@
+Bundesland,GK,GWR_Nutzung,BGF_target_m2,primary_reference_region,primary_n,sufficient
+Burgenland,1,Hotels o.Ä.,297045.0,Salzburg,113,True
+Burgenland,2,Hotels o.Ä.,775491.25,Salzburg,906,True
+Burgenland,3,Hotels o.Ä.,339208.75,Salzburg,1173,True
+Burgenland,4,Hotels o.Ä.,161272.5,Salzburg,539,True
+Burgenland,5,Hotels o.Ä.,115392.5,Salzburg,175,True
+Burgenland,6-10,Hotels o.Ä.,20097.5,Salzburg,65,True
+Kärnten,1,Hotels o.Ä.,300330.0,Salzburg,113,True
+Kärnten,2,Hotels o.Ä.,1565123.75,Salzburg,906,True
+Kärnten,3,Hotels o.Ä.,1488498.75,Salzburg,1173,True
+Kärnten,4,Hotels o.Ä.,712432.5,Salzburg,539,True
+Kärnten,5,Hotels o.Ä.,285157.5,Salzburg,175,True
+Kärnten,6-10,Hotels o.Ä.,264208.75,Salzburg,65,True
+Niederösterreich,1,Hotels o.Ä.,954321.25,Salzburg,113,True
+Niederösterreich,2,Hotels o.Ä.,3200871.25,Salzburg,906,True
+Niederösterreich,3,Hotels o.Ä.,1371122.5,Salzburg,1173,True
+Niederösterreich,4,Hotels o.Ä.,482482.5,Salzburg,539,True
+Niederösterreich,5,Hotels o.Ä.,347253.75,Salzburg,175,True
+Niederösterreich,6-10,Hotels o.Ä.,230492.5,Salzburg,65,True
+Oberösterreich,1,Hotels o.Ä.,428415.0,Salzburg,113,True
+Oberösterreich,2,Hotels o.Ä.,2232250.0,Salzburg,906,True
+Oberösterreich,3,Hotels o.Ä.,1396163.75,Salzburg,1173,True
+Oberösterreich,4,Hotels o.Ä.,672228.75,Salzburg,539,True
+Oberösterreich,5,Hotels o.Ä.,209801.25,Salzburg,175,True
+Oberösterreich,6-10,Hotels o.Ä.,306331.25,Salzburg,65,True
+Oberösterreich,11+,Hotels o.Ä.,36171.25,Salzburg,0,False
+Salzburg,1,Hotels o.Ä.,313300.0,Salzburg,113,True
+Salzburg,2,Hotels o.Ä.,1533495.0,Salzburg,906,True
+Salzburg,3,Hotels o.Ä.,2544263.75,Salzburg,1173,True
+Salzburg,4,Hotels o.Ä.,1762643.75,Salzburg,539,True
+Salzburg,5,Hotels o.Ä.,708616.25,Salzburg,175,True
+Salzburg,6-10,Hotels o.Ä.,539172.5,Salzburg,65,True
+Steiermark,1,Hotels o.Ä.,523736.25,Salzburg,113,True
+Steiermark,2,Hotels o.Ä.,2492163.75,Salzburg,906,True
+Steiermark,3,Hotels o.Ä.,1672920.0,Salzburg,1173,True
+Steiermark,4,Hotels o.Ä.,587240.0,Salzburg,539,True
+Steiermark,5,Hotels o.Ä.,325893.75,Salzburg,175,True
+Steiermark,6-10,Hotels o.Ä.,322885.0,Salzburg,65,True
+Tirol,1,Hotels o.Ä.,438143.75,Salzburg,113,True
+Tirol,2,Hotels o.Ä.,2269282.5,Salzburg,906,True
+Tirol,3,Hotels o.Ä.,3730043.75,Salzburg,1173,True
+Tirol,4,Hotels o.Ä.,2636760.0,Salzburg,539,True
+Tirol,5,Hotels o.Ä.,1483265.0,Salzburg,175,True
+Tirol,6-10,Hotels o.Ä.,1234241.25,Salzburg,65,True
+Tirol,11+,Hotels o.Ä.,123687.5,Salzburg,0,False
+Vorarlberg,1,Hotels o.Ä.,121995.0,Salzburg,113,True
+Vorarlberg,2,Hotels o.Ä.,588240.0,Salzburg,906,True
+Vorarlberg,3,Hotels o.Ä.,965052.5,Salzburg,1173,True
+Vorarlberg,4,Hotels o.Ä.,736126.25,Salzburg,539,True
+Vorarlberg,5,Hotels o.Ä.,290550.0,Salzburg,175,True
+Vorarlberg,6-10,Hotels o.Ä.,195207.5,Salzburg,65,True
+Vorarlberg,11+,Hotels o.Ä.,6262.5,Salzburg,0,False
+Wien,1,Hotels o.Ä.,664098.75,Wien,56,True
+Wien,2,Hotels o.Ä.,839501.25,Wien,124,True
+Wien,3,Hotels o.Ä.,510431.25,Wien,94,True
+Wien,4,Hotels o.Ä.,642852.5,Wien,46,True
+Wien,5,Hotels o.Ä.,609636.25,Wien,70,True
+Wien,6-10,Hotels o.Ä.,1472938.75,Wien,297,True
+Wien,11+,Hotels o.Ä.,290112.5,Wien,20,True
+Burgenland,1,Büronutzung,344471.25,Salzburg,63,True
+Burgenland,2,Büronutzung,927351.25,Salzburg,334,True
+Burgenland,3,Büronutzung,372522.5,Salzburg,431,True
+Burgenland,4,Büronutzung,107371.25,Salzburg,218,True
+Burgenland,5,Büronutzung,64303.75,Salzburg,115,True
+Burgenland,6-10,Büronutzung,37026.25,Salzburg,107,True
+Kärnten,1,Büronutzung,610093.75,Salzburg,63,True
+Kärnten,2,Büronutzung,1441738.75,Salzburg,334,True
+Kärnten,3,Büronutzung,915103.75,Salzburg,431,True
+Kärnten,4,Büronutzung,524612.5,Salzburg,218,True
+Kärnten,5,Büronutzung,305597.5,Salzburg,115,True
+Kärnten,6-10,Büronutzung,279863.75,Salzburg,107,True
+Kärnten,11+,Büronutzung,47692.5,Salzburg,0,False
+Niederösterreich,1,Büronutzung,2230120.0,Salzburg,63,True
+Niederösterreich,2,Büronutzung,5258126.25,Salzburg,334,True
+Niederösterreich,3,Büronutzung,2400276.25,Salzburg,431,True
+Niederösterreich,4,Büronutzung,990545.0,Salzburg,218,True
+Niederösterreich,5,Büronutzung,378651.25,Salzburg,115,True
+Niederösterreich,6-10,Büronutzung,567643.75,Salzburg,107,True
+Niederösterreich,11+,Büronutzung,79090.0,Salzburg,0,False
+Oberösterreich,1,Büronutzung,1280917.5,Salzburg,63,True
+Oberösterreich,2,Büronutzung,3895947.5,Salzburg,334,True
+Oberösterreich,3,Büronutzung,3011958.75,Salzburg,431,True
+Oberösterreich,4,Büronutzung,1753320.0,Salzburg,218,True
+Oberösterreich,5,Büronutzung,872547.5,Salzburg,115,True
+Oberösterreich,6-10,Büronutzung,1830357.5,Salzburg,107,True
+Oberösterreich,11+,Büronutzung,134502.5,Salzburg,0,False
+Salzburg,1,Büronutzung,379490.0,Salzburg,63,True
+Salzburg,2,Büronutzung,1484477.5,Salzburg,334,True
+Salzburg,3,Büronutzung,1596286.25,Salzburg,431,True
+Salzburg,4,Büronutzung,815470.0,Salzburg,218,True
+Salzburg,5,Büronutzung,345100.0,Salzburg,115,True
+Salzburg,6-10,Büronutzung,304893.75,Salzburg,107,True
+Steiermark,1,Büronutzung,1175906.25,Salzburg,63,True
+Steiermark,2,Büronutzung,3564386.25,Salzburg,334,True
+Steiermark,3,Büronutzung,1890603.75,Salzburg,431,True
+Steiermark,4,Büronutzung,1053566.25,Salzburg,218,True
+Steiermark,5,Büronutzung,708612.5,Salzburg,115,True
+Steiermark,6-10,Büronutzung,1008591.25,Salzburg,107,True
+Steiermark,11+,Büronutzung,93700.0,Salzburg,0,False
+Tirol,1,Büronutzung,402168.75,Salzburg,63,True
+Tirol,2,Büronutzung,1314940.0,Salzburg,334,True
+Tirol,3,Büronutzung,1076031.25,Salzburg,431,True
+Tirol,4,Büronutzung,975873.75,Salzburg,218,True
+Tirol,5,Büronutzung,580130.0,Salzburg,115,True
+Tirol,6-10,Büronutzung,737835.0,Salzburg,107,True
+Tirol,11+,Büronutzung,51060.0,Salzburg,0,False
+Vorarlberg,1,Büronutzung,232270.0,Salzburg,63,True
+Vorarlberg,2,Büronutzung,781000.0,Salzburg,334,True
+Vorarlberg,3,Büronutzung,623407.5,Salzburg,431,True
+Vorarlberg,4,Büronutzung,490120.0,Salzburg,218,True
+Vorarlberg,5,Büronutzung,246260.0,Salzburg,115,True
+Vorarlberg,6-10,Büronutzung,326243.75,Salzburg,107,True
+Wien,1,Büronutzung,2254243.75,Wien,137,True
+Wien,2,Büronutzung,2335358.75,Wien,398,True
+Wien,3,Büronutzung,2257727.5,Wien,457,True
+Wien,4,Büronutzung,2763435.0,Wien,434,True
+Wien,5,Büronutzung,3005218.75,Wien,572,True
+Wien,6-10,Büronutzung,8888988.75,Wien,2297,True
+Wien,11+,Büronutzung,2199746.25,Wien,103,True
+Burgenland,1,Groß- und Einzelhandelsgebäude,904932.5,Salzburg,240,True
+Burgenland,2,Groß- und Einzelhandelsgebäude,1021286.25,Salzburg,601,True
+Burgenland,3,Groß- und Einzelhandelsgebäude,293931.25,Salzburg,551,True
+Burgenland,4,Groß- und Einzelhandelsgebäude,72680.0,Salzburg,166,True
+Burgenland,5,Groß- und Einzelhandelsgebäude,26205.0,Salzburg,65,True
+Burgenland,6-10,Groß- und Einzelhandelsgebäude,27233.75,Salzburg,47,True
+Kärnten,1,Groß- und Einzelhandelsgebäude,1109106.25,Salzburg,240,True
+Kärnten,2,Groß- und Einzelhandelsgebäude,1701706.25,Salzburg,601,True
+Kärnten,3,Groß- und Einzelhandelsgebäude,778717.5,Salzburg,551,True
+Kärnten,4,Groß- und Einzelhandelsgebäude,468533.75,Salzburg,166,True
+Kärnten,5,Groß- und Einzelhandelsgebäude,125647.5,Salzburg,65,True
+Kärnten,6-10,Groß- und Einzelhandelsgebäude,25713.75,Salzburg,47,True
+Niederösterreich,1,Groß- und Einzelhandelsgebäude,4360280.0,Salzburg,240,True
+Niederösterreich,2,Groß- und Einzelhandelsgebäude,6699812.5,Salzburg,601,True
+Niederösterreich,3,Groß- und Einzelhandelsgebäude,1891177.5,Salzburg,551,True
+Niederösterreich,4,Groß- und Einzelhandelsgebäude,602410.0,Salzburg,166,True
+Niederösterreich,5,Groß- und Einzelhandelsgebäude,292250.0,Salzburg,65,True
+Niederösterreich,6-10,Groß- und Einzelhandelsgebäude,157022.5,Salzburg,47,True
+Oberösterreich,1,Groß- und Einzelhandelsgebäude,3003776.25,Salzburg,240,True
+Oberösterreich,2,Groß- und Einzelhandelsgebäude,4881528.75,Salzburg,601,True
+Oberösterreich,3,Groß- und Einzelhandelsgebäude,2319676.25,Salzburg,551,True
+Oberösterreich,4,Groß- und Einzelhandelsgebäude,718947.5,Salzburg,166,True
+Oberösterreich,5,Groß- und Einzelhandelsgebäude,388533.75,Salzburg,65,True
+Oberösterreich,6-10,Groß- und Einzelhandelsgebäude,602012.5,Salzburg,47,True
+Oberösterreich,11+,Groß- und Einzelhandelsgebäude,36281.25,Salzburg,0,False
+Salzburg,1,Groß- und Einzelhandelsgebäude,781242.5,Salzburg,240,True
+Salzburg,2,Groß- und Einzelhandelsgebäude,1692433.75,Salzburg,601,True
+Salzburg,3,Groß- und Einzelhandelsgebäude,1141882.5,Salzburg,551,True
+Salzburg,4,Groß- und Einzelhandelsgebäude,454231.25,Salzburg,166,True
+Salzburg,5,Groß- und Einzelhandelsgebäude,235081.25,Salzburg,65,True
+Salzburg,6-10,Groß- und Einzelhandelsgebäude,160463.75,Salzburg,47,True
+Steiermark,1,Groß- und Einzelhandelsgebäude,2792800.0,Salzburg,240,True
+Steiermark,2,Groß- und Einzelhandelsgebäude,4128207.5,Salzburg,601,True
+Steiermark,3,Groß- und Einzelhandelsgebäude,1520335.0,Salzburg,551,True
+Steiermark,4,Groß- und Einzelhandelsgebäude,632246.25,Salzburg,166,True
+Steiermark,5,Groß- und Einzelhandelsgebäude,523753.75,Salzburg,65,True
+Steiermark,6-10,Groß- und Einzelhandelsgebäude,308837.5,Salzburg,47,True
+Tirol,1,Groß- und Einzelhandelsgebäude,1056428.75,Salzburg,240,True
+Tirol,2,Groß- und Einzelhandelsgebäude,1992108.75,Salzburg,601,True
+Tirol,3,Groß- und Einzelhandelsgebäude,1345603.75,Salzburg,551,True
+Tirol,4,Groß- und Einzelhandelsgebäude,713397.5,Salzburg,166,True
+Tirol,5,Groß- und Einzelhandelsgebäude,451607.5,Salzburg,65,True
+Tirol,6-10,Groß- und Einzelhandelsgebäude,278023.75,Salzburg,47,True
+Tirol,11+,Groß- und Einzelhandelsgebäude,12808.75,Salzburg,0,False
+Vorarlberg,1,Groß- und Einzelhandelsgebäude,443886.25,Salzburg,240,True
+Vorarlberg,2,Groß- und Einzelhandelsgebäude,1051080.0,Salzburg,601,True
+Vorarlberg,3,Groß- und Einzelhandelsgebäude,659873.75,Salzburg,551,True
+Vorarlberg,4,Groß- und Einzelhandelsgebäude,343160.0,Salzburg,166,True
+Vorarlberg,5,Groß- und Einzelhandelsgebäude,75272.5,Salzburg,65,True
+Vorarlberg,6-10,Groß- und Einzelhandelsgebäude,116052.5,Salzburg,47,True
+Wien,1,Groß- und Einzelhandelsgebäude,1970922.5,Wien,164,True
+Wien,2,Groß- und Einzelhandelsgebäude,2467013.75,Wien,153,True
+Wien,3,Groß- und Einzelhandelsgebäude,1195506.25,Wien,102,True
+Wien,4,Groß- und Einzelhandelsgebäude,1170187.5,Wien,71,True
+Wien,5,Groß- und Einzelhandelsgebäude,808960.0,Wien,57,True
+Wien,6-10,Groß- und Einzelhandelsgebäude,1779283.75,Wien,80,True
+Wien,11+,Groß- und Einzelhandelsgebäude,52938.75,Wien,4,False
+Burgenland,1,Verkehrs- und Nachrichtenwesen,116477.5,Salzburg,29,True
+Burgenland,2,Verkehrs- und Nachrichtenwesen,133813.75,Salzburg,23,True
+Burgenland,3,Verkehrs- und Nachrichtenwesen,264347.5,Salzburg,13,True
+Kärnten,1,Verkehrs- und Nachrichtenwesen,148636.25,Salzburg,29,True
+Kärnten,2,Verkehrs- und Nachrichtenwesen,350048.75,Salzburg,23,True
+Kärnten,3,Verkehrs- und Nachrichtenwesen,93825.0,Salzburg,13,True
+Kärnten,4,Verkehrs- und Nachrichtenwesen,57223.75,Salzburg,9,True
+Kärnten,5,Verkehrs- und Nachrichtenwesen,19945.0,Salzburg,1,False
+Kärnten,6-10,Verkehrs- und Nachrichtenwesen,11420.0,Salzburg,3,False
+Niederösterreich,1,Verkehrs- und Nachrichtenwesen,652511.25,Salzburg,29,True
+Niederösterreich,2,Verkehrs- und Nachrichtenwesen,1060035.0,Salzburg,23,True
+Niederösterreich,3,Verkehrs- und Nachrichtenwesen,379241.25,Salzburg,13,True
+Niederösterreich,4,Verkehrs- und Nachrichtenwesen,182053.75,Salzburg,9,True
+Niederösterreich,5,Verkehrs- und Nachrichtenwesen,58811.25,Salzburg,1,False
+Niederösterreich,6-10,Verkehrs- und Nachrichtenwesen,18691.25,Salzburg,3,False
+Oberösterreich,1,Verkehrs- und Nachrichtenwesen,549588.75,Salzburg,29,True
+Oberösterreich,2,Verkehrs- und Nachrichtenwesen,1187702.5,Salzburg,23,True
+Oberösterreich,3,Verkehrs- und Nachrichtenwesen,476235.0,Salzburg,13,True
+Oberösterreich,4,Verkehrs- und Nachrichtenwesen,196510.0,Salzburg,9,True
+Oberösterreich,5,Verkehrs- und Nachrichtenwesen,50857.5,Salzburg,1,False
+Oberösterreich,6-10,Verkehrs- und Nachrichtenwesen,74927.5,Salzburg,3,False
+Salzburg,1,Verkehrs- und Nachrichtenwesen,174670.0,Salzburg,29,True
+Salzburg,2,Verkehrs- und Nachrichtenwesen,462717.5,Salzburg,23,True
+Salzburg,3,Verkehrs- und Nachrichtenwesen,246746.25,Salzburg,13,True
+Salzburg,4,Verkehrs- und Nachrichtenwesen,54741.25,Salzburg,9,True
+Salzburg,5,Verkehrs- und Nachrichtenwesen,24056.25,Salzburg,1,False
+Salzburg,6-10,Verkehrs- und Nachrichtenwesen,68915.0,Salzburg,3,False
+Steiermark,1,Verkehrs- und Nachrichtenwesen,370665.0,Salzburg,29,True
+Steiermark,2,Verkehrs- und Nachrichtenwesen,752566.25,Salzburg,23,True
+Steiermark,3,Verkehrs- und Nachrichtenwesen,268457.5,Salzburg,13,True
+Steiermark,4,Verkehrs- und Nachrichtenwesen,93240.0,Salzburg,9,True
+Steiermark,5,Verkehrs- und Nachrichtenwesen,64172.5,Salzburg,1,False
+Steiermark,6-10,Verkehrs- und Nachrichtenwesen,96681.25,Salzburg,3,False
+Tirol,1,Verkehrs- und Nachrichtenwesen,343223.75,Salzburg,29,True
+Tirol,2,Verkehrs- und Nachrichtenwesen,533822.5,Salzburg,23,True
+Tirol,3,Verkehrs- und Nachrichtenwesen,381866.25,Salzburg,13,True
+Tirol,4,Verkehrs- und Nachrichtenwesen,225210.0,Salzburg,9,True
+Tirol,5,Verkehrs- und Nachrichtenwesen,245046.25,Salzburg,1,False
+Tirol,6-10,Verkehrs- und Nachrichtenwesen,96670.0,Salzburg,3,False
+Tirol,11+,Verkehrs- und Nachrichtenwesen,17212.5,Salzburg,0,False
+Vorarlberg,1,Verkehrs- und Nachrichtenwesen,92730.0,Salzburg,29,True
+Vorarlberg,2,Verkehrs- und Nachrichtenwesen,222057.5,Salzburg,23,True
+Vorarlberg,3,Verkehrs- und Nachrichtenwesen,157085.0,Salzburg,13,True
+Vorarlberg,4,Verkehrs- und Nachrichtenwesen,89336.25,Salzburg,9,True
+Vorarlberg,5,Verkehrs- und Nachrichtenwesen,21200.0,Salzburg,1,False
+Vorarlberg,6-10,Verkehrs- und Nachrichtenwesen,12806.25,Salzburg,3,False
+Wien,1,Verkehrs- und Nachrichtenwesen,415753.75,Wien,59,True
+Wien,2,Verkehrs- und Nachrichtenwesen,512408.75,Wien,75,True
+Wien,3,Verkehrs- und Nachrichtenwesen,180518.75,Wien,79,True
+Wien,4,Verkehrs- und Nachrichtenwesen,195301.25,Wien,42,True
+Wien,5,Verkehrs- und Nachrichtenwesen,128501.25,Wien,19,True
+Wien,6-10,Verkehrs- und Nachrichtenwesen,146013.75,Wien,41,True
+Wien,11+,Verkehrs- und Nachrichtenwesen,96086.25,Wien,1,False
+Burgenland,1,Industrie und Lagerung,2207153.75,Salzburg,665,True
+Burgenland,2,Industrie und Lagerung,1641447.5,Salzburg,1118,True
+Burgenland,3,Industrie und Lagerung,221828.75,Salzburg,401,True
+Burgenland,4,Industrie und Lagerung,41013.75,Salzburg,129,True
+Burgenland,5,Industrie und Lagerung,34466.25,Salzburg,50,True
+Burgenland,6-10,Industrie und Lagerung,20130.0,Salzburg,34,True
+Kärnten,1,Industrie und Lagerung,2622002.5,Salzburg,665,True
+Kärnten,2,Industrie und Lagerung,3260492.5,Salzburg,1118,True
+Kärnten,3,Industrie und Lagerung,1229698.75,Salzburg,401,True
+Kärnten,4,Industrie und Lagerung,189220.0,Salzburg,129,True
+Kärnten,5,Industrie und Lagerung,61997.5,Salzburg,50,True
+Kärnten,6-10,Industrie und Lagerung,145187.5,Salzburg,34,True
+Niederösterreich,1,Industrie und Lagerung,12479873.75,Salzburg,665,True
+Niederösterreich,2,Industrie und Lagerung,10656961.25,Salzburg,1118,True
+Niederösterreich,3,Industrie und Lagerung,3321722.5,Salzburg,401,True
+Niederösterreich,4,Industrie und Lagerung,766121.25,Salzburg,129,True
+Niederösterreich,5,Industrie und Lagerung,292116.25,Salzburg,50,True
+Niederösterreich,6-10,Industrie und Lagerung,412067.5,Salzburg,34,True
+Niederösterreich,11+,Industrie und Lagerung,591.25,Salzburg,0,False
+Oberösterreich,1,Industrie und Lagerung,10989250.0,Salzburg,665,True
+Oberösterreich,2,Industrie und Lagerung,12287756.25,Salzburg,1118,True
+Oberösterreich,3,Industrie und Lagerung,4195235.0,Salzburg,401,True
+Oberösterreich,4,Industrie und Lagerung,1787940.0,Salzburg,129,True
+Oberösterreich,5,Industrie und Lagerung,445582.5,Salzburg,50,True
+Oberösterreich,6-10,Industrie und Lagerung,575032.5,Salzburg,34,True
+Salzburg,1,Industrie und Lagerung,1669885.0,Salzburg,665,True
+Salzburg,2,Industrie und Lagerung,3280912.5,Salzburg,1118,True
+Salzburg,3,Industrie und Lagerung,1651933.75,Salzburg,401,True
+Salzburg,4,Industrie und Lagerung,470960.0,Salzburg,129,True
+Salzburg,5,Industrie und Lagerung,100913.75,Salzburg,50,True
+Salzburg,6-10,Industrie und Lagerung,158500.0,Salzburg,34,True
+Steiermark,1,Industrie und Lagerung,7925990.0,Salzburg,665,True
+Steiermark,2,Industrie und Lagerung,8617468.75,Salzburg,1118,True
+Steiermark,3,Industrie und Lagerung,2202606.25,Salzburg,401,True
+Steiermark,4,Industrie und Lagerung,688633.75,Salzburg,129,True
+Steiermark,5,Industrie und Lagerung,379663.75,Salzburg,50,True
+Steiermark,6-10,Industrie und Lagerung,345950.0,Salzburg,34,True
+Tirol,1,Industrie und Lagerung,2519408.75,Salzburg,665,True
+Tirol,2,Industrie und Lagerung,4008531.25,Salzburg,1118,True
+Tirol,3,Industrie und Lagerung,2031051.25,Salzburg,401,True
+Tirol,4,Industrie und Lagerung,893510.0,Salzburg,129,True
+Tirol,5,Industrie und Lagerung,245127.5,Salzburg,50,True
+Tirol,6-10,Industrie und Lagerung,315753.75,Salzburg,34,True
+Vorarlberg,1,Industrie und Lagerung,1411705.0,Salzburg,665,True
+Vorarlberg,2,Industrie und Lagerung,2610313.75,Salzburg,1118,True
+Vorarlberg,3,Industrie und Lagerung,1343997.5,Salzburg,401,True
+Vorarlberg,4,Industrie und Lagerung,296121.25,Salzburg,129,True
+Vorarlberg,5,Industrie und Lagerung,175607.5,Salzburg,50,True
+Vorarlberg,6-10,Industrie und Lagerung,36125.0,Salzburg,34,True
+Wien,1,Industrie und Lagerung,2287106.25,Wien,310,True
+Wien,2,Industrie und Lagerung,2181475.0,Wien,356,True
+Wien,3,Industrie und Lagerung,1483828.75,Wien,215,True
+Wien,4,Industrie und Lagerung,1603895.0,Wien,190,True
+Wien,5,Industrie und Lagerung,871305.0,Wien,194,True
+Wien,6-10,Industrie und Lagerung,1121390.0,Wien,167,True
+Wien,11+,Industrie und Lagerung,38842.5,Wien,5,True
+Burgenland,1,"Kultur, Freizeit, Bildung und Gesundheit",493298.75,Salzburg,85,True
+Burgenland,2,"Kultur, Freizeit, Bildung und Gesundheit",767027.5,Salzburg,206,True
+Burgenland,3,"Kultur, Freizeit, Bildung und Gesundheit",435936.25,Salzburg,198,True
+Burgenland,4,"Kultur, Freizeit, Bildung und Gesundheit",188057.5,Salzburg,110,True
+Burgenland,5,"Kultur, Freizeit, Bildung und Gesundheit",98346.25,Salzburg,49,True
+Kärnten,1,"Kultur, Freizeit, Bildung und Gesundheit",572538.75,Salzburg,85,True
+Kärnten,2,"Kultur, Freizeit, Bildung und Gesundheit",1181850.0,Salzburg,206,True
+Kärnten,3,"Kultur, Freizeit, Bildung und Gesundheit",1494180.0,Salzburg,198,True
+Kärnten,4,"Kultur, Freizeit, Bildung und Gesundheit",369020.0,Salzburg,110,True
+Kärnten,5,"Kultur, Freizeit, Bildung und Gesundheit",162391.25,Salzburg,49,True
+Kärnten,6-10,"Kultur, Freizeit, Bildung und Gesundheit",297323.75,Salzburg,33,True
+Kärnten,11+,"Kultur, Freizeit, Bildung und Gesundheit",24528.75,Salzburg,0,False
+Niederösterreich,1,"Kultur, Freizeit, Bildung und Gesundheit",2668397.5,Salzburg,85,True
+Niederösterreich,2,"Kultur, Freizeit, Bildung und Gesundheit",4207746.25,Salzburg,206,True
+Niederösterreich,3,"Kultur, Freizeit, Bildung und Gesundheit",2723535.0,Salzburg,198,True
+Niederösterreich,4,"Kultur, Freizeit, Bildung und Gesundheit",1074915.0,Salzburg,110,True
+Niederösterreich,5,"Kultur, Freizeit, Bildung und Gesundheit",634128.75,Salzburg,49,True
+Niederösterreich,6-10,"Kultur, Freizeit, Bildung und Gesundheit",870770.0,Salzburg,33,True
+Oberösterreich,1,"Kultur, Freizeit, Bildung und Gesundheit",1748277.5,Salzburg,85,True
+Oberösterreich,2,"Kultur, Freizeit, Bildung und Gesundheit",3939786.25,Salzburg,206,True
+Oberösterreich,3,"Kultur, Freizeit, Bildung und Gesundheit",2839646.25,Salzburg,198,True
+Oberösterreich,4,"Kultur, Freizeit, Bildung und Gesundheit",1738045.0,Salzburg,110,True
+Oberösterreich,5,"Kultur, Freizeit, Bildung und Gesundheit",455698.75,Salzburg,49,True
+Oberösterreich,6-10,"Kultur, Freizeit, Bildung und Gesundheit",944853.75,Salzburg,33,True
+Oberösterreich,11+,"Kultur, Freizeit, Bildung und Gesundheit",15353.75,Salzburg,0,False
+Salzburg,1,"Kultur, Freizeit, Bildung und Gesundheit",386080.0,Salzburg,85,True
+Salzburg,2,"Kultur, Freizeit, Bildung und Gesundheit",1199746.25,Salzburg,206,True
+Salzburg,3,"Kultur, Freizeit, Bildung und Gesundheit",1396561.25,Salzburg,198,True
+Salzburg,4,"Kultur, Freizeit, Bildung und Gesundheit",682802.5,Salzburg,110,True
+Salzburg,5,"Kultur, Freizeit, Bildung und Gesundheit",233753.75,Salzburg,49,True
+Salzburg,6-10,"Kultur, Freizeit, Bildung und Gesundheit",93600.0,Salzburg,33,True
+Steiermark,1,"Kultur, Freizeit, Bildung und Gesundheit",1665502.5,Salzburg,85,True
+Steiermark,2,"Kultur, Freizeit, Bildung und Gesundheit",2979885.0,Salzburg,206,True
+Steiermark,3,"Kultur, Freizeit, Bildung und Gesundheit",2598300.0,Salzburg,198,True
+Steiermark,4,"Kultur, Freizeit, Bildung und Gesundheit",1192206.25,Salzburg,110,True
+Steiermark,5,"Kultur, Freizeit, Bildung und Gesundheit",417658.75,Salzburg,49,True
+Steiermark,6-10,"Kultur, Freizeit, Bildung und Gesundheit",778671.25,Salzburg,33,True
+Tirol,1,"Kultur, Freizeit, Bildung und Gesundheit",759928.75,Salzburg,85,True
+Tirol,2,"Kultur, Freizeit, Bildung und Gesundheit",1500873.75,Salzburg,206,True
+Tirol,3,"Kultur, Freizeit, Bildung und Gesundheit",1446453.75,Salzburg,198,True
+Tirol,4,"Kultur, Freizeit, Bildung und Gesundheit",986261.25,Salzburg,110,True
+Tirol,5,"Kultur, Freizeit, Bildung und Gesundheit",784761.25,Salzburg,49,True
+Tirol,6-10,"Kultur, Freizeit, Bildung und Gesundheit",444637.5,Salzburg,33,True
+Tirol,11+,"Kultur, Freizeit, Bildung und Gesundheit",201701.25,Salzburg,0,False
+Vorarlberg,1,"Kultur, Freizeit, Bildung und Gesundheit",361173.75,Salzburg,85,True
+Vorarlberg,2,"Kultur, Freizeit, Bildung und Gesundheit",782836.25,Salzburg,206,True
+Vorarlberg,3,"Kultur, Freizeit, Bildung und Gesundheit",918695.0,Salzburg,198,True
+Vorarlberg,4,"Kultur, Freizeit, Bildung und Gesundheit",334217.5,Salzburg,110,True
+Vorarlberg,5,"Kultur, Freizeit, Bildung und Gesundheit",85873.75,Salzburg,49,True
+Vorarlberg,6-10,"Kultur, Freizeit, Bildung und Gesundheit",312121.25,Salzburg,33,True
+Vorarlberg,11+,"Kultur, Freizeit, Bildung und Gesundheit",226200.0,Salzburg,0,False
+Wien,1,"Kultur, Freizeit, Bildung und Gesundheit",1379112.5,Wien,45,True
+Wien,2,"Kultur, Freizeit, Bildung und Gesundheit",2014897.5,Wien,56,True
+Wien,3,"Kultur, Freizeit, Bildung und Gesundheit",2825925.0,Wien,50,True
+Wien,4,"Kultur, Freizeit, Bildung und Gesundheit",3012936.25,Wien,69,True
+Wien,5,"Kultur, Freizeit, Bildung und Gesundheit",1391486.25,Wien,61,True
+Wien,6-10,"Kultur, Freizeit, Bildung und Gesundheit",2289340.0,Wien,340,True
+Wien,11+,"Kultur, Freizeit, Bildung und Gesundheit",264258.75,Wien,40,True
+Burgenland,1,Gemeinschaftsgebäude,42252.5,Salzburg,0,False
+Burgenland,2,Gemeinschaftsgebäude,142387.5,Salzburg,0,False
+Burgenland,3,Gemeinschaftsgebäude,106263.75,Salzburg,0,False
+Burgenland,4,Gemeinschaftsgebäude,75311.25,Salzburg,0,False
+Burgenland,5,Gemeinschaftsgebäude,20327.5,Salzburg,0,False
+Kärnten,1,Gemeinschaftsgebäude,65760.0,Salzburg,0,False
+Kärnten,2,Gemeinschaftsgebäude,202235.0,Salzburg,0,False
+Kärnten,3,Gemeinschaftsgebäude,277507.5,Salzburg,0,False
+Kärnten,4,Gemeinschaftsgebäude,113763.75,Salzburg,0,False
+Kärnten,5,Gemeinschaftsgebäude,38947.5,Salzburg,0,False
+Kärnten,6-10,Gemeinschaftsgebäude,39170.0,Salzburg,0,False
+Niederösterreich,1,Gemeinschaftsgebäude,155150.0,Salzburg,0,False
+Niederösterreich,2,Gemeinschaftsgebäude,672375.0,Salzburg,0,False
+Niederösterreich,3,Gemeinschaftsgebäude,871003.75,Salzburg,0,False
+Niederösterreich,4,Gemeinschaftsgebäude,514551.25,Salzburg,0,False
+Niederösterreich,5,Gemeinschaftsgebäude,120633.75,Salzburg,0,False
+Niederösterreich,6-10,Gemeinschaftsgebäude,100128.75,Salzburg,0,False
+Oberösterreich,1,Gemeinschaftsgebäude,84143.75,Salzburg,0,False
+Oberösterreich,2,Gemeinschaftsgebäude,321373.75,Salzburg,0,False
+Oberösterreich,3,Gemeinschaftsgebäude,891892.5,Salzburg,0,False
+Oberösterreich,4,Gemeinschaftsgebäude,577197.5,Salzburg,0,False
+Oberösterreich,5,Gemeinschaftsgebäude,392457.5,Salzburg,0,False
+Oberösterreich,6-10,Gemeinschaftsgebäude,452743.75,Salzburg,0,False
+Oberösterreich,11+,Gemeinschaftsgebäude,42318.75,Salzburg,0,False
+Salzburg,1,Gemeinschaftsgebäude,23550.0,Salzburg,0,False
+Salzburg,2,Gemeinschaftsgebäude,186400.0,Salzburg,0,False
+Salzburg,3,Gemeinschaftsgebäude,373703.75,Salzburg,0,False
+Salzburg,4,Gemeinschaftsgebäude,408928.75,Salzburg,0,False
+Salzburg,5,Gemeinschaftsgebäude,254782.5,Salzburg,0,False
+Salzburg,6-10,Gemeinschaftsgebäude,102071.25,Salzburg,0,False
+Steiermark,1,Gemeinschaftsgebäude,117981.25,Salzburg,0,False
+Steiermark,2,Gemeinschaftsgebäude,442126.25,Salzburg,0,False
+Steiermark,3,Gemeinschaftsgebäude,754445.0,Salzburg,0,False
+Steiermark,4,Gemeinschaftsgebäude,497397.5,Salzburg,0,False
+Steiermark,5,Gemeinschaftsgebäude,293157.5,Salzburg,0,False
+Steiermark,6-10,Gemeinschaftsgebäude,267310.0,Salzburg,0,False
+Tirol,1,Gemeinschaftsgebäude,34915.0,Salzburg,0,False
+Tirol,2,Gemeinschaftsgebäude,194110.0,Salzburg,0,False
+Tirol,3,Gemeinschaftsgebäude,458326.25,Salzburg,0,False
+Tirol,4,Gemeinschaftsgebäude,467577.5,Salzburg,0,False
+Tirol,5,Gemeinschaftsgebäude,284972.5,Salzburg,0,False
+Tirol,6-10,Gemeinschaftsgebäude,340716.25,Salzburg,0,False
+Vorarlberg,1,Gemeinschaftsgebäude,18465.0,Salzburg,0,False
+Vorarlberg,2,Gemeinschaftsgebäude,93645.0,Salzburg,0,False
+Vorarlberg,3,Gemeinschaftsgebäude,270852.5,Salzburg,0,False
+Vorarlberg,4,Gemeinschaftsgebäude,112460.0,Salzburg,0,False
+Vorarlberg,5,Gemeinschaftsgebäude,35886.25,Salzburg,0,False
+Vorarlberg,6-10,Gemeinschaftsgebäude,52617.5,Salzburg,0,False
+Wien,1,Gemeinschaftsgebäude,177203.75,Wien,5,True
+Wien,2,Gemeinschaftsgebäude,164732.5,Wien,11,True
+Wien,3,Gemeinschaftsgebäude,331347.5,Wien,13,True
+Wien,4,Gemeinschaftsgebäude,518052.5,Wien,12,True
+Wien,5,Gemeinschaftsgebäude,605487.5,Wien,16,True
+Wien,6-10,Gemeinschaftsgebäude,2511896.25,Wien,45,True
+Wien,11+,Gemeinschaftsgebäude,341010.0,Wien,2,False
+Burgenland,1,Mehrfamilienhaus,128963.75,Salzburg,127,True
+Burgenland,2,Mehrfamilienhaus,1168353.75,Salzburg,5019,True
+Burgenland,3,Mehrfamilienhaus,1323940.0,Salzburg,11496,True
+Burgenland,4,Mehrfamilienhaus,709628.75,Salzburg,3877,True
+Burgenland,5,Mehrfamilienhaus,227080.0,Salzburg,1521,True
+Burgenland,6-10,Mehrfamilienhaus,144851.25,Salzburg,1197,True
+Burgenland,11+,Mehrfamilienhaus,24436.25,Salzburg,1,False
+Kärnten,1,Mehrfamilienhaus,97088.75,Salzburg,127,True
+Kärnten,2,Mehrfamilienhaus,1804590.0,Salzburg,5019,True
+Kärnten,3,Mehrfamilienhaus,5269523.75,Salzburg,11496,True
+Kärnten,4,Mehrfamilienhaus,4067310.0,Salzburg,3877,True
+Kärnten,5,Mehrfamilienhaus,1431977.5,Salzburg,1521,True
+Kärnten,6-10,Mehrfamilienhaus,1277741.25,Salzburg,1197,True
+Kärnten,11+,Mehrfamilienhaus,218313.75,Salzburg,1,False
+Niederösterreich,1,Mehrfamilienhaus,675825.0,Salzburg,127,True
+Niederösterreich,2,Mehrfamilienhaus,6225545.0,Salzburg,5019,True
+Niederösterreich,3,Mehrfamilienhaus,11522652.5,Salzburg,11496,True
+Niederösterreich,4,Mehrfamilienhaus,8426405.0,Salzburg,3877,True
+Niederösterreich,5,Mehrfamilienhaus,3150556.25,Salzburg,1521,True
+Niederösterreich,6-10,Mehrfamilienhaus,2677101.25,Salzburg,1197,True
+Niederösterreich,11+,Mehrfamilienhaus,261595.0,Salzburg,1,False
+Oberösterreich,1,Mehrfamilienhaus,182030.0,Salzburg,127,True
+Oberösterreich,2,Mehrfamilienhaus,5848532.5,Salzburg,5019,True
+Oberösterreich,3,Mehrfamilienhaus,12708465.0,Salzburg,11496,True
+Oberösterreich,4,Mehrfamilienhaus,9081570.0,Salzburg,3877,True
+Oberösterreich,5,Mehrfamilienhaus,4188936.25,Salzburg,1521,True
+Oberösterreich,6-10,Mehrfamilienhaus,5124067.5,Salzburg,1197,True
+Oberösterreich,11+,Mehrfamilienhaus,695776.25,Salzburg,1,False
+Salzburg,1,Mehrfamilienhaus,69550.0,Salzburg,127,True
+Salzburg,2,Mehrfamilienhaus,1780551.25,Salzburg,5019,True
+Salzburg,3,Mehrfamilienhaus,7205355.0,Salzburg,11496,True
+Salzburg,4,Mehrfamilienhaus,4058772.5,Salzburg,3877,True
+Salzburg,5,Mehrfamilienhaus,2064481.25,Salzburg,1521,True
+Salzburg,6-10,Mehrfamilienhaus,2187868.75,Salzburg,1197,True
+Salzburg,11+,Mehrfamilienhaus,72942.5,Salzburg,1,False
+Steiermark,1,Mehrfamilienhaus,347797.5,Salzburg,127,True
+Steiermark,2,Mehrfamilienhaus,5403803.75,Salzburg,5019,True
+Steiermark,3,Mehrfamilienhaus,9428792.5,Salzburg,11496,True
+Steiermark,4,Mehrfamilienhaus,7064973.75,Salzburg,3877,True
+Steiermark,5,Mehrfamilienhaus,3828462.5,Salzburg,1521,True
+Steiermark,6-10,Mehrfamilienhaus,5289513.75,Salzburg,1197,True
+Steiermark,11+,Mehrfamilienhaus,974400.0,Salzburg,1,False
+Tirol,1,Mehrfamilienhaus,142410.0,Salzburg,127,True
+Tirol,2,Mehrfamilienhaus,3343860.0,Salzburg,5019,True
+Tirol,3,Mehrfamilienhaus,10738596.25,Salzburg,11496,True
+Tirol,4,Mehrfamilienhaus,6286861.25,Salzburg,3877,True
+Tirol,5,Mehrfamilienhaus,3214916.25,Salzburg,1521,True
+Tirol,6-10,Mehrfamilienhaus,3581480.0,Salzburg,1197,True
+Tirol,11+,Mehrfamilienhaus,678133.75,Salzburg,1,False
+Vorarlberg,1,Mehrfamilienhaus,53690.0,Salzburg,127,True
+Vorarlberg,2,Mehrfamilienhaus,1206573.75,Salzburg,5019,True
+Vorarlberg,3,Mehrfamilienhaus,5805701.25,Salzburg,11496,True
+Vorarlberg,4,Mehrfamilienhaus,3146237.5,Salzburg,3877,True
+Vorarlberg,5,Mehrfamilienhaus,1007876.25,Salzburg,1521,True
+Vorarlberg,6-10,Mehrfamilienhaus,809890.0,Salzburg,1197,True
+Vorarlberg,11+,Mehrfamilienhaus,161016.25,Salzburg,1,False
+Wien,1,Mehrfamilienhaus,146783.75,Wien,100,True
+Wien,2,Mehrfamilienhaus,1674683.75,Wien,820,True
+Wien,3,Mehrfamilienhaus,6497936.25,Wien,1632,True
+Wien,4,Mehrfamilienhaus,16014890.0,Wien,2191,True
+Wien,5,Mehrfamilienhaus,17774400.0,Wien,3322,True
+Wien,6-10,Mehrfamilienhaus,47130100.0,Wien,19290,True
+Wien,11+,Mehrfamilienhaus,3768682.5,Wien,234,True
+Burgenland,1,Ein- und Zweifamilienhäuser,12798257.5,Salzburg,576,True
+Burgenland,2,Ein- und Zweifamilienhäuser,8035253.75,Salzburg,19517,True
+Burgenland,3,Ein- und Zweifamilienhäuser,503350.0,Salzburg,15912,True
+Burgenland,4,Ein- und Zweifamilienhäuser,18752.5,Salzburg,1471,True
+Burgenland,5,Ein- und Zweifamilienhäuser,1895.0,Salzburg,303,True
+Burgenland,6-10,Ein- und Zweifamilienhäuser,327.5,Salzburg,284,True
+Kärnten,1,Ein- und Zweifamilienhäuser,8793525.0,Salzburg,576,True
+Kärnten,2,Ein- und Zweifamilienhäuser,17251490.0,Salzburg,19517,True
+Kärnten,3,Ein- und Zweifamilienhäuser,1781236.25,Salzburg,15912,True
+Kärnten,4,Ein- und Zweifamilienhäuser,76998.75,Salzburg,1471,True
+Kärnten,5,Ein- und Zweifamilienhäuser,5956.25,Salzburg,303,True
+Kärnten,6-10,Ein- und Zweifamilienhäuser,3262.5,Salzburg,284,True
+Niederösterreich,1,Ein- und Zweifamilienhäuser,47359461.25,Salzburg,576,True
+Niederösterreich,2,Ein- und Zweifamilienhäuser,51884300.0,Salzburg,19517,True
+Niederösterreich,3,Ein- und Zweifamilienhäuser,5040101.25,Salzburg,15912,True
+Niederösterreich,4,Ein- und Zweifamilienhäuser,247317.5,Salzburg,1471,True
+Niederösterreich,5,Ein- und Zweifamilienhäuser,20947.5,Salzburg,303,True
+Niederösterreich,6-10,Ein- und Zweifamilienhäuser,7305.0,Salzburg,284,True
+Niederösterreich,11+,Ein- und Zweifamilienhäuser,853.75,Salzburg,0,False
+Oberösterreich,1,Ein- und Zweifamilienhäuser,18500312.5,Salzburg,576,True
+Oberösterreich,2,Ein- und Zweifamilienhäuser,56432916.25,Salzburg,19517,True
+Oberösterreich,3,Ein- und Zweifamilienhäuser,6652620.0,Salzburg,15912,True
+Oberösterreich,4,Ein- und Zweifamilienhäuser,358760.0,Salzburg,1471,True
+Oberösterreich,5,Ein- und Zweifamilienhäuser,44613.75,Salzburg,303,True
+Oberösterreich,6-10,Ein- und Zweifamilienhäuser,52990.0,Salzburg,284,True
+Oberösterreich,11+,Ein- und Zweifamilienhäuser,5565.0,Salzburg,0,False
+Salzburg,1,Ein- und Zweifamilienhäuser,3083276.25,Salzburg,576,True
+Salzburg,2,Ein- und Zweifamilienhäuser,14855957.5,Salzburg,19517,True
+Salzburg,3,Ein- und Zweifamilienhäuser,3415275.0,Salzburg,15912,True
+Salzburg,4,Ein- und Zweifamilienhäuser,174763.75,Salzburg,1471,True
+Salzburg,5,Ein- und Zweifamilienhäuser,17776.25,Salzburg,303,True
+Salzburg,6-10,Ein- und Zweifamilienhäuser,8000.0,Salzburg,284,True
+Steiermark,1,Ein- und Zweifamilienhäuser,24851962.5,Salzburg,576,True
+Steiermark,2,Ein- und Zweifamilienhäuser,30810695.0,Salzburg,19517,True
+Steiermark,3,Ein- und Zweifamilienhäuser,2752020.0,Salzburg,15912,True
+Steiermark,4,Ein- und Zweifamilienhäuser,132423.75,Salzburg,1471,True
+Steiermark,5,Ein- und Zweifamilienhäuser,12395.0,Salzburg,303,True
+Steiermark,6-10,Ein- und Zweifamilienhäuser,3873.75,Salzburg,284,True
+Tirol,1,Ein- und Zweifamilienhäuser,4191187.5,Salzburg,576,True
+Tirol,2,Ein- und Zweifamilienhäuser,19634776.25,Salzburg,19517,True
+Tirol,3,Ein- und Zweifamilienhäuser,4821420.0,Salzburg,15912,True
+Tirol,4,Ein- und Zweifamilienhäuser,438741.25,Salzburg,1471,True
+Tirol,5,Ein- und Zweifamilienhäuser,48267.5,Salzburg,303,True
+Tirol,6-10,Ein- und Zweifamilienhäuser,8498.75,Salzburg,284,True
+Vorarlberg,1,Ein- und Zweifamilienhäuser,2844503.75,Salzburg,576,True
+Vorarlberg,2,Ein- und Zweifamilienhäuser,11007078.75,Salzburg,19517,True
+Vorarlberg,3,Ein- und Zweifamilienhäuser,2108185.0,Salzburg,15912,True
+Vorarlberg,4,Ein- und Zweifamilienhäuser,141588.75,Salzburg,1471,True
+Vorarlberg,5,Ein- und Zweifamilienhäuser,20063.75,Salzburg,303,True
+Vorarlberg,6-10,Ein- und Zweifamilienhäuser,4761.25,Salzburg,284,True
+Wien,1,Ein- und Zweifamilienhäuser,5456122.5,Wien,15342,True
+Wien,2,Ein- und Zweifamilienhäuser,7354866.25,Wien,16886,True
+Wien,3,Ein- und Zweifamilienhäuser,1560652.5,Wien,14311,True
+Wien,4,Ein- und Zweifamilienhäuser,117830.0,Wien,3622,True
+Wien,5,Ein- und Zweifamilienhäuser,9800.0,Wien,956,True
+Wien,6-10,Ein- und Zweifamilienhäuser,11152.5,Wien,992,True

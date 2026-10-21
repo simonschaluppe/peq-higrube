@@ -1,0 +1,30 @@
+{
+  "status": "delivered_results_checked; see recalculated/validation.json for raw-data run",
+  "reference_year": 2021,
+  "raw_data_recalculated": false,
+  "independent_AT_statistics_checked": false,
+  "ngf_per_bgf_assumption": 0.8,
+  "allocated_bgf_m2": 1058934892.5,
+  "statistical_target_from_delivered_audit_m2": 1058934892.5,
+  "total_allocation_residual_m2": 1.7629986359679606e-09,
+  "max_absolute_cell_residual_m2": 7.450580596923828e-09,
+  "n_provinces": 9,
+  "n_positive_statistical_cells": 516,
+  "n_fallback_cells": 91,
+  "fallback_bgf_m2": 17960405.0,
+  "fallback_share_of_total_bgf": 0.016960820846688644,
+  "fallback_by_type": {
+    "fallback-salzburg-nearest-storey": 66302.5,
+    "fallback-vienna-exact": 17361748.75,
+    "fallback-wien-nearest-storey": 532353.75
+  },
+  "fallback_approval": "User approved existing replacement hierarchy on 2026-10-21",
+  "mean_gfz_bgf_weighted": 1.2308404585245631,
+  "bgf_share_above_gfz_8": 0.0049992900841561725,
+  "phase_2": "Documented only; no sensitivity or methodological iteration requested",
+  "input_sha256": {
+    "gfz_distribution_by_province_use_storeys.csv": "efe1c5eca7576d08a60293a156ea3eb556b4a99082441246e712f74c1a3968a9",
+    "allocation_audit.csv": "49122c87305881cf09711131c353a9dc1d280f0b8065bf1d287178ce18e6fc94",
+    "reference_coverage.csv": "bc1aea8d17590eac0abef83103cc8e7310dca1bde768968f0ed0161a9ef49781"
+  }
+}

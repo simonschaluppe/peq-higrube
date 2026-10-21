@@ -1,0 +1,12 @@
+{
+  "comparison": "original Excel rerun versus delivered reference",
+  "delivered_bgf_m2": 1058934892.5,
+  "recalculated_bgf_m2": 1058934892.4999999,
+  "national_relative_difference": -1.1257471105645077e-16,
+  "sum_absolute_bin_difference_m2": 2.7998004060330905e-07,
+  "relative_absolute_bin_difference": 2.6439778553553427e-16,
+  "max_absolute_bin_difference_m2": 5.587935447692871e-09,
+  "delivered_rows": 83703,
+  "recalculated_rows": 83703,
+  "equal_with_numerical_tolerance": true
+}

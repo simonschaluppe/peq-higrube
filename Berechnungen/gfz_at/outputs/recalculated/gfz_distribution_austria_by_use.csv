@@ -1,0 +1,1801 @@
+GFZ,GWR_Nutzung,BGF_m2
+0.05,Büronutzung,815230.0433245831
+0.05,Ein- und Zweifamilienhäuser,8909757.628719488
+0.05,Gemeinschaftsgebäude,374741.71738332196
+0.05,Groß- und Einzelhandelsgebäude,1523336.1774830814
+0.05,Hotels o.Ä.,1178562.5999212635
+0.05,Industrie und Lagerung,3150874.865661728
+0.05,"Kultur, Freizeit, Bildung und Gesundheit",2189064.3384482763
+0.05,Mehrfamilienhaus,1394949.3127414489
+0.05,Verkehrs- und Nachrichtenwesen,728880.0187301225
+0.15,Büronutzung,1638553.943743099
+0.15,Ein- und Zweifamilienhäuser,37834039.44859659
+0.15,Gemeinschaftsgebäude,444751.2482186337
+0.15,Groß- und Einzelhandelsgebäude,2724872.263054811
+0.15,Hotels o.Ä.,1877165.31380793
+0.15,Industrie und Lagerung,5991577.800010705
+0.15,"Kultur, Freizeit, Bildung und Gesundheit",3147026.4845659346
+0.15,Mehrfamilienhaus,3305314.6905234726
+0.15,Verkehrs- und Nachrichtenwesen,1037972.8038750138
+0.25,Büronutzung,2586449.794529668
+0.25,Ein- und Zweifamilienhäuser,67947069.0502449
+0.25,Gemeinschaftsgebäude,504249.0960069954
+0.25,Groß- und Einzelhandelsgebäude,3959528.372011387
+0.25,Hotels o.Ä.,2523357.2107327874
+0.25,Industrie und Lagerung,9158354.550720232
+0.25,"Kultur, Freizeit, Bildung und Gesundheit",3815031.9780871794
+0.25,Mehrfamilienhaus,6513862.877681882
+0.25,Verkehrs- und Nachrichtenwesen,1216073.2902428922
+0.35,Büronutzung,3247253.826226856
+0.35,Ein- und Zweifamilienhäuser,84419549.62579724
+0.35,Gemeinschaftsgebäude,552484.8896150782
+0.35,Groß- und Einzelhandelsgebäude,4780168.874314889
+0.35,Hotels o.Ä.,2979028.3811239996
+0.35,Industrie und Lagerung,11370628.040993053
+0.35,"Kultur, Freizeit, Bildung und Gesundheit",3993004.857018712
+0.35,Mehrfamilienhaus,10546280.613817407
+0.35,Verkehrs- und Nachrichtenwesen,1206840.3010448785
+0.45,Büronutzung,3528557.3673170856
+0.45,Ein- und Zweifamilienhäuser,71480384.48072131
+0.45,Gemeinschaftsgebäude,591964.2682522342
+0.45,Groß- und Einzelhandelsgebäude,5072600.518534444
+0.45,Hotels o.Ä.,3201286.0396677135
+0.45,Industrie und Lagerung,11834401.351189699
+0.45,"Kultur, Freizeit, Bildung und Gesundheit",3905874.7240533535
+0.45,Mehrfamilienhaus,14086889.924368005
+0.45,Verkehrs- und Nachrichtenwesen,1067684.9602616534
+0.55,Büronutzung,3772533.738440887
+0.55,Ein- und Zweifamilienhäuser,43905683.99301158
+0.55,Gemeinschaftsgebäude,624022.5436054914
+0.55,Groß- und Einzelhandelsgebäude,4994864.061804566
+0.55,Hotels o.Ä.,3219785.1067694807
+0.55,Industrie und Lagerung,11146400.993494695
+0.55,"Kultur, Freizeit, Bildung und Gesundheit",3725004.627545486
+0.55,Mehrfamilienhaus,15945469.890758341
+0.55,Verkehrs- und Nachrichtenwesen,893819.9996699643
+0.65,Büronutzung,4174238.2684287387
+0.65,Ein- und Zweifamilienhäuser,22910565.9070051
+0.65,Gemeinschaftsgebäude,646628.807116941
+0.65,Groß- und Einzelhandelsgebäude,4684121.3902677465
+0.65,Hotels o.Ä.,3089289.3645732524
+0.65,Industrie und Lagerung,10120546.663249794
+0.65,"Kultur, Freizeit, Bildung und Gesundheit",3531226.9953497318
+0.65,Mehrfamilienhaus,15935151.971067429
+0.65,Verkehrs- und Nachrichtenwesen,757726.8846957381
+0.75,Büronutzung,4489462.709011325
+0.75,Ein- und Zweifamilienhäuser,11527153.230196295
+0.75,Gemeinschaftsgebäude,656738.4915409382
+0.75,Groß- und Einzelhandelsgebäude,4268349.643501692
+0.75,Hotels o.Ä.,2841946.0127946557
+0.75,Industrie und Lagerung,9126940.447335275
+0.75,"Kultur, Freizeit, Bildung und Gesundheit",3331496.289519461
+0.75,Mehrfamilienhaus,14703907.035401128
+0.75,Verkehrs- und Nachrichtenwesen,678914.865661119
+0.85,Büronutzung,4378012.993077221
+0.85,Ein- und Zweifamilienhäuser,6653119.442499573
+0.85,Gemeinschaftsgebäude,654481.0369259845
+0.85,Groß- und Einzelhandelsgebäude,3792710.9293164317
+0.85,Hotels o.Ä.,2534774.4450462493
+0.85,Industrie und Lagerung,7981696.058058644
+0.85,"Kultur, Freizeit, Bildung und Gesundheit",3174847.026397647
+0.85,Mehrfamilienhaus,13010112.58403053
+0.85,Verkehrs- und Nachrichtenwesen,632133.5367185547
+0.95,Büronutzung,3875747.3246031003
+0.95,Ein- und Zweifamilienhäuser,4439378.549863779
+0.95,Gemeinschaftsgebäude,644327.5579845813
+0.95,Groß- und Einzelhandelsgebäude,3274063.770927868
+0.95,Hotels o.Ä.,2250443.6375120534
+0.95,Industrie und Lagerung,6710403.601624874
+0.95,"Kultur, Freizeit, Bildung und Gesundheit",3002031.310431161
+0.95,Mehrfamilienhaus,11314356.893843789
+0.95,Verkehrs- und Nachrichtenwesen,586444.7192619082
+1.05,Büronutzung,3328504.0559349554
+1.05,Ein- und Zweifamilienhäuser,2589693.51283711
+1.05,Gemeinschaftsgebäude,631740.0223222554
+1.05,Groß- und Einzelhandelsgebäude,2762076.488498714
+1.05,Hotels o.Ä.,2014150.3827441947
+1.05,Industrie und Lagerung,5583308.727193163
+1.05,"Kultur, Freizeit, Bildung und Gesundheit",2770093.0663682036
+1.05,Mehrfamilienhaus,9846653.529269172
+1.05,Verkehrs- und Nachrichtenwesen,530934.2454193806
+1.15,Büronutzung,2915967.3507357435
+1.15,Ein- und Zweifamilienhäuser,2186956.9510020553
+1.15,Gemeinschaftsgebäude,618900.0913012952
+1.15,Groß- und Einzelhandelsgebäude,2315829.188593973
+1.15,Hotels o.Ä.,1788505.7580216106
+1.15,Industrie und Lagerung,4549854.103962288
+1.15,"Kultur, Freizeit, Bildung und Gesundheit",2512350.082581644
+1.15,Mehrfamilienhaus,8658518.044525582
+1.15,Verkehrs- und Nachrichtenwesen,471281.25935462833
+1.25,Büronutzung,2580260.1809093035
+1.25,Ein- und Zweifamilienhäuser,1340649.2902540432
+1.25,Gemeinschaftsgebäude,603772.8303581332
+1.25,Groß- und Einzelhandelsgebäude,1950830.2377645434
+1.25,Hotels o.Ä.,1575623.1779885462
+1.25,Industrie und Lagerung,3577605.826577279
+1.25,"Kultur, Freizeit, Bildung und Gesundheit",2256605.024668568
+1.25,Mehrfamilienhaus,7665009.936233217
+1.25,Verkehrs- und Nachrichtenwesen,410907.57563853957
+1.35,Büronutzung,2225254.3116361024
+1.35,Ein- und Zweifamilienhäuser,1372386.5221194937
+1.35,Gemeinschaftsgebäude,582727.3368807316
+1.35,Groß- und Einzelhandelsgebäude,1667351.1048989585
+1.35,Hotels o.Ä.,1395020.7041583732
+1.35,Industrie und Lagerung,2783570.8762756777
+1.35,"Kultur, Freizeit, Bildung und Gesundheit",2009725.3799949284
+1.35,Mehrfamilienhaus,6771615.827589231
+1.35,Verkehrs- und Nachrichtenwesen,343724.5606384264
+1.45,Büronutzung,1853703.2482690911
+1.45,Ein- und Zweifamilienhäuser,1008398.072643861
+1.45,Gemeinschaftsgebäude,553708.2301082264
+1.45,Groß- und Einzelhandelsgebäude,1454573.2021000509
+1.45,Hotels o.Ä.,1237614.4709457527
+1.45,Industrie und Lagerung,2241021.0413018293
+1.45,"Kultur, Freizeit, Bildung und Gesundheit",1779653.8009397504
+1.45,Mehrfamilienhaus,5985161.36579462
+1.45,Verkehrs- und Nachrichtenwesen,272893.8323080052
+1.55,Büronutzung,1546669.6331819156
+1.55,Ein- und Zweifamilienhäuser,959904.5424458352
+1.55,Gemeinschaftsgebäude,517549.24017810595
+1.55,Groß- und Einzelhandelsgebäude,1284221.1131940347
+1.55,Hotels o.Ä.,1103004.8803429836
+1.55,Industrie und Lagerung,1881353.2434955118
+1.55,"Kultur, Freizeit, Bildung und Gesundheit",1575958.1167391555
+1.55,Mehrfamilienhaus,5333568.5956889205
+1.55,Verkehrs- und Nachrichtenwesen,215135.9450689423
+1.65,Büronutzung,1350112.0872663166
+1.65,Ein- und Zweifamilienhäuser,872182.5949994668
+1.65,Gemeinschaftsgebäude,477304.1533802537
+1.65,Groß- und Einzelhandelsgebäude,1142811.6526256122
+1.65,Hotels o.Ä.,993518.0676047445
+1.65,Industrie und Lagerung,1573395.6333259372
+1.65,"Kultur, Freizeit, Bildung und Gesundheit",1406700.4361037584
+1.65,Mehrfamilienhaus,4798976.178212165
+1.65,Verkehrs- und Nachrichtenwesen,177666.2030323107
+1.75,Büronutzung,1233567.2796289285
+1.75,Ein- und Zweifamilienhäuser,798371.9296326672
+1.75,Gemeinschaftsgebäude,436737.1951891445
+1.75,Groß- und Einzelhandelsgebäude,1036480.386686987
+1.75,Hotels o.Ä.,904339.696659263
+1.75,Industrie und Lagerung,1314446.4930814088
+1.75,"Kultur, Freizeit, Bildung und Gesundheit",1269838.9846659794
+1.75,Mehrfamilienhaus,4372233.391776713
+1.75,Verkehrs- und Nachrichtenwesen,154290.26666852747
+1.85,Büronutzung,1146407.5059287893
+1.85,Ein- und Zweifamilienhäuser,620502.1570271205
+1.85,Gemeinschaftsgebäude,399018.8907339148
+1.85,Groß- und Einzelhandelsgebäude,960016.7361674063
+1.85,Hotels o.Ä.,831781.097580046
+1.85,Industrie und Lagerung,1139992.8617750427
+1.85,"Kultur, Freizeit, Bildung und Gesundheit",1144519.867446043
+1.85,Mehrfamilienhaus,4044641.197634939
+1.85,Verkehrs- und Nachrichtenwesen,137833.35667722582
+1.95,Büronutzung,1066406.7579282327
+1.95,Ein- und Zweifamilienhäuser,613858.3825751796
+1.95,Gemeinschaftsgebäude,366077.9813211016
+1.95,Groß- und Einzelhandelsgebäude,896323.0444589084
+1.95,Hotels o.Ä.,773390.077997822
+1.95,Industrie und Lagerung,1025432.8548095726
+1.95,"Kultur, Freizeit, Bildung und Gesundheit",1011092.5363725664
+1.95,Mehrfamilienhaus,3800876.52230917
+1.95,Verkehrs- und Nachrichtenwesen,124364.3770415169
+2.05,Büronutzung,994478.6734558329
+2.05,Ein- und Zweifamilienhäuser,490373.0234071683
+2.05,Gemeinschaftsgebäude,338568.93102064484
+2.05,Groß- und Einzelhandelsgebäude,837470.40003017
+2.05,Hotels o.Ä.,726336.3830643172
+2.05,Industrie und Lagerung,944341.4143524001
+2.05,"Kultur, Freizeit, Bildung und Gesundheit",878701.5712828938
+2.05,Mehrfamilienhaus,3621851.138402716
+2.05,Verkehrs- und Nachrichtenwesen,111862.20065434084
+2.15,Büronutzung,933675.8491342724
+2.15,Ein- und Zweifamilienhäuser,377081.1016859936
+2.15,Gemeinschaftsgebäude,316188.04332392034
+2.15,Groß- und Einzelhandelsgebäude,780785.2555876854
+2.15,Hotels o.Ä.,687119.9329033202
+2.15,Industrie und Lagerung,862962.0414491694
+2.15,"Kultur, Freizeit, Bildung und Gesundheit",769482.3808301828
+2.15,Mehrfamilienhaus,3487277.927250011
+2.15,Verkehrs- und Nachrichtenwesen,99338.01388335529
+2.25,Büronutzung,885276.4548976826
+2.25,Ein- und Zweifamilienhäuser,304571.833134136
+2.25,Gemeinschaftsgebäude,298070.401812849
+2.25,Groß- und Einzelhandelsgebäude,718545.4092903312
+2.25,Hotels o.Ä.,652324.7113774474
+2.25,Industrie und Lagerung,747730.3146938833
+2.25,"Kultur, Freizeit, Bildung und Gesundheit",689875.0207816897
+2.25,Mehrfamilienhaus,3384714.9346956555
+2.25,Verkehrs- und Nachrichtenwesen,86664.6321378333
+2.35,Büronutzung,851243.8197334023
+2.35,Ein- und Zweifamilienhäuser,270333.1114330464
+2.35,Gemeinschaftsgebäude,283114.7232361884
+2.35,Groß- und Einzelhandelsgebäude,645599.1962283712
+2.35,Hotels o.Ä.,619509.8930466595
+2.35,Industrie und Lagerung,649970.4200697965
+2.35,"Kultur, Freizeit, Bildung und Gesundheit",633223.2960651917
+2.35,Mehrfamilienhaus,3301945.2185932216
+2.35,Verkehrs- und Nachrichtenwesen,74379.88490127926
+2.45,Büronutzung,830517.3614658829
+2.45,Ein- und Zweifamilienhäuser,203895.39931123485
+2.45,Gemeinschaftsgebäude,270201.3851811491
+2.45,Groß- und Einzelhandelsgebäude,566890.6769625226
+2.45,Hotels o.Ä.,587149.787279921
+2.45,Industrie und Lagerung,585908.2532551702
+2.45,"Kultur, Freizeit, Bildung und Gesundheit",592643.0024766556
+2.45,Mehrfamilienhaus,3239852.379795349
+2.45,Verkehrs- und Nachrichtenwesen,63266.76722583597
+2.55,Büronutzung,816957.6110535361
+2.55,Ein- und Zweifamilienhäuser,256724.51951795066
+2.55,Gemeinschaftsgebäude,258330.57061471895
+2.55,Groß- und Einzelhandelsgebäude,491932.5051178786
+2.55,Hotels o.Ä.,554096.7096038016
+2.55,Industrie und Lagerung,537894.274192158
+2.55,"Kultur, Freizeit, Bildung und Gesundheit",563654.8641329305
+2.55,Mehrfamilienhaus,3205306.7983583417
+2.55,Verkehrs- und Nachrichtenwesen,53920.487177409246
+2.65,Büronutzung,802888.9639351079
+2.65,Ein- und Zweifamilienhäuser,274530.7169567532
+2.65,Gemeinschaftsgebäude,246713.43524503853
+2.65,Groß- und Einzelhandelsgebäude,426398.02897479833
+2.65,Hotels o.Ä.,519633.17367612553
+2.65,Industrie und Lagerung,505505.3793714448
+2.65,"Kultur, Freizeit, Bildung und Gesundheit",542430.7206301595
+2.65,Mehrfamilienhaus,3184382.5967519605
+2.65,Verkehrs- und Nachrichtenwesen,46543.68079175692
+2.75,Büronutzung,782142.9584867413
+2.75,Ein- und Zweifamilienhäuser,169522.35938768927
+2.75,Gemeinschaftsgebäude,234829.69168669972
+2.75,Groß- und Einzelhandelsgebäude,372011.9715206885
+2.75,Hotels o.Ä.,484025.708398741
+2.75,Industrie und Lagerung,478746.20903752133
+2.75,"Kultur, Freizeit, Bildung und Gesundheit",525173.7557350507
+2.75,Mehrfamilienhaus,3163196.9890084737
+2.75,Verkehrs- und Nachrichtenwesen,40989.403768734075
+2.85,Büronutzung,751987.069740097
+2.85,Ein- und Zweifamilienhäuser,163445.02357459933
+2.85,Gemeinschaftsgebäude,222447.72367627942
+2.85,Groß- und Einzelhandelsgebäude,329644.1616996064
+2.85,Hotels o.Ä.,448601.69020792376
+2.85,Industrie und Lagerung,439331.93227155105
+2.85,"Kultur, Freizeit, Bildung und Gesundheit",508458.1419850169
+2.85,Mehrfamilienhaus,3138346.1631321283
+2.85,Verkehrs- und Nachrichtenwesen,36912.36892968988
+2.95,Büronutzung,715210.5963490767
+2.95,Ein- und Zweifamilienhäuser,110958.33914719195
+2.95,Gemeinschaftsgebäude,209600.36613877845
+2.95,Groß- und Einzelhandelsgebäude,298243.1965504341
+2.95,Hotels o.Ä.,414876.9477960954
+2.95,Industrie und Lagerung,388024.43718670175
+2.95,"Kultur, Freizeit, Bildung und Gesundheit",489703.0822343655
+2.95,Mehrfamilienhaus,3102390.375510366
+2.95,Verkehrs- und Nachrichtenwesen,33908.862920946376
+3.05,Büronutzung,678147.648838049
+3.05,Ein- und Zweifamilienhäuser,119741.02155977978
+3.05,Gemeinschaftsgebäude,196519.01764220878
+3.05,Groß- und Einzelhandelsgebäude,274196.4980318817
+3.05,Hotels o.Ä.,383581.35188710067
+3.05,Industrie und Lagerung,341301.68583213387
+3.05,"Kultur, Freizeit, Bildung und Gesundheit",467484.9555778201
+3.05,Mehrfamilienhaus,3049244.827981317
+3.05,Verkehrs- und Nachrichtenwesen,31609.27558241645
+3.15,Büronutzung,645751.0696867409
+3.15,Ein- und Zweifamilienhäuser,94757.10466557722
+3.15,Gemeinschaftsgebäude,183542.03602446054
+3.15,Groß- und Einzelhandelsgebäude,253929.42453407892
+3.15,Hotels o.Ä.,354658.7036099189
+3.15,Industrie und Lagerung,305597.2287895135
+3.15,"Kultur, Freizeit, Bildung und Gesundheit",441589.99007362674
+3.15,Mehrfamilienhaus,2988091.3391137077
+3.15,Verkehrs- und Nachrichtenwesen,29727.949920596868
+3.25,Büronutzung,619868.0286046743
+3.25,Ein- und Zweifamilienhäuser,76508.3177158037
+3.25,Gemeinschaftsgebäude,171021.43972637464
+3.25,Groß- und Einzelhandelsgebäude,235954.23542318225
+3.25,Hotels o.Ä.,328046.6158350546
+3.25,Industrie und Lagerung,276593.9028992219
+3.25,"Kultur, Freizeit, Bildung und Gesundheit",412790.8907483882
+3.25,Mehrfamilienhaus,2930799.9514178634
+3.25,Verkehrs- und Nachrichtenwesen,28077.398738538235
+3.35,Büronutzung,600628.0415709924
+3.35,Ein- und Zweifamilienhäuser,63627.72924078502
+3.35,Gemeinschaftsgebäude,159250.29929932783
+3.35,Groß- und Einzelhandelsgebäude,220408.7630997657
+3.35,Hotels o.Ä.,304150.18990788586
+3.35,Industrie und Lagerung,251654.28297248203
+3.35,"Kultur, Freizeit, Bildung und Gesundheit",382429.2945744357
+3.35,Mehrfamilienhaus,2878815.089198668
+3.35,Verkehrs- und Nachrichtenwesen,26554.765089231758
+3.45,Büronutzung,587539.2599329466
+3.45,Ein- und Zweifamilienhäuser,74581.07544539108
+3.45,Gemeinschaftsgebäude,148423.31326611905
+3.45,Groß- und Einzelhandelsgebäude,207549.44288888923
+3.45,Hotels o.Ä.,283332.2179130399
+3.45,Industrie und Lagerung,229839.24450942394
+3.45,"Kultur, Freizeit, Bildung und Gesundheit",351962.40752271103
+3.45,Mehrfamilienhaus,2826960.9759428683
+3.45,Verkehrs- und Nachrichtenwesen,25114.28518650274
+3.55,Büronutzung,578860.2308624419
+3.55,Ein- und Zweifamilienhäuser,50902.73129442396
+3.55,Gemeinschaftsgebäude,138630.4341728009
+3.55,Groß- und Einzelhandelsgebäude,196981.43962661581
+3.55,Hotels o.Ä.,265019.6563943101
+3.55,Industrie und Lagerung,210693.43898014846
+3.55,"Kultur, Freizeit, Bildung und Gesundheit",322624.1851817111
+3.55,Mehrfamilienhaus,2775820.1505318433
+3.55,Verkehrs- und Nachrichtenwesen,23740.21649109599
+3.65,Büronutzung,570518.8058679105
+3.65,Ein- und Zweifamilienhäuser,34829.92982524349
+3.65,Gemeinschaftsgebäude,129873.87288604726
+3.65,Groß- und Einzelhandelsgebäude,187971.33711721774
+3.65,Hotels o.Ä.,247798.54057709564
+3.65,Industrie und Lagerung,194064.784917469
+3.65,"Kultur, Freizeit, Bildung und Gesundheit",295266.4571435392
+3.65,Mehrfamilienhaus,2735123.895175245
+3.65,Verkehrs- und Nachrichtenwesen,22428.31593340491
+3.75,Büronutzung,558031.358717841
+3.75,Ein- und Zweifamilienhäuser,15385.087621422783
+3.75,Gemeinschaftsgebäude,122095.40374378668
+3.75,Groß- und Einzelhandelsgebäude,179965.678756535
+3.75,Hotels o.Ä.,230706.42081470997
+3.75,Industrie und Lagerung,179688.36810279754
+3.75,"Kultur, Freizeit, Bildung und Gesundheit",270352.49470283306
+3.75,Mehrfamilienhaus,2705883.2155573596
+3.75,Verkehrs- und Nachrichtenwesen,21176.65866537934
+3.85,Büronutzung,540012.9983623518
+3.85,Ein- und Zweifamilienhäuser,12799.786282957039
+3.85,Gemeinschaftsgebäude,115203.06862780503
+3.85,Groß- und Einzelhandelsgebäude,172728.26846288313
+3.85,Hotels o.Ä.,214170.07736460524
+3.85,Industrie und Lagerung,166943.81558513272
+3.85,"Kultur, Freizeit, Bildung und Gesundheit",248032.69672061043
+3.85,Mehrfamilienhaus,2673583.6744332886
+3.85,Verkehrs- und Nachrichtenwesen,19982.827388159152
+3.95,Büronutzung,517717.4678698929
+3.95,Ein- und Zweifamilienhäuser,33721.24320317118
+3.95,Gemeinschaftsgebäude,109091.33249884001
+3.95,Groß- und Einzelhandelsgebäude,166335.3082830332
+3.95,Hotels o.Ä.,199400.6173043356
+3.95,Industrie und Lagerung,155074.49906062498
+3.95,"Kultur, Freizeit, Bildung und Gesundheit",228242.235709685
+3.95,Mehrfamilienhaus,2624327.432653711
+3.95,Verkehrs- und Nachrichtenwesen,18844.151815146543
+4.05,Büronutzung,492543.960923373
+4.05,Ein- und Zweifamilienhäuser,12347.776584410607
+4.05,Gemeinschaftsgebäude,103653.50898489349
+4.05,Groß- und Einzelhandelsgebäude,161448.84993248808
+4.05,Hotels o.Ä.,187120.06801864362
+4.05,Industrie und Lagerung,143564.1997485182
+4.05,"Kultur, Freizeit, Bildung und Gesundheit",210790.37504811928
+4.05,Mehrfamilienhaus,2550735.758961933
+4.05,Verkehrs- und Nachrichtenwesen,17758.774588986125
+4.15,Büronutzung,466058.2228824131
+4.15,Ein- und Zweifamilienhäuser,10905.022698795843
+4.15,Gemeinschaftsgebäude,98788.14964416216
+4.15,Groß- und Einzelhandelsgebäude,159702.8862368933
+4.15,Hotels o.Ä.,177126.1687630258
+4.15,Industrie und Lagerung,132296.3879278017
+4.15,"Kultur, Freizeit, Bildung und Gesundheit",195432.06079265036
+4.15,Mehrfamilienhaus,2449707.924624947
+4.15,Verkehrs- und Nachrichtenwesen,16726.461585063
+4.25,Büronutzung,440813.0127397389
+4.25,Ein- und Zweifamilienhäuser,8650.0707500248
+4.25,Gemeinschaftsgebäude,94401.88902472952
+4.25,Groß- und Einzelhandelsgebäude,162600.3804356857
+4.25,Hotels o.Ä.,168777.25747619005
+4.25,Industrie und Lagerung,121434.48987598963
+4.25,"Kultur, Freizeit, Bildung und Gesundheit",181918.6113636087
+4.25,Mehrfamilienhaus,2327006.3388207345
+4.25,Verkehrs- und Nachrichtenwesen,15748.8166869312
+4.35,Büronutzung,419323.9387742723
+4.35,Ein- und Zweifamilienhäuser,9955.493162056922
+4.35,Gemeinschaftsgebäude,90410.70694633624
+4.35,Groß- und Einzelhandelsgebäude,167848.11073301046
+4.35,Hotels o.Ä.,161515.16579747738
+4.35,Industrie und Lagerung,111196.61545301056
+4.35,"Kultur, Freizeit, Bildung und Gesundheit",170024.94060245718
+4.35,Mehrfamilienhaus,2194876.9077735776
+4.35,Verkehrs- und Nachrichtenwesen,14828.942142783539
+4.45,Büronutzung,401539.54458107316
+4.45,Ein- und Zweifamilienhäuser,11837.615789448186
+4.45,Gemeinschaftsgebäude,86740.62702999763
+4.45,Groß- und Einzelhandelsgebäude,168076.1466931322
+4.45,Hotels o.Ä.,155027.1847652036
+4.45,Industrie und Lagerung,101701.48565684544
+4.45,"Kultur, Freizeit, Bildung und Gesundheit",159554.20772083174
+4.45,Mehrfamilienhaus,2063962.8769501664
+4.45,Verkehrs- und Nachrichtenwesen,13970.73946785375
+4.55,Büronutzung,384448.8975039495
+4.55,Ein- und Zweifamilienhäuser,10254.759873987208
+4.55,Gemeinschaftsgebäude,83328.1242111568
+4.55,Groß- und Einzelhandelsgebäude,157793.41461335443
+4.55,Hotels o.Ä.,149239.45479489674
+4.55,Industrie und Lagerung,92943.08027644554
+4.55,"Kultur, Freizeit, Bildung und Gesundheit",150327.4241918111
+4.55,Mehrfamilienhaus,1942256.11342341
+4.55,Verkehrs- und Nachrichtenwesen,13178.073376292019
+4.65,Büronutzung,366200.9633933018
+4.65,Ein- und Zweifamilienhäuser,7298.705686974797
+4.65,Gemeinschaftsgebäude,80120.16177905617
+4.65,Groß- und Einzelhandelsgebäude,140350.02915389132
+4.65,Hotels o.Ä.,144295.76364240062
+4.65,Industrie und Lagerung,84847.4373779035
+4.65,"Kultur, Freizeit, Bildung und Gesundheit",142170.09195430388
+4.65,Mehrfamilienhaus,1835365.5304359721
+4.65,Verkehrs- und Nachrichtenwesen,12453.984585058926
+4.75,Büronutzung,348523.37098106707
+4.75,Ein- und Zweifamilienhäuser,3889.365343635638
+4.75,Gemeinschaftsgebäude,77073.743598394
+4.75,Groß- und Einzelhandelsgebäude,123412.29843861319
+4.75,Hotels o.Ä.,140429.88363956005
+4.75,Industrie und Lagerung,77337.97036934765
+4.75,"Kultur, Freizeit, Bildung und Gesundheit",134906.23749739947
+4.75,Mehrfamilienhaus,1742267.081029861
+4.75,Verkehrs- und Nachrichtenwesen,11800.075313442794
+4.85,Büronutzung,333493.1810397652
+4.85,Ein- und Zweifamilienhäuser,2285.733874484755
+4.85,Gemeinschaftsgebäude,74154.98131017832
+4.85,Groß- und Einzelhandelsgebäude,110587.93928257341
+4.85,Hotels o.Ä.,137656.3438553098
+4.85,Industrie und Lagerung,70368.09118673946
+4.85,"Kultur, Freizeit, Bildung und Gesundheit",128363.26850952959
+4.85,Mehrfamilienhaus,1657319.873121589
+4.85,Verkehrs- und Nachrichtenwesen,11216.127792848129
+4.95,Büronutzung,321170.49600042653
+4.95,Ein- und Zweifamilienhäuser,2379.5662612671085
+4.95,Gemeinschaftsgebäude,71337.8012593253
+4.95,Groß- und Einzelhandelsgebäude,100849.78230288328
+4.95,Hotels o.Ä.,135515.13718997117
+4.95,Industrie und Lagerung,63921.15876305976
+4.95,"Kultur, Freizeit, Bildung und Gesundheit",122383.8062209563
+4.95,Mehrfamilienhaus,1575834.5086869048
+4.95,Verkehrs- und Nachrichtenwesen,10699.963891916168
+5.05,Büronutzung,310782.9743779074
+5.05,Ein- und Zweifamilienhäuser,4013.038932385675
+5.05,Gemeinschaftsgebäude,68602.48375179993
+5.05,Groß- und Einzelhandelsgebäude,92403.98672793536
+5.05,Hotels o.Ä.,133227.8143184479
+5.05,Industrie und Lagerung,57996.494776481966
+5.05,"Kultur, Freizeit, Bildung und Gesundheit",116837.43897794528
+5.05,Mehrfamilienhaus,1496333.27598105
+5.05,Verkehrs- und Nachrichtenwesen,10247.517799299723
+5.15,Büronutzung,301785.2592890092
+5.15,Ein- und Zweifamilienhäuser,11234.924175773498
+5.15,Gemeinschaftsgebäude,65934.22858941066
+5.15,Groß- und Einzelhandelsgebäude,84453.8205782458
+5.15,Hotels o.Ä.,130222.5522959863
+5.15,Industrie und Lagerung,52598.44431392464
+5.15,"Kultur, Freizeit, Bildung und Gesundheit",111627.02915939585
+5.15,Mehrfamilienhaus,1418025.2070265901
+5.15,Verkehrs- und Nachrichtenwesen,9853.073359026019
+5.25,Büronutzung,293743.82489075884
+5.25,Ein- und Zweifamilienhäuser,24566.605887269325
+5.25,Gemeinschaftsgebäude,63321.89630977563
+5.25,Groß- und Einzelhandelsgebäude,76879.54959171667
+5.25,Hotels o.Ä.,126582.60768836238
+5.25,Industrie und Lagerung,47738.43653024464
+5.25,"Kultur, Freizeit, Bildung und Gesundheit",106688.37776744127
+5.25,Mehrfamilienhaus,1340216.2443977296
+5.25,Verkehrs- und Nachrichtenwesen,9509.610416490788
+5.35,Büronutzung,286182.5279562071
+5.35,Ein- und Zweifamilienhäuser,3058.0665565208556
+5.35,Gemeinschaftsgebäude,60757.01125722264
+5.35,Groß- und Einzelhandelsgebäude,69741.3304787141
+5.35,Hotels o.Ä.,122972.83537368677
+5.35,Industrie und Lagerung,43455.67056819808
+5.35,"Kultur, Freizeit, Bildung und Gesundheit",101985.60392818162
+5.35,Mehrfamilienhaus,1261930.0040876605
+5.35,Verkehrs- und Nachrichtenwesen,9209.206845508603
+5.45,Büronutzung,278720.0028623626
+5.45,Ein- und Zweifamilienhäuser,5235.855367934385
+5.45,Gemeinschaftsgebäude,58233.051586799105
+5.45,Groß- und Einzelhandelsgebäude,63100.694334643915
+5.45,Hotels o.Ä.,119898.03187177923
+5.45,Industrie und Lagerung,39855.6882294948
+5.45,"Kultur, Freizeit, Bildung und Gesundheit",97505.90962719217
+5.45,Mehrfamilienhaus,1184196.9218834478
+5.45,Verkehrs- und Nachrichtenwesen,8943.451235586357
+5.55,Büronutzung,271219.9249342948
+5.55,Ein- und Zweifamilienhäuser,7553.913577381237
+5.55,Gemeinschaftsgebäude,55745.00421711927
+5.55,Groß- und Einzelhandelsgebäude,56996.234268699845
+5.55,Hotels o.Ä.,116938.36513974676
+5.55,Industrie und Lagerung,37146.73290580447
+5.55,"Kultur, Freizeit, Bildung und Gesundheit",93256.72926990147
+5.55,Mehrfamilienhaus,1111313.6504906954
+5.55,Verkehrs- und Nachrichtenwesen,8703.832402585615
+5.65,Büronutzung,263762.44119771745
+5.65,Ein- und Zweifamilienhäuser,5938.847235517511
+5.65,Gemeinschaftsgebäude,53289.13331501592
+5.65,Groß- und Einzelhandelsgebäude,51453.59300089778
+5.65,Hotels o.Ä.,113067.9128403452
+5.65,Industrie und Lagerung,35621.30154876802
+5.65,"Kultur, Freizeit, Bildung und Gesundheit",89266.73038960718
+5.65,Mehrfamilienhaus,1044850.6921652316
+5.65,Verkehrs- und Nachrichtenwesen,8482.083473363298
+5.75,Büronutzung,256480.45953456996
+5.75,Ein- und Zweifamilienhäuser,3141.3835776728383
+5.75,Gemeinschaftsgebäude,50862.89783213834
+5.75,Groß- und Einzelhandelsgebäude,46496.33184245082
+5.75,Hotels o.Ä.,107849.6005299527
+5.75,Industrie und Lagerung,35517.149187401024
+5.75,"Kultur, Freizeit, Bildung und Gesundheit",85590.53005768737
+5.75,Mehrfamilienhaus,982690.3087521315
+5.75,Verkehrs- und Nachrichtenwesen,8270.468570797262
+5.85,Büronutzung,249413.93790080398
+5.85,Ein- und Zweifamilienhäuser,3080.751455089884
+5.85,Gemeinschaftsgebäude,48464.953295464264
+5.85,Groß- und Einzelhandelsgebäude,42150.54197511296
+5.85,Hotels o.Ä.,101898.41389139475
+5.85,Industrie und Lagerung,36755.287710792865
+5.85,"Kultur, Freizeit, Bildung und Gesundheit",82315.30978545354
+5.85,Mehrfamilienhaus,922799.9742287027
+5.85,Verkehrs- und Nachrichtenwesen,8062.008140310845
+5.95,Büronutzung,242474.03352668852
+5.95,Ein- und Zweifamilienhäuser,2985.547207166176
+5.95,Gemeinschaftsgebäude,46095.18130413575
+5.95,Groß- und Einzelhandelsgebäude,38441.42531560217
+5.95,Hotels o.Ä.,96092.91358114524
+5.95,Industrie und Lagerung,38699.86941295481
+5.95,"Kultur, Freizeit, Bildung und Gesundheit",79565.33564113808
+5.95,Mehrfamilienhaus,864767.6197107772
+5.95,Verkehrs- und Nachrichtenwesen,7850.644436307197
+6.05,Büronutzung,235490.95544940795
+6.05,Ein- und Zweifamilienhäuser,2755.0822605406734
+6.05,Gemeinschaftsgebäude,43754.703232050364
+6.05,Groß- und Einzelhandelsgebäude,35381.94082575972
+6.05,Hotels o.Ä.,90775.71725710038
+6.05,Industrie und Lagerung,40192.736398298686
+6.05,"Kultur, Freizeit, Bildung und Gesundheit",77497.82166542842
+6.05,Mehrfamilienhaus,808678.6055675723
+6.05,Verkehrs- und Nachrichtenwesen,7631.351851582816
+6.15,Büronutzung,228270.84832236686
+6.15,Ein- und Zweifamilienhäuser,4105.139692993829
+6.15,Gemeinschaftsgebäude,41445.84947834329
+6.15,Groß- und Einzelhandelsgebäude,32956.19374073386
+6.15,Hotels o.Ä.,85816.44362204323
+6.15,Industrie und Lagerung,39999.99637668034
+6.15,"Kultur, Freizeit, Bildung und Gesundheit",76282.02239157872
+6.15,Mehrfamilienhaus,754059.3647947297
+6.15,Verkehrs- und Nachrichtenwesen,7400.198142924845
+6.25,Büronutzung,220622.01188478776
+6.25,Ein- und Zweifamilienhäuser,4278.890515566859
+6.25,Gemeinschaftsgebäude,39172.070055134594
+6.25,Groß- und Einzelhandelsgebäude,31104.16463128682
+6.25,Hotels o.Ä.,81102.16360441013
+6.25,Industrie und Lagerung,37471.56009240213
+6.25,"Kultur, Freizeit, Bildung und Gesundheit",76055.51937995825
+6.25,Mehrfamilienhaus,700929.4588810486
+6.25,Verkehrs- und Nachrichtenwesen,7154.362798271445
+6.35,Büronutzung,212361.39170816273
+6.35,Ein- und Zweifamilienhäuser,2293.5847873569646
+6.35,Gemeinschaftsgebäude,36937.78487305353
+6.35,Groß- und Einzelhandelsgebäude,29717.34944250261
+6.35,Hotels o.Ä.,76813.9527166669
+6.35,Industrie und Lagerung,32959.624307120765
+6.35,"Kultur, Freizeit, Bildung und Gesundheit",76859.66752971328
+6.35,Mehrfamilienhaus,651348.3222001803
+6.35,Verkehrs- und Nachrichtenwesen,6892.1183730470475
+6.45,Büronutzung,203327.52640015475
+6.45,Ein- und Zweifamilienhäuser,1083.6736677724682
+6.45,Gemeinschaftsgebäude,34748.18188338364
+6.45,Groß- und Einzelhandelsgebäude,28652.97927009955
+6.45,Hotels o.Ä.,73315.37037669399
+6.45,Industrie und Lagerung,27670.297162388433
+6.45,"Kultur, Freizeit, Bildung und Gesundheit",78569.46126742048
+6.45,Mehrfamilienhaus,607597.8358920343
+6.45,Verkehrs- und Nachrichtenwesen,6612.780029908022
+6.55,Büronutzung,193409.75167010416
+6.55,Ein- und Zweifamilienhäuser,842.470183218352
+6.55,Gemeinschaftsgebäude,32608.97784064478
+6.55,Groß- und Einzelhandelsgebäude,27765.907368083335
+6.55,Hotels o.Ä.,70722.79000981426
+6.55,Industrie und Lagerung,23032.367015745232
+6.55,"Kultur, Freizeit, Bildung und Gesundheit",80846.20363216508
+6.55,Mehrfamilienhaus,569402.1136026084
+6.55,Verkehrs- und Nachrichtenwesen,6316.628019690689
+6.65,Büronutzung,182583.477262522
+6.65,Ein- und Zweifamilienhäuser,790.2419038702269
+6.65,Gemeinschaftsgebäude,30526.15983367443
+6.65,Groß- und Einzelhandelsgebäude,26945.713565424136
+6.65,Hotels o.Ä.,68507.89150300069
+6.65,Industrie und Lagerung,19965.19246236876
+6.65,"Kultur, Freizeit, Bildung und Gesundheit",83145.1825302698
+6.65,Mehrfamilienhaus,533920.97785297
+6.65,Verkehrs- und Nachrichtenwesen,6004.807565553261
+6.75,Büronutzung,170934.6285260854
+6.75,Ein- und Zweifamilienhäuser,764.6581392838589
+6.75,Gemeinschaftsgebäude,28505.726192189137
+6.75,Groß- und Einzelhandelsgebäude,26140.25317970887
+6.75,Hotels o.Ä.,65756.9741331172
+6.75,Industrie und Lagerung,18441.117544353605
+6.75,"Kultur, Freizeit, Bildung und Gesundheit",84797.51979106397
+6.75,Mehrfamilienhaus,497461.3482107725
+6.75,Verkehrs- und Nachrichtenwesen,5679.210567236175
+6.85,Büronutzung,158661.85139343026
+6.85,Ein- und Zweifamilienhäuser,756.1887370740213
+6.85,Gemeinschaftsgebäude,26553.44345493438
+6.85,Groß- und Einzelhandelsgebäude,25352.191561014413
+6.85,Hotels o.Ä.,62052.901791939
+6.85,Industrie und Lagerung,17598.378339378443
+6.85,"Kultur, Freizeit, Bildung und Gesundheit",85156.28759062146
+6.85,Mehrfamilienhaus,457502.8550414096
+6.85,Verkehrs- und Nachrichtenwesen,5342.3436661156165
+6.95,Büronutzung,146054.85641924178
+6.95,Ein- und Zweifamilienhäuser,768.7845162657002
+6.95,Gemeinschaftsgebäude,24674.632496899812
+6.95,Groß- und Einzelhandelsgebäude,24610.300078681463
+6.95,Hotels o.Ä.,57893.96693384357
+6.95,Industrie und Lagerung,16389.91653564995
+6.95,"Kultur, Freizeit, Bildung und Gesundheit",83764.09729698699
+6.95,Mehrfamilienhaus,415137.86001543107
+6.95,Verkehrs- und Nachrichtenwesen,4997.187408066399
+7.05,Büronutzung,133455.7077791456
+7.05,Ein- und Zweifamilienhäuser,809.2958637400282
+7.05,Gemeinschaftsgebäude,22873.99244063262
+7.05,Groß- und Einzelhandelsgebäude,23932.515126613976
+7.05,Hotels o.Ä.,54089.846546384775
+7.05,Industrie und Lagerung,14327.316010775896
+7.05,"Kultur, Freizeit, Bildung und Gesundheit",80481.20122660292
+7.05,Mehrfamilienhaus,374663.1052061663
+7.05,Verkehrs- und Nachrichtenwesen,4647.051408495587
+7.15,Büronutzung,121214.81578159433
+7.15,Ein- und Zweifamilienhäuser,881.990155898849
+7.15,Gemeinschaftsgebäude,21155.46637825763
+7.15,Groß- und Einzelhandelsgebäude,23302.23245383822
+7.15,Hotels o.Ä.,51032.05292481025
+7.15,Industrie und Lagerung,11706.477486884709
+7.15,"Kultur, Freizeit, Bildung und Gesundheit",75523.03960598221
+7.15,Mehrfamilienhaus,337821.6736492299
+7.15,Verkehrs- und Nachrichtenwesen,4295.430474621977
+7.25,Büronutzung,109653.23510437238
+7.25,Ein- und Zweifamilienhäuser,982.5955013405027
+7.25,Gemeinschaftsgebäude,19522.14884853196
+7.25,Groß- und Einzelhandelsgebäude,22670.05616331729
+7.25,Hotels o.Ä.,48663.04955052871
+7.25,Industrie und Lagerung,9183.877294084601
+7.25,"Kultur, Freizeit, Bildung und Gesundheit",69392.0310557186
+7.25,Mehrfamilienhaus,302249.74936440383
+7.25,Verkehrs- und Nachrichtenwesen,3945.866511433978
+7.35,Büronutzung,99035.80746763849
+7.35,Ein- und Zweifamilienhäuser,1094.5386061009217
+7.35,Gemeinschaftsgebäude,17976.231904681717
+7.35,Groß- und Einzelhandelsgebäude,21977.148136078627
+7.35,Hotels o.Ä.,46824.63660872289
+7.35,Industrie und Lagerung,7214.399113088493
+7.35,"Kultur, Freizeit, Bildung und Gesundheit",62732.28918173453
+7.35,Mehrfamilienhaus,270438.2321651259
+7.35,Verkehrs- und Nachrichtenwesen,3601.820696523597
+7.45,Büronutzung,89548.1879831937
+7.45,Ein- und Zweifamilienhäuser,1190.3974489608818
+7.45,Gemeinschaftsgebäude,16518.984708305572
+7.45,Groß- und Einzelhandelsgebäude,21184.34575455695
+7.45,Hotels o.Ä.,45421.26030239582
+7.45,Industrie und Lagerung,5857.933995865148
+7.45,"Kultur, Freizeit, Bildung und Gesundheit",56164.80657061479
+7.45,Mehrfamilienhaus,247586.35058140635
+7.45,Verkehrs- und Nachrichtenwesen,3266.5598514530075
+7.55,Büronutzung,81265.92791565949
+7.55,Ein- und Zweifamilienhäuser,1239.74164492687
+7.55,Gemeinschaftsgebäude,15150.760899904291
+7.55,Groß- und Einzelhandelsgebäude,20290.11827609565
+7.55,Hotels o.Ä.,44353.936779386495
+7.55,Industrie und Lagerung,4943.608410190973
+7.55,"Kultur, Freizeit, Bildung und Gesundheit",50160.87208297253
+7.55,Mehrfamilienhaus,232102.35952935086
+7.55,Verkehrs- und Nachrichtenwesen,2943.060186180495
+7.65,Büronutzung,74118.32380077452
+7.65,Ein- und Zweifamilienhäuser,1220.9979641993148
+7.65,Gemeinschaftsgebäude,13871.028338392338
+7.65,Groß- und Einzelhandelsgebäude,19329.063300464662
+7.65,Hotels o.Ä.,43436.53234852742
+7.65,Industrie und Lagerung,4285.017732215247
+7.65,"Kultur, Freizeit, Bildung und Gesundheit",44986.552749232316
+7.65,Mehrfamilienhaus,216724.1455940299
+7.65,Verkehrs- und Nachrichtenwesen,2633.930692305035
+7.75,Büronutzung,67878.33611898807
+7.75,Ein- und Zweifamilienhäuser,1131.6097118481318
+7.75,Gemeinschaftsgebäude,12678.416841082366
+7.75,Groß- und Einzelhandelsgebäude,18354.24104580595
+7.75,Hotels o.Ä.,42410.463743342625
+7.75,Industrie und Lagerung,3769.258923411412
+7.75,"Kultur, Freizeit, Bildung und Gesundheit",40717.36804048662
+7.75,Mehrfamilienhaus,192333.68004763802
+7.75,Verkehrs- und Nachrichtenwesen,2341.357469143045
+7.85,Büronutzung,62219.77065071419
+7.85,Ein- und Zweifamilienhäuser,990.2459752896775
+7.85,Gemeinschaftsgebäude,11570.780895901302
+7.85,Groß- und Einzelhandelsgebäude,17414.170969069823
+7.85,Hotels o.Ä.,41042.92860305865
+7.85,Industrie und Lagerung,3346.1687843168334
+7.85,"Kultur, Freizeit, Bildung und Gesundheit",37297.43583121525
+7.85,Mehrfamilienhaus,161510.52952944557
+7.85,Verkehrs- und Nachrichtenwesen,2067.0692501479916
+7.95,Büronutzung,56843.774608607455
+7.95,Ein- und Zweifamilienhäuser,828.8512520559049
+7.95,Gemeinschaftsgebäude,10545.275571933862
+7.95,Groß- und Einzelhandelsgebäude,16535.63978881788
+7.95,Hotels o.Ä.,39224.38941365146
+7.95,Industrie und Lagerung,2995.03544176233
+7.95,"Kultur, Freizeit, Bildung und Gesundheit",34610.12736526683
+7.95,Mehrfamilienhaus,135125.7285706944
+7.95,Verkehrs- und Nachrichtenwesen,1812.323422590076
+8.05,Büronutzung,51609.54749939508
+8.05,Ein- und Zweifamilienhäuser,678.9112144531538
+8.05,Gemeinschaftsgebäude,9598.444711716558
+8.05,Groß- und Einzelhandelsgebäude,15718.198256115415
+8.05,Hotels o.Ä.,36979.5768949386
+8.05,Industrie und Lagerung,2704.119668048517
+8.05,"Kultur, Freizeit, Bildung und Gesundheit",32535.174650189194
+8.05,Mehrfamilienhaus,117138.92594464889
+8.05,Verkehrs- und Nachrichtenwesen,1577.9109614021045
+8.15,Büronutzung,46578.649630318614
+8.15,Ein- und Zweifamilienhäuser,560.1115491096488
+8.15,Gemeinschaftsgebäude,8726.320761275334
+8.15,Groß- und Einzelhandelsgebäude,14939.587953425471
+8.15,Hotels o.Ä.,34386.91417833855
+8.15,Industrie und Lagerung,2463.419316875617
+8.15,"Kultur, Freizeit, Bildung und Gesundheit",30981.385703058964
+8.15,Mehrfamilienhaus,105296.06020465269
+8.15,Verkehrs- und Nachrichtenwesen,1364.177978117938
+8.25,Büronutzung,41939.64045882724
+8.25,Ein- und Zweifamilienhäuser,477.08194007645716
+8.25,Gemeinschaftsgebäude,7924.535238975039
+8.25,Groß- und Einzelhandelsgebäude,14167.08899300618
+8.25,Hotels o.Ä.,31500.50889877668
+8.25,Industrie und Lagerung,2263.385252599497
+8.25,"Kultur, Freizeit, Bildung und Gesundheit",29896.228743751653
+8.25,Mehrfamilienhaus,96337.76176254245
+8.25,Verkehrs- und Nachrichtenwesen,1171.0610524860347
+8.35,Büronutzung,37872.09843340151
+8.35,Ein- und Zweifamilienhäuser,423.6568637595603
+8.35,Gemeinschaftsgebäude,7188.437958681959
+8.35,Groß- und Einzelhandelsgebäude,13369.190490114568
+8.35,Hotels o.Ä.,28367.480795545063
+8.35,Industrie und Lagerung,2095.2367614041223
+8.35,"Kultur, Freizeit, Bildung und Gesundheit",29259.61174874704
+8.35,Mehrfamilienhaus,88925.6340522638
+8.35,Verkehrs- und Nachrichtenwesen,998.13318557279
+8.45,Büronutzung,34446.9175726787
+8.45,Ein- und Zweifamilienhäuser,389.7848780939491
+8.45,Gemeinschaftsgebäude,6513.221913685279
+8.45,Groß- und Einzelhandelsgebäude,12523.94470403753
+8.45,Hotels o.Ä.,25115.955494085698
+8.45,Industrie und Lagerung,1951.3857009910705
+8.45,"Kultur, Freizeit, Bildung und Gesundheit",29069.759485711664
+8.45,Mehrfamilienhaus,82756.30069888574
+8.45,Verkehrs- und Nachrichtenwesen,844.6570902231368
+8.55,Büronutzung,31614.367534759876
+8.55,Ein- und Zweifamilienhäuser,366.62178210008506
+8.55,Gemeinschaftsgebäude,5894.049466582635
+8.55,Groß- und Einzelhandelsgebäude,11622.886608895602
+8.55,Hotels o.Ä.,21993.07762430568
+8.55,Industrie und Lagerung,1825.644361642285
+8.55,"Kultur, Freizeit, Bildung und Gesundheit",29326.876938734484
+8.55,Mehrfamilienhaus,77521.60040521128
+8.55,Verkehrs- und Nachrichtenwesen,709.6426037233766
+8.65,Büronutzung,29258.795288607515
+8.65,Ein- und Zweifamilienhäuser,348.4054267577813
+8.65,Gemeinschaftsgebäude,5326.174458590919
+8.65,Groß- und Einzelhandelsgebäude,10671.112379431004
+8.65,Hotels o.Ä.,19279.048759252943
+8.65,Industrie und Lagerung,1713.2187250600873
+8.65,"Kultur, Freizeit, Bildung und Gesundheit",30017.80269101294
+8.65,Mehrfamilienhaus,73071.82913839605
+8.65,Verkehrs- und Nachrichtenwesen,591.9052421655923
+8.75,Büronutzung,27265.46297735351
+8.75,Ein- und Zweifamilienhäuser,332.1164691084703
+8.75,Gemeinschaftsgebäude,4805.05428999857
+8.75,Groß- und Einzelhandelsgebäude,9684.744845565094
+8.75,Hotels o.Ä.,17138.357054353095
+8.75,Industrie und Lagerung,1610.5587265692955
+8.75,"Kultur, Freizeit, Bildung und Gesundheit",31103.341356787532
+8.75,Mehrfamilienhaus,69368.51242683729
+8.75,Verkehrs- und Nachrichtenwesen,490.1232813309197
+8.85,Büronutzung,25561.189258658414
+8.85,Ein- und Zweifamilienhäuser,316.43284476295355
+8.85,Gemeinschaftsgebäude,4326.4460902196315
+8.85,Groß- und Einzelhandelsgebäude,8686.988149981576
+8.85,Hotels o.Ä.,15537.876657825667
+8.85,Industrie und Lagerung,1515.139392727407
+8.85,"Kultur, Freizeit, Bildung und Gesundheit",32509.47431683468
+8.85,Mehrfamilienhaus,66514.2500831323
+8.85,Verkehrs- und Nachrichtenwesen,402.89120503211444
+8.95,Büronutzung,24122.239635424925
+8.95,Ein- und Zweifamilienhäuser,300.860609353993
+8.95,Gemeinschaftsgebäude,3886.481843607143
+8.95,Groß- und Einzelhandelsgebäude,7703.758250212964
+8.95,Hotels o.Ä.,14297.900369256091
+8.95,Industrie und Lagerung,1425.2294070192834
+8.95,"Kultur, Freizeit, Bildung und Gesundheit",34123.64287677136
+8.95,Mehrfamilienhaus,64490.30862452413
+8.95,Verkehrs- und Nachrichtenwesen,328.76786790533356
+9.05,Büronutzung,22960.921072609843
+9.05,Ein- und Zweifamilienhäuser,285.24601740429154
+9.05,Gemeinschaftsgebäude,3481.7187076477057
+9.05,Groß- und Einzelhandelsgebäude,6759.676933932614
+9.05,Hotels o.Ä.,13225.372470859504
+9.05,Industrie und Lagerung,1339.681989311712
+9.05,"Kultur, Freizeit, Bildung und Gesundheit",35797.19204522992
+9.05,Mehrfamilienhaus,62138.45487423777
+9.05,Verkehrs- und Nachrichtenwesen,266.3182370872124
+9.15,Büronutzung,22103.388416656337
+9.15,Ein- und Zweifamilienhäuser,269.56343071016437
+9.15,Gemeinschaftsgebäude,3109.162598540482
+9.15,Groß- und Einzelhandelsgebäude,5875.020359728762
+9.15,Hotels o.Ä.,12222.146150743687
+9.15,Industrie und Lagerung,1257.7640223339845
+9.15,"Kultur, Freizeit, Bildung und Gesundheit",37354.51552719419
+9.15,Mehrfamilienhaus,58200.98532714283
+9.15,Verkehrs- und Nachrichtenwesen,214.1480725399557
+9.25,Büronutzung,21566.016129348558
+9.25,Ein- und Zweifamilienhäuser,253.8394761496646
+9.25,Gemeinschaftsgebäude,2766.2652026059336
+9.25,Groß- und Einzelhandelsgebäude,5063.960412663731
+9.25,Hotels o.Ä.,11300.905176529484
+9.25,Industrie und Lagerung,1179.0260623626136
+9.25,"Kultur, Freizeit, Bildung und Gesundheit",38608.42252221919
+9.25,Mehrfamilienhaus,53776.62710865493
+9.25,Verkehrs- und Nachrichtenwesen,170.93135230745182
+9.35,Büronutzung,21334.492630906832
+9.35,Ein- und Zweifamilienhäuser,238.12907481169412
+9.35,Gemeinschaftsgebäude,2450.896647029028
+9.35,Groß- und Einzelhandelsgebäude,4334.136402925952
+9.35,Hotels o.Ä.,10524.415272437058
+9.35,Industrie und Lagerung,1103.2084234423007
+9.35,"Kultur, Freizeit, Bildung und Gesundheit",39379.97523671041
+9.35,Mehrfamilienhaus,50754.52202063009
+9.35,Verkehrs- und Nachrichtenwesen,135.4306277798419
+9.45,Büronutzung,21349.74381927612
+9.45,Ein- und Zweifamilienhäuser,222.50737239384068
+9.45,Gemeinschaftsgebäude,2161.297885434329
+9.45,Groß- und Einzelhandelsgebäude,3687.31850317594
+9.45,Hotels o.Ä.,9933.392006167058
+9.45,Industrie und Lagerung,1030.1756395000705
+9.45,"Kultur, Freizeit, Bildung und Gesundheit",39519.88364737475
+9.45,Mehrfamilienhaus,49264.55577975035
+9.45,Verkehrs- und Nachrichtenwesen,106.51079408326588
+9.55,Büronutzung,21505.445982200246
+9.55,Ein- und Zweifamilienhäuser,207.06569754704552
+9.55,Gemeinschaftsgebäude,1896.0182216488233
+9.55,Groß- und Einzelhandelsgebäude,3120.7515858864485
+9.55,Hotels o.Ä.,9514.238146743632
+9.55,Industrie und Lagerung,959.8715781465503
+9.55,"Kultur, Freizeit, Bildung und Gesundheit",38927.86384600954
+9.55,Mehrfamilienhaus,48563.954703751595
+9.55,Verkehrs- und Nachrichtenwesen,83.14697829600567
+9.65,Büronutzung,21660.65288647182
+9.65,Ein- und Zweifamilienhäuser,191.90844949365314
+9.65,Gemeinschaftsgebäude,1653.8441766081935
+9.65,Groß- und Einzelhandelsgebäude,2628.733992254495
+9.65,Hotels o.Ä.,9211.402958029646
+9.65,Industrie und Lagerung,892.2888182694201
+9.65,"Kultur, Freizeit, Bildung und Gesundheit",37566.430741571974
+9.65,Mehrfamilienhaus,48187.16118056254
+9.65,Verkehrs- und Nachrichtenwesen,64.42738588442396
+9.75,Büronutzung,21666.868547802726
+9.75,Ein- und Zweifamilienhäuser,177.15030371182863
+9.75,Gemeinschaftsgebäude,1433.7260483892533
+9.75,Groß- und Einzelhandelsgebäude,2204.0701011143706
+9.75,Hotels o.Ä.,8958.121817591267
+9.75,Industrie und Lagerung,827.4476021174657
+9.75,"Kultur, Freizeit, Bildung und Gesundheit",35466.46772442937
+9.75,Mehrfamilienhaus,47679.31336588294
+9.75,Verkehrs- und Nachrichtenwesen,49.5520109938199
+9.85,Büronutzung,21402.877734396476
+9.85,Ein- und Zweifamilienhäuser,162.91364809519348
+9.85,Gemeinschaftsgebäude,1234.7080550580417
+9.85,Groß- und Einzelhandelsgebäude,1839.1827910004529
+9.85,Hotels o.Ä.,8700.554392067863
+9.85,Industrie und Lagerung,765.3811918475313
+9.85,"Kultur, Freizeit, Bildung und Gesundheit",32723.427972311467
+9.85,Mehrfamilienhaus,46394.63043854408
+9.85,Verkehrs- und Nachrichtenwesen,37.82811982832399
+9.95,Büronutzung,20805.843696604195
+9.95,Ein- und Zweifamilienhäuser,149.32618837236214
+9.95,Gemeinschaftsgebäude,1055.8669854120885
+9.95,Groß- und Einzelhandelsgebäude,1526.8216266060542
+9.95,Hotels o.Ä.,8407.275288060815
+9.95,Industrie und Lagerung,706.1256028822343
+9.95,"Kultur, Freizeit, Bildung und Gesundheit",29484.81937124627
+9.95,Mehrfamilienhaus,43901.66453322114
+9.95,Verkehrs- und Nachrichtenwesen,28.663371001539723
+10.05,Büronutzung,19886.890355157004
+10.05,Ein- und Zweifamilienhäuser,136.51858330352363
+10.05,Gemeinschaftsgebäude,896.2629642273092
+10.05,Groß- und Einzelhandelsgebäude,1260.4129861347456
+10.05,Hotels o.Ä.,8068.282528507697
+10.05,Industrie und Lagerung,649.7124596840273
+10.05,"Kultur, Freizeit, Bildung und Gesundheit",25931.26783039866
+10.05,Mehrfamilienhaus,40386.594958849426
+10.05,Verkehrs- und Nachrichtenwesen,21.557355682636096
+10.15,Büronutzung,18724.7864857639
+10.15,Ein- und Zweifamilienhäuser,124.62188109718983
+10.15,Gemeinschaftsgebäude,754.9044415060755
+10.15,Groß- und Einzelhandelsgebäude,1034.1543744736064
+10.15,Hotels o.Ä.,7689.757919221546
+10.15,Industrie und Lagerung,596.1643421142396
+10.15,"Kultur, Freizeit, Bildung und Gesundheit",22254.548464985226
+10.15,Mehrfamilienhaus,36533.41380601394
+10.15,Verkehrs- und Nachrichtenwesen,16.092236314581886
+10.25,Büronutzung,17440.217103997347
+10.25,Ein- und Zweifamilienhäuser,113.76446002846882
+10.25,Gemeinschaftsgebäude,630.7280144358454
+10.25,Groß- und Einzelhandelsgebäude,842.9642042463396
+10.25,Hotels o.Ä.,7288.024600426592
+10.25,Industrie und Lagerung,545.494084802614
+10.25,"Kultur, Freizeit, Bildung und Gesundheit",18636.28699948845
+10.25,Mehrfamilienhaus,33015.27505910409
+10.25,Verkehrs- und Nachrichtenwesen,11.923047014897298
+10.35,Büronutzung,16160.900136812115
+10.35,Ein- und Zweifamilienhäuser,104.06815191088404
+10.35,Gemeinschaftsgebäude,522.5923394108914
+10.35,Groß- und Einzelhandelsgebäude,682.3797363833093
+10.35,Hotels o.Ä.,6883.770201025438
+10.35,Industrie und Lagerung,497.7264180257607
+10.35,"Kultur, Freizeit, Bildung und Gesundheit",15230.54997812532
+10.35,Mehrfamilienhaus,30113.457200209363
+10.35,Verkehrs- und Nachrichtenwesen,8.76810099781895
+10.45,Büronutzung,14990.462579463936
+10.45,Ein- und Zweifamilienhäuser,95.64326920344075
+10.45,Gemeinschaftsgebäude,429.2843050671264
+10.45,Groß- und Einzelhandelsgebäude,548.471512376256
+10.45,Hotels o.Ä.,6496.944066066568
+10.45,Industrie und Lagerung,453.08076828490414
+10.45,"Kultur, Freizeit, Bildung und Gesundheit",12152.45337106908
+10.45,Mehrfamilienhaus,27738.259563923086
+10.45,Verkehrs- und Nachrichtenwesen,6.399837881873244
+10.55,Büronutzung,13990.603956944495
+10.55,Ein- und Zweifamilienhäuser,88.58238158547252
+10.55,Gemeinschaftsgebäude,349.5348853088087
+10.55,Groß- und Einzelhandelsgebäude,437.8314323072961
+10.55,Hotels o.Ä.,6142.890497522263
+10.55,Industrie und Lagerung,413.1166286951871
+10.55,"Kultur, Freizeit, Bildung und Gesundheit",9473.54814149312
+10.55,Mehrfamilienhaus,25679.451154196657
+10.55,Verkehrs- und Nachrichtenwesen,4.6363418331212145
+10.65,Büronutzung,13179.154516762605
+10.65,Ein- und Zweifamilienhäuser,82.95289947958179
+10.65,Gemeinschaftsgebäude,282.0416959940718
+10.65,Groß- und Einzelhandelsgebäude,347.7067808442881
+10.65,Hotels o.Ä.,5830.321745963826
+10.65,Industrie und Lagerung,386.349108706161
+10.65,"Kultur, Freizeit, Bildung und Gesundheit",7223.437706766624
+10.65,Mehrfamilienhaus,23797.279217684685
+10.65,Verkehrs- und Nachrichtenwesen,3.333673417080444
+10.75,Büronutzung,12540.169927197541
+10.75,Ein- und Zweifamilienhäuser,78.78880540843355
+10.75,Gemeinschaftsgebäude,225.4952203101518
+10.75,Groß- und Einzelhandelsgebäude,276.39494851039433
+10.75,Hotels o.Ä.,5561.387088156753
+10.75,Industrie und Lagerung,409.45079872111114
+10.75,"Kultur, Freizeit, Bildung und Gesundheit",5396.122806161974
+10.75,Mehrfamilienhaus,22057.212118567284
+10.75,Verkehrs- und Nachrichtenwesen,2.379085343802429
+10.85,Büronutzung,12039.080282342973
+10.85,Ein- und Zweifamilienhäuser,76.08219352903458
+10.85,Gemeinschaftsgebäude,178.60589323653664
+10.85,Groß- und Einzelhandelsgebäude,224.05577050470833
+10.85,Hotels o.Ä.,5333.520362255035
+10.85,Industrie und Lagerung,606.6258817330436
+10.85,"Kultur, Freizeit, Bildung und Gesundheit",3959.0966426882155
+10.85,Mehrfamilienhaus,20483.089368538043
+10.85,Verkehrs- und Nachrichtenwesen,1.6851351523330316
+10.95,Büronutzung,11636.560299686718
+10.95,Ein- und Zweifamilienhäuser,74.77557899392352
+10.95,Gemeinschaftsgebäude,140.1296714256984
+10.95,Groß- und Einzelhandelsgebäude,194.06136234508435
+10.95,Hotels o.Ä.,5142.238873642141
+10.95,Industrie und Lagerung,1302.3395456386997
+10.95,"Kultur, Freizeit, Bildung und Gesundheit",2863.2240218305965
+10.95,Mehrfamilienhaus,19120.913228053283
+10.95,Verkehrs- und Nachrichtenwesen,1.1846654170327362
+11.05,Büronutzung,11297.65486595539
+11.05,Ein- und Zweifamilienhäuser,74.75615666874323
+11.05,Gemeinschaftsgebäude,108.89027941238268
+11.05,Groß- und Einzelhandelsgebäude,194.756402219099
+11.05,Hotels o.Ä.,4983.848634302364
+11.05,Industrie und Lagerung,3122.493380126072
+11.05,"Kultur, Freizeit, Bildung und Gesundheit",2051.8157780286865
+11.05,Mehrfamilienhaus,18048.06497763001
+11.05,Verkehrs- und Nachrichtenwesen,0.8265926953487941
+11.15,Büronutzung,10995.717860534218
+11.15,Ein- und Zweifamilienhäuser,75.85325859249963
+11.15,Gemeinschaftsgebäude,83.79693686536837
+11.15,Groß- und Einzelhandelsgebäude,240.9396749530308
+11.15,Hotels o.Ä.,4857.159130491131
+11.15,Industrie und Lagerung,6860.199808602105
+11.15,"Kultur, Freizeit, Bildung und Gesundheit",1467.880671848325
+11.15,Mehrfamilienhaus,17396.05153347999
+11.15,Verkehrs- und Nachrichtenwesen,0.5724282040320294
+11.25,Büronutzung,10712.58229289103
+11.25,Ein- und Zweifamilienhäuser,77.84013170078235
+11.25,Gemeinschaftsgebäude,63.856966141959106
+11.25,Groß- und Einzelhandelsgebäude,353.60582513623274
+11.25,Hotels o.Ä.,4763.74097490293
+11.25,Industrie und Lagerung,12858.210910555092
+11.25,"Kultur, Freizeit, Bildung und Gesundheit",1059.1297053952303
+11.25,Mehrfamilienhaus,17294.016145049423
+11.25,Verkehrs- und Nachrichtenwesen,0.39344398899688204
+11.35,Büronutzung,10436.852379664177
+11.35,Ein- und Zweifamilienhäuser,80.44081086751846
+11.35,Gemeinschaftsgebäude,48.18320254826587
+11.35,Groß- und Einzelhandelsgebäude,556.0185567360604
+11.35,Hotels o.Ä.,4706.78876332827
+11.35,Industrie und Lagerung,20118.791813224885
+11.35,"Kultur, Freizeit, Bildung und Gesundheit",780.795288228459
+11.35,Mehrfamilienhaus,17676.52140845201
+11.35,Verkehrs- und Nachrichtenwesen,0.2683960641073432
+11.45,Büronutzung,10161.78365882761
+11.45,Ein- und Zweifamilienhäuser,83.34231552552735
+11.45,Gemeinschaftsgebäude,35.99654789792949
+11.45,Groß- und Einzelhandelsgebäude,864.8793490610893
+11.45,Hotels o.Ä.,4689.088799046552
+11.45,Industrie und Lagerung,26088.22684786323
+11.45,"Kultur, Freizeit, Bildung und Gesundheit",596.6452843869478
+11.45,Mehrfamilienhaus,18126.89167932072
+11.45,Verkehrs- und Nachrichtenwesen,0.18171872973481645
+11.55,Büronutzung,9883.523971847402
+11.55,Ein- und Zweifamilienhäuser,86.2117119520245
+11.55,Gemeinschaftsgebäude,26.62430579427214
+11.55,Groß- und Einzelhandelsgebäude,1277.8078677874562
+11.55,Hotels o.Ä.,4710.814802950892
+11.55,Industrie und Lagerung,27947.298805686853
+11.55,"Kultur, Freizeit, Bildung und Gesundheit",478.71361823274026
+11.55,Mehrfamilienhaus,18077.800711945976
+11.55,Verkehrs- und Nachrichtenwesen,0.12211038949065847
+11.65,Büronutzung,9599.932173254987
+11.65,Ein- und Zweifamilienhäuser,88.71685598074966
+11.65,Gemeinschaftsgebäude,19.495114786324578
+11.65,Groß- und Einzelhandelsgebäude,1761.942597820921
+11.65,Hotels o.Ä.,4767.857420024504
+11.65,Industrie und Lagerung,24687.526208666906
+11.65,"Kultur, Freizeit, Bildung und Gesundheit",406.26918729953036
+11.65,Mehrfamilienhaus,17319.142466443234
+11.65,Verkehrs- und Nachrichtenwesen,0.08143929998077862
+11.75,Büronutzung,9309.89535947564
+11.75,Ein- und Zweifamilienhäuser,90.54898325685988
+11.75,Gemeinschaftsgebäude,14.131365333437962
+11.75,Groß- und Einzelhandelsgebäude,2250.9265584359296
+11.75,Hotels o.Ä.,4851.183864891989
+11.75,Industrie und Lagerung,17959.729219420322
+11.75,"Kultur, Freizeit, Bildung und Gesundheit",364.4557414517408
+11.75,Mehrfamilienhaus,16235.670560756003
+11.75,Verkehrs- und Nachrichtenwesen,0.05390674545788266
+11.85,Büronutzung,9012.977117596469
+11.85,Ein- und Zweifamilienhäuser,91.44486768379716
+11.85,Gemeinschaftsgebäude,10.139968221420858
+11.85,Groß- und Einzelhandelsgebäude,2656.0325871990663
+11.85,Hotels o.Ä.,4947.4065810807715
+11.85,Industrie und Lagerung,10752.984076914832
+11.85,"Kultur, Freizeit, Bildung und Gesundheit",342.9086492278763
+11.85,Mehrfamilienhaus,15446.161602430471
+11.85,Verkehrs- und Nachrichtenwesen,0.03541433447520353
+11.95,Büronutzung,8709.248740813036
+11.95,Ein- und Zweifamilienhäuser,91.2061206377857
+11.95,Gemeinschaftsgebäude,7.202259218037643
+11.95,Groß- und Einzelhandelsgebäude,2890.813277030379
+11.95,Hotels o.Ä.,5040.403272167785
+11.95,Industrie und Lagerung,5303.069605750305
+11.95,"Kultur, Freizeit, Bildung und Gesundheit",334.529120967715
+11.95,Mehrfamilienhaus,15310.531102334113
+11.95,Verkehrs- und Nachrichtenwesen,0.02309091919508423
+12.05,Büronutzung,8399.205939914173
+12.05,Ein- und Zweifamilienhäuser,89.71340441478323
+12.05,Gemeinschaftsgebäude,5.063701068501793
+12.05,Groß- und Einzelhandelsgebäude,2900.360272388412
+12.05,Hotels o.Ä.,5113.556967774781
+12.05,Industrie und Lagerung,2165.642390530228
+12.05,"Kultur, Freizeit, Bildung und Gesundheit",334.49516878695795
+12.05,Mehrfamilienhaus,15920.282019544256
+12.05,Verkehrs- und Nachrichtenwesen,0.014942691827705093
+12.15,Büronutzung,8083.7179108991395
+12.15,Ein- und Zweifamilienhäuser,86.9338730120788
+12.15,Gemeinschaftsgebäude,3.52390081154821
+12.15,Groß- und Einzelhandelsgebäude,2681.6388104702883
+12.15,Hotels o.Ä.,5152.043786402167
+12.15,Industrie und Lagerung,747.6419784128367
+12.15,"Kultur, Freizeit, Bildung und Gesundheit",339.5194129881206
+12.15,Mehrfamilienhaus,17347.203392837124
+12.15,Verkehrs- und Nachrichtenwesen,0.009597128194237269
+12.25,Büronutzung,7763.984007260127
+12.25,Ein- und Zweifamilienhäuser,82.92095888940942
+12.25,Gemeinschaftsgebäude,2.4273153134287226
+12.25,Groß- und Einzelhandelsgebäude,2284.5521527798337
+12.25,Hotels o.Ä.,5144.631153908043
+12.25,Industrie und Lagerung,235.39108554339074
+12.25,"Kultur, Freizeit, Bildung und Gesundheit",347.3247959383124
+12.25,Mehrfamilienhaus,19092.933996651755
+12.25,Verkehrs- und Nachrichtenwesen,0.0061175564048297605
+12.35,Büronutzung,7441.488336147708
+12.35,Ein- und Zweifamilienhäuser,77.8065720308823
+12.35,Gemeinschaftsgebäude,1.6548836958985418
+12.35,Groß- und Einzelhandelsgebäude,1793.1721421319041
+12.35,Hotels o.Ä.,5084.652675999338
+12.35,Industrie und Lagerung,84.56242319808763
+12.35,"Kultur, Freizeit, Bildung und Gesundheit",356.29325287617274
+12.35,Mehrfamilienhaus,19431.846956708137
+12.35,Verkehrs- und Nachrichtenwesen,0.0038702438068146296
+12.45,Büronutzung,7117.949573915293
+12.45,Ein- und Zweifamilienhäuser,71.78671587383037
+12.45,Gemeinschaftsgebäude,1.1167101601502976
+12.45,Groß- und Einzelhandelsgebäude,1296.7231503219828
+12.45,Hotels o.Ä.,4970.1237034231235
+12.45,Industrie und Lagerung,46.67517165269166
+12.45,"Kultur, Freizeit, Bildung und Gesundheit",365.2411489217974
+12.45,Mehrfamilienhaus,17306.2154268312
+12.45,Verkehrs- und Nachrichtenwesen,0.0024300867526854835
+12.55,Büronutzung,6795.2662004474805
+12.55,Ein- und Zweifamilienhäuser,65.10230363204975
+12.55,Gemeinschaftsgebäude,0.7458286424413515
+12.55,Groß- und Einzelhandelsgebäude,863.9152600348984
+12.55,Hotels o.Ä.,4803.232018396342
+12.55,Industrie und Lagerung,37.48723877358271
+12.55,"Kultur, Freizeit, Bildung und Gesundheit",373.2817185050369
+12.55,Mehrfamilienhaus,14132.879178452851
+12.55,Verkehrs- und Nachrichtenwesen,0.0015143554566670913
+12.65,Büronutzung,6475.458462518524
+12.65,Ein- und Zweifamilienhäuser,58.01745921300419
+12.65,Gemeinschaftsgebäude,0.4930125297406443
+12.65,Groß- und Einzelhandelsgebäude,530.2681177406942
+12.65,Hotels o.Ä.,4589.565760000111
+12.65,Industrie und Lagerung,35.04949917135166
+12.65,"Kultur, Freizeit, Bildung und Gesundheit",379.7438292016067
+12.65,Mehrfamilienhaus,11670.834117333092
+12.65,Verkehrs- und Nachrichtenwesen,0.0009366039397654333
+12.75,Büronutzung,6160.608761963766
+12.75,Ein- und Zweifamilienhäuser,50.797743253629314
+12.75,Gemeinschaftsgebäude,0.3225466838543491
+12.75,Groß- und Einzelhandelsgebäude,299.86837829256467
+12.75,Hotels o.Ä.,4337.3801230242025
+12.75,Industrie und Lagerung,34.9413413438668
+12.75,"Kultur, Freizeit, Bildung und Gesundheit",384.12521081662726
+12.75,Mehrfamilienhaus,10180.756990236541
+12.75,Verkehrs- und Nachrichtenwesen,0.0005749178217939854
+12.85,Büronutzung,5852.8022581029445
+12.85,Ein- und Zweifamilienhäuser,43.690553918932956
+12.85,Gemeinschaftsgebäude,0.2088521546549018
+12.85,Groß- und Einzelhandelsgebäude,156.2426169452455
+12.85,Hotels o.Ä.,4057.0092323810386
+12.85,Industrie und Lagerung,36.55609150937175
+12.85,"Kultur, Freizeit, Bildung und Gesundheit",386.0655202465501
+12.85,Mehrfamilienhaus,9264.563036960035
+12.85,Verkehrs- und Nachrichtenwesen,0.00035024888007112725
+12.95,Büronutzung,5554.069433479301
+12.95,Ein- und Zweifamilienhäuser,36.909470989317875
+12.95,Gemeinschaftsgebäude,0.1338423807885179
+12.95,Groß- und Einzelhandelsgebäude,75.01491231495103
+12.95,Hotels o.Ä.,3760.3242875402398
+12.95,Industrie und Lagerung,39.969882965567685
+12.95,"Kultur, Freizeit, Bildung und Gesundheit",385.32994779818443
+12.95,Mehrfamilienhaus,8663.521613590412
+12.95,Verkehrs- und Nachrichtenwesen,0.0002117719847135533
+13.05,Büronutzung,5266.332252584408
+13.05,Ein- und Zweifamilienhäuser,30.6236417937113
+13.05,Gemeinschaftsgebäude,0.08488944218297054
+13.05,Groß- und Einzelhandelsgebäude,33.19445934090211
+13.05,Hotels o.Ä.,3460.0457374501802
+13.05,Industrie und Lagerung,45.395155978654934
+13.05,"Kultur, Freizeit, Bildung und Gesundheit",381.79772663947335
+13.05,Mehrfamilienhaus,8257.780481169752
+13.05,Verkehrs- und Nachrichtenwesen,0.00012708099890532904
+13.15,Büronutzung,4991.355366686523
+13.15,Ein- und Zweifamilienhäuser,24.95257143778548
+13.15,Gemeinschaftsgebäude,0.05328640932250393
+13.15,Groß- und Einzelhandelsgebäude,13.543756356852294
+13.15,Hotels o.Ä.,3168.7843799241327
+13.15,Industrie und Lagerung,53.10983654319062
+13.15,"Kultur, Freizeit, Bildung und Gesundheit",375.4522832425455
+13.15,Mehrfamilienhaus,7969.509729082903
+13.15,Verkehrs- und Nachrichtenwesen,7.568550372906256e-05
+13.25,Büronutzung,4730.70359711489
+13.25,Ein- und Zweifamilienhäuser,19.96599656350016
+13.25,Gemeinschaftsgebäude,0.03310394445083286
+13.25,Groß- und Einzelhandelsgebäude,5.099933367249944
+13.25,Hotels o.Ä.,2897.8643057464096
+13.25,Industrie und Lagerung,63.45397725484699
+13.25,"Kultur, Freizeit, Bildung und Gesundheit",366.37125943782905
+13.25,Mehrfamilienhaus,7744.206986268147
+13.25,Verkehrs- und Nachrichtenwesen,4.47367459976897e-05
+13.35,Büronutzung,4485.706675618171
+13.35,Ein- und Zweifamilienhäuser,15.687985635397327
+13.35,Gemeinschaftsgebäude,0.020353617249648365
+13.35,Groß- und Einzelhandelsgebäude,1.775930160130673
+13.35,Hotels o.Ä.,2656.1579393841894
+13.35,Industrie und Lagerung,76.8334535242083
+13.35,"Kultur, Freizeit, Bildung und Gesundheit",354.71556088138476
+13.35,Mehrfamilienhaus,7548.366152202789
+13.35,Verkehrs- und Nachrichtenwesen,2.6244319752705418e-05
+13.45,Büronutzung,4257.431944901531
+13.45,Ein- und Zweifamilienhäuser,12.104075144359555
+13.45,Gemeinschaftsgebäude,0.012385123754545382
+13.45,Groß- und Einzelhandelsgebäude,0.5746177431973778
+13.45,Hotels o.Ä.,2449.2363621107875
+13.45,Industrie und Lagerung,93.72351900874857
+13.45,"Kultur, Freizeit, Bildung und Gesundheit",340.71716088464314
+13.45,Mehrfamilienhaus,7363.696378833922
+13.45,Verkehrs- und Nachrichtenwesen,1.528006311879834e-05
+13.55,Büronutzung,4046.6654363441085
+13.55,Ein- und Zweifamilienhäuser,9.170133511701712
+13.55,Gemeinschaftsgebäude,0.007458552094724323
+13.55,Groß- und Einzelhandelsgebäude,0.1747202116027371
+13.55,Hotels o.Ä.,2279.068670240376
+13.55,Industrie und Lagerung,114.67125482808207
+13.55,"Kultur, Freizeit, Bildung und Gesundheit",324.6657497487281
+13.55,Mehrfamilienhaus,7180.870632998896
+13.55,Verkehrs- und Nachrichtenwesen,8.829447830006056e-06
+13.65,Büronutzung,3853.901456066315
+13.65,Ein- und Zweifamilienhäuser,6.821718907964142
+13.65,Gemeinschaftsgebäude,0.004445318360828001
+13.65,Groß- und Einzelhandelsgebäude,0.05128937868102886
+13.65,Hotels o.Ä.,2144.3329140497463
+13.65,Industrie und Lagerung,140.29648498131
+13.65,"Kultur, Freizeit, Bildung und Gesundheit",306.8945470723013
+13.65,Mehrfamilienhaus,6995.230198840047
+13.65,Verkehrs- und Nachrichtenwesen,5.063609338722691e-06
+13.75,Büronutzung,3679.3405351118536
+13.75,Ein- und Zweifamilienhäuser,4.9829136725266645
+13.75,Gemeinschaftsgebäude,0.002622069985936159
+13.75,Groß- und Einzelhandelsgebäude,0.015414698565357743
+13.75,Hotels o.Ä.,2041.2145363366235
+13.75,Industrie und Lagerung,171.29074110244497
+13.75,"Kultur, Freizeit, Bildung und Gesundheit",287.7657307041405
+13.75,Mehrfamilienhaus,6804.445991899907
+13.75,Verkehrs- und Nachrichtenwesen,2.8820717184895965e-06
+13.85,Büronutzung,3522.895343663261
+13.85,Ein- und Zweifamilienhäuser,3.573914537045358
+13.85,Gemeinschaftsgebäude,0.0015306567321817764
+13.85,Groß- und Einzelhandelsgebäude,0.005227766002706347
+13.85,Hotels o.Ä.,1964.4466725393268
+13.85,Industrie und Lagerung,208.41384481657866
+13.85,"Kultur, Freizeit, Bildung und Gesundheit",267.65600366932307
+13.85,Mehrfamilienhaus,6607.397762533922
+13.85,Verkehrs- und Nachrichtenwesen,1.628047320855092e-06
+13.95,Büronutzung,3384.2039407724324
+13.95,Ein- und Zweifamilienhäuser,2.516973791365413
+13.95,Gemeinschaftsgebäude,0.0008843061064745624
+13.95,Groß- und Einzelhandelsgebäude,0.0021720556551267753
+13.95,Hotels o.Ä.,1908.3267866213157
+13.95,Industrie und Lagerung,252.4876776538044
+13.95,"Kultur, Freizeit, Bildung und Gesundheit",246.94283248174818
+13.95,Mehrfamilienhaus,6403.662596714805
+13.95,Verkehrs- und Nachrichtenwesen,9.127390412354214e-07
+14.05,Büronutzung,3262.6495364483535
+14.05,Ein- und Zweifamilienhäuser,1.7405727348674775
+14.05,Gemeinschaftsgebäude,0.0005056127505027257
+14.05,Groß- und Einzelhandelsgebäude,0.0010874315748577279
+14.05,Hotels o.Ä.,1867.5114943121275
+14.05,Industrie und Lagerung,304.3867335370114
+14.05,"Kultur, Freizeit, Bildung und Gesundheit",225.99185622409198
+14.05,Mehrfamilienhaus,6193.275177824376
+14.05,Verkehrs- und Nachrichtenwesen,5.078591927723259e-07
+14.15,Büronutzung,3157.3857869208928
+14.15,Ein- und Zweifamilienhäuser,1.1819331155954576
+14.15,Gemeinschaftsgebäude,0.00028610362797511273
+14.15,Groß- und Einzelhandelsgebäude,0.0006037824847608816
+14.15,Hotels o.Ä.,1837.5002050779262
+14.15,Industrie und Lagerung,365.0251014483221
+14.15,"Kultur, Freizeit, Bildung und Gesundheit",205.14589460319417
+14.15,Mehrfamilienhaus,5976.6026092858665
+14.15,Verkehrs- und Nachrichtenwesen,2.804508944088162e-07
+14.25,Büronutzung,3067.3665296916643
+14.25,Ein- und Zweifamilienhäuser,0.7881207094082416
+14.25,Gemeinschaftsgebäude,0.00016022051654380584
+14.25,Groß- und Einzelhandelsgebäude,0.00034824032377321564
+14.25,Hotels o.Ä.,1814.819803384186
+14.25,Industrie und Lagerung,435.3396091470173
+14.25,"Kultur, Freizeit, Bildung und Gesundheit",184.71588448002535
+14.25,Mehrfamilienhaus,5754.266007044136
+14.25,Verkehrs- und Nachrichtenwesen,1.5370461352163525e-07
+14.35,Büronutzung,2991.3787941784854
+14.35,Ein- und Zweifamilienhäuser,0.5160691549205496
+14.35,Gemeinschaftsgebäude,8.879772459045943e-05
+14.35,Groß- und Einzelhandelsgebäude,0.00020236602479141747
+14.35,Hotels o.Ä.,1796.9866095273637
+14.35,Industrie und Lagerung,516.2689745668994
+14.35,"Kultur, Freizeit, Bildung und Gesundheit",164.97395839326086
+14.35,Mehrfamilienhaus,5527.080838127718
+14.35,Verkehrs- und Nachrichtenwesen,8.360519991214435e-08
+14.45,Büronutzung,2928.077896387427
+14.45,Ein- und Zweifamilienhäuser,0.33186388830412494
+14.45,Gemeinschaftsgebäude,4.870506060336673e-05
+14.45,Groß- und Einzelhandelsgebäude,0.0001171820027901344
+14.45,Hotels o.Ä.,1782.341946144711
+14.45,Industrie und Lagerung,608.7289598194997
+14.45,"Kultur, Freizeit, Bildung und Gesundheit",146.14875575095573
+14.45,Mehrfamilienhaus,5296.005272723628
+14.45,Verkehrs- und Nachrichtenwesen,4.513316048285061e-08
+14.55,Büronutzung,2876.0234406632135
+14.55,Ein- und Zweifamilienhäuser,0.20959334388792294
+14.55,Gemeinschaftsgebäude,2.6438360943952153e-05
+14.55,Groß- und Einzelhandelsgebäude,6.73821664997965e-05
+14.55,Hotels o.Ä.,1769.8449036107772
+14.55,Industrie und Lagerung,713.5837015126914
+14.55,"Kultur, Freizeit, Bildung und Gesundheit",128.42293748903964
+14.55,Mehrfamilienhaus,5062.0932170617525
+14.55,Verkehrs- und Nachrichtenwesen,2.4180987829165266e-08
+14.65,Büronutzung,2833.7151053820694
+14.65,Ein- und Zweifamilienhäuser,0.1300162597038457
+14.65,Gemeinschaftsgebäude,1.4203090333644381e-05
+14.65,Groß- und Einzelhandelsgebäude,3.843816933041923e-05
+14.65,Hotels o.Ä.,1758.8777897148284
+14.65,Industrie und Lagerung,831.6135959124307
+14.65,"Kultur, Freizeit, Bildung und Gesundheit",111.93276664593009
+14.65,Mehrfamilienhaus,4826.451639633581
+14.65,Verkehrs- und Nachrichtenwesen,1.285783765524833e-08
+14.75,Büronutzung,2799.627178460048
+14.75,Ein- und Zweifamilienhäuser,0.07922629778522085
+14.75,Gemeinschaftsgebäude,7.551248941349422e-06
+14.75,Groß- und Einzelhandelsgebäude,2.1747147482949078e-05
+14.75,Hotels o.Ä.,1749.0910418760836
+14.75,Industrie und Lagerung,963.4803413420924
+14.75,"Kultur, Freizeit, Bildung und Gesundheit",96.76952720000654
+14.75,Mehrfamilienhaus,4590.202757202946
+14.75,Verkehrs- und Nachrichtenwesen,6.7854276431210724e-09
+14.85,Büronutzung,2772.2409277165643
+14.85,Ein- und Zweifamilienhäuser,0.047430373277575044
+14.85,Gemeinschaftsgebäude,3.9732154222655e-06
+14.85,Groß- und Einzelhandelsgebäude,1.2202146167647736e-05
+14.85,Hotels o.Ä.,1740.2932154539262
+14.85,Industrie und Lagerung,1109.689973624524
+14.85,"Kultur, Freizeit, Bildung und Gesundheit",82.98248619088072
+14.85,Mehrfamilienhaus,4354.451759053509
+14.85,Verkehrs- und Nachrichtenwesen,3.553871173248841e-09
+14.95,Büronutzung,2750.0740345687564
+14.95,Ein- und Zweifamilienhäuser,0.027902508540363958
+14.95,Gemeinschaftsgebäude,2.0689625181337903e-06
+14.95,Groß- und Einzelhandelsgebäude,6.7898096961528185e-06
+14.95,Hotels o.Ä.,1732.3799378184367
+14.95,Industrie und Lagerung,1270.5549615190462
+14.95,"Kultur, Freizeit, Bildung und Gesundheit",70.58306181326134
+14.95,Mehrfamilienhaus,4120.26053667269
+14.95,Verkehrs- und Nachrichtenwesen,1.8473156100310706e-09
+15.05,Büronutzung,2731.7064807101415
+15.05,Ein- und Zweifamilienhäuser,0.016133931876921522
+15.05,Gemeinschaftsgebäude,1.0662281517102827e-06
+15.05,Groß- und Einzelhandelsgebäude,3.746832563805885e-06
+15.05,Hotels o.Ä.,1725.2915792934705
+15.05,Industrie und Lagerung,1446.1566443062566
+15.05,"Kultur, Freizeit, Bildung und Gesundheit",59.549842836375305
+15.05,Mehrfamilienhaus,3888.6275732164645
+15.05,Verkehrs- und Nachrichtenwesen,9.530052185353527e-10
+15.15,Büronutzung,2715.8024494098718
+15.15,Ein- und Zweifamilienhäuser,0.009172628626671708
+15.15,Gemeinschaftsgebäude,5.43794145606422e-07
+15.15,Groß- und Einzelhandelsgebäude,2.0504781397864016e-06
+15.15,Hotels o.Ä.,1718.989785271302
+15.15,Industrie und Lagerung,1636.3094780110873
+15.15,"Kultur, Freizeit, Bildung und Gesundheit",49.8341104363592
+15.15,Mehrfamilienhaus,3660.473825809616
+15.15,Verkehrs- und Nachrichtenwesen,4.87937300655246e-10
+15.25,Büronutzung,2701.1279787572043
+15.25,Ein- und Zweifamilienhäuser,0.005129770995564693
+15.25,Gemeinschaftsgebäude,2.7447679866322917e-07
+15.25,Groß- und Einzelhandelsgebäude,1.1128311585845092e-06
+15.25,Hotels o.Ä.,1713.445297357215
+15.25,Industrie und Lagerung,1840.528694921024
+15.25,"Kultur, Freizeit, Bildung und Gesundheit",41.365538899920324
+15.25,Mehrfamilienhaus,3436.634146118571
+15.25,Verkehrs- und Nachrichtenwesen,2.4794030400102523e-10
+15.35,Büronutzung,2686.564276567899
+15.35,Ein- und Zweifamilienhäuser,0.002823645446056124
+15.35,Gemeinschaftsgebäude,1.3710818031465167e-07
+15.35,Groß- und Einzelhandelsgebäude,5.989435144376092e-07
+15.35,Hotels o.Ä.,1708.632015335274
+15.35,Industrie und Lagerung,2058.003058351186
+15.35,"Kultur, Freizeit, Bildung und Gesundheit",34.05779222159065
+15.35,Mehrfamilienhaus,3217.8535524774124
+15.35,Verkehrs- und Nachrichtenwesen,1.2503869198058965e-10
+15.45,Büronutzung,2671.1167691274795
+15.45,Ein- und Zweifamilienhäuser,0.0015309891474045126
+15.45,Gemeinschaftsgebäude,6.778094358618056e-08
+15.45,Groß- und Einzelhandelsgebäude,3.196863843217886e-07
+15.45,Hotels o.Ä.,1704.5242757975934
+15.45,Industrie und Lagerung,2287.5743980469515
+15.45,"Kultur, Freizeit, Bildung und Gesundheit",27.813784437473853
+15.45,Mehrfamilienhaus,3004.7875020829083
+15.45,Verkehrs- und Nachrichtenwesen,6.258290445120514e-11
+15.55,Büronutzung,2653.920102459187
+15.55,Ein- und Zweifamilienhäuser,0.0008185335520380735
+15.55,Gemeinschaftsgebäude,3.3161814373426283e-08
+15.55,Groß- und Einzelhandelsgebäude,1.6921675605938478e-07
+15.55,Hotels o.Ä.,1701.0956883734243
+15.55,Industrie und Lagerung,2527.725531063874
+15.55,"Kultur, Freizeit, Bildung und Gesundheit",22.530427667922428
+15.55,Mehrfamilienhaus,2798.0052195482895
+15.55,Verkehrs- und Nachrichtenwesen,3.10871443870914e-11
+15.65,Büronutzung,2634.2394402357813
+15.65,Ein- und Zweifamilienhäuser,0.00043211529711168205
+15.65,Gemeinschaftsgebäude,1.6056663755660914e-08
+15.65,Groß- und Einzelhandelsgebäude,8.882656127766787e-08
+15.65,Hotels o.Ä.,1698.3186857468268
+15.65,Industrie und Lagerung,2776.5780022176573
+15.65,"Kultur, Freizeit, Bildung und Gesundheit",18.102748728823574
+15.65,Mehrfamilienhaus,2597.9951177352496
+15.65,Verkehrs- und Nachrichtenwesen,1.532567443905246e-11
+15.75,Büronutzung,2611.468502758888
+15.75,Ein- und Zweifamilienhäuser,0.00022565220666855262
+15.75,Gemeinschaftsgebäude,7.694114271972377e-09
+15.75,Groß- und Einzelhandelsgebäude,4.6240437629946145e-08
+15.75,Hotels o.Ä.,1696.164385883847
+15.75,Industrie und Lagerung,3031.9008159013943
+15.75,"Kultur, Freizeit, Bildung und Gesundheit",14.42730896638135
+15.75,Mehrfamilienhaus,2405.171392416479
+15.75,Verkehrs- und Nachrichtenwesen,7.498455909364733e-12
+15.85,Büronutzung,2585.124863831702
+15.85,Ein- und Zweifamilienhäuser,0.00011683027519507176
+15.85,Gemeinschaftsgebäude,3.6487842552610862e-09
+15.85,Groß- und Einzelhandelsgebäude,2.3871515960555583e-08
+15.85,Hotels o.Ä.,1694.6025861772048
+15.85,Industrie und Lagerung,3291.1309813987195
+15.85,"Kultur, Freizeit, Bildung und Gesundheit",11.404909716928668
+15.85,Mehrfamilienhaus,2219.8809737933016
+15.85,Verkehrs- und Nachrichtenwesen,3.641140232867111e-12
+15.95,Büronutzung,2554.8430654607564
+15.95,Ein- und Zweifamilienhäuser,6.014503022774853e-05
+15.95,Gemeinschaftsgebäude,1.7124737504557922e-09
+15.95,Groß- und Einzelhandelsgebäude,1.2221273141250918e-08
+15.95,Hotels o.Ä.,1693.6018125076318
+15.95,Industrie und Lagerung,3551.4062668321117
+15.95,"Kultur, Freizeit, Bildung und Gesundheit",8.942605507037918
+15.95,Mehrfamilienhaus,2042.4101618532027
+15.95,Verkehrs- und Nachrichtenwesen,1.7547535312752857e-12
+16.05,Büronutzung,2520.366124190214
+16.05,Ein- und Zweifamilienhäuser,3.089509436977717e-05
+16.05,Gemeinschaftsgebäude,7.954003966978699e-10
+16.05,Groß- und Einzelhandelsgebäude,6.2048420006846e-09
+16.05,Hotels o.Ä.,1693.1293916241498
+16.05,Industrie und Lagerung,3809.6100684503176
+16.05,"Kultur, Freizeit, Bildung und Gesundheit",6.955077757584351
+16.05,Mehrfamilienhaus,1872.9904437609293
+16.05,Verkehrs- und Nachrichtenwesen,8.392818756723622e-13
+16.15,Büronutzung,2481.535988963902
+16.15,Ein- und Zweifamilienhäuser,1.589911909788487e-05
+16.15,Gemeinschaftsgebäude,3.656232362626464e-10
+16.15,Groß- und Einzelhandelsgebäude,3.124081085806464e-09
+16.15,Hotels o.Ä.,1693.151534214353
+16.15,Industrie und Lagerung,4062.427773290088
+16.15,"Kultur, Freizeit, Bildung und Gesundheit",5.365443158392468
+16.15,Mehrfamilienhaus,1711.803174167278
+16.15,Verkehrs- und Nachrichtenwesen,3.9839365349149354e-13
+16.25,Büronutzung,2438.28347150858
+16.25,Ein- und Zweifamilienhäuser,8.232475323355127e-06
+16.25,Gemeinschaftsgebäude,1.6632895021508687e-10
+16.25,Groß- und Einzelhandelsgebäude,1.5598780854304024e-09
+16.25,Hotels o.Ä.,1693.6334236426378
+16.25,Industrie und Lagerung,4306.413449966835
+16.25,"Kultur, Freizeit, Bildung und Gesundheit",4.105583555943361
+16.25,Mehrfamilienhaus,1558.9829784915696
+16.25,Verkehrs- und Nachrichtenwesen,1.8768504826492298e-13
+16.35,Büronutzung,2390.6181102608743
+16.35,Ein- und Zweifamilienhäuser,4.307195223960598e-06
+16.35,Gemeinschaftsgebäude,7.488381288182836e-11
+16.35,Groß- und Einzelhandelsgebäude,7.72387658588917e-10
+16.35,Hotels o.Ä.,1694.5393082941646
+16.35,Industrie und Lagerung,4538.065173151539
+16.35,"Kultur, Freizeit, Bildung und Gesundheit",3.116089178769384
+16.35,Mehrfamilienhaus,1414.6199017704896
+16.35,Verkehrs- und Nachrichtenwesen,8.775249920204062e-14
+16.45,Büronutzung,2338.6183526450222
+16.45,Ein- und Zweifamilienhäuser,2.2851259065277525e-06
+16.45,Gemeinschaftsgebäude,3.336522614889593e-11
+16.45,Groß- und Einzelhandelsgebäude,3.7927642638972377e-10
+16.45,Hotels o.Ä.,1695.832596591591
+16.45,Industrie und Lagerung,4753.906802271189
+16.45,"Kultur, Freizeit, Bildung und Gesundheit",2.3459056726436973
+16.45,Mehrfamilienhaus,1278.7604611963357
+16.45,Verkehrs- und Nachrichtenwesen,4.071943303526175e-14
+16.55,Büronutzung,2282.422353481345
+16.55,Ein- und Zweifamilienhäuser,1.2322210806835374e-06
+16.55,Gemeinschaftsgebäude,1.4712490507265434e-11
+16.55,Groß- und Einzelhandelsgebäude,1.8469357962163335e-10
+16.55,Hotels o.Ä.,1697.4759541772173
+16.55,Industrie und Lagerung,4950.573623713897
+16.55,"Kultur, Freizeit, Bildung und Gesundheit",1.751769238406075
+16.55,Mehrfamilienhaus,1151.407861906493
+16.55,Verkehrs- und Nachrichtenwesen,1.875237255296543e-14
+16.65,Büronutzung,2222.219595178267
+16.65,Ein- und Zweifamilienhäuser,6.758393852310962e-07
+16.65,Gemeinschaftsgebäude,6.4204327209010025e-12
+16.65,Groß- und Einzelhandelsgebäude,8.919135487685284e-11
+16.65,Hotels o.Ä.,1699.4314029111977
+16.65,Industrie und Lagerung,5124.898955393924
+16.65,"Kultur, Freizeit, Bildung und Gesundheit",1.2975046655169773
+16.65,Mehrfamilienhaus,1032.5216993547742
+16.65,Verkehrs- und Nachrichtenwesen,8.570829563389938e-15
+16.75,Büronutzung,2158.2434437844067
+16.75,Ein- und Zweifamilienhäuser,3.7668006414193014e-07
+16.75,Gemeinschaftsgebäude,2.7728627152417054e-12
+16.75,Groß- und Einzelhandelsgebäude,4.2713813715375215e-11
+16.75,Hotels o.Ä.,1701.660421392622
+16.75,Industrie und Lagerung,5273.9986255312615
+16.75,"Kultur, Freizeit, Bildung und Gesundheit",0.9532496225194984
+16.75,Mehrfamilienhaus,922.0174975114102
+16.75,Verkehrs- und Nachrichtenwesen,3.887778369588429e-15
+16.85,Büronutzung,2090.764669210136
+16.85,Ein- und Zweifamilienhäuser,2.1286018882689046e-07
+16.85,Gemeinschaftsgebäude,1.1851638277051387e-12
+16.85,Groß- und Einzelhandelsgebäude,2.0285615694534906e-11
+16.85,Hotels o.Ä.,1704.124046727502
+16.85,Industrie und Lagerung,5395.350190288571
+16.85,"Kultur, Freizeit, Bildung und Gesundheit",0.6946563926245182
+16.85,Mehrfamilienhaus,819.7664230438343
+16.85,Verkehrs- und Nachrichtenwesen,1.7502174667027935e-15
+16.95,Büronutzung,2020.0858825369128
+16.95,Ein- und Zweifamilienhäuser,1.215845902918948e-07
+16.95,Gemeinschaftsgebäude,5.013192101177314e-13
+16.95,Groß- und Einzelhandelsgebäude,9.553927552836274e-12
+16.95,Hotels o.Ä.,1706.7829772700934
+16.95,Industrie und Lagerung,5486.863856230399
+16.95,"Kultur, Freizeit, Bildung und Gesundheit",0.5021102787325658
+16.95,Mehrfamilienhaus,725.5954767957301
+16.95,Verkehrs- und Nachrichtenwesen,7.81977533784327e-16
+17.05,Büronutzung,1946.5367819461949
+17.05,Ein- und Zweifamilienhäuser,6.996591815130636e-08
+17.05,Gemeinschaftsgebäude,2.098631725779535e-13
+17.05,Groß- und Einzelhandelsgebäude,4.4622024109792756e-12
+17.05,Hotels o.Ä.,1709.5976760610274
+17.05,Industrie und Lagerung,5546.942323632867
+17.05,"Kultur, Freizeit, Bildung und Gesundheit",0.35999284361690925
+17.05,Mehrfamilienhaus,639.2884022850167
+17.05,Verkehrs- und Nachrichtenwesen,3.467433672237453e-16
+17.15,Büronutzung,1870.4700539301766
+17.15,Ein- und Zweifamilienhäuser,4.0435116646713555e-08
+17.15,Gemeinschaftsgebäude,8.694488563044585e-14
+17.15,Groß- und Einzelhandelsgebäude,2.0667590392631426e-12
+17.15,Hotels o.Ä.,1712.5284746810523
+17.15,Industrie und Lagerung,5574.527156809982
+17.15,"Kultur, Freizeit, Bildung und Gesundheit",0.2560084516005332
+17.15,Mehrfamilienhaus,560.5874744850419
+17.15,Verkehrs- und Nachrichtenwesen,1.5259262768113886e-16
+17.25,Büronutzung,1792.2577493907042
+17.25,Ein- und Zweifamilienhäuser,2.340576004265727e-08
+17.25,Gemeinschaftsgebäude,3.564821253887685e-14
+17.25,Groß- und Einzelhandelsgebäude,9.492997814293486e-13
+17.25,Hotels o.Ä.,1715.5356772345374
+17.25,Industrie und Lagerung,5569.129800579645
+17.25,"Kultur, Freizeit, Bildung und Gesundheit",0.18058447804816594
+17.25,Mehrfamilienhaus,489.19624890675266
+17.25,Verkehrs- und Nachrichtenwesen,6.664542256921984e-17
+17.35,Büronutzung,1712.287945058396
+17.35,Ein- und Zweifamilienhäuser,1.3540470891589271e-08
+17.35,Gemeinschaftsgebäude,1.446496479172553e-14
+17.35,Groß- und Einzelhandelsgebäude,4.3240388406663316e-13
+17.35,Hotels o.Ä.,1718.5796641726758
+17.35,Industrie und Lagerung,5530.845972826208
+17.35,"Kultur, Freizeit, Bildung und Gesundheit",0.1263491176299168
+17.35,Mehrfamilienhaus,424.7832691631826
+17.35,Verkehrs- und Nachrichtenwesen,2.888805945904478e-17
+17.45,Büronutzung,1630.96150827718
+17.45,Ein- und Zweifamilienhäuser,7.815699140652255e-09
+17.45,Gemeinschaftsgebäude,5.808752892818495e-15
+17.45,Groß- und Einzelhandelsgebäude,1.9532066343806578e-13
+17.45,Hotels o.Ä.,1721.6209956630046
+17.45,Industrie und Lagerung,5460.352840672412
+17.45,"Kultur, Freizeit, Bildung und Gesundheit",0.08768588468876566
+17.45,Mehrfamilienhaus,366.98671877986
+17.45,Verkehrs- und Nachrichtenwesen,1.2427322493064035e-17
+17.55,Büronutzung,1548.6888054889764
+17.55,Ein- und Zweifamilienhäuser,4.495642431687929e-09
+17.55,Gemeinschaftsgebäude,2.3085235850195322e-15
+17.55,Groß- und Einzelhandelsgebäude,8.749413384320081e-14
+17.55,Hotels o.Ä.,1724.6205142095193
+17.55,Industrie und Lagerung,5358.889096619494
+17.55,"Kultur, Freizeit, Bildung und Gesundheit",0.06036050191005869
+17.55,Mehrfamilienhaus,315.4234813135968
+17.55,Verkehrs- und Nachrichtenwesen,5.305762586860885e-18
+17.65,Büronutzung,1465.8862287949844
+17.65,Ein- und Zweifamilienhäuser,2.5746904312353777e-09
+17.65,Gemeinschaftsgebäude,9.079702494715859e-16
+17.65,Groß- und Einzelhandelsgebäude,3.8867049844788023e-14
+17.65,Hotels o.Ä.,1727.5394462263343
+17.65,Industrie und Lagerung,5228.218753702604
+17.65,"Kultur, Freizeit, Bildung und Gesundheit",0.04121370671037864
+17.65,Mehrfamilienhaus,269.8211633996724
+17.65,Verkehrs- und Nachrichtenwesen,2.2481692034136425e-18
+17.75,Büronutzung,1382.972457275844
+17.75,Ein- und Zweifamilienhäuser,1.46724609728102e-09
+17.75,Gemeinschaftsgebäude,3.5342299770121237e-16
+17.75,Groß- und Einzelhandelsgebäude,1.7122054731560176e-14
+17.75,Hotels o.Ä.,1730.3395022676805
+17.75,Industrie und Lagerung,5070.580138187546
+17.75,"Kultur, Freizeit, Bildung und Gesundheit",0.027912336330058025
+17.75,Mehrfamilienhaus,232.4761374609286
+17.75,Verkehrs- und Nachrichtenwesen,9.454117736509654e-19
+17.85,Büronutzung,1300.3644165450519
+17.85,Ein- und Zweifamilienhäuser,8.316595215764639e-10
+17.85,Gemeinschaftsgebäude,1.3614568301538898e-16
+17.85,Groß- und Einzelhandelsgebäude,7.48000047383335e-15
+17.85,Hotels o.Ä.,1732.982975617987
+17.85,Industrie und Lagerung,4888.6221403340705
+17.85,"Kultur, Freizeit, Bildung und Gesundheit",0.018750652371611904
+17.85,Mehrfamilienhaus,234.63265102576725
+17.85,Verkehrs- und Nachrichtenwesen,3.9456971276912375e-19
+17.95,Büronutzung,1218.4729474961264
+17.95,Ein- und Zweifamilienhäuser,4.687407465480033e-10
+17.95,Gemeinschaftsgebäude,5.190376025513298e-17
+17.95,Groß- und Einzelhandelsgebäude,3.2405490508703285e-15
+17.95,Hotels o.Ä.,1735.4328389479663
+17.95,Industrie und Lagerung,4685.330258951002
+17.95,"Kultur, Freizeit, Bildung und Gesundheit",0.012494021658730377
+17.95,Mehrfamilienhaus,479.47459795424425
+17.95,Verkehrs- und Nachrichtenwesen,1.6343200563847e-19
+18.05,Büronutzung,1137.6982398370685
+18.05,Ein- und Zweifamilienhäuser,2.6265498751926075e-10
+18.05,Gemeinschaftsgebäude,1.958301898903313e-17
+18.05,Groß- und Einzelhandelsgebäude,1.3922159432380763e-15
+18.05,Hotels o.Ä.,1737.6528387459807
+18.05,Industrie und Lagerung,4463.945321302664
+18.05,"Kultur, Freizeit, Bildung und Gesundheit",0.008257599322270348
+18.05,Mehrfamilienhaus,1615.2956031936076
+18.05,Verkehrs- und Nachrichtenwesen,6.718324878126294e-20
+18.15,Büronutzung,1058.4251247088787
+18.15,Ein- und Zweifamilienhäuser,1.463031302468044e-10
+18.15,Gemeinschaftsgebäude,7.312171037558667e-18
+18.15,Groß- und Einzelhandelsgebäude,5.931512421913083e-16
+18.15,Hotels o.Ä.,1739.607587238579
+18.15,Industrie und Lagerung,4227.877961872984
+18.15,"Kultur, Freizeit, Bildung und Gesundheit",0.0054134114487425404
+18.15,Mehrfamilienhaus,4268.366303794751
+18.15,Verkehrs- und Nachrichtenwesen,2.740913441865174e-20
+18.25,Büronutzung,981.018351025603
+18.25,Ein- und Zweifamilienhäuser,8.100360807616432e-11
+18.25,Gemeinschaftsgebäude,2.7020843936629527e-18
+18.25,Groß- und Einzelhandelsgebäude,2.506080065668745e-16
+18.25,Hotels o.Ä.,1741.2626515199336
+18.25,Industrie und Lagerung,3980.6219957849053
+18.25,"Kultur, Freizeit, Bildung und Gesundheit",0.0035200914592104313
+18.25,Mehrfamilienhaus,7109.084125892952
+18.25,Verkehrs- und Nachrichtenwesen,1.1097878700096515e-20
+18.35,Büronutzung,905.8179904822124
+18.35,Ein- und Zweifamilienhäuser,4.457770649163718e-11
+18.35,Gemeinschaftsgebäude,9.881829280307277e-19
+18.35,Groß- und Einzelhandelsgebäude,1.0500135971112533e-16
+18.35,Hotels o.Ä.,1742.5846396169775
+18.35,Industrie und Lagerung,3725.6697283694607
+18.35,"Kultur, Freizeit, Bildung und Gesundheit",0.002270400832013909
+18.35,Mehrfamilienhaus,7195.3782720357085
+18.35,Verkehrs- und Nachrichtenwesen,4.4595893195231406e-21
+18.45,Büronutzung,833.1351256006251
+18.45,Ein- und Zweifamilienhäuser,2.438266968410592e-11
+18.45,Gemeinschaftsgebäude,3.5765281905197077e-19
+18.45,Groß- und Einzelhandelsgebäude,4.362799177241625e-17
+18.45,Hotels o.Ä.,1743.5412832253683
+18.45,Industrie und Lagerung,3466.4320128402805
+18.45,"Kultur, Freizeit, Bildung und Gesundheit",0.001452502225284001
+18.45,Mehrfamilienhaus,4403.631025674237
+18.45,Verkehrs- und Nachrichtenwesen,1.7785247300825632e-21
+18.55,Büronutzung,763.2479736800233
+18.55,Ein- und Zweifamilienhäuser,1.3255234403917607e-11
+18.55,Gemeinschaftsgebäude,1.2810669450667238e-19
+18.55,Groß- und Einzelhandelsgebäude,1.797652254724874e-17
+18.55,Hotels o.Ä.,1744.1015168609315
+18.55,Industrie und Lagerung,3206.1655218259125
+18.55,"Kultur, Freizeit, Bildung und Gesundheit",0.0009217152115478604
+18.55,Mehrfamilienhaus,1641.886963661026
+18.55,Verkehrs- und Nachrichtenwesen,7.039389712726244e-22
+18.65,Büronutzung,696.398587788708
+18.65,Ein- und Zweifamilienhäuser,7.1619562364178965e-12
+18.65,Gemeinschaftsgebäude,4.5411710869231005e-20
+18.65,Groß- und Einzelhandelsgebäude,7.345411951493752e-18
+18.65,Hotels o.Ä.,1744.2355531819721
+18.65,Industrie und Lagerung,2947.9092599054197
+18.65,"Kultur, Freizeit, Bildung und Gesundheit",0.0005801527869044815
+18.65,Mehrfamilienhaus,391.7321724942524
+18.65,Verkehrs- und Nachrichtenwesen,2.765158825323676e-22
+18.75,Büronutzung,632.7902553190472
+18.75,Ein- und Zweifamilienhäuser,3.846018164357903e-12
+18.75,Gemeinschaftsgebäude,1.5931246877314157e-20
+18.75,Groß- und Einzelhandelsgebäude,2.976435670397172e-18
+18.75,Hotels o.Ä.,1743.9149542497375
+18.75,Industrie und Lagerung,2694.431841390004
+18.75,"Kultur, Freizeit, Bildung und Gesundheit",0.00036220437358153314
+18.75,Mehrfamilienhaus,79.65133166241885
+18.75,Verkehrs- und Nachrichtenwesen,1.0779907619851936e-22
+18.85,Büronutzung,572.5856869534771
+18.85,Ein- und Zweifamilienhäuser,2.0526970393588903e-12
+18.85,Gemeinschaftsgebäude,5.531176732811699e-21
+18.85,Groß- und Einzelhandelsgebäude,1.1960424064340278e-18
+18.85,Hotels o.Ä.,1743.1126985073392
+18.85,Industrie und Lagerung,2448.190520367467
+18.85,"Kultur, Freizeit, Bildung und Gesundheit",0.00022430072465857471
+18.85,Mehrfamilienhaus,30.269645687027854
+18.85,Verkehrs- und Nachrichtenwesen,4.170804161135043e-23
+18.95,Büronutzung,515.9060563090233
+18.95,Ein- und Zweifamilienhäuser,1.0888582339229997e-12
+18.95,Gemeinschaftsgebäude,1.900514407402723e-21
+18.95,Groß- und Einzelhandelsgebäude,4.766134132957931e-19
+18.95,Hotels o.Ä.,1741.8032432715584
+18.95,Industrie und Lagerung,2211.302418312965
+18.95,"Kultur, Freizeit, Bildung und Gesundheit",0.00013777592727552354
+18.95,Mehrfamilienhaus,21.273523807620876
+18.95,Verkehrs- und Nachrichtenwesen,1.6015270414746418e-23
+19.05,Büronutzung,462.8309153413083
+19.05,Ein- und Zweifamilienhäuser,5.740507279407347e-13
+19.05,Gemeinschaftsgebäude,6.462650349782095e-22
+19.05,Groß- und Einzelhandelsgebäude,1.8834557637644597e-19
+19.05,Hotels o.Ä.,1739.9625825470775
+19.05,Industrie und Lagerung,1985.5278762321757
+19.05,"Kultur, Freizeit, Bildung und Gesundheit",8.394245914277295e-05
+19.05,Mehrfamilienhaus,16.648153292113058
+19.05,Verkehrs- und Nachrichtenwesen,6.103211102637297e-24
+19.15,Büronutzung,413.3989750786863
+19.15,Ein- und Zweifamilienhäuser,3.00788596295913e-13
+19.15,Gemeinschaftsgebäude,2.1748835853325716e-22
+19.15,Groß- und Einzelhandelsgebäude,7.380978708722183e-20
+19.15,Hotels o.Ä.,1737.5682999888063
+19.15,Industrie und Lagerung,1772.2653876530592
+19.15,"Kultur, Freizeit, Bildung und Gesundheit",5.072893123702676e-05
+19.15,Mehrfamilienhaus,13.050017254608157
+19.15,Verkehrs- und Nachrichtenwesen,2.3082990170024353e-24
+19.25,Büronutzung,367.6097075363541
+19.25,Ein- und Zweifamilienhäuser,1.5664064607006155e-13
+19.25,Gemeinschaftsgebäude,7.243479457035562e-23
+19.25,Groß- und Einzelhandelsgebäude,2.868413333260924e-20
+19.25,Hotels o.Ä.,1734.5996168549382
+19.25,Industrie und Lagerung,1572.5571653742143
+19.25,"Kultur, Freizeit, Bildung und Gesundheit",3.040852933916334e-05
+19.25,Mehrfamilienhaus,10.170410166145672
+19.25,Verkehrs- und Nachrichtenwesen,8.664334738031202e-25
+19.35,Büronutzung,325.4256945512238
+19.35,Ein- und Zweifamilienhäuser,8.107360432539825e-14
+19.35,Gemeinschaftsgebäude,2.387505117934841e-23
+19.35,Groß- und Einzelhandelsgebäude,1.1054488636231023e-20
+19.35,Hotels o.Ä.,1731.0374348112373
+19.35,Industrie und Lagerung,1387.1040727244513
+19.35,"Kultur, Freizeit, Bildung und Gesundheit",1.808009882863808e-05
+19.35,Mehrfamilienhaus,7.877976028478522
+19.35,Verkehrs- und Nachrichtenwesen,3.2276600244901345e-25
+19.45,Büronutzung,286.77562422062994
+19.45,Ein- und Zweifamilienhäuser,4.170483097499773e-14
+19.45,Gemeinschaftsgebäude,7.788023449348839e-24
+19.45,Groß- und Einzelhandelsgebäude,4.2247851265561956e-21
+19.45,Hotels o.Ä.,1726.8643734655743
+19.45,Industrie und Lagerung,1216.288417316735
+19.45,"Kultur, Freizeit, Bildung und Gesundheit",1.066281471888749e-05
+19.45,Mehrfamilienhaus,6.06495512131996
+19.45,Verkehrs- und Nachrichtenwesen,1.1933000939023263e-25
+19.55,Büronutzung,251.55781662431485
+19.55,Ein- und Zweifamilienhäuser,2.1321860260760235e-14
+19.55,Gemeinschaftsgebäude,2.514178164479274e-24
+19.55,Groß- und Einzelhandelsgebäude,1.6011777224917306e-21
+19.55,Hotels o.Ä.,1722.0648025309938
+19.55,Industrie und Lagerung,1060.202964218251
+19.55,"Kultur, Freizeit, Bildung und Gesundheit",6.237471939839811e-06
+19.55,Mehrfamilienhaus,4.640542398421333
+19.55,Verkehrs- und Nachrichtenwesen,4.37845432429851e-26
+19.65,Büronutzung,219.644148106793
+19.65,Ein- und Zweifamilienhäuser,1.0834170076167038e-14
+19.65,Gemeinschaftsgebäude,8.032499555804489e-25
+19.65,Groß- und Einzelhandelsgebäude,6.017876975235923e-22
+19.65,Hotels o.Ä.,1716.6248685353494
+19.65,Industrie und Lagerung,918.684473098098
+19.65,"Kultur, Freizeit, Bildung und Gesundheit",3.6191870255711482e-06
+19.65,Mehrfamilienhaus,3.5288266085507596
+19.65,Verkehrs- und Nachrichtenwesen,1.5944142159856293e-26
+19.75,Büronutzung,190.88423770089832
+19.75,Ein- und Zweifamilienhäuser,5.471394454814464e-15
+19.75,Gemeinschaftsgebäude,2.5397515271622303e-25
+19.75,Groß- und Einzelhandelsgebäude,2.2429305946378546e-22
+19.75,Hotels o.Ä.,1710.53251601581
+19.75,Industrie und Lagerung,791.3500926742671
+19.75,"Kultur, Freizeit, Bildung und Gesundheit",2.0829513527867534e-06
+19.75,Mehrfamilienhaus,2.6668903366618357
+19.75,Verkehrs- und Nachrichtenwesen,5.762230245093349e-27
+19.85,Büronutzung,165.10975998780438
+19.85,Ein- und Zweifamilienhäuser,2.746200356523051e-15
+19.85,Gemeinschaftsgebäude,7.947263446481587e-26
+19.85,Groß- und Einzelhandelsgebäude,8.290047973457561e-23
+19.85,Hotels o.Ä.,1703.777503157149
+19.85,Industrie und Lagerung,677.635044497992
+19.85,"Kultur, Freizeit, Bildung und Gesundheit",1.189085018231022e-06
+19.85,Mehrfamilienhaus,2.003026445998508
+19.85,Verkehrs- und Nachrichtenwesen,2.0667555085407074e-27
+19.95,Büronutzung,142.13875518255364
+19.95,Ein- und Zweifamilienhäuser,1.3699295250880647e-15
+19.95,Gemeinschaftsgebäude,2.461103335938513e-26
+19.95,Groß- und Einzelhandelsgebäude,3.038553241905289e-23
+19.95,Hotels o.Ä.,1696.3514118536289
+19.95,Industrie und Lagerung,576.8301831410631
+19.95,"Kultur, Freizeit, Bildung und Gesundheit",6.733058173694508e-07
+19.95,Mehrfamilienhaus,1.4950952073328967
+19.95,Verkehrs- und Nachrichtenwesen,7.356929237470561e-28
