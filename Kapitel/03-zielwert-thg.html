@@ -1,0 +1,1088 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de" xml:lang="de"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.19">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Zielwert THG – Klimaneutrale Plus-Energie-Quartiere</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../Kapitel/04-bilanzregeln.html" rel="next">
+<link href="../Kapitel/05-kontext-sanierung.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-631496449bf32ff9b0bb69a6bfd9195d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Keine Treffer",
+    "search-matching-documents-text": "Treffer",
+    "search-copy-link-title": "Link in die Suche kopieren",
+    "search-hide-matches-text": "Zusätzliche Treffer verbergen",
+    "search-more-match-text": "weitere Treffer in diesem Dokument",
+    "search-more-matches-text": "weitere Treffer in diesem Dokument",
+    "search-clear-button-title": "Zurücksetzen",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Abbrechen",
+    "search-submit-button-title": "Abschicken",
+    "search-label": "Suchen"
+  }
+}</script>
+<script type="application/json" class="js-hypothesis-config">
+{
+  "theme": "clean",
+  "openSidebar": false
+}
+</script>
+<script async="" src="https://hypothes.is/embed.js"></script>
+<script>
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    document.body.classList.add('hypothesis-enabled');
+  });
+</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles/presets.css">
+</head>
+
+<body class="nav-sidebar floating nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Klimaneutrale Plus-Energie-Quartiere</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Suchen"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Navigation umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="../index.html" aria-current="page"> 
+<span class="menu-text">Der Standard</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://simonschaluppe.github.io/peexcel/" target="_blank"> 
+<span class="menu-text">Das Nachweistool</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Kapitel/03-methodik.html">Methodik</a></li><li class="breadcrumb-item"><a href="../Kapitel/03-zielwert-thg.html"><span class="chapter-title">Zielwert THG</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Kurzfassung</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Kapitel/01-einführung.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Noch ein Standard?</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Kapitel/02-standard.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Der Standard</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Methodik</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Abschnitt umschalten">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Kapitel/03-methodik.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Von nationalen Zielpfaden zur Quartiersbilanz</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Kapitel/03-allokation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Sektorales Zielbild Energie</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Kapitel/05-kontextfaktoren.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Kontextfaktor Dichte</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Kapitel/05-kontext-mobilitaet.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Kontextfaktor Mobilität</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Kapitel/05-kontext-sanierung.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Kontextfaktor Sanierung</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Kapitel/03-zielwert-thg.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Zielwert THG</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Kapitel/04-bilanzregeln.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Systemgrenze des Quartiers</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Kapitel/08-fortschreibung.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Methodenstand, Grenzen und Weiterentwicklung</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
+ <span class="menu-text">Anwendung</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Abschnitt umschalten">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Kapitel/07-anwendung.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Deklaration von Bauprojekten</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Kapitel/07-ergebnisse.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Ergebnisse verstehen</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Kapitel/07-praxisbeispiele.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Praxisbeispiele</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Kapitel/07-renovierungsfahrplan.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Sanierungsfahrpläne und Entwicklungspfade</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Literatur</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../about.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Über diesen Bericht</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
+ <span class="menu-text">Anhang</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Abschnitt umschalten">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Kapitel/anhang-methodenstand.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Annahmen der Zielwertberechnung</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Kapitel/anhang-quartiersbilanzierung.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Annahmen der Quartiersbilanzierung</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Inhaltsverzeichnis</h2>
+   
+  <ul>
+  <li><a href="#wie-entstehen-320-kg-co₂e-je-quadratmeter" id="toc-wie-entstehen-320-kg-co₂e-je-quadratmeter" class="nav-link active" data-scroll-target="#wie-entstehen-320-kg-co₂e-je-quadratmeter">Wie entstehen 320 kg CO₂e je Quadratmeter?</a>
+  <ul class="collapse">
+  <li><a href="#nationale-grundlage-und-sektorale-verteilung" id="toc-nationale-grundlage-und-sektorale-verteilung" class="nav-link" data-scroll-target="#nationale-grundlage-und-sektorale-verteilung">Nationale Grundlage und sektorale Verteilung</a></li>
+  </ul></li>
+  <li><a href="#sec-thg-flaechen" id="toc-sec-thg-flaechen" class="nav-link" data-scroll-target="#sec-thg-flaechen">Gebäudesektor: Bezugsflächen und Entwicklung</a></li>
+  <li><a href="#drei-zeitbegriffe" id="toc-drei-zeitbegriffe" class="nav-link" data-scroll-target="#drei-zeitbegriffe">Drei Zeitbegriffe</a></li>
+  <li><a href="#sec-thg-pfade" id="toc-sec-thg-pfade" class="nav-link" data-scroll-target="#sec-thg-pfade">Absenkpfade und kumuliertes THG-Budget</a></li>
+  <li><a href="#rekalibrierung-welche-stellgrößen-ändern-sich" id="toc-rekalibrierung-welche-stellgrößen-ändern-sich" class="nav-link" data-scroll-target="#rekalibrierung-welche-stellgrößen-ändern-sich">Rekalibrierung: Welche Stellgrößen ändern sich?</a>
+  <ul class="collapse">
+  <li><a href="#pv-errichtung-und-sektorale-konsistenz" id="toc-pv-errichtung-und-sektorale-konsistenz" class="nav-link" data-scroll-target="#pv-errichtung-und-sektorale-konsistenz">PV-Errichtung und sektorale Konsistenz</a></li>
+  </ul></li>
+  <li><a href="#folgerungen-für-planung-und-verwaltung" id="toc-folgerungen-für-planung-und-verwaltung" class="nav-link" data-scroll-target="#folgerungen-für-planung-und-verwaltung">Folgerungen für Planung und Verwaltung</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Kapitel/03-methodik.html">Methodik</a></li><li class="breadcrumb-item"><a href="../Kapitel/03-zielwert-thg.html"><span class="chapter-title">Zielwert THG</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span id="sec-zielwert-thg" class="quarto-section-identifier"><span class="chapter-title">Zielwert THG</span></span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="lead">
+<p>Vom nationalen Klimabudget zum kumulierten Emissionsbudget eines Quartiers</p>
+</div>
+<p>Die jährliche Primärenergiebilanz in <a href="03-allokation.html" class="quarto-xref"><span>Sektorales Zielbild Energie</span></a> und das Treibhausgasbudget beantworten unterschiedliche Fragen. Der PE-Zielwert verteilt Energieaufgaben im Zielsystem. Der THG-Zielwert begrenzt die über den Bewertungszeitraum kumulierten Emissionen. Eine ausgeglichene Jahresenergiebilanz belegt deshalb noch keine Einhaltung des Klimabudgets.</p>
+<section id="wie-entstehen-320-kg-co₂e-je-quadratmeter" class="level2">
+<h2 class="anchored" data-anchor-id="wie-entstehen-320-kg-co₂e-je-quadratmeter">Wie entstehen 320 kg CO₂e je Quadratmeter?</h2>
+<section id="nationale-grundlage-und-sektorale-verteilung" class="level3">
+<h3 class="anchored" data-anchor-id="nationale-grundlage-und-sektorale-verteilung">Nationale Grundlage und sektorale Verteilung</h3>
+<p>Zusätzlich zur jährlichen Primärenergiebilanz begrenzt ein kumuliertes THG-Budget die bilanzierten Emissionen aus Errichtung, Nutzung, Instandhaltung und MIV über den definierten Zeitraum.</p>
+<p>Das Verfahren unterscheidet drei Budgetvarianten. Ausgangspunkte sind das verbleibende nationale CO₂-Budget, Annahmen über natürliche Senken, ein Anteil von 50 % für Gebäude und MIV sowie eine nationale Bezugsfläche von 906,7 Mio. m² BGF. Der Klimabudgetansatz bezieht sich auf 1,5 °C mit 66 % Wahrscheinlichkeit; dokumentiert werden Varianten mit und ohne temporäre Überschreitung des Temperaturziels <span class="citation" data-cites="schneider2025declaration">(<a href="../references.html#ref-schneider2025declaration" role="doc-biblioref">Schneider u.&nbsp;a. 2025, Abschn. 2.3</a>, Tab. 2 und A1, S. 6–7, 30)</span>.</p>
+<p>Die Budgetvarianten L1, L2 und L3 beruhen auf einem Klimabudget <strong>ohne temporäre Überschreitung</strong> des Temperaturziels: Von 280 Mt CO₂ ab 2022 verbleiben nach Abzug der bis Ende 2024 angesetzten Emissionen 130 Mt ab 2025. Dieses Ausgangsbudget bildet die Referenz der Bewertung <span class="citation" data-cites="schneider2025declaration">(<a href="../references.html#ref-schneider2025declaration" role="doc-biblioref">Schneider u.&nbsp;a. 2025</a>, Tab. A1)</span>.</p>
+<p>Mit nationalem Restbudget (B_{}), Bevölkerung (P), jährlicher Senkenleistung je Person (s), Zeitraum (T), Sektoranteil () und Bezugsfläche (A_B) gilt:</p>
+<p><span id="eq-thg-allokation"><span class="math display">\[
+b_{\mathrm{THG}}
+=\frac{\alpha\left(B_{\mathrm{AT}}+P\,s\,T\right)}{A_B}.
+\tag{8.1}\]</span></span></p>
+<p>Budget und Senkenleistung werden in einer gemeinsamen Masseneinheit angesetzt. Das nationale CO₂-Budget dient als Grundlage für die Zuteilung; auf Quartiersebene werden die Treibhausgase mit GWP100 in CO₂-Äquivalenten bewertet.</p>
+<div id="tbl-thg-eingaben" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-thg-eingaben-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabelle&nbsp;8.1: Eingangsgrößen der THG-Allokation <span class="citation" data-cites="schneider2025declaration">(<a href="../references.html#ref-schneider2025declaration" role="doc-biblioref">Schneider u.&nbsp;a. 2025</a>, Tab. A1, S. 30)</span>.
+</figcaption>
+<div aria-describedby="tbl-thg-eingaben-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 30%">
+<col style="width: 40%">
+<col style="width: 30%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Größe</th>
+<th style="text-align: right;">Referenzwert</th>
+<th>Funktion</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Verbleibendes Budget ab 2025</td>
+<td style="text-align: right;">130 Mt CO₂</td>
+<td>Ausgangsbudget ohne zusätzliche Senken</td>
+</tr>
+<tr class="even">
+<td>Bevölkerung</td>
+<td style="text-align: right;">9,0 Mio. Personen</td>
+<td>Bezug für die Senkenannahme</td>
+</tr>
+<tr class="odd">
+<td>Betrachtungsdauer</td>
+<td style="text-align: right;">50 Jahre</td>
+<td>Kumulation der Senkenannahme</td>
+</tr>
+<tr class="even">
+<td>Anteil Gebäude und MIV</td>
+<td style="text-align: right;">50 %</td>
+<td>Sektorale Zuteilung</td>
+</tr>
+<tr class="odd">
+<td>Nationale Bruttogrundfläche im Zieljahr 2040</td>
+<td style="text-align: right;">906,7 Mio. m²</td>
+<td>Flächenbezogene Verteilung</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>Für L3 werden 1 t CO₂e pro Person und Jahr an natürlichen Senken angesetzt. Über 50 Jahre und 9 Mio. Personen entsprechen sie 450 Mt. Zusammen mit dem Ausgangsbudget ergeben sich 580 Mt, davon 290 Mt für Gebäude und MIV. Geteilt durch 906,7 Mio. m² ergibt dies gerundet <strong>320 kg CO₂e/m² BGF</strong>.</p>
+<div id="tbl-thg-budgetvarianten" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-thg-budgetvarianten-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabelle&nbsp;8.2: Budgetvarianten nach Schneider et al. <span class="citation" data-cites="schneider2025declaration">(<a href="../references.html#ref-schneider2025declaration" role="doc-biblioref">Schneider u.&nbsp;a. 2025</a>, Tab. 2, S. 7)</span>.
+</figcaption>
+<div aria-describedby="tbl-thg-budgetvarianten-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 27%">
+<col style="width: 36%">
+<col style="width: 36%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Variante</th>
+<th style="text-align: right;">Senkenannahme [t CO₂e/(Person a)]</th>
+<th style="text-align: right;">THG-Budget [kg CO₂e/m² BGF]</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>L1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">72</td>
+</tr>
+<tr class="even">
+<td>L2</td>
+<td style="text-align: right;">0,5</td>
+<td style="text-align: right;">196</td>
+</tr>
+<tr class="odd">
+<td>L3</td>
+<td style="text-align: right;">1,0</td>
+<td style="text-align: right;">320</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>Die L-Werte sind <strong>Budgetvarianten innerhalb der THG-Bewertung</strong>, nicht die drei PEQ-Qualitätsstufen. Der für diesen Bericht zugrunde gelegte Zertifizierungswert beträgt 320 kg CO₂e/m² BGF. Seine Einhaltung ist zusammen mit der L3-Senkenannahme und den Bilanzregeln zu lesen. Die unterstellte nationale Senkenleistung ist kein vom einzelnen Quartier nachgewiesener Emissionsausgleich.</p>
+</section>
+</section>
+<section id="sec-thg-flaechen" class="level2">
+<h2 class="anchored" data-anchor-id="sec-thg-flaechen">Gebäudesektor: Bezugsflächen und Entwicklung</h2>
+<p>Die Fläche bestimmt, wie ein nationales Budget auf Quadratmeter verteilt wird. Die folgenden Datenstände haben unterschiedliche Abgrenzungen; sie bilden <strong>keine durchgängige Zeitreihe</strong>. Insbesondere darf aus ihrer Differenz kein Rückgang des Gebäudebestands abgeleitet werden.</p>
+<div id="tbl-thg-flaechenentwicklung" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-thg-flaechenentwicklung-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabelle&nbsp;8.3: Vorliegende Flächenbezüge und noch offene Fortschreibung.
+</figcaption>
+<div aria-describedby="tbl-thg-flaechenentwicklung-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 21%">
+<col style="width: 28%">
+<col style="width: 28%">
+<col style="width: 21%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Datenstand / Horizont</th>
+<th style="text-align: right;">BGF [Mio. m²]</th>
+<th style="text-align: right;">NGF [Mio. m²]</th>
+<th>Rolle und Quelle</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Statistikbezug 2021, GFZ-Hochrechnung</td>
+<td style="text-align: right;">1.058,935</td>
+<td style="text-align: right;">847,1</td>
+<td>Bestandsverteilung nach Nutzung, Bundesland und Geschossklasse; <a href="05-kontextfaktoren.html#sec-gfz-bestand" class="quarto-xref"><span>Österreichische Dichteverteilung als aktualisierte Datengrundlage</span></a>; BGF = NGF / 0,8</td>
+</tr>
+<tr class="even">
+<td>Zielbestand 2040 der THG-Kalibrierung</td>
+<td style="text-align: right;">906,7</td>
+<td style="text-align: right;">nicht separat angesetzt</td>
+<td>Bezugsfläche der Budgetzuteilung; <span class="citation" data-cites="schneider2025declaration">Schneider u.&nbsp;a. (<a href="../references.html#ref-schneider2025declaration" role="doc-biblioref">2025</a>)</span>, Tab. A1</td>
+</tr>
+<tr class="odd">
+<td>Bestand 2025 und Zwischenjahre bis 2040</td>
+<td style="text-align: right;">noch zu ergänzen</td>
+<td style="text-align: right;">noch zu ergänzen</td>
+<td>Keine interpolierten Werte ohne harmonisierte Abgrenzung</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<div id="tbl-thg-fortschreibung" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-thg-fortschreibung-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabelle&nbsp;8.4: Struktur für die angekündigte Ergänzung der Gebäudesektor-Daten.
+</figcaption>
+<div aria-describedby="tbl-thg-fortschreibung-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Baustein der Fortschreibung</th>
+<th>Benötigte Angaben</th>
+<th>Aktueller Status</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Ausgangsbestand</td>
+<td>Stützjahr, Nutzung, konditionierte Fläche, NGF/BGF-Abgrenzung</td>
+<td>Statistikmodell 2021 vorhanden; Abgleich mit THG-Systemgrenze offen</td>
+</tr>
+<tr class="even">
+<td>Neubau und Erweiterung</td>
+<td>Zusätzliche m² je Nutzung und Jahr</td>
+<td>Detaildaten angekündigt; nicht eingesetzt</td>
+</tr>
+<tr class="odd">
+<td>Abbruch und Umnutzung</td>
+<td>Abgänge und Nutzungsverschiebungen je Jahr</td>
+<td>Noch zu ergänzen</td>
+</tr>
+<tr class="even">
+<td>Sanierung</td>
+<td>Sanierte m² und energetischer Zustand je Jahr</td>
+<td>Keine zusätzliche Geschossfläche allein durch Sanierung unterstellen</td>
+</tr>
+<tr class="odd">
+<td>Zielbestand</td>
+<td>Konsistente Summe aus Bestand, Zu- und Abgängen</td>
+<td>906,7 Mio. m² als bestehende Kalibrierungsannahme erhalten</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</section>
+<section id="drei-zeitbegriffe" class="level2">
+<h2 class="anchored" data-anchor-id="drei-zeitbegriffe">Drei Zeitbegriffe</h2>
+<p>Der Bewertungszeitraum beträgt <strong>50 Jahre, von 2025 bis 2075</strong>. Innerhalb dieses Horizonts werden die treibhauswirksamen Effekte bilanziert.</p>
+<p>Die Ableitung orientiert sich am österreichischen Klimaneutralitätsziel <strong>2040</strong>; auf dieses Jahr beziehen sich auch die zugrunde gelegten Flächenprognosen. <strong>2050</strong> wird als vorsorglich späterer Dekarbonisierungszeitpunkt angesetzt, um eine mögliche Verzögerung gegenüber dem ursprünglichen Ziel abzubilden. Damit wird das Prognosejahr der Bezugsfläche nicht automatisch auf 2050 verschoben. Eine spätere Umstellung erfordert eine dokumentierte Fortschreibung.</p>
+<p>Die vereinfachende Annahme einer vollständigen Dekarbonisierung der betrachteten Prozesse <strong>ab 2050</strong> führt dazu, dass danach im Modell keine zusätzlichen Emissionen mehr entstehen. Das emissionswirksame Zeitfenster liegt damit faktisch vor 2050, obwohl die Betrachtung bis 2075 reicht. Dies ist eine Szenarioannahme, keine Verkürzung des Bewertungszeitraums und keine Garantie der tatsächlichen Entwicklung <span class="citation" data-cites="schneider2025declaration schneider2026thesis">(<a href="../references.html#ref-schneider2025declaration" role="doc-biblioref">Schneider u.&nbsp;a. 2025, Abschn. 2.4</a>, S. 7–8; <a href="../references.html#ref-schneider2026thesis" role="doc-biblioref">Schneider 2026, Abschn. 3.2.8</a>, S. 58–60)</span>.</p>
+<p><strong>GWP100</strong> bezeichnet den 100-jährigen Charakterisierungshorizont des Treibhauspotenzials für die Bewertung unterschiedlicher Treibhausgase in CO₂-Äquivalenten. Diese 100 Jahre bestimmen nicht die Projektlaufzeit.</p>
+<p>Errichtungsemissionen beanspruchen das Budget unmittelbar. Eine rechnerische Verteilung auf 50 Jahresraten würde ihren Emissionszeitpunkt nicht ändern. Für Etappen eines Renovierungsfahrplans muss deshalb betrachtet werden, wann bauliche Emissionen entstehen und welche Betriebsemissionen bis zur jeweiligen Maßnahme anfallen.</p>
+</section>
+<section id="sec-thg-pfade" class="level2">
+<h2 class="anchored" data-anchor-id="sec-thg-pfade">Absenkpfade und kumuliertes THG-Budget</h2>
+<p>Für die Lebenszyklusbewertung werden zeitabhängige Emissionsfaktoren verwendet. Ihre Entwicklung bildet einen angenommenen Dekarbonisierungspfad ab und beeinflusst insbesondere die Bewertung zukünftiger Betriebsemissionen.</p>
+<div id="fig-absenkpfade" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-absenkpfade-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../Abbildungen/absenkpfade.svg" class="img-fluid figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-absenkpfade-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Abbildung&nbsp;8.1: Angenommene Entwicklung der spezifischen Treibhausgasemissionen verschiedener Energieträger und Versorgungssysteme bis 2050.
+</figcaption>
+</figure>
+</div>
+<p>Die in <a href="#fig-absenkpfade" class="quarto-xref">Abbildung&nbsp;<span>8.1</span></a> dargestellten Verläufe sind Szenarioannahmen und keine Prognose tatsächlich gemessener zukünftiger Emissionen.</p>
+<p>Die bestehende Abbildung unterscheidet Netzstromvarianten, Fernwärmesysteme, Abwärme sowie fossile und biogene Brennstoffe. Ihre numerischen Zeitreihen sind hier noch nicht als versionierte Eingabetabelle verfügbar. Aus der Grafik werden deshalb keine scheinpräzisen Jahreswerte abgelesen. Die methodische Grundlage bilden <span class="citation" data-cites="schneider2025declaration">Schneider u.&nbsp;a. (<a href="../references.html#ref-schneider2025declaration" role="doc-biblioref">2025</a>)</span>, Abschn. 2.4 und 2.6, sowie <span class="citation" data-cites="schneider2026thesis">Schneider (<a href="../references.html#ref-schneider2026thesis" role="doc-biblioref">2026</a>)</span>, Abschn. 3.2.8.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Größe</th>
+<th>Anwendung im kumulierten Budget</th>
+<th>Dokumentierter Stand</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Netzstrom und weitere Energieträger</td>
+<td>Jahresverbrauch × zeitabhängiger THG-Faktor, über die Jahre summiert</td>
+<td>Trägerspezifische Pfade in <a href="#fig-absenkpfade" class="quarto-xref">Abbildung&nbsp;<span>8.1</span></a>; numerische Stützwerte und Interpolation noch zu ergänzen</td>
+</tr>
+<tr class="even">
+<td>Herstellung, Ersatz und Lebensende</td>
+<td>Emissionen zum jeweiligen Ereigniszeitpunkt</td>
+<td>Prozessbezogene Dekarbonisierungsannahmen des Referenzverfahrens</td>
+</tr>
+<tr class="odd">
+<td>Vollständige Dekarbonisierung ab 2050</td>
+<td>Im Modell keine zusätzlichen Emissionen der so erfassten Versorgung und Prozesse</td>
+<td>Szenarioannahme, keine physische Zusicherung; Betrachtung läuft bis 2075 weiter</td>
+</tr>
+<tr class="even">
+<td>Natürliche Senken</td>
+<td>Bestandteil der nationalen Budgetzuteilung</td>
+<td>Eigene Annahme; kein Abzug durch einen fallenden Stromfaktor</td>
+</tr>
+</tbody>
+</table>
+<p>Ein sinkender Emissionsfaktor reduziert zukünftige Betriebsemissionen. Bereits entstandene Errichtungsemissionen werden dadurch nicht nachträglich gelöscht. Die tatsächlichen Jahresverbräuche, Maßnahmenzeitpunkte und Faktorenpfade müssen zusammen bilanziert werden. CO₂-Intensitäten allein sind außerdem nicht ohne dokumentierte Abgrenzung mit den hier verwendeten THG-Faktoren in CO₂e austauschbar.</p>
+</section>
+<section id="rekalibrierung-welche-stellgrößen-ändern-sich" class="level2">
+<h2 class="anchored" data-anchor-id="rekalibrierung-welche-stellgrößen-ändern-sich">Rekalibrierung: Welche Stellgrößen ändern sich?</h2>
+<p>Eine Fortschreibung muss klären, ob Datenbasis, Szenario oder Verteilungsentscheidung verändert werden. Beim THG-Budget sind Restbudget, Senkenannahme, Sektoranteil und Bezugsfläche maßgeblich. Diese Größen sind bei einer Rekalibrierung gemeinsam zu überprüfen <span class="citation" data-cites="schneider2025declaration">(<a href="../references.html#ref-schneider2025declaration" role="doc-biblioref">Schneider u.&nbsp;a. 2025, Abschn. 4.2–4.3</a>, S. 27–28)</span>.</p>
+<p>Zusätzlicher Baubedarf kann eine Entscheidung über die sektorale Verteilung auslösen. Ein höheres Budget je Quadratmeter entsteht daraus nicht von selbst: Bei unverändertem Sektorbudget verteilt sich dieselbe Menge auf mehr Fläche. Soll der Gebäudesektor mehr Budget erhalten, muss die entsprechende Entlastung anderer Sektoren oder eine begründete Änderung der Budgetgrundlage ausgewiesen werden. Eine Erhöhung ohne solche Deckung verändert den Gesamtanspruch.</p>
+<section id="pv-errichtung-und-sektorale-konsistenz" class="level3">
+<h3 class="anchored" data-anchor-id="pv-errichtung-und-sektorale-konsistenz">PV-Errichtung und sektorale Konsistenz</h3>
+<p>Die grauen Emissionen der PV-Anlagen bleiben außerhalb der Quartiersbilanz, weil die Erzeugungsanlagen im nationalen Sektormodell der Energieversorgung zugeordnet sind. Diese Abgrenzung setzt voraus, dass ihre Emissionen dort konsistent erfasst werden <span class="citation" data-cites="schneider2025declaration">(<a href="../references.html#ref-schneider2025declaration" role="doc-biblioref">Schneider u.&nbsp;a. 2025, Abschn. 2.4.1</a> und 4.2, S. 8–9, 27–28)</span>.</p>
+<p>Eine Alternative nimmt die PV-Errichtung in die Quartiersbilanz auf. Dann müssen Emissionen und Budgetzuordnung gemeinsam neu abgegrenzt werden. Eine zusätzliche Belastung bei unverändertem, anders abgegrenztem Budget würde zwei Bilanzmodelle vermischen. Wie sich die konsistente Alternative auf Grenzwert und Vorteil zusätzlicher PV auswirkt, ist zu berechnen. <a href="04-bilanzregeln.html" class="quarto-xref"><span>Systemgrenze des Quartiers</span></a> erläutert die Abgrenzung der PV-Errichtung und die Voraussetzungen eines Vergleichs mit einer gebäudebezogenen Normbilanz.</p>
+</section>
+</section>
+<section id="folgerungen-für-planung-und-verwaltung" class="level2">
+<h2 class="anchored" data-anchor-id="folgerungen-für-planung-und-verwaltung">Folgerungen für Planung und Verwaltung</h2>
+<p>Die Allokation zeigt, welche Beiträge ein Quartier selbst erbringen soll und welche Voraussetzungen es aus dem übergeordneten System übernimmt. Ein Nachweis sollte deshalb neben dem Ergebnis den Methodenstand, die Systemgrenzen, Flächenbezüge und Kontextgutschriften ausweisen. Erst damit lässt sich unterscheiden, ob eine Verbesserung aus einer Planungsmaßnahme, einer geänderten Annahme oder einem anderen Bewertungsmaßstab stammt.</p>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-schneider2026thesis" class="csl-entry" role="listitem">
+Schneider, Simon. 2026. <span>„Quantitative Positive Energy District Definition, Contextualization and Assessment“</span>. Phdthesis, Universidade de Trás-os-Montes e Alto Douro.
+</div>
+<div id="ref-schneider2025declaration" class="csl-entry" role="listitem">
+Schneider, Simon, Thomas Zelger, Raphael Drexel, Manfred Schindler, Paul Krainer, und José Baptista. 2025. <span>„Declaration-Ready Climate-Neutral <span>PEDs</span>: Budget-Based, Hourly <span>LCA</span> Including Mobility and Flexibility“</span>. <em>Designs</em> 9 (6): 123. <a href="https://doi.org/10.3390/designs9060123">https://doi.org/10.3390/designs9060123</a>.
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Kopiert");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Kopiert");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../Kapitel/05-kontext-sanierung.html" class="pagination-link" aria-label="Kontextfaktor Sanierung">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Kontextfaktor Sanierung</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../Kapitel/04-bilanzregeln.html" class="pagination-link" aria-label="Systemgrenze des Quartiers">
+        <span class="nav-page-text"><span class="chapter-title">Systemgrenze des Quartiers</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

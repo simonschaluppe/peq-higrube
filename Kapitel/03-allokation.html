@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Zielwerte – Klimaneutrale Plus-Energie-Quartiere</title>
+<title>Sektorales Zielbild Energie – Klimaneutrale Plus-Energie-Quartiere</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -55,8 +55,8 @@ div.csl-indent {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../Kapitel/04-bilanzregeln.html" rel="next">
-<link href="../Kapitel/02-standard.html" rel="prev">
+<link href="../Kapitel/05-kontextfaktoren.html" rel="next">
+<link href="../Kapitel/03-methodik.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -106,9 +106,6 @@ div.csl-indent {
     document.body.classList.add('hypothesis-enabled');
   });
 </script>
-<script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
-<script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
-<link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
@@ -179,7 +176,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Kapitel/03-allokation.html">Methodik</a></li><li class="breadcrumb-item"><a href="../Kapitel/03-allokation.html"><span class="chapter-title">Zielwerte</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Kapitel/03-methodik.html">Methodik</a></li><li class="breadcrumb-item"><a href="../Kapitel/03-allokation.html"><span class="chapter-title">Sektorales Zielbild Energie</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -218,17 +215,37 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../Kapitel/03-allokation.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Zielwerte</span></a>
+  <a href="../Kapitel/03-methodik.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Von nationalen Zielpfaden zur Quartiersbilanz</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../Kapitel/04-bilanzregeln.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Systemgrenzen und Bilanzierungsregeln</span></a>
+  <a href="../Kapitel/03-allokation.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Sektorales Zielbild Energie</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../Kapitel/05-kontextfaktoren.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Kontextfaktoren</span></a>
+  <a href="../Kapitel/05-kontextfaktoren.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Kontextfaktor Dichte</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Kapitel/05-kontext-mobilitaet.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Kontextfaktor Mobilität</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Kapitel/05-kontext-sanierung.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Kontextfaktor Sanierung</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Kapitel/03-zielwert-thg.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Zielwert THG</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Kapitel/04-bilanzregeln.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Systemgrenze des Quartiers</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -312,34 +329,28 @@ window.Quarto = {
     <h2 id="toc-title">Inhaltsverzeichnis</h2>
    
   <ul>
-  <li><a href="#welche-entscheidungen-stecken-in-einem-zielwert" id="toc-welche-entscheidungen-stecken-in-einem-zielwert" class="nav-link active" data-scroll-target="#welche-entscheidungen-stecken-in-einem-zielwert">Welche Entscheidungen stecken in einem Zielwert?</a></li>
-  <li><a href="#energieallokation-welchen-beitrag-muss-der-gebäudesektor-leisten" id="toc-energieallokation-welchen-beitrag-muss-der-gebäudesektor-leisten" class="nav-link" data-scroll-target="#energieallokation-welchen-beitrag-muss-der-gebäudesektor-leisten">Energieallokation: Welchen Beitrag muss der Gebäudesektor leisten?</a>
+  <li><a href="#energieallokation-welchen-beitrag-muss-der-gebäudesektor-leisten" id="toc-energieallokation-welchen-beitrag-muss-der-gebäudesektor-leisten" class="nav-link active" data-scroll-target="#energieallokation-welchen-beitrag-muss-der-gebäudesektor-leisten">Energieallokation: Welchen Beitrag muss der Gebäudesektor leisten?</a>
   <ul class="collapse">
   <li><a href="#prinzip-der-sektoralen-zuordnung" id="toc-prinzip-der-sektoralen-zuordnung" class="nav-link" data-scroll-target="#prinzip-der-sektoralen-zuordnung">Prinzip der sektoralen Zuordnung</a></li>
-  <li><a href="#dichte-physikalisches-prinzip-und-kalibrierte-anforderung" id="toc-dichte-physikalisches-prinzip-und-kalibrierte-anforderung" class="nav-link" data-scroll-target="#dichte-physikalisches-prinzip-und-kalibrierte-anforderung">Dichte: physikalisches Prinzip und kalibrierte Anforderung</a></li>
-  <li><a href="#operationalisierung-über-den-gebäudebestand" id="toc-operationalisierung-über-den-gebäudebestand" class="nav-link" data-scroll-target="#operationalisierung-über-den-gebäudebestand">Operationalisierung über den Gebäudebestand</a></li>
   </ul></li>
-  <li><a href="#mobilitätsbudget-vom-nationalen-anteil-zur-nutzung" id="toc-mobilitätsbudget-vom-nationalen-anteil-zur-nutzung" class="nav-link" data-scroll-target="#mobilitätsbudget-vom-nationalen-anteil-zur-nutzung">Mobilitätsbudget: vom nationalen Anteil zur Nutzung</a></li>
-  <li><a href="#thg-budget-wie-entstehen-320-kg-co₂e-je-quadratmeter" id="toc-thg-budget-wie-entstehen-320-kg-co₂e-je-quadratmeter" class="nav-link" data-scroll-target="#thg-budget-wie-entstehen-320-kg-co₂e-je-quadratmeter">THG-Budget: Wie entstehen 320 kg CO₂e je Quadratmeter?</a>
+  <li><a href="#aktuelle-operationalisierung-2026-auf-basis-uba-transition-2040-2024" id="toc-aktuelle-operationalisierung-2026-auf-basis-uba-transition-2040-2024" class="nav-link" data-scroll-target="#aktuelle-operationalisierung-2026-auf-basis-uba-transition-2040-2024">Aktuelle Operationalisierung (2026) auf Basis UBA Transition 2040 (2024)</a>
   <ul class="collapse">
-  <li><a href="#nationale-grundlage-und-sektorale-verteilung" id="toc-nationale-grundlage-und-sektorale-verteilung" class="nav-link" data-scroll-target="#nationale-grundlage-und-sektorale-verteilung">Nationale Grundlage und sektorale Verteilung</a></li>
-  <li><a href="#drei-zeitbegriffe" id="toc-drei-zeitbegriffe" class="nav-link" data-scroll-target="#drei-zeitbegriffe">Drei Zeitbegriffe</a></li>
+  <li><a href="#endenergie-aller-energieträger-im-vergleich" id="toc-endenergie-aller-energieträger-im-vergleich" class="nav-link" data-scroll-target="#endenergie-aller-energieträger-im-vergleich">Endenergie aller Energieträger im Vergleich</a></li>
   </ul></li>
-  <li><a href="#rekalibrierung-welche-stellgrößen-ändern-sich" id="toc-rekalibrierung-welche-stellgrößen-ändern-sich" class="nav-link" data-scroll-target="#rekalibrierung-welche-stellgrößen-ändern-sich">Rekalibrierung: Welche Stellgrößen ändern sich?</a>
+  <li><a href="#ausbau-und-bedarf-ausgangsbilanz-2020-bis-zieljahr-2040" id="toc-ausbau-und-bedarf-ausgangsbilanz-2020-bis-zieljahr-2040" class="nav-link" data-scroll-target="#ausbau-und-bedarf-ausgangsbilanz-2020-bis-zieljahr-2040">Ausbau und Bedarf: Ausgangsbilanz 2020 bis Zieljahr 2040</a></li>
+  <li><a href="#sec-energie-bewertung" id="toc-sec-energie-bewertung" class="nav-link" data-scroll-target="#sec-energie-bewertung">Warum von Endenergie und Strom zu Primärenergie wechseln?</a>
   <ul class="collapse">
-  <li><a href="#pv-errichtung-und-sektorale-konsistenz" id="toc-pv-errichtung-und-sektorale-konsistenz" class="nav-link" data-scroll-target="#pv-errichtung-und-sektorale-konsistenz">PV-Errichtung und sektorale Konsistenz</a></li>
-  <li><a href="#sanierung-und-kommunale-perspektive" id="toc-sanierung-und-kommunale-perspektive" class="nav-link" data-scroll-target="#sanierung-und-kommunale-perspektive">Sanierung und kommunale Perspektive</a></li>
+  <li><a href="#zeitliche-entwicklung-der-bewertungsfaktoren" id="toc-zeitliche-entwicklung-der-bewertungsfaktoren" class="nav-link" data-scroll-target="#zeitliche-entwicklung-der-bewertungsfaktoren">Zeitliche Entwicklung der Bewertungsfaktoren</a></li>
   </ul></li>
-  <li><a href="#folgerungen-für-planung-und-verwaltung" id="toc-folgerungen-für-planung-und-verwaltung" class="nav-link" data-scroll-target="#folgerungen-für-planung-und-verwaltung">Folgerungen für Planung und Verwaltung</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Kapitel/03-allokation.html">Methodik</a></li><li class="breadcrumb-item"><a href="../Kapitel/03-allokation.html"><span class="chapter-title">Zielwerte</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Kapitel/03-methodik.html">Methodik</a></li><li class="breadcrumb-item"><a href="../Kapitel/03-allokation.html"><span class="chapter-title">Sektorales Zielbild Energie</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span id="sec-allokation" class="quarto-section-identifier"><span class="chapter-title">Zielwerte</span></span></h1>
+<h1 class="title"><span id="sec-allokation" class="quarto-section-identifier"><span class="chapter-title">Sektorales Zielbild Energie</span></span></h1>
 </div>
 
 
@@ -357,143 +368,254 @@ window.Quarto = {
 
 
 <div class="lead">
-<p>Von nationalen Zielen zu konkreten Anforderungen an Quartiere</p>
+<p>Nationale Szenarien für Erzeugung und Bedarf als Ausgangspunkt der Quartiersanforderungen</p>
 </div>
-<p>Ein Quartier kann seinen Energiebedarf senken, erneuerbare Energie erzeugen und Emissionen vermeiden. Ob dieser Beitrag ausreicht, hängt auch davon ab, welche Aufgaben die übrigen Gebäude, die Mobilität und die Energieversorgung übernehmen. Das nationale Allokationsmodell stellt diesen Zusammenhang her: Es verteilt verfügbare erneuerbare Energie und ein begrenztes Emissionsbudget auf Sektoren und anschließend auf die Nutzungen und Flächen konkreter Quartiere.</p>
-<p>Die Quartierssimulation ermittelt, welche Bilanz ein Projekt unter bestimmten Annahmen erreicht. Das Allokationsmodell bestimmt den Maßstab, an dem dieses Ergebnis beurteilt wird. Das Bewertungsverfahren verbindet beide Ebenen: Systemgrenzen, Gewichtung und Anforderungen müssen gemeinsam festgelegt werden <span class="citation" data-cites="schneider2026thesis">(<a href="../references.html#ref-schneider2026thesis" role="doc-biblioref">Schneider 2026, 3.1–3.2</a>, S. 43–60)</span>.</p>
-<section id="welche-entscheidungen-stecken-in-einem-zielwert" class="level2">
-<h2 class="anchored" data-anchor-id="welche-entscheidungen-stecken-in-einem-zielwert">Welche Entscheidungen stecken in einem Zielwert?</h2>
-<p>Ein nationales Ziel lässt sich nicht ohne weitere Festlegungen auf ein Bauvorhaben herunterbrechen. Zunächst braucht es ein Szenario für Energiebedarf und Energieversorgung. Anschließend ist festzulegen, welche Anteile der verfügbaren Ressourcen und Emissionsbudgets den Sektoren zugerechnet werden. Erst danach können Anforderungen für Quartiere unterschiedlicher Dichte und Nutzung bestimmt werden.</p>
-<div class="cell" data-layout-align="default">
-<div class="cell-output-display">
-<div id="fig-allokationskette" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-allokationskette-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div>
-<pre class="mermaid mermaid-js" data-label="fig-allokationskette">flowchart TB
-  A["Nationale Energie- und Klimaszenarien"] --&gt; B["Sektorale Zuordnung"]
-  B --&gt; C["Verteilung nach Dichte, Nutzung und Fläche"]
-  C --&gt; D["Anforderungen und Budgets"]
-  E["Projektdaten und Maßnahmen"] --&gt; F["Quartierssimulation und Bilanzierung"]
-  D --&gt; G["Bewertung des Quartiers"]
-  F --&gt; G
-</pre>
-</div>
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-allokationskette-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Abbildung&nbsp;3.1: Vom nationalen Szenario zur Quartiersbewertung. Methodik nach Schneider (2026), Kap. 3.1–3.3.
-</figcaption>
-</figure>
-</div>
-</div>
-</div>
-<div id="tbl-arten-festlegungen" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-tbl figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-arten-festlegungen-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Tabelle&nbsp;3.1: Grundlagen eines Zielwerts <span class="citation" data-cites="schneider2026thesis">(<a href="../references.html#ref-schneider2026thesis" role="doc-biblioref">Schneider 2026, 3.1–3.2</a>)</span>.
-</figcaption>
-<div aria-describedby="tbl-arten-festlegungen-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<table class="caption-top table">
-<colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Bestandteil</th>
-<th>Funktion</th>
-<th>Beispiel</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Physikalischer Zusammenhang</td>
-<td>Beschreibt Beziehungen zwischen Größen.</td>
-<td>Mehr Geschossfläche auf gleicher Grundstücksfläche verändert das Verhältnis von Bedarf und lokalem Erzeugungspotenzial.</td>
-</tr>
-<tr class="even">
-<td>Szenarioannahme</td>
-<td>Beschreibt eine mögliche zukünftige Entwicklung.</td>
-<td>Dekarbonisierung der Energieversorgung und der Herstellungsprozesse.</td>
-</tr>
-<tr class="odd">
-<td>Normative Festlegung</td>
-<td>Verteilt Anforderungen und Budgets.</td>
-<td>Anteil des nationalen Emissionsbudgets für Gebäude und MIV.</td>
-</tr>
-<tr class="even">
-<td>Operationalisierung</td>
-<td>Übersetzt den Ansatz in berechenbare Regeln.</td>
-<td>Mobilitätsgutschrift je Nutzung und Quadratmeter Nettogrundfläche.</td>
-</tr>
-</tbody>
-</table>
-</div>
-</figure>
-</div>
-<p>Die wissenschaftliche Herleitung macht diese Entscheidungen prüfbar. Sie hebt ihren normativen Charakter nicht auf. Für die Verwaltung ist gerade diese Trennung hilfreich: Ein geändertes Szenario, eine andere Verteilungsregel und eine Korrektur der Software sind unterschiedliche Eingriffe.</p>
-</section>
+<p>Aus dem allgemeinen Prinzip in <a href="03-methodik.html" class="quarto-xref"><span>Von nationalen Zielpfaden zur Quartiersbilanz</span></a> folgt zunächst ein sektorales Zielbild. Hier werden nationale Jahresenergiemengen und Szenarien verglichen. Die anschließende Dichtekalibrierung steht in <a href="05-kontextfaktoren.html" class="quarto-xref"><span>Kontextfaktor Dichte</span></a>, die Ableitung und Anwendung des Mobilitätsbudgets in <a href="05-kontext-mobilitaet.html" class="quarto-xref"><span>Kontextfaktor Mobilität</span></a>. Das kumulierte Emissionsbudget folgt gesondert in <a href="03-zielwert-thg.html" class="quarto-xref"><span>Zielwert THG</span></a>.</p>
 <section id="energieallokation-welchen-beitrag-muss-der-gebäudesektor-leisten" class="level2">
 <h2 class="anchored" data-anchor-id="energieallokation-welchen-beitrag-muss-der-gebäudesektor-leisten">Energieallokation: Welchen Beitrag muss der Gebäudesektor leisten?</h2>
 <section id="prinzip-der-sektoralen-zuordnung" class="level3">
 <h3 class="anchored" data-anchor-id="prinzip-der-sektoralen-zuordnung">Prinzip der sektoralen Zuordnung</h3>
-<p>Das Allokationsmodell betrachtet ein vollständig erneuerbares österreichisches Energiesystem im Zieljahr 2040. Erneuerbare Erzeugung und verbleibende Energiebedarfe werden sektoral zugeordnet. Daraus ergeben sich der erforderliche Beitrag dezentraler Erzeugung im Gebäudesektor und ein Anteil zentral bereitgestellter erneuerbarer Energie für den motorisierten Individualverkehr <span class="citation" data-cites="schneider2023context">(<a href="../references.html#ref-schneider2023context" role="doc-biblioref">Schneider u.&nbsp;a. 2023, Abschn. 6.1–6.2</a>, S. 12–16)</span>.</p>
+<p>Die initiale Operationalisierung 2023 beruht auf der Streicher-basierten Herleitung: Das Szenario „Energieautarkie für Österreich 2050“ wurde von Schneider, Zelger und Klauda (2020) angepasst und im PEQ-Modell 2023 für den Zielhorizont 2040 weiterentwickelt <span class="citation" data-cites="schneider2020lokal schneider2023context">(<a href="../references.html#ref-schneider2020lokal" role="doc-biblioref">Schneider u.&nbsp;a. 2020, Abschn. 3.1</a>, S. 3–6; <a href="../references.html#ref-schneider2023context" role="doc-biblioref">Schneider u.&nbsp;a. 2023, Abschn. 6.1–6.2</a>)</span>. Dieses historische Referenzmodell betrachtet ein vollständig erneuerbares österreichisches Energiesystem. Erneuerbare Erzeugung und verbleibende Energiebedarfe werden sektoral zugeordnet. Daraus ergeben sich der erforderliche Beitrag dezentraler Erzeugung im Gebäudesektor und ein Anteil zentral bereitgestellter erneuerbarer Energie für den motorisierten Individualverkehr <span class="citation" data-cites="schneider2023context">(<a href="../references.html#ref-schneider2023context" role="doc-biblioref">Schneider u.&nbsp;a. 2023, Abschn. 6.1–6.2</a>, S. 12–16)</span>.</p>
+<p>Die Primärstudie <em>Energieautarkie für Österreich 2050</em> erschien im Dezember 2010. Sie versteht Energieautarkie als ausgeglichene jährliche Nettoenergiebilanz; zeitweiser Austausch bleibt möglich. Importierte graue Energie wird nicht als vollständig neu bilanzierte Größe einbezogen. Das Wachstumsszenario unterstellt jährlich 0,8 % Wachstum der Energiedienstleistungen beziehungsweise industriellen Bruttowertschöpfung; dies ist keine reine Bevölkerungsannahme <span class="citation" data-cites="streicher2010energieautarkie">(<a href="../references.html#ref-streicher2010energieautarkie" role="doc-biblioref">Streicher u.&nbsp;a. 2010</a>, Zusammenfassung, S. iii–v)</span>. Die Übertragung in eine lokale Erzeugungsanforderung erfolgt durch Schneider et al.&nbsp;(2020); die späteren PEQ-Gutschriften stammen aus der Weiterentwicklung 2023 <span class="citation" data-cites="schneider2020lokal schneider2023context">(<a href="../references.html#ref-schneider2020lokal" role="doc-biblioref">Schneider u.&nbsp;a. 2020, Abschn. 3.1</a>, S. 3–6; <a href="../references.html#ref-schneider2023context" role="doc-biblioref">Schneider u.&nbsp;a. 2023, Abschn. 6.1–6.2</a>)</span>. Energieautarkie, jährliche erneuerbare Deckung und Klimaneutralität sind deshalb nicht gleichzusetzen.</p>
 <p>Eine dem Quartier zugerechnete Energiemenge ist deshalb weder automatisch lokal erzeugte Energie noch ein vertraglich gesicherter Strombezug. Im Bewertungsverfahren kann sie als virtuelle Gutschrift erscheinen. Der physische Energiefluss muss davon getrennt bilanziert werden.</p>
 <p>Die Anforderungen an Quartiere werden aus einem nationalen Bilanzmodell abgeleitet. Dieses verknüpft die verfügbare erneuerbare Energie mit den Bedarfen der einzelnen Sektoren.</p>
 <div id="fig-nationales-bilanzmodell" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-nationales-bilanzmodell-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="../Abbildungen/nationales_bilanzmodell.svg" class="img-fluid figure-img">
+<img src="../Abbildungen/nationales_bilanzmodell.svg" class="img-fluid figure-img" style="width:100.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-nationales-bilanzmodell-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Abbildung&nbsp;3.2: Schematische Zuordnung erneuerbarer Energie und sektoraler Energiebedarfe im österreichischen Zielszenario 2040.
+Abbildung&nbsp;4.1: Historisches nationales Bilanz- und Zuordnungsmodell für die PEQ-Operationalisierung 2020/2023. Die dargestellte 60/40-Aufteilung ist schematisch und umfasst unterschiedliche Energiearten; sie ist weder eine maßstäbliche Strombilanz noch eine Zuordnungsregel für Transition 2040.
 </figcaption>
 </figure>
 </div>
 <p>Im Referenzszenario sind dem Gebäudesektor 114,8 PJ/a Photovoltaikerzeugung und 137,6 PJ/a Strombedarf nach sektoraler Allokation zugeordnet. Der Zielsaldo beträgt −22,7 PJ/a <span class="citation" data-cites="schneider2023context">(<a href="../references.html#ref-schneider2023context" role="doc-biblioref">Schneider u.&nbsp;a. 2023</a>, Tab. 6, S. 13)</span>. Diese jährlichen Größen beschreiben die sektorale Strombilanz. Für die primärenergetische Quartiersbewertung werden sie mit den zugehörigen Gewichtungen und Flächenbezügen verknüpft.</p>
 <p>Ein Quartier muss damit nicht die gesamte nationale Versorgung lokal nachbilden. Seine Anforderungen müssen aber zu einer Verteilung passen, die auch für den übrigen Gebäudebestand und die anderen Sektoren aufgeht.</p>
 </section>
-<section id="dichte-physikalisches-prinzip-und-kalibrierte-anforderung" class="level3">
-<h3 class="anchored" data-anchor-id="dichte-physikalisches-prinzip-und-kalibrierte-anforderung">Dichte: physikalisches Prinzip und kalibrierte Anforderung</h3>
-<p>Der Grundgedanke lässt sich mit einer vereinfachten Beziehung zeigen. Sei (A_G) die Grundstücksfläche und (A_B) die Bruttogrundfläche. Die Geschoßflächenzahl ist (d=A_B/A_G). Werden eine jährliche lokale Erzeugung (p) je Grundstücksfläche und ein jährlicher Bedarf (e) je Bruttogrundfläche angesetzt, folgt:</p>
-<p><span id="eq-dichte-prinzip"><span class="math display">\[
-b(d)=\frac{p A_G-e A_B}{A_B}=\frac{p}{d}-e.
-\tag{3.1}\]</span></span></p>
-<p>Erzeugung und Bedarf sind in derselben Energiegröße auszudrücken; (b) ist dann eine jährliche Bilanz je m² BGF. Die Beziehung zeigt, weshalb das Erzeugungspotenzial je Geschossfläche bei steigender Dichte abnimmt, wenn das Potenzial je Grundstücksfläche gleich bleibt. In realen Projekten hängen Erzeugung und Bedarf zusätzlich von Gebäudeform, Nutzung, Verschattung und Technik ab <span class="citation" data-cites="schneider2023context">(<a href="../references.html#ref-schneider2023context" role="doc-biblioref">Schneider u.&nbsp;a. 2023, 11–12</a>)</span>.</p>
-<p>Aus diesem Zusammenhang wird noch kein verbindlicher Zielwert. Die Anforderungsfunktion ergänzt die Beziehung um eine Verschiebung auf der Dichteachse und eine Begrenzung. Ihre Parameter bestimmen die Lastenverteilung zwischen Quartierstypen. Die so festgelegte Kurve beschreibt eine Anforderung und kein technisches Potenzialmaximum <span class="citation" data-cites="schneider2023context">(<a href="../references.html#ref-schneider2023context" role="doc-biblioref">Schneider u.&nbsp;a. 2023</a>, Gl. 7–8, S. 12–13)</span>.</p>
-<p>Bei niedriger Dichte kann die Regel einen zusätzlichen Überschuss verlangen; bei hoher Dichte kann sie einen negativen Saldo ohne Kontextkorrektur zulassen. Dies lässt sich entweder als unterschiedlicher Zielwert oder als Gut-/Lastschrift gegenüber einem gemeinsamen Nullmaßstab ausdrücken. Die Gutschrift verändert die Anforderung, nicht den realen Energiebedarf.</p>
 </section>
-<section id="operationalisierung-über-den-gebäudebestand" class="level3">
-<h3 class="anchored" data-anchor-id="operationalisierung-über-den-gebäudebestand">Operationalisierung über den Gebäudebestand</h3>
-<p>Die nationale Kalibrierung braucht zusätzlich die Flächenverteilung des Bestands nach Dichte und Gebäudequalität. Ein Zielwert für einen häufigen Quartierstyp trägt zum nationalen Ergebnis stärker bei als derselbe Zielwert für einen seltenen Typ.</p>
-<p>Der nationale Sektorsaldo ergibt sich aus der flächengewichteten Summe der spezifischen Zielsalden:</p>
-<p><span id="eq-sektor-aggregation"><span class="math display">\[
-B_{\mathrm{Sektor}}
-=\sum_k\sum_j A_{k,j}\,t_k(d_j).
-\tag{3.2}\]</span></span></p>
-<p>(A_{k,j}) bezeichnet die Fläche des Gebäudetyps (k) in der Dichteklasse (j), (t_k(d_j)) dessen jährlichen spezifischen Zielsaldo. Fläche und Zielsaldo müssen dieselbe Flächendefinition verwenden. Bei einem Zielsaldo in kWh/(m² a) ergibt sich der Sektorsaldo in kWh/a.</p>
-<p>Die Kalibrierung unterscheidet thermische Sanierung, Sanierung mit geringer PV-Ausstattung, PEQ-Sanierung und PEQ-Neubau mit Anteilen von 40 %, 20 %, 20 % und 20 %. Unsanierter Bestand hat im zugrunde gelegten Zielzustand einen Anteil von 0 %. Zusammen mit der Dichteverteilung bestimmen diese Annahmen den nationalen Sektorsaldo <span class="citation" data-cites="schneider2023context">(<a href="../references.html#ref-schneider2023context" role="doc-biblioref">Schneider u.&nbsp;a. 2023</a>, Tab. 5 und Abb. 8, S. 12–14)</span>.</p>
-<p>Die Anforderungen an PEQ hängen somit auch davon ab, wie viel der übrige Gebäudebestand beiträgt. Eine andere Sanierungsentwicklung oder Dichteverteilung kann eine neue Kalibrierung erfordern. Dafür müssen sowohl die Bestandsdaten als auch die Verteilungsentscheidungen dokumentiert werden.</p>
-<p><strong>[Abbildungsplatzhalter: Dichteabhängige Anforderungen und Flächenverteilung des Gebäudebestands, übernommen aus Schneider et al.&nbsp;(2023), Abb. 8.]</strong></p>
-</section>
-</section>
-<section id="mobilitätsbudget-vom-nationalen-anteil-zur-nutzung" class="level2">
-<h2 class="anchored" data-anchor-id="mobilitätsbudget-vom-nationalen-anteil-zur-nutzung">Mobilitätsbudget: vom nationalen Anteil zur Nutzung</h2>
-<p>Der motorisierte Individualverkehr erweitert den Energiebedarf, für den das Quartier bilanziell Verantwortung übernimmt. Gleichzeitig erhält er einen Anteil der zentral bereitgestellten erneuerbaren Energie. Dieser Anteil wird über die Nutzungen auf Quartiere verteilt.</p>
-<p>Für den MIV sind 6,30 TWh/a Strom und 0,36 TWh/a Biomasse zugeordnet. Mit der primärenergetischen Gewichtung ergibt sich ein Budget von 10,68 TWh PE/a <span class="citation" data-cites="schneider2023context">(<a href="../references.html#ref-schneider2023context" role="doc-biblioref">Schneider u.&nbsp;a. 2023</a>, Tab. 8, S. 16)</span>.</p>
-<p>Die Verteilung folgt den Anteilen der Nutzungen am österreichischen Zielverkehr und ihren nationalen Nutzflächen. Für eine Nutzung (u) gilt:</p>
-<p><span id="eq-mobilitaetsbudget"><span class="math display">\[
-c_{\mathrm{M},u}
-=\frac{E_{\mathrm{M},u}}{A_{\mathrm{NGF},u}}.
-\tag{3.3}\]</span></span></p>
-<p>Die nationale Energiemenge (E_{,u}) in kWh PE/a wird durch die zugehörige Nettogrundfläche geteilt. Das Ergebnis ist die jährliche Mobilitätsgutschrift je m² NGF. Bei gemischter Nutzung werden die Gutschriften mit den jeweiligen Quartiersnutzflächen gewichtet.</p>
-<div id="tbl-mobilitaetsallokation" class="quarto-float quarto-figure quarto-figure-center anchored">
+<section id="aktuelle-operationalisierung-2026-auf-basis-uba-transition-2040-2024" class="level2">
+<h2 class="anchored" data-anchor-id="aktuelle-operationalisierung-2026-auf-basis-uba-transition-2040-2024">Aktuelle Operationalisierung (2026) auf Basis UBA Transition 2040 (2024)</h2>
+<div class="callout callout-style-default callout-note callout-titled" title="Modellstand 2026 und geltende Gutschriften">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Hinweis</span>Modellstand 2026 und geltende Gutschriften
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Die aktuelle Operationalisierung 2026 umfasst die normierten UBA-Daten, den Szenarienvergleich und eine parametrische Berechnung. Die Rekalibrierung der sektoralen Zuordnung bleibt offen; bis zu deren Festlegung gelten die initialen Mobilitätsgutschriften 2023 unverändert. Die folgenden UBA-Werte sind eine veröffentlichte Szenariogrundlage und noch keine neue Allokation oder Deklarationsanforderung. WEM/WAM 2025 dienen als neuere Vergleichsszenarien, WEM/WAM 2023 als Vergleich derselben Modellgeneration wie Transition. WAM 2025 entspricht im Energieteil WAM NEKP 2024 <span class="citation" data-cites="uba2025szenarien">(<a href="../references.html#ref-uba2025szenarien" role="doc-biblioref">Umweltbundesamt 2025, 62</a>)</span>.</p>
+</div>
+</div>
+<p>Die Jahresangabe <strong>2024</strong> bezeichnet hier die Ausgabe mit Copyright 2024. Auf Titelblatt und Seitenfuß von REP-0880 steht „Wien 2023“; die Modellgeneration bleibt entsprechend 2023. Diese Datierung ändert weder Zieljahr noch Zahlenbasis <span class="citation" data-cites="uba2023transition">(<a href="../references.html#ref-uba2023transition" role="doc-biblioref">Umweltbundesamt 2024</a>, Impressum)</span>.</p>
+<p>Die Fortschreibung konzentriert sich auf die <strong>Elektrizitätsbilanz</strong>. Stromerzeugung, Strombedarf und Nettoimporte werden in PJ elektrischer Energie pro Jahr verglichen. Der energetische Endverbrauch aller Energieträger bleibt ein separater Sektorausweis im Datenmodell und geht nicht als Strombedarf in das Allokationsmodell ein. Verbrauch des Energiesektors, Transportverluste und elektrischer Umwandlungseinsatz sind gesonderte Bedarfspositionen. Der Umwandlungseinsatz ist bereits ein Strombedarf; der später erzeugte Wasserstoff darf nicht nochmals als Endstrom addiert werden.</p>
+<!-- Generated by Berechnungen/sektorenmodell/generate.py; edit CSV inputs, not tables. -->
+<div id="tbl-allokation-stromerzeugung-2040" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-mobilitaetsallokation-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Tabelle&nbsp;3.2: Nutzungsbezogene Mobilitätsallokation, übernommen aus Tabelle 9 <span class="citation" data-cites="schneider2023context">(<a href="../references.html#ref-schneider2023context" role="doc-biblioref">Schneider u.&nbsp;a. 2023, 16</a>)</span>.
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-allokation-stromerzeugung-2040-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabelle&nbsp;4.1: Publizierte Stromerzeugung und Nettoimporte. Transition: REP-0880, Tab. 16, S. 63; WEM/WAM 2023: REP-0882, Zusammenfassung, Tab. D, S. 8; WEM/WAM 2025: REP-0995, Tab. E, S. 12 <span class="citation" data-cites="uba2023transition uba2023zusammenfassung uba2025szenarien">(<a href="../references.html#ref-uba2023transition" role="doc-biblioref">Umweltbundesamt 2024</a>, <a href="../references.html#ref-uba2023zusammenfassung" role="doc-biblioref">2023b</a>, <a href="../references.html#ref-uba2025szenarien" role="doc-biblioref">2025</a>)</span>.
 </figcaption>
-<div aria-describedby="tbl-mobilitaetsallokation-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div aria-describedby="tbl-allokation-stromerzeugung-2040-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 13%">
+<col style="width: 17%">
+<col style="width: 17%">
+<col style="width: 17%">
+<col style="width: 17%">
+<col style="width: 17%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Stromerzeugung 2040 [PJ_el/a]</th>
+<th style="text-align: right;">Transition 2040</th>
+<th style="text-align: right;">WEM 2025</th>
+<th style="text-align: right;">WAM 2025</th>
+<th style="text-align: right;">WEM 2023</th>
+<th style="text-align: right;">WAM 2023</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Wasserkraft</td>
+<td style="text-align: right;">173</td>
+<td style="text-align: right;">167</td>
+<td style="text-align: right;">176</td>
+<td style="text-align: right;">174</td>
+<td style="text-align: right;">176</td>
+</tr>
+<tr class="even">
+<td>Windkraft</td>
+<td style="text-align: right;">105</td>
+<td style="text-align: right;">65</td>
+<td style="text-align: right;">87</td>
+<td style="text-align: right;">69</td>
+<td style="text-align: right;">87</td>
+</tr>
+<tr class="odd">
+<td>Photovoltaik</td>
+<td style="text-align: right;">149</td>
+<td style="text-align: right;">53</td>
+<td style="text-align: right;">107</td>
+<td style="text-align: right;">54</td>
+<td style="text-align: right;">107</td>
+</tr>
+<tr class="even">
+<td>Biomasse inkl. Biomethan</td>
+<td style="text-align: right;">21</td>
+<td style="text-align: right;">21</td>
+<td style="text-align: right;">21</td>
+<td style="text-align: right;">21</td>
+<td style="text-align: right;">21</td>
+</tr>
+<tr class="odd">
+<td>Geothermie / sonstige Erzeugung¹</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td>Wasserstoff-Rückverstromung</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td>Fossile Erzeugung</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">33</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">27</td>
+<td style="text-align: right;">15</td>
+</tr>
+<tr class="even">
+<td>Publizierte Erzeugung gesamt</td>
+<td style="text-align: right;">457</td>
+<td style="text-align: right;">339</td>
+<td style="text-align: right;">406</td>
+<td style="text-align: right;">346</td>
+<td style="text-align: right;">406</td>
+</tr>
+<tr class="odd">
+<td>Nettoimporte (− = Export)</td>
+<td style="text-align: right;">-7</td>
+<td style="text-align: right;">38</td>
+<td style="text-align: right;">-10</td>
+<td style="text-align: right;">21</td>
+<td style="text-align: right;">1</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<div id="tbl-allokation-strombedarf-2040" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-allokation-strombedarf-2040-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabelle&nbsp;4.2: Publizierter Strombedarf einschließlich Energiebranche, Verlusten und Umwandlung. Transition: REP-0880, Tab. 15, S. 60; WEM/WAM 2023: REP-0882, Tab. 12, S. 39; WEM/WAM 2025: REP-0995, Tab. 18, S. 62 <span class="citation" data-cites="uba2023transition uba2023szenarien uba2025szenarien">(<a href="../references.html#ref-uba2023transition" role="doc-biblioref">Umweltbundesamt 2024</a>, <a href="../references.html#ref-uba2023szenarien" role="doc-biblioref">2023a</a>, <a href="../references.html#ref-uba2025szenarien" role="doc-biblioref">2025</a>)</span>.
+</figcaption>
+<div aria-describedby="tbl-allokation-strombedarf-2040-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 13%">
+<col style="width: 17%">
+<col style="width: 17%">
+<col style="width: 17%">
+<col style="width: 17%">
+<col style="width: 17%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Strombedarf 2040 [PJ_el/a]</th>
+<th style="text-align: right;">Transition 2040</th>
+<th style="text-align: right;">WEM 2025</th>
+<th style="text-align: right;">WAM 2025</th>
+<th style="text-align: right;">WEM 2023</th>
+<th style="text-align: right;">WAM 2023</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Verkehr</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">76</td>
+<td style="text-align: right;">72</td>
+<td style="text-align: right;">67</td>
+<td style="text-align: right;">70</td>
+</tr>
+<tr class="even">
+<td>Gebäude</td>
+<td style="text-align: right;">108</td>
+<td style="text-align: right;">132</td>
+<td style="text-align: right;">123</td>
+<td style="text-align: right;">134</td>
+<td style="text-align: right;">122</td>
+</tr>
+<tr class="odd">
+<td>Industrie</td>
+<td style="text-align: right;">140</td>
+<td style="text-align: right;">115</td>
+<td style="text-align: right;">107</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: right;">126</td>
+</tr>
+<tr class="even">
+<td>Landwirtschaft</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr class="odd">
+<td>Verbrauch Sektor Energie</td>
+<td style="text-align: right;">34</td>
+<td style="text-align: right;">28</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">34</td>
+</tr>
+<tr class="even">
+<td>Transportverluste</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">15</td>
+</tr>
+<tr class="odd">
+<td>Umwandlungseinsatz</td>
+<td style="text-align: right;">57</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">34</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">36</td>
+</tr>
+<tr class="even">
+<td>Publizierter Strombedarf gesamt</td>
+<td style="text-align: right;">450</td>
+<td style="text-align: right;">376</td>
+<td style="text-align: right;">394</td>
+<td style="text-align: right;">367</td>
+<td style="text-align: right;">407</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>¹ Transition: Geothermie; die Vergleichstabellen verwenden die breitere Kategorie „Umgebungswärme etc.“. Striche bei WEM/WAM 2023 wurden in der übergebenen Normierung als null geführt.</p>
+<div id="tbl-szenario-bilanzreste" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-szenario-bilanzreste-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabelle&nbsp;4.3: Dokumentierte Rundungs- und Bilanzreste in PJ_el/a, aus denselben publizierten Tabellen berechnet. Keine Verteilung auf Einzelpositionen.
+</figcaption>
+<div aria-describedby="tbl-szenario-bilanzreste-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
 <colgroup>
 <col style="width: 20%">
@@ -503,180 +625,188 @@ Tabelle&nbsp;3.2: Nutzungsbezogene Mobilitätsallokation, übernommen aus Tabell
 </colgroup>
 <thead>
 <tr class="header">
-<th>Nutzung</th>
-<th style="text-align: right;">Budget [TWh PE/a]</th>
-<th style="text-align: right;">Fläche [Mio. m² NGF]</th>
-<th style="text-align: right;">Gutschrift [kWh PE/(m² NGF a)]</th>
+<th>Szenario</th>
+<th style="text-align: right;">Erzeugung: Komponenten − Gesamt</th>
+<th style="text-align: right;">Bedarf: Komponenten − Gesamt</th>
+<th style="text-align: right;">Erzeugung + Nettoimport − Bedarf</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Wohnen</td>
-<td style="text-align: right;">5,30</td>
-<td style="text-align: right;">375,6</td>
-<td style="text-align: right;">14,11</td>
+<td>Transition 2040</td>
+<td style="text-align: right;">+0</td>
+<td style="text-align: right;">+2</td>
+<td style="text-align: right;">+0</td>
 </tr>
 <tr class="even">
-<td>Büro und Gewerbe</td>
-<td style="text-align: right;">2,20</td>
-<td style="text-align: right;">53,1</td>
-<td style="text-align: right;">41,47</td>
+<td>WEM 2025</td>
+<td style="text-align: right;">+0</td>
+<td style="text-align: right;">-1</td>
+<td style="text-align: right;">+1</td>
 </tr>
 <tr class="odd">
-<td>Bildung</td>
-<td style="text-align: right;">0,29</td>
-<td style="text-align: right;">22,5</td>
-<td style="text-align: right;">12,93</td>
+<td>WAM 2025</td>
+<td style="text-align: right;">+0</td>
+<td style="text-align: right;">+0</td>
+<td style="text-align: right;">+2</td>
 </tr>
 <tr class="even">
-<td>Handel und sonstige Nutzungen</td>
-<td style="text-align: right;">2,89</td>
-<td style="text-align: right;">96,5</td>
-<td style="text-align: right;">29,97</td>
+<td>WEM 2023</td>
+<td style="text-align: right;">-1</td>
+<td style="text-align: right;">-1</td>
+<td style="text-align: right;">+0</td>
+</tr>
+<tr class="odd">
+<td>WAM 2023</td>
+<td style="text-align: right;">+0</td>
+<td style="text-align: right;">+0</td>
+<td style="text-align: right;">+0</td>
 </tr>
 </tbody>
 </table>
 </div>
 </figure>
 </div>
-<p>Die Gutschrift richtet sich nach der Nutzung; der Mobilitätsbedarf hängt zusätzlich von Standort, Verkehrsverhalten und Fahrzeugflotte ab. Ein hoher Bedarf erzeugt keinen entsprechend hohen Budgetanspruch. Bei gleicher Nutzung bleibt ein Quartier mit geringerem MIV-Bedarf bilanziell im Vorteil <span class="citation" data-cites="schneider2026thesis">(<a href="../references.html#ref-schneider2026thesis" role="doc-biblioref">Schneider 2026, Abschn. 3.2.7</a>, S. 56–57)</span>.</p>
-<p>Für die Bewertung wird der Zielverkehr dem Quartier zugeordnet. Die Simulation der Lade- und Speicherflüsse muss dagegen die tatsächliche Anwesenheit und Ladung der Fahrzeuge berücksichtigen. Ein zugeteiltes Mobilitätsbudget ist weder ein physisches Ladeangebot noch eine Aussage über die nutzbare Batteriekapazität.</p>
-<p>Die Mobilitätsallokation beruht auf den Mobilitätsdaten von 2013/2014 und dem nationalen Energieszenario. Neue Erhebungen zu Verkehrsverhalten, Fahrzeugflotte und Flächennutzung ermöglichen eine Aktualisierung der Gutschriften. Das Zuordnungsprinzip bleibt dabei bestehen; Ausgangsbudget und Verteilung werden gemeinsam überprüft.</p>
-</section>
-<section id="thg-budget-wie-entstehen-320-kg-co₂e-je-quadratmeter" class="level2">
-<h2 class="anchored" data-anchor-id="thg-budget-wie-entstehen-320-kg-co₂e-je-quadratmeter">THG-Budget: Wie entstehen 320 kg CO₂e je Quadratmeter?</h2>
-<section id="nationale-grundlage-und-sektorale-verteilung" class="level3">
-<h3 class="anchored" data-anchor-id="nationale-grundlage-und-sektorale-verteilung">Nationale Grundlage und sektorale Verteilung</h3>
-<p>Zusätzlich zur jährlichen Primärenergiebilanz begrenzt ein kumuliertes THG-Budget die bilanzierten Emissionen aus Errichtung, Nutzung, Instandhaltung und MIV über den definierten Zeitraum.</p>
-<p>Das Verfahren unterscheidet drei Budgetvarianten. Ausgangspunkte sind das verbleibende nationale CO₂-Budget, Annahmen über natürliche Senken, ein Anteil von 50 % für Gebäude und MIV sowie eine nationale Bezugsfläche von 906,7 Mio. m² BGF. Der Klimabudgetansatz bezieht sich auf 1,5 °C mit 66 % Wahrscheinlichkeit; dokumentiert werden Varianten mit und ohne temporäre Überschreitung des Temperaturziels <span class="citation" data-cites="schneider2025declaration">(<a href="../references.html#ref-schneider2025declaration" role="doc-biblioref">Schneider u.&nbsp;a. 2025, Abschn. 2.3</a>, Tab. 2 und A1, S. 6–7, 30)</span>.</p>
-<p>Die Budgetvarianten L1, L2 und L3 beruhen auf einem Klimabudget <strong>ohne temporäre Überschreitung</strong> des Temperaturziels: Von 280 Mt CO₂ ab 2022 verbleiben nach Abzug der bis Ende 2024 angesetzten Emissionen 130 Mt ab 2025. Dieses Ausgangsbudget bildet die Referenz der Bewertung <span class="citation" data-cites="schneider2025declaration">(<a href="../references.html#ref-schneider2025declaration" role="doc-biblioref">Schneider u.&nbsp;a. 2025</a>, Tab. A1)</span>.</p>
-<p>Mit nationalem Restbudget (B_{}), Bevölkerung (P), jährlicher Senkenleistung je Person (s), Zeitraum (T), Sektoranteil () und Bezugsfläche (A_B) gilt:</p>
-<p><span id="eq-thg-allokation"><span class="math display">\[
-b_{\mathrm{THG}}
-=\frac{\alpha\left(B_{\mathrm{AT}}+P\,s\,T\right)}{A_B}.
-\tag{3.4}\]</span></span></p>
-<p>Budget und Senkenleistung werden in einer gemeinsamen Masseneinheit angesetzt. Das nationale CO₂-Budget dient als Grundlage für die Zuteilung; auf Quartiersebene werden die Treibhausgase mit GWP100 in CO₂-Äquivalenten bewertet.</p>
-<div id="tbl-thg-eingaben" class="quarto-float quarto-figure quarto-figure-center anchored">
+<section id="endenergie-aller-energieträger-im-vergleich" class="level3">
+<h3 class="anchored" data-anchor-id="endenergie-aller-energieträger-im-vergleich">Endenergie aller Energieträger im Vergleich</h3>
+<div id="tbl-eev-data-only" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-thg-eingaben-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Tabelle&nbsp;3.3: Eingangsgrößen der THG-Allokation <span class="citation" data-cites="schneider2025declaration">(<a href="../references.html#ref-schneider2025declaration" role="doc-biblioref">Schneider u.&nbsp;a. 2025</a>, Tab. A1, S. 30)</span>.
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-eev-data-only-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabelle&nbsp;4.4: Separater Sektorausweis, nicht Teil der Stromallokation. Quellen: REP-0880 Tab. A S. 7, REP-0882 Zusammenfassung Tab. B S. 5, REP-0995 Tab. B S. 10.
 </figcaption>
-<div aria-describedby="tbl-thg-eingaben-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div aria-describedby="tbl-eev-data-only-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
 <colgroup>
-<col style="width: 30%">
-<col style="width: 40%">
-<col style="width: 30%">
+<col style="width: 13%">
+<col style="width: 17%">
+<col style="width: 17%">
+<col style="width: 17%">
+<col style="width: 17%">
+<col style="width: 17%">
 </colgroup>
 <thead>
 <tr class="header">
-<th>Größe</th>
-<th style="text-align: right;">Referenzwert</th>
-<th>Funktion</th>
+<th>Endenergie 2040 [PJ_end/a]</th>
+<th style="text-align: right;">Transition 2040</th>
+<th style="text-align: right;">WEM 2025</th>
+<th style="text-align: right;">WAM 2025</th>
+<th style="text-align: right;">WEM 2023</th>
+<th style="text-align: right;">WAM 2023</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Verbleibendes Budget ab 2025</td>
-<td style="text-align: right;">130 Mt CO₂</td>
-<td>Ausgangsbudget ohne zusätzliche Senken</td>
+<td>Verkehr</td>
+<td style="text-align: right;">151</td>
+<td style="text-align: right;">279</td>
+<td style="text-align: right;">268</td>
+<td style="text-align: right;">325</td>
+<td style="text-align: right;">295</td>
 </tr>
 <tr class="even">
-<td>Bevölkerung</td>
-<td style="text-align: right;">9,0 Mio. Personen</td>
-<td>Bezug für die Senkenannahme</td>
-</tr>
-<tr class="odd">
-<td>Betrachtungsdauer</td>
-<td style="text-align: right;">50 Jahre</td>
-<td>Kumulation der Senkenannahme</td>
-</tr>
-<tr class="even">
-<td>Anteil Gebäude und MIV</td>
-<td style="text-align: right;">50 %</td>
-<td>Sektorale Zuteilung</td>
-</tr>
-<tr class="odd">
-<td>Nationale Bruttogrundfläche im Zieljahr 2040</td>
-<td style="text-align: right;">906,7 Mio. m²</td>
-<td>Flächenbezogene Verteilung</td>
-</tr>
-</tbody>
-</table>
-</div>
-</figure>
-</div>
-<p>Für L3 werden 1 t CO₂e pro Person und Jahr an natürlichen Senken angesetzt. Über 50 Jahre und 9 Mio. Personen entsprechen sie 450 Mt. Zusammen mit dem Ausgangsbudget ergeben sich 580 Mt, davon 290 Mt für Gebäude und MIV. Geteilt durch 906,7 Mio. m² ergibt dies gerundet <strong>320 kg CO₂e/m² BGF</strong>.</p>
-<div id="tbl-thg-budgetvarianten" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-tbl figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-thg-budgetvarianten-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Tabelle&nbsp;3.4: Budgetvarianten nach Schneider et al. <span class="citation" data-cites="schneider2025declaration">(<a href="../references.html#ref-schneider2025declaration" role="doc-biblioref">Schneider u.&nbsp;a. 2025</a>, Tab. 2, S. 7)</span>.
-</figcaption>
-<div aria-describedby="tbl-thg-budgetvarianten-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<table class="caption-top table">
-<colgroup>
-<col style="width: 27%">
-<col style="width: 36%">
-<col style="width: 36%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Variante</th>
-<th style="text-align: right;">Senkenannahme [t CO₂e/(Person a)]</th>
-<th style="text-align: right;">THG-Budget [kg CO₂e/m² BGF]</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>L1</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">72</td>
-</tr>
-<tr class="even">
-<td>L2</td>
-<td style="text-align: right;">0,5</td>
-<td style="text-align: right;">196</td>
-</tr>
-<tr class="odd">
-<td>L3</td>
-<td style="text-align: right;">1,0</td>
+<td>Industrie</td>
+<td style="text-align: right;">260</td>
+<td style="text-align: right;">347</td>
 <td style="text-align: right;">320</td>
+<td style="text-align: right;">348</td>
+<td style="text-align: right;">329</td>
+</tr>
+<tr class="odd">
+<td>Gebäude</td>
+<td style="text-align: right;">300</td>
+<td style="text-align: right;">364</td>
+<td style="text-align: right;">348</td>
+<td style="text-align: right;">393</td>
+<td style="text-align: right;">347</td>
+</tr>
+<tr class="even">
+<td>Landwirtschaft</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">12</td>
+</tr>
+<tr class="odd">
+<td>Publizierte Endenergie gesamt</td>
+<td style="text-align: right;">722</td>
+<td style="text-align: right;">1003</td>
+<td style="text-align: right;">948</td>
+<td style="text-align: right;">1079</td>
+<td style="text-align: right;">984</td>
 </tr>
 </tbody>
 </table>
 </div>
 </figure>
 </div>
-<p>Die L-Werte sind <strong>Budgetvarianten innerhalb der THG-Bewertung</strong>, nicht die drei PEQ-Qualitätsstufen. Der für diesen Bericht zugrunde gelegte Zertifizierungswert beträgt 320 kg CO₂e/m² BGF. Seine Einhaltung ist zusammen mit der L3-Senkenannahme und den Bilanzregeln zu lesen. Die unterstellte nationale Senkenleistung ist kein vom einzelnen Quartier nachgewiesener Emissionsausgleich.</p>
-</section>
-<section id="drei-zeitbegriffe" class="level3">
-<h3 class="anchored" data-anchor-id="drei-zeitbegriffe">Drei Zeitbegriffe</h3>
-<p>Der Bewertungszeitraum beträgt <strong>50 Jahre, von 2025 bis 2075</strong>. Innerhalb dieses Horizonts werden die treibhauswirksamen Effekte bilanziert.</p>
-<p>Die Ableitung orientiert sich am österreichischen Klimaneutralitätsziel <strong>2040</strong>; auf dieses Jahr beziehen sich auch die zugrunde gelegten Flächenprognosen. <strong>2050</strong> wird als vorsorglich späterer Dekarbonisierungszeitpunkt angesetzt, um eine mögliche Verzögerung gegenüber dem ursprünglichen Ziel abzubilden. Damit wird das Prognosejahr der Bezugsfläche nicht automatisch auf 2050 verschoben. Eine spätere Umstellung erfordert eine dokumentierte Fortschreibung.</p>
-<p>Die vereinfachende Annahme einer vollständigen Dekarbonisierung der betrachteten Prozesse <strong>ab 2050</strong> führt dazu, dass danach im Modell keine zusätzlichen Emissionen mehr entstehen. Das emissionswirksame Zeitfenster liegt damit faktisch vor 2050, obwohl die Betrachtung bis 2075 reicht. Dies ist eine Szenarioannahme, keine Verkürzung des Bewertungszeitraums und keine Garantie der tatsächlichen Entwicklung <span class="citation" data-cites="schneider2025declaration schneider2026thesis">(<a href="../references.html#ref-schneider2025declaration" role="doc-biblioref">Schneider u.&nbsp;a. 2025, Abschn. 2.4</a>, S. 7–8; <a href="../references.html#ref-schneider2026thesis" role="doc-biblioref">Schneider 2026, Abschn. 3.2.8</a>, S. 58–60)</span>.</p>
-<p><strong>GWP100</strong> bezeichnet den 100-jährigen Charakterisierungshorizont des Treibhauspotenzials für die Bewertung unterschiedlicher Treibhausgase in CO₂-Äquivalenten. Diese 100 Jahre bestimmen nicht die Projektlaufzeit.</p>
-<p>Errichtungsemissionen beanspruchen das Budget unmittelbar. Eine rechnerische Verteilung auf 50 Jahresraten würde ihren Emissionszeitpunkt nicht ändern. Für Etappen eines Renovierungsfahrplans muss deshalb betrachtet werden, wann bauliche Emissionen entstehen und welche Betriebsemissionen bis zur jeweiligen Maßnahme anfallen.</p>
+<p>Der Endenergievergleich umfasst alle Energieträger und ist getrennt von den elektrischen Flüssen zu lesen <span class="citation" data-cites="uba2023transition uba2023zusammenfassung uba2025szenarien">(<a href="../references.html#ref-uba2023transition" role="doc-biblioref">Umweltbundesamt 2024</a>, Tab. A; <a href="../references.html#ref-uba2023zusammenfassung" role="doc-biblioref">Umweltbundesamt 2023b</a>, Tab. B; <a href="../references.html#ref-uba2025szenarien" role="doc-biblioref">Umweltbundesamt 2025</a>, Tab. B)</span>.</p>
+<p>Die publizierten Gesamtsummen bleiben neben den Komponentensummen erhalten. Die Bilanzreste werden weder auf Bedarfe verteilt noch durch erfundene Erzeugung oder Verlustflüsse ausgeglichen. Für WEM/WAM 2025 folgt die gelieferte Normierung <strong>Tabelle E auf S. 12</strong> von REP-0995. Tabelle 19 auf S. 64 desselben Berichts enthält abweichende Erzeugungswerte, etwa 403 statt 406 PJ für WAM 2040. Dieser Quellenwiderspruch ist zusätzlich zu den Rundungsresten offen; die beiden Fassungen werden nicht vermischt <span class="citation" data-cites="uba2025szenarien">(<a href="../references.html#ref-uba2025szenarien" role="doc-biblioref">Umweltbundesamt 2025</a>, Tab. E und 19)</span>. Für Transition bleibt REP-0880 Tabelle 16 maßgeblich, nicht die abweichend zusammengefasste Erzeugung in REP-0882.</p>
+<p>Die Legacy-Kalibrierung wird über ihre belegten sektoralen Zuordnungen und Mobilitätsbudgets verglichen. Eine vollständige nationale Streicher-Stromtabelle in derselben Abgrenzung wie die UBA-Tabellen liegt im normierten Datenpaket nicht vor. Fehlende Werte werden deshalb nicht mit null oder einer UBA-Zahl ersetzt; auch die historischen Horizonte 2050 und 2040 werden nicht gleichgesetzt.</p>
 </section>
 </section>
-<section id="rekalibrierung-welche-stellgrößen-ändern-sich" class="level2">
-<h2 class="anchored" data-anchor-id="rekalibrierung-welche-stellgrößen-ändern-sich">Rekalibrierung: Welche Stellgrößen ändern sich?</h2>
-<p>Eine Fortschreibung muss klären, ob Datenbasis, Szenario oder Verteilungsentscheidung verändert werden. Beim THG-Budget sind Restbudget, Senkenannahme, Sektoranteil und Bezugsfläche maßgeblich. Diese Größen sind bei einer Rekalibrierung gemeinsam zu überprüfen <span class="citation" data-cites="schneider2025declaration">(<a href="../references.html#ref-schneider2025declaration" role="doc-biblioref">Schneider u.&nbsp;a. 2025, Abschn. 4.2–4.3</a>, S. 27–28)</span>.</p>
-<p>Zusätzlicher Baubedarf kann eine Entscheidung über die sektorale Verteilung auslösen. Ein höheres Budget je Quadratmeter entsteht daraus nicht von selbst: Bei unverändertem Sektorbudget verteilt sich dieselbe Menge auf mehr Fläche. Soll der Gebäudesektor mehr Budget erhalten, muss die entsprechende Entlastung anderer Sektoren oder eine begründete Änderung der Budgetgrundlage ausgewiesen werden. Eine Erhöhung ohne solche Deckung verändert den Gesamtanspruch.</p>
-<section id="pv-errichtung-und-sektorale-konsistenz" class="level3">
-<h3 class="anchored" data-anchor-id="pv-errichtung-und-sektorale-konsistenz">PV-Errichtung und sektorale Konsistenz</h3>
-<p>Die grauen Emissionen der PV-Anlagen bleiben außerhalb der Quartiersbilanz, weil die Erzeugungsanlagen im nationalen Sektormodell der Energieversorgung zugeordnet sind. Diese Abgrenzung setzt voraus, dass ihre Emissionen dort konsistent erfasst werden <span class="citation" data-cites="schneider2025declaration">(<a href="../references.html#ref-schneider2025declaration" role="doc-biblioref">Schneider u.&nbsp;a. 2025, Abschn. 2.4.1</a> und 4.2, S. 8–9, 27–28)</span>.</p>
-<p>Eine Alternative nimmt die PV-Errichtung in die Quartiersbilanz auf. Dann müssen Emissionen und Budgetzuordnung gemeinsam neu abgegrenzt werden. Eine zusätzliche Belastung bei unverändertem, anders abgegrenztem Budget würde zwei Bilanzmodelle vermischen. Wie sich die konsistente Alternative auf Grenzwert und Vorteil zusätzlicher PV auswirkt, ist zu berechnen. <a href="04-bilanzregeln.html" class="quarto-xref"><span>Systemgrenzen und Bilanzierungsregeln</span></a> erläutert die Abgrenzung der PV-Errichtung und die Voraussetzungen eines Vergleichs mit einer gebäudebezogenen Normbilanz.</p>
+<section id="ausbau-und-bedarf-ausgangsbilanz-2020-bis-zieljahr-2040" class="level2">
+<h2 class="anchored" data-anchor-id="ausbau-und-bedarf-ausgangsbilanz-2020-bis-zieljahr-2040">Ausbau und Bedarf: Ausgangsbilanz 2020 bis Zieljahr 2040</h2>
+<p>Als „heute“ dient ausdrücklich das <strong>Ausgangsjahr 2020</strong> der Transition-Bilanz, nicht das Kalenderjahr 2026. Gegenüber 2020 steigt die publizierte jährliche Stromerzeugung von 249 auf 457 PJ und der Strombedarf von 257 auf 450 PJ. Gleichzeitig sinkt der gesamte energetische Endverbrauch von 1.053 auf 722 PJ. Die Elektrifizierung erhöht den Strombedarf, obwohl der Bedarf über alle Energieträger abnimmt <span class="citation" data-cites="uba2023transition">(<a href="../references.html#ref-uba2023transition" role="doc-biblioref">Umweltbundesamt 2024</a>, Tab. A, 15 und 16)</span>.</p>
+<p>Die folgende Grafik greift die Leserichtung des schematischen Sektorbilds auf: links Ausgangsertrag und zusätzlicher Ertrag, in der Mitte Erzeugung und Stromsystem, rechts Sektorbedarf und daneben der Vergleich mit 2020. Der untere, <strong>getrennte</strong> Sankey zeigt die notwendige Endenergieminderung. Die Linien beschreiben Jahresenergiemengen, keine installierten Leistungen und keine virtuellen PE-Gutschriften. Zentral/dezentral und MIV/ÖV werden erst durch ausdrücklich dokumentierte Parameter im Notebook unterschieden.</p>
+<iframe src="../Abbildungen/transition_sankey.html" title="Sankey: Stromausbau und Energiebedarf 2020 bis 2040" style="width:100%;height:1760px;border:0" loading="lazy"></iframe>
+<p><a href="../Abbildungen/transition_sankey.html">Interaktive Grafik in voller Breite öffnen</a></p>
+<p>„Ausbau“ bezeichnet den zusätzlichen Jahresertrag je Technologie. Der Ersatz ausscheidender Anlagen, Volllaststunden, Witterung und Speicherleistungen müssten für eine Investitions- oder Leistungsplanung zusätzlich modelliert werden. Die Minderung des Endenergieverbrauchs beträgt nach publizierten Gesamtsummen 331 PJ, nach den gerundeten Sektorkomponenten 330 PJ. Beim Ziel-Strombedarf stehen 450 PJ Gesamtsumme einer Komponentensumme von 452 PJ gegenüber. Diese Differenzen werden ausgewiesen und nicht auf Sektoren umgelegt. Die optional auswählbare Ausgangsbilanz 2023 enthält zusätzliche Quellenwidersprüche und ist kein gleichwertiger Ersatz für den konsistenten Transition-Bezug 2020.</p>
+<p>Das ausführbare Notebook <code>Redaktion/transitionsszenarien/Berechnungen/Transition_2040.ipynb</code> verbindet Eingabetabellen, Rechnungen und Ausgaben. Es erlaubt Varianten des dezentralen PV-Anteils, der Anteile MIV/ÖV/übriger Verkehr und zusätzlicher Strombedarfsminderung. Diese Eingriffe verändern ausschließlich gekennzeichnete Varianten; die UBA-Eingaben und geltenden Gutschriften bleiben erhalten. Die Stromminderung wird nicht zugleich als neue Endenergieprojektion ausgegeben: Dafür fehlen die technologiebezogenen Substitutionsannahmen.</p>
 </section>
-<section id="sanierung-und-kommunale-perspektive" class="level3">
-<h3 class="anchored" data-anchor-id="sanierung-und-kommunale-perspektive">Sanierung und kommunale Perspektive</h3>
-<p>Die Sanierungsgutschrift von 15 kWh PE/(m² NGF a) entlastet Bestandsprojekte gegenüber Neubauten <span class="citation" data-cites="klimaaktiv2026peq">(<a href="../references.html#ref-klimaaktiv2026peq" role="doc-biblioref">Schneider u.&nbsp;a. 2026, 14</a>)</span>. Ihre Höhe ist normativ gesetzt und bislang nicht quantitativ kalibriert. Sie berücksichtigt, dass schwer sanierbare Gebäude andere Handlungsmöglichkeiten haben als Neubauten.</p>
-<p>Eine mögliche Differenzierung nach Gebäudealter, Denkmalschutz oder weiteren Sanierungserschwernissen erfordert eine eigene Begründung und eine Prüfung der Verteilungswirkung.</p>
-<p>Eine kommunale Zwischenebene, beispielsweise für Wien, könnte nationale Vorgaben zunächst auf kommunale Beiträge und dann auf Quartiere beziehen. Diese Erweiterung ist eine Entwicklungsperspektive; sie ist noch kein implementierter Kontextfaktor <span class="citation" data-cites="schneider2026thesis">(<a href="../references.html#ref-schneider2026thesis" role="doc-biblioref">Schneider 2026, Abschn. 3.5.1</a>, S. 89–90)</span>. Dieselben Energie- oder Emissionsbudgets dürfen dabei nicht mehrfach zugeteilt werden.</p>
-</section>
-</section>
-<section id="folgerungen-für-planung-und-verwaltung" class="level2">
-<h2 class="anchored" data-anchor-id="folgerungen-für-planung-und-verwaltung">Folgerungen für Planung und Verwaltung</h2>
-<p>Die Allokation zeigt, welche Beiträge ein Quartier selbst erbringen soll und welche Voraussetzungen es aus dem übergeordneten System übernimmt. Ein Nachweis sollte deshalb neben dem Ergebnis den Methodenstand, die Systemgrenzen, Flächenbezüge und Kontextgutschriften ausweisen. Erst damit lässt sich unterscheiden, ob eine Verbesserung aus einer Planungsmaßnahme, einer geänderten Annahme oder einem anderen Bewertungsmaßstab stammt.</p>
+<section id="sec-energie-bewertung" class="level2">
+<h2 class="anchored" data-anchor-id="sec-energie-bewertung">Warum von Endenergie und Strom zu Primärenergie wechseln?</h2>
+<p>Das Zielbild beschreibt zunächst <strong>physische Energiemengen</strong>: Endenergie aller Energieträger beziehungsweise Strom als eigene Teilbilanz. Für die Quartiersbewertung werden die Energieträger anschließend mit Primärenergiefaktoren gewichtet. Dadurch werden beispielsweise Strom, Brennstoffe und Wärme auf einer gemeinsamen Bewertungsbasis zusammengeführt. Die Faktoren berücksichtigen die vorgelagerten Energieaufwendungen innerhalb der jeweiligen Bilanzgrenze. Das ist eine Bewertungsumrechnung; sie erzeugt keine zusätzlichen physischen Energieflüsse <span class="citation" data-cites="schneider2026thesis schneider2025declaration">(<a href="../references.html#ref-schneider2026thesis" role="doc-biblioref">Schneider 2026, Abschn. 3.2.3–3.2.4</a>; <a href="../references.html#ref-schneider2025declaration" role="doc-biblioref">Schneider u.&nbsp;a. 2025, Abschn. 2.2</a> und 2.6)</span>.</p>
+<p>Für Energieträger beziehungsweise Bezugs- und Exportflüsse (i) und Zeitschritte (t) gilt schematisch:</p>
+<p><span class="math display">\[
+E_{\mathrm{PE}}=\sum_{i,t} E_{i,t}\,f_{\mathrm{PE},i,t},
+\qquad G_{\mathrm{Betrieb}}=\sum_{i,t} E_{i,t}\,f_{\mathrm{THG},i,t}.
+\]</span></p>
+<p>Vorzeichen und Berechtigung eines Exports folgen den Bilanzierungsregeln. Der PE-Faktor hat die Einheit kWh PE/kWh Endenergie, der THG-Faktor kg CO₂e/kWh Endenergie. Ein PE-Saldo ist daher kein Emissionsbudget. Auch Gesamtprimärenergie und nicht erneuerbare Primärenergie dürfen nicht stillschweigend gleichgesetzt werden; der verwendete Faktorensatz muss seine Definition ausweisen.</p>
+<section id="zeitliche-entwicklung-der-bewertungsfaktoren" class="level3">
+<h3 class="anchored" data-anchor-id="zeitliche-entwicklung-der-bewertungsfaktoren">Zeitliche Entwicklung der Bewertungsfaktoren</h3>
+<p>Die monatliche Gewichtung eines Betriebsjahres ist von der langfristigen Veränderung der Versorgung zu unterscheiden. Die Dekarbonisierung eines Energieträgers begründet nicht automatisch denselben relativen Rückgang seines Primärenergiefaktors. Ein emissionsfreier Energieträger kann weiterhin einen Primärenergieaufwand besitzen.</p>
+<div id="tbl-faktorenpfade-status" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-faktorenpfade-status-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabelle&nbsp;4.5: Trennung von Primärenergie- und THG-Bewertung. Referenzmethodik: <span class="citation" data-cites="schneider2026thesis">Schneider (<a href="../references.html#ref-schneider2026thesis" role="doc-biblioref">2026</a>)</span>, Abschn. 3.2.3–3.2.4 und 3.2.8; <span class="citation" data-cites="schneider2025declaration">Schneider u.&nbsp;a. (<a href="../references.html#ref-schneider2025declaration" role="doc-biblioref">2025</a>)</span>, Abschn. 2.4 und 2.6.
+</figcaption>
+<div aria-describedby="tbl-faktorenpfade-status-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Bewertungsgröße</th>
+<th>Zeitbezug und belegter Stand</th>
+<th>Noch benötigte Ergänzung</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Netzstrom: Primärenergiefaktor</td>
+<td>Monatliche Gewichtung im Referenzverfahren; getrennt von der stündlichen Simulation</td>
+<td>Versionierter PE-Faktorensatz mit Stützjahren und Monatswerten für den langfristigen Pfad</td>
+</tr>
+<tr class="even">
+<td>Brennstoffe, Wärme und weitere Energieträger: PE</td>
+<td>Energieträgerspezifische Gewichtung nach Nachweisverfahren</td>
+<td>Konsistente Zeitreihe je Träger, Liefergebiet bzw. Versorgungssystem; Definition Gesamt-/nicht erneuerbare PE</td>
+</tr>
+<tr class="odd">
+<td>Netzstrom und andere Energieträger: THG</td>
+<td>Energie- und prozessbezogene Dekarbonisierungsannahmen bis 2050</td>
+<td>Dokumentation der numerischen Ausgangs-, Zwischen- und Endwerte sowie Interpolation</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>Die vorhandene THG-Abbildung und ihre Bedeutung für das kumulierte Budget stehen in <a href="03-zielwert-thg.html#sec-thg-pfade" class="quarto-xref"><span>Absenkpfade und kumuliertes THG-Budget</span></a>. Ein numerisch belegter langfristiger <strong>PE-Absenkpfad</strong> liegt im hier integrierten Datensatz noch nicht vor. Er wird deshalb nicht aus dem THG-Pfad abgeleitet oder als Nullpfad erfunden. Die nationale UBA-Jahresbilanz allein liefert weder monatliche Faktoren noch deren vollständige Entwicklung.</p>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
@@ -686,13 +816,29 @@ Schneider, Simon. 2026. <span>„Quantitative Positive Energy District Definitio
 <div id="ref-schneider2025declaration" class="csl-entry" role="listitem">
 Schneider, Simon, Thomas Zelger, Raphael Drexel, Manfred Schindler, Paul Krainer, und José Baptista. 2025. <span>„Declaration-Ready Climate-Neutral <span>PEDs</span>: Budget-Based, Hourly <span>LCA</span> Including Mobility and Flexibility“</span>. <em>Designs</em> 9 (6): 123. <a href="https://doi.org/10.3390/designs9060123">https://doi.org/10.3390/designs9060123</a>.
 </div>
-<div id="ref-klimaaktiv2026peq" class="csl-entry" role="listitem">
-Schneider, Simon, Thomas Zelger, und Oskar Mair am Tinkhof. 2026. <em>Plus-Energie-Quartiere: Effizient, erneuerbar und flexibel versorgt mit dem klimaaktiv Standard</em>. Bundesministerium für Land- und Forstwirtschaft, Klima- und Umweltschutz, Regionen und Wasserwirtschaft.
+<div id="ref-schneider2020lokal" class="csl-entry" role="listitem">
+Schneider, Simon, Thomas Zelger, und Lisa Klauda. 2020. <span>„Überlegungen zur Frage, welcher Anteil erneuerbarer Energie 2050 in Österreich lokal aufgebracht werden muss“</span>. <em>16. Symposium Energieinnovation</em> (Graz, Österreich), 1–10.
 </div>
 <div id="ref-schneider2023context" class="csl-entry" role="listitem">
 Schneider, Simon, Thomas Zelger, David Sengl, und José Baptista. 2023. <span>„A Quantitative Positive Energy District Definition with Contextual Targets“</span>. <em>Buildings</em> 13 (5): 1210. <a href="https://doi.org/10.3390/buildings13051210">https://doi.org/10.3390/buildings13051210</a>.
 </div>
+<div id="ref-streicher2010energieautarkie" class="csl-entry" role="listitem">
+Streicher, Wolfgang, Hans Schnitzer, Michaela Titz, u.&nbsp;a. 2010. <em>Energieautarkie für Österreich 2050: Feasibility Study Endbericht</em>. Universität Innsbruck und Projektkonsortium, im Auftrag des Klima- und Energiefonds.
 </div>
+<div id="ref-uba2023szenarien" class="csl-entry" role="listitem">
+Umweltbundesamt. 2023a. <em>Energie- und Treibhausgasszenarien 2023: WEM, WAM, Transition</em>. REP-0882. Reports. Umweltbundesamt. <a href="https://www.umweltbundesamt.at/fileadmin/site/publikationen/rep0882.pdf">https://www.umweltbundesamt.at/fileadmin/site/publikationen/rep0882.pdf</a>.
+</div>
+<div id="ref-uba2023zusammenfassung" class="csl-entry" role="listitem">
+Umweltbundesamt. 2023b. <em>Energie- und Treibhausgasszenarien 2023: WEM, WAM und Transition. Barrierefreie Zusammenfassung</em>. REP-0882. Umweltbundesamt. <a href="https://www.umweltbundesamt.at/fileadmin/site/publikationen/rep0882_bfz.pdf">https://www.umweltbundesamt.at/fileadmin/site/publikationen/rep0882_bfz.pdf</a>.
+</div>
+<div id="ref-uba2023transition" class="csl-entry" role="listitem">
+Umweltbundesamt. 2024. <em>Energie- und Treibhausgas-Szenario Transition 2040</em>. REP-0880. Reports. Umweltbundesamt. <a href="https://www.umweltbundesamt.at/fileadmin/site/publikationen/rep0880.pdf">https://www.umweltbundesamt.at/fileadmin/site/publikationen/rep0880.pdf</a>.
+</div>
+<div id="ref-uba2025szenarien" class="csl-entry" role="listitem">
+Umweltbundesamt. 2025. <em>Energie- und Treibhausgas-Szenarien 2025: WEM und WAM</em>. REP-0995. Reports. Umweltbundesamt. <a href="https://www.umweltbundesamt.at/fileadmin/site/publikationen/rep0995.pdf">https://www.umweltbundesamt.at/fileadmin/site/publikationen/rep0995.pdf</a>.
+</div>
+</div>
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -1103,13 +1249,13 @@ Schneider, Simon, Thomas Zelger, David Sengl, und José Baptista. 2023. <span>�
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../Kapitel/02-standard.html" class="pagination-link" aria-label="Der Standard">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Der Standard</span></span>
+      <a href="../Kapitel/03-methodik.html" class="pagination-link" aria-label="Von nationalen Zielpfaden zur Quartiersbilanz">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Von nationalen Zielpfaden zur Quartiersbilanz</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../Kapitel/04-bilanzregeln.html" class="pagination-link" aria-label="Systemgrenzen und Bilanzierungsregeln">
-        <span class="nav-page-text"><span class="chapter-title">Systemgrenzen und Bilanzierungsregeln</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../Kapitel/05-kontextfaktoren.html" class="pagination-link" aria-label="Kontextfaktor Dichte">
+        <span class="nav-page-text"><span class="chapter-title">Kontextfaktor Dichte</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
