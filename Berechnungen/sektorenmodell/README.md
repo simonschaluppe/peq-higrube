@@ -51,6 +51,7 @@ Im Bericht ergänzt das interaktive Plotly-Sankey das schematische Zuordnungsbil
 python -m unittest Berechnungen.sektorenmodell.test_model Berechnungen.sektorenmodell.test_sankey
 python Berechnungen/check_scenarios.py
 python -m Berechnungen.sektorenmodell.sankey --static
+python -m Berechnungen.sektorenmodell.mobility_sankey --static
 python -m Berechnungen.sektorenmodell.execute_notebook
 quarto render --to html
 quarto preview --render html --profile redaktion --no-browser
@@ -63,3 +64,5 @@ Das ausgeführte Notebook liegt in `Redaktion/transitionsszenarien/Berechnungen/
 `baseline_energy.csv` ergänzt die Zieldaten um Quellenzeilen für 2020/2023. `transition_2020_2040_comparison.csv` enthält daraus berechnete Änderungen, Mehrbedarfe und Minderungen, getrennt nach Energiegröße. Das Quarto-Profil `redaktion` ergänzt das Fachreview; der normale HTML-Build enthält dieses Review nicht.
 
 Quellenprüfung, Widersprüche und offene Entscheidungen: [METHODENSTAND.md](METHODENSTAND.md).
+
+Die HTML-Sankeys passen sich der verfügbaren Breite an. Unter 1.200 px werden Stromfluss, Bedarfsvergleich und Endenergievergleich untereinander angeordnet; horizontales Scrollen ist nicht erforderlich. Erzeugungstechnologien und Bedarfssektoren haben feste Farben. Das separate Mobilitäts-Sankey zeigt ausschließlich die publizierte Verteilung der 10,68 TWh PE/a, ohne elektrische und primärenergetische Flüsse zu verbinden.

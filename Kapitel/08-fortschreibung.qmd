@@ -34,7 +34,7 @@ Bei einer Neuauflage bleiben die zuvor verwendeten Faktoren und Annahmen nachvol
 
 Die Dichteanforderung hängt von der Verteilung der Gebäudequalitäten und Flächen im nationalen Bestand ab. Neue Bestandsdaten ermöglichen eine aktualisierte Kalibrierung. Dabei ist zuerst zu prüfen, welche Anteile saniert, neu gebaut oder weiterbetrieben werden und welchen Beitrag diese Gruppen leisten können. Die Anpassung einzelner Kurvenparameter ohne diesen nationalen Zusammenhang würde die ursprüngliche Lastenverteilung verändern, ohne ihre Wirkung zu erklären.
 
-Eine aktualisierte Dichtekurve muss daher gemeinsam mit den zugrunde gelegten Flächen, Nutzungen und Sanierungsszenarien dokumentiert werden. Auch die Wirkung auf niedrige und hohe Dichten ist auszuweisen. Das physikalische Grundprinzip bleibt davon unabhängig, wie in @sec-allokation erläutert.
+Eine aktualisierte Dichtekurve muss daher gemeinsam mit den zugrunde gelegten Flächen, Nutzungen und Sanierungsszenarien dokumentiert werden. Auch die Wirkung auf niedrige und hohe Dichten ist auszuweisen. Das physikalische Grundprinzip bleibt davon unabhängig, wie in @sec-kontext-dichte erläutert.
 
 ### Mobilität und zeitliche Bewertungsfaktoren
 

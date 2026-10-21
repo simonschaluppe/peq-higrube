@@ -1,6 +1,6 @@
 # Redaktionelles Fachreview: Zielwerte 2026 {#sec-review-zielwerte}
 
-Stand: 21. Oktober 2026. Kritische Durchsicht von @sec-allokation und @sec-zielwert-thg, Quellenabgleich und Rechenprüfung. Die Antworten dokumentieren den vorliegenden Methodenstand; sie ersetzen keine externe Begutachtung oder normative Freigabe. Dieses Kapitel erscheint nur im Quarto-Profil `redaktion`.
+Stand: 21. Oktober 2026. Kritische Durchsicht der Methodikkette von @sec-methodik über @sec-allokation und die Kontextfaktoren bis @sec-zielwert-thg und @sec-bilanzregeln, Quellenabgleich und Rechenprüfung. Die Antworten dokumentieren den vorliegenden Methodenstand; sie ersetzen keine externe Begutachtung oder normative Freigabe. Dieses Kapitel erscheint nur im Quarto-Profil `redaktion`.
 
 ## Was ist 2026 bereits operationalisiert?
 

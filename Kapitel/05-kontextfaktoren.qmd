@@ -1,33 +1,100 @@
-# Kontextfaktoren {#sec-kontext}
+# Kontextfaktor Dichte {#sec-kontext-dichte}
 ::: {.lead}
-Anforderungen auf das Quartier übertragen 
+Vom nationalen Energieziel zur Verteilung auf Dichteklassen und Gebäudetypen
 :::
 
-Ein dichtes Quartier, eine locker bebaute Siedlung und ein Sanierungsvorhaben können nicht denselben lokalen Energieüberschuss bereitstellen. Kontextfaktoren übersetzen die in @sec-allokation hergeleitete Lastenverteilung in die Bewertung des einzelnen Projekts. Sie machen sichtbar, welcher Beitrag unter den jeweiligen Rahmenbedingungen verlangt wird.
+Die gemeinsame Bewertungslogik steht in @sec-kontext. Der Dichtefaktor übersetzt die nationale Energieaufgabe in Anforderungen, die unterschiedliche Verhältnisse von Grundstücks- und Geschossfläche berücksichtigen.
 
-## Eine Bilanz, zwei gleichwertige Darstellungen
+## Dichte: physikalisches Prinzip und kalibrierte Anforderung
 
-Eine angepasste Anforderung kann als eigener Zielwert oder als virtuelle Gut- beziehungsweise Lastschrift gegenüber einem gemeinsamen Nullmaßstab dargestellt werden. Beide Darstellungen sind rechnerisch gleichwertig [@schneider2026thesis, Abschn. 3.2.5–3.2.7].
-
-Mit dem jährlichen spezifischen Primärenergiesaldo \(b_{\mathrm{PE}}\) vor Kontextkorrektur lautet die Bewertungsbilanz:
+Der Grundgedanke lässt sich mit einer vereinfachten Beziehung zeigen. Sei \(A_G\) die Grundstücksfläche und \(A_B\) die Bruttogrundfläche. Die Geschoßflächenzahl ist \(d=A_B/A_G\). Werden eine jährliche lokale Erzeugung \(p\) je Grundstücksfläche und ein jährlicher Bedarf \(e\) je Bruttogrundfläche angesetzt, folgt:
 
 $$
-b_{\mathrm{Bewertung}}
-=b_{\mathrm{PE}}+c_{\mathrm{Dichte}}+c_{\mathrm{Mobilität}}+c_{\mathrm{Sanierung}}.
-$$ {#eq-kontextbilanz}
+b(d)=\frac{p A_G-e A_B}{A_B}=\frac{p}{d}-e.
+$$ {#eq-dichte-prinzip}
 
-Alle Größen sind in kWh PE/(m² NGF a) anzugeben. Positive Kontextwerte entlasten die Anforderung, negative Werte erhöhen sie. Die Mobilitätskomponente wird nur gemeinsam mit dem entsprechenden Mobilitätsbedarf in der erweiterten Bilanz angesetzt. Die Bedingung \(b_{\mathrm{Bewertung}}>0\) lässt sich auch als Anforderung an den Saldo vor Kontextkorrektur schreiben:
+Erzeugung und Bedarf sind in derselben Energiegröße auszudrücken; \(b\) ist dann eine jährliche Bilanz je m² BGF. Die Beziehung zeigt, weshalb das Erzeugungspotenzial je Geschossfläche bei steigender Dichte abnimmt, wenn das Potenzial je Grundstücksfläche gleich bleibt. In realen Projekten hängen Erzeugung und Bedarf zusätzlich von Gebäudeform, Nutzung, Verschattung und Technik ab [@schneider2023context, S. 11–12].
+
+Aus diesem Zusammenhang wird noch kein verbindlicher Zielwert. Die Anforderungsfunktion ergänzt die Beziehung um eine Verschiebung auf der Dichteachse und eine Begrenzung. Ihre Parameter bestimmen die Lastenverteilung zwischen Quartierstypen. Die so festgelegte Kurve beschreibt eine Anforderung und kein technisches Potenzialmaximum [@schneider2023context, Gl. 7–8, S. 12–13].
+
+Bei niedriger Dichte kann die Regel einen zusätzlichen Überschuss verlangen; bei hoher Dichte kann sie einen negativen Saldo ohne Kontextkorrektur zulassen. Dies lässt sich entweder als unterschiedlicher Zielwert oder als Gut-/Lastschrift gegenüber einem gemeinsamen Nullmaßstab ausdrücken. Die Gutschrift verändert die Anforderung, nicht den realen Energiebedarf.
+
+## Operationalisierung über den Gebäudebestand
+
+Die nationale Kalibrierung braucht zusätzlich die Flächenverteilung des Bestands nach Dichte und Gebäudequalität. Ein Zielwert für einen häufigen Quartierstyp trägt zum nationalen Ergebnis stärker bei als derselbe Zielwert für einen seltenen Typ.
+
+Der nationale Sektorsaldo ergibt sich aus der flächengewichteten Summe der spezifischen Zielsalden:
 
 $$
-b_{\mathrm{PE}}>-
-\left(c_{\mathrm{Dichte}}+c_{\mathrm{Mobilität}}+c_{\mathrm{Sanierung}}\right).
-$$
+B_{\mathrm{Sektor}}
+=\sum_k\sum_j A_{k,j}\,t_k(d_j).
+$$ {#eq-sektor-aggregation}
 
-Eine positive Bewertungsbilanz bedeutet daher nicht zwingend einen physischen Exportüberschuss. Für Planung und Kommunikation sind der Saldo vor Kontextkorrektur und die einzelnen Kontextkomponenten getrennt auszuweisen. Das kumulierte THG-Budget wird zusätzlich geprüft; es wird nicht in diese jährliche Primärenergiebilanz eingerechnet.
+\(A_{k,j}\) bezeichnet die Fläche des Gebäudetyps \(k\) in der Dichteklasse \(j\), \(t_k(d_j)\) dessen jährlichen spezifischen Zielsaldo. Fläche und Zielsaldo müssen dieselbe Flächendefinition verwenden. Bei einem Zielsaldo in kWh/(m² a) ergibt sich der Sektorsaldo in kWh/a.
+
+Die Kalibrierung unterscheidet thermische Sanierung, Sanierung mit geringer PV-Ausstattung, PEQ-Sanierung und PEQ-Neubau mit Anteilen von 40 %, 20 %, 20 % und 20 %. Unsanierter Bestand hat im zugrunde gelegten Zielzustand einen Anteil von 0 %. Zusammen mit der Dichteverteilung bestimmen diese Annahmen den nationalen Sektorsaldo [@schneider2023context, Tab. 5 und Abb. 8, S. 12–14].
+
+Die Anforderungen an PEQ hängen somit auch davon ab, wie viel der übrige Gebäudebestand beiträgt. Eine andere Sanierungsentwicklung oder Dichteverteilung kann eine neue Kalibrierung erfordern. Dafür müssen sowohl die Bestandsdaten als auch die Verteilungsentscheidungen dokumentiert werden.
+
+**[Abbildungsplatzhalter: Dichteabhängige Anforderungen und Flächenverteilung des Gebäudebestands, übernommen aus Schneider et al. (2023), Abb. 8.]**
+
+## Österreichische Dichteverteilung als aktualisierte Datengrundlage {#sec-gfz-bestand}
+
+Für die Weiterentwicklung der Kalibrierung liegt eine bundeslandweise Hochrechnung des Gebäudebestands mit Statistikbezug 2021 vor. Sie beschreibt, wie sich die Bruttogrundfläche (BGF) über die Geschossflächenzahl (GFZ) verteilt. Dazu werden gebäudescharfe Referenzdaten aus Wien und Salzburg mit statistischen Nutzflächen nach Bundesland, Hauptnutzung und sieben Geschossklassen verbunden: ein bis fünf Geschosse, sechs bis zehn sowie elf und mehr Geschosse. Die Statistik umfasst neun Nutzungsgruppen.
+
+```{mermaid}
+%%| label: fig-gfz-methodik
+%%| fig-cap: "Bundeslandweise Hochrechnung der GFZ-Verteilung. Ersatzreferenzen werden je Zielkombination ausdrücklich ausgewiesen."
+flowchart TB
+  W["Einzelgebäude Wien"] --> KW["BGF-gewichtete KDE je Nutzung und Geschossklasse"]
+  S["Einzelgebäude Salzburg"] --> KS["BGF-gewichtete KDE je Nutzung und Geschossklasse"]
+  KW --> V["Wien"]
+  KS --> L["Acht andere Bundesländer, jeweils separat"]
+  T["Statistische NGF 2021 je Bundesland, Nutzung und Geschossklasse"] --> U["BGF = NGF / 0,8"]
+  U --> V
+  U --> L
+  E["Bei weniger als fünf Referenzgebäuden: gekennzeichnete Ersatzregel"] -.-> V
+  E -.-> L
+  V --> AT["Österreich: Summe der neun BGF-Verteilungen"]
+  L --> AT
+```
+
+Innerhalb jeder Referenzgruppe wird eine mit der BGF der Einzelgebäude gewichtete Kernel-Dichteschätzung (KDE) berechnet. Dadurch repräsentiert die Verteilung Gebäudefläche und nicht Gebäudeanzahl. Die normierten Wahrscheinlichkeitsmassen werden mit der statistischen BGF der jeweiligen Zielgruppe multipliziert. Die Umrechnung von statistischer Nettogrundfläche (NGF) in BGF erfolgt mit dem aus der früheren Analyse übernommenen Verhältnis NGF/BGF = 0,8. Dieser einheitliche Faktor ist eine Modellannahme.
+
+Die KDE verwendet die Scott-Bandbreite und ein GFZ-Raster von 0 bis 20 mit einer Breite von 0,1. Sie wird auf diesem Raster normiert. Damit bleibt die zugeordnete Fläche erhalten; die Behandlung am Rand ist jedoch keine eigenständige physikalische Modellierung sehr geringer oder sehr hoher Dichten.
+
+Für Wien gilt grundsätzlich die Wiener Referenz, für die übrigen Bundesländer die Salzburger. Liegen weniger als fünf geeignete Gebäude vor, wird zuerst dieselbe Nutzung und Geschossklasse aus Wien verwendet. Reicht auch diese Stichprobe nicht aus, folgt die nächstgelegene Geschossklasse derselben Nutzung, zuerst in der vorgesehenen Referenzregion und danach in Wien. Diese Ersatzregel ist für den vorliegenden Arbeitsstand freigegeben. Die Ziel-Flächen der Statistik werden dabei nicht verändert.
+
+![Hochgerechnete, auf die jeweilige Landes-BGF normierte GFZ-Verteilungen für Wien und Salzburg. Die Kurven enthalten die landesspezifische Nutzungs- und Geschossklassenstruktur sowie die ausgewiesenen Ersatzreferenzen; sie sind keine unmittelbaren Häufigkeitsverteilungen der Rohstichproben.](../Abbildungen/gfz_at/gfz_wien_salzburg.png){#fig-gfz-wien-salzburg}
+
+Die modellierte österreichische BGF beträgt rund **1.058,9 Mio. m²**, entsprechend **847,1 Mio. m² NGF**. Die Hochrechnung umfasst 516 positive Kombinationen aus Bundesland, Nutzung und Geschossklasse. Davon werden 425 unmittelbar durch die vorgesehene Referenz und 91 durch Ersatzzuordnungen abgebildet. Flächengewichtet entfallen **98,304 %** auf primäre Referenzen und **1,696 %** auf Ersatzschätzungen. Die Zahl betroffener Kategorien ist deshalb nicht mit ihrem Flächenanteil gleichzusetzen.
+
+![Modellierte BGF-Verteilung Österreichs nach Hauptnutzung. Dargestellt ist GFZ bis 8; rund 0,50 % der BGF liegen im übrigen Modellraster bis GFZ 20 und bleiben in allen Summen enthalten.](../Abbildungen/gfz_at/gfz_oesterreich_nutzung.png){#fig-gfz-oesterreich}
+
+![Flächengewichtete Abdeckung nach Bundesland und für Österreich. Rechts steht jeweils der Anteil der BGF mit Ersatzreferenz.](../Abbildungen/gfz_at/fallback_bundeslaender.png){#fig-gfz-abdeckung}
+
+| Bundesland | BGF [Mio. m²] |
+|---|---:|
+| Burgenland | 38,043 |
+| Kärnten | 68,058 |
+| Niederösterreich | 214,888 |
+| Oberösterreich | 197,149 |
+| Salzburg | 69,494 |
+| Steiermark | 150,038 |
+| Tirol | 99,794 |
+| Vorarlberg | 46,683 |
+| Wien | 174,787 |
+| **Österreich** | **1.058,935** |
+
+: Flächensummen des GFZ-Bestandsmodells 2021. Datenbasis: übergebene Arbeitsdateien der ursprünglichen GFZ-Analyse, Tabellenblatt `python` der Statistikaufbereitung und gebäudescharfes Blatt `Rohdaten`. Rundungsdifferenzen in der Darstellung sind möglich. {#tbl-gfz-bundeslaender}
+
+Das Rechenmodul `Berechnungen/gfz_at/` stellt zusätzlich die vollständige Tabelle für Bundesland × Nutzung × Geschossklasse mit Ziel-BGF, zugeteilter BGF, Bilanzdifferenz, Referenzregion, Referenzklasse und Stichprobenumfang bereit. Die Neuberechnung aus den ursprünglichen Excel-Eingaben reproduziert die übergebenen Ergebnisse bis auf numerische Rundungsreste. Die Summe der neun Bundesländer stimmt mit den österreichischen Kontrollsummen überein; die BGF bleibt in jeder positiven Zielkombination erhalten. Die flächengewichtete mittlere GFZ des Modells beträgt rund 1,231. Sie ist ein Mittel über die BGF-Verteilung und nicht das Verhältnis der gesamten BGF zur gesamten Grundstücksfläche Österreichs.
+
+Die Übertragbarkeit der Salzburger Stichprobe auf andere Bundesländer, der einheitliche NGF/BGF-Faktor, auffällige Geschossklassenzuordnungen und die Empfindlichkeit gegenüber KDE-Parametern bleiben dokumentierte methodische Einschränkungen. Eine zusätzliche Sensitivitätsrunde wurde für diesen Arbeitsstand nicht durchgeführt. Der Bestand 2021 ist außerdem noch kein Zielbestand 2040: Neubau, Abriss, Verdichtung, Sanierung und energetische Typologien müssen in einem anschließenden Modellschritt ergänzt werden. Die hier dargestellte Aktualisierung ersetzt daher noch nicht die zuvor beschriebenen Energie- und THG-Zielwerte oder deren Flächenbezüge.
 
 ## Dichte: Der städtebauliche Entwurf verändert beide Seiten
 
-Die Geschoßflächenzahl beschreibt das Verhältnis von Bruttogrundfläche zu Grundstücksfläche. Mit steigender Dichte nimmt die verfügbare lokale Erzeugungsfläche je Geschossfläche typischerweise ab. Der Dichtefaktor berücksichtigt diesen strukturellen Zusammenhang durch eine kalibrierte Anforderungsfunktion. Ihre Form und nationale Einordnung sind in @sec-allokation beschrieben.
+Die Geschoßflächenzahl beschreibt das Verhältnis von Bruttogrundfläche zu Grundstücksfläche. Mit steigender Dichte nimmt die verfügbare lokale Erzeugungsfläche je Geschossfläche typischerweise ab. Der Dichtefaktor berücksichtigt diesen strukturellen Zusammenhang durch eine kalibrierte Anforderungsfunktion. Die folgenden Abschnitte erläutern ihre Form und Kalibrierung; das nationale Energiezielbild steht in @sec-allokation.
 
 Bei niedriger Dichte verlangt die Regel einen zusätzlichen Überschuss. Bei hoher Dichte kann sie einen negativen Saldo vor Kontextkorrektur zulassen. Daraus folgt keine pauschale Empfehlung, durch zusätzliche Geschossfläche eine günstigere Bewertung herzustellen: Mehr Fläche verändert zugleich Bedarf, Herstellungsemissionen und absolute Ressourceninanspruchnahme. Ein Variantenvergleich muss alle diese Änderungen erfassen.
 
@@ -39,52 +106,3 @@ Die Dichtekorrektur verändert die Anforderungen abhängig von der Geschoßfläc
 
 @fig-dichtekurve veranschaulicht die Verteilung der energetischen Anforderungen zwischen unterschiedlichen baulichen Dichten. Die dargestellten Werte sind von den tatsächlich erreichten Energieflüssen des Quartiers zu unterscheiden.
 
-## Mobilität: Nutzung bestimmt das Budget, Standort bestimmt den Bedarf
-
-Die Mobilitätsgutschrift wird aus der nationalen Allokation nach Nutzungen verteilt. Für ein gemischt genutztes Quartier ergibt sich der spezifische Kontextwert aus der Flächengewichtung:
-
-$$
-c_{\mathrm{Mobilität}}
-=\frac{\sum_u A_{\mathrm{NGF},u}\,c_{\mathrm{M},u}}
-{\sum_u A_{\mathrm{NGF},u}}.
-$$ {#eq-mobilitaet-mischnutzung}
-
-Die nutzungsspezifischen Werte stehen in @tbl-mobilitaetsallokation. Ihre Flächenzuordnung muss mit jener des zugeordneten Verkehrsbedarfs übereinstimmen. Eine zusätzliche Büronutzung verändert sowohl die Gutschrift als auch die zu bilanzierenden Wege; sie ist kein reiner Bilanzbonus.
-
-Für die standortabhängige Abschätzung des Mobilitätsbedarfs werden Gemeinden beziehungsweise Standorte unterschiedlichen Mobilitätsregionen zugeordnet.
-
-![Räumliche Verteilung der Mobilitätsregionen in Österreich als Grundlage für standortabhängige Mobilitätsannahmen. (Datenquelle: Österreich unterwegs 2014)](../Abbildungen/verkehrsgueteklasse.png){#fig-mobilitaetsregionen width="100%"}
-
-Die räumlichen Unterschiede spiegeln sich im angesetzten motorisierten Individualverkehr wider. Sie beeinflussen den zugeordneten Mobilitätsbedarf, nicht automatisch das nutzungsbezogene Energiebudget.
-
-![Jährliche MIV-Verkehrsleistung nach Mobilitätsregion, dargestellt als Personen-Kilometer pro Bezugsgröße und Jahr. (Datenquelle: Österreich unterwegs 2014)](../Abbildungen/verkehrsleisting.svg){#fig-miv-verkehrsleistung width="90%"}
-
-Der Standort wirkt vor allem auf der Bedarfsseite. Kurze Wege, ein geeigneter Nutzungsmix, öffentlicher Verkehr und ein wirksames Mobilitätskonzept können den MIV vermindern. Diese Wirkung ist mit nachvollziehbaren Annahmen über Wege, Verkehrsmittelwahl und Fahrzeugflotte anzusetzen. Die bloße Bereitstellung von Fahrradabstellplätzen oder Ladepunkten begründet noch keine beliebig große Verkehrsreduktion.
-
-Für Architektur und Haustechnik entstehen daraus gemeinsame Aufgaben: Mobilitätsangebote müssen räumlich nutzbar sein, die elektrische Ladeinfrastruktur muss die erwarteten Fahrzeuge bedienen können. Ein geringerer zugeordneter Mobilitätsbedarf senkt nicht zwangsläufig jede lokale Ladespitze. Für die Netz- und Ladeplanung bleiben die Anwesenheitsprofile entscheidend [@schneider2026thesis, Abschn. 3.3.4, S. 65–67].
-
-## Sanierung: Entlastung für die Bedingungen des Bestands
-
-Die Sanierungsgutschrift beträgt 15 kWh PE/(m² NGF a) für den berücksichtigten Sanierungsanteil. Für einen Anteil \(f_{\mathrm{Sanierung}}\) ergibt sich:
-
-$$
-c_{\mathrm{Sanierung}}=15\,f_{\mathrm{Sanierung}}
-\quad\text{in kWh PE/(m² NGF a)}.
-$$ {#eq-sanierungskontext}
-
-Bei einem Sanierungsanteil von 50 % sind dies 7,5 kWh PE/(m² NGF a), wie in der klimaaktiv-Broschüre erläutert [@klimaaktiv2026peq, S. 14]. Im Nachweis sind die zugeordneten Sanierungsflächen offenzulegen. Neubauanteile werden nicht allein durch ihre Einbindung in ein Bestandsquartier zu Sanierungsflächen.
-
-Die Höhe ist normativ festgelegt. Sie berücksichtigt erschwerte Handlungsmöglichkeiten im Bestand, beispielsweise geometrische oder konstruktive Grenzen einer energetischen Verbesserung. Sie ist keine Berechnung der eingesparten grauen Emissionen. Erhaltene Bausubstanz und neue Bauteile wirken über die eigene THG-Bilanz; die Primärenergiegutschrift darf nicht noch einmal als vermiedene CO₂-Menge angesetzt werden.
-
-::: {.callout-note appearance="simple"  icon="true"}
-Für eine Weiterentwicklung kommen differenzierte Regeln nach Sanierungserschwernis, Gebäudealter oder Denkmalschutz in Betracht. Solche Regeln brauchen eine begründete Verteilungswirkung und handhabbare Nachweise. Bis dahin wird die festgelegte Gutschrift angewendet, ohne eine bislang nicht vorliegende quantitative Kalibrierung zu unterstellen.
-
-:::
-
-## Auf dem richtigen Weg?
-
-::: {.callout-warning}
-
-[platzhalter]
-
-:::

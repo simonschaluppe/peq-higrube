@@ -1,4 +1,4 @@
-# Systemgrenzen und Bilanzierungsregeln {#sec-bilanzregeln}
+# Systemgrenze des Quartiers {#sec-bilanzregeln}
 
 ::: {.lead}
 Was gehört zur Quartiersbilanz – und wie werden Energieflüsse und Emissionen bewertet?
@@ -73,7 +73,7 @@ Der MIV wird nach dem **Zielverkehrsprinzip** zugeordnet: Relevant sind Fahrten,
 
 Bei Elektrofahrzeugen können **Fahrenergie und Ladevorgang räumlich auseinanderfallen**. Das Modell berücksichtigt deshalb das Laden innerhalb und außerhalb des Quartiers und die Zuordnung von Fahrten zu verschiedenen Zielen. Wenn Fahrzeugbatterien zusätzlich zur Versorgung des Gebäudes beitragen, handelt es sich um einen Speicherfluss, nicht um eine zweite erneuerbare Energiequelle. Die für die Fahrt erforderliche Energie muss weiterhin berücksichtigt werden.
 
-In der THG-Bilanz wird außerdem die Fahrzeugherstellung in dem im Referenzverfahren vorgesehenen Umfang angesetzt. Daraus folgt keine vollständige Flotten-LCA aller künftigen Fahrzeugwechsel. Das nutzungsbezogene Mobilitätsbudget ist ebenfalls von realen Ladeleistungen, Anschlusskapazitäten und der tatsächlichen Anwesenheit von Fahrzeugen zu unterscheiden. Die Budgetzuordnung beschreibt @sec-allokation, die Anwendung des Mobilitätskontextfaktors @sec-kontext und die stündliche Fahrzeugmodellierung ist in @schneider_annual_2025 beschrieben.
+In der THG-Bilanz wird außerdem die Fahrzeugherstellung in dem im Referenzverfahren vorgesehenen Umfang angesetzt. Daraus folgt keine vollständige Flotten-LCA aller künftigen Fahrzeugwechsel. Das nutzungsbezogene Mobilitätsbudget ist ebenfalls von realen Ladeleistungen, Anschlusskapazitäten und der tatsächlichen Anwesenheit von Fahrzeugen zu unterscheiden. Budgetzuordnung und Anwendung des Mobilitätskontextfaktors beschreibt @sec-kontext-mobilitaet; die stündliche Fahrzeugmodellierung ist in @schneider_annual_2025 beschrieben.
 
 ::: {.callout-note title="Abbildung – Zielverkehr und Ladeort (Platzhalter)" appearance="minimal" icon=false}
 Vereinfachte Karte mit Wohn-, Arbeits- und Einkaufsquartier. Pfeile zeigen nach dem Zielverkehrsprinzip zugeordnete Fahrten; Ladepunkte zeigen davon getrennt die physischen Orte der Stromaufnahme. Ergänzend schematische Zuordnung zu Mobilitätsbedarf, Nutzungsgutschrift und Fahrzeugherstellung. **Ziel:** Doppelzählung von Fahrtenergie, Ladevorgang und Budgetgutschrift anschaulich vermeiden.
@@ -133,11 +133,7 @@ Dies ist eine **Bilanzierungskonvention**, keine Aussage, dass jeder Holzbau emi
 
 Die Betriebsenergie wird über ein vollständiges Jahr **stündlich** berechnet. Damit werden die zeitliche Überlagerung von Bedarf und erneuerbarer Erzeugung sowie der Betrieb von Wärmepumpen, Speichern und flexiblen Verbrauchern berücksichtigt. Im hier dokumentierten Referenzverfahren werden die stündlichen Stromflüsse anschließend mit **monatlichen Primärenergie- und THG-Faktoren** bewertet [@schneider2026thesis, Abschn. 3.2.3–3.2.4; @schneider2025declaration, Abschn. 2.6].
 
-Für die Lebenszyklusbewertung werden zeitabhängige Emissionsfaktoren verwendet. Ihre Entwicklung bildet einen angenommenen Dekarbonisierungspfad ab und beeinflusst insbesondere die Bewertung zukünftiger Betriebsemissionen.
-
-![Angenommene Entwicklung der spezifischen Treibhausgasemissionen verschiedener Energieträger und Versorgungssysteme bis 2050.](../Abbildungen/absenkpfade.svg){#fig-absenkpfade width="100%"}
-
-Die in @fig-absenkpfade dargestellten Verläufe sind Szenarioannahmen und keine Prognose tatsächlich gemessener zukünftiger Emissionen.
+Die langfristigen THG-Absenkpfade und ihre Rolle im kumulierten Budget erläutert @sec-thg-pfade. Die Unterscheidung von Endenergie, Primärenergie und THG-Gewichtung steht in @sec-energie-bewertung.
 
 Die beiden Auflösungen erfüllen unterschiedliche Aufgaben: Die stündliche Simulation bildet beispielsweise Eigenverbrauch, Speicherverluste und Lastverschiebungen ab. Ein unveränderter Monatsfaktor bewertet dagegen zwei gleich große Netzstrommengen innerhalb desselben Monats identisch – selbst wenn sie zu unterschiedlichen Tageszeiten auftreten. Eine Flexibilitätsmaßnahme kann somit physisch sinnvoll sein, ohne allein über den Monatsfaktor einen zusätzlichen Bewertungsbonus zu erhalten.
 

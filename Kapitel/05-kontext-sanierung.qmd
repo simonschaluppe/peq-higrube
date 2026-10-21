@@ -1,0 +1,25 @@
+# Kontextfaktor Sanierung {#sec-kontext-sanierung}
+::: {.lead}
+Eine explizite Entlastung für die Bedingungen des Gebäudebestands
+:::
+
+Die Sanierungsgutschrift ergänzt die gemeinsame Primärenergiebewertung in @sec-kontext. Sie verändert die Anforderung, nicht den physischen Energiebedarf oder das THG-Budget.
+
+## Sanierung: Entlastung für die Bedingungen des Bestands
+
+Die Sanierungsgutschrift beträgt 15 kWh PE/(m² NGF a) für den berücksichtigten Sanierungsanteil. Für einen Anteil \(f_{\mathrm{Sanierung}}\) ergibt sich:
+
+$$
+c_{\mathrm{Sanierung}}=15\,f_{\mathrm{Sanierung}}
+\quad\text{in kWh PE/(m² NGF a)}.
+$$ {#eq-sanierungskontext}
+
+Bei einem Sanierungsanteil von 50 % sind dies 7,5 kWh PE/(m² NGF a), wie in der klimaaktiv-Broschüre erläutert [@klimaaktiv2026peq, S. 14]. Im Nachweis sind die zugeordneten Sanierungsflächen offenzulegen. Neubauanteile werden nicht allein durch ihre Einbindung in ein Bestandsquartier zu Sanierungsflächen.
+
+Die Höhe ist normativ festgelegt. Sie berücksichtigt erschwerte Handlungsmöglichkeiten im Bestand, beispielsweise geometrische oder konstruktive Grenzen einer energetischen Verbesserung. Sie ist keine Berechnung der eingesparten grauen Emissionen. Erhaltene Bausubstanz und neue Bauteile wirken über die eigene THG-Bilanz; die Primärenergiegutschrift darf nicht noch einmal als vermiedene CO₂-Menge angesetzt werden.
+
+::: {.callout-note appearance="simple"  icon="true"}
+Für eine Weiterentwicklung kommen differenzierte Regeln nach Sanierungserschwernis, Gebäudealter oder Denkmalschutz in Betracht. Solche Regeln brauchen eine begründete Verteilungswirkung und handhabbare Nachweise. Bis dahin wird die festgelegte Gutschrift angewendet, ohne eine bislang nicht vorliegende quantitative Kalibrierung zu unterstellen.
+
+:::
+

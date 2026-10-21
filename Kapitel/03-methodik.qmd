@@ -1,0 +1,70 @@
+# Von nationalen Zielpfaden zur Quartiersbilanz {#sec-methodik}
+::: {.lead}
+Das übergeordnete Prinzip: Ziele, Verteilung und Nachweis
+:::
+Ein Quartier kann seinen Energiebedarf senken, erneuerbare Energie erzeugen und Emissionen vermeiden. Ob dieser Beitrag ausreicht, hängt auch davon ab, welche Aufgaben die übrigen Gebäude, die Mobilität und die Energieversorgung übernehmen. Das nationale Allokationsmodell stellt diesen Zusammenhang her. Zunächst werden nationale Zielpfade und sektorale Energieaufgaben beschrieben. Danach werden die Anforderungen über Kontextfaktoren auf Quartiere übertragen; zuletzt wird die konkrete Quartiersbilanz abgegrenzt. Das davon getrennte kumulierte Emissionsbudget behandelt @sec-zielwert-thg.
+
+Die Quartierssimulation ermittelt, welche Bilanz ein Projekt unter bestimmten Annahmen erreicht. Das Allokationsmodell bestimmt den Maßstab, an dem dieses Ergebnis beurteilt wird. Das Bewertungsverfahren verbindet beide Ebenen: Systemgrenzen, Gewichtung und Anforderungen müssen gemeinsam festgelegt werden [@schneider2026thesis, Kap. 3.1–3.2, S. 43–60].
+
+## Welche Entscheidungen stecken in einem Zielwert?
+
+Ein nationales Ziel lässt sich nicht ohne weitere Festlegungen auf ein Bauvorhaben herunterbrechen. Zunächst braucht es ein Szenario für Energiebedarf und Energieversorgung. Anschließend ist festzulegen, welche Anteile der verfügbaren Ressourcen und Emissionsbudgets den Sektoren zugerechnet werden. Erst danach können Anforderungen für Quartiere unterschiedlicher Dichte und Nutzung bestimmt werden.
+
+```{mermaid}
+%%| label: fig-allokationskette
+%%| fig-cap: "Vom nationalen Szenario zur Quartiersbewertung. Methodik nach Schneider (2026), Kap. 3.1–3.3."
+%%| fig-alt: "Nationale Szenarien führen über sektorale Zuordnung und Bezugsgrößen zu Quartiersanforderungen. Projektdaten und Simulation liefern die Quartiersbilanz. Anforderungen und Bilanz treffen in der Bewertung zusammen."
+flowchart TB
+  A["Nationale Energie- und Klimaszenarien"] --> B["Sektorale Zuordnung"]
+  B --> C["Verteilung nach Dichte, Nutzung und Fläche"]
+  C --> D["Anforderungen und Budgets"]
+  E["Projektdaten und Maßnahmen"] --> F["Quartierssimulation und Bilanzierung"]
+  D --> G["Bewertung des Quartiers"]
+  F --> G
+```
+
+| Bestandteil | Funktion | Beispiel |
+|---|---|---|
+| Physikalischer Zusammenhang | Beschreibt Beziehungen zwischen Größen. | Mehr Geschossfläche auf gleicher Grundstücksfläche verändert das Verhältnis von Bedarf und lokalem Erzeugungspotenzial. |
+| Szenarioannahme | Beschreibt eine mögliche zukünftige Entwicklung. | Dekarbonisierung der Energieversorgung und der Herstellungsprozesse. |
+| Normative Festlegung | Verteilt Anforderungen und Budgets. | Anteil des nationalen Emissionsbudgets für Gebäude und MIV. |
+| Operationalisierung | Übersetzt den Ansatz in berechenbare Regeln. | Mobilitätsgutschrift je Nutzung und Quadratmeter Nettogrundfläche. |
+
+: Grundlagen eines Zielwerts [@schneider2026thesis, Kap. 3.1–3.2]. {#tbl-arten-festlegungen}
+
+Die wissenschaftliche Herleitung macht diese Entscheidungen prüfbar. Sie hebt ihren normativen Charakter nicht auf. Für die Verwaltung ist gerade diese Trennung hilfreich: Ein geändertes Szenario, eine andere Verteilungsregel und eine Korrektur der Software sind unterschiedliche Eingriffe.
+
+## Vom Zielbild zur Bewertung
+
+| Schritt | Leitfrage | Vertiefung |
+|---|---|---|
+| Sektorales Zielbild | Welche Energie wird im Zielsystem erzeugt und benötigt? | @sec-allokation |
+| Dichte | Wie verteilt sich die energetische Aufgabe auf den Gebäudebestand? | @sec-kontext-dichte |
+| Mobilität | Welcher nationale Anteil wird welchen Nutzungen zugeordnet? | @sec-kontext-mobilitaet |
+| Sanierung | Wie werden Handlungsmöglichkeiten im Bestand berücksichtigt? | @sec-kontext-sanierung |
+| THG-Zielwert | Wie viele kumulierte Emissionen werden dem Quartier zugestanden? | @sec-zielwert-thg |
+| Quartiersbilanz | Welche Flüsse und Prozesse zählen innerhalb welcher Grenzen? | @sec-bilanzregeln |
+
+## Kontextfaktoren: Eine Bilanz, zwei gleichwertige Darstellungen {#sec-kontext}
+
+
+Eine angepasste Anforderung kann als eigener Zielwert oder als virtuelle Gut- beziehungsweise Lastschrift gegenüber einem gemeinsamen Nullmaßstab dargestellt werden. Beide Darstellungen sind rechnerisch gleichwertig [@schneider2026thesis, Abschn. 3.2.5–3.2.7].
+
+Mit dem jährlichen spezifischen Primärenergiesaldo \(b_{\mathrm{PE}}\) vor Kontextkorrektur lautet die Bewertungsbilanz:
+
+$$
+b_{\mathrm{Bewertung}}
+=b_{\mathrm{PE}}+c_{\mathrm{Dichte}}+c_{\mathrm{Mobilität}}+c_{\mathrm{Sanierung}}.
+$$ {#eq-kontextbilanz}
+
+Alle Größen sind in kWh PE/(m² NGF a) anzugeben. Positive Kontextwerte entlasten die Anforderung, negative Werte erhöhen sie. Die Mobilitätskomponente wird nur gemeinsam mit dem entsprechenden Mobilitätsbedarf in der erweiterten Bilanz angesetzt. Die Bedingung \(b_{\mathrm{Bewertung}}>0\) lässt sich auch als Anforderung an den Saldo vor Kontextkorrektur schreiben:
+
+$$
+b_{\mathrm{PE}}>-
+\left(c_{\mathrm{Dichte}}+c_{\mathrm{Mobilität}}+c_{\mathrm{Sanierung}}\right).
+$$
+
+Eine positive Bewertungsbilanz bedeutet daher nicht zwingend einen physischen Exportüberschuss. Für Planung und Kommunikation sind der Saldo vor Kontextkorrektur und die einzelnen Kontextkomponenten getrennt auszuweisen. Das kumulierte THG-Budget wird zusätzlich geprüft; es wird nicht in diese jährliche Primärenergiebilanz eingerechnet.
+
+
+Eine kommunale Zwischenebene könnte nationale Vorgaben zunächst auf kommunale Beiträge und dann auf Quartiere beziehen. Sie bleibt eine Entwicklungsperspektive; Energie- und Emissionsbudgets dürfen dabei nicht mehrfach zugeteilt werden [@schneider2026thesis, Abschn. 3.5.1, S. 89–90].

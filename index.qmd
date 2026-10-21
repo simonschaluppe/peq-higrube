@@ -22,7 +22,7 @@ Die Bilanzierungsregeln werden in @sec-bilanzregeln erläutert.
 
 Der Bewertungsansatz verbindet zwei Perspektiven:
 
-**Top-down:** Nationale Energie- und Klimaziele werden auf Sektoren und Quartierstypologien übertragen. Daraus entstehen Zielwerte und Budgets (@sec-allokation und @sec-zielwert-thg).
+**Top-down:** Nationale Energie- und Klimaziele werden auf Sektoren und Quartierstypologien übertragen. Die Methodik führt vom allgemeinen Prinzip über das sektorale Energiezielbild und die Kontextfaktoren bis zum THG-Budget und zur Quartiersbilanz (@sec-methodik).
 
 **Bottom-up:** Gebäude, Energieversorgung, Mobilität und Lebenszyklusemissionen werden für das konkrete Quartier bilanziert. Eine stündliche Simulation berücksichtigt dabei insbesondere Photovoltaik, Speicher und Energieflexibilität.
 

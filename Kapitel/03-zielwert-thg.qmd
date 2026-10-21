@@ -47,7 +47,29 @@ Für L3 werden 1 t CO₂e pro Person und Jahr an natürlichen Senken angesetzt. 
 
 Die L-Werte sind **Budgetvarianten innerhalb der THG-Bewertung**, nicht die drei PEQ-Qualitätsstufen. Der für diesen Bericht zugrunde gelegte Zertifizierungswert beträgt 320 kg CO₂e/m² BGF. Seine Einhaltung ist zusammen mit der L3-Senkenannahme und den Bilanzregeln zu lesen. Die unterstellte nationale Senkenleistung ist kein vom einzelnen Quartier nachgewiesener Emissionsausgleich.
 
-### Drei Zeitbegriffe
+## Gebäudesektor: Bezugsflächen und Entwicklung {#sec-thg-flaechen}
+
+Die Fläche bestimmt, wie ein nationales Budget auf Quadratmeter verteilt wird. Die folgenden Datenstände haben unterschiedliche Abgrenzungen; sie bilden **keine durchgängige Zeitreihe**. Insbesondere darf aus ihrer Differenz kein Rückgang des Gebäudebestands abgeleitet werden.
+
+| Datenstand / Horizont | BGF [Mio. m²] | NGF [Mio. m²] | Rolle und Quelle |
+|---|---:|---:|---|
+| Statistikbezug 2021, GFZ-Hochrechnung | 1.058,935 | 847,1 | Bestandsverteilung nach Nutzung, Bundesland und Geschossklasse; @sec-gfz-bestand; BGF = NGF / 0,8 |
+| Zielbestand 2040 der THG-Kalibrierung | 906,7 | nicht separat angesetzt | Bezugsfläche der Budgetzuteilung; @schneider2025declaration, Tab. A1 |
+| Bestand 2025 und Zwischenjahre bis 2040 | noch zu ergänzen | noch zu ergänzen | Keine interpolierten Werte ohne harmonisierte Abgrenzung |
+
+: Vorliegende Flächenbezüge und noch offene Fortschreibung. {#tbl-thg-flaechenentwicklung}
+
+| Baustein der Fortschreibung | Benötigte Angaben | Aktueller Status |
+|---|---|---|
+| Ausgangsbestand | Stützjahr, Nutzung, konditionierte Fläche, NGF/BGF-Abgrenzung | Statistikmodell 2021 vorhanden; Abgleich mit THG-Systemgrenze offen |
+| Neubau und Erweiterung | Zusätzliche m² je Nutzung und Jahr | Detaildaten angekündigt; nicht eingesetzt |
+| Abbruch und Umnutzung | Abgänge und Nutzungsverschiebungen je Jahr | Noch zu ergänzen |
+| Sanierung | Sanierte m² und energetischer Zustand je Jahr | Keine zusätzliche Geschossfläche allein durch Sanierung unterstellen |
+| Zielbestand | Konsistente Summe aus Bestand, Zu- und Abgängen | 906,7 Mio. m² als bestehende Kalibrierungsannahme erhalten |
+
+: Struktur für die angekündigte Ergänzung der Gebäudesektor-Daten. {#tbl-thg-fortschreibung}
+
+## Drei Zeitbegriffe
 
 Der Bewertungszeitraum beträgt **50 Jahre, von 2025 bis 2075**. Innerhalb dieses Horizonts werden die treibhauswirksamen Effekte bilanziert.
 
@@ -58,6 +80,25 @@ Die vereinfachende Annahme einer vollständigen Dekarbonisierung der betrachtete
 **GWP100** bezeichnet den 100-jährigen Charakterisierungshorizont des Treibhauspotenzials für die Bewertung unterschiedlicher Treibhausgase in CO₂-Äquivalenten. Diese 100 Jahre bestimmen nicht die Projektlaufzeit.
 
 Errichtungsemissionen beanspruchen das Budget unmittelbar. Eine rechnerische Verteilung auf 50 Jahresraten würde ihren Emissionszeitpunkt nicht ändern. Für Etappen eines Renovierungsfahrplans muss deshalb betrachtet werden, wann bauliche Emissionen entstehen und welche Betriebsemissionen bis zur jeweiligen Maßnahme anfallen.
+
+## Absenkpfade und kumuliertes THG-Budget {#sec-thg-pfade}
+
+Für die Lebenszyklusbewertung werden zeitabhängige Emissionsfaktoren verwendet. Ihre Entwicklung bildet einen angenommenen Dekarbonisierungspfad ab und beeinflusst insbesondere die Bewertung zukünftiger Betriebsemissionen.
+
+![Angenommene Entwicklung der spezifischen Treibhausgasemissionen verschiedener Energieträger und Versorgungssysteme bis 2050.](../Abbildungen/absenkpfade.svg){#fig-absenkpfade width="100%"}
+
+Die in @fig-absenkpfade dargestellten Verläufe sind Szenarioannahmen und keine Prognose tatsächlich gemessener zukünftiger Emissionen.
+
+Die bestehende Abbildung unterscheidet Netzstromvarianten, Fernwärmesysteme, Abwärme sowie fossile und biogene Brennstoffe. Ihre numerischen Zeitreihen sind hier noch nicht als versionierte Eingabetabelle verfügbar. Aus der Grafik werden deshalb keine scheinpräzisen Jahreswerte abgelesen. Die methodische Grundlage bilden @schneider2025declaration, Abschn. 2.4 und 2.6, sowie @schneider2026thesis, Abschn. 3.2.8.
+
+| Größe | Anwendung im kumulierten Budget | Dokumentierter Stand |
+|---|---|---|
+| Netzstrom und weitere Energieträger | Jahresverbrauch × zeitabhängiger THG-Faktor, über die Jahre summiert | Trägerspezifische Pfade in @fig-absenkpfade; numerische Stützwerte und Interpolation noch zu ergänzen |
+| Herstellung, Ersatz und Lebensende | Emissionen zum jeweiligen Ereigniszeitpunkt | Prozessbezogene Dekarbonisierungsannahmen des Referenzverfahrens |
+| Vollständige Dekarbonisierung ab 2050 | Im Modell keine zusätzlichen Emissionen der so erfassten Versorgung und Prozesse | Szenarioannahme, keine physische Zusicherung; Betrachtung läuft bis 2075 weiter |
+| Natürliche Senken | Bestandteil der nationalen Budgetzuteilung | Eigene Annahme; kein Abzug durch einen fallenden Stromfaktor |
+
+Ein sinkender Emissionsfaktor reduziert zukünftige Betriebsemissionen. Bereits entstandene Errichtungsemissionen werden dadurch nicht nachträglich gelöscht. Die tatsächlichen Jahresverbräuche, Maßnahmenzeitpunkte und Faktorenpfade müssen zusammen bilanziert werden. CO₂-Intensitäten allein sind außerdem nicht ohne dokumentierte Abgrenzung mit den hier verwendeten THG-Faktoren in CO₂e austauschbar.
 
 ## Rekalibrierung: Welche Stellgrößen ändern sich?
 

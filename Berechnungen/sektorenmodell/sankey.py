@@ -11,6 +11,15 @@ import plotly.graph_objects as go
 from plotly.offline import get_plotlyjs
 from .model import ROOT, DATA, GEN, DEMAND, EEV, LABELS, NAMES, load, rows, values
 
+COLORS = dict(hydro='#287bb5', wind='#159a98', pv='#dca51d', biomass='#609c42',
+              geothermal='#ce603b', hydrogen_electricity='#8b63b7', fossil='#626b76',
+              verkehr='#7857a5', gebaeude='#d39736', industrie='#487fa8', landwirtschaft='#739c40',
+              verbrauch_sektor_energie='#ad6977', transportverluste='#90969b', umwandlungseinsatz='#569da0')
+
+
+def translucent(color):
+    return 'rgba('+','.join(str(int(color[i:i+2],16)) for i in (1,3,5))+',0.4)'
+
 
 def baseline(year, basis):
     records = [r for r in rows('baseline_energy.csv') if int(r['year']) == year and r['energy_basis'] == basis]
@@ -84,9 +93,9 @@ def figure(result):
     node('current',f'Ertrag {year}',.01,.20,grey); node('growth','Zusätzlicher Jahresertrag',.01,.66,amber)
     node('retirement','Entfallender Ertrag',.25,.97,grey)
     for i,key in enumerate(GEN):
-        node(key,f"{NAMES[key].replace('¹','')}: {g[key]:g}",.25,.03+i*.125)
-        link('current',key,min(bg[key],g[key]),f'{key}: rechnerisch fortgeführter Jahresertrag {year} → 2040')
-        link('growth',key,max(0,g[key]-bg[key]),f'{key}: zusätzlicher Jahresertrag bis 2040; keine installierte Leistung','rgba(219,160,58,.42)')
+        node(key,f"{NAMES[key].replace('¹','')}: {g[key]:g}",.25,.03+i*.125,COLORS[key])
+        link('current',key,min(bg[key],g[key]),f'{key}: rechnerisch fortgeführter Jahresertrag {year} → 2040',translucent(COLORS[key]))
+        link('growth',key,max(0,g[key]-bg[key]),f'{key}: zusätzlicher Jahresertrag bis 2040; keine installierte Leistung',translucent(COLORS[key]))
         link('current','retirement',max(0,bg[key]-g[key]),f'{key}: entfallender Jahresertrag','rgba(116,135,149,.3)')
     node('system','Stromsystem 2040',.58,.43)
     pv = r['pv_decentral_share']
@@ -97,7 +106,7 @@ def figure(result):
             link(k,'system',g['pv']*share,'Rückführung in dieselbe physische Strombilanz')
     for key in GEN:
         if key != 'pv' or pv is None:
-            link(key,'system',g[key],f'{key}: UBA-Stromerzeugung 2040, zentral/dezentral offen')
+            link(key,'system',g[key],f'{key}: UBA-Stromerzeugung 2040, zentral/dezentral offen',translucent(COLORS[key]))
     if g['net_imports'] > 0:
         node('imports','Nettoimport',.43,.02,grey); link('imports','system',g['net_imports'],'UBA-Nettoimport 2040')
     elif g['net_imports'] < 0:
@@ -109,8 +118,9 @@ def figure(result):
             ('miv','MIV (Annahme)',split['miv']),('ov','ÖV (Annahme)',split['ov']),
             ('other','Übriger Verkehr',max(0,1-sum(split.values())))]] + demand_nodes[1:]
     for i,(key,label,value) in enumerate(demand_nodes):
-        node('d_'+key,f'{label}: {value:g}',.98,.02+i*.84/len(demand_nodes))
-        link('system','d_'+key,value,f'{label} 2040'+(' – Parametervariante' if r['sensitivity'] else ' – UBA'))
+        color=COLORS.get(key,COLORS['verkehr'])
+        node('d_'+key,f'{label}: {value:g}',.98,.02+i*.84/len(demand_nodes),color)
+        link('system','d_'+key,value,f'{label} 2040'+(' – Parametervariante' if r['sensitivity'] else ' – UBA'),translucent(color))
     fig = go.Figure(flow_trace(nodes,links,dict(x=[0,.68],y=[.43,.96])))
     if r['transport_split'] is not None:
         split = r['transport_split']; rest=max(0,1-sum(split.values()))
@@ -120,15 +130,15 @@ def figure(result):
     custom=[[d[k]-r['baseline_demand'][k], max(0,r['baseline_demand'][k]-d[k])] for k in DEMAND]
     fig.add_trace(go.Bar(x=[r['baseline_demand'][k] for k in DEMAND],y=labels,orientation='h',name=str(year),marker_color=grey,
                         hovertemplate='%{y}: %{x:.1f} PJ_el/a<extra>Ausgangsjahr</extra>'))
-    fig.add_trace(go.Bar(x=[d[k] for k in DEMAND],y=labels,orientation='h',name='2040',marker_color=teal,customdata=custom,
+    fig.add_trace(go.Bar(x=[d[k] for k in DEMAND],y=labels,orientation='h',name='2040',marker_color=[COLORS[k] for k in DEMAND],customdata=custom,
         hovertemplate='%{y}: %{x:.1f} PJ_el/a<br>Änderung: %{customdata[0]:+.1f}<br>Minderung: %{customdata[1]:.1f}<extra>2040</extra>'))
     # Independent final-energy accounting: never connected to the electricity nodes.
     enodes={}; elinks=[]
     for i,k in enumerate(EEV):
         current=r['baseline_endenergy'][k]; target=r['endenergy'][k]
-        enodes[k]=(f'{NAMES[k]} {year}: {current:g}',.01,.05+i*.24,grey)
-        enodes[k+'_target']=(f'{NAMES[k]} 2040: {target:g}',.62,.05+i*.24,teal)
-        elinks.append((k,k+'_target',min(current,target),'rgba(0,124,131,.32)',f'{NAMES[k]}: verbleibender Endenergiebedarf'))
+        enodes[k]=(f'{NAMES[k]} {year}: {current:g}',.01,.05+i*.24,COLORS[k])
+        enodes[k+'_target']=(f'{NAMES[k]} 2040: {target:g}',.62,.05+i*.24,COLORS[k])
+        elinks.append((k,k+'_target',min(current,target),translucent(COLORS[k]),f'{NAMES[k]}: verbleibender Endenergiebedarf'))
         if current>target:
             elinks.append((k,'saved',current-target,'rgba(219,160,58,.45)',f'{NAMES[k]}: Endenergieminderung {year} → 2040'))
         elif target>current:
@@ -177,14 +187,31 @@ def main():
             configs[f'{sid}_{year}']=json.loads(figure(result).to_json())
     default='transition_2040_2020'
     html='''<!doctype html><html lang="de"><meta charset="utf-8"><title>UBA Szenarien: Ausbau und Bedarf</title>
-<style>body{margin:12px;font:15px Arial;color:#263b47}label{margin-right:20px}select{padding:6px}#chart{width:100%;min-width:1100px}p{max-width:1200px}</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>*{box-sizing:border-box}html{overflow-y:scroll}html,body{margin:0;width:100%;font:14px Arial;color:#263b47}body{padding:8px}label{display:inline-block;margin:0 12px 8px 0}select{padding:6px;max-width:100%}#chart{width:100%;min-width:0}p{max-width:100%;overflow-wrap:anywhere}</style>
 <label>Szenario <select id="scenario">'''+''.join(f'<option value="{s}">{LABELS[s]}</option>' for s in scenarios)+'''</select></label>
 <label>Ausgangsjahr <select id="year"><option>2020</option><option>2023</option></select></label>
 <p>Standard: konsistente Transition-Ausgangsbilanz 2020. Stellschrauben für PV, MIV/ÖV und zusätzliche Strombedarfsminderung im begleitenden Notebook. Keine neue Mobilitätsgutschrift.</p>
 <div id="chart"></div><script>'''+get_plotlyjs()+'''</script><script>
 const figures='''+json.dumps(configs,ensure_ascii=False)+''';
-function draw(){const f=figures[document.getElementById('scenario').value+'_'+document.getElementById('year').value]; Plotly.react('chart',f.data,f.layout,{responsive:true,displaylogo:false});}
+function draw(){const f=JSON.parse(JSON.stringify(figures[document.getElementById('scenario').value+'_'+document.getElementById('year').value]));
+const w=document.getElementById('chart').clientWidth; f.layout.width=w; f.layout.autosize=false;
+if(w<1200){
+ f.layout.height=1550; f.layout.margin={l:8,r:8,t:125,b:200}; f.layout.font.size=w<500?9:11;
+ f.data[0].domain={x:[0,1],y:[.64,.94]}; f.data[3].domain={x:[0,1],y:[.02,.23]};
+ f.layout.xaxis.domain=[.32,.97]; f.layout.yaxis.domain=[.34,.54]; f.layout.legend={x:.32,y:.32,orientation:'h'};
+ const a=f.layout.annotations; a[0].font.size=w<500?15:19; a[0].y=1.035;
+ a[0].text=a[0].text.replace(' · Ausgangsjahr','<br>Ausgangsjahr');
+ a[1].text=a[1].text.split(' · ').join('<br>'); a[1].y=.99;
+ a[2].text='<b>Strom: Erzeugung und Ausbau → Bedarf</b>'; a[2].y=.95;
+ a[3].x=0; a[3].y=.56; a[3].text='<b>Strombedarf: Ausgangsjahr / Ziel</b>';
+ a[4].y=.255; a[4].text='<b>Endenergie: Ausgangsjahr → Ziel und Minderung</b>';
+ a.slice(5).forEach((n,i)=>{n.y=-.035-i*.065;n.text=n.text.replace(/(.{1,65})(?:\\s|$)/g,'$1<br>');n.font={size:10};});
+}
+if(w<500){f.data.filter(t=>t.type==='sankey').forEach(t=>{t.node.label=t.node.label.map(s=>s.replace('Biomasse inkl. Biomethan','Biomasse').replace('Geothermie / sonstige Erzeugung','Geothermie/sonstige').replace('Wasserstoff-Rückverstromung','H₂-Strom').replace('Verbrauch Sektor Energie','Energiesektor').replace('Minderung (Komponenten)','Minderung'));});}
+Plotly.newPlot('chart',f.data,f.layout,{responsive:false,displaylogo:false,displayModeBar:false});}
 document.getElementById('scenario').onchange=draw;document.getElementById('year').onchange=draw;draw();
+window.addEventListener('resize',draw);
 </script></html>'''
     out=ROOT/'Abbildungen/transition_sankey.html';out.write_text(html,encoding='utf-8')
     result=calculation();export_comparison(result,DATA/'transition_2020_2040_comparison.csv')
