@@ -56,7 +56,27 @@ def values(table, sid):
     return {k: r['value_pj'] for k, r in table[sid].items()}
 
 
+def validate_baselines(base=DATA):
+    specs = {'electricity_generation': GEN + ['net_imports', 'published_total'],
+             'electricity_demand': DEMAND + ['published_total'],
+             'energetic_final': EEV + ['published_total']}
+    sources = {r['source_id'] for r in rows('sources.csv', base)}
+    expected = {(str(year), basis, metric) for year in [2020, 2023] for basis, metrics in specs.items() for metric in metrics}
+    found = set()
+    for row in rows('baseline_energy.csv', base):
+        key = (row['year'], row['energy_basis'], row['metric'])
+        if key not in expected or key in found or row['source_id'] not in sources or not row['source_location']:
+            raise ValueError(f'Invalid baseline key/source: {row}')
+        value = float(row['value_pj'])
+        if not math.isfinite(value) or (row['metric'] != 'net_imports' and value < 0):
+            raise ValueError(f'Invalid baseline value: {row}')
+        found.add(key)
+    if found != expected:
+        raise ValueError('Incomplete baseline data')
+
+
 def validate(base=DATA):
+    validate_baselines(base)
     e, g, d = (load(n, base) for n in SPECS)
     reports = []
     for sid in SCENARIOS[1:]:

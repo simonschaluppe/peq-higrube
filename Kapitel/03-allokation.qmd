@@ -1,8 +1,8 @@
-# Zielwerte {#sec-allokation}
+# Zielwert PE {#sec-allokation}
 ::: {.lead}
-Von nationalen Zielen zu konkreten Anforderungen an Quartiere
+Vom nationalen Energieszenario zur jährlichen Primärenergieanforderung
 :::
-Ein Quartier kann seinen Energiebedarf senken, erneuerbare Energie erzeugen und Emissionen vermeiden. Ob dieser Beitrag ausreicht, hängt auch davon ab, welche Aufgaben die übrigen Gebäude, die Mobilität und die Energieversorgung übernehmen. Das nationale Allokationsmodell stellt diesen Zusammenhang her: Es verteilt verfügbare erneuerbare Energie und ein begrenztes Emissionsbudget auf Sektoren und anschließend auf die Nutzungen und Flächen konkreter Quartiere.
+Ein Quartier kann seinen Energiebedarf senken, erneuerbare Energie erzeugen und Emissionen vermeiden. Ob dieser Beitrag ausreicht, hängt auch davon ab, welche Aufgaben die übrigen Gebäude, die Mobilität und die Energieversorgung übernehmen. Das nationale Allokationsmodell stellt diesen Zusammenhang her. Dieses Kapitel erläutert die Verteilung verfügbarer erneuerbarer Energie auf Sektoren und anschließend auf Nutzungen und Flächen konkreter Quartiere. Das davon getrennte kumulierte Emissionsbudget behandelt @sec-zielwert-thg.
 
 Die Quartierssimulation ermittelt, welche Bilanz ein Projekt unter bestimmten Annahmen erreicht. Das Allokationsmodell bestimmt den Maßstab, an dem dieses Ergebnis beurteilt wird. Das Bewertungsverfahren verbindet beide Ebenen: Systemgrenzen, Gewichtung und Anforderungen müssen gemeinsam festgelegt werden [@schneider2026thesis, Kap. 3.1–3.2, S. 43–60].
 
@@ -38,7 +38,9 @@ Die wissenschaftliche Herleitung macht diese Entscheidungen prüfbar. Sie hebt i
 
 ### Prinzip der sektoralen Zuordnung
 
-Die derzeitige Operationalisierung beruht auf der Streicher-basierten Herleitung: Das Szenario „Energieautarkie für Österreich 2050“ wurde von Schneider, Zelger und Klauda (2020) angepasst und im PEQ-Modell 2023 für den Zielhorizont 2040 weiterentwickelt [@schneider2020lokal, Abschn. 3.1, S. 3–6; @schneider2023context, Abschn. 6.1–6.2]. Dieses historische Referenzmodell betrachtet ein vollständig erneuerbares österreichisches Energiesystem. Erneuerbare Erzeugung und verbleibende Energiebedarfe werden sektoral zugeordnet. Daraus ergeben sich der erforderliche Beitrag dezentraler Erzeugung im Gebäudesektor und ein Anteil zentral bereitgestellter erneuerbarer Energie für den motorisierten Individualverkehr [@schneider2023context, Abschn. 6.1–6.2, S. 12–16].
+Die initiale Operationalisierung 2023 beruht auf der Streicher-basierten Herleitung: Das Szenario „Energieautarkie für Österreich 2050“ wurde von Schneider, Zelger und Klauda (2020) angepasst und im PEQ-Modell 2023 für den Zielhorizont 2040 weiterentwickelt [@schneider2020lokal, Abschn. 3.1, S. 3–6; @schneider2023context, Abschn. 6.1–6.2]. Dieses historische Referenzmodell betrachtet ein vollständig erneuerbares österreichisches Energiesystem. Erneuerbare Erzeugung und verbleibende Energiebedarfe werden sektoral zugeordnet. Daraus ergeben sich der erforderliche Beitrag dezentraler Erzeugung im Gebäudesektor und ein Anteil zentral bereitgestellter erneuerbarer Energie für den motorisierten Individualverkehr [@schneider2023context, Abschn. 6.1–6.2, S. 12–16].
+
+Die Primärstudie *Energieautarkie für Österreich 2050* erschien im Dezember 2010. Sie versteht Energieautarkie als ausgeglichene jährliche Nettoenergiebilanz; zeitweiser Austausch bleibt möglich. Importierte graue Energie wird nicht als vollständig neu bilanzierte Größe einbezogen. Das Wachstumsszenario unterstellt jährlich 0,8 % Wachstum der Energiedienstleistungen beziehungsweise industriellen Bruttowertschöpfung; dies ist keine reine Bevölkerungsannahme [@streicher2010energieautarkie, Zusammenfassung, S. iii–v]. Die Übertragung in eine lokale Erzeugungsanforderung erfolgt durch Schneider et al. (2020); die späteren PEQ-Gutschriften stammen aus der Weiterentwicklung 2023 [@schneider2020lokal, Abschn. 3.1, S. 3–6; @schneider2023context, Abschn. 6.1–6.2]. Energieautarkie, jährliche erneuerbare Deckung und Klimaneutralität sind deshalb nicht gleichzusetzen.
 
 Eine dem Quartier zugerechnete Energiemenge ist deshalb weder automatisch lokal erzeugte Energie noch ein vertraglich gesicherter Strombezug. Im Bewertungsverfahren kann sie als virtuelle Gutschrift erscheinen. Der physische Energiefluss muss davon getrennt bilanziert werden.
 
@@ -139,7 +141,7 @@ Die Übertragbarkeit der Salzburger Stichprobe auf andere Bundesländer, der ein
 
 ## Mobilitätsbudget: vom nationalen Anteil zur Nutzung
 
-### Derzeitige Operationalisierung
+### Initiale Operationalisierung 2023
 
 Die folgenden Streicher-basierten Mobilitätsgutschriften bleiben der geltende Bewertungsstand dieser Berichtsfassung. Die veröffentlichte klimaaktiv-Broschüre 2026 beschreibt den Kontextfaktor Mobilität; das bereitgestellte Tool-Handbuch Version 1.08 dokumentiert die nutzungsabhängige virtuelle Deckung und beispielhaft den Wohnwert von 14,11 kWh PE/(m² NGF a) [@klimaaktiv2026peq, S. 10; @peq2026handbuch, S. 66]. Die vollständigen vier Referenzwerte stammen aus der Kalibrierung 2023. Damit wird keine vollständige Prüfung der aktuell produktiven Softwareversion behauptet.
 
@@ -173,11 +175,13 @@ Für die Bewertung wird der Zielverkehr dem Quartier zugeordnet. Die Simulation 
 
 Die Mobilitätsallokation beruht auf den Mobilitätsdaten von 2013/2014 und dem nationalen Energieszenario. Neue Erhebungen zu Verkehrsverhalten, Fahrzeugflotte und Flächennutzung ermöglichen eine Aktualisierung der Gutschriften. Das Zuordnungsprinzip bleibt dabei bestehen; Ausgangsbudget und Verteilung werden gemeinsam überprüft.
 
-### Laufende Rekalibrierung auf Transition 2040
+### Aktuelle Operationalisierung (2026) auf Basis UBA Transition 2040 (2024)
 
-::: {.callout-note title="In Überarbeitung: Rekalibrierung auf UBA Transition 2040"}
-Die geltenden Gutschriften bleiben unverändert. Die Übertragung der sektoralen Zuordnung auf *Transition 2040* des Umweltbundesamts ist in Bearbeitung. Die folgenden UBA-Werte sind eine veröffentlichte Szenariogrundlage und noch keine neue Allokation oder Deklarationsanforderung. WEM/WAM 2025 dienen als neuere Vergleichsszenarien, WEM/WAM 2023 als Vergleich derselben Modellgeneration wie Transition. WAM 2025 entspricht im Energieteil WAM NEKP 2024 [@uba2025szenarien, S. 62].
+::: {.callout-note title="Modellstand 2026 und geltende Gutschriften"}
+Die aktuelle Operationalisierung 2026 umfasst die normierten UBA-Daten, den Szenarienvergleich und eine parametrische Berechnung. Die Rekalibrierung der sektoralen Zuordnung bleibt offen; bis zu deren Festlegung gelten die initialen Mobilitätsgutschriften 2023 unverändert. Die folgenden UBA-Werte sind eine veröffentlichte Szenariogrundlage und noch keine neue Allokation oder Deklarationsanforderung. WEM/WAM 2025 dienen als neuere Vergleichsszenarien, WEM/WAM 2023 als Vergleich derselben Modellgeneration wie Transition. WAM 2025 entspricht im Energieteil WAM NEKP 2024 [@uba2025szenarien, S. 62].
 :::
+
+Die Jahresangabe **2024** bezeichnet hier die Ausgabe mit Copyright 2024. Auf Titelblatt und Seitenfuß von REP-0880 steht „Wien 2023“; die Modellgeneration bleibt entsprechend 2023. Diese Datierung ändert weder Zieljahr noch Zahlenbasis [@uba2023transition, Impressum].
 
 Die Fortschreibung konzentriert sich auf die **Elektrizitätsbilanz**. Stromerzeugung, Strombedarf und Nettoimporte werden in PJ elektrischer Energie pro Jahr verglichen. Der energetische Endverbrauch aller Energieträger bleibt ein separater Sektorausweis im Datenmodell und geht nicht als Strombedarf in das Allokationsmodell ein. Verbrauch des Energiesektors, Transportverluste und elektrischer Umwandlungseinsatz sind gesonderte Bedarfspositionen. Der Umwandlungseinsatz ist bereits ein Strombedarf; der später erzeugte Wasserstoff darf nicht nochmals als Endstrom addiert werden.
 
@@ -186,6 +190,28 @@ Die Fortschreibung konzentriert sich auf die **Elektrizitätsbilanz**. Stromerze
 Die publizierten Gesamtsummen bleiben neben den Komponentensummen erhalten. Die Bilanzreste werden weder auf Bedarfe verteilt noch durch erfundene Erzeugung oder Verlustflüsse ausgeglichen. Für WEM/WAM 2025 folgt die gelieferte Normierung **Tabelle E auf S. 12** von REP-0995. Tabelle 19 auf S. 64 desselben Berichts enthält abweichende Erzeugungswerte, etwa 403 statt 406 PJ für WAM 2040. Dieser Quellenwiderspruch ist zusätzlich zu den Rundungsresten offen; die beiden Fassungen werden nicht vermischt [@uba2025szenarien, Tab. E und 19]. Für Transition bleibt REP-0880 Tabelle 16 maßgeblich, nicht die abweichend zusammengefasste Erzeugung in REP-0882.
 
 Die Legacy-Kalibrierung wird über ihre belegten sektoralen Zuordnungen und Mobilitätsbudgets verglichen. Eine vollständige nationale Streicher-Stromtabelle in derselben Abgrenzung wie die UBA-Tabellen liegt im normierten Datenpaket nicht vor. Fehlende Werte werden deshalb nicht mit null oder einer UBA-Zahl ersetzt; auch die historischen Horizonte 2050 und 2040 werden nicht gleichgesetzt.
+
+### Ausbau und Bedarf: Ausgangsbilanz 2020 bis Zieljahr 2040
+
+Als „heute“ dient ausdrücklich das **Ausgangsjahr 2020** der Transition-Bilanz, nicht das Kalenderjahr 2026. Gegenüber 2020 steigt die publizierte jährliche Stromerzeugung von 249 auf 457 PJ und der Strombedarf von 257 auf 450 PJ. Gleichzeitig sinkt der gesamte energetische Endverbrauch von 1.053 auf 722 PJ. Die Elektrifizierung erhöht den Strombedarf, obwohl der Bedarf über alle Energieträger abnimmt [@uba2023transition, Tab. A, 15 und 16].
+
+Die folgende Grafik greift die Leserichtung des schematischen Sektorbilds auf: links Ausgangsertrag und zusätzlicher Ertrag, in der Mitte Erzeugung und Stromsystem, rechts Sektorbedarf und daneben der Vergleich mit 2020. Der untere, **getrennte** Sankey zeigt die notwendige Endenergieminderung. Die Linien beschreiben Jahresenergiemengen, keine installierten Leistungen und keine virtuellen PE-Gutschriften. Zentral/dezentral und MIV/ÖV werden erst durch ausdrücklich dokumentierte Parameter im Notebook unterschieden.
+
+::: {.content-visible when-format="html"}
+```{=html}
+<iframe src="../Abbildungen/transition_sankey.html" title="Sankey: Stromausbau und Energiebedarf 2020 bis 2040" style="width:100%;height:1250px;border:0" loading="lazy"></iframe>
+```
+
+[Interaktive Grafik in voller Breite öffnen](../Abbildungen/transition_sankey.html)
+:::
+
+::: {.content-hidden when-format="html"}
+![Jährlicher Stromausbau und Bedarf sowie separat die Endenergieminderung: Transition 2040 gegenüber 2020.](../Abbildungen/transition_sankey.png){#fig-transition-sankey}
+:::
+
+„Ausbau“ bezeichnet den zusätzlichen Jahresertrag je Technologie. Der Ersatz ausscheidender Anlagen, Volllaststunden, Witterung und Speicherleistungen müssten für eine Investitions- oder Leistungsplanung zusätzlich modelliert werden. Die Minderung des Endenergieverbrauchs beträgt nach publizierten Gesamtsummen 331 PJ, nach den gerundeten Sektorkomponenten 330 PJ. Beim Ziel-Strombedarf stehen 450 PJ Gesamtsumme einer Komponentensumme von 452 PJ gegenüber. Diese Differenzen werden ausgewiesen und nicht auf Sektoren umgelegt. Die optional auswählbare Ausgangsbilanz 2023 enthält zusätzliche Quellenwidersprüche und ist kein gleichwertiger Ersatz für den konsistenten Transition-Bezug 2020.
+
+Das ausführbare Notebook `Redaktion/transitionsszenarien/Berechnungen/Transition_2040.ipynb` verbindet Eingabetabellen, Rechnungen und Ausgaben. Es erlaubt Varianten des dezentralen PV-Anteils, der Anteile MIV/ÖV/übriger Verkehr und zusätzlicher Strombedarfsminderung. Diese Eingriffe verändern ausschließlich gekennzeichnete Varianten; die UBA-Eingaben und geltenden Gutschriften bleiben erhalten. Die Stromminderung wird nicht zugleich als neue Endenergieprojektion ausgegeben: Dafür fehlen die technologiebezogenen Substitutionsannahmen.
 
 ### Parametrische Struktur der weiteren Allokation
 
@@ -202,72 +228,7 @@ Für eine neue Mobilitätsgutschrift sind folgende Entscheidungen erforderlich:
 
 Die nationalen Jahresstrombilanzen allein bestimmen keine dieser normativen Regeln. Eine pauschale Skalierung der bisherigen Gutschrift mit dem Verhältnis neuer zu alter Stromerzeugung ist deshalb nicht vorgesehen.
 
-## THG-Budget: Wie entstehen 320 kg CO₂e je Quadratmeter?
-
-### Nationale Grundlage und sektorale Verteilung
-
-Zusätzlich zur jährlichen Primärenergiebilanz begrenzt ein kumuliertes THG-Budget die bilanzierten Emissionen aus Errichtung, Nutzung, Instandhaltung und MIV über den definierten Zeitraum.
-
-Das Verfahren unterscheidet drei Budgetvarianten. Ausgangspunkte sind das verbleibende nationale CO₂-Budget, Annahmen über natürliche Senken, ein Anteil von 50 % für Gebäude und MIV sowie eine nationale Bezugsfläche von 906,7 Mio. m² BGF. Der Klimabudgetansatz bezieht sich auf 1,5 °C mit 66 % Wahrscheinlichkeit; dokumentiert werden Varianten mit und ohne temporäre Überschreitung des Temperaturziels [@schneider2025declaration, Abschn. 2.3, Tab. 2 und A1, S. 6–7, 30].
-
-Die Budgetvarianten L1, L2 und L3 beruhen auf einem Klimabudget **ohne temporäre Überschreitung** des Temperaturziels: Von 280 Mt CO₂ ab 2022 verbleiben nach Abzug der bis Ende 2024 angesetzten Emissionen 130 Mt ab 2025. Dieses Ausgangsbudget bildet die Referenz der Bewertung [@schneider2025declaration, Tab. A1].
-
-Mit nationalem Restbudget \(B_{\mathrm{AT}}\), Bevölkerung \(P\), jährlicher Senkenleistung je Person \(s\), Zeitraum \(T\), Sektoranteil \(\alpha\) und Bezugsfläche \(A_B\) gilt:
-
-$$
-b_{\mathrm{THG}}
-=\frac{\alpha\left(B_{\mathrm{AT}}+P\,s\,T\right)}{A_B}.
-$$ {#eq-thg-allokation}
-
-Budget und Senkenleistung werden in einer gemeinsamen Masseneinheit angesetzt. Das nationale CO₂-Budget dient als Grundlage für die Zuteilung; auf Quartiersebene werden die Treibhausgase mit GWP100 in CO₂-Äquivalenten bewertet.
-
-| Größe | Referenzwert | Funktion |
-|---|---:|---|
-| Verbleibendes Budget ab 2025 | 130 Mt CO₂ | Ausgangsbudget ohne zusätzliche Senken |
-| Bevölkerung | 9,0 Mio. Personen | Bezug für die Senkenannahme |
-| Betrachtungsdauer | 50 Jahre | Kumulation der Senkenannahme |
-| Anteil Gebäude und MIV | 50 % | Sektorale Zuteilung |
-| Nationale Bruttogrundfläche im Zieljahr 2040 | 906,7 Mio. m² | Flächenbezogene Verteilung |
-
-: Eingangsgrößen der THG-Allokation [@schneider2025declaration, Tab. A1, S. 30]. {#tbl-thg-eingaben}
-
-Für L3 werden 1 t CO₂e pro Person und Jahr an natürlichen Senken angesetzt. Über 50 Jahre und 9 Mio. Personen entsprechen sie 450 Mt. Zusammen mit dem Ausgangsbudget ergeben sich 580 Mt, davon 290 Mt für Gebäude und MIV. Geteilt durch 906,7 Mio. m² ergibt dies gerundet **320 kg CO₂e/m² BGF**.
-
-| Variante | Senkenannahme [t CO₂e/(Person a)] | THG-Budget [kg CO₂e/m² BGF] |
-|---|---:|---:|
-| L1 | 0 | 72 |
-| L2 | 0,5 | 196 |
-| L3 | 1,0 | 320 |
-
-: Budgetvarianten nach Schneider et al. [@schneider2025declaration, Tab. 2, S. 7]. {#tbl-thg-budgetvarianten}
-
-Die L-Werte sind **Budgetvarianten innerhalb der THG-Bewertung**, nicht die drei PEQ-Qualitätsstufen. Der für diesen Bericht zugrunde gelegte Zertifizierungswert beträgt 320 kg CO₂e/m² BGF. Seine Einhaltung ist zusammen mit der L3-Senkenannahme und den Bilanzregeln zu lesen. Die unterstellte nationale Senkenleistung ist kein vom einzelnen Quartier nachgewiesener Emissionsausgleich.
-
-### Drei Zeitbegriffe
-
-Der Bewertungszeitraum beträgt **50 Jahre, von 2025 bis 2075**. Innerhalb dieses Horizonts werden die treibhauswirksamen Effekte bilanziert.
-
-Die Ableitung orientiert sich am österreichischen Klimaneutralitätsziel **2040**; auf dieses Jahr beziehen sich auch die zugrunde gelegten Flächenprognosen. **2050** wird als vorsorglich späterer Dekarbonisierungszeitpunkt angesetzt, um eine mögliche Verzögerung gegenüber dem ursprünglichen Ziel abzubilden. Damit wird das Prognosejahr der Bezugsfläche nicht automatisch auf 2050 verschoben. Eine spätere Umstellung erfordert eine dokumentierte Fortschreibung.
-
-Die vereinfachende Annahme einer vollständigen Dekarbonisierung der betrachteten Prozesse **ab 2050** führt dazu, dass danach im Modell keine zusätzlichen Emissionen mehr entstehen. Das emissionswirksame Zeitfenster liegt damit faktisch vor 2050, obwohl die Betrachtung bis 2075 reicht. Dies ist eine Szenarioannahme, keine Verkürzung des Bewertungszeitraums und keine Garantie der tatsächlichen Entwicklung [@schneider2025declaration, Abschn. 2.4, S. 7–8; @schneider2026thesis, Abschn. 3.2.8, S. 58–60].
-
-**GWP100** bezeichnet den 100-jährigen Charakterisierungshorizont des Treibhauspotenzials für die Bewertung unterschiedlicher Treibhausgase in CO₂-Äquivalenten. Diese 100 Jahre bestimmen nicht die Projektlaufzeit.
-
-Errichtungsemissionen beanspruchen das Budget unmittelbar. Eine rechnerische Verteilung auf 50 Jahresraten würde ihren Emissionszeitpunkt nicht ändern. Für Etappen eines Renovierungsfahrplans muss deshalb betrachtet werden, wann bauliche Emissionen entstehen und welche Betriebsemissionen bis zur jeweiligen Maßnahme anfallen.
-
-## Rekalibrierung: Welche Stellgrößen ändern sich?
-
-Eine Fortschreibung muss klären, ob Datenbasis, Szenario oder Verteilungsentscheidung verändert werden. Beim THG-Budget sind Restbudget, Senkenannahme, Sektoranteil und Bezugsfläche maßgeblich. Diese Größen sind bei einer Rekalibrierung gemeinsam zu überprüfen [@schneider2025declaration, Abschn. 4.2–4.3, S. 27–28].
-
-Zusätzlicher Baubedarf kann eine Entscheidung über die sektorale Verteilung auslösen. Ein höheres Budget je Quadratmeter entsteht daraus nicht von selbst: Bei unverändertem Sektorbudget verteilt sich dieselbe Menge auf mehr Fläche. Soll der Gebäudesektor mehr Budget erhalten, muss die entsprechende Entlastung anderer Sektoren oder eine begründete Änderung der Budgetgrundlage ausgewiesen werden. Eine Erhöhung ohne solche Deckung verändert den Gesamtanspruch.
-
-### PV-Errichtung und sektorale Konsistenz
-
-Die grauen Emissionen der PV-Anlagen bleiben außerhalb der Quartiersbilanz, weil die Erzeugungsanlagen im nationalen Sektormodell der Energieversorgung zugeordnet sind. Diese Abgrenzung setzt voraus, dass ihre Emissionen dort konsistent erfasst werden [@schneider2025declaration, Abschn. 2.4.1 und 4.2, S. 8–9, 27–28].
-
-Eine Alternative nimmt die PV-Errichtung in die Quartiersbilanz auf. Dann müssen Emissionen und Budgetzuordnung gemeinsam neu abgegrenzt werden. Eine zusätzliche Belastung bei unverändertem, anders abgegrenztem Budget würde zwei Bilanzmodelle vermischen. Wie sich die konsistente Alternative auf Grenzwert und Vorteil zusätzlicher PV auswirkt, ist zu berechnen. @sec-bilanzregeln erläutert die Abgrenzung der PV-Errichtung und die Voraussetzungen eines Vergleichs mit einer gebäudebezogenen Normbilanz.
-
-### Sanierung und kommunale Perspektive
+## Sanierung und kommunale Perspektive
 
 Die Sanierungsgutschrift von 15 kWh PE/(m² NGF a) entlastet Bestandsprojekte gegenüber Neubauten [@klimaaktiv2026peq, S. 14]. Ihre Höhe ist normativ gesetzt und bislang nicht quantitativ kalibriert. Sie berücksichtigt, dass schwer sanierbare Gebäude andere Handlungsmöglichkeiten haben als Neubauten.
 
@@ -275,6 +236,6 @@ Eine mögliche Differenzierung nach Gebäudealter, Denkmalschutz oder weiteren S
 
 Eine kommunale Zwischenebene, beispielsweise für Wien, könnte nationale Vorgaben zunächst auf kommunale Beiträge und dann auf Quartiere beziehen. Diese Erweiterung ist eine Entwicklungsperspektive; sie ist noch kein implementierter Kontextfaktor [@schneider2026thesis, Abschn. 3.5.1, S. 89–90]. Dieselben Energie- oder Emissionsbudgets dürfen dabei nicht mehrfach zugeteilt werden.
 
-## Folgerungen für Planung und Verwaltung
+## Folgerungen für die Anwendung
 
-Die Allokation zeigt, welche Beiträge ein Quartier selbst erbringen soll und welche Voraussetzungen es aus dem übergeordneten System übernimmt. Ein Nachweis sollte deshalb neben dem Ergebnis den Methodenstand, die Systemgrenzen, Flächenbezüge und Kontextgutschriften ausweisen. Erst damit lässt sich unterscheiden, ob eine Verbesserung aus einer Planungsmaßnahme, einer geänderten Annahme oder einem anderen Bewertungsmaßstab stammt.
+Die jährliche PE-Anforderung hängt von Szenario, sektoraler Zuordnung, Dichte und Nutzung ab. Ein Nachweis muss deren Methodenstand und Flächenbezüge nennen. Die UBA-Aktualisierung ist eine neue Datengrundlage; eine geänderte Gutschrift folgt erst nach begründeter Allokation. Für die kumulierten Emissionen gilt zusätzlich @sec-zielwert-thg.

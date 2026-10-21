@@ -26,7 +26,7 @@ Der Standard unterscheidet drei aufeinander aufbauende Qualitätsstufen:
 | **Plus-Energie-Quartier mit Mobilität** | Gebäudebetrieb und zugeordnete motorisierte Individualmobilität | Positive bewertete Primärenergiebilanz einschließlich Mobilität |
 | **Klimaneutrales Plus-Energie-Quartier** | Zusätzlich Lebenszyklusemissionen aus baulichen Prozessen, Betrieb und Mobilität | Positive bewertete Primärenergiebilanz und Einhaltung des kumulierten THG-Budgets |
 
-Die dritte Qualitätsstufe verwendet im dokumentierten Referenzverfahren ein Treibhausgasbudget von **320 kg CO₂e/m² BGF**. Dieses gilt unter den festgelegten Systemgrenzen und Szenarioannahmen. Seine Herleitung wird in @sec-allokation erläutert; die berücksichtigten Lebenszyklusprozesse beschreibt @sec-bilanzregeln.
+Die dritte Qualitätsstufe verwendet im dokumentierten Referenzverfahren ein Treibhausgasbudget von **320 kg CO₂e/m² BGF**. Dieses gilt unter den festgelegten Systemgrenzen und Szenarioannahmen. Seine Herleitung wird in @sec-zielwert-thg erläutert; die berücksichtigten Lebenszyklusprozesse beschreibt @sec-bilanzregeln.
 
 ![Die drei Qualitätsstufen des klimaaktiv Standards und die Erweiterung ihrer energetischen und treibhausgasbezogenen Bilanzgrenzen.](../Abbildungen/standard_systemgrenzen.svg){#fig-standard-systemgrenzen width="100%"}
 
@@ -54,7 +54,7 @@ Der Standard berücksichtigt dies über drei Kontextfaktoren:
 
 Die Kontextfaktoren verändern die **energetische Bewertungsanforderung**, nicht die tatsächlich benötigte oder erzeugte Energie. Eine positive Bewertungsbilanz kann daher auch dann erreicht werden, wenn das Quartier physisch keinen Nettoenergieüberschuss aufweist.
 
-Die Herleitung der Zielwerte beschreibt @sec-allokation, die Berechnung und Anwendung der Kontextfaktoren @sec-kontext.
+Die Herleitung der Zielwerte beschreiben @sec-allokation und @sec-zielwert-thg, die Berechnung und Anwendung der Kontextfaktoren @sec-kontext.
 
 
 

@@ -29,7 +29,7 @@ Die Ergebnisdarstellung stellt Energiebedarf und Energieaufbringung gegenüber u
 
 Die THG-Bewertung der dritten Qualitätsstufe umfasst die im Standard festgelegten baulichen, betrieblichen und mobilitätsbezogenen Emissionen. Die kumulierte Bilanz wird dem zugeteilten Budget gegenübergestellt. **Zeitpunkt und Art der Emissionen** sind für die Interpretation wesentlich: Herstellungsemissionen entstehen bei der baulichen Maßnahme, während Betriebsemissionen über die Jahre anfallen.
 
-Das für den dokumentierten Methodenstand verwendete Referenzbudget und seine Annahmen werden in @sec-allokation erläutert; die Systemgrenzen stehen in @sec-bilanzregeln.
+Das für den dokumentierten Methodenstand verwendete Referenzbudget und seine Annahmen werden in @sec-zielwert-thg erläutert; die Systemgrenzen stehen in @sec-bilanzregeln.
 
 
 Die kumulierte THG-Bilanz setzt sich aus den einzelnen baulichen, betrieblichen und mobilitätsbezogenen Emissionsbeiträgen zusammen. Die Gegenüberstellung mit dem Budget zeigt den verbleibenden Spielraum beziehungsweise eine Überschreitung.

@@ -2,6 +2,7 @@ project:
   type: book
   output-dir: _book
   resources:
+    - Abbildungen/transition_sankey.html
     - "!Redaktion/**"
     - "!.local/**"
     - "!Berechnungen/**"
@@ -27,6 +28,7 @@ book:
     - part: "Methodik"
       chapters:
       - Kapitel/03-allokation.qmd
+      - Kapitel/03-zielwert-thg.qmd
       - Kapitel/04-bilanzregeln.qmd
       - Kapitel/05-kontextfaktoren.qmd
       - Kapitel/08-fortschreibung.qmd

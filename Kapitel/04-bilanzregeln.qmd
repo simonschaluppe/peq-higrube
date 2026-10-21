@@ -6,7 +6,7 @@ Was gehört zur Quartiersbilanz – und wie werden Energieflüsse und Emissionen
 
 Die Aussage einer Energie- oder Treibhausgasbilanz hängt wesentlich davon ab, **was einbezogen, wie zugeordnet und über welchen Zeitraum bewertet wird**. Der klimaaktiv Standard legt deshalb räumliche, funktionale und zeitliche Systemgrenzen fest. Diese gelten für Energiebedarf, erneuerbare Erzeugung, Mobilität und Lebenszyklusemissionen ebenso wie für die zugehörigen Zielwerte und Kontextfaktoren.
 
-Die drei Qualitätsstufen und ihre Erfüllungskriterien werden im Kapitel @sec-standard eingeführt. Dieses Kapitel erläutert die **konkreten Bilanzierungsregeln**. Die nationale Herleitung der Anforderungen steht in @sec-allokation; ihre kontextabhängige Anwendung in @sec-kontext.
+Die drei Qualitätsstufen und ihre Erfüllungskriterien werden im Kapitel @sec-standard eingeführt. Dieses Kapitel erläutert die **konkreten Bilanzierungsregeln**. Die nationale Herleitung der Anforderungen steht in @sec-allokation und @sec-zielwert-thg; ihre kontextabhängige Anwendung in @sec-kontext.
 
 ## Räumliche Systemgrenze: Was gehört zum Quartier?
 
@@ -155,7 +155,7 @@ Gemeinsame Zeitachse für beispielhafte stündliche PV-Erzeugung, Strombedarf, N
 
 Die Lebenszyklus-THG-Bilanz betrachtet den Zeitraum **2025–2075 (50 Jahre)**. Emissionen aus Errichtung, späteren Maßnahmen, Gebäudebetrieb und Mobilität werden innerhalb dieses Zeitraums kumuliert. Die Emissionsfaktoren folgen im Referenzverfahren energieträger- und prozessbezogenen Entwicklungspfaden. Die angenommene vollständige Dekarbonisierung der betrachteten Versorgung und Prozesse **ab 2050** ist eine Szenarioannahme und kein Nachweis einer bereits tatsächlich emissionsfreien Versorgung [@schneider2025declaration, Abschn. 2.4; @schneider2026thesis, Abschn. 3.2.8].
 
-Drei Zeitangaben sind auseinanderzuhalten: **2040** als Bezugspunkt des österreichischen Klimaneutralitätsziels und der nationalen Allokation, **2025–2075** als Zeitraum der kumulierten Quartiersbewertung sowie **GWP100** als 100-jähriger Charakterisierungshorizont von Treibhausgasen. GWP100 bedeutet nicht, dass die Quartiersbilanz über 100 Jahre geführt wird. Die Budgetherleitung und die Bedeutung dieser Annahmen stehen in @sec-allokation.
+Drei Zeitangaben sind auseinanderzuhalten: **2040** als Bezugspunkt des österreichischen Klimaneutralitätsziels und der nationalen Allokation, **2025–2075** als Zeitraum der kumulierten Quartiersbewertung sowie **GWP100** als 100-jähriger Charakterisierungshorizont von Treibhausgasen. GWP100 bedeutet nicht, dass die Quartiersbilanz über 100 Jahre geführt wird. Die Budgetherleitung und die Bedeutung dieser Annahmen stehen in @sec-zielwert-thg.
 
 ## Konsequenzen für die Nachweisführung
 

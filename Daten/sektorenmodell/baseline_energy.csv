@@ -1,0 +1,45 @@
+year,metric,value_pj,energy_basis,source_id,source_location,notes
+2020,hydro,151,electricity_generation,TRANSITION,"Tabelle 16, S. 63",
+2020,wind,24,electricity_generation,TRANSITION,"Tabelle 16, S. 63",
+2020,pv,7,electricity_generation,TRANSITION,"Tabelle 16, S. 63",
+2020,biomass,17,electricity_generation,TRANSITION,"Tabelle 16, S. 63",
+2020,geothermal,0,electricity_generation,TRANSITION,"Tabelle 16, S. 63",
+2020,hydrogen_electricity,0,electricity_generation,TRANSITION,"Tabelle 16, S. 63","Quellwert Strich, für Differenzdarstellung als 0 geführt."
+2020,fossil,50,electricity_generation,TRANSITION,"Tabelle 16, S. 63",
+2020,published_total,249,electricity_generation,TRANSITION,"Tabelle 16, S. 63",
+2020,net_imports,8,electricity_generation,TRANSITION,"Tabelle 16, S. 63",
+2020,verkehr,11,electricity_demand,TRANSITION,"Tabelle 15, S. 60",
+2020,gebaeude,107,electricity_demand,TRANSITION,"Tabelle 15, S. 60",
+2020,industrie,98,electricity_demand,TRANSITION,"Tabelle 15, S. 60",
+2020,landwirtschaft,4,electricity_demand,TRANSITION,"Tabelle 15, S. 60",
+2020,verbrauch_sektor_energie,25,electricity_demand,TRANSITION,"Tabelle 15, S. 60",
+2020,transportverluste,11,electricity_demand,TRANSITION,"Tabelle 15, S. 60",
+2020,umwandlungseinsatz,0,electricity_demand,TRANSITION,"Tabelle 15, S. 60","Quellwert Strich, für Differenzdarstellung als 0 geführt."
+2020,published_total,257,electricity_demand,TRANSITION,"Tabelle 15, S. 60",
+2020,verkehr,355,energetic_final,TRANSITION,"Tabelle A, S. 7; Gebäude = Haushalte + Dienstleistungen",
+2020,gebaeude,386,energetic_final,TRANSITION,"Tabelle A, S. 7; Gebäude = Haushalte + Dienstleistungen",
+2020,industrie,299,energetic_final,TRANSITION,"Tabelle A, S. 7; Gebäude = Haushalte + Dienstleistungen",
+2020,landwirtschaft,12,energetic_final,TRANSITION,"Tabelle A, S. 7; Gebäude = Haushalte + Dienstleistungen",
+2020,published_total,1053,energetic_final,TRANSITION,"Tabelle A, S. 7; Gebäude = Haushalte + Dienstleistungen",
+2023,hydro,146,electricity_generation,UBA2025,"Tabelle E, S. 12",Tabelle E weicht von Tabelle 19 ab; inkl. Nettoimport 27 statt 0 PJ. Kein künstlicher Ausgleich.
+2023,wind,29,electricity_generation,UBA2025,"Tabelle E, S. 12",Tabelle E weicht von Tabelle 19 ab; inkl. Nettoimport 27 statt 0 PJ. Kein künstlicher Ausgleich.
+2023,pv,23,electricity_generation,UBA2025,"Tabelle E, S. 12",Tabelle E weicht von Tabelle 19 ab; inkl. Nettoimport 27 statt 0 PJ. Kein künstlicher Ausgleich.
+2023,biomass,16,electricity_generation,UBA2025,"Tabelle E, S. 12",Tabelle E weicht von Tabelle 19 ab; inkl. Nettoimport 27 statt 0 PJ. Kein künstlicher Ausgleich.
+2023,geothermal,0,electricity_generation,UBA2025,"Tabelle E, S. 12",Tabelle E weicht von Tabelle 19 ab; inkl. Nettoimport 27 statt 0 PJ. Kein künstlicher Ausgleich.
+2023,hydrogen_electricity,0,electricity_generation,UBA2025,"Tabelle E, S. 12",Tabelle E weicht von Tabelle 19 ab; inkl. Nettoimport 27 statt 0 PJ. Kein künstlicher Ausgleich.
+2023,fossil,39,electricity_generation,UBA2025,"Tabelle E, S. 12",Tabelle E weicht von Tabelle 19 ab; inkl. Nettoimport 27 statt 0 PJ. Kein künstlicher Ausgleich.
+2023,published_total,254,electricity_generation,UBA2025,"Tabelle E, S. 12",Tabelle E weicht von Tabelle 19 ab; inkl. Nettoimport 27 statt 0 PJ. Kein künstlicher Ausgleich.
+2023,net_imports,27,electricity_generation,UBA2025,"Tabelle E, S. 12",Tabelle E weicht von Tabelle 19 ab; inkl. Nettoimport 27 statt 0 PJ. Kein künstlicher Ausgleich.
+2023,verkehr,13,electricity_demand,UBA2025,"Tabelle 18, S. 62",
+2023,gebaeude,117,electricity_demand,UBA2025,"Tabelle 18, S. 62",
+2023,industrie,85,electricity_demand,UBA2025,"Tabelle 18, S. 62",
+2023,landwirtschaft,5,electricity_demand,UBA2025,"Tabelle 18, S. 62",
+2023,verbrauch_sektor_energie,22,electricity_demand,UBA2025,"Tabelle 18, S. 62",
+2023,transportverluste,0,electricity_demand,UBA2025,"Tabelle 18, S. 62",Gedruckter Wert 0; nicht als Nachweis physisch verlustfreier Netze interpretieren.
+2023,umwandlungseinsatz,11,electricity_demand,UBA2025,"Tabelle 18, S. 62",
+2023,published_total,254,electricity_demand,UBA2025,"Tabelle 18, S. 62",
+2023,verkehr,367,energetic_final,UBA2025,"Tabelle B, S. 10",
+2023,gebaeude,374,energetic_final,UBA2025,"Tabelle B, S. 10",
+2023,industrie,275,energetic_final,UBA2025,"Tabelle B, S. 10",
+2023,landwirtschaft,13,energetic_final,UBA2025,"Tabelle B, S. 10",
+2023,published_total,1029,energetic_final,UBA2025,"Tabelle B, S. 10",

@@ -1,0 +1,7 @@
+project:
+  output-dir: _preview-redaktion
+book:
+  appendices:
+    - Kapitel/anhang-methodenstand.qmd
+    - Kapitel/anhang-quartiersbilanzierung.qmd
+    - Redaktion/transitionsszenarien/Review_Zielwerte_2026.qmd

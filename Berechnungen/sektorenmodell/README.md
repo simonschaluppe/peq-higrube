@@ -43,6 +43,23 @@ Prioritätsregeln, Importberechtigung und PE-Faktoren sind benannte offene Schni
 
 Für Legacy fehlen vollständig vergleichbare nationale Stromtabellen: `physical_data_complete=false`, keine erfundenen physischen Breiten. Die belegten historischen Teilwerte sind als Metadaten verfügbar. Alle Energiearten der Folie einschließlich Wärme zusammenzurechnen ist ausdrücklich ausgeschlossen.
 
-Im Bericht wird zunächst das statische, nicht maßstäbliche SVG-Schema verwendet. Ein interaktives Plotly-Dropdown ist optional und wird in dieser Iteration nicht in das Buch eingebunden. Das SVG funktioniert ohne JS auch für weitere Ausgabeformate; PDF/Word wurden hier nicht gebaut.
+Im Bericht ergänzt das interaktive Plotly-Sankey das schematische Zuordnungsbild. Standard ist die ausdrücklich gewählte Ausgangsbilanz 2020; 2023 bleibt als mit Quellenproblemen gekennzeichneter Vergleich auswählbar. Strom und Endenergie bleiben getrennte Flussbilder. Eine neue PE-Gutschrift wird nicht berechnet. PNG dient als Fallback für weitere Ausgabeformate; PDF/Word wurden hier nicht gebaut.
+
+## Reproduzierbare Grafik und Notebook
+
+```powershell
+python -m unittest Berechnungen.sektorenmodell.test_model Berechnungen.sektorenmodell.test_sankey
+python Berechnungen/check_scenarios.py
+python -m Berechnungen.sektorenmodell.sankey --static
+python -m Berechnungen.sektorenmodell.execute_notebook
+quarto render --to html
+quarto preview --render html --profile redaktion --no-browser
+```
+
+`sankey.py` benötigt Plotly; PNG zusätzlich Kaleido und einen von Kaleido unterstützten lokalen Browser. Geprüft mit Python 3.13 und Plotly 6.5.2. Bei gesperrtem System-Temp-Verzeichnis `TEMP` und `TMP` auf ein beschreibbares lokales Verzeichnis setzen. HTML enthält Plotly eingebettet und benötigt kein CDN.
+
+Das ausgeführte Notebook liegt in `Redaktion/transitionsszenarien/Berechnungen/Transition_2040.ipynb`. Es benötigt zusätzlich pandas, nbformat, nbclient, ipykernel und ipywidgets. Seine Oberfläche nutzt dieselben Rechenfunktionen wie die Berichtsgrafik; Exporte landen mit Zeitstempel in `.local/transition-varianten/`, einschließlich Annahmen, Zahlen und offlinefähiger Grafik. PV- und Verkehrsaufteilung sind standardmäßig nicht gesetzt. Einsparungen verändern nur den Ziel-Strombedarf; Endenergie und Quelltabellen werden nicht mitverändert. Die PV-Aufteilung ist eine Klassifizierung, keine Prioritätsregel der Versorgung.
+
+`baseline_energy.csv` ergänzt die Zieldaten um Quellenzeilen für 2020/2023. `transition_2020_2040_comparison.csv` enthält daraus berechnete Änderungen, Mehrbedarfe und Minderungen, getrennt nach Energiegröße. Das Quarto-Profil `redaktion` ergänzt das Fachreview; der normale HTML-Build enthält dieses Review nicht.
 
 Quellenprüfung, Widersprüche und offene Entscheidungen: [METHODENSTAND.md](METHODENSTAND.md).

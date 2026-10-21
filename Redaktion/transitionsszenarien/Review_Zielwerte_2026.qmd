@@ -1,0 +1,68 @@
+# Redaktionelles Fachreview: Zielwerte 2026 {#sec-review-zielwerte}
+
+Stand: 21. Oktober 2026. Kritische Durchsicht von @sec-allokation und @sec-zielwert-thg, Quellenabgleich und Rechenprüfung. Die Antworten dokumentieren den vorliegenden Methodenstand; sie ersetzen keine externe Begutachtung oder normative Freigabe. Dieses Kapitel erscheint nur im Quarto-Profil `redaktion`.
+
+## Was ist 2026 bereits operationalisiert?
+
+**Frage:** Bedeutet die neue Überschrift, dass bereits neue Mobilitätsgutschriften gelten?
+
+**Antwort:** Nein. Operationalisiert sind Datenübernahme, Vergleich, Berechnungen und parametrische Visualisierung. Die initialen Gutschriften 2023 bleiben erhalten. Eine neue sektorale Zuordnung erfordert Entscheidungen über zentrale/dezentrale Erzeugung, Berechtigung, Priorität, PE-Faktoren und Flächen. Der Callout stellt dies ausdrücklich klar. **Status: im Text geklärt; normative Rekalibrierung offen.**
+
+## Ist die historische Herleitung sauber belegt?
+
+**Frage:** Sind Streicher 2050, Schneider 2020 und PEQ 2023 dasselbe Szenario?
+
+**Antwort:** Nein. Die Primärstudie von Dezember 2010 untersucht Energieautarkie 2050 mit einer jährlichen Nettobilanz. Das Wachstumsszenario betrifft Energiedienstleistungen beziehungsweise industrielle Bruttowertschöpfung. Schneider (2020) adaptiert daraus lokale Beiträge; die Weiterentwicklung 2023 liefert die hier wiedergegebenen PEQ-Gutschriften. Weder die Jahresbilanz noch die Herkunft „erneuerbar“ weist automatisch ein kumuliertes Klimabudget nach [@streicher2010energieautarkie, S. iii–v; @schneider2020lokal, Abschn. 3.1; @schneider2023context, Abschn. 6.1–6.2]. **Status: Quellenkette ergänzt.**
+
+## Warum steht bei Transition einmal 2023 und einmal 2024?
+
+**Antwort:** REP-0880 nennt Wien 2023 auf dem Titelblatt und Copyright 2024 im Impressum. Die gewünschte Bezeichnung 2024 bezeichnet die Ausgabe; Zieljahr ist 2040, Ausgangsbilanz 2020. Der BibTeX-Schlüssel bleibt aus Kompatibilitätsgründen `uba2023transition`. **Status: im Text und Literaturverzeichnis erläutert.**
+
+## Ist „heute“ tatsächlich heute?
+
+**Antwort:** Nein: „heute“ bezeichnet auf ausdrücklichen Wunsch die konsistente Ausgangsbilanz **2020**. Das Kalenderjahr steht in Diagrammtitel, Vergleich und Notebook. 2020 ist kein Beleg für den Bedarf 2026 und wegen der besonderen damaligen Rahmenbedingungen nicht ohne Prüfung repräsentativ für einen normalen Gegenwartszustand. Das optionale Jahr 2023 hat zusätzliche Tabellenwidersprüche. **Status: klar beschriftet; keine Harmonisierungsschleife.**
+
+## Widerspricht steigender Strombedarf den Einsparungen?
+
+**Antwort:** Nein. Strombedarf und Endenergie aller Energieträger sind unterschiedliche Aggregate. Transition weist 257 → 450 PJ Strombedarf und 1.053 → 722 PJ Endenergie aus. Elektrifizierung und Umwandlung verändern den Strombedarf. Die Grafik hält beide Rechnungen getrennt [@uba2023transition, Tab. A, 15, 16]. Die Endenergieminderung ist eine Szenariodifferenz, kein isolierter Nachweis einzelner Effizienzmaßnahmen. **Status: grafisch und textlich getrennt.**
+
+## Was bedeutet der notwendige Ausbau?
+
+**Antwort:** Der ausgewiesene Ausbau ist zusätzlicher jährlicher Ertrag je Technologie gegenüber 2020. Er ist weder installierte Leistung noch Bruttozubau: Stilllegung, Ersatzinvestitionen, Witterung, Volllaststunden, Netze und Speicher fehlen. Die Jahresbilanz beweist keine stündliche Versorgungssicherheit. **Status: Begrenzung ausdrücklich genannt; Leistungsplanung offen.**
+
+## Können PV und MIV/ÖV bereits verteilt werden?
+
+**Antwort:** Als gekennzeichnete Parameterstudie ja, als UBA-beschlossene Allokation nein. PV wird über einen expliziten Anteil zentral/dezentral geteilt; beide Teile bleiben im selben physischen Stromsystem. MIV/ÖV beziehen sich auf elektrische Energiemengen, nicht auf Modal-Split-Anteile der Wege. Nicht zugeteilter Verkehr bleibt eine dritte Kategorie. Keine dieser Aufteilungen begründet eine sektorale Deckungspriorität oder neue PE-Gutschrift. **Status: im Notebook verfügbar; empirische Parameter und normative Regeln offen.**
+
+## Was bewirkt der Einsparregler?
+
+**Antwort:** Er reduziert den gewählten elektrischen Sektorbedarf gegenüber dem Zielwert 2040. Er modelliert keine konkreten Maßnahmen und verändert nicht gleichzeitig den Endenergiebedarf. Bei unveränderter Erzeugung entsteht gegebenenfalls ein Bilanzrest. Dieser wird nicht automatisch als exportierbarer oder für Mobilität verfügbarer Überschuss ausgegeben. Eine konsistente Maßnahmenrechnung benötigt Technologie- und Substitutionsdaten. **Status: als Sensitivität abgegrenzt.**
+
+## Darf man die Bilanzreste glattziehen?
+
+**Antwort:** Nein. Transition enthält 452 PJ Strombedarf in den Komponenten gegenüber 450 PJ Gesamtsumme. Die Endenergieminderung beträgt nach Sektoren 330 PJ, nach Gesamtsummen 331 PJ. Diese kleinen Abweichungen werden akzeptiert und dokumentiert. WEM/WAM 2025 enthalten darüber hinaus widersprüchliche Erzeugungstabellen: für WAM 2040 406 PJ in Tabelle E gegenüber 403 PJ in Tabelle 19. Das ist eine Quellenfrage, nicht nachgewiesenermaßen bloß Rundung. Die übergebene Normierung folgt Tabelle E; es werden keine Ausgleichsflüsse erfunden [@uba2025szenarien, Tab. E und 19]. **Status: dokumentiert; kein Blocker dieser redaktionellen Fassung.**
+
+## Belegt 320 kg CO₂e/m² Klimaneutralität?
+
+**Antwort:** Der Wert ist eine bedingte Zuteilung: 130 Mt Restbudget plus 450 Mt angenommene Senken, davon 50 % für Gebäude und MIV, geteilt durch 906,7 Mio. m² BGF ergibt rund 320 kg/m². Ohne die angenommene Senkenleistung wären es rund 72 kg/m². Die nationale Senke ist keine nachgewiesene Projektkompensation; Permanenz, Zusätzlichkeit und Doppelzählung sind damit nicht geprüft. Die Übertragung eines CO₂-Restbudgets in eine CO₂e-Quartiersbewertung bleibt eine methodische Konvention und sollte nicht als identische physikalische Größe gelesen werden [@schneider2025declaration, Tab. 2 und A1]. **Status: Bedingtheit im THG-Kapitel kenntlich; Absicherung der Senken offen.**
+
+## Sind Flächen und Zeithorizonte konsistent?
+
+**Antwort:** Die GFZ-Hochrechnung beschreibt rund 1.058,9 Mio. m² BGF im Statistikbezug 2021; die THG-Kalibrierung verwendet eine eigene Prognose von 906,7 Mio. m² für 2040. Diese unterschiedlichen Bestände dürfen nicht stillschweigend ausgetauscht werden. 2040 als Zieljahr, 2025–2075 als Bewertungszeitraum, Dekarbonisierung ab 2050 und GWP100 sind ebenfalls verschiedene Größen. **Status: Unterschiede beschrieben; Harmonisierung von Bestand, Abgrenzung und Zielbestand offen.**
+
+## Was bedeutet die Ausklammerung der PV-Errichtung?
+
+**Antwort:** Sie folgt der Zuordnung zum Energiesektor. Sie bedeutet nicht, dass PV emissionsfrei hergestellt wird. Eine alternative Quartiersabgrenzung muss Emissionen und Budget gemeinsam anpassen und Doppelzählungen vermeiden [@schneider2025declaration, Abschn. 2.4.1 und 4.2]. **Status: im THG-Kapitel erläutert.**
+
+## Welche Entscheidungen bleiben für die nächste Fassung?
+
+| Entscheidung | Vorliegende Antwort / nächster erforderlicher Beleg |
+|---|---|
+| Zentral/dezentrale PV | Standort- und Anlagendefinition sowie belegte Anteile festlegen. |
+| MIV/ÖV/übriger Verkehr | Elektrischen Zielbedarf nach Verkehrsarten belegen, keine Wegeanteile übertragen. |
+| Energieprioritäten | Berechtigte Erzeugung, Importe, Wasserstoffherkunft und sektorale Reihenfolge normativ beschließen. |
+| Neue Mobilitätsgutschrift | Erst nach obigen Entscheidungen PE-Gewichte, Nutzungen und Flächen konsistent verknüpfen. |
+| THG und Senken | Senkenpfad und Budgetabgrenzung begründen; CO₂/CO₂e-Konvention transparent halten. |
+| Flächenfortschreibung | Statistikbestand 2021 mit Zielbestand und energetischen Typologien abstimmen. |
+
+Die bereits dokumentierte Phase 2 des GFZ-Modells bleibt Dokumentation. Wegen der weitgehend vollständigen Ergebnisse und akzeptierten kleinen Abweichungen wurde keine zusätzliche Sensitivitäts- oder Datenbereinigungsschleife ausgelöst.

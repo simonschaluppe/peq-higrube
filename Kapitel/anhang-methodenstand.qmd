@@ -2,7 +2,7 @@
 
 ::: {.preset-anhang}
 
-Dieser Teil bündelt die Grundlagen der Anforderungen an Quartiere: nationale Zukunftsszenarien, sektorale Budgets und deren Verteilung auf Flächen und Nutzungen. Die Herleitung steht in @sec-allokation, die Anwendung in @sec-kontext. Die Annahmen zur Berechnung der Quartiersbilanz folgen in @sec-anhang-quartiersbilanzierung.
+Dieser Teil bündelt die Grundlagen der Anforderungen an Quartiere: nationale Zukunftsszenarien, sektorale Budgets und deren Verteilung auf Flächen und Nutzungen. Die Herleitung steht in @sec-allokation und @sec-zielwert-thg, die Anwendung in @sec-kontext. Die Annahmen zur Berechnung der Quartiersbilanz folgen in @sec-anhang-quartiersbilanzierung.
 
 **Noch zu ergänzen** kennzeichnet eine für die vollständige Darstellung benötigte Angabe, die in dieser Fassung fehlt. **Weiterzuentwickeln** bezeichnet eine bestehende Annahme mit ausstehender methodischer Absicherung oder Aktualisierung. Fehlende Angaben sind keine Nullwerte.
 

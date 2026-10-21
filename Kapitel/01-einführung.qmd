@@ -24,7 +24,7 @@ Dafür sind zwei Festlegungen erforderlich: Einerseits müssen Energie- und Trei
 
 Eine reine Jahresbetrachtung kann sommerliche Überschüsse und winterlichen Netzbezug verdecken. Eine positive Betriebsenergiebilanz wiederum sagt für sich genommen noch nichts darüber aus, ob die Emissionen aus Baustoffen und Errichtung mit einem langfristigen Klimaziel vereinbar sind. Für eine quantitative Bewertung müssen solche Unterschiede ausdrücklich berücksichtigt werden.
 
-Hier setzt der klimaaktiv Standard für Plus-Energie-Quartiere an. Er verbindet einen aus nationalen Energie- und Klimazielen abgeleiteten Bewertungsmaßstab mit der Bilanzierung konkreter Projekte. **Was** der Standard fordert, beschreibt @sec-standard. **Wie** die Zielwerte hergeleitet werden, erläutert @sec-allokation; die Systemgrenzen und Bilanzierungsregeln sind in @sec-bilanzregeln dokumentiert.
+Hier setzt der klimaaktiv Standard für Plus-Energie-Quartiere an. Er verbindet einen aus nationalen Energie- und Klimazielen abgeleiteten Bewertungsmaßstab mit der Bilanzierung konkreter Projekte. **Was** der Standard fordert, beschreibt @sec-standard. **Wie** die Zielwerte hergeleitet werden, erläutert @sec-allokation und @sec-zielwert-thg; die Systemgrenzen und Bilanzierungsregeln sind in @sec-bilanzregeln dokumentiert.
 
 ::: {.callout-note title="Gebäude oder Quartier?"}
 Obwohl der Standard aus dem Konzept der Plus-Energie-Quartiere hervorgegangen ist, lässt sich seine Bewertungsmethodik sowohl auf einzelne Gebäude als auch auf Gebäudegruppen und ganze Quartiere anwenden. Unterschiedliche Standort- und Bebauungsbedingungen werden durch entsprechende Kontextfaktoren berücksichtigt.

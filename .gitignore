@@ -1,5 +1,6 @@
 # Quarto: generierte Ausgaben und Caches
 /_book/
+/_preview-redaktion/
 /_site/
 /site_libs/
 /.quarto/
