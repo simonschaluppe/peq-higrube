@@ -84,6 +84,60 @@ Die Anforderungen an PEQ hängen somit auch davon ab, wie viel der übrige Gebä
 
 **[Abbildungsplatzhalter: Dichteabhängige Anforderungen und Flächenverteilung des Gebäudebestands, übernommen aus Schneider et al. (2023), Abb. 8.]**
 
+### Österreichische Dichteverteilung als aktualisierte Datengrundlage {#sec-gfz-bestand}
+
+Für die Weiterentwicklung der Kalibrierung liegt eine bundeslandweise Hochrechnung des Gebäudebestands mit Statistikbezug 2021 vor. Sie beschreibt, wie sich die Bruttogrundfläche (BGF) über die Geschossflächenzahl (GFZ) verteilt. Dazu werden gebäudescharfe Referenzdaten aus Wien und Salzburg mit statistischen Nutzflächen nach Bundesland, Hauptnutzung und sieben Geschossklassen verbunden: ein bis fünf Geschosse, sechs bis zehn sowie elf und mehr Geschosse. Die Statistik umfasst neun Nutzungsgruppen.
+
+```{mermaid}
+%%| label: fig-gfz-methodik
+%%| fig-cap: "Bundeslandweise Hochrechnung der GFZ-Verteilung. Ersatzreferenzen werden je Zielkombination ausdrücklich ausgewiesen."
+flowchart TB
+  W["Einzelgebäude Wien"] --> KW["BGF-gewichtete KDE je Nutzung und Geschossklasse"]
+  S["Einzelgebäude Salzburg"] --> KS["BGF-gewichtete KDE je Nutzung und Geschossklasse"]
+  KW --> V["Wien"]
+  KS --> L["Acht andere Bundesländer, jeweils separat"]
+  T["Statistische NGF 2021 je Bundesland, Nutzung und Geschossklasse"] --> U["BGF = NGF / 0,8"]
+  U --> V
+  U --> L
+  E["Bei weniger als fünf Referenzgebäuden: gekennzeichnete Ersatzregel"] -.-> V
+  E -.-> L
+  V --> AT["Österreich: Summe der neun BGF-Verteilungen"]
+  L --> AT
+```
+
+Innerhalb jeder Referenzgruppe wird eine mit der BGF der Einzelgebäude gewichtete Kernel-Dichteschätzung (KDE) berechnet. Dadurch repräsentiert die Verteilung Gebäudefläche und nicht Gebäudeanzahl. Die normierten Wahrscheinlichkeitsmassen werden mit der statistischen BGF der jeweiligen Zielgruppe multipliziert. Die Umrechnung von statistischer Nettogrundfläche (NGF) in BGF erfolgt mit dem aus der früheren Analyse übernommenen Verhältnis NGF/BGF = 0,8. Dieser einheitliche Faktor ist eine Modellannahme.
+
+Die KDE verwendet die Scott-Bandbreite und ein GFZ-Raster von 0 bis 20 mit einer Breite von 0,1. Sie wird auf diesem Raster normiert. Damit bleibt die zugeordnete Fläche erhalten; die Behandlung am Rand ist jedoch keine eigenständige physikalische Modellierung sehr geringer oder sehr hoher Dichten.
+
+Für Wien gilt grundsätzlich die Wiener Referenz, für die übrigen Bundesländer die Salzburger. Liegen weniger als fünf geeignete Gebäude vor, wird zuerst dieselbe Nutzung und Geschossklasse aus Wien verwendet. Reicht auch diese Stichprobe nicht aus, folgt die nächstgelegene Geschossklasse derselben Nutzung, zuerst in der vorgesehenen Referenzregion und danach in Wien. Diese Ersatzregel ist für den vorliegenden Arbeitsstand freigegeben. Die Ziel-Flächen der Statistik werden dabei nicht verändert.
+
+![Hochgerechnete, auf die jeweilige Landes-BGF normierte GFZ-Verteilungen für Wien und Salzburg. Die Kurven enthalten die landesspezifische Nutzungs- und Geschossklassenstruktur sowie die ausgewiesenen Ersatzreferenzen; sie sind keine unmittelbaren Häufigkeitsverteilungen der Rohstichproben.](../Abbildungen/gfz_at/gfz_wien_salzburg.png){#fig-gfz-wien-salzburg}
+
+Die modellierte österreichische BGF beträgt rund **1.058,9 Mio. m²**, entsprechend **847,1 Mio. m² NGF**. Die Hochrechnung umfasst 516 positive Kombinationen aus Bundesland, Nutzung und Geschossklasse. Davon werden 425 unmittelbar durch die vorgesehene Referenz und 91 durch Ersatzzuordnungen abgebildet. Flächengewichtet entfallen **98,304 %** auf primäre Referenzen und **1,696 %** auf Ersatzschätzungen. Die Zahl betroffener Kategorien ist deshalb nicht mit ihrem Flächenanteil gleichzusetzen.
+
+![Modellierte BGF-Verteilung Österreichs nach Hauptnutzung. Dargestellt ist GFZ bis 8; rund 0,50 % der BGF liegen im übrigen Modellraster bis GFZ 20 und bleiben in allen Summen enthalten.](../Abbildungen/gfz_at/gfz_oesterreich_nutzung.png){#fig-gfz-oesterreich}
+
+![Flächengewichtete Abdeckung nach Bundesland und für Österreich. Rechts steht jeweils der Anteil der BGF mit Ersatzreferenz.](../Abbildungen/gfz_at/fallback_bundeslaender.png){#fig-gfz-abdeckung}
+
+| Bundesland | BGF [Mio. m²] |
+|---|---:|
+| Burgenland | 38,043 |
+| Kärnten | 68,058 |
+| Niederösterreich | 214,888 |
+| Oberösterreich | 197,149 |
+| Salzburg | 69,494 |
+| Steiermark | 150,038 |
+| Tirol | 99,794 |
+| Vorarlberg | 46,683 |
+| Wien | 174,787 |
+| **Österreich** | **1.058,935** |
+
+: Flächensummen des GFZ-Bestandsmodells 2021. Datenbasis: übergebene Arbeitsdateien der ursprünglichen GFZ-Analyse, Tabellenblatt `python` der Statistikaufbereitung und gebäudescharfes Blatt `Rohdaten`. Rundungsdifferenzen in der Darstellung sind möglich. {#tbl-gfz-bundeslaender}
+
+Das Rechenmodul `Berechnungen/gfz_at/` stellt zusätzlich die vollständige Tabelle für Bundesland × Nutzung × Geschossklasse mit Ziel-BGF, zugeteilter BGF, Bilanzdifferenz, Referenzregion, Referenzklasse und Stichprobenumfang bereit. Die Neuberechnung aus den ursprünglichen Excel-Eingaben reproduziert die übergebenen Ergebnisse bis auf numerische Rundungsreste. Die Summe der neun Bundesländer stimmt mit den österreichischen Kontrollsummen überein; die BGF bleibt in jeder positiven Zielkombination erhalten. Die flächengewichtete mittlere GFZ des Modells beträgt rund 1,231. Sie ist ein Mittel über die BGF-Verteilung und nicht das Verhältnis der gesamten BGF zur gesamten Grundstücksfläche Österreichs.
+
+Die Übertragbarkeit der Salzburger Stichprobe auf andere Bundesländer, der einheitliche NGF/BGF-Faktor, auffällige Geschossklassenzuordnungen und die Empfindlichkeit gegenüber KDE-Parametern bleiben dokumentierte methodische Einschränkungen. Eine zusätzliche Sensitivitätsrunde wurde für diesen Arbeitsstand nicht durchgeführt. Der Bestand 2021 ist außerdem noch kein Zielbestand 2040: Neubau, Abriss, Verdichtung, Sanierung und energetische Typologien müssen in einem anschließenden Modellschritt ergänzt werden. Die hier dargestellte Aktualisierung ersetzt daher noch nicht die zuvor beschriebenen Energie- und THG-Zielwerte oder deren Flächenbezüge.
+
 ## Mobilitätsbudget: vom nationalen Anteil zur Nutzung
 
 Der motorisierte Individualverkehr erweitert den Energiebedarf, für den das Quartier bilanziell Verantwortung übernimmt. Gleichzeitig erhält er einen Anteil der zentral bereitgestellten erneuerbaren Energie. Dieser Anteil wird über die Nutzungen auf Quartiere verteilt.
