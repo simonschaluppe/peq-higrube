@@ -106,9 +106,6 @@ div.csl-indent {
     document.body.classList.add('hypothesis-enabled');
   });
 </script>
-<script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
-<script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
-<link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
@@ -167,6 +164,13 @@ window.Quarto = {
   <li class="nav-item">
     <a class="nav-link" href="https://simonschaluppe.github.io/peexcel/" target="_blank"> 
 <span class="menu-text">Das Nachweistool</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../files/Klimaneutrale-Plus-Energie-Quartiere.docx"> <i class="bi bi-download" role="img">
+</i> 
+<span class="menu-text">Download</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -317,6 +321,11 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../Berechnungen/gfz_at/GFZ_AT_Analyse_Anhang.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Ableitung der GFZ-Dichteverteilung des österreichischen Gebäudebestands 2021</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../Kapitel/anhang-quartiersbilanzierung.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Annahmen der Quartiersbilanzierung</span></a>
   </div>
 </li>
@@ -332,10 +341,9 @@ window.Quarto = {
     <h2 id="toc-title">Inhaltsverzeichnis</h2>
    
   <ul>
-  <li><a href="#dichte-physikalisches-prinzip-und-kalibrierte-anforderung" id="toc-dichte-physikalisches-prinzip-und-kalibrierte-anforderung" class="nav-link active" data-scroll-target="#dichte-physikalisches-prinzip-und-kalibrierte-anforderung">Dichte: physikalisches Prinzip und kalibrierte Anforderung</a></li>
+  <li><a href="#begründung-und-zielsetzung" id="toc-begründung-und-zielsetzung" class="nav-link active" data-scroll-target="#begründung-und-zielsetzung">Begründung und Zielsetzung</a></li>
+  <li><a href="#dichte-physikalisches-prinzip-und-kalibrierte-anforderung" id="toc-dichte-physikalisches-prinzip-und-kalibrierte-anforderung" class="nav-link" data-scroll-target="#dichte-physikalisches-prinzip-und-kalibrierte-anforderung">Dichte: physikalisches Prinzip und kalibrierte Anforderung</a></li>
   <li><a href="#operationalisierung-über-den-gebäudebestand" id="toc-operationalisierung-über-den-gebäudebestand" class="nav-link" data-scroll-target="#operationalisierung-über-den-gebäudebestand">Operationalisierung über den Gebäudebestand</a></li>
-  <li><a href="#sec-gfz-bestand" id="toc-sec-gfz-bestand" class="nav-link" data-scroll-target="#sec-gfz-bestand">Österreichische Dichteverteilung als aktualisierte Datengrundlage</a></li>
-  <li><a href="#dichte-der-städtebauliche-entwurf-verändert-beide-seiten" id="toc-dichte-der-städtebauliche-entwurf-verändert-beide-seiten" class="nav-link" data-scroll-target="#dichte-der-städtebauliche-entwurf-verändert-beide-seiten">Dichte: Der städtebauliche Entwurf verändert beide Seiten</a></li>
   </ul>
 </nav>
     </div>
@@ -362,18 +370,59 @@ window.Quarto = {
 
 
 <div class="lead">
-<p>Vom nationalen Energieziel zur Verteilung auf Dichteklassen und Gebäudetypen</p>
+<p>Berücksichtigung der baulichen Dichte bei der Verteilung nationaler Energieziele auf Gebäude und Quartiere</p>
 </div>
-<p>Die gemeinsame Bewertungslogik steht in <a href="03-methodik.html#sec-kontext" class="quarto-xref"><span>Kontextfaktoren: Eine Bilanz, zwei gleichwertige Darstellungen</span></a>. Der Dichtefaktor übersetzt die nationale Energieaufgabe in Anforderungen, die unterschiedliche Verhältnisse von Grundstücks- und Geschossfläche berücksichtigen.</p>
+<section id="begründung-und-zielsetzung" class="level2">
+<h2 class="anchored" data-anchor-id="begründung-und-zielsetzung">Begründung und Zielsetzung</h2>
+<p>Die bauliche Dichte hat einen wesentlichen Einfluss auf das Verhältnis zwischen lokalem Energiebedarf und erneuerbarem Erzeugungspotenzial. Während der Energiebedarf näherungsweise mit der genutzten Geschossfläche steigt, ist das Potenzial zur lokalen Energieerzeugung insbesondere durch die verfügbaren Dach-, Fassaden- und Grundstücksflächen begrenzt. Bei steigender Dichte nimmt daher das lokal verfügbare Erzeugungspotenzial je Quadratmeter Bruttogrundfläche (BGF) typischerweise ab. Dieser Zusammenhang wurde unter anderem in Untersuchungen zu Plus-Energie-Gebäuden und -Quartieren aufgezeigt <span class="citation" data-cites="Fellner2020Mikroquartiere Schoefmann2020Zukunftsquartier schneider2023context">(<a href="../references.html#ref-Fellner2020Mikroquartiere" role="doc-biblioref">Fellner u.&nbsp;a. 2020, 263</a>; <a href="../references.html#ref-Schoefmann2020Zukunftsquartier" role="doc-biblioref">Schöfmann u.&nbsp;a. 2020, 53</a>; <a href="../references.html#ref-schneider2023context" role="doc-biblioref">Schneider u.&nbsp;a. 2023, 11–12</a>)</span>.</p>
+<p>Eine für alle Gebäude und Quartiere einheitliche Anforderung an eine ausgeglichene oder positive jährliche Energiebilanz würde diese strukturellen Unterschiede nicht berücksichtigen. Gebäude geringer Dichte könnten die Anforderung aufgrund ihrer größeren verfügbaren Erzeugungsfläche je BGF vergleichsweise leicht erfüllen, während kompakte, mehrgeschossige Gebäude selbst bei hoher Energieeffizienz an die Grenzen ihres lokalen Erzeugungspotenzials stoßen können.</p>
+<p>Dies steht in einem Zielkonflikt mit den übergeordneten Zielen einer flächensparenden und kompakten Siedlungsentwicklung. Eine energetische Bewertung soll daher <strong>hohe bauliche Dichten nicht allein aufgrund ihrer begrenzten lokalen Erzeugungsflächen benachteiligen</strong> und gleichzeitig die vorhandenen Erzeugungspotenziale bei niedriger Dichte angemessen ausschöpfen.</p>
+<div id="fig-dichte-prinzip" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-dichte-prinzip-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../Abbildungen/dichte_prinzip2.png" class="img-fluid figure-img" style="width:95.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-dichte-prinzip-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Abbildung&nbsp;5.1: Zusammenhang zwischen baulicher Dichte, verfügbarer Erzeugungsfläche und spezifischem Energiepotenzial.
+</figcaption>
+</figure>
+</div>
+<p>Der <strong>Dichtefaktor</strong> berücksichtigt diesen Zusammenhang durch eine dichteabhängige Anpassung der energetischen Anforderungen. Gebäude und Quartiere geringer Dichte müssen einen entsprechend höheren Energieüberschuss erzielen, während bei hoher Dichte ein geringerer Überschuss beziehungsweise ein begrenzter Energiebezug zulässig sein kann. Dadurch wird die Verantwortung für die Erreichung übergeordneter Energieziele zwischen unterschiedlichen Dichteklassen verteilt.</p>
+<p>Die Anpassung erfolgt nicht beliebig, sondern auf Grundlage einer national kalibrierten Anforderungsfunktion. Die Summe der Anforderungen über den Gebäudebestand muss mit dem übergeordneten Energieziel vereinbar sein. Der Dichtefaktor verändert somit <strong>die Verteilung der Anforderungen, nicht die tatsächlichen Energieflüsse</strong> eines Gebäudes oder Quartiers.</p>
+<p>Als Kenngröße der baulichen Dichte dient die Geschoßflächenzahl (GFZ), definiert als Verhältnis von Bruttogrundfläche zu Grundstücksfläche. Sie bildet den grundlegenden Zusammenhang zwischen Energiebedarf und lokalem Erzeugungspotenzial vereinfacht ab. Die konkrete Architektur, Verschattung und technische Ausstattung werden weiterhin über die tatsächliche Energiebilanz berücksichtigt.</p>
+<p>Die folgenden Abschnitte erläutern das physikalische Prinzip, die mathematische Anforderungsfunktion und deren Kalibrierung anhand des österreichischen Gebäudebestands. Die gemeinsame Bewertungslogik der Kontextfaktoren ist in <a href="03-methodik.html#sec-kontext" class="quarto-xref"><span>Kontextfaktoren: Eine Bilanz, zwei gleichwertige Darstellungen</span></a> beschrieben, die Ableitung der nationalen Energieziele in <a href="03-allokation.html" class="quarto-xref"><span>Sektorales Zielbild Energie</span></a>.</p>
+</section>
 <section id="dichte-physikalisches-prinzip-und-kalibrierte-anforderung" class="level2">
 <h2 class="anchored" data-anchor-id="dichte-physikalisches-prinzip-und-kalibrierte-anforderung">Dichte: physikalisches Prinzip und kalibrierte Anforderung</h2>
-<p>Der Grundgedanke lässt sich mit einer vereinfachten Beziehung zeigen. Sei (A_G) die Grundstücksfläche und (A_B) die Bruttogrundfläche. Die Geschoßflächenzahl ist (d=A_B/A_G). Werden eine jährliche lokale Erzeugung (p) je Grundstücksfläche und ein jährlicher Bedarf (e) je Bruttogrundfläche angesetzt, folgt:</p>
+<p>Der Grundgedanke lässt sich mit einer vereinfachten Beziehung zeigen. Sei <span class="math inline">\(A_G\)</span> die Grundstücksfläche und <span class="math inline">\(A_B\)</span> die Bruttogrundfläche. Die Geschoßflächenzahl ist <span class="math inline">\(d=\frac{A_B}{A_G}\)</span>. Werden eine jährliche lokale Erzeugung <span class="math inline">\(p\)</span> je Grundstücksfläche und ein jährlicher Bedarf <span class="math inline">\(e\)</span> je Bruttogrundfläche angesetzt, folgt:</p>
 <p><span id="eq-dichte-prinzip"><span class="math display">\[
 b(d)=\frac{p A_G-e A_B}{A_B}=\frac{p}{d}-e.
 \tag{5.1}\]</span></span></p>
-<p>Erzeugung und Bedarf sind in derselben Energiegröße auszudrücken; (b) ist dann eine jährliche Bilanz je m² BGF. Die Beziehung zeigt, weshalb das Erzeugungspotenzial je Geschossfläche bei steigender Dichte abnimmt, wenn das Potenzial je Grundstücksfläche gleich bleibt. In realen Projekten hängen Erzeugung und Bedarf zusätzlich von Gebäudeform, Nutzung, Verschattung und Technik ab <span class="citation" data-cites="schneider2023context">(<a href="../references.html#ref-schneider2023context" role="doc-biblioref">Schneider u.&nbsp;a. 2023, 11–12</a>)</span>.</p>
-<p>Aus diesem Zusammenhang wird noch kein verbindlicher Zielwert. Die Anforderungsfunktion ergänzt die Beziehung um eine Verschiebung auf der Dichteachse und eine Begrenzung. Ihre Parameter bestimmen die Lastenverteilung zwischen Quartierstypen. Die so festgelegte Kurve beschreibt eine Anforderung und kein technisches Potenzialmaximum <span class="citation" data-cites="schneider2023context">(<a href="../references.html#ref-schneider2023context" role="doc-biblioref">Schneider u.&nbsp;a. 2023</a>, Gl. 7–8, S. 12–13)</span>.</p>
-<p>Bei niedriger Dichte kann die Regel einen zusätzlichen Überschuss verlangen; bei hoher Dichte kann sie einen negativen Saldo ohne Kontextkorrektur zulassen. Dies lässt sich entweder als unterschiedlicher Zielwert oder als Gut-/Lastschrift gegenüber einem gemeinsamen Nullmaßstab ausdrücken. Die Gutschrift verändert die Anforderung, nicht den realen Energiebedarf.</p>
+<p>Erzeugung und Bedarf sind in derselben Energiegröße auszudrücken; <span class="math inline">\(b\)</span> ist dann eine jährliche Bilanz je m² BGF. Die Beziehung zeigt, weshalb das Erzeugungspotenzial je Geschossfläche bei steigender Dichte abnimmt, wenn das Potenzial je Grundstücksfläche gleich bleibt. In realen Projekten hängen Erzeugung und Bedarf zusätzlich von Gebäudeform, Nutzung, Verschattung und Technik ab - die Dichte-Abhängigkeit der Energiebilanz ist aber empirisch gut dokumentiert <span class="citation" data-cites="schneider2023context">(<a href="../references.html#ref-schneider2023context" role="doc-biblioref">Schneider u.&nbsp;a. 2023, 11–12</a>)</span>. Insbesondere das technische Potentialmaximum von Gebäuden folgt dieser Kurve, siehe etwa <span class="citation" data-cites="Fellner2020Mikroquartiere">(<a href="../references.html#ref-Fellner2020Mikroquartiere" role="doc-biblioref">Fellner u.&nbsp;a. 2020, 263</a>)</span> oder <span class="citation" data-cites="Schoefmann2020Zukunftsquartier">(<a href="../references.html#ref-Schoefmann2020Zukunftsquartier" role="doc-biblioref">Schöfmann u.&nbsp;a. 2020, 53</a>)</span>.</p>
+<div id="fig-dichte-datenpunkte" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-dichte-datenpunkte-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../Abbildungen/dichte_datenpunkte.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-dichte-datenpunkte-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Abbildung&nbsp;5.2: Abhängigkeit des technischen Potentialmaximums von der Dichte
+</figcaption>
+</figure>
+</div>
+<p>Aus diesem Zusammenhang wird noch kein Zielwert. Die Anforderungsfunktion ergänzt die Beziehung um eine Verschiebung auf der Dichteachse. Ihre Parameter bestimmen damit die Lastenverteilung zwischen Gebäuden unterschiedlicher Dichte. Die so festgelegte Kurve beschreibt eine Anforderung<span class="citation" data-cites="schneider2023context">(<a href="../references.html#ref-schneider2023context" role="doc-biblioref">Schneider u.&nbsp;a. 2023</a>, Gl. 7–8, S. 12–13)</span>. Bei niedriger Dichte kann die Regel einen zusätzlichen Überschuss verlangen; bei hoher Dichte kann sie einen negativen Saldo ohne Kontextkorrektur zulassen. Dies lässt sich entweder als unterschiedlicher Zielwert oder als Gut-/Lastschrift gegenüber einem gemeinsamen Nullmaßstab ausdrücken.</p>
+<p>Die Gutschrift verändert abhängig von der Geschoßflächenzahl die Anforderung, nicht den realen Energiebedarf: Niedrige Dichten führen zu zusätzlichen Anforderungen, während höhere Dichten eine Gutschrift erhalten können.</p>
+<p>Die Architektur beeinflusst das tatsächliche Potenzial durch Baukörperstellung, Verschattung, Dach- und Fassadennutzung. Der Dichtefaktor ersetzt diese Optimierung nicht.</p>
+<div id="fig-dichtekurve" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-dichtekurve-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../Abbildungen/dichtekurve.png" class="img-fluid figure-img" style="width:95.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-dichtekurve-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Abbildung&nbsp;5.3: Dichteabhängiger Primärenergie-Kontextfaktor mit Gutschriften und Lastschriften gegenüber dem Nullmaßstab.
+</figcaption>
+</figure>
+</div>
+<p><a href="#fig-dichtekurve" class="quarto-xref">Abbildung&nbsp;<span>5.3</span></a> veranschaulicht die Verteilung der energetischen Anforderungen zwischen unterschiedlichen baulichen Dichten. Die dargestellten Werte sind von den tatsächlich erreichten Energieflüssen des Quartiers zu unterscheiden.</p>
 </section>
 <section id="operationalisierung-über-den-gebäudebestand" class="level2">
 <h2 class="anchored" data-anchor-id="operationalisierung-über-den-gebäudebestand">Operationalisierung über den Gebäudebestand</h2>
@@ -383,160 +432,30 @@ b(d)=\frac{p A_G-e A_B}{A_B}=\frac{p}{d}-e.
 B_{\mathrm{Sektor}}
 =\sum_k\sum_j A_{k,j}\,t_k(d_j).
 \tag{5.2}\]</span></span></p>
-<p>(A_{k,j}) bezeichnet die Fläche des Gebäudetyps (k) in der Dichteklasse (j), (t_k(d_j)) dessen jährlichen spezifischen Zielsaldo. Fläche und Zielsaldo müssen dieselbe Flächendefinition verwenden. Bei einem Zielsaldo in kWh/(m² a) ergibt sich der Sektorsaldo in kWh/a.</p>
+<p><span class="math inline">\(A_{k,j}\)</span> bezeichnet die Fläche des Gebäudetyps <span class="math inline">\(k\)</span> in der Dichteklasse <span class="math inline">\(j\)</span>, <span class="math inline">\(t_k(d_j)\)</span> dessen jährlichen spezifischen Zielsaldo. Fläche und Zielsaldo müssen dieselbe Flächendefinition verwenden. Bei einem Zielsaldo in kWh/(m² a) ergibt sich der Sektorsaldo in kWh/a.</p>
 <p>Die Kalibrierung unterscheidet thermische Sanierung, Sanierung mit geringer PV-Ausstattung, PEQ-Sanierung und PEQ-Neubau mit Anteilen von 40 %, 20 %, 20 % und 20 %. Unsanierter Bestand hat im zugrunde gelegten Zielzustand einen Anteil von 0 %. Zusammen mit der Dichteverteilung bestimmen diese Annahmen den nationalen Sektorsaldo <span class="citation" data-cites="schneider2023context">(<a href="../references.html#ref-schneider2023context" role="doc-biblioref">Schneider u.&nbsp;a. 2023</a>, Tab. 5 und Abb. 8, S. 12–14)</span>.</p>
 <p>Die Anforderungen an PEQ hängen somit auch davon ab, wie viel der übrige Gebäudebestand beiträgt. Eine andere Sanierungsentwicklung oder Dichteverteilung kann eine neue Kalibrierung erfordern. Dafür müssen sowohl die Bestandsdaten als auch die Verteilungsentscheidungen dokumentiert werden.</p>
-<p><strong>[Abbildungsplatzhalter: Dichteabhängige Anforderungen und Flächenverteilung des Gebäudebestands, übernommen aus Schneider et al.&nbsp;(2023), Abb. 8.]</strong></p>
-</section>
-<section id="sec-gfz-bestand" class="level2">
-<h2 class="anchored" data-anchor-id="sec-gfz-bestand">Österreichische Dichteverteilung als aktualisierte Datengrundlage</h2>
-<p>Für die Weiterentwicklung der Kalibrierung liegt eine bundeslandweise Hochrechnung des Gebäudebestands mit Statistikbezug 2021 vor. Sie beschreibt, wie sich die Bruttogrundfläche (BGF) über die Geschossflächenzahl (GFZ) verteilt. Dazu werden gebäudescharfe Referenzdaten aus Wien und Salzburg mit statistischen Nutzflächen nach Bundesland, Hauptnutzung und sieben Geschossklassen verbunden: ein bis fünf Geschosse, sechs bis zehn sowie elf und mehr Geschosse. Die Statistik umfasst neun Nutzungsgruppen.</p>
-<div class="cell" data-layout-align="default">
-<div class="cell-output-display">
-<div id="fig-gfz-methodik" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-gfz-methodik-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div>
-<pre class="mermaid mermaid-js" data-label="fig-gfz-methodik">flowchart TB
-  W["Einzelgebäude Wien"] --&gt; KW["BGF-gewichtete KDE je Nutzung und Geschossklasse"]
-  S["Einzelgebäude Salzburg"] --&gt; KS["BGF-gewichtete KDE je Nutzung und Geschossklasse"]
-  KW --&gt; V["Wien"]
-  KS --&gt; L["Acht andere Bundesländer, jeweils separat"]
-  T["Statistische NGF 2021 je Bundesland, Nutzung und Geschossklasse"] --&gt; U["BGF = NGF / 0,8"]
-  U --&gt; V
-  U --&gt; L
-  E["Bei weniger als fünf Referenzgebäuden: gekennzeichnete Ersatzregel"] -.-&gt; V
-  E -.-&gt; L
-  V --&gt; AT["Österreich: Summe der neun BGF-Verteilungen"]
-  L --&gt; AT
-</pre>
-</div>
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-gfz-methodik-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Abbildung&nbsp;5.1: Bundeslandweise Hochrechnung der GFZ-Verteilung. Ersatzreferenzen werden je Zielkombination ausdrücklich ausgewiesen.
-</figcaption>
-</figure>
-</div>
-</div>
-</div>
-<p>Innerhalb jeder Referenzgruppe wird eine mit der BGF der Einzelgebäude gewichtete Kernel-Dichteschätzung (KDE) berechnet. Dadurch repräsentiert die Verteilung Gebäudefläche und nicht Gebäudeanzahl. Die normierten Wahrscheinlichkeitsmassen werden mit der statistischen BGF der jeweiligen Zielgruppe multipliziert. Die Umrechnung von statistischer Nettogrundfläche (NGF) in BGF erfolgt mit dem aus der früheren Analyse übernommenen Verhältnis NGF/BGF = 0,8. Dieser einheitliche Faktor ist eine Modellannahme.</p>
-<p>Die KDE verwendet die Scott-Bandbreite und ein GFZ-Raster von 0 bis 20 mit einer Breite von 0,1. Sie wird auf diesem Raster normiert. Damit bleibt die zugeordnete Fläche erhalten; die Behandlung am Rand ist jedoch keine eigenständige physikalische Modellierung sehr geringer oder sehr hoher Dichten.</p>
-<p>Für Wien gilt grundsätzlich die Wiener Referenz, für die übrigen Bundesländer die Salzburger. Liegen weniger als fünf geeignete Gebäude vor, wird zuerst dieselbe Nutzung und Geschossklasse aus Wien verwendet. Reicht auch diese Stichprobe nicht aus, folgt die nächstgelegene Geschossklasse derselben Nutzung, zuerst in der vorgesehenen Referenzregion und danach in Wien. Diese Ersatzregel ist für den vorliegenden Arbeitsstand freigegeben. Die Ziel-Flächen der Statistik werden dabei nicht verändert.</p>
-<div id="fig-gfz-wien-salzburg" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-gfz-wien-salzburg-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="../Abbildungen/gfz_at/gfz_wien_salzburg.png" class="img-fluid figure-img">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-gfz-wien-salzburg-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Abbildung&nbsp;5.2: Hochgerechnete, auf die jeweilige Landes-BGF normierte GFZ-Verteilungen für Wien und Salzburg. Die Kurven enthalten die landesspezifische Nutzungs- und Geschossklassenstruktur sowie die ausgewiesenen Ersatzreferenzen; sie sind keine unmittelbaren Häufigkeitsverteilungen der Rohstichproben.
-</figcaption>
-</figure>
-</div>
-<p>Die modellierte österreichische BGF beträgt rund <strong>1.058,9 Mio. m²</strong>, entsprechend <strong>847,1 Mio. m² NGF</strong>. Die Hochrechnung umfasst 516 positive Kombinationen aus Bundesland, Nutzung und Geschossklasse. Davon werden 425 unmittelbar durch die vorgesehene Referenz und 91 durch Ersatzzuordnungen abgebildet. Flächengewichtet entfallen <strong>98,304 %</strong> auf primäre Referenzen und <strong>1,696 %</strong> auf Ersatzschätzungen. Die Zahl betroffener Kategorien ist deshalb nicht mit ihrem Flächenanteil gleichzusetzen.</p>
 <div id="fig-gfz-oesterreich" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-gfz-oesterreich-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="../Abbildungen/gfz_at/gfz_oesterreich_nutzung.png" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-gfz-oesterreich-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Abbildung&nbsp;5.3: Modellierte BGF-Verteilung Österreichs nach Hauptnutzung. Dargestellt ist GFZ bis 8; rund 0,50 % der BGF liegen im übrigen Modellraster bis GFZ 20 und bleiben in allen Summen enthalten.
+Abbildung&nbsp;5.4: Modellierte BGF-Verteilung Österreichs nach Hauptnutzung. Dargestellt ist GFZ bis 8; rund 0,50 % der BGF liegen im übrigen Modellraster bis GFZ 20 und bleiben in allen Summen enthalten.
 </figcaption>
 </figure>
 </div>
-<div id="fig-gfz-abdeckung" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-gfz-abdeckung-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="../Abbildungen/gfz_at/fallback_bundeslaender.png" class="img-fluid figure-img">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-gfz-abdeckung-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Abbildung&nbsp;5.4: Flächengewichtete Abdeckung nach Bundesland und für Österreich. Rechts steht jeweils der Anteil der BGF mit Ersatzreferenz.
-</figcaption>
-</figure>
-</div>
-<div id="tbl-gfz-bundeslaender" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-tbl figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-gfz-bundeslaender-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Tabelle&nbsp;5.1: Flächensummen des GFZ-Bestandsmodells 2021. Datenbasis: übergebene Arbeitsdateien der ursprünglichen GFZ-Analyse, Tabellenblatt <code>python</code> der Statistikaufbereitung und gebäudescharfes Blatt <code>Rohdaten</code>. Rundungsdifferenzen in der Darstellung sind möglich.
-</figcaption>
-<div aria-describedby="tbl-gfz-bundeslaender-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Bundesland</th>
-<th style="text-align: right;">BGF [Mio. m²]</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Burgenland</td>
-<td style="text-align: right;">38,043</td>
-</tr>
-<tr class="even">
-<td>Kärnten</td>
-<td style="text-align: right;">68,058</td>
-</tr>
-<tr class="odd">
-<td>Niederösterreich</td>
-<td style="text-align: right;">214,888</td>
-</tr>
-<tr class="even">
-<td>Oberösterreich</td>
-<td style="text-align: right;">197,149</td>
-</tr>
-<tr class="odd">
-<td>Salzburg</td>
-<td style="text-align: right;">69,494</td>
-</tr>
-<tr class="even">
-<td>Steiermark</td>
-<td style="text-align: right;">150,038</td>
-</tr>
-<tr class="odd">
-<td>Tirol</td>
-<td style="text-align: right;">99,794</td>
-</tr>
-<tr class="even">
-<td>Vorarlberg</td>
-<td style="text-align: right;">46,683</td>
-</tr>
-<tr class="odd">
-<td>Wien</td>
-<td style="text-align: right;">174,787</td>
-</tr>
-<tr class="even">
-<td><strong>Österreich</strong></td>
-<td style="text-align: right;"><strong>1.058,935</strong></td>
-</tr>
-</tbody>
-</table>
-</div>
-</figure>
-</div>
-<p>Das Rechenmodul <code>Berechnungen/gfz_at/</code> stellt zusätzlich die vollständige Tabelle für Bundesland × Nutzung × Geschossklasse mit Ziel-BGF, zugeteilter BGF, Bilanzdifferenz, Referenzregion, Referenzklasse und Stichprobenumfang bereit. Die Neuberechnung aus den ursprünglichen Excel-Eingaben reproduziert die übergebenen Ergebnisse bis auf numerische Rundungsreste. Die Summe der neun Bundesländer stimmt mit den österreichischen Kontrollsummen überein; die BGF bleibt in jeder positiven Zielkombination erhalten. Die flächengewichtete mittlere GFZ des Modells beträgt rund 1,231. Sie ist ein Mittel über die BGF-Verteilung und nicht das Verhältnis der gesamten BGF zur gesamten Grundstücksfläche Österreichs.</p>
-<p>Die Übertragbarkeit der Salzburger Stichprobe auf andere Bundesländer, der einheitliche NGF/BGF-Faktor, auffällige Geschossklassenzuordnungen und die Empfindlichkeit gegenüber KDE-Parametern bleiben dokumentierte methodische Einschränkungen. Eine zusätzliche Sensitivitätsrunde wurde für diesen Arbeitsstand nicht durchgeführt. Der Bestand 2021 ist außerdem noch kein Zielbestand 2040: Neubau, Abriss, Verdichtung, Sanierung und energetische Typologien müssen in einem anschließenden Modellschritt ergänzt werden. Die hier dargestellte Aktualisierung ersetzt daher noch nicht die zuvor beschriebenen Energie- und THG-Zielwerte oder deren Flächenbezüge.</p>
-</section>
-<section id="dichte-der-städtebauliche-entwurf-verändert-beide-seiten" class="level2">
-<h2 class="anchored" data-anchor-id="dichte-der-städtebauliche-entwurf-verändert-beide-seiten">Dichte: Der städtebauliche Entwurf verändert beide Seiten</h2>
-<p>Die Geschoßflächenzahl beschreibt das Verhältnis von Bruttogrundfläche zu Grundstücksfläche. Mit steigender Dichte nimmt die verfügbare lokale Erzeugungsfläche je Geschossfläche typischerweise ab. Der Dichtefaktor berücksichtigt diesen strukturellen Zusammenhang durch eine kalibrierte Anforderungsfunktion. Die folgenden Abschnitte erläutern ihre Form und Kalibrierung; das nationale Energiezielbild steht in <a href="03-allokation.html" class="quarto-xref"><span>Sektorales Zielbild Energie</span></a>.</p>
-<p>Bei niedriger Dichte verlangt die Regel einen zusätzlichen Überschuss. Bei hoher Dichte kann sie einen negativen Saldo vor Kontextkorrektur zulassen. Daraus folgt keine pauschale Empfehlung, durch zusätzliche Geschossfläche eine günstigere Bewertung herzustellen: Mehr Fläche verändert zugleich Bedarf, Herstellungsemissionen und absolute Ressourceninanspruchnahme. Ein Variantenvergleich muss alle diese Änderungen erfassen.</p>
-<p>Die Architektur beeinflusst das tatsächliche Potenzial durch Baukörperstellung, Verschattung, Dach- und Fassadennutzung. Der Dichtefaktor ersetzt diese Prüfung nicht. Zwei Quartiere mit derselben GFZ können unterschiedliche nutzbare PV-Flächen haben. Ebenso konkurrieren auf dem Dach PV, technische Aufbauten, Begrünung, Aufenthalt und Wartungswege um Fläche. Der nachgewiesene Ertrag muss aus einem umsetzbaren Entwurf stammen.</p>
-<p>Die Dichtekorrektur verändert die Anforderungen abhängig von der Geschoßflächenzahl. Niedrige Dichten führen zu zusätzlichen Anforderungen, während höhere Dichten eine Gutschrift erhalten können.</p>
-<div id="fig-dichtekurve" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-dichtekurve-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="../Abbildungen/dichtekurve.png" class="img-fluid figure-img" style="width:95.0%">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-dichtekurve-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Abbildung&nbsp;5.5: Dichteabhängiger Primärenergie-Kontextfaktor mit Gutschriften und Lastschriften gegenüber dem Nullmaßstab.
-</figcaption>
-</figure>
-</div>
-<p><a href="#fig-dichtekurve" class="quarto-xref">Abbildung&nbsp;<span>5.5</span></a> veranschaulicht die Verteilung der energetischen Anforderungen zwischen unterschiedlichen baulichen Dichten. Die dargestellten Werte sind von den tatsächlich erreichten Energieflüssen des Quartiers zu unterscheiden.</p>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-Fellner2020Mikroquartiere" class="csl-entry" role="listitem">
+Fellner, M., T. Zelger, J. Leibold, u.&nbsp;a. 2020. <em>Energie- und lebensqualitätsoptimierte Planung und Modernisierung von Smart City-Quartieren (Smart City MIKROQUARTIERE)</em>. Berichte aus Energie- und Umweltforschung 26/2020. Bundesministerium für Klimaschutz, Umwelt, Energie, Mobilität, Innovation und Technologie (BMK). <a href="https://nachhaltigwirtschaften.at/resources/sdz_pdf/schriftenreihe-2020-26-smart-city-mikroquartiere.pdf">https://nachhaltigwirtschaften.at/resources/sdz_pdf/schriftenreihe-2020-26-smart-city-mikroquartiere.pdf</a>.
+</div>
 <div id="ref-schneider2023context" class="csl-entry" role="listitem">
 Schneider, Simon, Thomas Zelger, David Sengl, und José Baptista. 2023. <span>„A Quantitative Positive Energy District Definition with Contextual Targets“</span>. <em>Buildings</em> 13 (5): 1210. <a href="https://doi.org/10.3390/buildings13051210">https://doi.org/10.3390/buildings13051210</a>.
+</div>
+<div id="ref-Schoefmann2020Zukunftsquartier" class="csl-entry" role="listitem">
+Schöfmann, Petra, Thomas Zelger, Nina Bartlmä, Simon Schneider, Johannes Leibold, und Daniel Bell. 2020. <em>Zukunftsquartier – Weg zum Plus-Energie-Quartier in Wien</em>. Berichte aus Energie- und Umweltforschung 11/2020. Bundesministerium für Klimaschutz, Umwelt, Energie, Mobilität, Innovation und Technologie (BMK). <a href="https://nachhaltigwirtschaften.at/resources/sdz_pdf/schriftenreihe-2020-11-zukunftsquartier.pdf">https://nachhaltigwirtschaften.at/resources/sdz_pdf/schriftenreihe-2020-11-zukunftsquartier.pdf</a>.
 </div>
 </div>
 </section>
