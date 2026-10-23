@@ -53,3 +53,25 @@ Die MIV-Zuordnung wird beim Vergleich auf beiden Seiten identisch angesetzt und 
 ## Eingaben für die Fortschreibung
 
 „Heute“ benötigt ein Bezugsjahr; BGF 2020 ist als leere Spalte vorbereitet. Ebenso sind PEQ-Anteile, Quellen/Unsicherheiten und jahresbezogene PE-Faktoren ergänzbar. Wichtig sind außerdem die Definition der Bestands-/Neubau-/Sanierungsanteile, der Abbau fossiler Versorgung 2040 und Kennwerte für alternative PV-/Flexibilitätsvarianten. Siehe `METHODENSTAND.md` und den Notebook-Ausblick. Keine Optimierungsschleife und keine automatische Anpassung an UBA.
+
+## Internes Szenario- und Kalibrierungsdashboard
+
+`Internes_Kalibrierungsdashboard.ipynb` ist eine temporäre Szenariowerkstatt. In der ersten Codezelle stehen `XLSX`, `SCENARIO`, `AREA_COLUMN` und `DEFAULT`. Als Excel sind Original-Pools mit `Strombed_estim`/`zuordnung_gfz` oder die Reinschrift mit `Typen`/`GFZ_Zuordnung` möglich. Die Datei benötigt gespeicherte Formelwerte und den vorhandenen Datenvertrag. Ein Excel-Wechsel erfordert erneute Notebook-Ausführung; die HTML-Seite liest keine lokalen Dateien nach.
+
+```powershell
+python Berechnungen/gebaeudesektormodell/execute_notebook.py --dashboard
+quarto render --to html
+quarto preview --no-render --no-browser --port 4321
+```
+
+Die gerenderte Seite erlaubt ohne Python-Kernel Änderungen an MIV/übrigem Verkehr (ÖPNV als Rest), Freiflächen-PV (Gebäude-PV als Rest), H₂-Budgetfähigkeit, zusätzlicher Strombedarfssenkung, PV-Erzeugungsskalierung, NGF/BGF sowie den vier Dichteparametern. Sie zeigt Salden, Zielabstand, Prioritätskonflikte, Geometrieklassen und Dichte-Erwartungswerte. JavaScript und Python prüfen dieselbe Referenzrechnung. Ein JSON-Download sichert Parameter, Resultate und Quell-Hashes; er verändert keine Referenzoutputs. `dashboard_template.html` enthält die technische Browseransicht einschließlich der für unmittelbare Interaktion notwendigen Spiegelung der im Notebook definierten Rechnung.
+
+PV-/Bedarfsskalierung ist keine neue PEExcel-Simulation. Eigenverbrauch, Netzbezug, thermische Energie, PE und THG werden dadurch nicht neu bestimmt. Die physische Ziellücke wird nicht mit virtuellen Dichtewerten geschlossen. PEQ-Anteile oder neue Typenmischungen werden ausschließlich durch belegte Eingaben in der Excel vorbereitet, nicht automatisch geschätzt. Die Zuordnung der aktualisierten Excel wird bei jeder Notebook-Ausführung neu auf die GFZ-Verteilungen angewandt.
+
+**Publikationsausschluss:** `_quarto.yml` aktiviert standardmäßig das Profil `intern`; nur dieses und das Profil `redaktion` ergänzen das Dashboard. Für die finale Ausgabe explizit ausführen:
+
+```powershell
+quarto render --profile publikation --to html
+```
+
+Dieses Profil enthält den internen Anhang nicht und schreibt in den getrennten Ordner `_publication/`. Nur diesen Ordner für eine Publikation verwenden, nicht den internen Vorschauordner `_book/`. Nicht mit `intern` oder `redaktion` kombinieren. Der Profilwechsel ist mit `quarto inspect --profile publikation` prüfbar. Es erfolgt hier kein Deployment.

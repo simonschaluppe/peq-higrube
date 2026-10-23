@@ -1,0 +1,3 @@
+# Explizites Profil deaktiviert das Standardprofil intern.
+project:
+  output-dir: _publication

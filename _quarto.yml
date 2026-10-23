@@ -1,3 +1,6 @@
+profile:
+  default: intern
+
 project:
   type: book
   output-dir: _book
