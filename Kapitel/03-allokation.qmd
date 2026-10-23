@@ -124,7 +124,7 @@ PV außerhalb von Gebäuden bleibt in diesen Varianten ein **noch nicht zugeordn
 
 Die sektorale Zuordnung für 2040 erfolgt hier auf elektrischer Endenergiebasis. Eine nachgelagerte PE-Bewertung soll mit einem dokumentierten heutigen Konversionsfaktorensatz die Vergleichbarkeit mit heutigen Nachweisverfahren herstellen. Sie ist keine Prognose der Primärenergieintensität 2040. Ohne belegte Faktoren, Zeitgewichtung, Nutzungsanteile und Flächen wird aus dem elektrischen MIV-Budget keine neue spezifische PE-Gutschrift berechnet. Die historische Operationalisierung wird nicht durch dieses Rechenbeispiel ersetzt.
 
-Die Bottom-up-Gebäudesektorrechnung, die Festlegung des PEQ-Anteils und der Abgleich mit der Dichtefunktion warten auf die aktualisierte Typologie-Excel. Die vorliegende Allokation liefert dafür eine nachvollziehbare, aber noch bedingte Top-down-Zielgröße.
+Die Bottom-up-Gebäudesektorrechnung liegt inzwischen auf Basis der aktualisierten Typologie-Excel vor (@sec-gebaeudebestand; @sec-gebaeudesektormodell). Der gelieferte Pool erreicht einen betrieblichen Stromsaldo von −59,25 PJ/a; unter derselben MIV-Zuordnung ergibt sich −107,25 PJ/a und damit ein Abstand von −100,25 PJ/a zum hier dargestellten Top-down-Beispiel. Die Festlegung der PEQ-Anteile, der PV-Ausstattung und der Dichtekalibrierung bleibt offen. Die Differenz ist kein Rundungsrest und wird nicht durch eine zusätzliche Gutschrift geschlossen.
 
 ## Bilanzschluss, Konsistenz und Freigabe der Kalibriergrundlage
 

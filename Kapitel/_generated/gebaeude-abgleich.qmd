@@ -1,0 +1,8 @@
+| Größe | Bottom-up [PJ/a] | Top-down [PJ/a] | Differenz [PJ/a] |
+| --- | --- | --- | --- |
+| PV-Erzeugung | 78,245 | 149,000 | -70,755 |
+| Gebäudestrombedarf | 137,493 | 108,000 | 29,493 |
+| Betrieblicher Stromsaldo | -59,248 | 41,000 | -100,248 |
+| Saldo einschließlich MIV | -107,248 | -7,000 | -100,248 |
+
+: Vergleich bei gleichen elektrischen Bilanzgrenzen; Top-down-Zuordnungen bleiben vorläufig. {#tbl-gebaeude-abgleich}

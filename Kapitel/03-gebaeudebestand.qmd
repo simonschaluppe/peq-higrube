@@ -1,71 +1,103 @@
 # Gebäudebestand und Entwicklungsszenario 2040 {#sec-gebaeudebestand}
 
 ::: {.lead}
-Gebäudetypologien, nationale Flächenanteile und GFZ-Verteilungen als Bottom-up-Grundlage der PEQ-Kalibrierung
+Gebäudetypologien, nationale Flächen und GFZ-Verteilungen als Bottom-up-Grundlage der PEQ-Kalibrierung
 :::
 
-Die nationale Energieaufgabe des Gebäudesektors aus @sec-allokation muss durch die Summe der Beiträge unterschiedlicher Gebäudetypologien getragen werden. Dafür wird eine **nationale Flächen- und Typologiematrix für das Zieljahr 2040** benötigt. Dieses Kapitel dokumentiert, welche Gebäudeflächen den jeweiligen energetischen Klassen zugeordnet werden und wie sich diese Flächen über bauliche Dichten verteilen. Erst im nächsten Schritt wird daraus die PEQ-Zielwertfunktion kalibriert (@sec-kalibrierung).
+Das Gebäudesektormodell verknüpft die Flächenstruktur des Zieljahres 2040 mit den energetischen Kennwerten der Gebäudetypen und ihren Dichteverteilungen. Es bildet die Bottom-up-Seite zur sektoralen Allokation in @sec-allokation. Die erste Auswertung des gelieferten Pools ergibt **137,49 PJ/a Strombedarf**, **78,25 PJ/a PV-Erzeugung** und einen **betrieblichen Stromsaldo von −59,25 PJ/a**. Diese Zahlen beschreiben den gelieferten Szenariostand. Sie sind noch keine mit UBA Transition abgestimmten PEQ-Zielwerte.
 
-Die neuen Gebäudetypen und ihre Flächenverteilung wurden in einer gesonderten Excel-Grundlage erarbeitet. Die Zahlen und verbindlichen Klassendefinitionen liegen dieser Textfassung **noch nicht als prüfbare Eingabetabelle vor**; sie werden daher nicht aus historischen Typologien abgeleitet oder ersetzt.
+Die vollständige Herleitung, Eingabetabellen, Formeln und Bilanzprüfungen stehen im ausführbaren Anhang @sec-gebaeudesektormodell. Die Berechnungen sind unmittelbar in dessen Notebook-Zellen enthalten.
 
 ## Datenbasis, Flächenbegriffe und Bezugsjahre
 
-Die Bestandsstruktur und die Zielstruktur sind zu unterscheiden: Der statistische Bestand beschreibt ein Beobachtungsjahr, das Entwicklungsszenario die angenommene Flächenverteilung **2040**. Flächenzugänge durch Neubau, Abgänge und der Wechsel zwischen energetischen Klassen durch Sanierung werden so dokumentiert, dass keine Fläche gleichzeitig mehreren Klassen zugerechnet wird.
+Grundlage ist `Building-Sector_Pool 1.xlsx`, einschließlich der am 23.10.2026 ergänzten GFZ-Anteile. Das Blatt `Strombed_estim` enthält die maßgeblichen Flächen- und Energiekennwerte, `zuordnung_gfz` die Zuordnung nach Nutzung und Geschoßklasse. Das Simulationsblatt `Tabelle2` liefert Einheiten und ergänzende Anwendungen. Alle 900 Archetypenschlüssel sind eindeutig und lassen sich vollständig mit den Simulationsergebnissen verbinden. Die gespeicherten Kennwerte stimmen mit den im Kennwertblatt referenzierten Simulationswerten überein; eine erneute PEExcel-Simulation ist damit nicht verbunden.
 
-Die aktuelle GFZ-Hochrechnung verwendet die Statistik-Austria-Gebäudestruktur mit Bezugsjahr 2021, ergänzt um Einzelgebäudedaten aus Wien und Salzburg. Die vorliegende Bestandshochrechnung umfasst rund **1.058,9 Mio. m² BGF**; dies ist eine Bezugsgröße der Bestandsanalyse, **nicht automatisch die für 2040 festzulegende Kalibrierungsfläche**.
+Die nationale Flächensumme beträgt **1.126,579 Mio. m² BGF für 2040**, gegenüber **1.112,341 Mio. m² BGF** in der Quellspalte „heute“. Deren konkretes Bezugsjahr ist noch zu bestätigen. Sie wird deshalb nicht mit 2020 gleichgesetzt. Die Energiekennwerte beziehen sich laut Simulationsblatt auf **NGF**. Für diese erste Aggregation gilt die aus der bestehenden GFZ-Analyse übernommene einheitliche Modellannahme:
 
-Alle flächenbezogenen Energieanforderungen verwenden später eine eindeutig dokumentierte Umrechnung zwischen BGF und der im Nachweis relevanten NGF. Prozentuale Anteile, absolute Flächen und Flächeneinheiten müssen sich jeweils auf dieselbe Grundgesamtheit beziehen.
+$$
+A_{NGF,k,y}=0{,}8\,A_{BGF,k,y}.
+$$
+
+Für 2040 folgen daraus 901,263 Mio. m² NGF. Eine typologiespezifische Umrechnung ist später möglich. Es erfolgt keine Skalierung auf die GFZ-Bestandsfläche von 1.058,935 Mio. m² BGF oder auf die separate Flächenannahme der THG-Allokation. Diese Größen haben unterschiedliche Grundlagen.
+
+Das ältere Blatt `reduced` enthält 696,615 Mio. m² NGF, 486 positiv gewichtete Varianten, 264 echte Nullwerte und 6.450 leere Flächenfelder. Im neuen Kennwertblatt sind 603 Typen für 2040 positiv gewichtet und 297 explizit null; Flächenwerte fehlen dort nicht. Die unterschiedlichen Flächenbezüge, Variantenabdeckungen und Summen werden in @sec-gebaeude-flaechen verglichen. Der ältere Datensatz wird nicht als additive Fläche oder Ersatzgewichtung verwendet. `save` ist ein zusätzlicher Projekt-/Presetstand und keine nationale Flächenbilanz.
 
 ## Energetische Gebäudetypologien 2040 {#sec-gebaeudetypologien}
 
-Hier werden die **neuen** Gebäudetypen aus der Excel-Grundlage eingefügt. Für jede Klasse sind mindestens die Beschreibung des Gebäudebestands beziehungsweise Neubaus, der energetische Ausgangs- und Zielzustand, die berücksichtigte lokale PV-Ausstattung, die Flächenbeziehung und die Anspruchsberechtigung auf eine typologiespezifische Sanierungsanpassung auszuweisen.
+Der vollständige Typenschlüssel kombiniert **Geometrie, Baualter beziehungsweise Hüllstandard, Wärmeversorgung, PV-Ausstattung und Flexibilität**. Die zehn Geometrieklassen sind daher nicht mit zehn energetischen Klassen gleichzusetzen. Der ausgewertete Bestand umfasst neun Baualters-/Hüllcodes und zehn Wärmeversorgungsvarianten. Alle 900 simulierten Typen tragen die Variante `PV30|noFlex`; die übrigen PV-/Flexibilitätsvarianten des 7.200 Szenarien umfassenden Gesamtpools erhalten keine ungeprüft übertragenen Kennwerte.
 
-| Feld je Typologie | Benötigte Angabe | Status |
-|---|---|---|
-| Typologie-ID und Bezeichnung | Eindeutige Excel-Klasse und fachliche Definition | Aus Excel zu übernehmen |
-| Zuordnung zu Neubau/Bestand/Sanierung | Energetischer Entwicklungspfad bis 2040 | Aus Excel zu übernehmen |
-| BGF 2040 beziehungsweise Flächenanteil | Absolute BGF und Anteil an nationaler Ziel-BGF | Aus Excel zu übernehmen |
-| Bezug zur NGF | Flächenumrechnungsregel für Quartierszielwerte | Abzustimmen |
-| Spezifische Energie- und PV-Parameter | Bedarf, Erzeugung und deren Bewertungsbezug | Aus Excel beziehungsweise Modell zuzuordnen |
-| Typologiebezogene Sanierungsanpassung | Klasse, Begründung und zu kalibrierender Parameter | In @sec-kalibrierung festzulegen |
-| GFZ-Verteilung | Aufteilung der Klasse nach Dichte | Mit der GFZ-Analyse zu verbinden |
+`Neu_10cm`, `Neu_20cm` und `Neu_30cm` bezeichnen Hüllcodes. Die Zugehörigkeit zu Bestand, Neubau oder Sanierung folgt den separat gelieferten Anteilen, nicht allein dem Wort „Neu“. Das Feld „Energetischer Standard“ ist noch leer. Auch eine PEQ-Presetbezeichnung oder ein positiver Stromsaldo belegt für sich keine PEQ-Konformität.
 
-: Mindestumfang der neuen nationalen Typologiematrix. Offene Tabellenfelder sind keine Nullwerte. {#tbl-typologien-eingabestruktur}
+{{< include _generated/gebaeude-typologien.qmd >}}
+
+Die Geometrie MFH_2G besitzt derzeit keine positive nationale Fläche. Ihre fehlende GFZ-Zuordnung bleibt sichtbar; für sie wird kein Dichte-Erwartungswert erfunden. Für alle positiv gewichteten Typen liegt eine Zuordnung vor.
 
 ## Flächenentwicklung vom Bestand zum Zieljahr
 
-Die Flächenfortschreibung soll getrennt ausweisen, wie sich neue Gebäudeflächen und der Wechsel zwischen energetischen Typologien auf die Klassenanteile auswirken. Neben der Flächensumme für das Zieljahr sind insbesondere die Sanierungsanteile, Neubauanteile und verbleibenden Bestandsklassen nachvollziehbar zu machen.
+Die gelieferte Gesamtfläche steigt zwischen „heute“ und 2040 um rund 14,238 Mio. m² BGF beziehungsweise 1,28 %. Die Spalten Bestand, Neubau und Sanierung enthalten innerhalb der Archetypen Anteile, die auf jeder positiv gewichteten 2040-Fläche zusammen eins ergeben. Flächengewichtet resultiert:
 
-::: {.callout-note title="Einzuarbeitendes Ergebnis aus der Excel-Grundlage"}
-**Einfügen:** Tabelle der neuen Gebäudetypen und 2040-Flächenanteile, Quellenblatt und Version der Excel, Summe aller Anteile (= 100 % der definierten Bezugsfläche), absolute nationale BGF und gegebenenfalls Übergangsmatrix Bestand → 2040. Die historische Verteilung 40/20/20/20 % wird **nicht** als Platzhalter eingesetzt.
-:::
+{{< include _generated/gebaeude-status.qmd >}}
+
+![Flächenverteilung nach Geometrie. „Heute“ bezeichnet die gleichnamige Quellspalte mit noch offenem Bezugsjahr.](../Berechnungen/gebaeudesektormodell/outputs/flaechen.png){#fig-gebaeude-flaechen width="100%"}
+
+Die Neubaufläche ist nicht mit dem Nettoflächenzuwachs gleichzusetzen. Für einen nachvollziehbaren Entwicklungspfad fehlen noch die zeitliche Definition dieser Kategorien und eine Übergangsbilanz mit Abbruch, Ersatzneubau und Sanierung. Die Reinschrift enthält ein separates, zunächst leeres Feld für BGF 2020. Es wird nicht automatisch aus „heute“ gefüllt.
+
+## Energetische Performance, Strombedarf und PV
+
+Netzbezug und Bruttostrombedarf werden konsequent getrennt. Für die vorliegenden Varianten ohne Speicher, Flexibilität oder simulierte Mobilität gilt:
+
+$$
+E_{el}=E_{Netzbezug}+E_{PV,direkt},\qquad E_{PV}=E_{PV,direkt}+E_{PV,Export}.
+$$
+
+Der physische Stromsaldo ist sowohl als PV-Erzeugung minus Strombedarf als auch als PV-Netzeinspeisung minus Netzbezug bestimmbar. Beide Wege stimmen in der Typenprüfung überein. PV-Direktverbrauch wird nicht doppelt als Deckung angesetzt.
+
+{{< include _generated/gebaeude-strom.qmd >}}
+
+![Flächengewichteter spezifischer Strombedarf nach Anwendungen. Hilfsstrom wird aus den Heiz-/Warmwassersummen herausgelöst und gemeinsam mit Allgemeinstrom dargestellt.](../Berechnungen/gebaeudesektormodell/outputs/strom_anwendungen.png){#fig-gebaeude-strom-anwendungen width="100%"}
+
+Die Kennwerte unterscheiden Heizung, Warmwasser, Kühlung, Lüftung, Hilfs-/Allgemeinstrom, Beleuchtung und Geräte/IT. Kühlung ist im gelieferten Simulationsstand null. Das ist eine Eigenschaft dieser Simulationen und keine Bestätigung, dass im nationalen Gebäudesektor 2040 kein Kühlbedarf besteht. Die detaillierte Herleitung steht in @sec-gebaeude-strom.
+
+## Endenergie und Primärenergie
+
+Fernwärme-, Gas-, Biomasse- und Ölbedarfe werden eigenständig bilanziert. Geringer elektrischer Heizbedarf dieser Typen bedeutet nicht, dass ihre Wärmeversorgung energiefrei wäre. Die Sammelgröße `EUI_other` wird bei den als `Oel` gekennzeichneten Typen Öl zugeordnet; weitere Beträge blieben separat unter sonstiger thermischer Endenergie erhalten.
+
+{{< include _generated/gebaeude-endenergie.qmd >}}
+
+![Endenergie des gelieferten 2040-Pools nach Energieträgern.](../Berechnungen/gebaeudesektormodell/outputs/endenergie.png){#fig-gebaeude-endenergie width="100%"}
+
+Insbesondere die verbleibenden **76,67 PJ/a Gas** und **58,51 PJ/a Öl** zeigen, dass die gelieferte Flächen-/Versorgungsstruktur noch kein vollständig dekarbonisiertes Szenario darstellt. Diese Mengen werden weder als Strom behandelt noch aus der Bilanz entfernt. Die Anwendungsaufteilung der thermischen Energie steht in @sec-gebaeude-endenergie.
+
+Die Primärenergiebilanz aggregiert die gelieferten Import- und Exportkennwerte. Sie enthält keine virtuellen Dichte-, Mobilitäts- oder Sanierungsgutschriften:
+
+{{< include _generated/gebaeude-pe.qmd >}}
+
+Der PE-Saldo von **−409,36 PJ PE/a** ist ein Ergebnis des gelieferten Bewertungsstands. Die konkreten Konversionsfaktoren und ihr Bezugsjahr sind noch zu bestätigen. Effektive Faktoren unterscheiden sich zwischen Typen und zwischen Import und Export; eine einfache Multiplikation sämtlicher Stromflüsse mit einem Jahresmittel würde die gelieferten PEI nicht reproduzieren. Die sektorale Aufgabe 2040 bleibt auf Endenergiebasis definiert. Eine Bewertung mit heutigen Faktoren stellt die Vergleichbarkeit mit heutigen Nachweisverfahren her und ist keine Prognose der PE-Intensitäten 2040 (@sec-gebaeude-pe).
 
 ## GFZ-Verteilung des österreichischen Gebäudebestands {#sec-gfz-verteilung}
 
-Die Geschoßflächenzahl (GFZ) ist das Verhältnis von Bruttogrundfläche zu Grundstücksfläche. Sie beeinflusst das lokal verfügbare PV-Potenzial bezogen auf die Gebäudefläche. Die aktualisierte GFZ-Herleitung nutzt Referenzverteilungen aus Einzelgebäudedaten: für Wien grundsätzlich Wiener, für die übrigen Bundesländer Salzburger Datensätze, gewichtet mit den nationalen Statistik-Austria-Flächen nach Hauptnutzung und Geschoßklasse. Fehlende Teilmengen werden als Ersatzschätzung dokumentiert.
+Die vorhandene GFZ-Hochrechnung verwendet die statistische Gebäudestruktur 2021 und BGF-gewichtete Referenzverteilungen aus Wien und Salzburg. Ihre freigegebene Ersatzregel bleibt unverändert. Die neue Zuordnung aus der Excel übersetzt Nutzung und Geschoßklasse in geometrische Poolklassen. **Eine einzelne Zielklasse erhält 100 %; nur bei einer Aufteilung wird die zweite Zielspalte benutzt.** Diese Regel ist vom Auftraggeber bestätigt und in der aktualisierten Datei vollständig eingetragen. Für Wohngebäude mit zwei oder drei Geschoßen werden beispielsweise EFH_2G und RH_2G mit jeweils 50 % angesetzt.
 
-Für Klassen \(k\) mit den flächenbezogenen Gewichten \(w_k\) gilt die modellierte nationale Dichteverteilung:
+Die im GFZ-Modell zusammengefasste Kategorie „Ein- und Zweifamilienhäuser“ erhält die identischen Regeln der beiden entsprechenden Excel-Nutzungen nur einmal. Dadurch wird keine Referenzfläche doppelt gezählt. Aus den zugeordneten BGF-Mengen entstehen je Geometrie bedingte GFZ-Verteilungen. Unterschiedliche energetische Varianten derselben Geometrie übernehmen im ersten Modellstand dieselbe Verteilung.
 
-$$
-\hat f_{\mathrm{AT}}(d)
-=\sum_k w_k\,\hat f_k(d),
-\qquad
-w_k=\frac{\mathrm{BGF}_k}{\sum_k\mathrm{BGF}_k}.
-$$ {#eq-gfz-hochrechnung}
+![GFZ-Verteilungen und Erwartungswerte des historischen Dichte-Referenzansatzes. Die Grafik zeigt GFZ bis 8; die Aggregation umfasst das vollständige Raster bis 20.](../Berechnungen/gebaeudesektormodell/outputs/gfz_dichte.png){#fig-gebaeude-gfz width="100%"}
 
-![Modellierte BGF-Verteilung Österreichs nach Hauptnutzung. Der dargestellte GFZ-Ausschnitt reicht bis 8; das übrige Modellraster bleibt in der Aggregation berücksichtigt.](../Abbildungen/gfz_at/gfz_oesterreich_nutzung.png){#fig-gfz-oesterreich}
+Die Erwartungswerte in @tbl-gebaeude-typologien werden über sämtliche GFZ-Bins berechnet. Der Funktionswert am mittleren GFZ wäre wegen der Nichtlinearität nicht gleichwertig. Als vorläufige elektrische Referenz dient die historische Tabellenparametrisierung aus @schneider2023context, Gl. 7 und Tab. 5, mit 30,4, 26,4, Achsenverschiebung 0,15 und Begrenzung 62. Die gemischte EE-/PE-Beschriftung der Quellentabelle ist im Notebook dokumentiert; der Referenzansatz ist noch keine neu freigegebene Dichtefunktion.
 
-Diese GFZ-Hochrechnung ist eine **statistische Bestandsverteilung** und keine automatisch gültige Verteilung jeder zukünftigen energetischen Gebäudetypologie. Für die Kalibrierung müssen die neuen Klassen aus der Excel über Hauptnutzung, Geschossklasse oder einen dokumentierten anderen Schlüssel mit der GFZ-Verteilung verknüpft werden. Bei einem für 2040 ausdrücklich abweichenden Dichteszenario ist die Anpassung als Annahme auszuweisen.
+Die virtuellen Erwartungswerte reichen hier von rund **−41,63 kWh EE/(m² BGF·a)** für EFH_1G bis **+16,44 kWh EE/(m² BGF·a)** für GWB_7G. Sie zeigen die Verteilung zusätzlicher Anforderungen und Gutschriften. Sie werden nicht als reale Stromerzeugung oder als pauschal zustehende Gutschrift aller Typen bilanziert.
 
-## Gemeinsame Typologie-Dichte-Matrix für die Kalibrierung
+## Gemeinsame Typologie-Dichte-Matrix und sektoraler Abgleich
 
-Für jede Gebäude- und Dichteklasse wird die Zieljahresfläche \(A_{k,j}^{2040}\) benötigt. Diese Matrix bildet die Eingabe der nationalen Aggregation in @sec-kalibrierung:
+Für Typologie \(k\) und GFZ-Bin \(j\) gilt:
 
 $$
-A_{k,j}^{2040} = A_k^{2040}\,s_{j\mid k}^{2040},
-\qquad \sum_j s_{j\mid k}^{2040}=1.
+A_{k,j}^{2040}=A_k^{2040}s_{j|k},\qquad\sum_j s_{j|k}=1.
 $$ {#eq-typologie-gfz-flaeche}
 
-Dabei bezeichnet \(s_{j\mid k}^{2040}\) den Anteil der Fläche der Typologie \(k\) in der GFZ-Klasse \(j\). Klassen und GFZ-Bins sollten mit den auswertbaren Berechnungsdaten übereinstimmen. Zu prüfen sind die Summe je Typologie, die nationale Flächensumme, die verwendete BGF-/NGF-Umrechnung und die Behandlung von Ersatzschätzungen.
+Die erzeugte Typologie-Dichte-Matrix erhält die Fläche jedes positiv gewichteten Typs. Sie steht im Modellordner unter `outputs/typologie_gfz_2040.csv.gz` zur Verfügung. Die Referenzverteilung von 2021 wird dafür als räumliches Verteilungsmuster verwendet, nicht als zusätzliche Flächensumme.
 
-**Ergebnis dieses Kapitels:** eine versionierte \(A_{k,j}^{2040}\)-Matrix, nicht bereits die fertige PEQ-Zielwertfunktion.
+{{< include _generated/gebaeude-abgleich.qmd >}}
+
+Der Abstand zum vorläufigen Top-down-Saldo beträgt **−100,25 PJ/a**. Er ergibt sich aus geringerer PV-Erzeugung und höherem Gebäudestrombedarf des gelieferten Pools. Werden auf beiden Seiten dieselben 24 PJ/a MIV-Budget und 72 PJ/a MIV-Bedarf angesetzt, bleibt diese Differenz unverändert. Sie ist ein Szenariounterschied und wird nicht durch nachträgliche Flächenskalierung oder eine neue Gutschrift geschlossen.
+
+Für die Kalibrierung in @sec-kalibrierung fehlen noch die definierten PEQ-Flächenanteile, die abgestimmte Versorgung der übrigen Typen sowie alternative PV-/Flexibilitätsvarianten. Die gelieferte Typologiematrix und ihre Ergebnisse bilden nun eine prüfbare Grundlage für diese Entscheidungen. Die THG-Allokation erhält dadurch nicht automatisch eine neue Flächenbasis.

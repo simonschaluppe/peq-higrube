@@ -1,0 +1,71 @@
+Nutzung,Geschoss,Anteil1,Archetype1,Anteil2,Archetype2,GWR_Nutzung,GK,Einzelziel_ergänzt
+Gebäude für Gemeinschaften,1 Geschoß,1.0,NiWo_1G,,,Gemeinschaftsgebäude,1,False
+Gebäude für Gemeinschaften,2 Geschoße,1.0,NiWo_2G,,,Gemeinschaftsgebäude,2,False
+Gebäude für Gemeinschaften,3 Geschoße,1.0,NiWo_3G,,,Gemeinschaftsgebäude,3,False
+Gebäude für Gemeinschaften,4 Geschoße,1.0,NiWo_3G,,,Gemeinschaftsgebäude,4,False
+Gebäude für Gemeinschaften,5 Geschoße,1.0,NiWo_3G,,,Gemeinschaftsgebäude,5,False
+Gebäude für Gemeinschaften,6 bis 10 Geschoße,1.0,NiWo_3G,,,Gemeinschaftsgebäude,6-10,False
+Gebäude für Gemeinschaften,11 und mehr Geschoße,1.0,NiWo_3G,,,Gemeinschaftsgebäude,11+,False
+Hotels und ähnliche Gebäude,1 Geschoß,1.0,NiWo_1G,,,Hotels o.Ä.,1,False
+Hotels und ähnliche Gebäude,2 Geschoße,1.0,NiWo_2G,,,Hotels o.Ä.,2,False
+Hotels und ähnliche Gebäude,3 Geschoße,1.0,NiWo_3G,,,Hotels o.Ä.,3,False
+Hotels und ähnliche Gebäude,4 Geschoße,1.0,NiWo_3G,,,Hotels o.Ä.,4,False
+Hotels und ähnliche Gebäude,5 Geschoße,1.0,NiWo_3G,,,Hotels o.Ä.,5,False
+Hotels und ähnliche Gebäude,6 bis 10 Geschoße,1.0,NiWo_3G,,,Hotels o.Ä.,6-10,False
+Hotels und ähnliche Gebäude,11 und mehr Geschoße,1.0,NiWo_3G,,,Hotels o.Ä.,11+,False
+Bürogebäude,1 Geschoß,1.0,NiWo_1G,,,Büronutzung,1,False
+Bürogebäude,2 Geschoße,1.0,NiWo_2G,,,Büronutzung,2,False
+Bürogebäude,3 Geschoße,1.0,NiWo_3G,,,Büronutzung,3,False
+Bürogebäude,4 Geschoße,1.0,NiWo_3G,,,Büronutzung,4,False
+Bürogebäude,5 Geschoße,1.0,NiWo_3G,,,Büronutzung,5,False
+Bürogebäude,6 bis 10 Geschoße,1.0,NiWo_3G,,,Büronutzung,6-10,False
+Bürogebäude,11 und mehr Geschoße,1.0,NiWo_3G,,,Büronutzung,11+,False
+Groß- und Einzelhandelsgebäude,1 Geschoß,1.0,NiWo_1G,,,Groß- und Einzelhandelsgebäude,1,False
+Groß- und Einzelhandelsgebäude,2 Geschoße,1.0,NiWo_2G,,,Groß- und Einzelhandelsgebäude,2,False
+Groß- und Einzelhandelsgebäude,3 Geschoße,1.0,NiWo_3G,,,Groß- und Einzelhandelsgebäude,3,False
+Groß- und Einzelhandelsgebäude,4 Geschoße,1.0,NiWo_3G,,,Groß- und Einzelhandelsgebäude,4,False
+Groß- und Einzelhandelsgebäude,5 Geschoße,1.0,NiWo_3G,,,Groß- und Einzelhandelsgebäude,5,False
+Groß- und Einzelhandelsgebäude,6 bis 10 Geschoße,1.0,NiWo_3G,,,Groß- und Einzelhandelsgebäude,6-10,False
+Groß- und Einzelhandelsgebäude,11 und mehr Geschoße,1.0,NiWo_3G,,,Groß- und Einzelhandelsgebäude,11+,False
+Gebäude des Verkehrs- und Nachrichtenwesens,1 Geschoß,1.0,NiWo_1G,,,Verkehrs- und Nachrichtenwesen,1,False
+Gebäude des Verkehrs- und Nachrichtenwesens,2 Geschoße,1.0,NiWo_2G,,,Verkehrs- und Nachrichtenwesen,2,False
+Gebäude des Verkehrs- und Nachrichtenwesens,3 Geschoße,1.0,NiWo_3G,,,Verkehrs- und Nachrichtenwesen,3,False
+Gebäude des Verkehrs- und Nachrichtenwesens,4 Geschoße,1.0,NiWo_3G,,,Verkehrs- und Nachrichtenwesen,4,False
+Gebäude des Verkehrs- und Nachrichtenwesens,5 Geschoße,1.0,NiWo_3G,,,Verkehrs- und Nachrichtenwesen,5,False
+Gebäude des Verkehrs- und Nachrichtenwesens,6 bis 10 Geschoße,1.0,NiWo_3G,,,Verkehrs- und Nachrichtenwesen,6-10,False
+Gebäude des Verkehrs- und Nachrichtenwesens,11 und mehr Geschoße,1.0,NiWo_3G,,,Verkehrs- und Nachrichtenwesen,11+,False
+Industrie- und Lagergebäude,1 Geschoß,1.0,NiWo_1G,,,Industrie und Lagerung,1,False
+Industrie- und Lagergebäude,2 Geschoße,1.0,NiWo_2G,,,Industrie und Lagerung,2,False
+Industrie- und Lagergebäude,3 Geschoße,1.0,NiWo_3G,,,Industrie und Lagerung,3,False
+Industrie- und Lagergebäude,4 Geschoße,1.0,NiWo_3G,,,Industrie und Lagerung,4,False
+Industrie- und Lagergebäude,5 Geschoße,1.0,NiWo_3G,,,Industrie und Lagerung,5,False
+Industrie- und Lagergebäude,6 bis 10 Geschoße,1.0,NiWo_3G,,,Industrie und Lagerung,6-10,False
+Industrie- und Lagergebäude,11 und mehr Geschoße,1.0,NiWo_3G,,,Industrie und Lagerung,11+,False
+Gebäude für Kultur- und Freizeitzwecke sowie des Bildungs- und Gesundheitswesens,1 Geschoß,1.0,NiWo_1G,,,"Kultur, Freizeit, Bildung und Gesundheit",1,False
+Gebäude für Kultur- und Freizeitzwecke sowie des Bildungs- und Gesundheitswesens,2 Geschoße,1.0,NiWo_2G,,,"Kultur, Freizeit, Bildung und Gesundheit",2,False
+Gebäude für Kultur- und Freizeitzwecke sowie des Bildungs- und Gesundheitswesens,3 Geschoße,1.0,NiWo_3G,,,"Kultur, Freizeit, Bildung und Gesundheit",3,False
+Gebäude für Kultur- und Freizeitzwecke sowie des Bildungs- und Gesundheitswesens,4 Geschoße,1.0,NiWo_3G,,,"Kultur, Freizeit, Bildung und Gesundheit",4,False
+Gebäude für Kultur- und Freizeitzwecke sowie des Bildungs- und Gesundheitswesens,5 Geschoße,1.0,NiWo_3G,,,"Kultur, Freizeit, Bildung und Gesundheit",5,False
+Gebäude für Kultur- und Freizeitzwecke sowie des Bildungs- und Gesundheitswesens,6 bis 10 Geschoße,1.0,NiWo_3G,,,"Kultur, Freizeit, Bildung und Gesundheit",6-10,False
+Gebäude für Kultur- und Freizeitzwecke sowie des Bildungs- und Gesundheitswesens,11 und mehr Geschoße,1.0,NiWo_3G,,,"Kultur, Freizeit, Bildung und Gesundheit",11+,False
+Wohngebäude mit einer Wohnung,1 Geschoß,1.0,EFH_1G,,,Ein- und Zweifamilienhäuser,1,False
+Wohngebäude mit einer Wohnung,2 Geschoße,0.5,EFH_2G,0.5,RH_2G,Ein- und Zweifamilienhäuser,2,False
+Wohngebäude mit einer Wohnung,3 Geschoße,0.5,EFH_2G,0.5,RH_2G,Ein- und Zweifamilienhäuser,3,False
+Wohngebäude mit einer Wohnung,4 Geschoße,1.0,MFH_4G,,,Ein- und Zweifamilienhäuser,4,False
+Wohngebäude mit einer Wohnung,5 Geschoße,1.0,GWB_5G,,,Ein- und Zweifamilienhäuser,5,False
+Wohngebäude mit einer Wohnung,6 bis 10 Geschoße,1.0,GWB_7G,,,Ein- und Zweifamilienhäuser,6-10,False
+Wohngebäude mit einer Wohnung,11 und mehr Geschoße,1.0,GWB_7G,,,Ein- und Zweifamilienhäuser,11+,False
+Wohngebäude mit zwei Wohnungen,1 Geschoß,1.0,EFH_1G,,,Ein- und Zweifamilienhäuser,1,False
+Wohngebäude mit zwei Wohnungen,2 Geschoße,0.5,EFH_2G,0.5,RH_2G,Ein- und Zweifamilienhäuser,2,False
+Wohngebäude mit zwei Wohnungen,3 Geschoße,0.5,EFH_2G,0.5,RH_2G,Ein- und Zweifamilienhäuser,3,False
+Wohngebäude mit zwei Wohnungen,4 Geschoße,1.0,MFH_4G,,,Ein- und Zweifamilienhäuser,4,False
+Wohngebäude mit zwei Wohnungen,5 Geschoße,1.0,GWB_5G,,,Ein- und Zweifamilienhäuser,5,False
+Wohngebäude mit zwei Wohnungen,6 bis 10 Geschoße,1.0,GWB_7G,,,Ein- und Zweifamilienhäuser,6-10,False
+Wohngebäude mit zwei Wohnungen,11 und mehr Geschoße,1.0,GWB_7G,,,Ein- und Zweifamilienhäuser,11+,False
+Wohngebäude mit drei und mehr Wohnungen,1 Geschoß,1.0,EFH_1G,,,Mehrfamilienhaus,1,False
+Wohngebäude mit drei und mehr Wohnungen,2 Geschoße,0.5,EFH_2G,0.5,RH_2G,Mehrfamilienhaus,2,False
+Wohngebäude mit drei und mehr Wohnungen,3 Geschoße,0.5,EFH_2G,0.5,RH_2G,Mehrfamilienhaus,3,False
+Wohngebäude mit drei und mehr Wohnungen,4 Geschoße,1.0,MFH_4G,,,Mehrfamilienhaus,4,False
+Wohngebäude mit drei und mehr Wohnungen,5 Geschoße,1.0,GWB_5G,,,Mehrfamilienhaus,5,False
+Wohngebäude mit drei und mehr Wohnungen,6 bis 10 Geschoße,1.0,GWB_7G,,,Mehrfamilienhaus,6-10,False
+Wohngebäude mit drei und mehr Wohnungen,11 und mehr Geschoße,1.0,GWB_7G,,,Mehrfamilienhaus,11+,False

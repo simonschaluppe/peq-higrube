@@ -1,0 +1,8 @@
+| Größe | GWh_PE/a | PJ_PE/a |
+| --- | --- | --- |
+| PEI_grid_import | 59.495,871 | 214,185 |
+| PEI_import | 137.528,612 | 495,103 |
+| PEI_export | 23.816,432 | 85,739 |
+| PE_Saldo | -113.712,180 | -409,364 |
+
+: Gelieferter PE-Bewertungsstand; Faktorversion und Bezugsjahr noch zu bestätigen, ohne virtuelle Kontextwerte. {#tbl-gebaeude-pe}

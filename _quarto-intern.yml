@@ -1,0 +1,4 @@
+# Nur während der internen Redaktion standardmäßig aktiv.
+book:
+  appendices:
+    - Berechnungen/gebaeudesektormodell/Internes_Kalibrierungsdashboard.ipynb

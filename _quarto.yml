@@ -1,3 +1,6 @@
+profile:
+  default: intern
+
 project:
   type: book
   output-dir: _book
@@ -53,6 +56,7 @@ book:
     - Kapitel/anhang-methodenstand.qmd
     - Berechnungen/gfz_at/GFZ_AT_Analyse_Anhang.ipynb
     - Berechnungen/sektorenmodell/allokation.ipynb
+    - Berechnungen/gebaeudesektormodell/Gebaeudesektormodell.ipynb
     - Kapitel/anhang-quartiersbilanzierung.qmd
 
 

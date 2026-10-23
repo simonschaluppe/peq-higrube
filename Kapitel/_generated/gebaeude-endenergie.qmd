@@ -1,0 +1,10 @@
+| Träger | kWh/(m² NGF a) | GWh/a | PJ/a |
+| --- | --- | --- | --- |
+| Strom (Bruttobedarf) | 42,377 | 38.192,572 | 137,493 |
+| Fernwärme | 31,499 | 28.388,612 | 102,199 |
+| Gas | 23,631 | 21.297,969 | 76,673 |
+| Biomasse | 21,346 | 19.238,623 | 69,259 |
+| Öl | 18,034 | 16.253,386 | 58,512 |
+| Sonstige thermisch | 0,000 | 0,000 | 0,000 |
+
+: Endenergie 2040 nach Energieträgern. Strom enthält PV-Direktverbrauch; sonstige thermische Energie wird separat geführt. {#tbl-gebaeude-endenergie}

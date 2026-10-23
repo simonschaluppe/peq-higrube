@@ -1,0 +1,108 @@
+<div id="peq-dashboard">
+<style>
+#peq-dashboard{font:15px/1.45 system-ui;max-width:100%;color:#243746}
+#peq-dashboard *{box-sizing:border-box} #peq-dashboard .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(260px,100%),1fr));gap:14px}
+#peq-dashboard .charts{grid-template-columns:repeat(auto-fit,minmax(min(480px,100%),1fr))}
+#peq-dashboard .panel{padding:16px;border:1px solid #c9d5dc;border-radius:10px;margin:12px 0;background:#f8fafb;min-width:0}
+#peq-dashboard label{display:block;margin:12px 0 3px;font-weight:600}
+#peq-dashboard input{width:100%} #peq-dashboard .number{float:right;color:#006b70}
+#peq-dashboard .small{font-size:13px;color:#536574} #peq-dashboard .warning{border-left:5px solid #c96a16;padding:12px;background:#fff3df}
+#peq-dashboard .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:8px}
+#peq-dashboard .card{background:#edf2f5;padding:12px;border-radius:8px} #peq-dashboard .card strong{display:block;font-size:23px}
+#peq-dashboard button{padding:9px 14px;border:1px solid #6e8795;background:white;border-radius:6px;margin:4px;cursor:pointer}
+#peq-dashboard svg{width:100%;height:auto;display:block} #peq-dashboard summary{cursor:pointer;font-weight:bold}
+#peq-dashboard pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:12px} #peq-dashboard h3{font-size:19px}
+</style>
+<div class="warning"><strong>INTERN · Szenariowerkstatt</strong><br>Elektrische Jahresbilanz, keine vollständige Klimaneutralitäts- oder PEQ-Prüfung.</div>
+<p id="dash-source" class="small"></p>
+<div class="grid">
+<div class="panel"><h3>Nationale Allokation</h3><div id="national-controls"></div><p id="remainders" class="small"></p>
+<p class="small">Freiflächen-PV = PV außerhalb der Gebäude, separat unzugeordnet. H₂-Rückverstromung ist nicht automatisch erneuerbares Budget. Andere Nicht-PV-Erzeugung bleibt gemäß Referenzmodell budgetfähig; fossile Erzeugung bleibt ausgeschlossen.</p></div>
+<div class="panel"><h3>Gebäudepool</h3><div id="building-controls"></div>
+<p class="small">Senkung betrifft nur den Strombedarf. PV-Skalierung verändert die Gesamterzeugung, nicht Eigenverbrauch oder Netzbezug. Thermische Energieträger, PE und THG werden hier nicht neu simuliert. Flächen und Typenmischung werden ausschließlich in der gewählten Excel geändert.</p></div>
+<div class="panel"><h3>Virtuelle Dichtekorrektur</h3><div id="density-controls"></div>
+<p class="small">Historische EE-Lesart; GFZ-Muster 2021. Kein physischer Ausgleich und keine automatische Anpassung an das UBA-Ziel. Einheit der Erwartungswerte: kWh EE/(m² BGF·a).</p></div>
+</div>
+<button id="dash-reset" type="button">Referenz zurücksetzen</button><button id="dash-save" type="button">Variante als JSON sichern</button>
+<div id="dash-status" role="status" aria-live="polite" class="warning"></div>
+<div id="dash-cards" class="cards panel"></div>
+<div class="grid charts"><div class="panel"><h3>Physischer Vergleich [PJ Strom/a]</h3><div id="dash-balance"></div><p class="small">MIV wird auf beiden Seiten gleich zugeordnet. Die physische Ziellücke verändert sich deshalb durch MIV allein nicht.</p></div>
+<div class="panel"><h3>Stromsaldo nach Gebäudeklasse [PJ/a]</h3><div id="dash-geometry"></div></div></div>
+<div class="grid charts"><div class="panel"><h3>Dichte-Erwartungswerte</h3><div id="dash-density"></div><p id="density-total" class="small"></p></div>
+<div class="panel"><h3>Dichtekurve [kWh EE/(m² BGF·a)]</h3><div id="dash-curve"></div><p class="small">Die Erwartungswerte links integrieren die gesamte hinterlegte GFZ-Verteilung, nicht nur den dargestellten Bereich GFZ 0–5.</p></div></div>
+<details class="panel"><summary>Parameter, Ergebnisstand und Quellen-Hashes</summary><pre id="dash-audit"></pre></details>
+<script>
+(()=>{
+const S=__PAYLOAD__;
+const el=id=>document.getElementById(id), fmt=x=>new Intl.NumberFormat('de-DE',{maximumFractionDigits:2}).format(x);
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+let p={...S.defaults}, last;
+const spec=[
+ ['national-controls','miv','MIV-Anteil',0,1,.01,100,'%'],
+ ['national-controls','other_transport','Übriger Verkehr',0,1,.01,100,'%'],
+ ['national-controls','free_pv','Freiflächen-PV',0,1,.01,100,'%'],
+ ['national-controls','hydrogen','Budgetfähigkeit H₂-Strom',0,1,.01,100,'%'],
+ ['building-controls','saving','Zusätzliche Strombedarfssenkung',0,1,.01,100,'%'],
+ ['building-controls','pv_scale','PV-Erzeugung relativ zum Pool',0,3,.05,100,'%'],
+ ['building-controls','ngf_bgf','NGF / BGF',.5,1,.01,1,''],
+ ['density-controls','density_f_res','f RES',0,100,.1,1,''],
+ ['density-controls','density_f_ed','f ED',0,100,.1,1,''],
+ ['density-controls','density_dx','GFZ-Verschiebung dx',.01,1,.01,1,''],
+ ['density-controls','density_cutoff','Begrenzung',0,150,1,1,'']];
+for(const [parent,key,label,min,max,step,scale,unit] of spec){
+ const l=document.createElement('label');l.htmlFor='ctrl-'+key;l.textContent=label;
+ const out=document.createElement('span');out.id='value-'+key;out.className='number';l.append(out);
+ const input=document.createElement('input');Object.assign(input,{id:'ctrl-'+key,type:'range',min,max,step,value:p[key]});
+ input.addEventListener('input',()=>{p[key]=Number(input.value);render()});el(parent).append(l,input);
+}
+el('dash-source').textContent=`Excel: ${S.xlsx} · Flächen: ${S.area_column} · National: ${S.scenario}, 2040. Excel-Wechsel erfordert erneute Notebook-Ausführung.`;
+function calculate(p){
+ const g=S.g,d=S.d;
+ const central=['hydro','wind','biomass','geothermal'].reduce((s,k)=>s+g[k],0)+g.hydrogen_electricity*p.hydrogen;
+ const fixed=['industrie','landwirtschaft','verbrauch_sektor_energie','umwandlungseinsatz','transportverluste'].reduce((s,k)=>s+d[k],0)+Math.max(-g.net_imports,0);
+ const raw=central-fixed-d.verkehr*(1-p.miv), miv=d.verkehr*p.miv, budget=Math.min(Math.max(raw,0),miv);
+ const target=g.pv*(1-p.free_pv)-d.gebaeude;
+ const demand=S.geometry.reduce((s,k)=>s+k.D,0)*p.ngf_bgf*(1-p.saving);
+ const pv=S.geometry.reduce((s,k)=>s+k.P,0)*p.ngf_bgf*p.pv_scale;
+ const unassigned=['hydro','wind','biomass','geothermal','hydrogen_electricity','pv','fossil'].reduce((s,k)=>s+g[k],0)-g.pv-central;
+ const closure=target+budget-miv+raw-budget+g.pv*p.free_pv+unassigned+Math.max(g.net_imports,0);
+ return {demand,pv,balance:pv-demand,target,budget,extended:pv-demand+budget-miv,target_extended:target+budget-miv,gap:pv-demand-target,raw,closure};
+}
+// Die Browserrechnung muss der im Notebook ausgeführten Referenz entsprechen.
+const check=calculate(p);
+for(const [k,v] of Object.entries(S.reference))if(Math.abs(check[k]-v)>1e-7)throw Error('Referenzabweichung: '+k);
+function bars(id, rows){
+ const width=580,left=195,right=72,h=34,height=rows.length*h+35;
+ const lo=Math.min(0,...rows.map(r=>r[1])), hi=Math.max(0,...rows.map(r=>r[1]));
+ const x=v=>left+(v-lo)/(hi-lo||1)*(width-left-right), zero=x(0);
+ let html=`<svg viewBox="0 0 ${width} ${height}" role="img" aria-label="Balkendiagramm mit beschrifteten Werten"><line x1="${zero}" x2="${zero}" y1="0" y2="${height-25}" stroke="#657784"/>`;
+ rows.forEach(([label,v,color],i)=>{const y=i*h+5;html+=`<text x="0" y="${y+17}" font-size="13">${esc(label)}</text><rect x="${Math.min(x(v),zero)}" y="${y}" width="${Math.max(Math.abs(x(v)-zero),.5)}" height="23" fill="${color}"/><text x="${width-5}" y="${y+17}" text-anchor="end" font-size="13">${fmt(v)}</text>`});
+ el(id).innerHTML=html+'</svg>';
+}
+function render(){
+ for(const [,key,,min,max,step,scale,unit] of spec)el('value-'+key).textContent=fmt(p[key]*scale)+' '+unit;
+ const invalid=p.miv+p.other_transport>1+1e-10;
+ el('dash-save').disabled=invalid;
+ if(invalid){el('dash-status').textContent='Ungültig: MIV + übriger Verkehr über 100 %. Die Diagramme zeigen den letzten gültigen Stand.';return;}
+ const r=calculate(p);if(Math.abs(r.closure-S.residual)>1e-7)throw Error('Zuordnungsbilanz verletzt');
+ const context={};for(const b of S.bins){const c=-Math.min(p.density_f_res/(b.GFZ+p.density_dx)-p.density_f_ed,p.density_cutoff);context[b.Geometrie]=(context[b.Geometrie]||0)+b.s*c;}
+ const virtual=S.geometry.reduce((s,k)=>s+k.BGF*context[k.Geometrie]*3.6e-9,0);
+ last={internal:true,scenario:S.scenario,xlsx:S.xlsx,area_column:S.area_column,parameters:{...p},results_pj_el_a:r,virtual_density_pj_equivalent_a:virtual,provenance:S.provenance};
+ el('remainders').textContent=`ÖPNV: ${fmt(100*(1-p.miv-p.other_transport))} % · Gebäude-PV: ${fmt(100*(1-p.free_pv))} %`;
+ el('dash-status').textContent=(r.raw<0?`Prioritätskonflikt: ${fmt(-r.raw)} PJ/a zentrale Unterdeckung. `:'Zentrale Vorrangbedarfe gedeckt. ')+`Quellrest: ${fmt(S.residual)} PJ/a; Zuordnungsrest: ${fmt(r.closure)} PJ/a. Keine künstliche Bilanzschließung.`;
+ el('dash-cards').innerHTML=[['Strombedarf',r.demand],['PV-Erzeugung',r.pv],['Betriebssaldo',r.balance],['Ziel Betrieb',r.target],['MIV-Budget',r.budget],['Abstand zum Ziel',r.gap]].map(([l,v])=>`<div class="card">${l}<strong>${fmt(v)}</strong><small>PJ Strom/a</small></div>`).join('');
+ bars('dash-balance',[['Pool: Betrieb',r.balance,'#168b82'],['UBA: Betrieb',r.target,'#ce861b'],['Pool: inkl. MIV',r.extended,'#2378aa'],['UBA: inkl. MIV',r.target_extended,'#ce861b'],['Zusätzlicher PV-Rest',Math.max(-r.gap,0),'#d8b32d']]);
+ bars('dash-geometry',S.geometry.map(k=>[k.Geometrie,(k.P*p.pv_scale-k.D*(1-p.saving))*p.ngf_bgf,'#2378aa']));
+ bars('dash-density',S.geometry.map(k=>[k.Geometrie,context[k.Geometrie],'#885b9d']));
+ el('density-total').textContent=`Flächengewichteter virtueller Summenwert: ${fmt(virtual)} PJ-Äquivalent/a. Separat vom physischen Stromsaldo; kein Endenergiefluss.`;
+ const values=Array.from({length:101},(_,i)=>[i/20,-Math.min(p.density_f_res/(i/20+p.density_dx)-p.density_f_ed,p.density_cutoff)]);
+ const low=Math.min(0,...values.map(v=>v[1])),high=Math.max(0,...values.map(v=>v[1]));
+ const x=v=>55+v/5*450,y=v=>235-(v-low)/(high-low||1)*205;
+ el('dash-curve').innerHTML=`<svg viewBox="0 0 580 285" role="img" aria-label="Dichtekurve nach GFZ"><path d="M55 20V235H505" fill="none" stroke="#667"/><line x1="55" x2="505" y1="${y(0)}" y2="${y(0)}" stroke="#bbc"/><polyline points="${values.map(v=>x(v[0])+','+y(v[1])).join(' ')}" fill="none" stroke="#885b9d" stroke-width="3"/><text x="5" y="35" font-size="13">${fmt(high)}</text><text x="5" y="235" font-size="13">${fmt(low)}</text>${[0,1,2,3,4,5].map(i=>`<text x="${x(i)}" y="255" text-anchor="middle" font-size="13">${i}</text>`).join('')}<text x="280" y="278" font-size="13">GFZ</text></svg>`;
+ el('dash-audit').textContent=JSON.stringify(last,null,2);
+}
+el('dash-reset').onclick=()=>{p={...S.defaults};for(const [,key] of spec)el('ctrl-'+key).value=p[key];render();};
+el('dash-save').onclick=()=>{const blob=new Blob([JSON.stringify({...last,exported_at:new Date().toISOString()},null,2)],{type:'application/json'});const url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='peq-interne-variante.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);};
+render();
+})();
+</script></div>

@@ -1,0 +1,7 @@
+| Zustand | BGF 2040 [Mio. m²] |
+| --- | --- |
+| Bestand | 779,528 |
+| Neubau | 320,354 |
+| Sanierung | 26,696 |
+
+: Flächengewichtete Zuordnung zu Bestand, Neubau und Sanierung im Zieljahr. {#tbl-gebaeude-status}
