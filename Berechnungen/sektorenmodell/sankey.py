@@ -11,10 +11,7 @@ import plotly.graph_objects as go
 from plotly.offline import get_plotlyjs
 from .model import ROOT, DATA, GEN, DEMAND, EEV, LABELS, NAMES, load, rows, values
 
-COLORS = dict(hydro='#287bb5', wind='#159a98', pv='#dca51d', biomass='#609c42',
-              geothermal='#ce603b', hydrogen_electricity='#8b63b7', fossil='#626b76',
-              verkehr='#7857a5', gebaeude='#d39736', industrie='#487fa8', landwirtschaft='#739c40',
-              verbrauch_sektor_energie='#ad6977', transportverluste='#90969b', umwandlungseinsatz='#569da0')
+from styles.plotly_formatting import COLORS
 
 
 def translucent(color):

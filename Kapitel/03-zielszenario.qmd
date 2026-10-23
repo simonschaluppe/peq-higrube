@@ -1,53 +1,59 @@
 # Nationales Zielszenario 2040 {#sec-zielszenario}
 
 ::: {.lead}
-UBA Transition 2040 als einheitliche Referenz für die nationale Energieaufgabe
+UBA Transition 2040 als Referenz der nationalen Energieaufgabe
 :::
 
-Das Szenario **UBA Transition 2040** ist die Grundlage der Neukalibrierung der energiebezogenen PEQ-Anforderungen. Dieses Kapitel dokumentiert die veröffentlichten Energie- und Strombilanzen und ihren Vergleich mit dem Ausgangsjahr. Die **Zuordnung** von Erzeugung und Bedarf zu Gebäuden, Industrie und Verkehr erfolgt erst in @sec-allokation; die Anforderungen an Gebäudetypologien und Quartiere werden in @sec-gebaeudebestand und @sec-kalibrierung abgeleitet.
+UBA Transition 2040 (REP-0880) beschreibt die Erzeugung und den Bedarf im Zieljahr 2040 [@uba2023transition]. WEM/WAM 2023 und 2025 dienen als Vergleichsszenarien. Die sektorale Zuordnung folgt in @sec-allokation, der Abgleich mit Gebäudetypologien in @sec-gebaeudebestand.
 
-## Referenzszenario und Datenstand
-
-Maßgeblich ist UBA Transition 2040 (REP-0880) für das **Zieljahr 2040** [@uba2023transition]. Für Vergleiche werden WEM/WAM 2023 sowie WEM/WAM 2025 getrennt ausgewiesen. Diese Vergleichsszenarien ändern die festgelegte Referenz für die Neukalibrierung nicht [@uba2025szenarien].
-
-Die zugrunde liegenden Größen sind zunächst **physische jährliche Energiemengen**. Stromerzeugung, Strombedarf und Saldo werden in PJ elektrischer Energie pro Jahr verglichen; der Endenergieverbrauch aller Energieträger wird separat ausgewiesen. Primärenergiegewichtungen und virtuelle Gutschriften sind keine Bestandteile dieser physischen nationalen Stromtabelle.
-
-## Nationale Elektrizitätsbilanz 2040
-
-{{< include _generated/transition-stromtabellen.qmd >}}
-
-Die veröffentlichte nationale Elektrizitätsbilanz ist der Ausgangspunkt der sektoralen Stromaufteilung. Dabei sind Stromerzeugung nach Technologie, Strombedarfe nach Sektor sowie Energieumwandlung, Eigenverbrauch, Netzverluste und gegebenenfalls Nettoimporte nachvollziehbar zu trennen. Insbesondere sind die Rückverstromung gespeicherter Energieträger und die zugehörigen Umwandlungsbedarfe konsistent abzubilden; eine Erzeugungsposition darf nicht mit ihrem vorgelagerten Stromeinsatz doppelt als neue Nettoenergie gezählt werden.
-
-## Endenergie aller Energieträger im Vergleich
-
-{{< include ../Daten/sektorenmodell/endenergie_vergleich.md >}}
-
-Der Endenergievergleich umfasst sämtliche Energieträger und darf nicht mit dem Strombedarf gleichgesetzt werden [@uba2023transition, Tab. A; @uba2023zusammenfassung, Tab. B; @uba2025szenarien, Tab. B]. Die veröffentlichten Gesamtsummen bleiben neben den Summen gerundeter Einzelpositionen erhalten. Bilanzreste werden nicht stillschweigend auf Sektoren umgelegt. Für WEM/WAM 2025 folgt die vorhandene Normierung Tabelle E (S. 12) in REP-0995; deren Abweichungen gegenüber Tabelle 19 desselben Berichts sind separat dokumentiert. Für Transition ist REP-0880, Tabelle 16, maßgeblich [@uba2025szenarien; @uba2023transition].
-
-## Entwicklung vom Ausgangsjahr 2020 bis 2040
-
-Das Ausgangsjahr der Transition-Bilanz ist **2020** und nicht das Erscheinungsjahr dieses Berichts. Von 2020 bis 2040 steigt die veröffentlichte jährliche Stromerzeugung von 249 auf 457 PJ und der Strombedarf von 257 auf 450 PJ. Zugleich sinkt der gesamte energetische Endverbrauch von 1.053 auf 722 PJ. Dies zeigt die zunehmende Elektrifizierung bei sinkendem Endenergieverbrauch über sämtliche Träger [@uba2023transition, Tab. A, 15 und 16].
+## Stromerzeugung und Strombedarf
 
 ::: {.content-visible when-format="html"}
 ```{=html}
-<iframe src="../Abbildungen/transition_sankey.html" title="UBA Transition 2040: Stromausbau, Strombedarf und Endenergieminderung" style="width:100%;height:1760px;border:0" loading="lazy"></iframe>
+<iframe src="../Abbildungen/methodik/stromerzeugung.html" title="Stromerzeugung nach Energieträgern" style="width:100%;height:620px;border:0" loading="lazy"></iframe>
 ```
+[Grafik separat öffnen](../Abbildungen/methodik/stromerzeugung.html)
+:::
 
-[Interaktive Grafik in voller Breite öffnen](../Abbildungen/transition_sankey.html)
+::: {.content-visible when-format="html"}
+```{=html}
+<iframe src="../Abbildungen/methodik/strombedarf.html" title="Strombedarf nach Sektoren" style="width:100%;height:620px;border:0" loading="lazy"></iframe>
+```
+[Grafik separat öffnen](../Abbildungen/methodik/strombedarf.html)
+:::
+
+Die gestapelten Säulen zeigen die veröffentlichten Komponenten. Rauten markieren die publizierten Gesamtsummen; Nettoimporte beziehungsweise Exporte sind bei der Erzeugung gesondert dargestellt. Für Transition gelten REP-0880, Tabellen 15 und 16; die Vergleichsdaten stammen aus REP-0882 und REP-0995 [@uba2023transition; @uba2023zusammenfassung; @uba2025szenarien].
+
+## Bilanzreste und Datengrundlage
+
+::: {.content-visible when-format="html"}
+```{=html}
+<iframe src="../Abbildungen/methodik/bilanzreste.html" title="Komponenten, publizierte Summen und Bilanzreste" style="width:100%;height:850px;border:0" loading="lazy"></iframe>
+```
+[Grafik separat öffnen](../Abbildungen/methodik/bilanzreste.html)
+:::
+
+Die gerundeten Bedarfskomponenten von Transition ergeben 452 PJ/a gegenüber einer publizierten Summe von 450 PJ/a. Die Komponentenbilanz einschließlich Nettoexport weist damit −2 PJ/a aus. Diese Differenz bleibt erhalten. Die vollständigen Tabellen zu Erzeugung, Bedarf, Resten und Endenergie stehen in @sec-szenariotabellen; ihre Quellen- und Tabellenverweise bleiben dort nachvollziehbar.
+
+## Entwicklung von 2020 bis 2040
+
+Die jährliche Stromerzeugung steigt von 249 auf 457 PJ, der veröffentlichte Strombedarf von 257 auf 450 PJ. Der gesamte energetische Endverbrauch sinkt von 1.053 auf 722 PJ. Transition verbindet damit Elektrifizierung und eine Minderung des Endenergieverbrauchs [@uba2023transition, Tab. A, 15 und 16].
+
+::: {.content-visible when-format="html"}
+```{=html}
+<iframe src="../Abbildungen/transition_sankey.html" title="Transition 2040: Ausbau und Bedarfsentwicklung gegenüber 2020" style="width:100%;height:1760px;border:0" loading="lazy"></iframe>
+```
+[Interaktive Grafik separat öffnen](../Abbildungen/transition_sankey.html)
 :::
 
 ::: {.content-hidden when-format="html"}
-![Stromausbau und Strombedarf sowie getrennt dargestellte Endenergieminderung: Transition 2040 gegenüber 2020.](../Abbildungen/transition_sankey.png){#fig-transition-sankey}
+![Stromausbau, Strombedarf und Endenergieminderung gegenüber 2020.](../Abbildungen/transition_sankey.png){#fig-transition-sankey}
 :::
 
-Die Grafik stellt Jahresenergiemengen, keine installierten Leistungen und keine virtuellen Primärenergie-Gutschriften dar. Die Minderung des Endenergieverbrauchs beträgt nach veröffentlichten Gesamtsummen 331 PJ, nach gerundeten Sektorkomponenten 330 PJ. Beim Ziel-Strombedarf stehen 450 PJ Gesamtsumme einer Komponentensumme von 452 PJ gegenüber; diese Abweichungen werden ausgewiesen, nicht korrigierend verteilt. Zentral/dezentral sowie MIV/ÖPNV/übriger Verkehr sind **nachgelagerte, dokumentationspflichtige Modellaufteilungen** und keine unmittelbar veröffentlichten UBA-Kategorien.
+Die Minderung der Endenergie beträgt nach Gesamtsummen 331 PJ/a und nach gerundeten Sektorkomponenten 330 PJ/a. Für WEM/WAM 2025 folgt die Normierung Tabelle E in REP-0995; Abweichungen zu Tabelle 19 desselben Berichts sind im Datenanhang dokumentiert.
 
-## Schnittstelle zur sektoralen Allokation
+## Übergang zur Allokation
 
-Die Übertragung in @sec-allokation benötigt eine eindeutige, versionierte Strombilanz mit der Aufteilung nach Technologien und Sektoren. Besonders offen sind die Zuordnung von PV-Erzeugung zu Gebäuden beziehungsweise anderen Flächen und die Abgrenzung des Verkehrssektors in MIV, ÖPNV und weitere Verkehrsleistungen. Die Quelldaten sind dabei unveränderlich; solche Aufteilungen werden als gesonderte Modellparameter geführt.
+Die UBA-Tabellen enthalten weder die für PEQ benötigte Aufteilung der PV auf Gebäude und Freiflächen noch jene des Verkehrs auf MIV und ÖPNV. Diese Aufteilungen sind explizite Parameter der Allokation in @sec-allokation. Die Quelldaten bleiben davon unverändert.
 
-Das vorhandene Notebook `Redaktion/transitionsszenarien/Berechnungen/Transition_2040.ipynb` dient als Daten- und Rechengrundlage. Seine Varianten für PV-Zuordnung, MIV/ÖPNV und zusätzliche Verbrauchsminderung sind nicht automatisch als neue PEQ-Anforderung zu interpretieren.
-
-::: {.callout-note title="Historische Einordnung"}
-Die ursprüngliche PEQ-Zielwertableitung beruhte auf „Energieautarkie für Österreich 2050“ nach Streicher et al. und der darauf aufbauenden sektoralen Allokation [@streicher2010energieautarkie; @schneider2020lokal; @schneider2023context]. Sie ist für die vorliegende Neukalibrierung **kein konkurrierendes Referenzszenario**. Die vollständige historische Parametrisierung gehört in den Methodenanhang.
-:::
+Die historische Ableitung nach Streicher et al. bildet den methodischen Ausgangspunkt; das Referenzszenario dieses Entwurfs ist Transition 2040 [@streicher2010energieautarkie; @schneider2020lokal; @schneider2023context].

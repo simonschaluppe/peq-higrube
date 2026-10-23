@@ -6,15 +6,15 @@ Das in der sektoralen Allokation ermittelte MIV-Budget nutzungsbezogen verteilen
 
 Die nationale **Höhe** des erneuerbaren MIV-Budgets wird bereits in @sec-allokation aus der verfügbaren zentralen, nicht-PV-basierten erneuerbaren Erzeugung und den vorrangigen Bedarfen – insbesondere Industrie und ÖPNV – hergeleitet. Sie ist keine eigenständige oder nachträglich festgelegte Mobilitätsgutschrift. Dieses Kapitel beschreibt nur die **räumliche und nutzungsbezogene Anwendung** des daraus hervorgehenden Budgets sowie die standortabhängige MIV-Bedarfsermittlung.
 
-::: {.callout-note title="Vorläufige quantitative Allokation"}
-@sec-allokation-ergebnisse zeigt erstmals ein explizit parametriertes Transition-Rechenbeispiel: 24 PJ/a beziehungsweise 6,667 TWh/a elektrisches MIV-Budget bei den dort dokumentierten Annahmen. Die volle Anrechnung der Wasserstoff-Rückverstromung erhöht es im Vergleichsfall auf 28 PJ/a. Das sind nationale elektrische Zuteilungen, keine neuen nutzungsbezogenen PE-Gutschriften. Heutige PE-Faktoren, Verteilungsschlüssel und Ziel-Flächen sind dafür noch festzulegen. Die vollständige Rechnung steht in @sec-allokation-notebook.
+::: {.callout-note title="quantitative Allokation"}
+@sec-allokation-ergebnisse zeigt den parametrierten Transition-Referenzfall: 24 PJ/a beziehungsweise 6,667 TWh/a elektrisches MIV-Budget bei den dort dokumentierten Annahmen. Die volle Anrechnung der Wasserstoff-Rückverstromung erhöht es im Vergleichsfall auf 28 PJ/a. Das sind nationale elektrische Zuteilungen, keine neuen nutzungsbezogenen PE-Gutschriften. PE-Faktoren, Verteilungsschlüssel und Ziel-Flächen sind dafür nicht gemeinsam festgelegt. Die vollständige Rechnung steht in @sec-allokation-notebook.
 :::
 
 ## Vom nationalen MIV-Budget zur Nutzung
 
 Nach der sektoralen Elektrizitätsallokation wird das budgetfähige erneuerbare Mobilitätsvolumen mit einem dokumentierten Primärenergie-Faktorensatz in das nationale PE-Budget überführt. Anschließend wird es anhand einer begründeten Verteilung des individuellen Zielverkehrs den Quartiersnutzungen zugeordnet. Die nationale Verteilung muss insgesamt genau das freigegebene MIV-Budget ergeben und darf nicht zusätzlich denselben zentralen Strom anderen Nutzungen gutschreiben.
 
-Für Nutzung \(u\) gilt:
+Für Nutzung $u$ gilt:
 
 $$
 c_{\mathrm{M},u}
@@ -23,10 +23,10 @@ c_{\mathrm{M},u}
 \qquad \sum_u s_u=1.
 $$ {#eq-mobilitaetsbudget}
 
-Dabei ist \(s_u\) der Anteil des nationalen Budgets, der dem von Nutzung \(u\) verursachten beziehungsweise ihr zugeordneten Zielverkehr zugerechnet wird. Die verwendeten nationalen NGF müssen dem Flächen- und Nutzungsstand des Kalibrierungsszenarios entsprechen. Es wird zwischen **Budgetverteilung je Nutzung** und **tatsächlicher Verkehrsvermeidung am Standort** unterschieden.
+Dabei ist $s_u$ der Anteil des nationalen Budgets, der dem von Nutzung $u$ verursachten beziehungsweise ihr zugeordneten Zielverkehr zugerechnet wird. Die verwendeten nationalen NGF müssen dem Flächen- und Nutzungsstand des Kalibrierungsszenarios entsprechen. Es wird zwischen **Budgetverteilung je Nutzung** und **tatsächlicher Verkehrsvermeidung am Standort** unterschieden.
 
-::: {.callout-important title="Neue Mobilitätsgutschriften noch zu berechnen"}
-Einzutragen sind das aus @sec-allokation resultierende elektrische und primärenergetische MIV-Budget, die nutzungsbezogenen Zielverkehrsanteile, nationale NGF je Nutzung und die daraus abgeleiteten Gutschriften. Die historischen Werte aus 2023 sind **nicht** die neue Transition-2040-Kalibrierung.
+::: {.callout-note title="Parameterstand"}
+Das nationale elektrische Budget ist berechnet. Nutzungsbezogene PE-Gutschriften sind für Transition nicht numerisch festgelegt, da Faktorensatz, Zielverkehrsanteile und Nutzflächen hierfür nicht gemeinsam bestimmt sind. Die historischen Werte dokumentieren den Bewertungsstand 2023.
 :::
 
 ## Gemischt genutzte Quartiere

@@ -53,14 +53,14 @@ Die Deklaration **„Auf dem Weg zum Plus-Energie-Quartier“** berücksichtigt 
 
 Entscheidend ist die Unterscheidung zwischen einer allgemeinen Absicht und einem **technisch sowie zeitlich glaubhaften Umsetzungspfad**. Geeignete Nachweise können insbesondere sein:
 
-- **PV-Vorhalteflächen:** planerisch gesicherte Dach- oder Fassadenflächen einschließlich Tragfähigkeit, Verschattung, Leitungsführung und künftiger Anschlussmöglichkeit.
+- **PV-Vorhalteflächen:** planerisch gesicherte Dach- oder Fassadenflächen einschließlich Tragfähigkeit, Verschattung, Leitungsführung und geplanter Anschlussmöglichkeit.
 - **Vorbereitete Energieflexibilität:** Mess-, Steuer- und Kommunikationsinfrastruktur sowie ein umsetzbares Regelungskonzept.
 - **Technische Vorhaltungen:** Leerrohre, Platzreserven, Trassen oder elektrische Anschlussreserven für einen späteren Ausbau.
 - **Nachvollziehbare Etappen:** konkrete Maßnahmen, Verantwortlichkeiten, Voraussetzungen und Zeitpunkte der Umsetzung.
 
 Ein solcher Pfad ist **kein Nachweis einer bereits erreichten Qualitätsstufe**. Der aktuelle Zustand und die angestrebte vollständige Zielerreichung müssen getrennt dargestellt werden.
 
-Für die THG-Bewertung sind außerdem die Emissionen bis zur späteren Umsetzung und die zusätzlichen Herstellungsemissionen der Maßnahmen zu berücksichtigen. Ein zukünftiges gutes Ergebnis macht bereits entstandene Emissionen nicht rückgängig.
+Für die THG-Bewertung sind außerdem die Emissionen bis zur späteren Umsetzung und die zusätzlichen Herstellungsemissionen der Maßnahmen zu berücksichtigen. Ein gutes Ergebnis im Zieljahr macht bereits entstandene Emissionen nicht rückgängig.
 
 Die vertiefte Darstellung von Renovierungsetappen findet sich unter [Sanierungsfahrpläne](07-renovierungsfahrplan.qmd).
 

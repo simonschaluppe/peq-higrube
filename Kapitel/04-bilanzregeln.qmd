@@ -23,13 +23,6 @@ Für die Bewertung sind insbesondere folgende Bezugsgrößen zu dokumentieren:
 - **Konditionierte Nettogrundfläche (NGF):** Bezugsgröße der spezifischen betrieblichen Primärenergiebilanz.
 - **Nutzungsanteile:** Grundlage für Bedarfsprofile und die flächengewichtete Zuordnung von Mobilitätsbudgets.
 
-Die Flächenbezüge sind **nicht austauschbar**: Ein spezifischer Wert in kWh PE/(m² NGF a) ist ohne Flächenumrechnung nicht mit einem Wert in kg CO₂e/m² BGF vergleichbar. Änderungen der Quartiersgrenze können gleichzeitig Bedarf, lokale Erzeugung, GFZ und verfügbare Budgets verändern. Varianten sind daher nur bei dokumentierter Abgrenzung sinnvoll vergleichbar.
-
-::: {.callout-note title="Abbildung – Räumliche und funktionale Quartiersgrenze (Platzhalter)" appearance="minimal" icon=false}
-Schematische Quartierszeichnung mit Umrandung des bewerteten Gebiets, konditionierten Gebäudeflächen, unbeheizten Bauteilen, gemeinschaftlicher Wärmeversorgung, lokaler PV und Netzschnittstellen. Beschriftung der verschiedenen Flächenbezüge (Grundstück, BGF, NGF). Außerhalb liegende Infrastruktur und Erzeugung getrennt kennzeichnen. **Ziel:** zeigen, dass die physische Quartiersgrenze nicht mit jeder sektoralen Bilanzgrenze identisch ist.
-
-*Vorgesehene Grundlage:* Schneider (2026), Abschn. 3.2.2; grafisch neu aufbereiten.
-:::
 
 ## Funktionale Bilanzgrenze: Welche Nutzungen und Prozesse zählen?
 
@@ -51,37 +44,23 @@ Ein Energieausweis, der vor allem Heizung und Warmwasser beschreibt, bildet dami
 
 ## Primärenergiebilanz: Physische Flüsse und Bewertung trennen {#sec-energie-bewertung}
 
-Das Quartiersmodell bestimmt zunächst die **physischen Energieflüsse** über ein Jahr: Bedarf der Anwendungen, lokale Erzeugung, direkten Eigenverbrauch, Lade- und Entladevorgänge, Speicherverluste sowie Bezug und Abgabe über die Quartiersgrenze. Ein Speicher stellt dabei keine zusätzliche Energiequelle dar; er verschiebt verfügbare Energie und verursacht Verluste.
+Das Quartiersmodell bestimmt zunächst die **physischen Energieflüsse** über ein Jahr: Bedarf der Anwendungen, lokale Erzeugung, direkten Eigenverbrauch, Lade- und Entladevorgänge, Speicherverluste sowie Bezug und Abgabe über die Quartiersgrenze.
 
 Anschließend werden die bilanzierten Energiemengen mit den festgelegten Primärenergiefaktoren bewertet. Der **bewertete Primärenergiesaldo** ist positiv bei einem Überschuss und negativ bei einem Bedarfssaldo. Auf diesen Wert wirken die Kontextgutschriften und -lastschriften. Für die Erfüllung der jeweiligen Qualitätsstufe ist die Bilanz *einschließlich* der relevanten Kontextfaktoren maßgeblich [@schneider2025declaration, Abschn. 2.2].
-
-Eine Kontextgutschrift ist daher weder zusätzlich erzeugte Energie noch eine tatsächliche Verringerung des Netzbezugs. Auch ein positiver **Bewertungssaldo** ist nicht mit elektrischer Autarkie gleichzusetzen. Die formale Kombination von Saldo und Kontextkomponenten wird in @sec-kontext angegeben.
 
 Die Quartiersbilanz verknüpft Energiequellen, Umwandlungsanlagen, Speicher und Nutzungen. Energiebezug und Energieabgabe werden an der Systemgrenze erfasst.
 
 ![Schematisches Quartiersenergiesystem mit elektrischen und thermischen Energieflüssen, Speichern, erneuerbarer Erzeugung und Netzaustausch.](../Abbildungen/energiemodel_betrieb.svg){#fig-energiemodell-betrieb width="100%"}
 
 
-::: {.callout-note title="Abbildung – Vom Energiefluss zur Bewertungsbilanz (Platzhalter)" appearance="minimal" icon=false}
-Dreistufige Grafik: **(1)** physische Energieflüsse (PV, Anwendungen, Speicher, Netzbezug/-export), **(2)** zeitlich gewichteter Primärenergiesaldo, **(3)** Addition virtueller Kontextfaktoren zum bewerteten Endsaldo. Physische und virtuelle Größen grafisch deutlich unterscheiden. Optional eine interaktive HTML-Version mit Tooltip zu jeder Komponente und einem feststehenden, druckbaren Zustand für PDF/DOCX.
-
-*Vorgesehene Grundlage:* Bilanzlogik nach Schneider et al. (2025) sowie @eq-kontextbilanz.
-:::
 ## Mobilität: Zugeordnete Fahrten sind nicht gleich lokale Ladevorgänge
 
 Der MIV wird nach dem **Zielverkehrsprinzip** zugeordnet: Relevant sind Fahrten, deren Ziel im betrachteten Quartier liegt, beispielsweise Heim-, Arbeits- oder Einkaufswege. Fahrten zu anderen Zielen werden den jeweiligen Zielorten zugeordnet. Der öffentliche Verkehr wird im beschriebenen Verfahren nicht unmittelbar als Quartiersmobilität bilanziert; ein geringerer MIV-Anteil vermindert jedoch den zugeordneten Fahrenergiebedarf [@schneider2025declaration, Abschn. 2.4.2].
 
 Bei Elektrofahrzeugen können **Fahrenergie und Ladevorgang räumlich auseinanderfallen**. Das Modell berücksichtigt deshalb das Laden innerhalb und außerhalb des Quartiers und die Zuordnung von Fahrten zu verschiedenen Zielen. Wenn Fahrzeugbatterien zusätzlich zur Versorgung des Gebäudes beitragen, handelt es sich um einen Speicherfluss, nicht um eine zweite erneuerbare Energiequelle. Die für die Fahrt erforderliche Energie muss weiterhin berücksichtigt werden.
 
-In der THG-Bilanz wird außerdem die Fahrzeugherstellung in dem im Referenzverfahren vorgesehenen Umfang angesetzt. Daraus folgt keine vollständige Flotten-LCA aller künftigen Fahrzeugwechsel. Das nutzungsbezogene Mobilitätsbudget ist ebenfalls von realen Ladeleistungen, Anschlusskapazitäten und der tatsächlichen Anwesenheit von Fahrzeugen zu unterscheiden. Budgetzuordnung und Anwendung des Mobilitätskontextfaktors beschreibt @sec-kontext-mobilitaet; die stündliche Fahrzeugmodellierung ist in @schneider_annual_2025 beschrieben.
+In der THG-Bilanz wird außerdem die Fahrzeugherstellung in dem im Referenzverfahren vorgesehenen Umfang angesetzt. Der Umfang der Fahrzeugherstellung folgt dem Referenzverfahren. Das nutzungsbezogene Mobilitätsbudget ist ebenfalls von realen Ladeleistungen, Anschlusskapazitäten und der tatsächlichen Anwesenheit von Fahrzeugen zu unterscheiden. Budgetzuordnung und Anwendung des Mobilitätskontextfaktors beschreibt @sec-kontext-mobilitaet; die stündliche Fahrzeugmodellierung ist in @schneider_annual_2025 beschrieben.
 
-::: {.callout-note title="Abbildung – Zielverkehr und Ladeort (Platzhalter)" appearance="minimal" icon=false}
-Vereinfachte Karte mit Wohn-, Arbeits- und Einkaufsquartier. Pfeile zeigen nach dem Zielverkehrsprinzip zugeordnete Fahrten; Ladepunkte zeigen davon getrennt die physischen Orte der Stromaufnahme. Ergänzend schematische Zuordnung zu Mobilitätsbedarf, Nutzungsgutschrift und Fahrzeugherstellung. **Ziel:** Doppelzählung von Fahrtenergie, Ladevorgang und Budgetgutschrift anschaulich vermeiden.
-
-*Vorgesehene Grundlage:* Schneider et al. (2025), Abschn. 2.4.2.
-:::
-
-Die energetische Zuordnung von Mobilität und die tatsächlichen Ladevorgänge folgen unterschiedlichen Systemgrenzen. Fahrenergie wird dem Zielverkehr zugerechnet; geladen werden kann auch außerhalb des betrachteten Quartiers.
 
 ![Unterscheidung zwischen zugeordnetem Zielverkehr, Mobilitätsbudget und tatsächlichen Ladevorgängen nach Nutzungsarten.](../Abbildungen/bilanz_mobilitaet.svg){#fig-mobilitaetsbilanzgrenze width="90%"}
 
@@ -122,10 +101,7 @@ Die **Errichtungsemissionen der PV-Anlage** werden im publizierten Referenzansat
 
 Baustoffe aus nachwachsenden Rohstoffen können Kohlenstoff während ihrer Nutzungsdauer speichern. Diese Speicherwirkung muss von Herstellungs- und End-of-Life-Emissionen getrennt betrachtet werden. Das dokumentierte vereinfachte Verfahren rechnet den biogenen CO₂-Gehalt materialabhängig an: **100 %** bei schnell nachwachsenden pflanzlichen Materialien, **55 %** bei Holz aus üblich bewirtschafteten Wäldern und **100 %** bei nachgewiesenem Kalamitätsholz. Verbundmaterialien werden massengewichtet behandelt [@schneider2025declaration, Abschn. 2.5.2].
 
-Dies ist eine **Bilanzierungskonvention**, keine Aussage, dass jeder Holzbau emissionsfrei wäre. Die gleiche Speicherwirkung darf nicht doppelt angesetzt werden, etwa wenn sie bereits in einem übernommenen LCA-Datensatz enthalten ist. Eine dynamische Bewertung von Speicherung, Nachwachsen und späterer Freisetzung wäre methodisch differenzierter, benötigt aber eine zum Budget konsistente Bewertung und ist nicht ohne Weiteres mit dem statischen GWP100-Kennwert vergleichbar [@schneider2025declaration, Abschn. 2.5.1].
-
-
-
+Die gleiche Speicherwirkung darf nicht doppelt angesetzt werden, etwa wenn sie bereits in einem übernommenen LCA-Datensatz enthalten ist. Eine dynamische Bewertung von Speicherung, Nachwachsen und späterer Freisetzung wäre methodisch differenzierter, benötigt aber eine zum Budget konsistente Bewertung und ist nicht ohne Weiteres mit dem statischen GWP100-Kennwert vergleichbar [@schneider2025declaration, Abschn. 2.5.1].
 
 ## Zeitliche Bilanzierung und Emissionsentwicklung
 
@@ -135,23 +111,12 @@ Die Betriebsenergie wird über ein vollständiges Jahr **stündlich** berechnet.
 
 Die langfristigen THG-Absenkpfade und ihre Rolle im kumulierten Budget erläutert @sec-thg-pfade. Die Unterscheidung von Endenergie, Primärenergie und THG-Gewichtung steht in @sec-energie-bewertung.
 
-Die beiden Auflösungen erfüllen unterschiedliche Aufgaben: Die stündliche Simulation bildet beispielsweise Eigenverbrauch, Speicherverluste und Lastverschiebungen ab. Ein unveränderter Monatsfaktor bewertet dagegen zwei gleich große Netzstrommengen innerhalb desselben Monats identisch – selbst wenn sie zu unterschiedlichen Tageszeiten auftreten. Eine Flexibilitätsmaßnahme kann somit physisch sinnvoll sein, ohne allein über den Monatsfaktor einen zusätzlichen Bewertungsbonus zu erhalten.
-
-
-::: {.callout-note title="Abbildung – Stundenflüsse und monatliche Bewertung (Platzhalter)" appearance="minimal" icon=false}
-Gemeinsame Zeitachse für beispielhafte stündliche PV-Erzeugung, Strombedarf, Netzbezug und -export; darunter die zugeordneten monatlichen Primärenergiefaktoren. Eine Markierung erklärt, weshalb die **Simulation stündlich** ist, die **Gewichtung aber monatlich** erfolgt. Daten aus einer freigegebenen PEExcel-Beispielvariante, nicht aus einem erfundenen Referenzprojekt.
-
-*Vorgesehene Umsetzung:* Plotly-Zeitreihen im HTML, SVG/PNG im PDF und DOCX.
-:::
-
 ![Abbildung – Stundenflüsse und monatliche Bewertung.](../Abbildungen/konversionsfaktoren_schema.png){#fig-konversionsfaktoren width=90%}
 
 
 ### Bewertungszeitraum der Treibhausgasbilanz
 
 Die Lebenszyklus-THG-Bilanz betrachtet den Zeitraum **2025–2075 (50 Jahre)**. Emissionen aus Errichtung, späteren Maßnahmen, Gebäudebetrieb und Mobilität werden innerhalb dieses Zeitraums kumuliert. Die Emissionsfaktoren folgen im Referenzverfahren energieträger- und prozessbezogenen Entwicklungspfaden. Die angenommene vollständige Dekarbonisierung der betrachteten Versorgung und Prozesse **ab 2050** ist eine Szenarioannahme und kein Nachweis einer bereits tatsächlich emissionsfreien Versorgung [@schneider2025declaration, Abschn. 2.4; @schneider2026thesis, Abschn. 3.2.8].
-
-Drei Zeitangaben sind auseinanderzuhalten: **2040** als Bezugspunkt des österreichischen Klimaneutralitätsziels und der nationalen Allokation, **2025–2075** als Zeitraum der kumulierten Quartiersbewertung sowie **GWP100** als 100-jähriger Charakterisierungshorizont von Treibhausgasen. GWP100 bedeutet nicht, dass die Quartiersbilanz über 100 Jahre geführt wird. Die Budgetherleitung und die Bedeutung dieser Annahmen stehen in @sec-zielwert-thg.
 
 ## Konsequenzen für die Nachweisführung
 

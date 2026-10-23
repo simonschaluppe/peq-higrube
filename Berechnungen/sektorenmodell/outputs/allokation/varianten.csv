@@ -1,6 +1,6 @@
-Variante,Andere PV [%],MIV [%],H2-Anrechnung [%],MIV-Budget [PJ_el/a],Gebäudesaldo [PJ_el/a],Zentraler Rest [PJ_el/a],Vorrang gedeckt
-Beispiel,0.0,80.0,0,24.000000000000004,-7.0,0.0,True
-20 % andere PV,20.0,80.0,0,24.000000000000004,-36.8,0.0,True
-60 % MIV,0.0,60.0,0,6.0,-7.0,0.0,True
-40 % MIV: Konflikt,0.0,40.0,0,0.0,5.0,-12.0,False
-H2 voll budgetfähig,0.0,80.0,100,28.000000000000004,-3.0,0.0,True
+Variante,PV gesamt,PV Gebäude,PV Freifläche,Verkehr gesamt,ÖPNV,MIV,Übriger Verkehr,MIV-Anteil [%],Freiflächen-Anteil [%],H₂-Anrechnung [%],Gebäude,MIV-Budget,Saldo,Zentraler Rest,Vorrang gedeckt
+Referenz,149,149.0,0.0,90,17.999999999999996,72.0,0,80.0,0.0,0,108,24.000000000000004,-7.0,0.0,True
+20 % Freiflächen-PV,149,119.2,29.8,90,17.999999999999996,72.0,0,80.0,20.0,0,108,24.000000000000004,-36.8,0.0,True
+60 % MIV,149,149.0,0.0,90,36.0,54.0,0,60.0,0.0,0,108,6.0,-7.0,0.0,True
+40 % MIV: Konflikt,149,149.0,0.0,90,54.0,36.0,0,40.0,0.0,0,108,0.0,5.0,-12.0,False
+H₂ vollständig angerechnet,149,149.0,0.0,90,17.999999999999996,72.0,0,80.0,0.0,100,108,28.000000000000004,-3.0,0.0,True

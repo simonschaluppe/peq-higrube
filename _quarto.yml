@@ -5,6 +5,7 @@ project:
   type: book
   output-dir: _book
   resources:
+    - Abbildungen/methodik/**
     - Abbildungen/transition_sankey.html
     - Abbildungen/mobilitaetsbudget_sankey.html
     - "!Redaktion/**"
@@ -53,6 +54,7 @@ book:
     - references.qmd
     - about.qmd
   appendices:
+    - Kapitel/anhang-szenariotabellen.qmd
     - Kapitel/anhang-methodenstand.qmd
     - Berechnungen/gfz_at/GFZ_AT_Analyse_Anhang.ipynb
     - Berechnungen/sektorenmodell/allokation.ipynb

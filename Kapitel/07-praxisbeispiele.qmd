@@ -14,7 +14,7 @@ Die Beispiele illustrieren unterschiedliche Planungsaufgaben: Die zusätzliche A
 
 Am Bichl III wurde im Oktober 2026 als erstes Quartier in Österreich die ``🏗️ Fertigsstellungsdeklaration Plus-Energie-Quartier`` verliehen. Der hier dokumentierte Deklarationsumfang umfasst die Betriebsenergie.
 
-Das Beispiel verdeutlicht die Wirkung des Dichtekontexts: Bei geringer baulicher Dichte wird ein zusätzlicher energetischer Beitrag verlangt. Im Fall von Am Bichl III konnte diese Anforderung durch die Ermöglichung zukünftig von energieflexiblem Heizen und Kühlen kompensiert werden.
+Das Beispiel verdeutlicht die Wirkung des Dichtekontexts: Bei geringer baulicher Dichte wird ein zusätzlicher energetischer Beitrag verlangt. Im Fall von Am Bichl III konnte diese Anforderung durch die vorgesehene Flexibilität beim Heizen und Kühlen kompensiert werden.
 
 
 ## RUGInnovation – Sanierung und integrierte Energieversorgung

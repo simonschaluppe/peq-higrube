@@ -5,4 +5,4 @@
 | Betrieblicher Stromsaldo | -59,248 | 41,000 | -100,248 |
 | Saldo einschließlich MIV | -107,248 | -7,000 | -100,248 |
 
-: Vergleich bei gleichen elektrischen Bilanzgrenzen; Top-down-Zuordnungen bleiben vorläufig. {#tbl-gebaeude-abgleich}
+: Vergleich bei gleichen elektrischen Bilanzgrenzen; Top-down-Zuordnungen gemäß dokumentiertem Referenzfall. {#tbl-gebaeude-abgleich}

@@ -5,6 +5,7 @@ import plotly.graph_objects as go
 from plotly.offline import get_plotlyjs
 from .model import ROOT, rows
 from .sankey import translucent
+from styles.plotly_formatting import COLORS
 
 
 def main():
@@ -14,7 +15,7 @@ def main():
     amounts=[float(r['budget_twh_pe']) for r in records]
     names={'wohnen':'Wohnen','buero_gewerbe':'Büro / Gewerbe','bildung':'Bildung','handel_sonstige':'Handel / Sonstige'}
     labels=[names[r['usage']] for r in records]
-    colors=['#d39736','#487fa8','#739c40','#7857a5']
+    colors=[COLORS[r['usage']] for r in records]
     assert abs(sum(amounts)-10.68)<1e-9
     fig=go.Figure(go.Sankey(arrangement='snap',node=dict(
         label=['Mobilitätsbudget<br>10,68 TWh PE/a']+[f'{s}<br>{v:g} TWh PE/a' for s,v in zip(labels,amounts)],

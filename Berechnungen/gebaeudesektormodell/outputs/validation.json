@@ -4,7 +4,7 @@
     "input_sha256": "cd09efbfbea7bc7e8cfd82b07146f72c6f3712d3a381625532b14c947dd75bc1",
     "gfz_sha256": "b17c1f98b6104a5b8ed6da4fe436ebff14d2f7708cc2043860d166b17d3f1c3b"
   },
-  "allocation_sha256": "0db04e742493fd5d244b727c30b215703bacbd9c5954444bc3d131dd2024aaeb",
+  "allocation_sha256": "3614c6769be82ce4a53ea0e15ae7ea872a3dbf9b94b63a6f476ecf77a8992835",
   "ngf_bgf": 0.8,
   "type_count": 900,
   "positive_types_2040": 603,

@@ -1,9 +1,9 @@
 ::: {.callout-note appearance="simple" icon=true}
 {{< var versionstyp >}} vom {{< var versionsdatum >}}
 :::
-# Methodenstand, Grenzen und Weiterentwicklung {#sec-fortschreibung}
+# Methodenstand und Fortschreibung {#sec-fortschreibung}
 ::: {.lead}
-
+Einflussgrößen, Geltungsbereich und Regeln für die Fortschreibung
 :::
 
 Der PEQ-Ansatz verbindet einen nationalen Bewertungsmaßstab mit dem konkreten Quartierskonzept. Seine Aussagekraft hängt davon ab, dass beide Seiten zusammenpassen: Das Budget muss zu den bilanzierten Emissionen gehören, die Energieanforderung zum angenommenen Versorgungssystem und die Simulation zum umsetzbaren Projekt. Eine Fortschreibung überprüft deshalb Daten, Annahmen und Verteilungsregeln gemeinsam.
@@ -11,8 +11,6 @@ Der PEQ-Ansatz verbindet einen nationalen Bewertungsmaßstab mit dem konkreten Q
 ## Was ein positives Ergebnis aussagt
 
 Eine positive Primärenergiebilanz zeigt, dass das Quartier unter den festgelegten Faktoren und Kontextregeln die energetische Anforderung erfüllt. Die Klimaneutralitätsstufe verlangt zusätzlich die Einhaltung des kumulierten THG-Budgets. Der Referenzwert von 320 kg CO₂e/m² BGF setzt die L3-Senkenannahme und die beschriebenen Systemgrenzen voraus. Er bedeutet weder Emissionsfreiheit am Standort noch einen vom Projekt erbrachten Nachweis der national angenommenen Senkenleistung.
-
-Ebenso wenig ist eine positive Jahresbilanz ein Autarkienachweis. Ein Quartier kann erhebliche Mengen Strom oder Wärme beziehen und zu anderen Zeiten Energie abgeben. Für die technische Planung bleiben Anschlussleistungen und zeitliche Versorgungslücken relevant. Ein energetisch günstiges Konzept muss außerdem Komfort, Nutzbarkeit und andere Anforderungen an ein nachhaltiges Gebäude erfüllen.
 
 ## Drei Arten von Änderungen
 
@@ -28,7 +26,7 @@ Für einen nachvollziehbaren Methodenstand sind drei Ebenen zu unterscheiden:
 
 Bei einer Neuauflage bleiben die zuvor verwendeten Faktoren und Annahmen nachvollziehbar. Ob laufende oder abgeschlossene Deklarationen auf neue Grundlagen umzustellen sind, ist eine eigene Verfahrensentscheidung. Aus einer wissenschaftlichen Weiterentwicklung folgt nicht automatisch eine rückwirkende Neubewertung.
 
-## Wo die nächsten fachlichen Verbesserungen liegen
+## Einflussgrößen und Grenzen des Modells
 
 ### Gebäudebestand und Dichte
 
@@ -42,7 +40,7 @@ Neue Mobilitätserhebungen können Wege, Verkehrsmittelwahl und Standortuntersch
 
 Bei den Energiefaktoren ist eine höhere zeitliche Auflösung fachlich interessant, insbesondere für Speicher, gesteuertes Laden und externe Flexibilität. Das Modell kann stündliche Faktoren verarbeiten. Ihr Einsatz braucht jedoch geeignete, dokumentierte Daten und eine klare Bedeutung der Faktoren. Die durchschnittliche Emissionsintensität eines Strommixes und die durch zusätzlichen Verbrauch verursachte Änderung der Erzeugung sind unterschiedliche Bewertungsansätze und dürfen nicht unbegründet ausgetauscht werden.
 
-Eine Fortschreibung sollte deshalb zunächst dieselben Projektvarianten mit dem bisherigen und dem neuen Faktorsatz vergleichen. So wird sichtbar, ob ein Ergebnis durch die technische Maßnahme oder durch den geänderten Maßstab besser wird. Stündliche Faktoren sind damit ein möglicher nächster Schritt, keine Voraussetzung dafür, den bisherigen monatlichen Ansatz nachvollziehbar anzuwenden [@schneider2026thesis, Abschn. 3.2.3–3.2.4; @schneider2025declaration, Abschn. 2.6 und 4.2–4.3].
+Eine Fortschreibung sollte deshalb zunächst dieselben Projektvarianten mit dem bisherigen und dem neuen Faktorsatz vergleichen. So wird sichtbar, ob ein Ergebnis durch die technische Maßnahme oder durch den geänderten Maßstab besser wird. Der Referenzansatz verwendet monatliche Faktoren; stündliche Faktoren bilden eine gesonderte Bewertungsvariante [@schneider2026thesis, Abschn. 3.2.3–3.2.4; @schneider2025declaration, Abschn. 2.6 und 4.2–4.3].
 
 ### THG-Budget, PV und Senken
 
@@ -54,9 +52,9 @@ Senken bleiben eine besonders wirksame Annahme. Eine weniger günstige Senkenent
 
 ### Sanierung und bauliche Absenkpfade
 
-Die pauschale Sanierungsgutschrift lässt sich künftig nach tatsächlich unterschiedlichen Erschwernissen differenzieren. Dafür braucht es eine belastbare Datengrundlage und eine Regel, die in der Planung mit vertretbarem Aufwand nachweisbar ist. Eine kleinteilige Differenzierung wäre wenig hilfreich, wenn die erforderlichen Informationen erst spät oder nur mit unverhältnismäßigem Aufwand verfügbar sind.
+Der Entwurf differenziert die Sanierungsanpassung nach energetischer Typologie und baulichen Randbedingungen. Dafür braucht es eine belastbare Datengrundlage und eine Regel, die in der Planung mit vertretbarem Aufwand nachweisbar ist. Eine kleinteilige Differenzierung wäre wenig hilfreich, wenn die erforderlichen Informationen erst spät oder nur mit unverhältnismäßigem Aufwand verfügbar sind.
 
-Für Renovierungsfahrpläne sind außerdem die künftigen Herstellungsemissionen von Bauteilen relevant. Europäische Arbeiten zur Lebenszyklusbewertung liefern dafür Szenarien und Vergleichsgrundlagen. Die EU-Roadmap verbindet Gebäude- und Bestandsmodelle mit Maßnahmen an Materialproduktion, Materialeinsatz und Bautätigkeit [@leden2024roadmap]. Die INDICATE-Arbeiten zeigen ergänzend, wie nationale Ausgangswerte mit einheitlichen Erhebungsgrundlagen aufgebaut werden können und warum Unterschiede der Bilanzmethoden den Vergleich erschweren [@bpie2024benchmarks]. Daraus lassen sich Prüfaufgaben für die Fortschreibung ableiten; konkrete österreichische Materialpfade müssen gesondert ausgewählt und auf den PEQ-Bilanzumfang abgestimmt werden.
+Für Renovierungsfahrpläne sind außerdem die Herstellungsemissionen zum Maßnahmenzeitpunkt von Bauteilen relevant. Europäische Arbeiten zur Lebenszyklusbewertung liefern dafür Szenarien und Vergleichsgrundlagen. Die EU-Roadmap verbindet Gebäude- und Bestandsmodelle mit Maßnahmen an Materialproduktion, Materialeinsatz und Bautätigkeit [@leden2024roadmap]. Die INDICATE-Arbeiten zeigen ergänzend, wie nationale Ausgangswerte mit einheitlichen Erhebungsgrundlagen aufgebaut werden können und warum Unterschiede der Bilanzmethoden den Vergleich erschweren [@bpie2024benchmarks]. Daraus lassen sich Prüfaufgaben für die Fortschreibung ableiten; konkrete österreichische Materialpfade müssen gesondert ausgewählt und auf den PEQ-Bilanzumfang abgestimmt werden.
 
 ## Kommunale Allokation als zusätzliche Ebene
 
@@ -67,5 +65,3 @@ Eine Kommune könnte damit verdeutlichen, welche Beiträge sie aus Bestandssanie
 ## Lernen aus Planung und Betrieb
 
 Die weitere Absicherung des Verfahrens braucht neben neuen Szenarien auch Erfahrungen aus realisierten Projekten. Ein Abgleich mit Betriebsdaten kann zeigen, ob Bedarfsprofile, Regelung und Speicherbetrieb die vorgesehenen Beiträge erbringen. Abweichungen sind zunächst auf Nutzung, Wetter, Ausführung und Betrieb zu untersuchen, bevor daraus eine Änderung des Bewertungsmaßstabs abgeleitet wird.
-
-Für die Anwendung bleibt entscheidend, dass ein Ergebnis erklärbar ist: welche Maßnahmen wirken, welche Annahmen es tragen und welche Beiträge außerhalb des Projekts liegen. Genau diese Verbindung macht den Bericht als Grundlage für Entwurfsentscheidungen, fachliche Prüfung und Gespräche zwischen Bauherrschaften, Planung und Verwaltung nutzbar.

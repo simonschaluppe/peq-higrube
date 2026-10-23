@@ -11,7 +11,7 @@
       "geothermal": 1.0,
       "hydrogen_electricity": 0.0
     },
-    "source": "Vorläufiges redaktionelles Rechenbeispiel; Verkehrs- und PV-Anteile nicht empirisch festgelegt",
+    "source": "Referenzfall des Publikationsentwurfs; Verkehrs- und PV-Anteile nicht empirisch festgelegt",
     "pe_factor_electricity": null,
     "pe_factor_year": null,
     "pe_factor_source": null

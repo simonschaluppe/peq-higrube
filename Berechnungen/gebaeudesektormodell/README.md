@@ -54,7 +54,13 @@ Die MIV-Zuordnung wird beim Vergleich auf beiden Seiten identisch angesetzt und 
 
 „Heute“ benötigt ein Bezugsjahr; BGF 2020 ist als leere Spalte vorbereitet. Ebenso sind PEQ-Anteile, Quellen/Unsicherheiten und jahresbezogene PE-Faktoren ergänzbar. Wichtig sind außerdem die Definition der Bestands-/Neubau-/Sanierungsanteile, der Abbau fossiler Versorgung 2040 und Kennwerte für alternative PV-/Flexibilitätsvarianten. Siehe `METHODENSTAND.md` und den Notebook-Ausblick. Keine Optimierungsschleife und keine automatische Anpassung an UBA.
 
-## Internes Szenario- und Kalibrierungsdashboard
+## Plotly-Vergleiche und Dichte-Bewertungsvariante
+
+Das wissenschaftliche Notebook ergänzt in Abschnitt 7 eine Variablentabelle und den spezifischen Vergleich aller 900 Typen (Geometrieauswahl, Achsenregler, BGF im Tooltip). Abschnitt 8 stellt UBA-Allokation, Gebäudepool und Gebäudepool mit historischer Dichteformel gegenüber. Der zusätzliche virtuelle Beitrag beträgt bei vollständiger Anwendung auf positiv gewichtete Flächen −57,808696 PJ-Äquivalent/a. Er verändert die physische Strombilanz nicht. Eine Anwendung ausschließlich auf PEQ-Flächen benötigt deren explizite Anteile.
+
+Die zusätzlichen Daten liegen in `outputs/typen_bewertung_dichte.csv` und `outputs/sektorvergleich_dichte.csv`. `styles/plotly_formatting.py` enthält die gemeinsame Farbpalette. Nach einer Formatänderung nationale Grafiken mit `python -m Berechnungen.methodik_plots` und die Modellgrafiken durch Ausführen der beiden wissenschaftlichen Notebooks erneuern. HTML-Dateien und die gemeinsame Offline-Plotly-Bibliothek liegen unter `Abbildungen/methodik/`.
+
+## Bedienung des internen Dashboards
 
 `Internes_Kalibrierungsdashboard.ipynb` ist eine temporäre Szenariowerkstatt. In der ersten Codezelle stehen `XLSX`, `SCENARIO`, `AREA_COLUMN` und `DEFAULT`. Als Excel sind Original-Pools mit `Strombed_estim`/`zuordnung_gfz` oder die Reinschrift mit `Typen`/`GFZ_Zuordnung` möglich. Die Datei benötigt gespeicherte Formelwerte und den vorhandenen Datenvertrag. Ein Excel-Wechsel erfordert erneute Notebook-Ausführung; die HTML-Seite liest keine lokalen Dateien nach.
 

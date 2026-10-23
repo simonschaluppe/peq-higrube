@@ -8,7 +8,7 @@ Die Sanierungsanpassung berücksichtigt spezifische technische und bauliche Rand
 
 ## Ableitung aus den neuen Gebäudetypologien
 
-Die zu betrachtenden Typologien, ihre energetischen Zustände und die zugehörigen nationalen Flächenanteile werden in @sec-gebaeudebestand festgelegt. Für jede Typologie \(k\) ist zu dokumentieren, ob eine Sanierungsanpassung sachlich gerechtfertigt ist, welchen zulässigen Kontextwert \(c_{\mathrm{S},k}\) sie erhält und wie dieser Wert mit den modellierten typologischen Anforderungen zusammenhängt.
+Die zu betrachtenden Typologien, ihre energetischen Zustände und die zugehörigen nationalen Flächenanteile werden in @sec-gebaeudebestand festgelegt. Für jede Typologie $k$ ist zu dokumentieren, ob eine Sanierungsanpassung sachlich gerechtfertigt ist, welchen zulässigen Kontextwert $c_{\mathrm{S},k}$ sie erhält und wie dieser Wert mit den modellierten typologischen Anforderungen zusammenhängt.
 
 Eine typologiespezifische Anpassung kann insbesondere die im Bestand eingeschränkten Maßnahmenmöglichkeiten berücksichtigen. Die konkreten Kriterien – zum Beispiel Sanierungstiefe, vorhandene Konstruktion und verbleibender energetischer Bedarf – sind anhand der neuen Klassen zu definieren. Die Höhe ist **Ergebnis der gemeinsamen Kalibrierung**, nicht automatisch der Abstand zu einem Neubau-Bedarfswert und nicht eine pauschal behauptete CO₂-Einsparung.
 
@@ -26,8 +26,8 @@ Voraussetzung ist, dass jede Teilfläche eindeutig einer freigegebenen Typologie
 
 Die Sanierungsanpassung ändert die **Bewertungsanforderung**, nicht die tatsächlich simulierten Energieflüsse. Bereits in einem typologiebezogenen Ausgangsziel berücksichtigte Vorteile dürfen nicht zusätzlich als Gutschrift angesetzt werden. Erhaltene Bausubstanz und eingesparte graue Emissionen wirken, soweit methodisch vorgesehen, in der eigenständigen Lebenszyklus-THG-Bilanz; die Primärenergieanpassung ist nicht noch einmal eine vermiedene CO₂-Menge.
 
-::: {.callout-important title="Typologiewerte nach Excel und Kalibrierung ergänzen"}
-Hier ist die Tabelle der **neuen** Sanierungstypologien mit eindeutiger Definition, zulässigen Zuordnungsregeln und kalibrierten Werten \(c_{\mathrm{S},k}\) einzufügen. Solange sie nicht freigegeben ist, werden keine neuen numerischen Gutschriften angegeben.
+::: {.callout-note title="Parameterstand"}
+Der Entwurf definiert die typologische Zuordnung und Aggregationsregel. Numerische Sanierungswerte je Typ sind nicht festgelegt. Die historische Pauschale ist ausschließlich als Vergleichsstand dokumentiert.
 :::
 
 ::: {.callout-note title="Historische Einordnung"}

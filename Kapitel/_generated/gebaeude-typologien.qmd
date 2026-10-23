@@ -11,4 +11,4 @@
 | NiWo_3G | 194,334 | 196,767 | 2,183 | 3,924 |
 | RH_2G | 186,891 | 189,492 | 0,615 | -22,798 |
 
-: Gelieferte Flächen und BGF-gewichtete Dichte-Erwartungswerte. Heute: Bezugsjahr offen; Dichtefunktion vorläufig in elektrischer Energie. {#tbl-gebaeude-typologien}
+: Gelieferte Flächen und BGF-gewichtete Dichte-Erwartungswerte. Heute: Bezugsjahr offen; Dichtefunktion in elektrischer Energie. {#tbl-gebaeude-typologien}

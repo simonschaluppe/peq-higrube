@@ -1,0 +1,13 @@
+# Nationale Energie- und Stromtabellen {#sec-szenariotabellen}
+
+Dieser Anhang enthält die Detailtabellen zum Szenariovergleich in @sec-zielszenario (zuvor Tabellen 4.1–4.4). Zahlen und Tabellen-IDs sind unverändert; die Nummerierung folgt ihrer Position im Anhang.
+
+## Stromerzeugung, Strombedarf und Bilanzreste
+
+{{< include _generated/transition-stromtabellen.qmd >}}
+
+## Endenergie nach Sektoren
+
+{{< include ../Daten/sektorenmodell/endenergie_vergleich.md >}}
+
+Die Datenbasis für WEM/WAM 2025 verwendet REP-0995, Tabelle E (S. 12). Die in der Datenlieferung dokumentierte Abweichung zu Tabelle 19 wird nicht durch eine Mischung der beiden Tabellen aufgelöst. Transition verwendet REP-0880, Tabellen 15 und 16 [@uba2025szenarien; @uba2023transition].
