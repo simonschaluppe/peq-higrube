@@ -81,3 +81,9 @@ quarto render --profile publikation --to html
 ```
 
 Dieses Profil enthält den internen Anhang nicht und schreibt in den getrennten Ordner `_publication/`. Nur diesen Ordner für eine Publikation verwenden, nicht den internen Vorschauordner `_book/`. Nicht mit `intern` oder `redaktion` kombinieren. Der Profilwechsel ist mit `quarto inspect --profile publikation` prüfbar. Es erfolgt hier kein Deployment.
+
+### Selektive GFZ-Bewertung
+
+Unterhalb der physischen Allokation stehen Typenauswahl und Dichteregler. Die gemeinsame Nutzungs-/GFZ-Verteilung wird innerhalb jeder Geometrieklasse normiert und auf deren Szenario-BGF übertragen. Die ungeänderte Aggregation reproduziert die direkte BGF-Bilanz. Nur ausgewählte Typen erhalten den virtuellen Beitrag; ihre Energiekennwerte bleiben unverändert. Der Startvorschlag umfasst Neu_30cm mit Wärmepumpe, FW_erneu oder Bio (54 aktive Typen, 21,44 % BGF); eine explizite PEQ-Kennzeichnung hat Vorrang. Die Auswahl ist kein Konformitätsnachweis.
+
+Zwei Plotly-Grafiken zeigen positive PV-, negative Bedarfsstapel nach Nutzung und den kumulierten Saldo auf der rechten Achse. Schraffuren kennzeichnen virtuelle Beiträge. Beide Grafiken verwenden identische Achsengrenzen. Farben: GFZ_USE_COLORS in styles/plotly_formatting.py, identisch zur GFZ-Analyse. Die wissenschaftliche Referenzrechnung steht im Notebook; dashboard_density.js spiegelt sie für die Interaktion. JSON enthält auch die ausgewählten Archetypen und GFZ-Bilanzen. Keine Auswahl muss identische Salden ergeben; alle Typen reproduzieren den bisherigen Gesamtwert.

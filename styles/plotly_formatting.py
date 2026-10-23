@@ -33,3 +33,13 @@ def save_figure(fig, path):
                    config={'responsive':True,'displaylogo':False,'toImageButtonOptions':{'format':'svg'}})
     html=path.read_text(encoding='utf-8').replace('<head>', '<head><meta name="viewport" content="width=device-width, initial-scale=1"><style>body{margin:0;overflow-x:hidden} .plotly-graph-div{max-width:100%}</style>')
     path.write_text(html,encoding='utf-8')
+
+# Nutzungsfarben identisch zum GFZ-Analyseanhang.
+GFZ_USE_COLORS = {
+    'Groß- und Einzelhandelsgebäude': '#abd7e7', 'Büronutzung': '#81c9e6',
+    'Hotels o.Ä.': '#3e82b8', 'Industrie und Lagerung': '#405d77',
+    'Ein- und Zweifamilienhäuser': '#ff9800', 'Mehrfamilienhaus': '#ff5c48',
+    'Gemeinschaftsgebäude': '#dca51b',
+    'Kultur, Freizeit, Bildung und Gesundheit': '#92009a',
+    'Verkehrs- und Nachrichtenwesen': '#a4a4a4',
+}
