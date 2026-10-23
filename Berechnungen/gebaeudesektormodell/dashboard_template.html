@@ -21,7 +21,7 @@
 #peq-dashboard .card:focus-visible{outline:2px solid #006b70}
 #peq-dashboard .card{background:#edf2f5;padding:12px;border-radius:8px} #peq-dashboard .card strong{display:block;font-size:clamp(17px,2.2vw,23px)}
 #peq-dashboard button{padding:9px 14px;border:1px solid #6e8795;background:white;border-radius:6px;margin:4px;cursor:pointer}
-#peq-dashboard svg{width:100%;height:auto;display:block} #peq-dashboard summary{cursor:pointer;font-weight:bold}
+#peq-dashboard #dash-balance svg,#peq-dashboard #dash-density svg,#peq-dashboard #dash-curve svg{width:100%;height:auto;display:block} #peq-dashboard summary{cursor:pointer;font-weight:bold}
 #peq-dashboard pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:12px} #peq-dashboard h3{font-size:19px}
 </style>
 <div class="warning"><strong>INTERN · Szenariowerkstatt</strong><br>Elektrische Jahresbilanz, keine vollständige Klimaneutralitäts- oder PEQ-Prüfung.</div>
@@ -40,19 +40,19 @@
 <div class="grid charts"><div class="panel"><h3>Physischer Vergleich [PJ Strom/a]</h3><div id="dash-balance"></div><p class="small">MIV wird auf beiden Seiten gleich zugeordnet. Die physische Ziellücke verändert sich deshalb durch MIV allein nicht.</p></div>
 <div class="panel"><h3>Stromsaldo nach Gebäudeklasse [PJ/a]</h3><div id="dash-geometry"></div></div></div>
 <section id="gfz-bewertung"><h2>GFZ-Vergleich: Gebäudebetrieb mit und ohne Dichtekorrektur</h2>
-<p>Alle Typen bleiben in der Strombilanz enthalten. Die Auswahl bestimmt ausschließlich, auf welche Typen die virtuelle Dichtekorrektur angewendet wird. Dieser Vergleich enthält keine Mobilität.</p>
+<p>Alle Typen bleiben in der Strombilanz enthalten. Die Auswahl bestimmt ausschließlich, auf welche Typen die virtuelle Dichtekorrektur angewendet wird. Dieser Vergleich enthält keine Mobilität. Ausgewählte Typen werden exakt auf den Zielsaldo gesetzt; die Anpassung kann durch Bedarfssenkung oder mehr Erzeugung erreicht werden.</p>
 <div class="grid controls"><div class="panel"><h3>Typen für die PEQ-Dichtebewertung</h3><p id="selection-note" class="small"></p>
 <label for="type-search">Typen suchen</label><input id="type-search" type="search" placeholder="z. B. MFH, Neu_30cm, WP_Luft" title="Filtert nur die angezeigte Liste. Die Auswahl anderer Typen bleibt erhalten.">
 <button id="types-default" type="button" title="Setzt nur die Typenauswahl auf den dokumentierten Startvorschlag zurück.">Startauswahl</button><button id="types-none" type="button" title="Keine virtuelle Korrektur: beide GFZ-Bilanzen müssen übereinstimmen.">Keine</button><button id="types-all" type="button" title="Wählt alle Typen mit positiver Szenariofläche aus.">Alle</button>
-<div id="type-options" style="max-height:230px;overflow:auto"></div><p id="type-summary" class="small" aria-live="polite"></p></div><div class="panel"><h3>Virtuelle Dichtekorrektur</h3><div id="density-controls"></div>
-<p class="small">Historische EE-Lesart; GFZ-Muster 2021. Kein physischer Ausgleich und keine automatische Anpassung an das Top-Down-Ziel. Einheit der Erwartungswerte: kWh EE/(m² BGF·a).</p></div></div>
+<div id="type-options" style="max-height:230px;overflow:auto"></div><p id="type-summary" class="small" aria-live="polite"></p></div><div class="panel"><h3>Virtuelle Dichtekorrektur / Zielsaldo</h3><div id="density-controls"></div><h4>Zielsaldo nach GFZ</h4><p class="small">kWh EE/(m² BGF·a): positiv = geforderter Überschuss, negativ = zulässiger Fehlbetrag.</p><div id="dash-curve"></div>
+<p class="small">Die ausgewählten PEQ-Typen werden auf den Zielsaldo angesetzt; alle übrigen behalten ihre typologische Bilanz. GFZ-Muster 2021. Einheit der Erwartungswerte: kWh EE/(m² BGF·a).</p></div></div>
 <div id="gfz-totals" class="cards panel" aria-live="polite"></div>
-<p class="small">Balken: Jahresenergie je GFZ-Klasse (linke Achse). Linie: über alle Klassen bis zur jeweiligen GFZ kumulierter Saldo (rechte Achse). Beide Grafiken verwenden dieselben Achsengrenzen und die vollständige GFZ-Verteilung. Positive Balken = PV, negative = Bedarf. Schraffur = virtuelle Korrektur, kein Stromfluss. Nutzungsfarben entsprechen der GFZ-Analyse. Hover zeigt Klasse, Nutzung und Werte.</p>
+<p class="small">Balken: Jahresenergie je GFZ-Klasse (linke Achse). Linie: über alle Klassen bis zur jeweiligen GFZ kumulierter Saldo (rechte Achse). Standardansicht: GFZ 0–5; über „Gesamte GFZ“ ist die vollständige Verteilung sichtbar. Summen enthalten immer sämtliche GFZ-Klassen; der sichtbare Linienwert bei GFZ 5 ist eine Teilsumme. Beide Grafiken verwenden dieselben Achsengrenzen. Positive Balken = PV, negative = Bedarf. Grün = ausgewählte PEQ-Typen. Grüne Schraffur = Anpassung zur PEQ-Zielerreichung (Zielsaldo minus typologischer Saldo), keine Festlegung auf PV-Ausbau oder Bedarfssenkung. Nutzungsfarben entsprechen der GFZ-Analyse. Hover zeigt Klasse, Nutzung und Werte.</p>
 <div class="panel"><h3>Ohne Dichtekorrektur: physischer Gebäudebetrieb</h3><div id="gfz-physical" style="width:100%;min-width:0"></div></div>
-<div class="panel"><h3>Mit selektiver Dichtekorrektur: virtuelle Bewertung</h3><div id="gfz-corrected" style="width:100%;min-width:0"></div></div>
+<div class="panel"><h3>Mit PEQ-Zielerreichung: angepasster Sektorsaldo</h3><div id="gfz-corrected" style="width:100%;min-width:0"></div></div>
 </section>
-<div class="grid charts"><div class="panel"><h3>Dichte-Erwartungswerte</h3><div id="dash-density"></div><p id="density-total" class="small"></p></div>
-<div class="panel"><h3>Dichtekurve [kWh EE/(m² BGF·a)]</h3><div id="dash-curve"></div><p class="small">Die Erwartungswerte links integrieren die gesamte hinterlegte GFZ-Verteilung, nicht nur den dargestellten Bereich GFZ 0–5.</p></div></div>
+<div class="grid charts"><div class="panel"><h3>Mittlerer Zielsaldo je Geometrie</h3><div id="dash-density"></div><p id="density-total" class="small"></p></div>
+</div>
 <details class="panel"><summary>Parameter, Ergebnisstand und Quellen-Hashes</summary><pre id="dash-audit"></pre></details>
 <script>
 (()=>{
@@ -80,10 +80,10 @@ const explanations={
  saving:'Zusätzliche proportionale Senkung aller elektrischen Bedarfe des typologischen Gebäudesektors gegenüber den Excel-Kennwerten. Neuer Bedarf = Ausgangsbedarf × (1 − Senkung).',
  pv_scale:'Multiplikator der PV-Erzeugungskennwerte aus der Excel: 100 % übernimmt sie unverändert. Verändert weder den nationalen PV-Anteil noch Eigenverbrauch und Netzbezug.',
  ngf_bgf:'Verhältnis Nettogrundfläche zu Bruttogrundfläche. Nationale BGF × dieses Verhältnis × spezifischer NGF-Kennwert ergibt Bedarf bzw. PV-Erzeugung. Die virtuelle Dichtebewertung bleibt BGF-bezogen.',
- density_f_res:'Parameter f RES der Referenzkurve: c D = −min[f RES / (GFZ + dx) − f ED, Begrenzung]. Höhere Werte machen die virtuelle Korrektur bei gleicher GFZ negativer.',
- density_f_ed:'Parameter f ED der Referenzkurve in kWh EE/(m² BGF·a). Höhere Werte verschieben die virtuelle Korrektur nach oben, soweit die Begrenzung nicht greift.',
+ density_f_res:'Parameter f RES der Referenzkurve: Zielsaldo = min[f RES / (GFZ + dx) − f ED, Begrenzung]. Höhere Werte fordern bei gleicher GFZ einen höheren Überschuss.',
+ density_f_ed:'Parameter f ED der Referenzkurve in kWh EE/(m² BGF·a). Höhere Werte senken den geforderten Zielsaldo, soweit die Begrenzung nicht greift.',
  density_dx:'Horizontale Verschiebung dx in GFZ-Einheiten im Nenner GFZ + dx. Die Erwartungswerte werden über alle hinterlegten GFZ-Bins flächengewichtet.',
- density_cutoff:'Begrenzt den Ausdruck vor dem negativen Vorzeichen: c D ≥ −Begrenzung, in kWh EE/(m² BGF·a). Keine physische Erzeugung oder Deckung.'
+ density_cutoff:'Begrenzt den maximal geforderten Überschuss: Zielsaldo ≤ Begrenzung, in kWh EE/(m² BGF·a). Keine physische Erzeugung oder Deckung.'
 };
 for(const [parent,key,label,min,max,step,scale,unit] of spec){
  const l=document.createElement('label');l.htmlFor='ctrl-'+key;l.textContent=label+' ⓘ';l.title=explanations[key];
@@ -122,8 +122,8 @@ function render(){
  el('dash-save').disabled=invalid;
  if(invalid){el('dash-status').textContent='Ungültig: MIV + übriger Verkehr über 100 %. Die Diagramme zeigen den letzten gültigen Stand.';return;}
  const r=calculate(p);if(Math.abs(r.closure-S.residual)>1e-7)throw Error('Zuordnungsbilanz verletzt');
- const context={};for(const b of S.bins){const c=-Math.min(p.density_f_res/(b.GFZ+p.density_dx)-p.density_f_ed,p.density_cutoff);context[b.Geometrie]=(context[b.Geometrie]||0)+b.s*c;}
- const virtual=S.types.filter(k=>selectedTypes.has(k.Archetype)).reduce((s,k)=>s+k.BGF*context[k.Geometrie]*3.6e-9,0);
+ const context={};for(const b of S.bins){const c=Math.min(p.density_f_res/(b.GFZ+p.density_dx)-p.density_f_ed,p.density_cutoff);context[b.Geometrie]=(context[b.Geometrie]||0)+b.s*c;}
+ const virtual=S.types.filter(k=>selectedTypes.has(k.Archetype)).reduce((s,k)=>s+k.BGF*context[k.Geometrie]*3.6e-9-(k.P*p.pv_scale-k.D*(1-p.saving))*p.ngf_bgf,0);
  last={internal:true,scenario:S.scenario,xlsx:S.xlsx,area_column:S.area_column,parameters:{...p},selected_density_types:[...selectedTypes],results_pj_el_a:r,virtual_density_pj_equivalent_a:virtual,provenance:S.provenance};
  el('remainders').textContent=`ÖPNV: ${fmt(100*(1-p.miv-p.other_transport))} % · Gebäude-PV: ${fmt(100*(1-p.free_pv))} %`;
  el('dash-status').textContent=(r.raw<0?`Prioritätskonflikt: ${fmt(-r.raw)} PJ/a zentrale Unterdeckung. `:'Zentrale Vorrangbedarfe gedeckt. ')+`Quellrest: ${fmt(S.residual)} PJ/a; Zuordnungsrest: ${fmt(r.closure)} PJ/a. Keine künstliche Bilanzschließung.`;
@@ -149,13 +149,13 @@ function render(){
  ['Zielsaldo',r.target_extended,`Gebäude-PV − Gebäudebedarf + Mobilitätsgutschrift − MIV-Bedarf = ${fmt(r.target_extended)}. Zielsaldo nur Gebäudebetrieb: ${fmt(r.target)}.`]])+
  `<div class="row-title">Saldoabweichung: ${fmt(r.gap)} PJ Strom/a ⓘ <span class="small" title="Bottom-Up-Gesamtsaldo minus Top-Down-Zielsaldo. Negativ: zusätzliche Deckung oder Bedarfssenkung erforderlich; positiv: Zielsaldo überschritten.">= Bottom-Up-Gesamtsaldo − Top-Down-Zielsaldo</span></div>`;
  bars('dash-balance',[['(Bottom-Up)|Gebäudebetrieb',r.balance,'#168b82'],['(Top-Down)|Gebäudebetrieb',r.target,'#ce861b'],['(Bottom-Up)|Gebäude und MIV',r.extended,'#2378aa'],['(Top-Down)|Gebäude und MIV',r.target_extended,'#ce861b'],['Zusätzlicher PV-Rest',Math.max(-r.gap,0),'#d8b32d']]);
- bars('dash-geometry',S.geometry.map(k=>[k.Geometrie,(k.P*p.pv_scale-k.D*(1-p.saving))*p.ngf_bgf,'#2378aa']));
+
  bars('dash-density',S.geometry.map(k=>[k.Geometrie,context[k.Geometrie],'#885b9d']));
- el('density-total').textContent=`Virtueller Summenwert der ausgewählten Typen: ${fmt(virtual)} PJ-Äquivalent/a. Separat vom physischen Stromsaldo; kein Endenergiefluss.`;
- const values=Array.from({length:101},(_,i)=>[i/20,-Math.min(p.density_f_res/(i/20+p.density_dx)-p.density_f_ed,p.density_cutoff)]);
+ el('density-total').textContent=`Anpassung zur PEQ-Zielerreichung: ${fmt(virtual)} PJ-Äquivalent/a. Separat vom physischen Stromsaldo; kein Endenergiefluss.`;
+ const values=Array.from({length:101},(_,i)=>[i/20,Math.min(p.density_f_res/(i/20+p.density_dx)-p.density_f_ed,p.density_cutoff)]);
  const low=Math.min(0,...values.map(v=>v[1])),high=Math.max(0,...values.map(v=>v[1]));
  const x=v=>55+v/5*450,y=v=>235-(v-low)/(high-low||1)*205;
- el('dash-curve').innerHTML=`<svg viewBox="0 0 580 285" role="img" aria-label="Dichtekurve nach GFZ"><path d="M55 20V235H505" fill="none" stroke="#667"/><line x1="55" x2="505" y1="${y(0)}" y2="${y(0)}" stroke="#bbc"/><polyline points="${values.map(v=>x(v[0])+','+y(v[1])).join(' ')}" fill="none" stroke="#885b9d" stroke-width="3"/><text x="5" y="35" font-size="13">${fmt(high)}</text><text x="5" y="235" font-size="13">${fmt(low)}</text>${[0,1,2,3,4,5].map(i=>`<text x="${x(i)}" y="255" text-anchor="middle" font-size="13">${i}</text>`).join('')}<text x="280" y="278" font-size="13">GFZ</text></svg>`;
+ el('dash-curve').innerHTML=`<svg viewBox="0 0 580 285" role="img" aria-label="Dichtekurve nach GFZ"><path d="M55 20V235H505" fill="none" stroke="#667"/><line x1="55" x2="505" y1="${y(0)}" y2="${y(0)}" stroke="#bbc"/><polyline points="${values.map(v=>x(v[0])+','+y(v[1])).join(' ')}" fill="none" stroke="#238b45" stroke-width="3"/><text x="5" y="35" font-size="13">${fmt(high)}</text><text x="5" y="235" font-size="13">${fmt(low)}</text>${[0,1,2,3,4,5].map(i=>`<text x="${x(i)}" y="255" text-anchor="middle" font-size="13">${i}</text>`).join('')}<text x="280" y="278" font-size="13">GFZ</text></svg>`;
  renderDensity(r,virtual);
  el('dash-audit').textContent=JSON.stringify(last,null,2);
 }
