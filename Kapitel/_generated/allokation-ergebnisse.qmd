@@ -1,0 +1,9 @@
+| Variante | Andere PV [%] | MIV [%] | H2-Anrechnung [%] | MIV-Budget [PJ_el/a] | Gebäudesaldo [PJ_el/a] | Zentraler Rest [PJ_el/a] | Vorrang gedeckt |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Beispiel | 0.0 | 80.0 | 0 | 24.0 | -7.0 | 0.0 | ja |
+| 20 % andere PV | 20.0 | 80.0 | 0 | 24.0 | -36.8 | 0.0 | ja |
+| 60 % MIV | 0.0 | 60.0 | 0 | 6.0 | -7.0 | 0.0 | ja |
+| 40 % MIV: Konflikt | 0.0 | 40.0 | 0 | 0.0 | 5.0 | -12.0 | nein |
+| H2 voll budgetfähig | 0.0 | 80.0 | 100 | 28.0 | -3.0 | 0.0 | ja |
+
+: Eigene vorläufige Allokationsrechnung mit UBA Transition 2040; Verkehrs- und PV-Anteile sind Rechenannahmen. Ein negativer zentraler Rest kennzeichnet einen Allokationskonflikt. {#tbl-allokation-vorlaeufig}

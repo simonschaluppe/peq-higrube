@@ -52,6 +52,7 @@ book:
   appendices:
     - Kapitel/anhang-methodenstand.qmd
     - Berechnungen/gfz_at/GFZ_AT_Analyse_Anhang.ipynb
+    - Berechnungen/sektorenmodell/allokation.ipynb
     - Kapitel/anhang-quartiersbilanzierung.qmd
 
 

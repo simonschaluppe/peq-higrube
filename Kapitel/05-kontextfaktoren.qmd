@@ -85,6 +85,8 @@ Die Bilanzgleichheit allein legt die Parameter nicht notwendigerweise eindeutig 
 
 ## Kalibrierergebnis und Qualitätssicherung
 
+Die Top-down-Seite ist inzwischen als parametrierbare Rechnung in @sec-allokation-notebook umgesetzt. Unter den ausdrücklich vorläufigen Annahmen in @sec-allokation-ergebnisse ergeben sich 24 PJ/a elektrisches MIV-Budget und −7 PJ/a für den erweiterten Gebäudesektorsaldo einschließlich MIV. Diese bedingte Zielgröße ist noch kein kalibriertes PEQ-Ergebnis. Der Bottom-up-Abgleich und Änderungen der Dichte- oder Sanierungsparameter warten auf die aktualisierte Typologie-Excel. Für den späteren Vergleich sind dieselbe Bilanzgrenze einschließlich der einmaligen MIV-Deckung sowie einheitliche Energie- und Flächenbezüge erforderlich.
+
 ::: {.callout-important title="Ergebnis der Neukalibrierung einzufügen"}
 **Noch offen:** finale neue Typologie- und Flächenmatrix, abgestimmter UBA-Gebäudesektorsaldo, Umrechnungsregeln Elektrizität ↔ Primärenergie und BGF ↔ NGF, resultierende Dichtefunktion, typologische Sanierungsparameter und nationale Aggregation mit Bilanzdifferenz. Die frühere Dichtekurve und die früheren pauschalen Sanierungswerte werden nicht als neue Resultate ausgegeben.
 :::

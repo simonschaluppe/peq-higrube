@@ -1,6 +1,21 @@
 # Sektorale Szenarien und Allokationsstruktur
 
-Stand 21.10.2026. Die geltende Streicher-basierte Kalibrierung 2023 bleibt erhalten. Transition 2040 ist eine laufende Rekalibrierung. Dieses Modul stellt Daten, Kontrollen und eine parametrische Sankey-Struktur bereit; es berechnet keine neue Mobilitätsgutschrift.
+Stand 23.10.2026. Die geltende Streicher-basierte Kalibrierung 2023 bleibt erhalten. Transition 2040 ist eine laufende Rekalibrierung. Das neue `allokation.ipynb` berechnet ein vorläufiges nationales **elektrisches** MIV-Budget und den zugehörigen Gebäudesektorsaldo, noch keine neue spezifische PE-Gutschrift.
+
+## Wissenschaftlicher Allokationsanhang
+
+`allokation.ipynb` enthält die vollständige fachliche Rechnung direkt in ausführbaren Zellen: Quellenkontrolle, Parameter, zentrale Erzeugung, Prioritäten, MIV-Zuteilung, Gebäudesaldo, Primärenergie-Schnittstelle und Grenzfallkontrollen. Die Datei ist als eigener Quarto-Anhang eingebunden. Die Ausführung benötigt Python mit pandas, numpy, matplotlib, nbformat, nbclient und ipykernel:
+
+```powershell
+python -m Berechnungen.sektorenmodell.execute_notebook --notebook allokation
+quarto render --to html
+```
+
+Die Parameterzelle ist die maßgebliche Eingabe. Verkehrsanteile beziehen sich auf elektrische Energie, nicht auf Personenkilometer. Das Beispiel setzt 80/20/0 % MIV/ÖPNV/übrigen Verkehr und 0 % PV außerhalb von Gebäuden; diese Werte sind **keine empirisch belegten oder normativ beschlossenen Vorgaben**. Wasserstoff-Rückverstromung ist zunächst nicht budgetfähig, die normierte Geothermie-/sonstige-Position dagegen vorläufig vollständig. Industrie, Landwirtschaft, Energiebranche, Umwandlung, Verluste und Exporte werden einmalig zentral priorisiert. Andere PV bleibt separat unzugeordnet.
+
+Im Beispiel ergeben sich 24 PJ/a elektrisches MIV-Budget und −7 PJ/a Gebäudesaldo einschließlich MIV; bei voller Anrechnung der Rückverstromung 28 beziehungsweise −3 PJ/a. Der Quellrest −2 PJ wird in der vollständigen Zuordnungsbilanz erhalten. Negative zentrale Reste werden als Konflikt gekennzeichnet; das Budget ist nicht negativ und nicht größer als der MIV-Bedarf.
+
+`outputs/allokation/` enthält Quellen-Hashes, Parameter, Ergebnisse, fünf Vergleichsfälle und die Abbildung. `Kapitel/_generated/allokation-ergebnisse.qmd` wird vom Notebook erzeugt. Nach Parameteränderungen sind auch die erläuternden Beispielzahlen im Haupttext und Notebook redaktionell zu prüfen; sie beschreiben den dokumentierten Referenzfall und sind keine dynamischen Textfelder. Ein heutiger PE-Faktorensatz bleibt offen. Keine Änderung am Typologie-Excel, keine Gebäudesektor-Aggregation und keine neue Dichtekalibrierung.
 
 ## Reproduktion
 

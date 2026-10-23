@@ -53,7 +53,7 @@ Die Fläche bestimmt, wie ein nationales Budget auf Quadratmeter verteilt wird. 
 
 | Datenstand / Horizont | BGF [Mio. m²] | NGF [Mio. m²] | Rolle und Quelle |
 |---|---:|---:|---|
-| Statistikbezug 2021, GFZ-Hochrechnung | 1.058,935 | 847,1 | Bestandsverteilung nach Nutzung, Bundesland und Geschossklasse; @sec-gfz-bestand; BGF = NGF / 0,8 |
+| Statistikbezug 2021, GFZ-Hochrechnung | 1.058,935 | 847,1 | Bestandsverteilung nach Nutzung, Bundesland und Geschossklasse; @sec-gfz-verteilung; BGF = NGF / 0,8 |
 | Zielbestand 2040 der THG-Kalibrierung | 906,7 | nicht separat angesetzt | Bezugsfläche der Budgetzuteilung; @schneider2025declaration, Tab. A1 |
 | Bestand 2025 und Zwischenjahre bis 2040 | noch zu ergänzen | noch zu ergänzen | Keine interpolierten Werte ohne harmonisierte Abgrenzung |
 

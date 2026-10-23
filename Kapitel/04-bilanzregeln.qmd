@@ -49,7 +49,7 @@ Für die Abgrenzung der **einzelnen Bilanzbestandteile** gilt:
 
 Ein Energieausweis, der vor allem Heizung und Warmwasser beschreibt, bildet damit nicht automatisch den vollständigen betrieblichen Quartiersbedarf ab. Bei gemeinsam versorgten Nutzungen muss erkennbar bleiben, welchem Teil des Quartiers die berechneten Mengen zugeordnet werden.
 
-## Primärenergiebilanz: Physische Flüsse und Bewertung trennen
+## Primärenergiebilanz: Physische Flüsse und Bewertung trennen {#sec-energie-bewertung}
 
 Das Quartiersmodell bestimmt zunächst die **physischen Energieflüsse** über ein Jahr: Bedarf der Anwendungen, lokale Erzeugung, direkten Eigenverbrauch, Lade- und Entladevorgänge, Speicherverluste sowie Bezug und Abgabe über die Quartiersgrenze. Ein Speicher stellt dabei keine zusätzliche Energiequelle dar; er verschiebt verfügbare Energie und verursacht Verluste.
 

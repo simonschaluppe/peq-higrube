@@ -1,5 +1,13 @@
 # Quellenprüfung und offene Entscheidungen
 
+## Ergänzung 23.10.2026: quantitative sektorale Allokation
+
+Der aktuelle Teilauftrag umfasst ausschließlich `allokation.ipynb` als ausführbaren wissenschaftlichen Anhang und die QMD-Ergebnisdarstellung. Die Gebäudesektormodellierung wartet auf die aktualisierte Typologie-Excel. Die unten dokumentierten älteren offenen Schnittstellen bleiben als Historie erhalten; das neue Notebook rechnet nun explizite, vorläufige Zuordnungsfälle, ohne die früheren normativen JSON-Parameter oder die historischen PE-Gutschriften zu überschreiben.
+
+Die vollständige Rechnung steht im Notebook, nicht in einem Hilfsmodul. Der Basisfall verwendet 0 % andere PV, 80 % MIV und 20 % ÖPNV. Diese Werte sind redaktionelle Rechenannahmen. Für Wasserstoff-Rückverstromung werden 0 % und 100 % Budgetfähigkeit verglichen; Geothermie/sonstige wird vorläufig voll zugeordnet. Der zentrale Pool trägt Industrie, Landwirtschaft, Energiebranche, Umwandlung, Verluste und Nettoexport sowie ÖPNV/übrigen Verkehr. Die Priorität ist zu bestätigen. Andere PV und nicht budgetfähige Erzeugung bleiben eigene Restpositionen. Keine zusätzliche Anrechnung von Elektrolyse als Erzeugung, keine doppelte Verwendung des MIV-Budgets.
+
+Ergebnisse im Basisfall: 303 PJ budgetfähige nicht-PV-Erzeugung, 261 PJ feste prioritäre Positionen, 18 PJ ÖPNV, 24 PJ MIV-Budget, −7 PJ Gebäudesaldo einschließlich MIV. Nach voller H2-Anrechnung: 28 PJ MIV-Budget und −3 PJ Gebäudesaldo. Der Bilanzrest bleibt −2 PJ gegenüber den publizierten Bedarfskomponenten. Vollständige Primärenergie- und nutzungsbezogene Gutschriftenrechnung bleibt mangels freigegebener Faktoren und Ziel-Flächen offen. Die Tabelle im Hauptkapitel ist ein generiertes Ergebnis; die interpretierenden Textzahlen beschreiben explizit den dokumentierten Basisfall.
+
 Stand: 21.10.2026. Auftrag: Handoff `Redaktion/transitionsszenarien`, erweitert durch die direkte Anweisung, keine unbelegte Zuordnung oder neue Gutschrift zu erfinden. Die Formulierung im Handoff, MIV/ÖV pro rata zu skalieren, wurde daher als offener Vorschlag und nicht als genehmigte Parameterfestlegung behandelt.
 
 ## Geprüfte Quellen

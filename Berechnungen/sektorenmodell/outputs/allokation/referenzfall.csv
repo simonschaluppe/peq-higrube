@@ -1,0 +1,16 @@
+Position,PJ_el/a,TWh_el/a
+central_pj,303.0,84.16666666666667
+fixed_priority_pj,261.0,72.5
+public_transport_pj,18.0,5.0
+other_transport_pj,0.0,0.0
+miv_demand_pj,72.0,20.0
+raw_miv_balance_pj,24.0,6.666666666666666
+miv_budget_pj,24.0,6.666666666666666
+central_after_miv_pj,0.0,0.0
+unassigned_nonpv_pj,5.0,1.3888888888888888
+building_pv_pj,149.0,41.388888888888886
+other_pv_pj,0.0,0.0
+building_operation_pj,41.0,11.38888888888889
+building_target_pj,-7.0,-1.9444444444444444
+source_residual_pj,-2.0,-0.5555555555555556
+allocation_residual_pj,-2.0,-0.5555555555555556

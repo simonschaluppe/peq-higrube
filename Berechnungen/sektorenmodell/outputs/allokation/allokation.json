@@ -1,0 +1,42 @@
+{
+  "parameters": {
+    "other_pv_share": 0.0,
+    "miv_share": 0.8,
+    "public_transport_share": 0.2,
+    "other_transport_share": 0.0,
+    "eligible_nonpv_share": {
+      "hydro": 1.0,
+      "wind": 1.0,
+      "biomass": 1.0,
+      "geothermal": 1.0,
+      "hydrogen_electricity": 0.0
+    },
+    "source": "Vorläufiges redaktionelles Rechenbeispiel; Verkehrs- und PV-Anteile nicht empirisch festgelegt",
+    "pe_factor_electricity": null,
+    "pe_factor_year": null,
+    "pe_factor_source": null
+  },
+  "result": {
+    "central_pj": 303.0,
+    "fixed_priority_pj": 261,
+    "public_transport_pj": 18.0,
+    "other_transport_pj": 0.0,
+    "miv_demand_pj": 72.0,
+    "raw_miv_balance_pj": 24.0,
+    "miv_budget_pj": 24.0,
+    "central_after_miv_pj": 0.0,
+    "unassigned_nonpv_pj": 5.0,
+    "building_pv_pj": 149.0,
+    "other_pv_pj": 0.0,
+    "building_operation_pj": 41.0,
+    "building_target_pj": -7.0,
+    "source_residual_pj": -2,
+    "allocation_residual_pj": -2.0,
+    "priority_covered": true
+  },
+  "pe_budget_pj": null,
+  "source_sha256": {
+    "stromerzeugung_2040.csv": "ae07429d22fb747e123557509ce07045663617c5818c4858c11b2bb25aa9c5c0",
+    "strombedarf_2040.csv": "b5eb10fc90169d9369618a5c293792a13689fc16cefbd950f1e77560656a6e20"
+  }
+}
