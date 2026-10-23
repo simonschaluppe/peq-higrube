@@ -1,22 +1,44 @@
 // Interaktive Entsprechung der GFZ-Referenzrechnung im Notebook.
 let selectedTypes=new Set(S.types.filter(k=>k.default_selected).map(k=>k.Archetype));
 let densityReferenceChecked=false;
+let groupReferenceChecked=false;
 el('selection-note').textContent=S.selection_note;
-function showTypeOptions(){
+const typeAttributes=k=>{const [geometry,age,heat,pv,flex]=k.Archetype.split('|');return {geometry,age,heat,pv,flex,heat_family:heat.startsWith('WP_')?'Wärmepumpe':heat};};
+const attributes=new Map(S.types.map(k=>[k.Archetype,typeAttributes(k)]));
+const filters=[['geometry','Geometrie'],['age','Baualter / Hülle'],['pv','PV-Ausstattung'],['flex','Flexibilität'],['heat_family','Heizungsfamilie / WP'],['heat','Heizung im Detail']];
+for(const [key,label] of filters){
+ const l=document.createElement('label');l.htmlFor='filter-'+key;l.textContent=label;
+ const select=document.createElement('select');select.id='filter-'+key;select.multiple=true;select.size=3;select.style.cssText='width:100%;font-size:12px';
+ select.title='Mehrfachauswahl mit Strg/Cmd. Keine markierte Option = alle Werte. Innerhalb eines Merkmals gilt ODER, zwischen Merkmalen UND. Filter ändern die Auswahl erst über die Schaltflächen.';
+ for(const v of [...new Set([...attributes.values()].map(a=>a[key]))].sort()){const o=document.createElement('option');o.value=v;o.textContent=v;select.append(o);}
+ select.onchange=showTypeOptions;el('type-filters').append(l,select);
+}
+function matchedTypes(){
  const query=el('type-search').value.toLowerCase();
- el('type-options').replaceChildren();
- for(const k of S.types.filter(k=>k.Archetype.toLowerCase().includes(query))){
-  const label=document.createElement('label');
-  label.style.cssText='display:flex;flex-wrap:nowrap;font-size:11px;overflow-wrap:anywhere;align-items:start';
-  const input=document.createElement('input');input.type='checkbox';input.checked=selectedTypes.has(k.Archetype);
-  input.style.cssText='width:auto;flex:none;margin:3px 6px 0 0';
-  input.title=`${k.Archetype}: ${fmt(k.BGF/1e6)} Mio. m² BGF. Auswahl setzt den Saldo auf den GFZ-Zielwert. Grüne Schraffur zeigt Ziel minus typologischen Saldo; keine Vorgabe zur Aufteilung auf Effizienz und PV.`;
-  input.setAttribute('aria-label',k.Archetype);
-  input.onchange=()=>{input.checked?selectedTypes.add(k.Archetype):selectedTypes.delete(k.Archetype);render();};
-  label.append(input,document.createTextNode(k.Archetype));el('type-options').append(label);
- }
+ const rules=filters.map(([key])=>[key,new Set([...el('filter-'+key).selectedOptions].map(o=>o.value))]);
+ return S.types.filter(k=>k.Archetype.toLowerCase().includes(query)&&rules.every(([key,values])=>!values.size||values.has(attributes.get(k.Archetype)[key])));
+}
+function showTypeOptions(){
+ const root=el('type-options'),open=new Set([...root.querySelectorAll('details[open]')].map(d=>d.dataset.group));root.replaceChildren();
+ const matches=matchedTypes();
+ el('type-filter-count').textContent=`${matches.length} Treffer; ${matches.filter(k=>selectedTypes.has(k.Archetype)).length} davon ausgewählt. Filter allein ändern keine PEQ-Zuordnung.`;
+ const makeGroup=(name,items,key,byAge)=>{
+  const detail=document.createElement('details');detail.dataset.group=key;const summary=document.createElement('summary');
+  summary.textContent=`${name} (${items.filter(k=>selectedTypes.has(k.Archetype)).length}/${items.length})`;detail.append(summary);
+  const content=document.createElement('div');detail.append(content);
+  const populate=()=>{
+   if(content.childElementCount)return;
+   for(const [text,choose] of [['Gruppe auswählen',true],['Gruppe abwählen',false]]){const button=document.createElement('button');button.type='button';button.textContent=text;button.title='Wirkt auf die '+items.length+' angezeigten Treffer dieser Gruppe; andere Typen bleiben unverändert.';button.onclick=()=>{for(const k of items)choose?selectedTypes.add(k.Archetype):selectedTypes.delete(k.Archetype);showTypeOptions();render();};content.append(button);}
+   if(byAge){for(const age of [...new Set(items.map(k=>attributes.get(k.Archetype).age))].sort())content.append(makeGroup(age,items.filter(k=>attributes.get(k.Archetype).age===age),key+'/'+age,false));}
+   else for(const k of items){const label=document.createElement('label');label.style.cssText='display:flex;font-size:11px;overflow-wrap:anywhere';const input=document.createElement('input');input.type='checkbox';input.checked=selectedTypes.has(k.Archetype);input.style.cssText='width:auto;flex:none;margin-right:6px';input.setAttribute('aria-label',k.Archetype);input.title=`${fmt(k.BGF/1e6)} Mio. m² BGF; Auswahl setzt den Saldo auf den GFZ-Zielwert.`;input.onchange=()=>{input.checked?selectedTypes.add(k.Archetype):selectedTypes.delete(k.Archetype);showTypeOptions();render();};label.append(input,document.createTextNode(k.Archetype));content.append(label);}
+  };
+  detail.ontoggle=()=>{if(detail.open)populate();};if(open.has(key)){detail.open=true;populate();}return detail;
+ };
+ for(const geo of [...new Set(matches.map(k=>k.Geometrie))].sort())root.append(makeGroup(geo,matches.filter(k=>k.Geometrie===geo),geo,true));
 }
 el('type-search').oninput=showTypeOptions;
+for(const [id,choose] of [['types-matched-add',true],['types-matched-remove',false]])el(id).onclick=()=>{for(const k of matchedTypes())choose?selectedTypes.add(k.Archetype):selectedTypes.delete(k.Archetype);showTypeOptions();render();};
+el('types-clear-filters').onclick=()=>{el('type-search').value='';for(const [key] of filters)for(const o of el('filter-'+key).options)o.selected=false;showTypeOptions();};
 for(const [id,filter] of [['types-default',k=>k.default_selected],['types-all',()=>true],['types-none',()=>false]]){
  el(id).onclick=()=>{selectedTypes=new Set(S.types.filter(filter).map(k=>k.Archetype));showTypeOptions();render();};
 }
@@ -62,17 +84,52 @@ function renderDensity(r,virtual){
  if(!window.Plotly)return;
  renderNationalComparison(r);
  renderTargetDistribution();
- const classes=S.geometry.map(k=>k.Geometrie), green='#238b45';
- const groupSeries=(field,chosen)=>S.geometry.map(k=>{const v=(selected[k.Geometrie]||{P:0,D:0})[field];return (chosen?v:k[field]-v)*p.ngf_bgf*(field==='P'?p.pv_scale:1-p.saving)*(field==='P'?1:-1);});
- const changes=S.geometry.map(k=>{let target=0;for(const b of S.bins)if(b.Geometrie===k.Geometrie)target+=(areas[k.Geometrie]||0)*b.s*Math.min(p.density_f_res/(b.GFZ+p.density_dx)-p.density_f_ed,p.density_cutoff)*3.6e-9;const sel=selected[k.Geometrie]||{P:0,D:0};return target-(sel.P*p.pv_scale-sel.D*(1-p.saving))*p.ngf_bgf;});
- const balances=S.geometry.map(k=>(k.P*p.pv_scale-k.D*(1-p.saving))*p.ngf_bgf);
- const specific=arr=>arr.map((v,i)=>v/(S.geometry[i].BGF*3.6e-9));
+ const green='#238b45';
+ const classRows=S.geometry.map(k=>{
+  const chosen=selected[k.Geometrie]||{P:0,D:0},area=areas[k.Geometrie]||0,rest=k.BGF-area;
+  const selectedBalance=(chosen.P*p.pv_scale-chosen.D*(1-p.saving))*p.ngf_bgf;
+  const allBalance=(k.P*p.pv_scale-k.D*(1-p.saving))*p.ngf_bgf;
+  const targetMean=S.bins.filter(b=>b.Geometrie===k.Geometrie).reduce((s,b)=>s+b.s*Math.min(p.density_f_res/(b.GFZ+p.density_dx)-p.density_f_ed,p.density_cutoff),0);
+  return {geometry:k.Geometrie,non_peq_bgf_m2:rest,peq_bgf_m2:area,
+   non_peq:rest>1e-6?(allBalance-selectedBalance)/(rest*3.6e-9):null,
+   peq_typological:area>1e-6?selectedBalance/(area*3.6e-9):null,
+   peq_target:area>1e-6?targetMean:null};
+ });
+ last.specific_group_balances={unit:'kWh/(m² BGF·a)',denominator:'BGF der jeweiligen Gruppe innerhalb der Geometrieklasse',rows:classRows};
+ if(!groupReferenceChecked){
+  for(const row of classRows){const ref=S.group_balance_reference.find(k=>k.geometry===row.geometry);
+   for(const key of ['non_peq','peq_typological','peq_target'])if(row[key]===null?ref[key]!==null:ref[key]===null||Math.abs(row[key]-ref[key])>1e-7)throw Error('Gruppensaldo weicht von Notebook ab: '+row.geometry+' / '+key);
+  }groupReferenceChecked=true;
+ }
+ const reconstruct=classRows.reduce((s,k)=>s+((k.non_peq||0)*k.non_peq_bgf_m2+(k.peq_typological||0)*k.peq_bgf_m2)*3.6e-9,0);
+ const reconstructTarget=classRows.reduce((s,k)=>s+((k.non_peq||0)*k.non_peq_bgf_m2+(k.peq_target||0)*k.peq_bgf_m2)*3.6e-9,0);
+ if(Math.abs(reconstruct-base)>1e-7||Math.abs(reconstructTarget-evaluated)>1e-7)throw Error('Spezifische Gruppenbilanz rekonstruiert Sektorsaldo nicht');
  const classTraces=[];
- for(const chosen of [false,true])for(const field of ['P','D'])classTraces.push({type:'bar',orientation:'h',y:classes,x:specific(groupSeries(field,chosen)),name:(chosen?'PEQ: ':'Übrige: ')+(field==='P'?'PV':'Bedarf'),marker:{color:chosen?green:field==='P'?'#dca51d':'#487fa8'},hovertemplate:'%{y}<br>%{fullData.name}: %{x:.3f} kWh/(m² BGF·a)<extra></extra>'});
- classTraces.push({type:'bar',orientation:'h',y:classes,x:specific(changes),base:0,opacity:.75,name:'PEQ-Anpassung',marker:{color:green,pattern:{shape:'/'}},hovertemplate:'%{y}<br>Zielsaldo minus typologischer PEQ-Saldo:<br>%{x:.3f} kWh/(m² BGF·a)<extra></extra>'});
- for(const adjusted of [false,true])classTraces.push({type:'scatter',mode:'markers',y:classes,x:specific(balances.map((v,i)=>v+(adjusted?changes[i]:0))),name:adjusted?'Saldo mit PEQ-Ziel':'Typologischer Saldo',marker:{color:adjusted?green:'#243746',size:9,symbol:adjusted?'diamond':'circle'},hovertemplate:'%{y}<br>%{fullData.name}: %{x:.3f} kWh/(m² BGF·a)<extra></extra>'});
- Plotly.react(el('dash-geometry'),classTraces,{barmode:'relative',height:440,autosize:true,margin:{l:80,r:15,t:15,b:100},xaxis:{title:{text:'kWh/(m² BGF·a)'},zeroline:true},yaxis:{autorange:'reversed'},legend:{orientation:'h',y:-.2,font:{size:10}},font:{size:11},separators:',.'},{responsive:true,displaylogo:false});
-
+ for(const [key,name,color,pattern,areaKey] of [
+  ['non_peq','1 · Nicht-PEQ: typologisch','#487fa8','', 'non_peq_bgf_m2'],
+  ['peq_typological','2 · PEQ: typologisch',green,'','peq_bgf_m2'],
+  ['peq_target','3 · PEQ: Dichteziel',green,'/','peq_bgf_m2']]){
+  classTraces.push({type:'bar',orientation:'h',y:classRows.map(k=>k.geometry),x:classRows.map(k=>k[key]),name,
+   marker:{color,pattern:{shape:pattern}},customdata:classRows.map(k=>k[areaKey]/1e6),
+   hovertemplate:'%{y}<br>%{fullData.name}<br>Saldo: %{x:.2f} kWh/(m² BGF·a)<br>Bezugsfläche dieser Gruppe: %{customdata:.3f} Mio. m² BGF<extra></extra>'});
+ }
+ Plotly.react(el('dash-geometry'),classTraces,{barmode:'group',height:720,autosize:true,margin:{l:80,r:15,t:15,b:100},
+  xaxis:{title:{text:'Saldo [kWh/(m² BGF·a)]'},zeroline:true},yaxis:{autorange:'reversed'},
+  legend:{orientation:'h',y:-.12,font:{size:10},traceorder:'normal'},font:{size:11},separators:',.'},
+  {responsive:true,displaylogo:false});
+ el('class-empty-note').textContent=classRows.filter(k=>k.non_peq===null||k.peq_target===null).map(k=>`${k.geometry}: ${k.non_peq===null?'keine Nicht-PEQ-Fläche':'keine ausgewählte PEQ-Fläche'}`).join(' · ')||'Alle dargestellten Gruppen besitzen positive Bezugsflächen.';
+ last.schema_version='peq-dashboard-2';
+ last.density_curve={definition:'target(gfz) = min(f_RES / (gfz + dx) - f_ED, cutoff)',
+  unit:'kWh EE/(m² BGF·a)',gfz_definition:'BGF / Grundstücksfläche',parameters:{f_RES:p.density_f_res,f_ED:p.density_f_ed,dx:p.density_dx,cutoff:p.density_cutoff},
+  application:'Ausgewählte Typen erhalten flächengewichtet den Zielsaldo. Anpassung = Zielsaldo minus typologischer Saldo. Nicht ausgewählte Typen bleiben unverändert.',
+  distribution:S.use_bins,distribution_weight:'s = BGF-Anteil von Nutzung und GFZ innerhalb der Geometrieklasse; Summe je Geometrie = 1',display_gfz_range:[0,5],calculation:'vollständige GFZ-Verteilung'};
+ last.type_definitions=S.types.map(k=>({id:k.Archetype,attributes:attributes.get(k.Archetype),bgf_m2:k.BGF,
+  electricity_demand_kwh_m2_ngf_a:k.D/(k.BGF*3.6e-9),pv_generation_kwh_m2_ngf_a:k.P/(k.BGF*3.6e-9),
+  peq_selected:selectedTypes.has(k.Archetype),source_file:S.xlsx,source_area_column:S.area_column}));
+ last.type_selection={selected_ids:[...selectedTypes],default_note:S.selection_note,search:el('type-search').value,
+  filters:Object.fromEntries(filters.map(([key])=>[key,[...el('filter-'+key).selectedOptions].map(o=>o.value)])),
+  semantics:'ODER innerhalb eines Attributs, UND zwischen Attributen; Filter sind Ansicht, selected_ids ist die maßgebliche Auswahl.'};
+ last.national_inputs={generation:S.g,demand:S.d,scenario:S.scenario};
  const pos=P.map((v,i)=>Math.max(v,C[i])),neg=D.map((v,i)=>Math.min(-v,C[i]));
  const yrange=[Math.min(0,...neg)*1.08,Math.max(0,...pos)*1.08];
  const ymin=Math.min(0,...physical,...corrected),ymax=Math.max(0,...physical,...corrected),pad=Math.max((ymax-ymin)*.08,1);
