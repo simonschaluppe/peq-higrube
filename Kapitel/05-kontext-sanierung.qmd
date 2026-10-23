@@ -1,25 +1,35 @@
 # Kontextfaktor Sanierung {#sec-kontext-sanierung}
+
 ::: {.lead}
-Eine explizite Entlastung für die Bedingungen des Gebäudebestands
+Typologieabhängige Sanierungsanpassungen statt einer pauschalen Flächengutschrift
 :::
 
-Die Sanierungsgutschrift ergänzt die gemeinsame Primärenergiebewertung in @sec-kontext. Sie verändert die Anforderung, nicht den physischen Energiebedarf oder das THG-Budget.
+Die Sanierungsanpassung berücksichtigt spezifische technische und bauliche Randbedingungen bestehender Gebäude. In der **neuen PEQ-Kalibrierung** wird sie **je energetischer Gebäudetypologie** definiert und mit deren Flächenanteilen sowie den übrigen Energieanforderungen abgestimmt (@sec-gebaeudebestand; @sec-kalibrierung). Sie ist damit kein von der nationalen Gebäudesektorbilanz unabhängiger, allgemeiner Pauschalbonus.
 
-## Sanierung: Entlastung für die Bedingungen des Bestands
+## Ableitung aus den neuen Gebäudetypologien
 
-Die Sanierungsgutschrift beträgt 15 kWh PE/(m² NGF a) für den berücksichtigten Sanierungsanteil. Für einen Anteil \(f_{\mathrm{Sanierung}}\) ergibt sich:
+Die zu betrachtenden Typologien, ihre energetischen Zustände und die zugehörigen nationalen Flächenanteile werden in @sec-gebaeudebestand festgelegt. Für jede Typologie \(k\) ist zu dokumentieren, ob eine Sanierungsanpassung sachlich gerechtfertigt ist, welchen zulässigen Kontextwert \(c_{\mathrm{S},k}\) sie erhält und wie dieser Wert mit den modellierten typologischen Anforderungen zusammenhängt.
+
+Eine typologiespezifische Anpassung kann insbesondere die im Bestand eingeschränkten Maßnahmenmöglichkeiten berücksichtigen. Die konkreten Kriterien – zum Beispiel Sanierungstiefe, vorhandene Konstruktion und verbleibender energetischer Bedarf – sind anhand der neuen Klassen zu definieren. Die Höhe ist **Ergebnis der gemeinsamen Kalibrierung**, nicht automatisch der Abstand zu einem Neubau-Bedarfswert und nicht eine pauschal behauptete CO₂-Einsparung.
+
+## Anwendung auf gemischte Quartiere
+
+Enthält ein Quartier mehrere nachweisrelevante Gebäudetypologien, kann der spezifische Kontextwert als nutzflächengewichteter Mittelwert gebildet werden:
 
 $$
-c_{\mathrm{Sanierung}}=15\,f_{\mathrm{Sanierung}}
-\quad\text{in kWh PE/(m² NGF a)}.
+c_{\mathrm{Sanierung,typ}}=
+\frac{\sum_k A_{\mathrm{NGF},k}^{\mathrm{Quartier}}\,c_{\mathrm{S},k}}
+{\sum_k A_{\mathrm{NGF},k}^{\mathrm{Quartier}}}.
 $$ {#eq-sanierungskontext}
 
-Bei einem Sanierungsanteil von 50 % sind dies 7,5 kWh PE/(m² NGF a), wie in der klimaaktiv-Broschüre erläutert [@klimaaktiv2026peq, S. 14]. Im Nachweis sind die zugeordneten Sanierungsflächen offenzulegen. Neubauanteile werden nicht allein durch ihre Einbindung in ein Bestandsquartier zu Sanierungsflächen.
+Voraussetzung ist, dass jede Teilfläche eindeutig einer freigegebenen Typologie zugeordnet ist. Die Werte sind in kWh PE/(m² NGF·a) auszudrücken. Die nationalen Eingabeflächen der Kalibrierung können dagegen BGF sein; die Umrechnung wird in @sec-kalibrierung nachvollziehbar dokumentiert. Neubau- und Bestandsflächen werden nicht allein wegen der Zugehörigkeit zu demselben Quartier gleichbehandelt.
 
-Die Höhe ist normativ festgelegt. Sie berücksichtigt erschwerte Handlungsmöglichkeiten im Bestand, beispielsweise geometrische oder konstruktive Grenzen einer energetischen Verbesserung. Sie ist keine Berechnung der eingesparten grauen Emissionen. Erhaltene Bausubstanz und neue Bauteile wirken über die eigene THG-Bilanz; die Primärenergiegutschrift darf nicht noch einmal als vermiedene CO₂-Menge angesetzt werden.
+Die Sanierungsanpassung ändert die **Bewertungsanforderung**, nicht die tatsächlich simulierten Energieflüsse. Bereits in einem typologiebezogenen Ausgangsziel berücksichtigte Vorteile dürfen nicht zusätzlich als Gutschrift angesetzt werden. Erhaltene Bausubstanz und eingesparte graue Emissionen wirken, soweit methodisch vorgesehen, in der eigenständigen Lebenszyklus-THG-Bilanz; die Primärenergieanpassung ist nicht noch einmal eine vermiedene CO₂-Menge.
 
-::: {.callout-note appearance="simple"  icon="true"}
-Für eine Weiterentwicklung kommen differenzierte Regeln nach Sanierungserschwernis, Gebäudealter oder Denkmalschutz in Betracht. Solche Regeln brauchen eine begründete Verteilungswirkung und handhabbare Nachweise. Bis dahin wird die festgelegte Gutschrift angewendet, ohne eine bislang nicht vorliegende quantitative Kalibrierung zu unterstellen.
-
+::: {.callout-important title="Typologiewerte nach Excel und Kalibrierung ergänzen"}
+Hier ist die Tabelle der **neuen** Sanierungstypologien mit eindeutiger Definition, zulässigen Zuordnungsregeln und kalibrierten Werten \(c_{\mathrm{S},k}\) einzufügen. Solange sie nicht freigegeben ist, werden keine neuen numerischen Gutschriften angegeben.
 :::
 
+::: {.callout-note title="Historische Einordnung"}
+Die bisherige Operationalisierung nutzte eine pauschale Sanierungsgutschrift von **15 kWh PE/(m² NGF·a)**, flächenanteilig angewendet [@klimaaktiv2026peq, S. 14]. Sie wird hier ausschließlich als früherer Stand genannt und **nicht** als Regel der neuen typologischen Kalibrierung fortgeschrieben.
+:::

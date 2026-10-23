@@ -1,0 +1,71 @@
+# Gebäudebestand und Entwicklungsszenario 2040 {#sec-gebaeudebestand}
+
+::: {.lead}
+Gebäudetypologien, nationale Flächenanteile und GFZ-Verteilungen als Bottom-up-Grundlage der PEQ-Kalibrierung
+:::
+
+Die nationale Energieaufgabe des Gebäudesektors aus @sec-allokation muss durch die Summe der Beiträge unterschiedlicher Gebäudetypologien getragen werden. Dafür wird eine **nationale Flächen- und Typologiematrix für das Zieljahr 2040** benötigt. Dieses Kapitel dokumentiert, welche Gebäudeflächen den jeweiligen energetischen Klassen zugeordnet werden und wie sich diese Flächen über bauliche Dichten verteilen. Erst im nächsten Schritt wird daraus die PEQ-Zielwertfunktion kalibriert (@sec-kalibrierung).
+
+Die neuen Gebäudetypen und ihre Flächenverteilung wurden in einer gesonderten Excel-Grundlage erarbeitet. Die Zahlen und verbindlichen Klassendefinitionen liegen dieser Textfassung **noch nicht als prüfbare Eingabetabelle vor**; sie werden daher nicht aus historischen Typologien abgeleitet oder ersetzt.
+
+## Datenbasis, Flächenbegriffe und Bezugsjahre
+
+Die Bestandsstruktur und die Zielstruktur sind zu unterscheiden: Der statistische Bestand beschreibt ein Beobachtungsjahr, das Entwicklungsszenario die angenommene Flächenverteilung **2040**. Flächenzugänge durch Neubau, Abgänge und der Wechsel zwischen energetischen Klassen durch Sanierung werden so dokumentiert, dass keine Fläche gleichzeitig mehreren Klassen zugerechnet wird.
+
+Die aktuelle GFZ-Hochrechnung verwendet die Statistik-Austria-Gebäudestruktur mit Bezugsjahr 2021, ergänzt um Einzelgebäudedaten aus Wien und Salzburg. Die vorliegende Bestandshochrechnung umfasst rund **1.058,9 Mio. m² BGF**; dies ist eine Bezugsgröße der Bestandsanalyse, **nicht automatisch die für 2040 festzulegende Kalibrierungsfläche**.
+
+Alle flächenbezogenen Energieanforderungen verwenden später eine eindeutig dokumentierte Umrechnung zwischen BGF und der im Nachweis relevanten NGF. Prozentuale Anteile, absolute Flächen und Flächeneinheiten müssen sich jeweils auf dieselbe Grundgesamtheit beziehen.
+
+## Energetische Gebäudetypologien 2040 {#sec-gebaeudetypologien}
+
+Hier werden die **neuen** Gebäudetypen aus der Excel-Grundlage eingefügt. Für jede Klasse sind mindestens die Beschreibung des Gebäudebestands beziehungsweise Neubaus, der energetische Ausgangs- und Zielzustand, die berücksichtigte lokale PV-Ausstattung, die Flächenbeziehung und die Anspruchsberechtigung auf eine typologiespezifische Sanierungsanpassung auszuweisen.
+
+| Feld je Typologie | Benötigte Angabe | Status |
+|---|---|---|
+| Typologie-ID und Bezeichnung | Eindeutige Excel-Klasse und fachliche Definition | Aus Excel zu übernehmen |
+| Zuordnung zu Neubau/Bestand/Sanierung | Energetischer Entwicklungspfad bis 2040 | Aus Excel zu übernehmen |
+| BGF 2040 beziehungsweise Flächenanteil | Absolute BGF und Anteil an nationaler Ziel-BGF | Aus Excel zu übernehmen |
+| Bezug zur NGF | Flächenumrechnungsregel für Quartierszielwerte | Abzustimmen |
+| Spezifische Energie- und PV-Parameter | Bedarf, Erzeugung und deren Bewertungsbezug | Aus Excel beziehungsweise Modell zuzuordnen |
+| Typologiebezogene Sanierungsanpassung | Klasse, Begründung und zu kalibrierender Parameter | In @sec-kalibrierung festzulegen |
+| GFZ-Verteilung | Aufteilung der Klasse nach Dichte | Mit der GFZ-Analyse zu verbinden |
+
+: Mindestumfang der neuen nationalen Typologiematrix. Offene Tabellenfelder sind keine Nullwerte. {#tbl-typologien-eingabestruktur}
+
+## Flächenentwicklung vom Bestand zum Zieljahr
+
+Die Flächenfortschreibung soll getrennt ausweisen, wie sich neue Gebäudeflächen und der Wechsel zwischen energetischen Typologien auf die Klassenanteile auswirken. Neben der Flächensumme für das Zieljahr sind insbesondere die Sanierungsanteile, Neubauanteile und verbleibenden Bestandsklassen nachvollziehbar zu machen.
+
+::: {.callout-note title="Einzuarbeitendes Ergebnis aus der Excel-Grundlage"}
+**Einfügen:** Tabelle der neuen Gebäudetypen und 2040-Flächenanteile, Quellenblatt und Version der Excel, Summe aller Anteile (= 100 % der definierten Bezugsfläche), absolute nationale BGF und gegebenenfalls Übergangsmatrix Bestand → 2040. Die historische Verteilung 40/20/20/20 % wird **nicht** als Platzhalter eingesetzt.
+:::
+
+## GFZ-Verteilung des österreichischen Gebäudebestands {#sec-gfz-verteilung}
+
+Die Geschoßflächenzahl (GFZ) ist das Verhältnis von Bruttogrundfläche zu Grundstücksfläche. Sie beeinflusst das lokal verfügbare PV-Potenzial bezogen auf die Gebäudefläche. Die aktualisierte GFZ-Herleitung nutzt Referenzverteilungen aus Einzelgebäudedaten: für Wien grundsätzlich Wiener, für die übrigen Bundesländer Salzburger Datensätze, gewichtet mit den nationalen Statistik-Austria-Flächen nach Hauptnutzung und Geschoßklasse. Fehlende Teilmengen werden als Ersatzschätzung dokumentiert.
+
+Für Klassen \(k\) mit den flächenbezogenen Gewichten \(w_k\) gilt die modellierte nationale Dichteverteilung:
+
+$$
+\hat f_{\mathrm{AT}}(d)
+=\sum_k w_k\,\hat f_k(d),
+\qquad
+w_k=\frac{\mathrm{BGF}_k}{\sum_k\mathrm{BGF}_k}.
+$$ {#eq-gfz-hochrechnung}
+
+![Modellierte BGF-Verteilung Österreichs nach Hauptnutzung. Der dargestellte GFZ-Ausschnitt reicht bis 8; das übrige Modellraster bleibt in der Aggregation berücksichtigt.](../Abbildungen/gfz_at/gfz_oesterreich_nutzung.png){#fig-gfz-oesterreich}
+
+Diese GFZ-Hochrechnung ist eine **statistische Bestandsverteilung** und keine automatisch gültige Verteilung jeder zukünftigen energetischen Gebäudetypologie. Für die Kalibrierung müssen die neuen Klassen aus der Excel über Hauptnutzung, Geschossklasse oder einen dokumentierten anderen Schlüssel mit der GFZ-Verteilung verknüpft werden. Bei einem für 2040 ausdrücklich abweichenden Dichteszenario ist die Anpassung als Annahme auszuweisen.
+
+## Gemeinsame Typologie-Dichte-Matrix für die Kalibrierung
+
+Für jede Gebäude- und Dichteklasse wird die Zieljahresfläche \(A_{k,j}^{2040}\) benötigt. Diese Matrix bildet die Eingabe der nationalen Aggregation in @sec-kalibrierung:
+
+$$
+A_{k,j}^{2040} = A_k^{2040}\,s_{j\mid k}^{2040},
+\qquad \sum_j s_{j\mid k}^{2040}=1.
+$$ {#eq-typologie-gfz-flaeche}
+
+Dabei bezeichnet \(s_{j\mid k}^{2040}\) den Anteil der Fläche der Typologie \(k\) in der GFZ-Klasse \(j\). Klassen und GFZ-Bins sollten mit den auswertbaren Berechnungsdaten übereinstimmen. Zu prüfen sind die Summe je Typologie, die nationale Flächensumme, die verwendete BGF-/NGF-Umrechnung und die Behandlung von Ersatzschätzungen.
+
+**Ergebnis dieses Kapitels:** eine versionierte \(A_{k,j}^{2040}\)-Matrix, nicht bereits die fertige PEQ-Zielwertfunktion.

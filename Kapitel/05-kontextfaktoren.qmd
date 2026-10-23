@@ -1,70 +1,100 @@
-# Kontextfaktor Dichte {#sec-kontext-dichte}
+# Kalibrierung der PEQ-Energieanforderungen {#sec-kalibrierung}
 
 ::: {.lead}
-Berücksichtigung der baulichen Dichte bei der Verteilung nationaler Energieziele auf Gebäude und Quartiere
+Nationale Zielbilanz, neue Gebäudetypologien und dichteabhängige Anforderungen in Übereinstimmung bringen
 :::
 
-## Begründung und Zielsetzung
+Die sektorale Allokation legt den nationalen Referenzsaldo für den Gebäudesektor fest (@sec-allokation). Die Gebäude- und Dichteverteilung definiert, **welche Flächen** zur Erfüllung dieses Ziels beitragen (@sec-gebaeudebestand). Gegenstand dieses Kapitels ist die Kalibrierung der **typologie- und dichteabhängigen PEQ-Anforderungen**. Das Ziel ist keine beliebige positive Bilanz jedes einzelnen Gebäudes: Die Summe der konsistent umgerechneten, flächengewichteten Beiträge muss mit dem national zugewiesenen Ziel vereinbar sein.
 
-Die bauliche Dichte hat einen wesentlichen Einfluss auf das Verhältnis zwischen lokalem Energiebedarf und erneuerbarem Erzeugungspotenzial. Während der Energiebedarf näherungsweise mit der genutzten Geschossfläche steigt, ist das Potenzial zur lokalen Energieerzeugung insbesondere durch die verfügbaren Dach-, Fassaden- und Grundstücksflächen begrenzt. Bei steigender Dichte nimmt daher das lokal verfügbare Erzeugungspotenzial je Quadratmeter Bruttogrundfläche (BGF) typischerweise ab. Dieser Zusammenhang wurde unter anderem in Untersuchungen zu Plus-Energie-Gebäuden und -Quartieren aufgezeigt [@Fellner2020Mikroquartiere, S. 263; @Schoefmann2020Zukunftsquartier, S. 53; @schneider2023context, S. 11–12].
+Der Dichtefaktor verteilt die Anforderungen zwischen unterschiedlichen baulichen Dichten. Die Sanierungsanpassung wird künftig **nach energetischer Gebäudetypologie** festgelegt und im selben Modell abgestimmt. Eine allgemeine, von der Typologie unabhängige Pauschalgutschrift gehört nicht zur neuen Kalibrierung.
 
-Eine für alle Gebäude und Quartiere einheitliche Anforderung an eine ausgeglichene oder positive jährliche Energiebilanz würde diese strukturellen Unterschiede nicht berücksichtigen. Gebäude geringer Dichte könnten die Anforderung aufgrund ihrer größeren verfügbaren Erzeugungsfläche je BGF vergleichsweise leicht erfüllen, während kompakte, mehrgeschossige Gebäude selbst bei hoher Energieeffizienz an die Grenzen ihres lokalen Erzeugungspotenzials stoßen können.
+## Bilanzfunktionen der Gebäudetypologien {#sec-typologiesalden}
 
-Dies steht in einem Zielkonflikt mit den übergeordneten Zielen einer flächensparenden und kompakten Siedlungsentwicklung. Eine energetische Bewertung soll daher **hohe bauliche Dichten nicht allein aufgrund ihrer begrenzten lokalen Erzeugungsflächen benachteiligen** und gleichzeitig die vorhandenen Erzeugungspotenziale bei niedriger Dichte angemessen ausschöpfen.
+Für jede neue energetische Typologie \(k\) werden die relevanten jährlichen Bedarfe, Erzeugungsannahmen, Bewertungsgrenzen und Anforderungsparameter aus dem Gebäudeszenario beziehungsweise der Kalibrierung dokumentiert. Dabei ist zwischen zwei Rollen zu unterscheiden: **Nicht-PEQ-Klassen** gehen mit ihrem begründeten, szenariotypischen Bilanzbeitrag in die nationale Aggregation ein; für **PEQ-Klassen** wird die erforderliche Bilanzqualität als Zielwertfunktion bestimmt. Eine bestimmte PV-Ausstattung oder ein spezifischer Energiebedarf ist nicht automatisch bereits ein allgemein geltender PEQ-Grenzwert.
 
+Die Typologieparameter werden in einer versionierten Tabelle zusammengeführt. Zu klären ist dabei insbesondere, ob ein typologischer Zielsaldo bereits einen Sanierungsvorteil enthält. In diesem Fall darf derselbe Vorteil nicht ein zweites Mal als zusätzliche Sanierungsgutschrift verbucht werden.
+
+| Parameter | Bedeutung | Status |
+|---|---|---|
+| \(k\), \(A_{k,j}^{2040}\) | Gebäudetyp und Fläche nach GFZ-Klasse | Aus @sec-gebaeudebestand |
+| \(e_k\), \(p_k\) | Typologiebezogener Energiebedarf und lokale Erzeugung | Aus Excel/Modell zu übernehmen |
+| \(b_{k,j}^{\mathrm{ref}}\) | Modellierter Referenzsaldo für Nicht-PEQ-Klassen | Aus Szenarioannahmen zu bestimmen |
+| \(t_{k,j}^{\mathrm{PEQ}}\) | Zu kalibrierender Mindestbeitrag für PEQ-Klassen | Neu zu kalibrieren |
+| \(c_{\mathrm{S},k}\) | **Typologiespezifische Sanierungsanpassung** für die jeweils berechtigte PEQ-Klasse | Neu zu kalibrieren |
+| \(c_{\mathrm{D}}(d;\theta)\) | Dichteabhängige Zielwertkorrektur | Neu zu kalibrieren |
+| \(\theta\) | Parameter der Lastenverteilung und gegebenenfalls weitere Nebenbedingungen | Gemeinsam festzulegen |
+
+: Parametrisierung der neuen Energieanforderungen. Typologiespezifische Zielsalden und Kontextgutschriften sind nicht doppelt zu erfassen. {#tbl-kalibrierparameter}
+
+## Kontextfaktor Dichte: Begründung und physikalisches Prinzip {#sec-kontext-dichte}
+
+Mit zunehmender baulicher Dichte steigt der Energiebedarf näherungsweise mit der genutzten Geschossfläche, während die für lokale erneuerbare Erzeugung verfügbaren Dach-, Fassaden- und Grundstücksflächen vergleichsweise knapp werden. Eine einheitlich geforderte positive physische Jahresbilanz würde daher niedrig verdichtete Projekte häufig begünstigen und hohe städtebauliche Dichten benachteiligen. Die GFZ-basierte Anpassung vermeidet, dass kompakte Siedlungsformen allein wegen ihrer kleineren lokalen Erzeugungsflächen als weniger ambitioniert gelten [@Fellner2020Mikroquartiere; @Schoefmann2020Zukunftsquartier; @schneider2023context].
 
 ![Zusammenhang zwischen baulicher Dichte, verfügbarer Erzeugungsfläche und spezifischem Energiepotenzial.](../Abbildungen/dichte_prinzip2.png){#fig-dichte-prinzip width="95%"}
 
-
-Der **Dichtefaktor** berücksichtigt diesen Zusammenhang durch eine dichteabhängige Anpassung der energetischen Anforderungen. Gebäude und Quartiere geringer Dichte müssen einen entsprechend höheren Energieüberschuss erzielen, während bei hoher Dichte ein geringerer Überschuss beziehungsweise ein begrenzter Energiebezug zulässig sein kann. Dadurch wird die Verantwortung für die Erreichung übergeordneter Energieziele zwischen unterschiedlichen Dichteklassen verteilt.
-
-Die Anpassung erfolgt nicht beliebig, sondern auf Grundlage einer national kalibrierten Anforderungsfunktion. Die Summe der Anforderungen über den Gebäudebestand muss mit dem übergeordneten Energieziel vereinbar sein. Der Dichtefaktor verändert somit **die Verteilung der Anforderungen, nicht die tatsächlichen Energieflüsse** eines Gebäudes oder Quartiers.
-
-Als Kenngröße der baulichen Dichte dient die Geschoßflächenzahl (GFZ), definiert als Verhältnis von Bruttogrundfläche zu Grundstücksfläche. Sie bildet den grundlegenden Zusammenhang zwischen Energiebedarf und lokalem Erzeugungspotenzial vereinfacht ab. Die konkrete Architektur, Verschattung und technische Ausstattung werden weiterhin über die tatsächliche Energiebilanz berücksichtigt.
-
-Die folgenden Abschnitte erläutern das physikalische Prinzip, die mathematische Anforderungsfunktion und deren Kalibrierung anhand des österreichischen Gebäudebestands. Die gemeinsame Bewertungslogik der Kontextfaktoren ist in @sec-kontext beschrieben, die Ableitung der nationalen Energieziele in @sec-allokation.
-
-## Dichte: physikalisches Prinzip und kalibrierte Anforderung
-
-Der Grundgedanke lässt sich mit einer vereinfachten Beziehung zeigen. Sei $A_G$ die Grundstücksfläche und $A_B$ die Bruttogrundfläche. Die Geschoßflächenzahl ist $d=\frac{A_B}{A_G}$. Werden eine jährliche lokale Erzeugung $p$ je Grundstücksfläche und ein jährlicher Bedarf $e$ je Bruttogrundfläche angesetzt, folgt:
+Sei \(A_G\) die Grundstücksfläche, \(A_B\) die Bruttogrundfläche und \(d=A_B/A_G\) die GFZ. Bei einem Erzeugungspotenzial \(p\) je Grundstücksfläche und einem Bedarf \(e\) je BGF ergibt sich schematisch:
 
 $$
-b(d)=\frac{p A_G-e A_B}{A_B}=\frac{p}{d}-e.
+b(d)=\frac{pA_G-eA_B}{A_B}=\frac{p}{d}-e.
 $$ {#eq-dichte-prinzip}
 
-Erzeugung und Bedarf sind in derselben Energiegröße auszudrücken; $b$ ist dann eine jährliche Bilanz je m² BGF. Die Beziehung zeigt, weshalb das Erzeugungspotenzial je Geschossfläche bei steigender Dichte abnimmt, wenn das Potenzial je Grundstücksfläche gleich bleibt. In realen Projekten hängen Erzeugung und Bedarf zusätzlich von Gebäudeform, Nutzung, Verschattung und Technik ab - die Dichte-Abhängigkeit der Energiebilanz ist aber empirisch gut dokumentiert [@schneider2023context, S. 11–12]. 
-Insbesondere das technische Potentialmaximum von Gebäuden folgt dieser Kurve, siehe etwa [@Fellner2020Mikroquartiere, S.263] oder [@Schoefmann2020Zukunftsquartier, S.53]. 
+Die Gleichung ist eine **physikalische Orientierung**, noch keine kalibrierte Anforderung. Eine Zielwertfunktion kann durch Parameter, eine Verschiebung der Dichteachse und eine Begrenzung der Gutschrift den Zusammenhang in eine Lastenverteilungsregel übersetzen. Die Parameter sind anhand der nationalen Gebäudeverteilung und Zielbilanz festzulegen [@schneider2023context, Gl. 7–8]. Gebäudeform, Verschattung, Dach- und Fassadennutzung bleiben Gegenstand der tatsächlichen Quartiersbilanz.
 
-![Abhängigkeit des technischen Potentialmaximums von der Dichte](../Abbildungen/dichte_datenpunkte.png){#fig-dichte-datenpunkte}
+![Illustration des Zusammenhangs zwischen technischem Energiepotenzial und baulicher Dichte.](../Abbildungen/dichte_datenpunkte.png){#fig-dichte-datenpunkte}
 
-Aus diesem Zusammenhang wird noch kein Zielwert. Die Anforderungsfunktion ergänzt die Beziehung um eine Verschiebung auf der Dichteachse. Ihre Parameter bestimmen damit die Lastenverteilung zwischen Gebäuden unterschiedlicher Dichte. Die so festgelegte Kurve beschreibt eine Anforderung[@schneider2023context, Gl. 7–8, S. 12–13]. Bei niedriger Dichte kann die Regel einen zusätzlichen Überschuss verlangen; bei hoher Dichte kann sie einen negativen Saldo ohne Kontextkorrektur zulassen. Dies lässt sich entweder als unterschiedlicher Zielwert oder als Gut-/Lastschrift gegenüber einem gemeinsamen Nullmaßstab ausdrücken. 
+## Parametrisierung der Zielwert- und Gutschriftenfunktion
 
-Die Gutschrift verändert abhängig von der Geschoßflächenzahl die Anforderung, nicht den realen Energiebedarf:  Niedrige Dichten führen zu zusätzlichen Anforderungen, während höhere Dichten eine Gutschrift erhalten können.
-
-Die Architektur beeinflusst das tatsächliche Potenzial durch Baukörperstellung, Verschattung, Dach- und Fassadennutzung. Der Dichtefaktor ersetzt diese Optimierung nicht.
-
-![Dichteabhängiger Primärenergie-Kontextfaktor mit Gutschriften und Lastschriften gegenüber dem Nullmaßstab.](../Abbildungen/dichtekurve.png){#fig-dichtekurve width="95%"}
-
-@fig-dichtekurve veranschaulicht die Verteilung der energetischen Anforderungen zwischen unterschiedlichen baulichen Dichten. Die dargestellten Werte sind von den tatsächlich erreichten Energieflüssen des Quartiers zu unterscheiden.
-
-
-## Operationalisierung über den Gebäudebestand
-
-Die nationale Kalibrierung braucht zusätzlich die Flächenverteilung des Bestands nach Dichte und Gebäudequalität. Ein Zielwert für einen häufigen Quartierstyp trägt zum nationalen Ergebnis stärker bei als derselbe Zielwert für einen seltenen Typ.
-
-Der nationale Sektorsaldo ergibt sich aus der flächengewichteten Summe der spezifischen Zielsalden:
+Bei der Neubestimmung der Funktion ist zwischen dem unveränderten **physikalisch errechneten Quartierssaldo** und den **virtuellen Zielwertkorrekturen** zu unterscheiden. Für eine PEQ-berechtigte Typologie \(k\) lautet die Bewertungsbedingung schematisch:
 
 $$
-B_{\mathrm{Sektor}}
-=\sum_k\sum_j A_{k,j}\,t_k(d_j).
+b_{\mathrm{PE,phys}}-t_{k,0}^{\mathrm{PE}}
++c_{\mathrm{D}}(d;\theta)+c_{\mathrm{S},k}(\theta)>0.
+$$ {#eq-zielwert-typologie}
+
+Bei positiv definierter Gutschrift kann man dies äquivalent als Mindestanforderung an die reale, noch nicht kontextkorrigierte Bilanz schreiben:
+
+$$
+b_{\mathrm{PE,phys}}>
+ t_{k,0}^{\mathrm{PE}}-c_{\mathrm{D}}(d;\theta)-c_{\mathrm{S},k}(\theta).
+$$
+
+Dabei ist \(t_{k,0}^{\mathrm{PE}}\) das einheitlich definierte Basiskriterium der betroffenen PEQ-Klasse; bei einem Nullmaßstab ist es null. Diese Gleichungen beschreiben die **Parameterstruktur**, nicht schon die endgültige Funktionsform. Vor einer Festlegung sind Dichteachsenverschiebung, Begrenzungen, Typologiezuordnung und Nebenbedingungen abzustimmen. Für Nicht-PEQ-Klassen werden stattdessen die prognostizierten Bilanzbeiträge dokumentiert. Mobilität wird nicht als frei wählbarer Kalibrierrest in die Dichtefunktion eingerechnet: Das nationale MIV-Budget entsteht in @sec-allokation und wird in @sec-kontext-mobilitaet verwendet.
+
+Für die Sanierungsanpassung gilt ausdrücklich: **kein einheitlicher Faktor für sämtliche sanierten Flächen**. Der Wert \(c_{\mathrm{S},k}\) hängt von der zugewiesenen Typologie ab und wird mit deren energetischen Annahmen und nationalem Flächenanteil gemeinsam kalibriert. Ob für bestimmte Klassen der Anpassungswert null ist und wie unterschiedliche Sanierungsintensitäten bewertet werden, ist anhand der neuen Excel-Klassen fachlich zu begründen.
+
+## Nationale Aggregation und Kalibrierbedingung
+
+Die Flächenverteilung nach Typologie \(k\) und Dichteklasse \(j\) wird aus @sec-gebaeudebestand übernommen. Ein konsistent auf **BGF** bezogener jährlicher nationaler Modellbeitrag lässt sich in den **fest vorgegebenen Beitrag der Nicht-PEQ-Klassen** und die **kalibrierten Beiträge der PEQ-Klassen** zerlegen:
+
+$$
+B_{\mathrm{Sektor}}^{\mathrm{Modell}}(\theta)
+=\sum_{k\in\mathrm{NichtPEQ}}\sum_j A_{k,j}^{2040}\,b_{k,j}^{\mathrm{ref}}
++\sum_{k\in\mathrm{PEQ}}\sum_j A_{k,j}^{2040}\,t_{k,j}^{\mathrm{PEQ}}(\theta).
 $$ {#eq-sektor-aggregation}
 
-$A_{k,j}$ bezeichnet die Fläche des Gebäudetyps $k$ in der Dichteklasse $j$, $t_k(d_j)$ dessen jährlichen spezifischen Zielsaldo. Fläche und Zielsaldo müssen dieselbe Flächendefinition verwenden. Bei einem Zielsaldo in kWh/(m² a) ergibt sich der Sektorsaldo in kWh/a.
+Die Beiträge \(b_{k,j}^{\mathrm{ref}}\) und \(t_{k,j}^{\mathrm{PEQ}}\) müssen hier in derselben auf BGF bezogenen, national aggregierbaren Bilanzgröße ausgedrückt sein. Die Ziel- und Flächenbezüge sind vor der Aggregation zu harmonisieren: Ein PEQ-Zielwert in kWh PE/(m² NGF·a) kann nicht unmittelbar mit nationaler BGF multipliziert werden. Ebenso kann eine in PJ **elektrischer Energie** ausgewiesene nationale Sektorbilanz nicht ohne Definition und Umrechnung mit einem Primärenergiesaldo gleichgesetzt werden. Diese Umrechnung – einschließlich NGF/BGF und geeigneter PE-Gewichtung – gehört ausdrücklich zur Kalibrierrechnung und zu ihrer Dokumentation.
 
-Die Kalibrierung unterscheidet thermische Sanierung, Sanierung mit geringer PV-Ausstattung, PEQ-Sanierung und PEQ-Neubau mit Anteilen von 40 %, 20 %, 20 % und 20 %. Unsanierter Bestand hat im zugrunde gelegten Zielzustand einen Anteil von 0 %. Zusammen mit der Dichteverteilung bestimmen diese Annahmen den nationalen Sektorsaldo [@schneider2023context, Tab. 5 und Abb. 8, S. 12–14].
+Die Parameter \(\theta\) werden so gewählt, dass sich der nationale aggregierte Zielbeitrag und der aus @sec-allokation stammende, in dieselbe Bilanzgröße überführte Referenzsaldo innerhalb einer ausgewiesenen Toleranz entsprechen:
 
-Die Anforderungen an PEQ hängen somit auch davon ab, wie viel der übrige Gebäudebestand beiträgt. Eine andere Sanierungsentwicklung oder Dichteverteilung kann eine neue Kalibrierung erfordern. Dafür müssen sowohl die Bestandsdaten als auch die Verteilungsentscheidungen dokumentiert werden.
+$$
+B_{\mathrm{Sektor}}^{\mathrm{Modell}}(\theta)
+\stackrel{!}{=}B_{\mathrm{Geb,Ziel}}^{\mathrm{Transition\ 2040}}.
+$$ {#eq-kalibrierziel}
 
-![Modellierte BGF-Verteilung Österreichs nach Hauptnutzung. Dargestellt ist GFZ bis 8; rund 0,50 % der BGF liegen im übrigen Modellraster bis GFZ 20 und bleiben in allen Summen enthalten.](../Abbildungen/gfz_at/gfz_oesterreich_nutzung.png){#fig-gfz-oesterreich}
+Die Bilanzgleichheit allein legt die Parameter nicht notwendigerweise eindeutig fest. Zusätzliche Bedingungen – etwa begründete Grenzen der Dichtefunktion, technologische Potenziale, typologische Zielqualitäten und vertretbare Sanierungsanforderungen – müssen ausdrücklich angegeben werden. Die Verteilung der Gebäudequalitäten und ihre Flächenanteile sind daher nicht bloß eine Rechenhilfe, sondern zentrale Szenarioannahmen.
 
+## Kalibrierergebnis und Qualitätssicherung
 
+::: {.callout-important title="Ergebnis der Neukalibrierung einzufügen"}
+**Noch offen:** finale neue Typologie- und Flächenmatrix, abgestimmter UBA-Gebäudesektorsaldo, Umrechnungsregeln Elektrizität ↔ Primärenergie und BGF ↔ NGF, resultierende Dichtefunktion, typologische Sanierungsparameter und nationale Aggregation mit Bilanzdifferenz. Die frühere Dichtekurve und die früheren pauschalen Sanierungswerte werden nicht als neue Resultate ausgegeben.
+:::
+
+Nach Einsetzen der Werte sollen mindestens dargestellt werden: die nationale Flächenverteilung der Klassen über die GFZ; die Bilanzbeiträge nach Typologie; die neue dichteabhängige Anforderung; der Beitrag der typologiespezifischen Sanierungsanpassungen; der aggregierte Modellwert und die Differenz zum Referenzsaldo. Die Parameter und verwendeten Quelldateiversionen sind reproduzierbar auszuweisen.
+
+## Sensitivitäten und normative Entscheidungen
+
+Neben dem Referenzfall sind insbesondere Änderungen der Gebäude-PV-Allokation, der Flächenanteile der Gebäudetypen, der GFZ-Verteilung sowie der typologiebezogenen Sanierungsparameter als Sensitivitäten sinnvoll. Auch Änderungen des Umfangs der MIV-/ÖPNV-Zuordnung wirken über @sec-allokation auf das nationale Zielbild. Solche Varianten sind vom **freigegebenen Referenzszenario** klar zu unterscheiden.
+
+::: {.callout-note title="Historische Einordnung"}
+Die ursprüngliche Kalibrierung verwendete fünf energetische Gebäudeklassen und eine spezifische Dichtefunktion [@schneider2023context]. Diese historische Lösung erläutert die Entstehung der Methode, ersetzt aber weder die neuen Typologien noch die hier durchzuführende Kalibrierung mit UBA Transition 2040.
+:::

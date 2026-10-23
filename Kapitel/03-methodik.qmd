@@ -1,70 +1,72 @@
 # Von nationalen Zielpfaden zur Quartiersbilanz {#sec-methodik}
+
 ::: {.lead}
-Das übergeordnete Prinzip: Ziele, Verteilung und Nachweis
+Zielbild, sektorale Allokation, Gebäudestruktur, Kalibrierung und Quartiersnachweis
 :::
-Ein Quartier kann seinen Energiebedarf senken, erneuerbare Energie erzeugen und Emissionen vermeiden. Ob dieser Beitrag ausreicht, hängt auch davon ab, welche Aufgaben die übrigen Gebäude, die Mobilität und die Energieversorgung übernehmen. Das nationale Allokationsmodell stellt diesen Zusammenhang her. Zunächst werden nationale Zielpfade und sektorale Energieaufgaben beschrieben. Danach werden die Anforderungen über Kontextfaktoren auf Quartiere übertragen; zuletzt wird die konkrete Quartiersbilanz abgegrenzt. Das davon getrennte kumulierte Emissionsbudget behandelt @sec-zielwert-thg.
 
-Die Quartierssimulation ermittelt, welche Bilanz ein Projekt unter bestimmten Annahmen erreicht. Das Allokationsmodell bestimmt den Maßstab, an dem dieses Ergebnis beurteilt wird. Das Bewertungsverfahren verbindet beide Ebenen: Systemgrenzen, Gewichtung und Anforderungen müssen gemeinsam festgelegt werden [@schneider2026thesis, Kap. 3.1–3.2, S. 43–60].
+Die Anforderungen an ein Plus-Energie-Quartier (PEQ) werden nicht isoliert festgelegt. Ausgangspunkt ist das nationale Szenario **UBA Transition 2040**. Dessen Erzeugungs- und Bedarfsgrößen werden durch explizite Zuordnungsregeln auf die Sektoren verteilt. Die daraus abgeleitete Energieaufgabe des Gebäudesektors wird mit einem Szenario der Gebäude- und Nutzflächenentwicklung abgeglichen. Die PEQ-Zielwertfunktion wird anschließend so kalibriert, dass sich die Beiträge unterschiedlicher Gebäudetypologien und Dichten zum national zugewiesenen Ziel aggregieren lassen.
 
-## Welche Entscheidungen stecken in einem Zielwert?
-
-Ein nationales Ziel lässt sich nicht ohne weitere Festlegungen auf ein Bauvorhaben herunterbrechen. Zunächst braucht es ein Szenario für Energiebedarf und Energieversorgung. Anschließend ist festzulegen, welche Anteile der verfügbaren Ressourcen und Emissionsbudgets den Sektoren zugerechnet werden. Erst danach können Anforderungen für Quartiere unterschiedlicher Dichte und Nutzung bestimmt werden.
+**Top-down** beschreibt somit die *erforderliche* sektorale Leistung; **Bottom-up** beschreibt die Beiträge der unterschiedlichen Gebäudetypen und Quartiere. Die im Nachweis simulierte tatsächliche Quartiersbilanz bleibt von der Festlegung des Zielwerts getrennt [@schneider2026thesis, Kap. 3.1–3.2].
 
 ```{mermaid}
 %%| label: fig-allokationskette
-%%| fig-cap: "Vom nationalen Szenario zur Quartiersbewertung. Methodik nach Schneider (2026), Kap. 3.1–3.3."
-%%| fig-alt: "Nationale Szenarien führen über sektorale Zuordnung und Bezugsgrößen zu Quartiersanforderungen. Projektdaten und Simulation liefern die Quartiersbilanz. Anforderungen und Bilanz treffen in der Bewertung zusammen."
+%%| fig-cap: "Rechenkette der Zielwertableitung. Die THG-Budgetableitung erfolgt als eigenständiger, ergänzender Strang."
+%%| fig-alt: "UBA Transition 2040 und die Gebäudestruktur 2040 führen über sektorale Allokation und nationale Aggregation zur Kalibrierung der PEQ-Anforderung; die Quartierssimulation liefert die getrennt zu prüfende Projektbilanz."
 flowchart TB
-  A["Nationale Energie- und Klimaszenarien"] --> B["Sektorale Zuordnung"]
-  B --> C["Verteilung nach Dichte, Nutzung und Fläche"]
-  C --> D["Anforderungen und Budgets"]
-  E["Projektdaten und Maßnahmen"] --> F["Quartierssimulation und Bilanzierung"]
-  D --> G["Bewertung des Quartiers"]
-  F --> G
+  A["UBA Transition 2040: Erzeugung und Bedarf"] --> B["Sektorale Allokation: Gebäudebilanz und MIV-Budget"]
+  C["Gebäudebestand 2040: Typologien, Flächen und GFZ"] --> D["Flächengewichtete Aggregation"]
+  B --> D
+  D --> E["Kalibrierung: PEQ-Zielwerte, Dichte und typologische Sanierungswerte"]
+  E --> F["Bewertungsmaßstab des Quartiers"]
+  G["Projekt und stündliche Quartiersbilanz"] --> H["Nachweis"]
+  F --> H
+  I["Nationales THG-Budget und THG-Pfade"] --> J["Kumulativer THG-Zielwert"]
+  J --> H
 ```
 
-| Bestandteil | Funktion | Beispiel |
+Für die Energieallokation und die Gebäudestruktur gelten getrennte, nachvollziehbare Datenquellen. Das Szenario liefert nicht von selbst eine Aufteilung in Gebäude-PV, zentrale Stromerzeugung, MIV und ÖPNV. Ebenso definiert die Bestandsstatistik nicht, welchen Energiestandard welche Fläche im Jahr 2040 erreichen soll. Solche Zuordnungen beziehungsweise Zielanteile werden als **Szenario- oder normative Modellannahmen** kenntlich gemacht.
+
+| Art der Festlegung | Funktion | Beispiel |
 |---|---|---|
-| Physikalischer Zusammenhang | Beschreibt Beziehungen zwischen Größen. | Mehr Geschossfläche auf gleicher Grundstücksfläche verändert das Verhältnis von Bedarf und lokalem Erzeugungspotenzial. |
-| Szenarioannahme | Beschreibt eine mögliche zukünftige Entwicklung. | Dekarbonisierung der Energieversorgung und der Herstellungsprozesse. |
-| Normative Festlegung | Verteilt Anforderungen und Budgets. | Anteil des nationalen Emissionsbudgets für Gebäude und MIV. |
-| Operationalisierung | Übersetzt den Ansatz in berechenbare Regeln. | Mobilitätsgutschrift je Nutzung und Quadratmeter Nettogrundfläche. |
+| Physikalischer Zusammenhang | Beschreibt technische Abhängigkeiten | Lokales PV-Potenzial je BGF sinkt typischerweise mit zunehmender GFZ |
+| Szenariogröße | Beschreibt einen möglichen Zielzustand | Erzeugung und Strombedarf 2040 laut UBA Transition |
+| Zuordnungsregel | Verteilt nationale Ressourcen und Aufgaben | Zentraler Erneuerbaren-Pool abzüglich Industrie und ÖPNV für das MIV-Budget |
+| Typologie- und Flächenannahme | Beschreibt den Gebäudesektor im Zieljahr | BGF-Anteile je energetischer Gebäudeklasse |
+| Kalibrierparameter | Legt die Lastenverteilung zwischen Typen und Dichten fest | Dichtefunktion und typologieabhängige Sanierungsanpassung |
+| Nachweisregel | Übersetzt Ziel und Projektbilanz in eine Prüfung | Zulässige Energieflüsse, Primärenergiefaktoren und Bilanzgrenzen |
 
-: Grundlagen eines Zielwerts [@schneider2026thesis, Kap. 3.1–3.2]. {#tbl-arten-festlegungen}
+: Komponenten der Zielwertableitung, in Fortführung der quantitativen PEQ-Methodik [@schneider2026thesis, Kap. 3.1–3.2]. {#tbl-arten-festlegungen}
 
-Die wissenschaftliche Herleitung macht diese Entscheidungen prüfbar. Sie hebt ihren normativen Charakter nicht auf. Für die Verwaltung ist gerade diese Trennung hilfreich: Ein geändertes Szenario, eine andere Verteilungsregel und eine Korrektur der Software sind unterschiedliche Eingriffe.
+## Vom nationalen Szenario zur Kalibrierung
 
-## Vom Zielbild zur Bewertung
+Die einzelnen Kapitel folgen der Rechen- und Nachweiskette:
 
 | Schritt | Leitfrage | Vertiefung |
 |---|---|---|
-| Sektorales Zielbild | Welche Energie wird im Zielsystem erzeugt und benötigt? | @sec-allokation |
-| Dichte | Wie verteilt sich die energetische Aufgabe auf den Gebäudebestand? | @sec-kontext-dichte |
-| Mobilität | Welcher nationale Anteil wird welchen Nutzungen zugeordnet? | @sec-kontext-mobilitaet |
-| Sanierung | Wie werden Handlungsmöglichkeiten im Bestand berücksichtigt? | @sec-kontext-sanierung |
-| THG-Zielwert | Wie viele kumulierte Emissionen werden dem Quartier zugestanden? | @sec-zielwert-thg |
-| Quartiersbilanz | Welche Flüsse und Prozesse zählen innerhalb welcher Grenzen? | @sec-bilanzregeln |
+| Nationales Zielszenario | Welche Energiemengen stehen 2040 zur Verfügung und welche Bedarfe bestehen? | @sec-zielszenario |
+| Sektorale Allokation | Welche Erzeugungs- und Bedarfsmengen entfallen auf Gebäude, Industrie, ÖPNV und MIV? | @sec-allokation |
+| Gebäudestruktur | Welche Gebäudetypen mit welchen Flächen und Dichten werden für 2040 angenommen? | @sec-gebaeudebestand |
+| Energie-Kalibrierung | Welche typologie- und dichteabhängigen Anforderungen ergeben zusammen den nationalen Zielbeitrag? | @sec-kalibrierung |
+| Mobilität im Quartier | Wie wird das national abgeleitete MIV-Budget auf Nutzungen verteilt und dem örtlichen Bedarf gegenübergestellt? | @sec-kontext-mobilitaet |
+| Sanierung im Quartier | Wie wird die aus der Typologiekalibrierung abgeleitete Sanierungsanpassung angewendet? | @sec-kontext-sanierung |
+| THG-Zielwert | Wie werden kumulierte Emissionen über einen Lebenszyklus begrenzt? | @sec-zielwert-thg |
+| Quartiersbilanz | Wie wird die tatsächlich geplante beziehungsweise gemessene Leistung bilanziert? | @sec-bilanzregeln |
 
-## Kontextfaktoren: Eine Bilanz, zwei gleichwertige Darstellungen {#sec-kontext}
+## Bilanzziel und virtuelle Kontextwerte {#sec-kontext}
 
+Eine kontextspezifische Anforderung lässt sich entweder als spezifischer Zielwert oder als virtuelle Gut- beziehungsweise Lastschrift gegenüber einem gemeinsamen Nullmaßstab darstellen. Beide Darstellungen sind bei identischer Systemgrenze rechnerisch gleichwertig [@schneider2026thesis, Abschn. 3.2.5–3.2.7].
 
-Eine angepasste Anforderung kann als eigener Zielwert oder als virtuelle Gut- beziehungsweise Lastschrift gegenüber einem gemeinsamen Nullmaßstab dargestellt werden. Beide Darstellungen sind rechnerisch gleichwertig [@schneider2026thesis, Abschn. 3.2.5–3.2.7].
-
-Mit dem jährlichen spezifischen Primärenergiesaldo \(b_{\mathrm{PE}}\) vor Kontextkorrektur lautet die Bewertungsbilanz:
+Für einen Quartierssaldo \(b_{\mathrm{PE}}\) vor Kontextkorrektur gilt schematisch:
 
 $$
 b_{\mathrm{Bewertung}}
-=b_{\mathrm{PE}}+c_{\mathrm{Dichte}}+c_{\mathrm{Mobilität}}+c_{\mathrm{Sanierung}}.
+=b_{\mathrm{PE}}+c_{\mathrm{Dichte}}+c_{\mathrm{Mobilität}}+c_{\mathrm{Sanierung,typ}}.
 $$ {#eq-kontextbilanz}
 
-Alle Größen sind in kWh PE/(m² NGF a) anzugeben. Positive Kontextwerte entlasten die Anforderung, negative Werte erhöhen sie. Die Mobilitätskomponente wird nur gemeinsam mit dem entsprechenden Mobilitätsbedarf in der erweiterten Bilanz angesetzt. Die Bedingung \(b_{\mathrm{Bewertung}}>0\) lässt sich auch als Anforderung an den Saldo vor Kontextkorrektur schreiben:
+Alle Größen müssen dieselbe flächenbezogene Primärenergie-Einheit und Systemgrenze verwenden, etwa kWh PE/(m² NGF·a). Positive Kontextwerte sind Gutschriften, negative erhöhen die Anforderung. Der **Mobilitätswert** entsteht aus der nationalen Sektorallokation und wird ausschließlich bei Einbeziehung des entsprechenden MIV-Bedarfs angesetzt. Der **Sanierungswert** ist künftig *typologieabhängig* und wird nicht als genereller Pauschalwert festgelegt. Dichte- und Sanierungsparameter sind gemeinsam auf den sektoralen Zielsaldo abzustimmen; bereits in einem typologischen Zielsaldo berücksichtigte Wirkungen dürfen nicht noch einmal addiert werden.
 
-$$
-b_{\mathrm{PE}}>-
-\left(c_{\mathrm{Dichte}}+c_{\mathrm{Mobilität}}+c_{\mathrm{Sanierung}}\right).
-$$
+Die Bewertungsbedingung \(b_{\mathrm{Bewertung}}>0\) verlangt keinen physischen Exportüberschuss. Die reale Bilanz und alle virtuellen Korrekturen sind daher getrennt auszuweisen. Das kumulierte THG-Budget ist eine zusätzliche eigenständige Prüfung und keine Primärenergie-Gutschrift.
 
-Eine positive Bewertungsbilanz bedeutet daher nicht zwingend einen physischen Exportüberschuss. Für Planung und Kommunikation sind der Saldo vor Kontextkorrektur und die einzelnen Kontextkomponenten getrennt auszuweisen. Das kumulierte THG-Budget wird zusätzlich geprüft; es wird nicht in diese jährliche Primärenergiebilanz eingerechnet.
-
-
-Eine kommunale Zwischenebene könnte nationale Vorgaben zunächst auf kommunale Beiträge und dann auf Quartiere beziehen. Sie bleibt eine Entwicklungsperspektive; Energie- und Emissionsbudgets dürfen dabei nicht mehrfach zugeteilt werden [@schneider2026thesis, Abschn. 3.5.1, S. 89–90].
+::: {.callout-note title="Kalibrierungsstand dieser Arbeitsfassung"}
+UBA Transition 2040 ist das festgelegte Referenzszenario. Die neue Gebäudetypologie und Flächenverteilung liegen in einer gesonderten Excel-Grundlage vor und sind noch in die Berechnung zu übernehmen. Solange die sektorale Zuordnung und die Parameterkalibrierung nicht abgeschlossen sind, werden historische Zielwerte nicht als neue Ergebnisse ausgewiesen. Die ursprüngliche Streicher-basierte Kalibrierung ist nur als methodischer Vorläufer dokumentiert [@schneider2020lokal; @schneider2023context].
+:::

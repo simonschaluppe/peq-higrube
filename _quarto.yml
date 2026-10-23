@@ -26,16 +26,20 @@ book:
 
     - Kapitel/01-einführung.qmd
     - Kapitel/02-standard.qmd
+    
     - part: "Methodik"
       chapters:
-      - Kapitel/03-methodik.qmd
-      - Kapitel/03-allokation.qmd
-      - Kapitel/05-kontextfaktoren.qmd
-      - Kapitel/05-kontext-mobilitaet.qmd
-      - Kapitel/05-kontext-sanierung.qmd
-      - Kapitel/03-zielwert-thg.qmd
-      - Kapitel/04-bilanzregeln.qmd
-      - Kapitel/08-fortschreibung.qmd
+        - Kapitel/03-methodik.qmd
+        - Kapitel/03-zielszenario.qmd
+        - Kapitel/03-allokation.qmd
+        - Kapitel/03-gebaeudebestand.qmd
+        - Kapitel/05-kontextfaktoren.qmd
+        - Kapitel/05-kontext-mobilitaet.qmd
+        - Kapitel/05-kontext-sanierung.qmd
+        - Kapitel/03-zielwert-thg.qmd
+        - Kapitel/04-bilanzregeln.qmd
+        - Kapitel/08-fortschreibung.qmd
+
     - part: "Anwendung"
       chapters:
         - Kapitel/07-anwendung.qmd
