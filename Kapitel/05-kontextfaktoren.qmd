@@ -17,7 +17,7 @@ Die Typologieparameter werden in einer versionierten Tabelle zusammengeführt. Z
 | Parameter | Bedeutung | Status |
 |---|---|---|
 | \(k\), \(A_{k,j}^{2040}\) | Gebäudetyp und Fläche nach GFZ-Klasse | Aus @sec-gebaeudebestand |
-| \(e_k\), \(p_k\) | Typologiebezogener Energiebedarf und lokale Erzeugung | Aus Excel/Modell zu übernehmen |
+| \(e_k\), \(p_k\) | Typologiebezogener Energiebedarf und lokale Erzeugung | Gelieferte PV30/noFlex-Kennwerte in @sec-gebaeudesektormodell |
 | \(b_{k,j}^{\mathrm{ref}}\) | Modellierter Referenzsaldo für Nicht-PEQ-Klassen | Aus Szenarioannahmen zu bestimmen |
 | \(t_{k,j}^{\mathrm{PEQ}}\) | Zu kalibrierender Mindestbeitrag für PEQ-Klassen | Neu zu kalibrieren |
 | \(c_{\mathrm{S},k}\) | **Typologiespezifische Sanierungsanpassung** für die jeweils berechtigte PEQ-Klasse | Neu zu kalibrieren |
@@ -85,10 +85,12 @@ Die Bilanzgleichheit allein legt die Parameter nicht notwendigerweise eindeutig 
 
 ## Kalibrierergebnis und Qualitätssicherung
 
-Die Top-down-Seite ist inzwischen als parametrierbare Rechnung in @sec-allokation-notebook umgesetzt. Unter den ausdrücklich vorläufigen Annahmen in @sec-allokation-ergebnisse ergeben sich 24 PJ/a elektrisches MIV-Budget und −7 PJ/a für den erweiterten Gebäudesektorsaldo einschließlich MIV. Diese bedingte Zielgröße ist noch kein kalibriertes PEQ-Ergebnis. Der Bottom-up-Abgleich und Änderungen der Dichte- oder Sanierungsparameter warten auf die aktualisierte Typologie-Excel. Für den späteren Vergleich sind dieselbe Bilanzgrenze einschließlich der einmaligen MIV-Deckung sowie einheitliche Energie- und Flächenbezüge erforderlich.
+Die Top-down-Seite ist als parametrierbare Rechnung in @sec-allokation-notebook umgesetzt. Unter den ausdrücklich vorläufigen Annahmen in @sec-allokation-ergebnisse ergeben sich 24 PJ/a elektrisches MIV-Budget und −7 PJ/a für den erweiterten Gebäudesektorsaldo einschließlich MIV. Die Bottom-up-Seite liegt nun in @sec-gebaeudesektormodell vor: 603 positiv gewichtete Typen, ihre GFZ-Verteilungen und die jeweiligen Erwartungswerte der vorläufigen historischen Dichtefunktion. Die Einzelzielzuordnung zu Dichteklassen ist mit 100 % bestätigt; bei zwei Zielklassen gelten die gelieferten Anteile.
+
+Der physische Pool-Stromsaldo beträgt −59,25 PJ/a. Einschließlich derselben einmaligen MIV-Zuordnung ergibt sich −107,25 PJ/a, also −100,25 PJ/a gegenüber dem Top-down-Beispiel. Die virtuellen Dichte-Erwartungswerte werden dabei nicht als reale Deckung hinzuaddiert. Der Pool enthält nur PV30/noFlex sowie noch erhebliche Gas- und Ölmengen. Eine neue Zielwertfunktion lässt sich deshalb nicht allein durch Gleichsetzen dieses Pool-Ergebnisses mit dem nationalen Ziel bestimmen. PEQ-Flächenanteile, energetische Entwicklung der übrigen Typen und alternative PV-Ausstattungen sind zuerst festzulegen.
 
 ::: {.callout-important title="Ergebnis der Neukalibrierung einzufügen"}
-**Noch offen:** finale neue Typologie- und Flächenmatrix, abgestimmter UBA-Gebäudesektorsaldo, Umrechnungsregeln Elektrizität ↔ Primärenergie und BGF ↔ NGF, resultierende Dichtefunktion, typologische Sanierungsparameter und nationale Aggregation mit Bilanzdifferenz. Die frühere Dichtekurve und die früheren pauschalen Sanierungswerte werden nicht als neue Resultate ausgegeben.
+**Vorhanden:** gelieferte 2040-Typologie- und Flächenmatrix, flächengewichtete Energiebilanzen, GFZ-Zuordnung und elektrischer Abgleich. **Noch offen:** freigegebene PEQ-Anteile und Versorgungspfade, abgestimmter UBA-Gebäudesektorsaldo, Bestätigung der BGF-/NGF-Annahme und PE-Faktorversion, endgültige Dichtefunktion sowie typologische Sanierungsparameter. Die historische Referenzkurve wird nicht als neue Kalibrierung ausgegeben.
 :::
 
 Nach Einsetzen der Werte sollen mindestens dargestellt werden: die nationale Flächenverteilung der Klassen über die GFZ; die Bilanzbeiträge nach Typologie; die neue dichteabhängige Anforderung; der Beitrag der typologiespezifischen Sanierungsanpassungen; der aggregierte Modellwert und die Differenz zum Referenzsaldo. Die Parameter und verwendeten Quelldateiversionen sind reproduzierbar auszuweisen.

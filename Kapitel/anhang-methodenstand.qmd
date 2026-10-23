@@ -40,6 +40,8 @@ Die Energieallokation bezieht sich auf ein vollständig erneuerbares österreich
 
 ## Gebäudebestand und Dichteallokation
 
+Die folgende Tabelle dokumentiert die **historische Kalibrierung**. Der neue Building-Sector Pool ist inzwischen mit seinen eigenen 2040-Flächen, Energiekennwerten und GFZ-Zuordnungen ausgewertet (@sec-gebaeudesektormodell). Die alten Anteile 40/20/20/20 werden nicht als Gewichte des neuen Pools eingesetzt. Dessen nationale BGF beträgt 1.126,579 Mio. m²; die davon getrennte THG-Budgetfläche wird hier nicht geändert.
+
 | Annahme | Ansatz | Grundlage / Stand |
 |---|---|---|
 | Thermisch sanierter Bestand | 40 % | Anteil im kalibrierten Zielzustand |
@@ -48,8 +50,8 @@ Die Energieallokation bezieht sich auf ein vollständig erneuerbares österreich
 | PEQ-Neubau | 20 % | Anteil im kalibrierten Zielzustand |
 | Unsanierter Bestand | 0 % | Annahme des Zielzustands, keine Beschreibung des heutigen Bestands |
 | Nationale Aggregation | Flächengewichtung nach Gebäudetyp und Dichteklasse | @eq-sektor-aggregation |
-| Dichteverteilung des Bestands | Bestehende Kalibrierung | **Noch zu ergänzen:** Dichteklassen und Flächenanteile; **weiterzuentwickeln:** aktualisierte österreichische Datenbasis |
-| Dichteabhängige Anforderung | Kalibrierte Funktion mit Verschiebung und Begrenzung | **Noch zu ergänzen:** Parametertabelle mit Einheiten, Geltungsbereich und Flächenumrechnung |
+| Dichteverteilung des Bestands | Aktualisierte Hochrechnung 2021 und Pool-Zuordnung 2040 | Ausgeführt in @sec-gebaeude-gfz; räumliche Fortschreibung 2040 weiterhin Modellannahme |
+| Dichteabhängige Anforderung | Historische Referenzfunktion mit Verschiebung und Begrenzung | Parameter und elektrische Erwartungswerte in @sec-gebaeude-gfz; neue Kalibrierung offen |
 | Flächenentwicklung bis 2040 | Nationale Bezugsfläche 906,7 Mio. m² BGF | **Noch zu ergänzen:** Aufteilung nach Nutzung, Bestand, Neubau, Abbruch und Sanierung mit Stützjahren |
 
 : Bestandsanteile und Dichtekalibrierung nach @schneider2023context, Tab. 5 und Abb. 8; Flächenbezug der THG-Allokation nach @schneider2025declaration, Tab. A1. Die jeweiligen Bezugsflächen sind getrennt zu führen.

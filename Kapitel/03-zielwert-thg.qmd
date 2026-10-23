@@ -54,6 +54,8 @@ Die Fläche bestimmt, wie ein nationales Budget auf Quadratmeter verteilt wird. 
 | Datenstand / Horizont | BGF [Mio. m²] | NGF [Mio. m²] | Rolle und Quelle |
 |---|---:|---:|---|
 | Statistikbezug 2021, GFZ-Hochrechnung | 1.058,935 | 847,1 | Bestandsverteilung nach Nutzung, Bundesland und Geschossklasse; @sec-gfz-verteilung; BGF = NGF / 0,8 |
+| Building-Sector Pool, „heute“ (Jahr offen) | 1.112,341 | 889,873 | Gelieferte Typenflächen; NGF/BGF = 0,8 als Modellannahme; @sec-gebaeudebestand |
+| Building-Sector Pool, Entwicklung 2040 | 1.126,579 | 901,263 | Neue Bottom-up-Energieauswertung; keine automatische Änderung der THG-Budgetfläche |
 | Zielbestand 2040 der THG-Kalibrierung | 906,7 | nicht separat angesetzt | Bezugsfläche der Budgetzuteilung; @schneider2025declaration, Tab. A1 |
 | Bestand 2025 und Zwischenjahre bis 2040 | noch zu ergänzen | noch zu ergänzen | Keine interpolierten Werte ohne harmonisierte Abgrenzung |
 
@@ -62,7 +64,7 @@ Die Fläche bestimmt, wie ein nationales Budget auf Quadratmeter verteilt wird. 
 | Baustein der Fortschreibung | Benötigte Angaben | Aktueller Status |
 |---|---|---|
 | Ausgangsbestand | Stützjahr, Nutzung, konditionierte Fläche, NGF/BGF-Abgrenzung | Statistikmodell 2021 vorhanden; Abgleich mit THG-Systemgrenze offen |
-| Neubau und Erweiterung | Zusätzliche m² je Nutzung und Jahr | Detaildaten angekündigt; nicht eingesetzt |
+| Neubau und Erweiterung | Zusätzliche m² je Nutzung und Jahr | Typengewichteter Neubauanteil 2040 vorhanden; zeitliche Übergangsbilanz noch offen (@sec-gebaeude-flaechen) |
 | Abbruch und Umnutzung | Abgänge und Nutzungsverschiebungen je Jahr | Noch zu ergänzen |
 | Sanierung | Sanierte m² und energetischer Zustand je Jahr | Keine zusätzliche Geschossfläche allein durch Sanierung unterstellen |
 | Zielbestand | Konsistente Summe aus Bestand, Zu- und Abgängen | 906,7 Mio. m² als bestehende Kalibrierungsannahme erhalten |

@@ -1,0 +1,22 @@
+{
+  "provenance": {
+    "source_sha256": "b032c1bd7148b0bdac8541196a1eaa7fc58f538f87912e1f2714af88ac80a7cd",
+    "input_sha256": "cd09efbfbea7bc7e8cfd82b07146f72c6f3712d3a381625532b14c947dd75bc1",
+    "gfz_sha256": "b17c1f98b6104a5b8ed6da4fe436ebff14d2f7708cc2043860d166b17d3f1c3b"
+  },
+  "allocation_sha256": "0db04e742493fd5d244b727c30b215703bacbd9c5954444bc3d131dd2024aaeb",
+  "ngf_bgf": 0.8,
+  "type_count": 900,
+  "positive_types_2040": 603,
+  "bgf_2040_m2": 1126578658.428,
+  "bgf_today_m2": 1112340697.5,
+  "electricity_demand_pj": 137.49326011458797,
+  "pv_pj": 78.24546191661419,
+  "electricity_balance_pj": -59.24779819797377,
+  "extended_balance_pj": -107.24779819797376,
+  "gap_topdown_pj": -100.24779819797376,
+  "single_target_missing_share_rows": 0,
+  "affected_reference_area_pct": 0.0,
+  "pe_balance_pj": -409.3638470994995,
+  "controls": "All assertions passed; source values are not an independently rerun PEExcel simulation."
+}
