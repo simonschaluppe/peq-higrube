@@ -21,7 +21,7 @@
 #peq-dashboard .card:focus-visible{outline:2px solid #006b70}
 #peq-dashboard .card{background:#edf2f5;padding:12px;border-radius:8px} #peq-dashboard .card strong{display:block;font-size:clamp(17px,2.2vw,23px)}
 #peq-dashboard button{padding:9px 14px;border:1px solid #6e8795;background:white;border-radius:6px;margin:4px;cursor:pointer}
-#peq-dashboard #dash-balance svg,#peq-dashboard #dash-density svg,#peq-dashboard #dash-curve svg{width:100%;height:auto;display:block} #peq-dashboard summary{cursor:pointer;font-weight:bold}
+#peq-dashboard #dash-curve svg{width:100%;height:auto;display:block} #peq-dashboard summary{cursor:pointer;font-weight:bold}
 #peq-dashboard pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:12px} #peq-dashboard h3{font-size:19px}
 </style>
 <div class="warning"><strong>INTERN · Szenariowerkstatt</strong><br>Elektrische Jahresbilanz, keine vollständige Klimaneutralitäts- oder PEQ-Prüfung.</div>
@@ -37,8 +37,7 @@
 </div>
 <button id="dash-reset" type="button">Referenz zurücksetzen</button><button id="dash-save" type="button">Variante als JSON sichern</button>
 <div id="dash-status" role="status" aria-live="polite" class="warning"></div>
-<div class="grid charts"><div class="panel"><h3>Physischer Vergleich [PJ Strom/a]</h3><div id="dash-balance"></div><p class="small">MIV wird auf beiden Seiten gleich zugeordnet. Die physische Ziellücke verändert sich deshalb durch MIV allein nicht.</p></div>
-<div class="panel"><h3>Stromsaldo nach Gebäudeklasse [PJ/a]</h3><div id="dash-geometry"></div></div></div>
+<div class="panel"><h3>Nationale Strombilanz und Bottom-Up-Zuordnung</h3><div id="dash-balance"></div><p id="national-comparison-note" class="small"></p><p class="small">Links: vollständige nationale Strombilanz, einschließlich Industrie, übriger Sektoren und aller Erzeugungsträger. Rechts: Gebäudebetrieb plus zugeordneter MIV. Gestrichelte Bezugslinien markieren vergleichbare Bilanzumfänge. Mobilitätsgutschrift ist ein Anteil am zentralen Erzeugungsbudget und wird national nicht nochmals aufgestapelt; ihre Markierung legt keinen einzelnen Erzeugungsträger fest. Exporte werden bedarfsseitig, Importe deckungsseitig dargestellt.</p></div>
 <section id="gfz-bewertung"><h2>GFZ-Vergleich: Gebäudebetrieb mit und ohne Dichtekorrektur</h2>
 <p>Alle Typen bleiben in der Strombilanz enthalten. Die Auswahl bestimmt ausschließlich, auf welche Typen die virtuelle Dichtekorrektur angewendet wird. Dieser Vergleich enthält keine Mobilität. Ausgewählte Typen werden exakt auf den Zielsaldo gesetzt; die Anpassung kann durch Bedarfssenkung oder mehr Erzeugung erreicht werden.</p>
 <div class="grid controls"><div class="panel"><h3>Typen für die PEQ-Dichtebewertung</h3><p id="selection-note" class="small"></p>
@@ -46,12 +45,13 @@
 <button id="types-default" type="button" title="Setzt nur die Typenauswahl auf den dokumentierten Startvorschlag zurück.">Startauswahl</button><button id="types-none" type="button" title="Keine virtuelle Korrektur: beide GFZ-Bilanzen müssen übereinstimmen.">Keine</button><button id="types-all" type="button" title="Wählt alle Typen mit positiver Szenariofläche aus.">Alle</button>
 <div id="type-options" style="max-height:230px;overflow:auto"></div><p id="type-summary" class="small" aria-live="polite"></p></div><div class="panel"><h3>Virtuelle Dichtekorrektur / Zielsaldo</h3><div id="density-controls"></div><h4>Zielsaldo nach GFZ</h4><p class="small">kWh EE/(m² BGF·a): positiv = geforderter Überschuss, negativ = zulässiger Fehlbetrag.</p><div id="dash-curve"></div>
 <p class="small">Die ausgewählten PEQ-Typen werden auf den Zielsaldo angesetzt; alle übrigen behalten ihre typologische Bilanz. GFZ-Muster 2021. Einheit der Erwartungswerte: kWh EE/(m² BGF·a).</p></div></div>
-<div id="gfz-totals" class="cards panel" aria-live="polite"></div>
-<p class="small">Balken: Jahresenergie je GFZ-Klasse (linke Achse). Linie: über alle Klassen bis zur jeweiligen GFZ kumulierter Saldo (rechte Achse). Standardansicht: GFZ 0–5; über „Gesamte GFZ“ ist die vollständige Verteilung sichtbar. Summen enthalten immer sämtliche GFZ-Klassen; der sichtbare Linienwert bei GFZ 5 ist eine Teilsumme. Beide Grafiken verwenden dieselben Achsengrenzen. Positive Balken = PV, negative = Bedarf. Grün = ausgewählte PEQ-Typen. Grüne Schraffur = Anpassung zur PEQ-Zielerreichung (Zielsaldo minus typologischer Saldo), keine Festlegung auf PV-Ausbau oder Bedarfssenkung. Nutzungsfarben entsprechen der GFZ-Analyse. Hover zeigt Klasse, Nutzung und Werte.</p>
+<h3>Gebäude-Betriebsenergie-Bilanz</h3><p class="small">Jährlicher Saldo ausschließlich des Gebäudebetriebs, ohne Mobilität. Top-Down: national zugeordnete Gebäude-PV minus Gebäudestrombedarf.</p><div id="gfz-totals" class="cards panel" aria-live="polite"></div>
+<div class="panel"><h3>Spezifische Bilanz nach Gebäudeklasse</h3><div id="dash-geometry"></div><p class="small">Alle Beiträge sind auf die gesamte BGF der jeweiligen Geometrieklasse bezogen: kWh/(m² BGF·a). PEQ-Anteile beziehen sich ebenfalls auf diese Klassenfläche. Die grün schraffierte Anpassung liegt als eigenes Overlay bei null und wird nicht auf die PV aufgestapelt. Punkte zeigen typologischen und angepassten Saldo.</p></div>
+<p class="small">Balken: Jahresenergie je GFZ-Klasse (linke Achse). Linie: über alle Klassen bis zur jeweiligen GFZ kumulierter Saldo (rechte Achse). Standardansicht: GFZ 0–5; über „Gesamte GFZ“ ist die vollständige Verteilung sichtbar. Summen enthalten immer sämtliche GFZ-Klassen; der sichtbare Linienwert bei GFZ 5 ist eine Teilsumme. Beide Grafiken verwenden dieselben Achsengrenzen. Positive Balken = PV, negative = Bedarf. Grün = ausgewählte PEQ-Typen. Grüne Schraffur als separates Overlay ab null = Anpassung zur PEQ-Zielerreichung (Zielsaldo minus typologischer Saldo), keine Festlegung auf PV-Ausbau oder Bedarfssenkung. Positives Overlay: höherer geforderter Saldo; negatives Overlay: geringere Anforderung gegenüber der Typologie. Nutzungsfarben entsprechen der GFZ-Analyse. Hover zeigt Klasse, Nutzung und Werte.</p>
 <div class="panel"><h3>Ohne Dichtekorrektur: physischer Gebäudebetrieb</h3><div id="gfz-physical" style="width:100%;min-width:0"></div></div>
 <div class="panel"><h3>Mit PEQ-Zielerreichung: angepasster Sektorsaldo</h3><div id="gfz-corrected" style="width:100%;min-width:0"></div></div>
 </section>
-<div class="grid charts"><div class="panel"><h3>Mittlerer Zielsaldo je Geometrie</h3><div id="dash-density"></div><p id="density-total" class="small"></p></div>
+<div class="grid charts"><div class="panel"><h3>Verteilung des PEQ-Zielsaldos je Geometrietyp</h3><p class="small">BGF-gewichtete Verteilung über die vollständige GFZ-Spanne jeder Geometrieklasse: Band = 10.–90. Perzentil, dicker Abschnitt = 25.–75. Perzentil, Raute = Median, Kreis = Mittelwert. Die Verteilung beschreibt die Zielanforderung unabhängig von der aktuellen PEQ-Typenauswahl.</p><div id="dash-density"></div><p id="density-total" class="small"></p></div>
 </div>
 <details class="panel"><summary>Parameter, Ergebnisstand und Quellen-Hashes</summary><pre id="dash-audit"></pre></details>
 <script>
@@ -148,9 +148,7 @@ function render(){
  ['Zieldeckung',tdPV+r.budget,'Nationale Gebäude-PV + dieselbe Mobilitätsgutschrift.'],
  ['Zielsaldo',r.target_extended,`Gebäude-PV − Gebäudebedarf + Mobilitätsgutschrift − MIV-Bedarf = ${fmt(r.target_extended)}. Zielsaldo nur Gebäudebetrieb: ${fmt(r.target)}.`]])+
  `<div class="row-title">Saldoabweichung: ${fmt(r.gap)} PJ Strom/a ⓘ <span class="small" title="Bottom-Up-Gesamtsaldo minus Top-Down-Zielsaldo. Negativ: zusätzliche Deckung oder Bedarfssenkung erforderlich; positiv: Zielsaldo überschritten.">= Bottom-Up-Gesamtsaldo − Top-Down-Zielsaldo</span></div>`;
- bars('dash-balance',[['(Bottom-Up)|Gebäudebetrieb',r.balance,'#168b82'],['(Top-Down)|Gebäudebetrieb',r.target,'#ce861b'],['(Bottom-Up)|Gebäude und MIV',r.extended,'#2378aa'],['(Top-Down)|Gebäude und MIV',r.target_extended,'#ce861b'],['Zusätzlicher PV-Rest',Math.max(-r.gap,0),'#d8b32d']]);
 
- bars('dash-density',S.geometry.map(k=>[k.Geometrie,context[k.Geometrie],'#885b9d']));
  el('density-total').textContent=`Anpassung zur PEQ-Zielerreichung: ${fmt(virtual)} PJ-Äquivalent/a. Separat vom physischen Stromsaldo; kein Endenergiefluss.`;
  const values=Array.from({length:101},(_,i)=>[i/20,Math.min(p.density_f_res/(i/20+p.density_dx)-p.density_f_ed,p.density_cutoff)]);
  const low=Math.min(0,...values.map(v=>v[1])),high=Math.max(0,...values.map(v=>v[1]));
