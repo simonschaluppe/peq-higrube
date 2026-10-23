@@ -227,12 +227,22 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../Kapitel/03-allokation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Sektorales Zielbild Energie</span></a>
+  <a href="../Kapitel/03-zielszenario.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Nationales Zielszenario 2040</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../Kapitel/05-kontextfaktoren.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Kontextfaktor Dichte</span></a>
+  <a href="../Kapitel/03-allokation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Sektorale Energieallokation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Kapitel/03-gebaeudebestand.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Gebäudebestand und Entwicklungsszenario 2040</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Kapitel/05-kontextfaktoren.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Kalibrierung der PEQ-Energieanforderungen</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -257,7 +267,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../Kapitel/08-fortschreibung.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Methodenstand, Grenzen und Weiterentwicklung</span></a>
+  <a href="../Kapitel/08-fortschreibung.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Methodenstand und Fortschreibung</span></a>
   </div>
 </li>
       </ul>
@@ -316,6 +326,11 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../Kapitel/anhang-szenariotabellen.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Nationale Energie- und Stromtabellen</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../Kapitel/anhang-methodenstand.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Annahmen der Zielwertberechnung</span></a>
   </div>
 </li>
@@ -326,7 +341,27 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../Berechnungen/sektorenmodell/allokation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Sektorale Energieallokation – Transition 2040</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Berechnungen/gebaeudesektormodell/Gebaeudesektormodell.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Gebäudesektormodell Österreich 2040</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../Kapitel/anhang-quartiersbilanzierung.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Annahmen der Quartiersbilanzierung</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Berechnungen/gebaeudesektormodell/Internes_Kalibrierungsdashboard.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Internes Szenario- und Kalibrierungsdashboard</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Kapitel/review-methodik-2026.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Review der Methodik: Verständlichkeit und Gliederung</span></a>
   </div>
 </li>
       </ul>
@@ -341,13 +376,11 @@ window.Quarto = {
     <h2 id="toc-title">Inhaltsverzeichnis</h2>
    
   <ul>
-  <li><a href="#mobilitätsbudget-vom-nationalen-anteil-zur-nutzung" id="toc-mobilitätsbudget-vom-nationalen-anteil-zur-nutzung" class="nav-link active" data-scroll-target="#mobilitätsbudget-vom-nationalen-anteil-zur-nutzung">Mobilitätsbudget: vom nationalen Anteil zur Nutzung</a>
-  <ul class="collapse">
-  <li><a href="#initiale-operationalisierung-2023" id="toc-initiale-operationalisierung-2023" class="nav-link" data-scroll-target="#initiale-operationalisierung-2023">Initiale Operationalisierung 2023</a></li>
-  <li><a href="#verteilung-des-belegten-primärenergiebudgets" id="toc-verteilung-des-belegten-primärenergiebudgets" class="nav-link" data-scroll-target="#verteilung-des-belegten-primärenergiebudgets">Verteilung des belegten Primärenergiebudgets</a></li>
-  </ul></li>
-  <li><a href="#mobilität-nutzung-bestimmt-das-budget-standort-bestimmt-den-bedarf" id="toc-mobilität-nutzung-bestimmt-das-budget-standort-bestimmt-den-bedarf" class="nav-link" data-scroll-target="#mobilität-nutzung-bestimmt-das-budget-standort-bestimmt-den-bedarf">Mobilität: Nutzung bestimmt das Budget, Standort bestimmt den Bedarf</a></li>
-  <li><a href="#parametrische-struktur-der-weiteren-allokation" id="toc-parametrische-struktur-der-weiteren-allokation" class="nav-link" data-scroll-target="#parametrische-struktur-der-weiteren-allokation">Parametrische Struktur der weiteren Allokation</a></li>
+  <li><a href="#vom-nationalen-miv-budget-zur-nutzung" id="toc-vom-nationalen-miv-budget-zur-nutzung" class="nav-link active" data-scroll-target="#vom-nationalen-miv-budget-zur-nutzung">Vom nationalen MIV-Budget zur Nutzung</a></li>
+  <li><a href="#gemischt-genutzte-quartiere" id="toc-gemischt-genutzte-quartiere" class="nav-link" data-scroll-target="#gemischt-genutzte-quartiere">Gemischt genutzte Quartiere</a></li>
+  <li><a href="#standortabhängiger-miv-bedarf-mobilitätsregionen-und-verkehrsleistung" id="toc-standortabhängiger-miv-bedarf-mobilitätsregionen-und-verkehrsleistung" class="nav-link" data-scroll-target="#standortabhängiger-miv-bedarf-mobilitätsregionen-und-verkehrsleistung">Standortabhängiger MIV-Bedarf: Mobilitätsregionen und Verkehrsleistung</a></li>
+  <li><a href="#abgrenzung-von-zielverkehr-strombedarf-und-ladeprofilen" id="toc-abgrenzung-von-zielverkehr-strombedarf-und-ladeprofilen" class="nav-link" data-scroll-target="#abgrenzung-von-zielverkehr-strombedarf-und-ladeprofilen">Abgrenzung von Zielverkehr, Strombedarf und Ladeprofilen</a></li>
+  <li><a href="#dokumentation-und-aktualisierung" id="toc-dokumentation-und-aktualisierung" class="nav-link" data-scroll-target="#dokumentation-und-aktualisierung">Dokumentation und Aktualisierung</a></li>
   </ul>
 </nav>
     </div>
@@ -374,153 +407,107 @@ window.Quarto = {
 
 
 <div class="lead">
-<p>Vom national verfügbaren Budget zur nutzungsbezogenen Gutschrift und zum örtlichen Verkehrsbedarf</p>
+<p>Das in der sektoralen Allokation ermittelte MIV-Budget nutzungsbezogen verteilen und mit dem örtlichen Mobilitätsbedarf vergleichen</p>
 </div>
-<p>Das sektorale Zielbild in <a href="03-allokation.html" class="quarto-xref"><span>Sektorales Zielbild Energie</span></a> liefert die energetische Grundlage. Erst zusätzliche Zuordnungsentscheidungen begründen ein Mobilitätsbudget. Die folgenden Werte dokumentieren die initiale Operationalisierung 2023; für Transition 2040 bleibt eine neue Gutschrift offen.</p>
-<section id="mobilitätsbudget-vom-nationalen-anteil-zur-nutzung" class="level2">
-<h2 class="anchored" data-anchor-id="mobilitätsbudget-vom-nationalen-anteil-zur-nutzung">Mobilitätsbudget: vom nationalen Anteil zur Nutzung</h2>
-<section id="initiale-operationalisierung-2023" class="level3">
-<h3 class="anchored" data-anchor-id="initiale-operationalisierung-2023">Initiale Operationalisierung 2023</h3>
-<p>Die folgenden Streicher-basierten Mobilitätsgutschriften bleiben der geltende Bewertungsstand dieser Berichtsfassung. Die veröffentlichte klimaaktiv-Broschüre 2026 beschreibt den Kontextfaktor Mobilität; das bereitgestellte Tool-Handbuch Version 1.08 dokumentiert die nutzungsabhängige virtuelle Deckung und beispielhaft den Wohnwert von 14,11 kWh PE/(m² NGF a) <span class="citation" data-cites="klimaaktiv2026peq peq2026handbuch">(<a href="../references.html#ref-klimaaktiv2026peq" role="doc-biblioref">Schneider u.&nbsp;a. 2026, 10</a>; <a href="../references.html#ref-peq2026handbuch" role="doc-biblioref">FH Technikum Wien 2026, 66</a>)</span>. Die vollständigen vier Referenzwerte stammen aus der Kalibrierung 2023. Damit wird keine vollständige Prüfung der aktuell produktiven Softwareversion behauptet.</p>
-<p>Zentral beziehungsweise regional erzeugte erneuerbare Energie wird in der historischen Zuordnung zunächst für übergeordnete Bedarfe, insbesondere Industrie und öffentlichen Verkehr, reserviert. Der verbleibende Saldo begründet das Mobilitätsbudget. Gebäude übernehmen zugleich dezentrale Erzeugungsaufgaben und die Bilanzierung des ihnen zugeordneten MIV. Diese Priorität ist eine Allokationsentscheidung und keine physische Trennung des Stromnetzes <span class="citation" data-cites="schneider2020lokal schneider2023context">(<a href="../references.html#ref-schneider2020lokal" role="doc-biblioref">Schneider u.&nbsp;a. 2020, Abschn. 3.1.4</a> und 5.1; <a href="../references.html#ref-schneider2023context" role="doc-biblioref">Schneider u.&nbsp;a. 2023, Abschn. 6.2</a>)</span>.</p>
-<p>Der motorisierte Individualverkehr erweitert den Energiebedarf, für den das Quartier bilanziell Verantwortung übernimmt. Gleichzeitig erhält er einen Anteil der zentral bereitgestellten erneuerbaren Energie. Dieser Anteil wird über die Nutzungen auf Quartiere verteilt.</p>
-<p>Für den MIV sind 6,30 TWh/a Strom und 0,36 TWh/a Biomasse zugeordnet. Mit der primärenergetischen Gewichtung ergibt sich ein Budget von 10,68 TWh PE/a <span class="citation" data-cites="schneider2023context">(<a href="../references.html#ref-schneider2023context" role="doc-biblioref">Schneider u.&nbsp;a. 2023</a>, Tab. 8, S. 16)</span>.</p>
-<p>Die Verteilung folgt den Anteilen der Nutzungen am österreichischen Zielverkehr und ihren nationalen Nutzflächen. Für eine Nutzung (u) gilt:</p>
+<p>Die nationale <strong>Höhe</strong> des erneuerbaren MIV-Budgets wird bereits in <a href="03-allokation.html" class="quarto-xref"><span>Sektorale Energieallokation</span></a> aus der verfügbaren zentralen, nicht-PV-basierten erneuerbaren Erzeugung und den vorrangigen Bedarfen – insbesondere Industrie und ÖPNV – hergeleitet. Sie ist keine eigenständige oder nachträglich festgelegte Mobilitätsgutschrift. Dieses Kapitel beschreibt nur die <strong>räumliche und nutzungsbezogene Anwendung</strong> des daraus hervorgehenden Budgets sowie die standortabhängige MIV-Bedarfsermittlung.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="quantitative Allokation">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Hinweis</span>quantitative Allokation
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><a href="03-allokation.html#sec-allokation-ergebnisse" class="quarto-xref"><span>Quantitative Allokation und Stellschrauben</span></a> zeigt den parametrierten Transition-Referenzfall: 24 PJ/a beziehungsweise 6,667 TWh/a elektrisches MIV-Budget bei den dort dokumentierten Annahmen. Die volle Anrechnung der Wasserstoff-Rückverstromung erhöht es im Vergleichsfall auf 28 PJ/a. Das sind nationale elektrische Zuteilungen, keine neuen nutzungsbezogenen PE-Gutschriften. PE-Faktoren, Verteilungsschlüssel und Ziel-Flächen sind dafür nicht gemeinsam festgelegt. Die vollständige Rechnung steht in <a href="../Berechnungen/sektorenmodell/allokation.html" class="quarto-xref"><span>Quantitative sektorale Allokation</span></a>.</p>
+</div>
+</div>
+<section id="vom-nationalen-miv-budget-zur-nutzung" class="level2">
+<h2 class="anchored" data-anchor-id="vom-nationalen-miv-budget-zur-nutzung">Vom nationalen MIV-Budget zur Nutzung</h2>
+<p>Nach der sektoralen Elektrizitätsallokation wird das budgetfähige erneuerbare Mobilitätsvolumen mit einem dokumentierten Primärenergie-Faktorensatz in das nationale PE-Budget überführt. Anschließend wird es anhand einer begründeten Verteilung des individuellen Zielverkehrs den Quartiersnutzungen zugeordnet. Die nationale Verteilung muss insgesamt genau das freigegebene MIV-Budget ergeben und darf nicht zusätzlich denselben zentralen Strom anderen Nutzungen gutschreiben.</p>
+<p>Für Nutzung <span class="math inline">\(u\)</span> gilt:</p>
 <p><span id="eq-mobilitaetsbudget"><span class="math display">\[
 c_{\mathrm{M},u}
-=\frac{E_{\mathrm{M},u}}{A_{\mathrm{NGF},u}}.
-\tag{6.1}\]</span></span></p>
-<p>Die nationale Energiemenge (E_{,u}) in kWh PE/a wird durch die zugehörige Nettogrundfläche geteilt. Das Ergebnis ist die jährliche Mobilitätsgutschrift je m² NGF. Bei gemischter Nutzung werden die Gutschriften mit den jeweiligen Quartiersnutzflächen gewichtet.</p>
-<div id="tbl-mobilitaetsallokation" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-tbl figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-mobilitaetsallokation-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Tabelle&nbsp;6.1: Nutzungsbezogene Mobilitätsallokation, übernommen aus Tabelle 9 <span class="citation" data-cites="schneider2023context">(<a href="../references.html#ref-schneider2023context" role="doc-biblioref">Schneider u.&nbsp;a. 2023, 16</a>)</span>.
-</figcaption>
-<div aria-describedby="tbl-mobilitaetsallokation-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<table class="caption-top table">
-<colgroup>
-<col style="width: 20%">
-<col style="width: 26%">
-<col style="width: 26%">
-<col style="width: 26%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Nutzung</th>
-<th style="text-align: right;">Budget [TWh PE/a]</th>
-<th style="text-align: right;">Fläche [Mio. m² NGF]</th>
-<th style="text-align: right;">Gutschrift [kWh PE/(m² NGF a)]</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Wohnen</td>
-<td style="text-align: right;">5,30</td>
-<td style="text-align: right;">375,6</td>
-<td style="text-align: right;">14,11</td>
-</tr>
-<tr class="even">
-<td>Büro und Gewerbe</td>
-<td style="text-align: right;">2,20</td>
-<td style="text-align: right;">53,1</td>
-<td style="text-align: right;">41,47</td>
-</tr>
-<tr class="odd">
-<td>Bildung</td>
-<td style="text-align: right;">0,29</td>
-<td style="text-align: right;">22,5</td>
-<td style="text-align: right;">12,93</td>
-</tr>
-<tr class="even">
-<td>Handel und sonstige Nutzungen</td>
-<td style="text-align: right;">2,89</td>
-<td style="text-align: right;">96,5</td>
-<td style="text-align: right;">29,97</td>
-</tr>
-</tbody>
-</table>
+=\frac{E_{\mathrm{MIV,Budget}}^{\mathrm{PE}}\,s_u}
+{A_{\mathrm{NGF},u}^{2040}},
+\qquad \sum_u s_u=1.
+\tag{8.1}\]</span></span></p>
+<p>Dabei ist <span class="math inline">\(s_u\)</span> der Anteil des nationalen Budgets, der dem von Nutzung <span class="math inline">\(u\)</span> verursachten beziehungsweise ihr zugeordneten Zielverkehr zugerechnet wird. Die verwendeten nationalen NGF müssen dem Flächen- und Nutzungsstand des Kalibrierungsszenarios entsprechen. Es wird zwischen <strong>Budgetverteilung je Nutzung</strong> und <strong>tatsächlicher Verkehrsvermeidung am Standort</strong> unterschieden.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Parameterstand">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
-</figure>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Hinweis</span>Parameterstand
 </div>
-<p>Die Gutschrift richtet sich nach der Nutzung; der Mobilitätsbedarf hängt zusätzlich von Standort, Verkehrsverhalten und Fahrzeugflotte ab. Ein hoher Bedarf erzeugt keinen entsprechend hohen Budgetanspruch. Bei gleicher Nutzung bleibt ein Quartier mit geringerem MIV-Bedarf bilanziell im Vorteil <span class="citation" data-cites="schneider2026thesis">(<a href="../references.html#ref-schneider2026thesis" role="doc-biblioref">Schneider 2026, Abschn. 3.2.7</a>, S. 56–57)</span>.</p>
-<p>Für die Bewertung wird der Zielverkehr dem Quartier zugeordnet. Die Simulation der Lade- und Speicherflüsse muss dagegen die tatsächliche Anwesenheit und Ladung der Fahrzeuge berücksichtigen. Ein zugeteiltes Mobilitätsbudget ist weder ein physisches Ladeangebot noch eine Aussage über die nutzbare Batteriekapazität.</p>
-<p>Die Mobilitätsallokation beruht auf den Mobilitätsdaten von 2013/2014 und dem nationalen Energieszenario. Neue Erhebungen zu Verkehrsverhalten, Fahrzeugflotte und Flächennutzung ermöglichen eine Aktualisierung der Gutschriften. Das Zuordnungsprinzip bleibt dabei bestehen; Ausgangsbudget und Verteilung werden gemeinsam überprüft.</p>
+</div>
+<div class="callout-body-container callout-body">
+<p>Das nationale elektrische Budget ist berechnet. Nutzungsbezogene PE-Gutschriften sind für Transition nicht numerisch festgelegt, da Faktorensatz, Zielverkehrsanteile und Nutzflächen hierfür nicht gemeinsam bestimmt sind. Die historischen Werte dokumentieren den Bewertungsstand 2023.</p>
+</div>
+</div>
 </section>
-<section id="verteilung-des-belegten-primärenergiebudgets" class="level3">
-<h3 class="anchored" data-anchor-id="verteilung-des-belegten-primärenergiebudgets">Verteilung des belegten Primärenergiebudgets</h3>
-<p>Das Sankey zeigt ausschließlich die Verteilung von <strong>10,68 TWh PE/a</strong> auf Nutzungen, nicht physische Stromflüsse. Die zuvor genannten 6,30 TWh Strom und 0,36 TWh Biomasse werden deshalb nicht als unmittelbar anschließende Flüsse gleicher Einheit dargestellt. Ihre PE-Gewichtung ist ein eigener Rechenschritt <span class="citation" data-cites="schneider2023context">(<a href="../references.html#ref-schneider2023context" role="doc-biblioref">Schneider u.&nbsp;a. 2023</a>, Tab. 8–9)</span>.</p>
-<iframe src="../Abbildungen/mobilitaetsbudget_sankey.html" title="Verteilung des Mobilitätsbudgets in TWh Primärenergie" style="width:100%;height:540px;border:0" loading="lazy"></iframe>
-</section>
-</section>
-<section id="mobilität-nutzung-bestimmt-das-budget-standort-bestimmt-den-bedarf" class="level2">
-<h2 class="anchored" data-anchor-id="mobilität-nutzung-bestimmt-das-budget-standort-bestimmt-den-bedarf">Mobilität: Nutzung bestimmt das Budget, Standort bestimmt den Bedarf</h2>
-<p>Die Mobilitätsgutschrift wird aus der nationalen Allokation nach Nutzungen verteilt. Für ein gemischt genutztes Quartier ergibt sich der spezifische Kontextwert aus der Flächengewichtung:</p>
+<section id="gemischt-genutzte-quartiere" class="level2">
+<h2 class="anchored" data-anchor-id="gemischt-genutzte-quartiere">Gemischt genutzte Quartiere</h2>
+<p>Für ein Quartier mit verschiedenen Nutzungen ergibt sich die flächengewichtete spezifische Mobilitätsgutschrift:</p>
 <p><span id="eq-mobilitaet-mischnutzung"><span class="math display">\[
 c_{\mathrm{Mobilität}}
-=\frac{\sum_u A_{\mathrm{NGF},u}\,c_{\mathrm{M},u}}
-{\sum_u A_{\mathrm{NGF},u}}.
-\tag{6.2}\]</span></span></p>
-<p>Die nutzungsspezifischen Werte stehen in <a href="#tbl-mobilitaetsallokation" class="quarto-xref">Tabelle&nbsp;<span>6.1</span></a>. Ihre Flächenzuordnung muss mit jener des zugeordneten Verkehrsbedarfs übereinstimmen. Eine zusätzliche Büronutzung verändert sowohl die Gutschrift als auch die zu bilanzierenden Wege; sie ist kein reiner Bilanzbonus.</p>
-<p>Für die standortabhängige Abschätzung des Mobilitätsbedarfs werden Gemeinden beziehungsweise Standorte unterschiedlichen Mobilitätsregionen zugeordnet.</p>
+=\frac{\sum_u A_{\mathrm{NGF},u}^{\mathrm{Quartier}}c_{\mathrm{M},u}}
+{\sum_u A_{\mathrm{NGF},u}^{\mathrm{Quartier}}}.
+\tag{8.2}\]</span></span></p>
+<p>Die gleiche Nutzungszuordnung ist auch für die Ermittlung des Verkehrsbedarfs anzuwenden. Zusätzliche Nutzfläche begründet nicht allein einen Bonus, sondern verändert zugleich den zu bilanzierenden Zielverkehr. Die Mobilitätsgutschrift darf nur zusammen mit dem entsprechenden MIV-Bedarf in die erweiterte PEQ-Bilanz eingehen (<a href="03-methodik.html#sec-kontext" class="quarto-xref"><span>Bilanzziel und virtuelle Kontextwerte</span></a>).</p>
+</section>
+<section id="standortabhängiger-miv-bedarf-mobilitätsregionen-und-verkehrsleistung" class="level2">
+<h2 class="anchored" data-anchor-id="standortabhängiger-miv-bedarf-mobilitätsregionen-und-verkehrsleistung">Standortabhängiger MIV-Bedarf: Mobilitätsregionen und Verkehrsleistung</h2>
+<p>Der tatsächlich zu bewertende MIV-Bedarf wird nicht mit dem nationalen Budget gleichgesetzt. Er hängt von den verursachten Wegen, der Nutzung, den Standortbedingungen, der Verkehrsmittelwahl und der Fahrzeugflotte ab. Für die standortabhängige Referenzabschätzung werden Mobilitätsregionen und Verkehrsdaten aus der österreichischen Mobilitätserhebung verwendet. Ihre Fortschreibung auf den Zielzustand und mögliche projektbezogene Abweichungen sind gesondert zu begründen.</p>
 <div id="fig-mobilitaetsregionen" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-mobilitaetsregionen-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="../Abbildungen/verkehrsgueteklasse.png" class="img-fluid figure-img" style="width:100.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-mobilitaetsregionen-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Abbildung&nbsp;6.1: Räumliche Verteilung der Mobilitätsregionen in Österreich als Grundlage für standortabhängige Mobilitätsannahmen. (Datenquelle: Österreich unterwegs 2014)
+Abbildung&nbsp;8.1: Räumliche Verteilung der Mobilitätsregionen in Österreich als Grundlage standortabhängiger Mobilitätsannahmen (Datenquelle: Österreich unterwegs 2013/2014).
 </figcaption>
 </figure>
 </div>
-<p>Die räumlichen Unterschiede spiegeln sich im angesetzten motorisierten Individualverkehr wider. Sie beeinflussen den zugeordneten Mobilitätsbedarf, nicht automatisch das nutzungsbezogene Energiebudget.</p>
 <div id="fig-miv-verkehrsleistung" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-miv-verkehrsleistung-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="../Abbildungen/verkehrsleisting.svg" class="img-fluid figure-img" style="width:90.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-miv-verkehrsleistung-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Abbildung&nbsp;6.2: Jährliche MIV-Verkehrsleistung nach Mobilitätsregion, dargestellt als Personen-Kilometer pro Bezugsgröße und Jahr. (Datenquelle: Österreich unterwegs 2014)
+Abbildung&nbsp;8.2: Jährliche MIV-Verkehrsleistung nach Mobilitätsregion (Datenquelle: Österreich unterwegs 2013/2014).
 </figcaption>
 </figure>
 </div>
-<p>Der Standort wirkt vor allem auf der Bedarfsseite. Kurze Wege, ein geeigneter Nutzungsmix, öffentlicher Verkehr und ein wirksames Mobilitätskonzept können den MIV vermindern. Diese Wirkung ist mit nachvollziehbaren Annahmen über Wege, Verkehrsmittelwahl und Fahrzeugflotte anzusetzen. Die bloße Bereitstellung von Fahrradabstellplätzen oder Ladepunkten begründet noch keine beliebig große Verkehrsreduktion.</p>
-<p>Für Architektur und Haustechnik entstehen daraus gemeinsame Aufgaben: Mobilitätsangebote müssen räumlich nutzbar sein, die elektrische Ladeinfrastruktur muss die erwarteten Fahrzeuge bedienen können. Ein geringerer zugeordneter Mobilitätsbedarf senkt nicht zwangsläufig jede lokale Ladespitze. Für die Netz- und Ladeplanung bleiben die Anwesenheitsprofile entscheidend <span class="citation" data-cites="schneider2026thesis">(<a href="../references.html#ref-schneider2026thesis" role="doc-biblioref">Schneider 2026, Abschn. 3.3.4</a>, S. 65–67)</span>.</p>
+<p>Ein günstiger Standort, kurze Wege, eine hohe ÖV-Güte, gemischte Nutzungen und ein wirksames Mobilitätskonzept können den MIV-Bedarf vermindern. Bei gleicher Nutzung und gleichem nationalem Budget erhält ein Quartier durch solche realen Minderungen einen günstigeren Bilanzsaldo. Die bloße Bereitstellung einzelner Einrichtungen begründet noch keine beliebige Verkehrsreduktion.</p>
 </section>
-<section id="parametrische-struktur-der-weiteren-allokation" class="level2">
-<h2 class="anchored" data-anchor-id="parametrische-struktur-der-weiteren-allokation">Parametrische Struktur der weiteren Allokation</h2>
-<div id="fig-transition-allokation-schema" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-transition-allokation-schema-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="../Abbildungen/transition_allokation_schema.svg" class="img-fluid figure-img">
+<section id="abgrenzung-von-zielverkehr-strombedarf-und-ladeprofilen" class="level2">
+<h2 class="anchored" data-anchor-id="abgrenzung-von-zielverkehr-strombedarf-und-ladeprofilen">Abgrenzung von Zielverkehr, Strombedarf und Ladeprofilen</h2>
+<p>Für die Quartiersbilanz wird der definierte motorisierte individuelle <strong>Zielverkehr</strong> zugeordnet. Für die energetische Simulation von Lade- und Speicherflüssen sind hingegen reale Anwesenheit und Ladevorgänge maßgeblich. Ein rechnerisches nationales Mobilitätsbudget stellt weder eine lokale Stromerzeugungsanlage noch verfügbare Ladeleistung oder Batteriekapazität dar. Elektromobilität und flexible Ladevorgänge können die Energiebilanz und Netzbelastung beeinflussen, sind aber mit der tatsächlichen stündlichen Simulation nachzuweisen <span class="citation" data-cites="schneider2026thesis">(<a href="../references.html#ref-schneider2026thesis" role="doc-biblioref">Schneider 2026, Abschn. 3.3.4</a>)</span>.</p>
+</section>
+<section id="dokumentation-und-aktualisierung" class="level2">
+<h2 class="anchored" data-anchor-id="dokumentation-und-aktualisierung">Dokumentation und Aktualisierung</h2>
+<p>Die Mobilitätsberechnung benötigt zwei unabhängig überprüfbare Datenteile: (1) den in <a href="03-allokation.html" class="quarto-xref"><span>Sektorale Energieallokation</span></a> freigegebenen nationalen MIV-Restbetrag und dessen PE-Umrechnung; (2) Nutzungsflächen, Wege-, Modal-Split- und Flottenannahmen zur Budgetverteilung und Standortbewertung. Ein Wechsel der nationalen Szenarioquelle oder der Verkehrserhebung erfordert eine nachvollziehbare Neukalibrierung und darf nicht durch pauschales Skalieren der bisherigen Gutschrift ersetzt werden.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Historischer Bewertungsstand">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-transition-allokation-schema-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Abbildung&nbsp;6.3: Vorbereitete Modellstruktur mit drei getrennten Ebenen. Pfeile zeigen Beziehungen, keine maßstäblichen Energiemengen. Wärme bleibt außerhalb der hier vorbereiteten Elektrizitätsrechnung.
-</figcaption>
-</figure>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Hinweis</span>Historischer Bewertungsstand
 </div>
-<p>Die gemeinsame Knoten- und Verbindungsstruktur unterstützt Legacy, Transition sowie WEM/WAM. Quellenbelegte Stromflüsse können als eigene Sankey-Ebene dargestellt werden. Normative Zuordnungen und virtuelle Primärenergie-Gutschriften bleiben separate Ebenen. Offene Werte sind als fehlend markiert und erhalten keine erfundene Linienbreite. Insbesondere darf ein Budget in PJ Primärenergie nicht mit einem Fluss in PJ elektrischer Energie verbunden werden.</p>
-<p>Für eine neue Mobilitätsgutschrift sind folgende Entscheidungen erforderlich:</p>
-<ul>
-<li><strong>Zentral/dezentral:</strong> Anteile je Erzeugungstechnologie, insbesondere Gebäude-PV gegenüber Freiflächen und größeren PV-Anlagen. Ein Fall mit 100 % dezentraler PV ist als ausdrücklich gekennzeichnete Parameterstudie möglich, aber kein Standardwert.</li>
-<li><strong>Verkehr:</strong> belegte Trennung von MIV, öffentlichem Verkehr und weiteren Verkehrsbedarfen. Eine proportionale Übertragung historischer Anteile wäre eine zusätzliche Annahme und ist derzeit nicht gesetzt.</li>
-<li><strong>Priorität und Berechtigung:</strong> Reihenfolge und Deckungsanteile der Sektoren, Umgang mit fossiler Erzeugung, Importen und Herkunft der Rückverstromung. Der gesamte Strompool ist nicht automatisch ein zentraler erneuerbarer Pool.</li>
-<li><strong>Primärenergie und Zeitbezug:</strong> gesicherte Konversionsfaktoren und zeitliche Bewertung sowie konsistente Behandlung von Umwandlung, Speicherung und Verlusten. Erst danach kann ein verfügbares Budget auf Nutzflächen verteilt werden.</li>
-</ul>
-<p>Die nationalen Jahresstrombilanzen allein bestimmen keine dieser normativen Regeln. Eine pauschale Skalierung der bisherigen Gutschrift mit dem Verhältnis neuer zu alter Stromerzeugung ist deshalb nicht vorgesehen.</p>
+</div>
+<div class="callout-body-container callout-body">
+<p>Die ursprüngliche, Streicher-basierte Operationalisierung verwendete ein primärenergetisches MIV-Budget von 10,68 TWh PE/a und daraus abgeleitete Gutschriften nach Nutzung <span class="citation" data-cites="schneider2023context">(<a href="../references.html#ref-schneider2023context" role="doc-biblioref">Schneider u.&nbsp;a. 2023</a>, Tab. 8–9)</span>. Diese Zahlen dienen nur zur historischen Einordnung; die neue Gutschrift ist aus der <strong>Transition-2040-Sektorallokation</strong> herzuleiten. Wenn eine bestehende Toolversion noch historische Werte anwendet, ist das als gesonderter <em>Implementierungsstand</em>, nicht als Ergebnis der Neukalibrierung, zu kennzeichnen.</p>
+</div>
+</div>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
-<div id="ref-peq2026handbuch" class="csl-entry" role="listitem">
-FH Technikum Wien. 2026. <em>Handbuch klimaaktiv Nachweis-Tool für klimaneutrale Plus-Energie-Quartiere</em>.
-</div>
 <div id="ref-schneider2026thesis" class="csl-entry" role="listitem">
 Schneider, Simon. 2026. <span>„Quantitative Positive Energy District Definition, Contextualization and Assessment“</span>. Phdthesis, Universidade de Trás-os-Montes e Alto Douro.
-</div>
-<div id="ref-schneider2020lokal" class="csl-entry" role="listitem">
-Schneider, Simon, Thomas Zelger, und Lisa Klauda. 2020. <span>„Überlegungen zur Frage, welcher Anteil erneuerbarer Energie 2050 in Österreich lokal aufgebracht werden muss“</span>. <em>16. Symposium Energieinnovation</em> (Graz, Österreich), 1–10.
-</div>
-<div id="ref-klimaaktiv2026peq" class="csl-entry" role="listitem">
-Schneider, Simon, Thomas Zelger, und Oskar Mair am Tinkhof. 2026. <em>Plus-Energie-Quartiere: Effizient, erneuerbar und flexibel versorgt mit dem klimaaktiv Standard</em>. Bundesministerium für Land- und Forstwirtschaft, Klima- und Umweltschutz, Regionen und Wasserwirtschaft.
 </div>
 <div id="ref-schneider2023context" class="csl-entry" role="listitem">
 Schneider, Simon, Thomas Zelger, David Sengl, und José Baptista. 2023. <span>„A Quantitative Positive Energy District Definition with Contextual Targets“</span>. <em>Buildings</em> 13 (5): 1210. <a href="https://doi.org/10.3390/buildings13051210">https://doi.org/10.3390/buildings13051210</a>.
@@ -936,8 +923,8 @@ Schneider, Simon, Thomas Zelger, David Sengl, und José Baptista. 2023. <span>�
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../Kapitel/05-kontextfaktoren.html" class="pagination-link" aria-label="Kontextfaktor Dichte">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Kontextfaktor Dichte</span></span>
+      <a href="../Kapitel/05-kontextfaktoren.html" class="pagination-link" aria-label="Kalibrierung der PEQ-Energieanforderungen">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Kalibrierung der PEQ-Energieanforderungen</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">

@@ -227,12 +227,22 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../Kapitel/03-allokation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Sektorales Zielbild Energie</span></a>
+  <a href="../Kapitel/03-zielszenario.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Nationales Zielszenario 2040</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../Kapitel/05-kontextfaktoren.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Kontextfaktor Dichte</span></a>
+  <a href="../Kapitel/03-allokation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Sektorale Energieallokation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Kapitel/03-gebaeudebestand.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Gebäudebestand und Entwicklungsszenario 2040</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Kapitel/05-kontextfaktoren.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Kalibrierung der PEQ-Energieanforderungen</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -257,7 +267,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../Kapitel/08-fortschreibung.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Methodenstand, Grenzen und Weiterentwicklung</span></a>
+  <a href="../Kapitel/08-fortschreibung.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Methodenstand und Fortschreibung</span></a>
   </div>
 </li>
       </ul>
@@ -316,6 +326,11 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../Kapitel/anhang-szenariotabellen.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Nationale Energie- und Stromtabellen</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../Kapitel/anhang-methodenstand.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Annahmen der Zielwertberechnung</span></a>
   </div>
 </li>
@@ -326,7 +341,27 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../Berechnungen/sektorenmodell/allokation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Sektorale Energieallokation – Transition 2040</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Berechnungen/gebaeudesektormodell/Gebaeudesektormodell.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Gebäudesektormodell Österreich 2040</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../Kapitel/anhang-quartiersbilanzierung.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Annahmen der Quartiersbilanzierung</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Berechnungen/gebaeudesektormodell/Internes_Kalibrierungsdashboard.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Internes Szenario- und Kalibrierungsdashboard</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Kapitel/review-methodik-2026.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Review der Methodik: Verständlichkeit und Gliederung</span></a>
   </div>
 </li>
       </ul>
@@ -341,7 +376,8 @@ window.Quarto = {
     <h2 id="toc-title">Inhaltsverzeichnis</h2>
    
   <ul>
-  <li><a href="#sanierung-entlastung-für-die-bedingungen-des-bestands" id="toc-sanierung-entlastung-für-die-bedingungen-des-bestands" class="nav-link active" data-scroll-target="#sanierung-entlastung-für-die-bedingungen-des-bestands">Sanierung: Entlastung für die Bedingungen des Bestands</a></li>
+  <li><a href="#ableitung-aus-den-neuen-gebäudetypologien" id="toc-ableitung-aus-den-neuen-gebäudetypologien" class="nav-link active" data-scroll-target="#ableitung-aus-den-neuen-gebäudetypologien">Ableitung aus den neuen Gebäudetypologien</a></li>
+  <li><a href="#anwendung-auf-gemischte-quartiere" id="toc-anwendung-auf-gemischte-quartiere" class="nav-link" data-scroll-target="#anwendung-auf-gemischte-quartiere">Anwendung auf gemischte Quartiere</a></li>
   </ul>
 </nav>
     </div>
@@ -368,26 +404,48 @@ window.Quarto = {
 
 
 <div class="lead">
-<p>Eine explizite Entlastung für die Bedingungen des Gebäudebestands</p>
+<p>Typologieabhängige Sanierungsanpassungen statt einer pauschalen Flächengutschrift</p>
 </div>
-<p>Die Sanierungsgutschrift ergänzt die gemeinsame Primärenergiebewertung in <a href="03-methodik.html#sec-kontext" class="quarto-xref"><span>Kontextfaktoren: Eine Bilanz, zwei gleichwertige Darstellungen</span></a>. Sie verändert die Anforderung, nicht den physischen Energiebedarf oder das THG-Budget.</p>
-<section id="sanierung-entlastung-für-die-bedingungen-des-bestands" class="level2">
-<h2 class="anchored" data-anchor-id="sanierung-entlastung-für-die-bedingungen-des-bestands">Sanierung: Entlastung für die Bedingungen des Bestands</h2>
-<p>Die Sanierungsgutschrift beträgt 15 kWh PE/(m² NGF a) für den berücksichtigten Sanierungsanteil. Für einen Anteil (f_{}) ergibt sich:</p>
+<p>Die Sanierungsanpassung berücksichtigt spezifische technische und bauliche Randbedingungen bestehender Gebäude. In der <strong>neuen PEQ-Kalibrierung</strong> wird sie <strong>je energetischer Gebäudetypologie</strong> definiert und mit deren Flächenanteilen sowie den übrigen Energieanforderungen abgestimmt (<a href="03-gebaeudebestand.html" class="quarto-xref"><span>Gebäudebestand und Entwicklungsszenario 2040</span></a>; <a href="05-kontextfaktoren.html" class="quarto-xref"><span>Kalibrierung der PEQ-Energieanforderungen</span></a>). Sie ist damit kein von der nationalen Gebäudesektorbilanz unabhängiger, allgemeiner Pauschalbonus.</p>
+<section id="ableitung-aus-den-neuen-gebäudetypologien" class="level2">
+<h2 class="anchored" data-anchor-id="ableitung-aus-den-neuen-gebäudetypologien">Ableitung aus den neuen Gebäudetypologien</h2>
+<p>Die zu betrachtenden Typologien, ihre energetischen Zustände und die zugehörigen nationalen Flächenanteile werden in <a href="03-gebaeudebestand.html" class="quarto-xref"><span>Gebäudebestand und Entwicklungsszenario 2040</span></a> festgelegt. Für jede Typologie <span class="math inline">\(k\)</span> ist zu dokumentieren, ob eine Sanierungsanpassung sachlich gerechtfertigt ist, welchen zulässigen Kontextwert <span class="math inline">\(c_{\mathrm{S},k}\)</span> sie erhält und wie dieser Wert mit den modellierten typologischen Anforderungen zusammenhängt.</p>
+<p>Eine typologiespezifische Anpassung kann insbesondere die im Bestand eingeschränkten Maßnahmenmöglichkeiten berücksichtigen. Die konkreten Kriterien – zum Beispiel Sanierungstiefe, vorhandene Konstruktion und verbleibender energetischer Bedarf – sind anhand der neuen Klassen zu definieren. Die Höhe ist <strong>Ergebnis der gemeinsamen Kalibrierung</strong>, nicht automatisch der Abstand zu einem Neubau-Bedarfswert und nicht eine pauschal behauptete CO₂-Einsparung.</p>
+</section>
+<section id="anwendung-auf-gemischte-quartiere" class="level2">
+<h2 class="anchored" data-anchor-id="anwendung-auf-gemischte-quartiere">Anwendung auf gemischte Quartiere</h2>
+<p>Enthält ein Quartier mehrere nachweisrelevante Gebäudetypologien, kann der spezifische Kontextwert als nutzflächengewichteter Mittelwert gebildet werden:</p>
 <p><span id="eq-sanierungskontext"><span class="math display">\[
-c_{\mathrm{Sanierung}}=15\,f_{\mathrm{Sanierung}}
-\quad\text{in kWh PE/(m² NGF a)}.
-\tag{7.1}\]</span></span></p>
-<p>Bei einem Sanierungsanteil von 50 % sind dies 7,5 kWh PE/(m² NGF a), wie in der klimaaktiv-Broschüre erläutert <span class="citation" data-cites="klimaaktiv2026peq">(<a href="../references.html#ref-klimaaktiv2026peq" role="doc-biblioref">Schneider u.&nbsp;a. 2026, 14</a>)</span>. Im Nachweis sind die zugeordneten Sanierungsflächen offenzulegen. Neubauanteile werden nicht allein durch ihre Einbindung in ein Bestandsquartier zu Sanierungsflächen.</p>
-<p>Die Höhe ist normativ festgelegt. Sie berücksichtigt erschwerte Handlungsmöglichkeiten im Bestand, beispielsweise geometrische oder konstruktive Grenzen einer energetischen Verbesserung. Sie ist keine Berechnung der eingesparten grauen Emissionen. Erhaltene Bausubstanz und neue Bauteile wirken über die eigene THG-Bilanz; die Primärenergiegutschrift darf nicht noch einmal als vermiedene CO₂-Menge angesetzt werden.</p>
-<div class="callout callout-style-simple callout-note">
-<div class="callout-body d-flex">
+c_{\mathrm{Sanierung,typ}}=
+\frac{\sum_k A_{\mathrm{NGF},k}^{\mathrm{Quartier}}\,c_{\mathrm{S},k}}
+{\sum_k A_{\mathrm{NGF},k}^{\mathrm{Quartier}}}.
+\tag{9.1}\]</span></span></p>
+<p>Voraussetzung ist, dass jede Teilfläche eindeutig einer freigegebenen Typologie zugeordnet ist. Die Werte sind in kWh PE/(m² NGF·a) auszudrücken. Die nationalen Eingabeflächen der Kalibrierung können dagegen BGF sein; die Umrechnung wird in <a href="05-kontextfaktoren.html" class="quarto-xref"><span>Kalibrierung der PEQ-Energieanforderungen</span></a> nachvollziehbar dokumentiert. Neubau- und Bestandsflächen werden nicht allein wegen der Zugehörigkeit zu demselben Quartier gleichbehandelt.</p>
+<p>Die Sanierungsanpassung ändert die <strong>Bewertungsanforderung</strong>, nicht die tatsächlich simulierten Energieflüsse. Bereits in einem typologiebezogenen Ausgangsziel berücksichtigte Vorteile dürfen nicht zusätzlich als Gutschrift angesetzt werden. Erhaltene Bausubstanz und eingesparte graue Emissionen wirken, soweit methodisch vorgesehen, in der eigenständigen Lebenszyklus-THG-Bilanz; die Primärenergieanpassung ist nicht noch einmal eine vermiedene CO₂-Menge.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Parameterstand">
+<div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<div class="callout-body-container">
-<p>Für eine Weiterentwicklung kommen differenzierte Regeln nach Sanierungserschwernis, Gebäudealter oder Denkmalschutz in Betracht. Solche Regeln brauchen eine begründete Verteilungswirkung und handhabbare Nachweise. Bis dahin wird die festgelegte Gutschrift angewendet, ohne eine bislang nicht vorliegende quantitative Kalibrierung zu unterstellen.</p>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Hinweis</span>Parameterstand
 </div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Der Entwurf definiert die typologische Zuordnung und Aggregationsregel. Numerische Sanierungswerte je Typ sind nicht festgelegt. Die historische Pauschale ist ausschließlich als Vergleichsstand dokumentiert.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled" title="Historische Einordnung">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Hinweis</span>Historische Einordnung
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Die bisherige Operationalisierung nutzte eine pauschale Sanierungsgutschrift von <strong>15 kWh PE/(m² NGF·a)</strong>, flächenanteilig angewendet <span class="citation" data-cites="klimaaktiv2026peq">(<a href="../references.html#ref-klimaaktiv2026peq" role="doc-biblioref">Schneider u.&nbsp;a. 2026, 14</a>)</span>. Sie wird hier ausschließlich als früherer Stand genannt und <strong>nicht</strong> als Regel der neuen typologischen Kalibrierung fortgeschrieben.</p>
 </div>
 </div>
 

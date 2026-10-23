@@ -1,0 +1,1278 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de" xml:lang="de"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.19">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Gebäudebestand und Entwicklungsszenario 2040 – Klimaneutrale Plus-Energie-Quartiere</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../Kapitel/05-kontextfaktoren.html" rel="next">
+<link href="../Kapitel/03-allokation.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-631496449bf32ff9b0bb69a6bfd9195d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Keine Treffer",
+    "search-matching-documents-text": "Treffer",
+    "search-copy-link-title": "Link in die Suche kopieren",
+    "search-hide-matches-text": "Zusätzliche Treffer verbergen",
+    "search-more-match-text": "weitere Treffer in diesem Dokument",
+    "search-more-matches-text": "weitere Treffer in diesem Dokument",
+    "search-clear-button-title": "Zurücksetzen",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Abbrechen",
+    "search-submit-button-title": "Abschicken",
+    "search-label": "Suchen"
+  }
+}</script>
+<script type="application/json" class="js-hypothesis-config">
+{
+  "theme": "clean",
+  "openSidebar": false
+}
+</script>
+<script async="" src="https://hypothes.is/embed.js"></script>
+<script>
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    document.body.classList.add('hypothesis-enabled');
+  });
+</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles/presets.css">
+</head>
+
+<body class="nav-sidebar floating nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Klimaneutrale Plus-Energie-Quartiere</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Suchen"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Navigation umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="../index.html" aria-current="page"> 
+<span class="menu-text">Der Standard</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://simonschaluppe.github.io/peexcel/" target="_blank"> 
+<span class="menu-text">Das Nachweistool</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../files/Klimaneutrale-Plus-Energie-Quartiere.docx"> <i class="bi bi-download" role="img">
+</i> 
+<span class="menu-text">Download</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Kapitel/03-methodik.html">Methodik</a></li><li class="breadcrumb-item"><a href="../Kapitel/03-gebaeudebestand.html"><span class="chapter-title">Gebäudebestand und Entwicklungsszenario 2040</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Kurzfassung</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Kapitel/01-einführung.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Noch ein Standard?</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Kapitel/02-standard.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Der Standard</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Methodik</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Abschnitt umschalten">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Kapitel/03-methodik.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Von nationalen Zielpfaden zur Quartiersbilanz</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Kapitel/03-zielszenario.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Nationales Zielszenario 2040</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Kapitel/03-allokation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Sektorale Energieallokation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Kapitel/03-gebaeudebestand.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Gebäudebestand und Entwicklungsszenario 2040</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Kapitel/05-kontextfaktoren.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Kalibrierung der PEQ-Energieanforderungen</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Kapitel/05-kontext-mobilitaet.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Kontextfaktor Mobilität</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Kapitel/05-kontext-sanierung.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Kontextfaktor Sanierung</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Kapitel/03-zielwert-thg.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Zielwert THG</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Kapitel/04-bilanzregeln.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Systemgrenze des Quartiers</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Kapitel/08-fortschreibung.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Methodenstand und Fortschreibung</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
+ <span class="menu-text">Anwendung</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Abschnitt umschalten">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Kapitel/07-anwendung.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Deklaration von Bauprojekten</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Kapitel/07-ergebnisse.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Ergebnisse verstehen</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Kapitel/07-praxisbeispiele.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Praxisbeispiele</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Kapitel/07-renovierungsfahrplan.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Sanierungsfahrpläne und Entwicklungspfade</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Literatur</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../about.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Über diesen Bericht</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
+ <span class="menu-text">Anhang</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Abschnitt umschalten">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Kapitel/anhang-szenariotabellen.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Nationale Energie- und Stromtabellen</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Kapitel/anhang-methodenstand.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Annahmen der Zielwertberechnung</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Berechnungen/gfz_at/GFZ_AT_Analyse_Anhang.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Ableitung der GFZ-Dichteverteilung des österreichischen Gebäudebestands 2021</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Berechnungen/sektorenmodell/allokation.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Sektorale Energieallokation – Transition 2040</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Berechnungen/gebaeudesektormodell/Gebaeudesektormodell.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Gebäudesektormodell Österreich 2040</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Kapitel/anhang-quartiersbilanzierung.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Annahmen der Quartiersbilanzierung</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Berechnungen/gebaeudesektormodell/Internes_Kalibrierungsdashboard.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Internes Szenario- und Kalibrierungsdashboard</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Kapitel/review-methodik-2026.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Review der Methodik: Verständlichkeit und Gliederung</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Inhaltsverzeichnis</h2>
+   
+  <ul>
+  <li><a href="#datenbasis-flächenbegriffe-und-bezugsjahre" id="toc-datenbasis-flächenbegriffe-und-bezugsjahre" class="nav-link active" data-scroll-target="#datenbasis-flächenbegriffe-und-bezugsjahre">Datenbasis, Flächenbegriffe und Bezugsjahre</a></li>
+  <li><a href="#sec-gebaeudetypologien" id="toc-sec-gebaeudetypologien" class="nav-link" data-scroll-target="#sec-gebaeudetypologien">Energetische Gebäudetypologien 2040</a></li>
+  <li><a href="#flächenentwicklung-vom-bestand-zum-zieljahr" id="toc-flächenentwicklung-vom-bestand-zum-zieljahr" class="nav-link" data-scroll-target="#flächenentwicklung-vom-bestand-zum-zieljahr">Flächenentwicklung vom Bestand zum Zieljahr</a></li>
+  <li><a href="#energetische-performance-strombedarf-und-pv" id="toc-energetische-performance-strombedarf-und-pv" class="nav-link" data-scroll-target="#energetische-performance-strombedarf-und-pv">Energetische Performance, Strombedarf und PV</a></li>
+  <li><a href="#endenergie-und-primärenergie" id="toc-endenergie-und-primärenergie" class="nav-link" data-scroll-target="#endenergie-und-primärenergie">Endenergie und Primärenergie</a></li>
+  <li><a href="#sec-gfz-verteilung" id="toc-sec-gfz-verteilung" class="nav-link" data-scroll-target="#sec-gfz-verteilung">GFZ-Verteilung des österreichischen Gebäudebestands</a></li>
+  <li><a href="#gemeinsame-typologie-dichte-matrix-und-sektoraler-abgleich" id="toc-gemeinsame-typologie-dichte-matrix-und-sektoraler-abgleich" class="nav-link" data-scroll-target="#gemeinsame-typologie-dichte-matrix-und-sektoraler-abgleich">Gemeinsame Typologie-Dichte-Matrix und sektoraler Abgleich</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Kapitel/03-methodik.html">Methodik</a></li><li class="breadcrumb-item"><a href="../Kapitel/03-gebaeudebestand.html"><span class="chapter-title">Gebäudebestand und Entwicklungsszenario 2040</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span id="sec-gebaeudebestand" class="quarto-section-identifier"><span class="chapter-title">Gebäudebestand und Entwicklungsszenario 2040</span></span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="lead">
+<p>Gebäudetypologien, nationale Flächen und GFZ-Verteilungen als Bottom-up-Grundlage der PEQ-Kalibrierung</p>
+</div>
+<p>Das Gebäudesektormodell verknüpft die Flächenstruktur des Zieljahres 2040 mit den energetischen Kennwerten der Gebäudetypen und ihren Dichteverteilungen. Es bildet die Bottom-up-Seite zur sektoralen Allokation in <a href="03-allokation.html" class="quarto-xref"><span>Sektorale Energieallokation</span></a>. Die Auswertung des Pools ergibt <strong>137,49 PJ/a Strombedarf</strong>, <strong>78,25 PJ/a PV-Erzeugung</strong> und einen <strong>betrieblichen Stromsaldo von −59,25 PJ/a</strong>. Diese Zahlen beschreiben den gelieferten Szenariostand. Der Abgleich mit UBA Transition zeigt den Szenarioabstand.</p>
+<p>Die vollständige Herleitung, Eingabetabellen, Formeln und Bilanzprüfungen stehen im ausführbaren Anhang <a href="../Berechnungen/gebaeudesektormodell/Gebaeudesektormodell.html" class="quarto-xref"><span>Gebäudesektormodell: Daten, Rechnung und Grenzen</span></a>. Die Berechnungen sind unmittelbar in dessen Notebook-Zellen enthalten.</p>
+<section id="datenbasis-flächenbegriffe-und-bezugsjahre" class="level2">
+<h2 class="anchored" data-anchor-id="datenbasis-flächenbegriffe-und-bezugsjahre">Datenbasis, Flächenbegriffe und Bezugsjahre</h2>
+<p>Grundlage ist <code>Building-Sector_Pool 1.xlsx</code>, einschließlich der am 23.10.2026 ergänzten GFZ-Anteile. Das Blatt <code>Strombed_estim</code> enthält die maßgeblichen Flächen- und Energiekennwerte, <code>zuordnung_gfz</code> die Zuordnung nach Nutzung und Geschoßklasse. Das Simulationsblatt <code>Tabelle2</code> liefert Einheiten und ergänzende Anwendungen. Alle 900 Archetypenschlüssel sind eindeutig und lassen sich vollständig mit den Simulationsergebnissen verbinden. Die gespeicherten Kennwerte stimmen mit den im Kennwertblatt referenzierten Simulationswerten überein; eine erneute PEExcel-Simulation ist damit nicht verbunden.</p>
+<p>Die nationale Flächensumme beträgt <strong>1.126,579 Mio. m² BGF für 2040</strong>, gegenüber <strong>1.112,341 Mio. m² BGF</strong> in der Quellspalte „heute“. Deren konkretes Bezugsjahr ist nicht bestätigt. Sie wird deshalb nicht mit 2020 gleichgesetzt. Die Energiekennwerte beziehen sich laut Simulationsblatt auf <strong>NGF</strong>. Für die Aggregation gilt die aus der bestehenden GFZ-Analyse übernommene einheitliche Modellannahme:</p>
+<p><span class="math display">\[
+A_{NGF,k,y}=0{,}8\,A_{BGF,k,y}.
+\]</span></p>
+<p>Für 2040 folgen daraus 901,263 Mio. m² NGF. Der Flächenfaktor ist für alle Typen einheitlich. Es erfolgt keine Skalierung auf die GFZ-Bestandsfläche von 1.058,935 Mio. m² BGF oder auf die separate Flächenannahme der THG-Allokation. Diese Größen haben unterschiedliche Grundlagen.</p>
+<p>Das ältere Blatt <code>reduced</code> enthält 696,615 Mio. m² NGF, 486 positiv gewichtete Varianten, 264 echte Nullwerte und 6.450 leere Flächenfelder. Im neuen Kennwertblatt sind 603 Typen für 2040 positiv gewichtet und 297 explizit null; Flächenwerte fehlen dort nicht. Die unterschiedlichen Flächenbezüge, Variantenabdeckungen und Summen werden in <a href="../Berechnungen/gebaeudesektormodell/Gebaeudesektormodell.html#sec-gebaeude-flaechen" class="quarto-xref"><span>3. Flächenbilanz und Fortschreibung</span></a> verglichen. Der ältere Datensatz wird nicht als additive Fläche oder Ersatzgewichtung verwendet. <code>save</code> ist ein zusätzlicher Projekt-/Presetstand und keine nationale Flächenbilanz.</p>
+</section>
+<section id="sec-gebaeudetypologien" class="level2">
+<h2 class="anchored" data-anchor-id="sec-gebaeudetypologien">Energetische Gebäudetypologien 2040</h2>
+<p>Der vollständige Typenschlüssel kombiniert <strong>Geometrie, Baualter beziehungsweise Hüllstandard, Wärmeversorgung, PV-Ausstattung und Flexibilität</strong>. Die zehn Geometrieklassen sind daher nicht mit zehn energetischen Klassen gleichzusetzen. Der ausgewertete Bestand umfasst neun Baualters-/Hüllcodes und zehn Wärmeversorgungsvarianten. Alle 900 simulierten Typen tragen die Variante <code>PV30|noFlex</code>; die übrigen PV-/Flexibilitätsvarianten des 7.200 Szenarien umfassenden Gesamtpools erhalten keine ungeprüft übertragenen Kennwerte.</p>
+<p><code>Neu_10cm</code>, <code>Neu_20cm</code> und <code>Neu_30cm</code> bezeichnen Hüllcodes. Die Zugehörigkeit zu Bestand, Neubau oder Sanierung folgt den separat gelieferten Anteilen, nicht allein dem Wort „Neu“. Das Feld „Energetischer Standard“ ist noch leer. Auch eine PEQ-Presetbezeichnung oder ein positiver Stromsaldo belegt für sich keine PEQ-Konformität.</p>
+<div id="tbl-gebaeude-typologien" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-gebaeude-typologien-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabelle&nbsp;6.1: Gelieferte Flächen und BGF-gewichtete Dichte-Erwartungswerte. Heute: Bezugsjahr offen; Dichtefunktion in elektrischer Energie.
+</figcaption>
+<div aria-describedby="tbl-gebaeude-typologien-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Geometrie</th>
+<th>BGF heute [Mio. m²]</th>
+<th>BGF 2040 [Mio. m²]</th>
+<th>GFZ_Mittel</th>
+<th>c_D_EE_BGF</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>EFH_1G</td>
+<td>129,675</td>
+<td>131,047</td>
+<td>0,318</td>
+<td>-41,631</td>
+</tr>
+<tr class="even">
+<td>EFH_2G</td>
+<td>186,891</td>
+<td>189,492</td>
+<td>0,615</td>
+<td>-22,798</td>
+</tr>
+<tr class="odd">
+<td>GWB_5G</td>
+<td>39,452</td>
+<td>39,941</td>
+<td>2,266</td>
+<td>8,966</td>
+</tr>
+<tr class="even">
+<td>GWB_7G</td>
+<td>81,032</td>
+<td>82,108</td>
+<td>4,000</td>
+<td>16,440</td>
+</tr>
+<tr class="odd">
+<td>MFH_2G</td>
+<td>0,000</td>
+<td>0,000</td>
+<td>offen</td>
+<td>offen</td>
+</tr>
+<tr class="even">
+<td>MFH_4G</td>
+<td>65,007</td>
+<td>65,865</td>
+<td>1,541</td>
+<td>1,432</td>
+</tr>
+<tr class="odd">
+<td>NiWo_1G</td>
+<td>90,878</td>
+<td>92,026</td>
+<td>0,491</td>
+<td>-29,353</td>
+</tr>
+<tr class="even">
+<td>NiWo_2G</td>
+<td>138,179</td>
+<td>139,840</td>
+<td>0,875</td>
+<td>-13,124</td>
+</tr>
+<tr class="odd">
+<td>NiWo_3G</td>
+<td>194,334</td>
+<td>196,767</td>
+<td>2,183</td>
+<td>3,924</td>
+</tr>
+<tr class="even">
+<td>RH_2G</td>
+<td>186,891</td>
+<td>189,492</td>
+<td>0,615</td>
+<td>-22,798</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>Die Geometrie MFH_2G besitzt derzeit keine positive nationale Fläche. Ihre fehlende GFZ-Zuordnung bleibt sichtbar; für sie wird kein Dichte-Erwartungswert erfunden. Für alle positiv gewichteten Typen liegt eine Zuordnung vor.</p>
+</section>
+<section id="flächenentwicklung-vom-bestand-zum-zieljahr" class="level2">
+<h2 class="anchored" data-anchor-id="flächenentwicklung-vom-bestand-zum-zieljahr">Flächenentwicklung vom Bestand zum Zieljahr</h2>
+<p>Die gelieferte Gesamtfläche steigt zwischen „heute“ und 2040 um rund 14,238 Mio. m² BGF beziehungsweise 1,28 %. Die Spalten Bestand, Neubau und Sanierung enthalten innerhalb der Archetypen Anteile, die auf jeder positiv gewichteten 2040-Fläche zusammen eins ergeben. Flächengewichtet resultiert:</p>
+<div id="tbl-gebaeude-status" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-gebaeude-status-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabelle&nbsp;6.2: Flächengewichtete Zuordnung zu Bestand, Neubau und Sanierung im Zieljahr.
+</figcaption>
+<div aria-describedby="tbl-gebaeude-status-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Zustand</th>
+<th>BGF 2040 [Mio. m²]</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Bestand</td>
+<td>779,528</td>
+</tr>
+<tr class="even">
+<td>Neubau</td>
+<td>320,354</td>
+</tr>
+<tr class="odd">
+<td>Sanierung</td>
+<td>26,696</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<div id="fig-gebaeude-flaechen" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-gebaeude-flaechen-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../Berechnungen/gebaeudesektormodell/outputs/flaechen.png" class="img-fluid figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-gebaeude-flaechen-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Abbildung&nbsp;6.1: Flächenverteilung nach Geometrie. „Heute“ bezeichnet die gleichnamige Quellspalte mit nicht festgelegtem Bezugsjahr.
+</figcaption>
+</figure>
+</div>
+<p>Die Neubaufläche ist nicht mit dem Nettoflächenzuwachs gleichzusetzen. Für einen nachvollziehbaren Entwicklungspfad fehlen die zeitliche Definition dieser Kategorien und eine Übergangsbilanz mit Abbruch, Ersatzneubau und Sanierung. Die Reinschrift enthält ein separates, leeres Feld für BGF 2020. Es wird nicht automatisch aus „heute“ gefüllt.</p>
+</section>
+<section id="energetische-performance-strombedarf-und-pv" class="level2">
+<h2 class="anchored" data-anchor-id="energetische-performance-strombedarf-und-pv">Energetische Performance, Strombedarf und PV</h2>
+<p>Die PV-Erzeugung wird <strong>aus der Typen-Excel übernommen</strong>: <code>PV_total_direct</code> plus <code>PV_to_Egrid</code> in <code>Strombed_estim</code>, gegengeprüft gegen <code>PV_total</code> in <code>Tabelle2</code>. Das Sektormodell simuliert keine eigenen PV-Flächen oder Erträge. Alle gelieferten Typen verwenden die Variante <code>PV30|noFlex</code>. Die nationale Erzeugung entsteht durch Multiplikation des spezifischen Ertrags mit der zugeordneten NGF; eine zusätzliche GFZ-bedingte Skalierung der PV findet nicht statt.</p>
+<p>Netzbezug und Bruttostrombedarf werden konsequent getrennt. Für die vorliegenden Varianten ohne Speicher, Flexibilität oder simulierte Mobilität gilt:</p>
+<p><span class="math display">\[
+E_{el}=E_{Netzbezug}+E_{PV,direkt},\qquad E_{PV}=E_{PV,direkt}+E_{PV,Export}.
+\]</span></p>
+<p>Der physische Stromsaldo ist sowohl als PV-Erzeugung minus Strombedarf als auch als PV-Netzeinspeisung minus Netzbezug bestimmbar. Beide Wege stimmen in der Typenprüfung überein. PV-Direktverbrauch wird nicht doppelt als Deckung angesetzt.</p>
+<div id="tbl-gebaeude-strom" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-gebaeude-strom-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabelle&nbsp;6.3: Strombilanz 2040 aus den gelieferten Typenkennwerten bei NGF/BGF = 0.8.
+</figcaption>
+<div aria-describedby="tbl-gebaeude-strom-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Größe</th>
+<th>kWh/(m² NGF a)</th>
+<th>GWh/a</th>
+<th>PJ/a</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Strombedarf</td>
+<td>42,377</td>
+<td>38.192,572</td>
+<td>137,493</td>
+</tr>
+<tr class="even">
+<td>PV_Erzeugung</td>
+<td>24,116</td>
+<td>21.734,851</td>
+<td>78,245</td>
+</tr>
+<tr class="odd">
+<td>Grid_to_building_min</td>
+<td>34,899</td>
+<td>31.452,734</td>
+<td>113,230</td>
+</tr>
+<tr class="even">
+<td>PV_total_direct</td>
+<td>7,478</td>
+<td>6.739,839</td>
+<td>24,263</td>
+</tr>
+<tr class="odd">
+<td>PV_to_Egrid</td>
+<td>16,638</td>
+<td>14.995,012</td>
+<td>53,982</td>
+</tr>
+<tr class="even">
+<td>Stromsaldo</td>
+<td>-18,261</td>
+<td>-16.457,722</td>
+<td>-59,248</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<div id="fig-gebaeude-strom-anwendungen" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-gebaeude-strom-anwendungen-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../Berechnungen/gebaeudesektormodell/outputs/strom_anwendungen.png" class="img-fluid figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-gebaeude-strom-anwendungen-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Abbildung&nbsp;6.2: Flächengewichteter spezifischer Strombedarf nach Anwendungen. Hilfsstrom wird aus den Heiz-/Warmwassersummen herausgelöst und gemeinsam mit Allgemeinstrom dargestellt.
+</figcaption>
+</figure>
+</div>
+<p>Die Kennwerte unterscheiden Heizung, Warmwasser, Kühlung, Lüftung, Hilfs-/Allgemeinstrom, Beleuchtung und Geräte/IT. Kühlung ist im gelieferten Simulationsstand null. Das ist eine Eigenschaft dieser Simulationen und keine Bestätigung, dass im nationalen Gebäudesektor 2040 kein Kühlbedarf besteht. Die detaillierte Herleitung steht in <a href="../Berechnungen/gebaeudesektormodell/Gebaeudesektormodell.html#sec-gebaeude-strom" class="quarto-xref"><span>4. Strombedarf, Erzeugung und Stromsaldo</span></a>.</p>
+</section>
+<section id="endenergie-und-primärenergie" class="level2">
+<h2 class="anchored" data-anchor-id="endenergie-und-primärenergie">Endenergie und Primärenergie</h2>
+<p>Fernwärme-, Gas-, Biomasse- und Ölbedarfe werden eigenständig bilanziert. Die Sammelgröße <code>EUI_other</code> wird bei den als <code>Oel</code> gekennzeichneten Typen Öl zugeordnet; weitere Beträge blieben separat unter sonstiger thermischer Endenergie erhalten.</p>
+<div id="tbl-gebaeude-endenergie" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-gebaeude-endenergie-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabelle&nbsp;6.4: Endenergie 2040 nach Energieträgern. Strom enthält PV-Direktverbrauch; sonstige thermische Energie wird separat geführt.
+</figcaption>
+<div aria-describedby="tbl-gebaeude-endenergie-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Träger</th>
+<th>kWh/(m² NGF a)</th>
+<th>GWh/a</th>
+<th>PJ/a</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Strom (Bruttobedarf)</td>
+<td>42,377</td>
+<td>38.192,572</td>
+<td>137,493</td>
+</tr>
+<tr class="even">
+<td>Fernwärme</td>
+<td>31,499</td>
+<td>28.388,612</td>
+<td>102,199</td>
+</tr>
+<tr class="odd">
+<td>Gas</td>
+<td>23,631</td>
+<td>21.297,969</td>
+<td>76,673</td>
+</tr>
+<tr class="even">
+<td>Biomasse</td>
+<td>21,346</td>
+<td>19.238,623</td>
+<td>69,259</td>
+</tr>
+<tr class="odd">
+<td>Öl</td>
+<td>18,034</td>
+<td>16.253,386</td>
+<td>58,512</td>
+</tr>
+<tr class="even">
+<td>Sonstige thermisch</td>
+<td>0,000</td>
+<td>0,000</td>
+<td>0,000</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<div id="fig-gebaeude-endenergie" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-gebaeude-endenergie-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../Berechnungen/gebaeudesektormodell/outputs/endenergie.png" class="img-fluid figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-gebaeude-endenergie-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Abbildung&nbsp;6.3: Endenergie des gelieferten 2040-Pools nach Energieträgern.
+</figcaption>
+</figure>
+</div>
+<p>Insbesondere die verbleibenden <strong>76,67 PJ/a Gas</strong> und <strong>58,51 PJ/a Öl</strong> zeigen, dass die gelieferte Flächen-/Versorgungsstruktur kein vollständig dekarbonisiertes Szenario darstellt. Diese Mengen werden weder als Strom behandelt noch aus der Bilanz entfernt. Die Anwendungsaufteilung der thermischen Energie steht in <a href="../Berechnungen/gebaeudesektormodell/Gebaeudesektormodell.html#sec-gebaeude-endenergie" class="quarto-xref"><span>5. Endenergiebilanz nach Energieträgern und Anwendungen</span></a>.</p>
+<p>Die Primärenergiebilanz aggregiert die gelieferten Import- und Exportkennwerte. Sie enthält keine virtuellen Dichte-, Mobilitäts- oder Sanierungsgutschriften:</p>
+<div id="tbl-gebaeude-pe" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-gebaeude-pe-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabelle&nbsp;6.5: Gelieferter PE-Bewertungsstand; Faktorversion und Bezugsjahr noch zu bestätigen, ohne virtuelle Kontextwerte.
+</figcaption>
+<div aria-describedby="tbl-gebaeude-pe-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Größe</th>
+<th>GWh_PE/a</th>
+<th>PJ_PE/a</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>PEI_grid_import</td>
+<td>59.495,871</td>
+<td>214,185</td>
+</tr>
+<tr class="even">
+<td>PEI_import</td>
+<td>137.528,612</td>
+<td>495,103</td>
+</tr>
+<tr class="odd">
+<td>PEI_export</td>
+<td>23.816,432</td>
+<td>85,739</td>
+</tr>
+<tr class="even">
+<td>PE_Saldo</td>
+<td>-113.712,180</td>
+<td>-409,364</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>Der PE-Saldo von <strong>−409,36 PJ PE/a</strong> ist ein Ergebnis des gelieferten Bewertungsstands. Die konkreten Konversionsfaktoren und ihr Bezugsjahr sind nicht bestätigt. Effektive Faktoren unterscheiden sich zwischen Typen und zwischen Import und Export; eine einfache Multiplikation sämtlicher Stromflüsse mit einem Jahresmittel würde die gelieferten PEI nicht reproduzieren. Die sektorale Aufgabe 2040 bleibt auf Endenergiebasis definiert. Eine Bewertung mit heutigen Faktoren stellt die Vergleichbarkeit mit heutigen Nachweisverfahren her und ist keine Prognose der PE-Intensitäten 2040 (<a href="../Berechnungen/gebaeudesektormodell/Gebaeudesektormodell.html#sec-gebaeude-pe" class="quarto-xref"><span>6. Primärenergie: gelieferter Bewertungsstand</span></a>).</p>
+</section>
+<section id="sec-gfz-verteilung" class="level2">
+<h2 class="anchored" data-anchor-id="sec-gfz-verteilung">GFZ-Verteilung des österreichischen Gebäudebestands</h2>
+<p>Die vorhandene GFZ-Hochrechnung verwendet die statistische Gebäudestruktur 2021 und BGF-gewichtete Referenzverteilungen aus Wien und Salzburg. Ihre freigegebene Ersatzregel bleibt unverändert. Die neue Zuordnung aus der Excel übersetzt Nutzung und Geschoßklasse in geometrische Poolklassen. <strong>Eine einzelne Zielklasse erhält 100 %; nur bei einer Aufteilung wird die zweite Zielspalte benutzt.</strong> Diese Regel ist vom Auftraggeber bestätigt und in der aktualisierten Datei vollständig eingetragen. Für Wohngebäude mit zwei oder drei Geschoßen werden beispielsweise EFH_2G und RH_2G mit jeweils 50 % angesetzt.</p>
+<p>Die im GFZ-Modell zusammengefasste Kategorie „Ein- und Zweifamilienhäuser“ erhält die identischen Regeln der beiden entsprechenden Excel-Nutzungen nur einmal. Dadurch wird keine Referenzfläche doppelt gezählt. Aus den zugeordneten BGF-Mengen entstehen je Geometrie bedingte GFZ-Verteilungen. Unterschiedliche energetische Varianten derselben Geometrie übernehmen im Modell dieselbe Verteilung.</p>
+<div id="fig-gebaeude-gfz" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-gebaeude-gfz-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../Berechnungen/gebaeudesektormodell/outputs/gfz_dichte.png" class="img-fluid figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-gebaeude-gfz-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Abbildung&nbsp;6.4: GFZ-Verteilungen und Erwartungswerte des historischen Dichte-Referenzansatzes. Die Grafik zeigt GFZ bis 8; die Aggregation umfasst das vollständige Raster bis 20.
+</figcaption>
+</figure>
+</div>
+<p>Die Erwartungswerte in <a href="#tbl-gebaeude-typologien" class="quarto-xref">Tabelle&nbsp;<span>6.1</span></a> werden über sämtliche GFZ-Bins berechnet. Der Funktionswert am mittleren GFZ wäre wegen der Nichtlinearität nicht gleichwertig. Als elektrische Referenz dient die historische Tabellenparametrisierung aus <span class="citation" data-cites="schneider2023context">Schneider u.&nbsp;a. (<a href="../references.html#ref-schneider2023context" role="doc-biblioref">2023</a>)</span>, Gl. 7 und Tab. 5, mit 30,4, 26,4, Achsenverschiebung 0,15 und Begrenzung 62. Die gemischte EE-/PE-Beschriftung der Quellentabelle ist im Notebook dokumentiert; der Referenzansatz ist eine historische Referenz, keine normative Neufestlegung.</p>
+<p>Der Erwartungswert <span class="math inline">\(\mathbb{E}_k[c_D]\)</span> ist der BGF-gewichtete Mittelwert des Dichtewerts über die GFZ-Verteilung von Typ <span class="math inline">\(k\)</span>. Der Index <span class="math inline">\(j\)</span> bezeichnet einen GFZ-Bin, <span class="math inline">\(s_{j|k}\)</span> dessen Flächenanteil und <span class="math inline">\(d_j\)</span> seine GFZ. Der nationale virtuelle Beitrag lautet <span class="math inline">\(C_D=\sum_k A_{BGF,k}\mathbb{E}_k[c_D]\)</span>. Positive Werte entlasten die Bewertungsbilanz, negative erhöhen die Anforderung.</p>
+<p>Die virtuellen Erwartungswerte reichen hier von rund <strong>−41,63 kWh EE/(m² BGF·a)</strong> für EFH_1G bis <strong>+16,44 kWh EE/(m² BGF·a)</strong> für GWB_7G. Sie zeigen die Verteilung zusätzlicher Anforderungen und Gutschriften. Sie werden nicht als reale Stromerzeugung oder als pauschal zustehende Gutschrift aller Typen bilanziert.</p>
+<iframe src="../Abbildungen/methodik/typen_deckung.html" title="Alle Gebäudetypen: Strombedarf, PV und virtueller Dichtewert" style="width:100%;height:850px;border:0" loading="lazy"></iframe>
+<p><a href="../Abbildungen/methodik/typen_deckung.html">Grafik separat öffnen</a></p>
+<p>Die Auswahl enthält alle 900 Typen, gegliedert nach Geometrie; der Achsenregler zeigt einen lesbaren Ausschnitt. Der Tooltip nennt Archetyp und nationale Fläche. Bedarf wird negativ, PV positiv und die virtuelle Dichtekorrektur schraffiert gezeigt. MFH_2G besitzt keine zugeordnete GFZ-Verteilung und keine nationale Fläche; sein Kontextwert bleibt leer.</p>
+</section>
+<section id="gemeinsame-typologie-dichte-matrix-und-sektoraler-abgleich" class="level2">
+<h2 class="anchored" data-anchor-id="gemeinsame-typologie-dichte-matrix-und-sektoraler-abgleich">Gemeinsame Typologie-Dichte-Matrix und sektoraler Abgleich</h2>
+<p>Für Typologie <span class="math inline">\(k\)</span> und GFZ-Bin <span class="math inline">\(j\)</span> gilt:</p>
+<p><span id="eq-typologie-gfz-flaeche"><span class="math display">\[
+A_{k,j}^{2040}=A_k^{2040}s_{j|k},\qquad\sum_j s_{j|k}=1.
+\tag{6.1}\]</span></span></p>
+<p>Die erzeugte Typologie-Dichte-Matrix erhält die Fläche jedes positiv gewichteten Typs. Sie steht im Modellordner unter <code>outputs/typologie_gfz_2040.csv.gz</code> zur Verfügung. Die Referenzverteilung von 2021 wird dafür als räumliches Verteilungsmuster verwendet, nicht als zusätzliche Flächensumme.</p>
+<div id="tbl-gebaeude-abgleich" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-gebaeude-abgleich-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabelle&nbsp;6.6: Vergleich bei gleichen elektrischen Bilanzgrenzen; Top-down-Zuordnungen gemäß dokumentiertem Referenzfall.
+</figcaption>
+<div aria-describedby="tbl-gebaeude-abgleich-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Größe</th>
+<th>Bottom-up [PJ/a]</th>
+<th>Top-down [PJ/a]</th>
+<th>Differenz [PJ/a]</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>PV-Erzeugung</td>
+<td>78,245</td>
+<td>149,000</td>
+<td>-70,755</td>
+</tr>
+<tr class="even">
+<td>Gebäudestrombedarf</td>
+<td>137,493</td>
+<td>108,000</td>
+<td>29,493</td>
+</tr>
+<tr class="odd">
+<td>Betrieblicher Stromsaldo</td>
+<td>-59,248</td>
+<td>41,000</td>
+<td>-100,248</td>
+</tr>
+<tr class="even">
+<td>Saldo einschließlich MIV</td>
+<td>-107,248</td>
+<td>-7,000</td>
+<td>-100,248</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<iframe src="../Abbildungen/methodik/sektorvergleich.html" title="Sektorvergleich Top-down, Bottom-up und Dichte-Bewertung" style="width:100%;height:690px;border:0" loading="lazy"></iframe>
+<p><a href="../Abbildungen/methodik/sektorvergleich.html">Grafik separat öffnen</a></p>
+<p>Die dritte Vergleichsgruppe addiert die historische Dichtefunktion rechnerisch über <strong>alle positiv gewichteten Typen</strong>. Das ergibt einen virtuellen Beitrag von −57,81 PJ-Äquivalent/a: Der betriebliche Bewertungssaldo beträgt damit −117,06 PJ-Äquivalent/a und einschließlich derselben MIV-Zuordnung −165,06 PJ-Äquivalent/a. Die physischen Energieflüsse bleiben unverändert. Diese vollständige Anwendung ist ein transparenter Vergleichsfall; sie ersetzt keine Festlegung der PEQ-berechtigten Flächenanteile.</p>
+<p>Der Abstand zum Top-down-Saldo beträgt <strong>−100,25 PJ/a</strong>. Er ergibt sich aus geringerer PV-Erzeugung und höherem Gebäudestrombedarf des gelieferten Pools. Werden auf beiden Seiten dieselben 24 PJ/a MIV-Budget und 72 PJ/a MIV-Bedarf angesetzt, bleibt diese Differenz unverändert. Sie ist ein Szenariounterschied und wird nicht durch nachträgliche Flächenskalierung oder eine neue Gutschrift geschlossen.</p>
+<p>Für die Kalibrierung in <a href="05-kontextfaktoren.html" class="quarto-xref"><span>Kalibrierung der PEQ-Energieanforderungen</span></a> fehlen die definierten PEQ-Flächenanteile, die abgestimmte Versorgung der übrigen Typen sowie alternative PV-/Flexibilitätsvarianten. Die gelieferte Typologiematrix und ihre Ergebnisse bilden die Grundlage für diese Entscheidungen. Die THG-Allokation erhält dadurch nicht automatisch eine neue Flächenbasis.</p>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-schneider2023context" class="csl-entry" role="listitem">
+Schneider, Simon, Thomas Zelger, David Sengl, und José Baptista. 2023. <span>„A Quantitative Positive Energy District Definition with Contextual Targets“</span>. <em>Buildings</em> 13 (5): 1210. <a href="https://doi.org/10.3390/buildings13051210">https://doi.org/10.3390/buildings13051210</a>.
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Kopiert");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Kopiert");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../Kapitel/03-allokation.html" class="pagination-link" aria-label="Sektorale Energieallokation">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Sektorale Energieallokation</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../Kapitel/05-kontextfaktoren.html" class="pagination-link" aria-label="Kalibrierung der PEQ-Energieanforderungen">
+        <span class="nav-page-text"><span class="chapter-title">Kalibrierung der PEQ-Energieanforderungen</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
