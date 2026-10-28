@@ -1,0 +1,27 @@
+# Einstieg und Kontakt {#sec-einstieg}
+
+::: {.lead}
+Orientierung für Gemeinden, Bauträger und interessierte Fachplanende
+:::
+
+## Wann sollte die Bewertung beginnen?
+
+Möglichst früh, wenn Bebauung, Energieversorgung, PV-Flächen und Mobilitätskonzept noch beeinflusst werden können. Eine Planungsbewertung kann zeigen, welche Kombination von Maßnahmen die angestrebte Qualitätsstufe ermöglicht. Der Projektstand bestimmt, wie belastbar das Ergebnis bereits ist.
+
+## Welche Unterlagen werden benötigt?
+
+Für die erste Abstimmung helfen Lageplan, Nutzungen und Flächen, der aktuelle Planungsstand sowie Angaben zu Gebäudequalität und Energieversorgung. Für den vollständigen Nachweis kommen je nach Qualitätsstufe beispielsweise Energieausweise, PV-Planung, Mobilitätsangaben und Ökobilanzdaten hinzu. Welche Informationen im konkreten Projekt benötigt werden, klärt die Kompetenzpartnerin oder der Kompetenzpartner.
+
+## Was erhält das Projekt?
+
+Eine nachvollziehbare Bewertung des untersuchten Konzepts mit Energie- und gegebenenfalls Lebenszyklusbilanz. Die Ergebnisse zeigen die Zielerreichung, maßgebliche Annahmen und mögliche Ansatzpunkte für Varianten. Nach erfolgreicher Prüfung dokumentiert die Deklaration die erreichte Qualitätsstufe und den geprüften Projektstand.
+
+## Wer begleitet das Vorhaben?
+
+**klimaaktiv Kompetenzpartner:innen** sind die ersten Ansprechpartner für die projektbezogene Bewertung und Begleitung. Für allgemeine Fragen und die Orientierung steht außerdem die **Anlaufstelle Plus-Energie-Quartiere** zur Verfügung. Falls Sie diese Seite von einer Kompetenzpartnerin oder einem Kompetenzpartner erhalten haben, können Sie dort direkt Ihr Vorhaben besprechen.
+
+Die [Organisationsstruktur und Zuständigkeiten](07-anwendung.qmd#akteure-und-zuständigkeiten) erläutern das Zusammenspiel von Projektverantwortlichen, Kompetenzpartner:innen, Anlaufstelle und Expert:innengremium.
+
+## Wo finde ich die technische Anleitung?
+
+Die [PEExcel-Wissensplattform](https://simonschaluppe.github.io/peexcel/) beschreibt das Nachweistool, Modellierung und technische Ergebnisanalyse. Die [wissenschaftlichen Grundlagen](03-methodik.qmd) erläutern, wie die Anforderungen entstehen.

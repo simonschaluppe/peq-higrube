@@ -1,0 +1,15 @@
+# Campo Breitenlee {#sec-campo-breitenlee}
+
+::: {.lead}
+Neubau, Mobilität und unterschiedliche Nutzungen
+:::
+
+[Neubau]{.peq-tag} [Mobilität]{.peq-tag .peq-tag-mobilitaet} [Nutzungsmix]{.peq-tag}
+
+Das geplante Projektporträt untersucht, wie Mobilität, unterschiedliche Nutzungen und Nutzungsdichten in der Quartiersbewertung zusammenwirken. Diese Fragestellung erweitert den Blick von der Gebäudeenergie auf die mit dem Quartier verbundene Mobilität.
+
+::: {.callout-note title="Auswertung in Vorbereitung"}
+Die finale Berechnungsfassung wird derzeit vorbereitet. Kennzahlen, untersuchte Maßnahmen und Deklarationsstatus werden nach Prüfung der Projektunterlagen ergänzt. Aus dieser Vorschau lässt sich noch keine erreichte Qualitätsstufe ableiten.
+:::
+
+[Anforderungen einschließlich Mobilität](02-standard.qmd) · [Mobilitätskontext](05-kontext-mobilitaet.qmd) · [Alle Praxisbeispiele](07-praxisbeispiele.qmd)

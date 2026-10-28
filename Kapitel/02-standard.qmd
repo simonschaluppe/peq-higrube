@@ -5,7 +5,7 @@ Der klimaaktiv Standard für Plus-Energie-Quartiere
 {{< var versionstyp >}} vom {{< var versionsdatum >}}
 :::
 
-# Der Standard {#sec-standard}
+# Qualitätsstufen und Anforderungen {#sec-standard}
 
 
 Der klimaaktiv Standard für Plus-Energie-Quartiere definiert quantitative Anforderungen an die Energie- und Treibhausgasbilanz von Quartieren. Er ermöglicht es, Neubau- und Sanierungsvorhaben anhand eines gemeinsamen, aus übergeordneten Energie- und Klimazielen abgeleiteten Bewertungsmaßstabs zu beurteilen.
@@ -22,9 +22,9 @@ Der Standard unterscheidet drei aufeinander aufbauende Qualitätsstufen:
 
 | Qualitätsstufe | Bewertungsumfang | Zentrales Kriterium |
 |---|---|---|
-| **Plus-Energie-Quartier** | Gebäudebetrieb einschließlich gebäudebezogener Stromanwendungen | Positive bewertete Primärenergiebilanz |
-| **Plus-Energie-Quartier mit Mobilität** | Gebäudebetrieb und zugeordnete motorisierte Individualmobilität | Positive bewertete Primärenergiebilanz einschließlich Mobilität |
-| **Klimaneutrales Plus-Energie-Quartier** | Zusätzlich Lebenszyklusemissionen aus baulichen Prozessen, Betrieb und Mobilität | Positive bewertete Primärenergiebilanz und Einhaltung des kumulierten THG-Budgets |
+| ![PEQ](../Abbildungen/siegel_peq.svg){.peq-label-logo} **Plus-Energie-Qartier** | Gebäudebetrieb einschließlich gebäudebezogener Stromanwendungen | Positive bewertete Primärenergiebilanz |
+| ![PEQ+M](../Abbildungen/siegel_peqm.svg){.peq-label-logo} **Plus-Energie-Quartier mit Mobilität** | Gebäudebetrieb und zugeordnete motorisierte Individualmobilität | Positive bewertete Primärenergiebilanz einschließlich Mobilität |
+| ![KNPEQ](../Abbildungen/siegel_knpeq.svg){.peq-label-logo} **Klimaneutrales Plus-Energie-Quartier** | Zusätzlich Lebenszyklusemissionen aus baulichen Prozessen, Betrieb und Mobilität | Positive bewertete Primärenergiebilanz und Einhaltung des kumulierten THG-Budgets |
 
 Die dritte Qualitätsstufe verwendet im dokumentierten Referenzverfahren ein Treibhausgasbudget von **320 kg CO₂e/m² BGF**. Dieses gilt unter den festgelegten Systemgrenzen und Szenarioannahmen. Seine Herleitung wird in @sec-zielwert-thg erläutert; die berücksichtigten Lebenszyklusprozesse beschreibt @sec-bilanzregeln.
 

@@ -27,11 +27,19 @@ book:
 
   chapters:
     - index.qmd
-
-    - Kapitel/01-einführung.qmd
+    - part: "Nutzen und Anwendung"
+      chapters:
+        - Kapitel/01-einführung.qmd
+        - Kapitel/07-renovierungsfahrplan.qmd
+    - part: "Praxisbeispiele"
+      chapters:
+        - Kapitel/07-praxisbeispiele.qmd
+        - Kapitel/07-am-bichl.qmd
+        - Kapitel/07-ruginnovation.qmd
+        - Kapitel/07-campo-breitenlee.qmd
     - Kapitel/02-standard.qmd
-    
-    - part: "Methodik"
+    - Kapitel/07-anwendung.qmd
+    - part: "Wissenschaftliche Grundlagen"
       chapters:
         - Kapitel/03-methodik.qmd
         - Kapitel/03-zielszenario.qmd
@@ -42,15 +50,9 @@ book:
         - Kapitel/05-kontext-sanierung.qmd
         - Kapitel/03-zielwert-thg.qmd
         - Kapitel/04-bilanzregeln.qmd
-        - Kapitel/08-fortschreibung.qmd
-
-    - part: "Anwendung"
-      chapters:
-        - Kapitel/07-anwendung.qmd
         - Kapitel/07-ergebnisse.qmd
-        - Kapitel/07-praxisbeispiele.qmd
-        - Kapitel/07-renovierungsfahrplan.qmd
-
+        - Kapitel/08-fortschreibung.qmd
+    - Kapitel/07-einstieg.qmd
     - references.qmd
     - about.qmd
   appendices:
@@ -68,8 +70,10 @@ book:
     collapse-level: 1
   navbar:
     left:
-      - {href: index.qmd, text: "Der Standard"}
-      - text: "Das Nachweistool"
+      - {href: index.qmd, text: "Überblick"}
+      - {href: Kapitel/07-praxisbeispiele.qmd, text: "Praxisbeispiele"}
+      - {href: Kapitel/07-einstieg.qmd, text: "Einstieg und Kontakt"}
+      - text: "PEExcel-Nachweistool"
         href: https://simonschaluppe.github.io/peexcel/
         target: _blank
     right:

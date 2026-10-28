@@ -1,37 +1,85 @@
-::: {.callout-note appearance="simple" icon=true}
-{{< var versionstyp >}} vom {{< var versionsdatum >}}
+---
+format:
+  html:
+    include-in-header:
+      text: |
+        <style>#title-block-header { display: none; }</style>
+---
+
+# Überblick {.unnumbered}
+
+::: {.lead}
+Plus-Energie-Quartiere planen und nachweisen
 :::
 
-# Kurzfassung {.unnumbered}
+Welche Energie- und Klimaziele soll ein Bauprojekt erreichen – und wie lässt sich das überprüfen? Der **klimaaktiv Standard für Plus-Energie-Quartiere** übersetzt übergeordnete Ziele in quantitative Anforderungen an Neubau und Sanierung. Gemeinden und Bauträger können damit Konzepte bewerten, Varianten vergleichen und erreichte Qualität dokumentieren.
 
-**Was heißt klimaneutral bauen – und wie viel ist genug?**
+## Was bringt der Standard für Ihr Projekt?
 
-Der klimaaktiv Standard für Plus-Energie-Quartiere übersetzt übergeordnete Energie- und Klimaziele in **quantitative, überprüfbare Anforderungen an konkrete Bau- und Sanierungsvorhaben**. Er berücksichtigt dabei nicht nur die Energieeffizienz der Gebäude, sondern auch erneuerbare Energieerzeugung, bauliche Dichte, Mobilität und Treibhausgasemissionen über den Lebenszyklus.
+**Gemeinden können konkrete Ziele formulieren.** Welche energetische Qualität soll ein neues Quartier erreichen? Wie passen Bebauung, Energieversorgung und Mobilität zu den kommunalen Klimazielen?
 
-## Was wird bewertet?
+**Bauträger können Entscheidungen früh absichern.** Welche PV-Flächen braucht das Projekt? Welche Kombination aus Gebäudequalität und Versorgung erreicht das Ziel? Eine frühe Bewertung macht den Einfluss dieser Entscheidungen nachvollziehbar.
 
-Der Standard verwendet zwei zentrale Bewertungsgrößen: eine **zeitlich gewichtete Primärenergiebilanz** und ein **kumuliertes Treibhausgasbudget**. Daraus ergeben sich drei aufeinander aufbauende Qualitätsstufen:
+**Fachplanende können Varianten gemeinsam bewerten.** Der Standard bietet einen gemeinsamen Maßstab für Energieeffizienz, erneuerbare Erzeugung und Energieflexibilität. Je nach Qualitätsstufe kommen Mobilität und Lebenszyklusemissionen hinzu.
 
-1. **Plus-Energie-Quartier:** Positive Primärenergiebilanz im Gebäudebetrieb.
-2. **Plus-Energie-Quartier mit Mobilität:** Zusätzlich wird die motorisierte Individualmobilität berücksichtigt.
-3. **Klimaneutrales Plus-Energie-Quartier:** Zusätzlich wird ein Lebenszyklus-THG-Budget von **320 kg CO₂e/m² BGF** eingehalten.
+[Mehr zu Nutzen und Anwendung](Kapitel/01-einführung.qmd)
 
-Die Bilanzierungsregeln werden in @sec-bilanzregeln erläutert.
+## Was zeigen reale Projekte?
 
-## Wie werden die Anforderungen hergeleitet?
+::: {.peq-project-grid}
+::: {.peq-project-card}
+### Am Bichl III
 
-Der Bewertungsansatz verbindet zwei Perspektiven:
+![Wohnquartier Am Bichl III in Innsbruck-Igls.](Abbildungen/praxis/am-bichl-ansicht.jpeg)
 
-**Top-down:** Nationale Energie- und Klimaziele werden auf Sektoren und Quartierstypologien übertragen. Die Methodik führt vom allgemeinen Prinzip über das sektorale Energiezielbild und die Kontextfaktoren bis zum THG-Budget und zur Quartiersbilanz (@sec-methodik).
+[Neubau]{.peq-tag} [Photovoltaik]{.peq-tag .peq-tag-pv} [Energieflexibilität]{.peq-tag .peq-tag-flex}
 
-**Bottom-up:** Gebäude, Energieversorgung, Mobilität und Lebenszyklusemissionen werden für das konkrete Quartier bilanziert. Eine stündliche Simulation berücksichtigt dabei insbesondere Photovoltaik, Speicher und Energieflexibilität.
+Ein umgesetztes Wohnquartier zeigt, wie ambitionierte Energieziele bis zur Fertigstellung nachgewiesen werden können.
 
-**Kontextfaktoren** für Dichte, Mobilität und Sanierung ermöglichen eine differenzierte Verteilung der Anforderungen. Ihre Gutschriften und Lastschriften verändern den Bewertungsmaßstab, nicht die tatsächlichen Energieflüsse (@sec-kontext).
+[Zum Projekt Am Bichl III](Kapitel/07-am-bichl.qmd)
+:::
+::: {.peq-project-card}
+### RUGInnovation
 
-## Anwendung und wissenschaftliche Grundlage
+[Sanierung]{.peq-tag .peq-tag-sanierung} [Wärmeversorgung]{.peq-tag .peq-tag-waerme} [Photovoltaik]{.peq-tag .peq-tag-pv}
 
-Das [PEExcel-Nachweistool](https://simonschaluppe.github.io/peexcel/) ermöglicht die strukturierte Nachweisführung (@sec-anwendung).
+Gebäudehülle, erneuerbare Wärme und Stromerzeugung werden gemeinsam betrachtet: ein Einblick in die Bewertung eines bestehenden Wohnquartiers.
 
-Die Methodik beruht auf wissenschaftlichen Arbeiten zur quantitativen Definition und Bewertung von Plus-Energie-Quartieren [@schneider2026thesis; @schneider2023context; @schneider2025declaration]. Da die Zielwerte von nationalen Energie- und Klimaszenarien abhängen, ist ihre **dokumentierte Fortschreibung** Bestandteil des methodischen Ansatzes.
+[Zum Projekt RUGInnovation](Kapitel/07-ruginnovation.qmd)
+:::
+::: {.peq-project-card}
+### Campo Breitenlee
 
-Dieser Hintergrundbericht legt die Herleitungen, Annahmen und Grenzen des Standards offen. Eine kompakte Einführung für Interessierte bietet die klimaaktiv-Broschüre [@klimaaktiv2026peq]; Angaben zum Bericht und seinem Geltungsbereich finden sich [hier](about.qmd).
+[Neubau]{.peq-tag} [Mobilität]{.peq-tag .peq-tag-mobilitaet} [Nutzungsmix]{.peq-tag}
+
+Wie hängen Mobilität, unterschiedliche Nutzungen und Nutzungsdichten zusammen? Das nächste Projektporträt widmet sich dieser Planungsfrage; die Auswertung ist in Vorbereitung.
+
+[Zum Projektstand Campo Breitenlee](Kapitel/07-campo-breitenlee.qmd)
+:::
+:::
+
+## Welche Qualität wird bewertet?
+
+| Qualitätsstufe | Bewertungsumfang |
+|---|---|
+| **Plus-Energie-Quartier** | Primärenergiebilanz des Gebäudebetriebs |
+| **Plus-Energie-Quartier mit Mobilität** | Zusätzlich die zugeordnete motorisierte Individualmobilität |
+| **Klimaneutrales Plus-Energie-Quartier** | Zusätzlich die Einhaltung eines Lebenszyklus-Treibhausgasbudgets |
+
+Die Anforderungen berücksichtigen den Kontext des Projekts. Eine positive bewertete Bilanz bedeutet deshalb nicht automatisch Energieautarkie. [Qualitätsstufen, Anforderungen und Aussagegrenzen](Kapitel/02-standard.qmd) erläutern den Maßstab.
+
+## Von der Planung zur überprüften Umsetzung
+
+Die **Planungsdeklaration** bewertet ein untersuchtes Konzept. Die **Fertigstellungsdeklaration** gleicht die Bewertung mit dem ausgeführten Projekt ab. Eine **Betriebsdeklaration** ergänzt die Nachweise um Messdaten. Qualitätsstufe und Projektphase werden dabei getrennt ausgewiesen.
+
+[Deklaration und Projektphasen](Kapitel/07-anwendung.qmd) · [Einstieg und Kontakt](Kapitel/07-einstieg.qmd)
+
+## Wissenschaftliche Grundlagen und Nachweistool
+
+Die [wissenschaftlichen Grundlagen](Kapitel/03-methodik.qmd) legen Herleitungen, Annahmen und Grenzen offen. Nationale Energie- und Klimaziele werden auf Sektoren und Quartiere übertragen; das konkrete Projekt wird anhand seiner Energie- und Emissionsbilanz bewertet. Kontextfaktoren verändern den Bewertungsmaßstab, nicht die tatsächlichen Energieflüsse.
+
+Das [PEExcel-Nachweistool](https://simonschaluppe.github.io/peexcel/) unterstützt Modellierung, Variantenvergleich und technische Nachweisführung. Seine Wissensplattform erläutert Bedienung und Ergebnisanalyse.
+
+::: {.callout-note appearance="simple"}
+{{< var versionstyp >}} vom {{< var versionsdatum >}}. Die wissenschaftliche Grundlage und der Geltungsbereich sind unter [Über diesen Bericht](about.qmd) dokumentiert [@schneider2026thesis; @schneider2023context; @schneider2025declaration]. Eine ergänzende Einführung bietet die klimaaktiv-Broschüre [@klimaaktiv2026peq].
+:::

@@ -1,4 +1,4 @@
-# Ergebnisse verstehen {#sec-ergebnisse}
+# Aussagekraft der Ergebnisse {#sec-ergebnisse}
 
 ::: {.lead}
 Von der Zielerreichung zur nachvollziehbaren Planungsentscheidung
@@ -17,11 +17,7 @@ Die Ergebnisdarstellung stellt Energiebedarf und Energieaufbringung gegenüber u
 
 
 
-::: {.callout-note appearance="simple" icon=false title="Abbildungsvorschlag E2 · Bilanzzerlegung (Plotly)"}
-**Interaktives Diagramm:** Energiebilanz vor Kontext → Dichtegutschrift/-lastschrift → Mobilitätsbudget → Sanierungsgutschrift → bewerteter Saldo. Tooltips mit Definition, Einheit, Vorzeichen und Quelle. Für PDF eine statische Fassung vorsehen.
 
-<!-- ![Primärenergie und Kontext](../Abbildungen/anwendung/bilanzzerlegung.svg){#fig-bilanzzerlegung width="100%"} -->
-:::
 
 ![Exemplarische Primärenergiebilanzen eines Plus-Energie-Quartiers mit und ohne Berücksichtigung der Mobilität.](../Abbildungen/energiebilanz_erklaert.svg){#fig-energiebilanz-erklaert width="95%"}
 

@@ -1,11 +1,11 @@
 
-# Deklaration von Bauprojekten {#sec-anwendung}
+# Deklaration und Projektphasen {#sec-anwendung}
 
 ::: {.lead}
 Vom untersuchten Konzept über die realisierte Lösung bis zum nachgewiesenen Betrieb
 :::
 
-Der klimaaktiv Standard kann in unterschiedlichen Projektphasen angewendet werden. Dabei sind zwei Fragen zu unterscheiden: **Welche Qualitätsstufe wird rechnerisch erreicht?** Und **wie belastbar ist der zugrunde liegende Projektstand?** Die Qualitätsstufen beschreibt [Der Standard](02-standard.qmd); die Deklarationsphase kennzeichnet den Stand der Nachweisführung.
+Der klimaaktiv Standard kann in unterschiedlichen Projektphasen angewendet werden. Dabei sind zwei Fragen zu unterscheiden: **Welche Qualitätsstufe wird rechnerisch erreicht?** Und **wie belastbar ist der zugrunde liegende Projektstand?** Die Qualitätsstufen beschreibt [Qualitätsstufen und Anforderungen](02-standard.qmd); die Deklarationsphase kennzeichnet den Stand der Nachweisführung.
 
 ## Drei Deklarationsphasen
 
@@ -120,7 +120,7 @@ Die Nachweisführung bündelt Angaben aus Architektur, Bauphysik, Haustechnik, M
 
 Für Variantenvergleiche sind Quartiersabgrenzung, Nutzungsumfang, Flächenbezüge und Bewertungsstand konsistent zu halten. Werden sie verändert, muss die Auswirkung auf Bedarf, Kontextfaktoren und zugeteilte Budgets kenntlich gemacht werden. Die Interpretation der Ergebnisse wird unter @sec-ergebnisse erläutert.
 
-## [](../Abbildungen/logo.svg) PEExcel als Nachweiswerkzeug
+## PEExcel als Nachweiswerkzeug
 
 Die Berechnungen und Variantenvergleiche werden mit dem [PEExcel-Nachweistool](https://simonschaluppe.github.io/peexcel/) unterstützt. **Bedienung, Datenmodell, Auswertungsfunktionen, Softwareversionen und technische Modellimplementierung** sind auf der eigenständigen Toolwebsite beschrieben.
 

@@ -1,34 +1,21 @@
 # Praxisbeispiele {#sec-praxisbeispiele}
 
 ::: {.lead}
-Was die Bewertungsregeln für unterschiedliche Quartiere bedeuten
+Konkrete Planungsfragen, nachvollziehbare Ergebnisse und Erfahrungen aus der Umsetzung
 :::
 
+Die Projekte zeigen unterschiedliche Anwendungen des Standards. Qualitätsstufe, Deklarationsphase und Berechnungsstand werden jeweils getrennt angegeben. Ein untersuchtes Potenzial ist noch kein Nachweis einer umgesetzten Qualität.
 
-![Vergleich exemplarischer Quartierstypologien anhand ihrer Primärenergiebedarfe, Energieaufbringung und Kontextkomponenten.](../Abbildungen/beispiele.svg){#fig-quartierstypologien-vergleich width="100%"}
+| Projekt | Planungsfrage | Dokumentationsstand |
+|---|---|---|
+| [Am Bichl III](07-am-bichl.qmd) | Wie lassen sich ambitionierte Energieziele im Wohnneubau bis zur Fertigstellung sichern? | Fertigstellung, Bewertungsumfang Gebäudebetrieb |
+| [RUGInnovation](07-ruginnovation.qmd) | Wie wirken Sanierung, erneuerbare Wärme und Photovoltaik zusammen? | Kurzporträt; vertiefte Projektauswertung folgt |
+| [Campo Breitenlee](07-campo-breitenlee.qmd) | Welche Rolle spielen Mobilität, Nutzungsmix und Nutzungsdichte im Neubau? | Projektporträt in Vorbereitung |
 
+## Unterschiedliche Ausgangssituationen
 
-Die Beispiele illustrieren unterschiedliche Planungsaufgaben: Die zusätzliche Anforderung an ein Neubau-Quartier mit niedriger baulicher Dichte, die Herausforderungen im Kontext des hochverdichteten gemischten Neubaus und die energetische Sanierung eines bestehenden Wohnquartiers. 
+Niedrige bauliche Dichte, gemischte Nutzungen und bestehende Bausubstanz führen zu unterschiedlichen Planungsaufgaben. Die Kontextfaktoren berücksichtigen diese Voraussetzungen bei der Bewertung. Die tatsächlich erreichten Ergebnisse hängen von den konkreten Maßnahmen ab.
 
-## Am Bichl III – Dichte als zusätzliche Anforderung
+![Vergleich exemplarischer Quartierstypologien anhand ihrer Primärenergiebedarfe, Energieaufbringung und Kontextkomponenten. Die Illustration ersetzt nicht den jeweiligen Projektnachweis.](../Abbildungen/beispiele.svg){#fig-quartierstypologien-vergleich width="100%"}
 
-Am Bichl III wurde im Oktober 2026 als erstes Quartier in Österreich die ``🏗️ Fertigsstellungsdeklaration Plus-Energie-Quartier`` verliehen. Der hier dokumentierte Deklarationsumfang umfasst die Betriebsenergie.
-
-Das Beispiel verdeutlicht die Wirkung des Dichtekontexts: Bei geringer baulicher Dichte wird ein zusätzlicher energetischer Beitrag verlangt. Im Fall von Am Bichl III konnte diese Anforderung durch die vorgesehene Flexibilität beim Heizen und Kühlen kompensiert werden.
-
-
-## RUGInnovation – Sanierung und integrierte Energieversorgung
-
-Das Wiener Projekt RUGInnovation kombiniert die Sanierung einer Wohnanlage mit einer veränderten Energieversorgung und Photovoltaik auf Dach- und Fassadenflächen. Dokumentiert sind unter anderem Arbeiten an Fassade, Dach und Fenstern, eine Grundwasserwärmepumpe sowie Mobilitätsmaßnahmen [@klimaaktiv2026peq, S. 15–19].
-
-Der Fall zeigt, wie Gebäudehülle, Wärmeversorgung, erneuerbare Erzeugung und Mobilität gemeinsam wirken. Die Sanierungsgutschrift entschärft die energetische Anforderung; tatsächliche Einsparungen entstehen dagegen durch die umgesetzten Maßnahmen. Deshalb sollten zunächst Betriebsenergie, danach die Erweiterung um Mobilität und schließlich die baulichen THG-Beiträge getrennt betrachtet werden.
-
-
-<!-- ![RUGInnovation: Quartier und Energieversorgung](../Abbildungen/praxis/ruginnovation-projekt.svg){#fig-rug-projekt width="100%"} -->
-
-::: {.callout-note appearance="simple" icon=false title="Abbildungsvorschlag P2 · RUGInnovation – drei Bilanzebenen"}
-**Plotly:** Betriebsenergie → inklusive MIV → THG-Lebenszyklusbewertung. Einmal mit tatsächlichem Datenstand und geeigneten Anmerkungen zu Sanierung, PV, Wärmeversorgung und Budget; für PDF statischer Export. Die drei Stufen nur zeigen, soweit dafür freigegebene Berechnungen vorliegen.
-
-<!-- ![RUGInnovation: Energie- und THG-Bilanz](../Abbildungen/praxis/ruginnovation-bilanz.svg){#fig-rug-bilanz width="100%"} -->
-:::
-
+Die methodische Einordnung erläutern die [Qualitätsstufen und Anforderungen](02-standard.qmd). Technische Modellierung und Ergebnisanalyse beschreibt die [PEExcel-Wissensplattform](https://simonschaluppe.github.io/peexcel/).

@@ -1,8 +1,18 @@
-# Noch ein Standard? {#sec-einfuehrung}
+# Nutzen und Anwendung {#sec-einfuehrung}
 
 ::: {.lead}
 Von klimaneutralem Bauen zu quantitativen Anforderungen an Gebäude und Quartiere
 :::
+
+## Welche Entscheidungen unterstützt die Bewertung?
+
+Für **Gemeinden** macht der Standard Energie- und Klimaziele als Anforderungen an konkrete Vorhaben überprüfbar. Er unterstützt die Abstimmung zwischen räumlicher Entwicklung, Energieversorgung und Mobilität.
+
+Für **Bauträger und Projektentwicklung** hilft die frühe Bewertung, erforderliche Maßnahmen und Zielkonflikte zu erkennen. Varianten lassen sich anhand eines gemeinsamen Maßstabs vergleichen; wichtige Qualitäten können über den Planungsverlauf hinweg dokumentiert werden.
+
+Für **Fachplanende und Kompetenzpartner:innen** verbindet das Energie- und Bilanzmodell Beiträge aus Architektur, Bauphysik, Versorgung und Mobilität. Die Bewertung zeigt, welche Annahmen für die Zielerreichung entscheidend sind.
+
+[Am Bichl III](07-am-bichl.qmd) veranschaulicht den Abgleich zwischen Planung und Fertigstellung. [Weitere Praxisbeispiele](07-praxisbeispiele.qmd) behandeln Sanierung und Mobilität. Bei schrittweisen Maßnahmen helfen [Sanierungsfahrpläne](07-renovierungsfahrplan.qmd), den Entwicklungspfad zu beschreiben.
 
 ## Herausforderungen des klimaneutralen Bauens
 

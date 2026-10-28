@@ -1,0 +1,23 @@
+# RUGInnovation {#sec-ruginnovation}
+
+::: {.lead}
+Sanierung und erneuerbare Energieversorgung gemeinsam betrachten
+:::
+
+[Sanierung]{.peq-tag .peq-tag-sanierung} [Wärmeversorgung]{.peq-tag .peq-tag-waerme} [Photovoltaik]{.peq-tag .peq-tag-pv}
+
+Das Wiener Projekt RUGInnovation an der Rugierstraße verbindet die Sanierung einer Wohnanlage mit einer veränderten Energieversorgung und Photovoltaik auf Dach- und Fassadenflächen. Dokumentiert sind Arbeiten an Fassade, Dach und Fenstern, eine Grundwasserwärmepumpe sowie Mobilitätsmaßnahmen [@klimaaktiv2026peq, S. 15–19].
+
+## Die Planungsfrage
+
+Wie lassen sich bestehende Gebäude in Richtung eines klimaneutralen Plus-Energie-Quartiers weiterentwickeln? Gebäudehülle, Wärmeversorgung, lokale Stromerzeugung und Mobilität sind dafür gemeinsam zu betrachten.
+
+## Was das Beispiel veranschaulicht
+
+Der Sanierungskontext berücksichtigt die besonderen Voraussetzungen des Bestands bei der energetischen Anforderung. Tatsächliche Einsparungen entstehen durch die baulichen und technischen Maßnahmen. Betriebsenergie, Mobilität und Lebenszyklusemissionen müssen dabei getrennt ausgewiesen werden.
+
+::: {.callout-note title="Stand des Projektporträts"}
+Dieses Kurzporträt basiert auf der veröffentlichten Projektbeschreibung. Auditbasierte Kennzahlen, Deklarationsphase und erreichte Qualitätsstufe werden mit der vertieften Auswertung ergänzt. Die genannte Zielrichtung ist keine Bestätigung einer Klimaneutralitätsdeklaration.
+:::
+
+[Sanierungsfahrpläne](07-renovierungsfahrplan.qmd) · [Sanierungskontext](05-kontext-sanierung.qmd) · [Alle Praxisbeispiele](07-praxisbeispiele.qmd)
