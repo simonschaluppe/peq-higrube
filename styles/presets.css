@@ -2,3 +2,28 @@
 .preset-anhang th, .preset-anhang td { vertical-align: top; overflow-wrap: anywhere; }
 .preset-anhang code { white-space: normal; overflow-wrap: anywhere; }
 .preset-anhang .callout-body { overflow-x: auto; }
+
+/* Praxisorientierter Einstieg: responsive, auch ohne Karten verständlich. */
+.peq-project-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25rem; margin: 1.5rem 0; }
+.peq-project-card { border-top: 3px solid #28746b; padding: .75rem .9rem; background: #f3f7f6; }
+.peq-project-card h3 { margin-top: .35rem; font-size: 1.2rem; }
+.peq-project-card p { font-size: .95rem; }
+.peq-project-card img { width: 100%; height: auto; }
+.peq-tag { display: inline-flex; align-items: center; box-sizing: border-box; height: 1.9rem; line-height: 1.2; font-weight: 400; vertical-align: middle; padding: .2rem .65rem; margin: .15rem .2rem .6rem 0; border: 1px solid #bdd2cd; border-radius: 1rem; color: #205e56; font-size: .85rem; }
+@media (max-width: 1000px) { .peq-project-grid { grid-template-columns: 1fr; } }
+@media print { .peq-project-grid { display: block; } .peq-project-card { break-inside: avoid; } }
+
+/* Themenfarben aus den PEQ-Grafiken; dunkle Schrift auf hellen Flächen. */
+.peq-tag-wohnen { background: #ED7D31; border-color: #ED7D31; color: #241305; }
+.peq-tag-pv { background: #5FB564; border-color: #5FB564; color: #102b12; }
+.peq-tag-flex { background: #EEFF49; border-color: #d3e32f; color: #283000; }
+.peq-tag-standard { background: #70204c; border-color: #70204c; color: white; display: inline-flex; align-items: center; gap: .35rem; text-decoration: none; }
+.peq-tag-standard:hover { color: white; background: #561839; }
+.peq-label-logo { width: 1.35rem; height: 1.35rem; object-fit: contain; margin: 0; vertical-align: middle; }
+.peq-project-labels p { margin-bottom: .25rem; }
+.footnotes { font-size: .82rem; color: #595959; }
+
+.peq-tag-sanierung { background: #3BACBE; border-color: #3BACBE; color: #08292e; }
+.peq-tag-waerme { background: #A9260B; border-color: #A9260B; color: white; }
+.peq-tag-mobilitaet { background: #F59C00; border-color: #F59C00; color: #2e1b00; }
+.peq-project-card .peq-tag { font-size: .78rem; }
