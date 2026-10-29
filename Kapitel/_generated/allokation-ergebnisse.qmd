@@ -3,8 +3,8 @@
 | Referenz | 149 | 149.0 | 0.0 | 0.0 |
 | 20 % Freiflächen-PV | 149 | 119.2 | 29.8 | 20.0 |
 | 60 % MIV | 149 | 149.0 | 0.0 | 0.0 |
-| 40 % MIV: Konflikt | 149 | 149.0 | 0.0 | 0.0 |
-| H₂ vollständig angerechnet | 149 | 149.0 | 0.0 | 0.0 |
+| 40 % MIV | 149 | 149.0 | 0.0 | 0.0 |
+| 100 % Freiflächen-PV | 149 | 0.0 | 149.0 | 100.0 |
 
 : PV-Aufteilung in PJ Strom/a; Freiflächenanteil bezogen auf die gesamte PV-Erzeugung. {#tbl-allokation-pv}
 
@@ -13,17 +13,17 @@
 | Referenz | 90 | 18.0 | 72.0 | 0 | 80.0 |
 | 20 % Freiflächen-PV | 90 | 18.0 | 72.0 | 0 | 80.0 |
 | 60 % MIV | 90 | 36.0 | 54.0 | 0 | 60.0 |
-| 40 % MIV: Konflikt | 90 | 54.0 | 36.0 | 0 | 40.0 |
-| H₂ vollständig angerechnet | 90 | 18.0 | 72.0 | 0 | 80.0 |
+| 40 % MIV | 90 | 54.0 | 36.0 | 0 | 40.0 |
+| 100 % Freiflächen-PV | 90 | 18.0 | 72.0 | 0 | 80.0 |
 
 : Verkehrsaufteilung in PJ Strom/a; MIV-Anteil bezogen auf den elektrischen Verkehrsbedarf. {#tbl-allokation-verkehr}
 
-| Variante | H₂-Anrechnung [%] | MIV-Budget | Saldo | Zentraler Rest | Vorrang gedeckt |
-| --- | --- | --- | --- | --- | --- |
-| Referenz | 0 | 24.0 | -7.0 | 0.0 | ja |
-| 20 % Freiflächen-PV | 0 | 24.0 | -36.8 | 0.0 | ja |
-| 60 % MIV | 0 | 6.0 | -7.0 | 0.0 | ja |
-| 40 % MIV: Konflikt | 0 | 0.0 | 5.0 | -12.0 | nein |
-| H₂ vollständig angerechnet | 100 | 28.0 | -3.0 | 0.0 | ja |
+| Variante | Restdeckung | Saldo | Zentraler Fehlbetrag |
+| --- | --- | --- | --- |
+| Referenz | 31.0 | 0.0 | 0.0 |
+| 20 % Freiflächen-PV | 60.8 | 0.0 | 0.0 |
+| 60 % MIV | 13.0 | 0.0 | 0.0 |
+| 40 % MIV | -5.0 | 0.0 | 5.0 |
+| 100 % Freiflächen-PV | 180.0 | 0.0 | 0.0 |
 
-: Allokationsergebnisse in PJ Strom/a. Negativer zentraler Rest kennzeichnet ungedeckte Vorrangbedarfe. {#tbl-allokation-vorlaeufig}
+: Allokationsergebnisse in PJ Strom/a. Restdeckung ist vorzeichenbehaftet; ein zentraler Fehlbetrag wird durch Gebäude-PV ausgeglichen. {#tbl-allokation-vorlaeufig}

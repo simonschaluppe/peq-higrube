@@ -1,21 +1,22 @@
 # Sektorale Szenarien und Allokationsstruktur
 
-Stand 23.10.2026. Die geltende Streicher-basierte Kalibrierung 2023 bleibt erhalten. Transition 2040 ist eine laufende Rekalibrierung. Das neue `allokation.ipynb` berechnet ein vorläufiges nationales **elektrisches** MIV-Budget und den zugehörigen Gebäudesektorsaldo, noch keine neue spezifische PE-Gutschrift.
+Stand 29.10.2026. Die historische PE-Kalibrierung 2023 bleibt erhalten; die elektrische Transition-Allokation verwendet die dokumentierten Modellannahmen vom 29.10.2026.
 
 ## Wissenschaftlicher Allokationsanhang
 
-`allokation.ipynb` enthält die vollständige fachliche Rechnung direkt in ausführbaren Zellen: Quellenkontrolle, Parameter, zentrale Erzeugung, Prioritäten, MIV-Zuteilung, Gebäudesaldo, Primärenergie-Schnittstelle und Grenzfallkontrollen. Die Datei ist als eigener Quarto-Anhang eingebunden. Die Ausführung benötigt Python mit pandas, numpy, matplotlib, nbformat, nbclient und ipykernel:
+`allokation.ipynb` enthält die fachliche Rechnung. Freiflächen-PV gehört zu den zentralen Großkraftwerken; 4 PJ H₂ und 1 PJ fossiler Strom sind vollständig enthalten. Der Nettoexport wird im Modell mit 5 statt 7 PJ/a angesetzt. Die CSV-Quelldaten bleiben unverändert; Quellrest −2 und Modellrest 0 werden separat dokumentiert.
+
+Bei 80 % MIV und 0 % Freiflächen-PV ergeben sich 31 PJ/a zentrale Restdeckung und 0 PJ/a Top-Down-Saldo Gebäude + MIV: 108 + 72 = 149 + 31. Die gesamte Restdeckung wird ohne MIV-Obergrenze zugeordnet. Negative zentrale Reste werden als Fehlbetrag sichtbar und durch Gebäude-PV ausgeglichen. PV- und Verkehrsanteile bleiben Modellvarianten.
 
 ```powershell
 python -m Berechnungen.sektorenmodell.execute_notebook --notebook allokation
-quarto render --to html
+python -m unittest Berechnungen.sektorenmodell.test_allocation -v
+quarto render --to html --no-execute
 ```
 
-Die Parameterzelle ist die maßgebliche Eingabe. Verkehrsanteile beziehen sich auf elektrische Energie, nicht auf Personenkilometer. Das Beispiel setzt 80/20/0 % MIV/ÖPNV/übrigen Verkehr und 0 % PV außerhalb von Gebäuden; diese Werte sind **keine empirisch belegten oder normativ beschlossenen Vorgaben**. Wasserstoff-Rückverstromung ist zunächst nicht budgetfähig, die normierte Geothermie-/sonstige-Position dagegen vorläufig vollständig. Industrie, Landwirtschaft, Energiebranche, Umwandlung, Verluste und Exporte werden einmalig zentral priorisiert. Andere PV bleibt separat unzugeordnet.
+`outputs/allokation/allokation.json` verwendet Schema 2: `central_credit_pj` ersetzt das bisherige gekappte `miv_budget_pj`. `available_credit_pj` und `central_shortfall_pj` sind die nichtnegativen Anzeigegrößen. Alte Anrechnungsparameter werden abgewiesen; H₂-/Fossilanrechnung ist fest. Annahmen, Quellen-Hashes und beide Bilanzreste werden exportiert. Die abhängigen Gebäude-Notebooks sind anschließend neu auszuführen. Ein heutiger PE-Faktorensatz und eine neue nutzungsbezogene PE-Gutschrift bleiben offen.
 
-Im Beispiel ergeben sich 24 PJ/a elektrisches MIV-Budget und −7 PJ/a Gebäudesaldo einschließlich MIV; bei voller Anrechnung der Rückverstromung 28 beziehungsweise −3 PJ/a. Der Quellrest −2 PJ wird in der vollständigen Zuordnungsbilanz erhalten. Negative zentrale Reste werden als Konflikt gekennzeichnet; das Budget ist nicht negativ und nicht größer als der MIV-Bedarf.
-
-`outputs/allokation/` enthält Quellen-Hashes, Parameter, Ergebnisse, fünf Vergleichsfälle und die Abbildung. `Kapitel/_generated/allokation-ergebnisse.qmd` wird vom Notebook erzeugt. Nach Parameteränderungen sind auch die erläuternden Beispielzahlen im Haupttext und Notebook redaktionell zu prüfen; sie beschreiben den dokumentierten Referenzfall und sind keine dynamischen Textfelder. Ein heutiger PE-Faktorensatz bleibt offen. Keine Änderung am Typologie-Excel, keine Gebäudesektor-Aggregation und keine neue Dichtekalibrierung.
+Die folgenden Abschnitte beschreiben die ursprüngliche Quellaufbereitung und deren separate Szenario-/Sankey-Schnittstellen; deren Quellenwerte bleiben unverändert.
 
 ## Reproduktion
 

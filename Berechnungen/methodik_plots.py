@@ -51,20 +51,20 @@ def allocation_figures(variants, central_steps):
         decreasing=dict(marker_color=COLORS['gebaeude']),increasing=dict(marker_color=COLORS['wind']),
         totals=dict(marker_color=COLORS['mobility_credit']),textposition='outside'))
     fig.update_xaxes(tickangle=-30)
-    save_figure(format_figure(fig,'Vom zentralen Strompool zum MIV-Budget'),OUT/'zentraler_pool.html')
+    save_figure(format_figure(fig,'Von zentralen Großkraftwerken zur Restdeckung'),OUT/'zentraler_pool.html')
     def short_label(label):
         return label.replace('20 % Freiflächen-PV','20 %<br>Freiflächen-PV').replace('40 % MIV: Konflikt','40 % MIV:<br>Konflikt').replace('H₂ vollständig angerechnet','H₂ vollständig<br>angerechnet')
     x=[(short_label(row['Variante']),side) for row in variants for side in ['Bedarf','Deckung']]
     fig=go.Figure()
     for key,label,color,side in [('Gebäude','Gebäudestrombedarf','gebaeude','Bedarf'),('MIV','MIV-Strombedarf','miv','Bedarf'),
-                               ('PV Gebäude','Gebäude-PV','pv','Deckung'),('MIV-Budget','Mobilitätsgutschrift (Strom)','mobility_credit','Deckung')]:
+                               ('PV Gebäude','Gebäude-PV','pv','Deckung'),('Verfügbare Restdeckung','Zentrale Restdeckung','mobility_credit','Deckung'),('Zentraler Fehlbetrag','Zentraler Fehlbetrag','target','Bedarf')]:
         fig.add_bar(name=label,x=[[a for a,b in x],[b for a,b in x]],
                     y=[row[key] if s==side else 0 for row in variants for s in ['Bedarf','Deckung']],marker_color=COLORS[color])
     fig.update_layout(barmode='stack')
     save_figure(format_figure(fig,'Gebäude und MIV: Bedarf und zugeordnete Deckung',height=660),OUT/'allokation_deckung.html')
     fig=go.Figure()
     fig.add_bar(name='Saldo Deckung − Bedarf',x=[short_label(r['Variante']) for r in variants],y=[r['Saldo'] for r in variants],marker_color=COLORS['saldo'])
-    fig.add_bar(name='Zentraler Rest / Fehlbetrag',x=[short_label(r['Variante']) for r in variants],y=[r['Zentraler Rest'] for r in variants],marker_color=COLORS['target'])
+    fig.add_bar(name='Zentraler Fehlbetrag',x=[short_label(r['Variante']) for r in variants],y=[r['Zentraler Fehlbetrag'] for r in variants],marker_color=COLORS['target'])
     fig.update_layout(barmode='group')
     save_figure(format_figure(fig,'Saldo und zentrale Unterdeckung je Variante'),OUT/'allokation_saldo.html')
 
@@ -90,7 +90,7 @@ def building_figures(types, comparison):
     fig.update_layout(margin=dict(t=130,b=240),legend=dict(y=-.49))
     save_figure(fig,OUT/'typen_deckung.html')
     fig=go.Figure()
-    for col,label,c,pattern in [('Bedarf','Gebäude + MIV: Bedarf','gebaeude',''),('Deckung','Gebäude-PV + MIV-Budget','pv',''),
+    for col,label,c,pattern in [('Bedarf','Gebäude + MIV: Bedarf','gebaeude',''),('Deckung','Gebäude-PV + zentrale Restdeckung','pv',''),
                               ('Dichte','Virtuelle Dichtekorrektur','density','/'),('Saldo','Saldo einschließlich ausgewiesener Korrektur','saldo','')]:
         fig.add_bar(name=label,x=comparison.Modell,y=comparison[col],marker=dict(color=COLORS[c],pattern_shape=pattern))
     fig.update_layout(barmode='group')

@@ -11,3 +11,23 @@ Dieser Anhang enthält die Detailtabellen zum Szenariovergleich in @sec-zielszen
 {{< include ../Daten/sektorenmodell/endenergie_vergleich.md >}}
 
 Die Datenbasis für WEM/WAM 2025 verwendet REP-0995, Tabelle E (S. 12). Die in der Datenlieferung dokumentierte Abweichung zu Tabelle 19 wird nicht durch eine Mischung der beiden Tabellen aufgelöst. Transition verwendet REP-0880, Tabellen 15 und 16 [@uba2025szenarien; @uba2023transition].
+
+
+## Quellbilanz und Modellannahme der Allokation {#sec-modellbilanz-2040}
+
+Die Bedarfskomponenten von Transition summieren sich auf 452 PJ/a; die veröffentlichte Gesamtsumme beträgt 450 PJ/a. Mit 457 PJ/a Erzeugung und 7 PJ/a Nettoexport ergibt die Komponentenbilanz einen Rest von −2 PJ/a. Die Ursache der Differenz zwischen Komponenten und Gesamtsumme wird hier nicht als Rundung vorausgesetzt.
+
+| Position | Quelle / Komponenten | Allokationsmodell |
+|---|---:|---:|
+| Erzeugung | 457 | 457 |
+| Bedarfskomponenten | 452 | 452 |
+| Nettoexport | 7 | 5 |
+| Bilanzrest | −2 | 0 |
+
+: Überleitung in PJ Strom/a. Explizite Modellannahme vom 29.10.2026: 5 PJ/a Nettoexport zur Bilanzschließung; keine Änderung der Originalquelle. H₂-Rückverstromung (4 PJ/a) und fossiler Strom (1 PJ/a) bleiben vollständig als Deckung enthalten. {#tbl-exportannahme}
+
+```{=html}
+<iframe src="../Abbildungen/methodik/bilanzreste.html" title="Quellwerte: Komponenten, Gesamtsummen und Bilanzreste" style="width:100%;height:850px;border:0" loading="lazy"></iframe>
+```
+
+Die Grafik zeigt die ursprünglichen Quellwerte und deren Bilanzidentitäten. Die Exportannahme wird ausschließlich im Allokationsmodell und im Kalibrierungsdashboard angewendet.

@@ -1,6 +1,6 @@
-Variante,PV gesamt,PV Gebäude,PV Freifläche,Verkehr gesamt,ÖPNV,MIV,Übriger Verkehr,MIV-Anteil [%],Freiflächen-Anteil [%],H₂-Anrechnung [%],Gebäude,MIV-Budget,Saldo,Zentraler Rest,Vorrang gedeckt
-Referenz,149,149.0,0.0,90,17.999999999999996,72.0,0,80.0,0.0,0,108,24.000000000000004,-7.0,0.0,True
-20 % Freiflächen-PV,149,119.2,29.8,90,17.999999999999996,72.0,0,80.0,20.0,0,108,24.000000000000004,-36.8,0.0,True
-60 % MIV,149,149.0,0.0,90,36.0,54.0,0,60.0,0.0,0,108,6.0,-7.0,0.0,True
-40 % MIV: Konflikt,149,149.0,0.0,90,54.0,36.0,0,40.0,0.0,0,108,0.0,5.0,-12.0,False
-H₂ vollständig angerechnet,149,149.0,0.0,90,17.999999999999996,72.0,0,80.0,0.0,100,108,28.000000000000004,-3.0,0.0,True
+Variante,PV gesamt,PV Gebäude,PV Freifläche,Verkehr gesamt,ÖPNV,MIV,Übriger Verkehr,MIV-Anteil [%],Freiflächen-Anteil [%],Gebäude,Restdeckung,Verfügbare Restdeckung,Saldo,Zentraler Fehlbetrag
+Referenz,149,149.0,0.0,90,17.999999999999996,72.0,0,80.0,0.0,108,31.000000000000004,31.000000000000004,0.0,0.0
+20 % Freiflächen-PV,149,119.2,29.8,90,17.999999999999996,72.0,0,80.0,20.0,108,60.80000000000001,60.80000000000001,1.4210854715202004e-14,0.0
+60 % MIV,149,149.0,0.0,90,36.0,54.0,0,60.0,0.0,108,13.0,13.0,0.0,0.0
+40 % MIV,149,149.0,0.0,90,54.0,36.0,0,40.0,0.0,108,-5.0,0.0,0.0,5.0
+100 % Freiflächen-PV,149,0.0,149.0,90,17.999999999999996,72.0,0,80.0,100.0,108,180.0,180.0,0.0,0.0

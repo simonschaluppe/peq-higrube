@@ -85,9 +85,9 @@ Die Bilanzgleichheit allein legt die Parameter nicht notwendigerweise eindeutig 
 
 ## Kalibrierungsstand und Ergebnisvergleich
 
-Unter den Annahmen des Referenzfalls ergeben sich 24 PJ/a elektrisches MIV-Budget und −7 PJ/a für den Gebäudesektorsaldo einschließlich MIV (@sec-allokation-ergebnisse). Die Bottom-up-Rechnung umfasst 603 positiv gewichtete Typen, ihre GFZ-Verteilungen und die Erwartungswerte der historischen Dichtefunktion (@sec-gebaeudesektormodell).
+Unter den Annahmen des Referenzfalls ergeben sich 31 PJ/a zentrale Restdeckung und 0 PJ/a für den Gebäudesektorsaldo einschließlich MIV (@sec-allokation-ergebnisse). Die Bottom-up-Rechnung umfasst 603 positiv gewichtete Typen, ihre GFZ-Verteilungen und die Erwartungswerte der historischen Dichtefunktion (@sec-gebaeudesektormodell).
 
-Der physische Pool-Stromsaldo beträgt −59,25 PJ/a. Einschließlich derselben einmaligen MIV-Zuordnung ergibt sich −107,25 PJ/a, also −100,25 PJ/a gegenüber dem Top-down-Beispiel. Die virtuellen Dichte-Erwartungswerte werden dabei nicht als reale Deckung hinzuaddiert. Der Pool enthält nur PV30/noFlex sowie erhebliche Gas- und Ölmengen. Eine neue Zielwertfunktion lässt sich deshalb nicht allein durch Gleichsetzen dieses Pool-Ergebnisses mit dem nationalen Ziel bestimmen. PEQ-Flächenanteile, energetische Entwicklung der übrigen Typen und alternative PV-Ausstattungen sind zuerst festzulegen.
+Der physische Pool-Stromsaldo beträgt −59,25 PJ/a. Einschließlich derselben einmaligen MIV-Zuordnung ergibt sich −100,25 PJ/a, also −100,25 PJ/a gegenüber dem Top-down-Beispiel. Die virtuellen Dichte-Erwartungswerte werden dabei nicht als reale Deckung hinzuaddiert. Der Pool enthält nur PV30/noFlex sowie erhebliche Gas- und Ölmengen. Eine neue Zielwertfunktion lässt sich deshalb nicht allein durch Gleichsetzen dieses Pool-Ergebnisses mit dem nationalen Ziel bestimmen. PEQ-Flächenanteile, energetische Entwicklung der übrigen Typen und alternative PV-Ausstattungen sind zuerst festzulegen.
 
 ::: {.callout-note title="Geltungsbereich des Entwurfs"}
 Die 2040-Flächenmatrix, Energieaggregation und GFZ-Zuordnung sind berechnet. Die historische Dichtefunktion wird als Referenzansatz ausgewertet. PEQ-Flächenanteile, Versorgungspfade, PE-Faktorversion und typologische Sanierungswerte sind nicht normativ festgelegt. Der Ergebnisvergleich beschreibt diesen Parameterstand.

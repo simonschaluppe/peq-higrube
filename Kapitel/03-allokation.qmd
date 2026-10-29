@@ -1,113 +1,77 @@
 # Sektorale Energieallokation {#sec-allokation}
 
 ::: {.lead}
-Vom nationalen Stromsystem zum Gebäudesektorsaldo und zum Mobilitätsbudget
+Vom nationalen Stromsystem zur Deckung von Gebäude und MIV
 :::
 
-Die Allokation verteilt die Stromerzeugung und den Bedarf aus UBA Transition 2040 auf sektorale Verantwortungsbereiche. Sie liefert zwei verbundene Größen: den Zielsaldo für Gebäude einschließlich MIV und das aus zentraler Erzeugung zugeordnete Mobilitätsbudget. Die Rechnung ist in @sec-allokation-notebook dokumentiert.
+Die Allokation ordnet die Stromerzeugung aus Transition 2040 den sektoralen Bedarfen zu. Gebäude-PV und die verbleibende Deckung aus zentralen Großkraftwerken decken gemeinsam Gebäude und MIV. Die Mobilitätsgutschrift auf Quartiersebene übersetzt diese zentrale Zuordnung in die nutzungsbezogene Bewertung (@sec-kontext-mobilitaet) [@schneider2020lokal; @schneider2023context].
 
-## Begriffe und Bilanzgrößen
+## Begriffe und Zuordnungsregeln
 
-| Begriff | Bedeutung im Modell |
-|---|---|
-| Zentraler Pool | Für die priorisierten Bedarfe angesetzte Nicht-PV-Stromerzeugung; „zentral“ bezeichnet die Allokation, nicht Anlagengröße oder Eigentum. |
-| Budgetfähig | Nach der gewählten Zuordnungsregel für diesen Pool anrechenbar. Der Begriff beschreibt eine Modellentscheidung, keinen Herkunftsnachweis. |
-| Gebäude-PV | Anteil der nationalen PV-Erzeugung, der dem Gebäudesektor zugeordnet wird. |
-| Freiflächen-PV | Im Modell die gesamte PV außerhalb von Gebäuden; sie bleibt als eigener nationaler Pool ausgewiesen. |
-| MIV-Anteil | Anteil des MIV am **elektrischen Energiebedarf** des Verkehrs; kein Wege- oder Personenkilometeranteil. |
-| ÖPNV | Öffentlicher Personenverkehr; eigene Teilmenge des elektrischen Verkehrsbedarfs. Übriger Verkehr wird separat geführt. |
-| MIV-Budget / Mobilitätsgutschrift | Dem MIV zugeteilte Deckung aus dem zentralen Pool in PJ Strom/a. Die nutzungsbezogene PE-Gutschrift ist in @sec-kontext-mobilitaet definiert. |
-| Saldo | Zugeordnete Deckung minus Bedarf; positiv bedeutet Überschuss, negativ Deckungslücke. |
-
-: Glossar der sektoralen Allokation. {#tbl-allokation-glossar}
-
-## Erzeugungszuordnung und Prioritäten
-
-Der Referenzfall ordnet die 149 PJ/a PV vollständig den Gebäuden zu. Freiflächen-PV bleibt in Varianten separat; sie wird nicht in den zentralen Nicht-PV-Pool umgebucht. Diese Regel macht sichtbar, wie sich die Gebäudeaufgabe mit der PV-Zuordnung verändert.
-
-Dem zentralen Pool werden Wasserkraft (173 PJ/a), Windkraft (105), Biomasse (21) und die normierte Position Geothermie/sonstige (4) zugeordnet: zusammen **303 PJ/a**. Wasserstoff-Rückverstromung (4 PJ/a) ist im Referenzfall wegen der nicht dokumentierten Herkunft nicht angerechnet; eine Variante zeigt die vollständige Anrechnung. Fossile Erzeugung (1 PJ/a) bleibt außerhalb des Pools [@uba2023transition, Tab. 16].
-
-::: {.content-visible when-format="html"}
-```{=html}
-<iframe src="../Abbildungen/methodik/zentraler_pool.html" title="Herleitung des zentralen MIV-Budgets" style="width:100%;height:650px;border:0" loading="lazy"></iframe>
-```
-[Grafik separat öffnen](../Abbildungen/methodik/zentraler_pool.html)
-:::
-
-
-Die zentrale Erzeugung deckt zuerst Industrie, Landwirtschaft, Energiebranche, Umwandlung, Netzverluste und Nettoexport sowie ÖPNV und übrigen Verkehr. Bei 20 % ÖPNV und 80 % MIV an 90 PJ/a Verkehrsbedarf verbleiben **24 PJ/a für MIV**. Die Priorität folgt dem Allokationsansatz nach @schneider2020lokal und @schneider2023context; die Mengen stammen aus Transition 2040.
-
-| Position | Ansatz im Referenzfall |
-|---|---|
-| Nicht-PV-Pool | Wasser, Wind, Biomasse, Geothermie/sonstige |
-| PV | 100 % Gebäude, 0 % Freifläche |
-| Verkehr | 80 % MIV, 20 % ÖPNV, 0 % übriger Verkehr |
-| Systempositionen | Einmaliger Abzug von Energiebranche, Umwandlung, Verlusten und Nettoexport |
-| H₂-Rückverstromung | 0 % anrechenbar; Vergleichsvariante mit 100 % |
-
-: Zuordnungsregeln des Referenzfalls. Die PV- und Verkehrsanteile sind Modellannahmen. {#tbl-allokation-datenbedarf}
-
-## Berechnung von Mobilitätsbudget und Gebäudesaldo {#sec-allokation-miv}
-
-Für die Berechnung gelten folgende jährliche Stromgrößen:
-
-| Symbol | Definition | Einheit |
+| Größe | Zeichen | Regel im Modell |
 |---|---|---|
-| $E_{\mathrm{Z}}$ | Angerechnete zentrale Erzeugung | PJ/a |
-| $E_{\mathrm{V}}$ | Summe der priorisierten Bedarfe einschließlich ÖPNV, übrigen Verkehrs und Nettoexports | PJ/a |
-| $E_{\mathrm{MIV}}$ | Elektrischer MIV-Bedarf | PJ/a |
-| $G_{\mathrm{MIV}}$ | Zugeordnetes MIV-Budget | PJ/a |
-| $E_{\mathrm{PV,Geb}}$ | Dem Gebäude zugeordnete PV-Erzeugung | PJ/a |
-| $E_{\mathrm{Geb}}$ | Betriebsstrombedarf des Gebäudesektors | PJ/a |
-| $B_{\mathrm{Geb,Ziel}}$ | Zielsaldo für Gebäude einschließlich MIV | PJ/a |
+| Zentrale Großkraftwerke | $C$ | Gesamte Stromerzeugung außerhalb der Gebäude-PV, einschließlich Freiflächen-PV, 4 PJ H₂ und 1 PJ fossilem Strom. |
+| Gebäude-PV | $P_B=(1-f)P_{PV}$ | Gesamte PV-Erzeugung am Gebäude: Eigenverbrauch und Einspeisung. |
+| Freiflächen-PV | $fP_{PV}$ | Gesamte PV außerhalb von Gebäuden; Teil der zentralen Großkraftwerke. |
+| Vorrangbedarfe | $F$ | Industrie, Landwirtschaft, Energiebranche, Umwandlung, Netzverluste und Nettoexport. |
+| MIV | $D_M=mD_V$ | Anteil $m$ am elektrischen Energiebedarf des Verkehrs insgesamt. |
+| Nicht-MIV-Verkehr | $(1-m)D_V$ | ÖPNV und übriger Verkehr; Deckung aus zentralen Großkraftwerken. |
+| Zentrale Restdeckung | $R$ | Verbleibende Deckung für Gebäude + MIV; Grundlage der Mobilitätsgutschrift. |
+| Gebäudebedarf | $D_B$ | Betriebsstrombedarf des Gebäudesektors. |
 
-Das Budget ist auf den verfügbaren positiven Rest und den MIV-Bedarf begrenzt:
+: Bilanzgrößen und Zuordnung; alle Energiemengen in PJ Strom/a. {#tbl-allokation-glossar}
 
-$$
-G_{\mathrm{MIV}}=\min\left(E_{\mathrm{MIV}},\max(0,E_{\mathrm{Z}}-E_{\mathrm{V}})\right).
-$$ {#eq-miv-restbudget}
+## Restdeckung und Bilanzschluss {#sec-allokation-miv}
 
-Ein negativer Rest $E_{\mathrm{Z}}-E_{\mathrm{V}}$ wird als zentrale Unterdeckung ausgewiesen. Ein Rest oberhalb des MIV-Bedarfs bleibt unverteilt.
+Nach Abzug der Vorrangbedarfe und des Nicht-MIV-Verkehrs wird die gesamte Restdeckung zugeordnet:
 
-$$
-B_{\mathrm{Geb,Ziel}}=E_{\mathrm{PV,Geb}}+G_{\mathrm{MIV}}-E_{\mathrm{Geb}}-E_{\mathrm{MIV}}.
-$$ {#eq-gebaeudesektor-zielsaldo}
+$$R=C-F-(1-m)D_V.$$ {#eq-miv-restbudget}
 
-Im Referenzfall: $149+24-108-72=-7$ PJ/a. Ohne MIV beträgt der Gebäudesaldo $149-108=+41$ PJ/a. Das MIV-Budget von 24 PJ/a entspricht 6,667 TWh/a.
+$$D_B+D_M=P_B+R.$$ {#eq-gebaeudesektor-zielsaldo}
 
-## Quantitative Allokation und Stellschrauben {#sec-allokation-ergebnisse}
+Die Restdeckung ist nicht auf den MIV-Bedarf begrenzt. Gebäude-PV-Überschuss und Restdeckung decken den MIV gemeinsam.^[Der Top-Down-Saldo $P_B+R-D_B-D_M$ beträgt in der geschlossenen Modellbilanz null. Ein negatives $R$ bezeichnet einen zentralen Fehlbetrag, der durch Gebäude-PV ausgeglichen wird; es ist keine negative Stromerzeugung. Ein abweichendes Bottom-Up-Gebäudeszenario kann weiterhin einen positiven oder negativen Saldo aufweisen.]
 
-Die Rechnung verwendet 457 PJ/a Erzeugung, 7 PJ/a Nettoexport und 452 PJ/a Bedarfskomponenten. Der Rest von −2 PJ/a bleibt in der nationalen Zuordnungsbilanz erhalten. Die veröffentlichten Summen und ihre Rundungsreste stehen in @sec-szenariotabellen.
+| Referenzannahme | Wert |
+|---|---:|
+| Gebäude-PV / Freiflächen-PV | 100 % / 0 % |
+| MIV / ÖPNV / übriger Verkehr | 80 % / 20 % / 0 % |
+| H₂- und fossile Stromerzeugung | vollständig enthalten |
+| Nettoexport (Modell) | 5 PJ/a |
 
-Die folgenden Tabellen zeigen **Gesamtmenge und Teilmengen**. Alle Werte sind PJ Strom/a. PV-Anteile beziehen sich auf die nationale PV-Erzeugung; Verkehrsanteile auf den nationalen elektrischen Verkehrsbedarf. Die gewählten Anteile sind Varianten des Modells, keine von UBA veröffentlichten Aufteilungen.
+: Modellannahmen vom 29.10.2026. PV- und Verkehrsanteile sind veränderbare Zuordnungen. {#tbl-allokation-datenbedarf}
 
-{{< include _generated/allokation-ergebnisse.qmd >}}
+Der Modell-Nettoexport beträgt **5 statt 7 PJ/a** der Quelle. Damit decken 457 PJ Erzeugung die 452 PJ Bedarfskomponenten und 5 PJ Export. Die Überleitung ist in @sec-szenariotabellen dokumentiert; die Quelldaten bleiben unverändert.
 
-::: {.content-visible when-format="html"}
+::: {#fig-allokation-restdeckung}
+```{=html}
+<iframe src="../Abbildungen/methodik/zentraler_pool.html" title="Herleitung der zentralen Restdeckung" style="width:100%;height:650px;border:0" loading="lazy"></iframe>
+```
+
+Von 308 PJ/a zentraler Erzeugung verbleiben nach 259 PJ Vorrangbedarfen und 18 PJ ÖPNV **31 PJ/a Restdeckung**. Mengen nach Transition 2040, Export gemäß Modellannahme [@uba2023transition, Tab. 15–16]. [Grafik separat öffnen](../Abbildungen/methodik/zentraler_pool.html).
+:::
+
+Im Referenzfall gilt damit: **108 + 72 = 149 + 31 = 180 PJ/a**. Der Gebäude-PV-Überschuss von 41 PJ/a und die Restdeckung von 31 PJ/a decken gemeinsam die 72 PJ/a MIV.
+
+## Varianten und Stellschrauben {#sec-allokation-ergebnisse}
+
+Mit $f$ als Freiflächenanteil der PV und $m$ als MIV-Anteil am Verkehrsbedarf gilt:
+
+$$R=90m-41+149f.$$
+
+Mehr Freiflächen-PV verschiebt Deckung von Gebäude-PV zu zentralen Großkraftwerken. Ein anderer MIV-Anteil verändert Bedarf und zugeordnete Restdeckung gleich stark. Die gemeinsame Top-Down-Bilanz bleibt geschlossen.
+
+::: {#fig-allokation-deckung}
 ```{=html}
 <iframe src="../Abbildungen/methodik/allokation_deckung.html" title="Bedarf und Deckung von Gebäude und MIV je Variante" style="width:100%;height:690px;border:0" loading="lazy"></iframe>
 ```
-[Grafik separat öffnen](../Abbildungen/methodik/allokation_deckung.html)
+
+Bedarf und Deckung je Variante, in PJ Strom/a. Bei negativem zentralem Rest ist der aus Gebäude-PV zu deckende zentrale Fehlbetrag bedarfsseitig gesondert ausgewiesen. [Grafik separat öffnen](../Abbildungen/methodik/allokation_deckung.html).
 :::
 
-::: {.content-visible when-format="html"}
-```{=html}
-<iframe src="../Abbildungen/methodik/allokation_saldo.html" title="Saldo und zentrale Unterdeckung je Variante" style="width:100%;height:620px;border:0" loading="lazy"></iframe>
-```
-[Grafik separat öffnen](../Abbildungen/methodik/allokation_saldo.html)
-:::
-
-
-Je Variante stehen **Gebäudestrombedarf + MIV-Strombedarf** der Deckung aus **Gebäude-PV + Mobilitätsgutschrift** gegenüber. Das zweite Diagramm zeigt den resultierenden Saldo und einen etwaigen zentralen Fehlbetrag. Der positive Gebäudesaldo der 40-%-MIV-Variante ist daher zusammen mit der zentralen Unterdeckung von 12 PJ/a zu lesen.
-
-Mit $f$ als Freiflächenanteil der PV, $m$ als MIV-Anteil am Verkehr und $h$ als angerechnetem Anteil der H₂-Rückverstromung ergibt sich bei gedeckter Priorität und nicht bindender Budgetobergrenze:
-
-$$G_{\mathrm{MIV}}=90m-48+4h,\qquad B_{\mathrm{Geb,Ziel}}=-7+4h-149f.$$
-
-Eine Änderung des MIV-Anteils verändert Bedarf und Budget im selben Umfang, solange diese Bedingungen gelten. Mehr Freiflächen-PV vermindert dagegen die dem Gebäude zugeordnete Deckung. Die nicht zugeordnete PV bleibt Bestandteil der nationalen Bilanz.
+Die vollständigen Variantentabellen und Bilanzkontrollen stehen in @sec-allokation-notebook.
 
 ## Übergang zur Gebäude- und Quartiersbewertung
 
-Der Gebäudepool erreicht −59,25 PJ/a im Betrieb und −107,25 PJ/a einschließlich derselben MIV-Zuordnung. Der Abstand zum Top-down-Ziel beträgt damit −100,25 PJ/a (@sec-gebaeudebestand). Er kennzeichnet Unterschiede in PV-Erzeugung und Gebäudebedarf der beiden Szenarien.
+Das Gebäudesektormodell wird mit derselben Restdeckung und demselben MIV-Bedarf verglichen. Sein Abstand zum Top-Down-Ziel bleibt **−100,25 PJ/a**; er ergibt sich aus höherem Gebäudebedarf und geringerer PV-Erzeugung (@sec-gebaeudebestand).
 
-Die sektorale Kalibrierung erfolgt auf elektrischer Endenergiebasis. Für den Quartiersnachweis werden die Ergebnisse mit dem dokumentierten heutigen PE-Faktorensatz bewertet. Die nutzungsbezogene Verteilung des Mobilitätsbudgets steht in @sec-kontext-mobilitaet, die Dichte- und Typologiekalibrierung in @sec-kalibrierung. Der Entwurf dokumentiert die verwendeten Annahmen und ihren Ergebnisstand; eine normative Festlegung von PEQ-Flächenanteilen und neuer Dichtefunktion ist darin nicht enthalten.
+Die zentrale Restdeckung bildet die Grundlage für die nutzungsbezogene Mobilitätsgutschrift auf Quartiersebene (@sec-kontext-mobilitaet). Die Umrechnung in Primärenergie benötigt den dokumentierten Faktorensatz; die hier berechneten 31 PJ/a sind elektrische Energie. Die Dichte- und Typologiekalibrierung folgt in @sec-kalibrierung.

@@ -70,7 +70,7 @@ quarto render --to html
 quarto preview --no-render --no-browser --port 4321
 ```
 
-Die gerenderte Seite erlaubt ohne Python-Kernel Änderungen an MIV/übrigem Verkehr (ÖPNV als Rest), Freiflächen-PV (Gebäude-PV als Rest), H₂-Budgetfähigkeit, zusätzlicher Strombedarfssenkung, PV-Erzeugungsskalierung, NGF/BGF sowie den vier Dichteparametern. Sie zeigt Salden, Zielabstand, Prioritätskonflikte, Geometrieklassen und Dichte-Erwartungswerte. JavaScript und Python prüfen dieselbe Referenzrechnung. Ein JSON-Download sichert Parameter, Resultate und Quell-Hashes; er verändert keine Referenzoutputs. `dashboard_template.html` enthält die technische Browseransicht einschließlich der für unmittelbare Interaktion notwendigen Spiegelung der im Notebook definierten Rechnung.
+Die gerenderte Seite erlaubt ohne Python-Kernel Änderungen an MIV/übrigem Verkehr (ÖPNV als Rest), Freiflächen-PV (Gebäude-PV als Rest), zusätzlicher Strombedarfssenkung, PV-Erzeugungsskalierung, NGF/BGF sowie den vier Dichteparametern. Sie zeigt Salden, Zielabstand, Prioritätskonflikte, Geometrieklassen und Dichte-Erwartungswerte. JavaScript und Python prüfen dieselbe Referenzrechnung. Ein JSON-Download sichert Parameter, Resultate und Quell-Hashes; er verändert keine Referenzoutputs. `dashboard_template.html` enthält die technische Browseransicht einschließlich der für unmittelbare Interaktion notwendigen Spiegelung der im Notebook definierten Rechnung.
 
 PV-/Bedarfsskalierung ist keine neue PEExcel-Simulation. Eigenverbrauch, Netzbezug, thermische Energie, PE und THG werden dadurch nicht neu bestimmt. Die physische Ziellücke wird nicht mit virtuellen Dichtewerten geschlossen. PEQ-Anteile oder neue Typenmischungen werden ausschließlich durch belegte Eingaben in der Excel vorbereitet, nicht automatisch geschätzt. Die Zuordnung der aktualisierten Excel wird bei jeder Notebook-Ausführung neu auf die GFZ-Verteilungen angewandt.
 
@@ -101,3 +101,8 @@ Typen sind nach Geometrie und Baualter aufklappbar gruppiert; Einzelzeilen werde
 Je Geometrie stehen drei Balken: 1 Nicht-PEQ typologisch, 2 ausgewählte PEQ typologisch, 3 dieselben PEQ bei Erreichen des GFZ-Ziels. Der jeweilige nationale Gruppen-Saldo wird durch die eigene Gruppen-BGF geteilt. Leere Gruppen haben null im JSON und keinen Balken, keine künstliche Nullbilanz. Die gewichtete Rückrechnung muss wieder beide Sektorsalden ergeben.
 
 JSON-Schema peq-dashboard-2 speichert Kurvenformel, Einheiten, Parameter, die vollständige bedingte Nutzungs-/GFZ-Verteilung, alle aktiven Typendefinitionen samt Attributen, BGF und spezifischem Bedarf/PV, Auswahl, Filteransicht, nationale Eingangsgrößen sowie Herkunft und Hashes. Damit enthält die Sicherung neben Ergebnissen die zur Nachrechnung benötigten Eingaben. Sie ist ein Export, kein implementierter JSON-Import.
+
+
+### Allokationsfortschreibung 29.10.2026
+
+Dashboard und Gebäudesektormodell verwenden die gesamte zentrale Restdeckung (Referenz: 31 PJ/a), Freiflächen-PV bei den zentralen Großkraftwerken sowie volle H₂-/Fossilanrechnung. Modell-Nettoexport 5 statt 7 PJ/a; Quellrest −2 und Modellrest 0 bleiben getrennt. JSON-Exporte tragen Schema 2 und die Annahmen. Negative zentrale Reste bleiben sichtbar. Der H₂-Regler entfällt. Der Bottom-Up-Saldo einschließlich MIV beträgt im Lieferstand −100,248 PJ/a; die Differenz zum Top-Down-Ziel bleibt unverändert.

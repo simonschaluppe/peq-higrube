@@ -4,7 +4,7 @@
     "input_sha256": "cd09efbfbea7bc7e8cfd82b07146f72c6f3712d3a381625532b14c947dd75bc1",
     "gfz_sha256": "b17c1f98b6104a5b8ed6da4fe436ebff14d2f7708cc2043860d166b17d3f1c3b"
   },
-  "allocation_sha256": "3614c6769be82ce4a53ea0e15ae7ea872a3dbf9b94b63a6f476ecf77a8992835",
+  "allocation_sha256": "03903a76568f74be49de3c3bf973a5d3b6c21532323e24b19bfc857fce9df7b2",
   "ngf_bgf": 0.8,
   "type_count": 900,
   "positive_types_2040": 603,
@@ -13,7 +13,7 @@
   "electricity_demand_pj": 137.49326011458797,
   "pv_pj": 78.24546191661419,
   "electricity_balance_pj": -59.24779819797377,
-  "extended_balance_pj": -107.24779819797376,
+  "extended_balance_pj": -100.24779819797376,
   "gap_topdown_pj": -100.24779819797376,
   "single_target_missing_share_rows": 0,
   "affected_reference_area_pct": 0.0,

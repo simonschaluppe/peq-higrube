@@ -166,30 +166,30 @@ function renderNationalComparison(r){
  bar('ÖPNV','oepnv',0,d.verkehr*(1-p.miv-p.other_transport));
  bar('Übriger Verkehr','verkehr',0,d.verkehr*p.other_transport);
  for(const [key,name] of [['industrie','Industrie'],['landwirtschaft','Landwirtschaft'],['verbrauch_sektor_energie','Energiebranche'],['umwandlungseinsatz','Umwandlung'],['transportverluste','Netzverluste']])bar(name,key,0,d[key]);
- bar('Nettoexport','net_imports',0,Math.max(-g.net_imports,0));
+ bar('Nettoexport','net_imports',0,Math.max(-S.model_net_imports,0));
  bar('Gebäude-PV','pv',1,pv);
  for(const [key,name] of [['hydro','Wasserkraft'],['wind','Wind'],['biomass','Biomasse'],['geothermal','Geothermie'],['hydrogen_electricity','H₂-Strom'],['fossil','Fossil']])bar(name,key,1,g[key]);
  bar('Freiflächen-PV','free_pv',1,g.pv*p.free_pv);
- bar('Nettoimport','net_imports',1,Math.max(g.net_imports,0));
- for(const [name,key,x,v] of [['Gebäudebedarf','gebaeude',3,r.demand],['MIV-Bedarf','miv',3,miv],['Gebäude-PV','pv',4,r.pv],['Mobilitätsgutschrift','mobility_credit',4,r.budget]]){
-  if(v!==0){bar(name,key,x,v);traces.at(-1).showlegend=name==='Mobilitätsgutschrift';}
+ bar('Nettoimport','net_imports',1,Math.max(S.model_net_imports,0));
+ for(const [name,key,x,v] of [['Gebäudebedarf','gebaeude',3,r.demand],['MIV-Bedarf','miv',3,miv],['Gebäude-PV','pv',4,r.pv],['Zentrale Restdeckung','mobility_credit',4,Math.max(r.credit,0)],['Zentraler Fehlbetrag','target',3,Math.max(-r.credit,0)]]){
+  if(v!==0){bar(name,key,x,v);traces.at(-1).showlegend=['Zentrale Restdeckung','Zentraler Fehlbetrag'].includes(name);}
  }
  const total=x=>traces.filter(t=>t.x[0]===x).reduce((s,t)=>s+t.y[0],0);
  const nationalDemand=total(0),nationalSupply=total(1);
- if(Math.abs(nationalSupply-nationalDemand-S.residual)>1e-7)throw Error('Nationale Säulenbilanz verletzt Quellrest');
+ if(Math.abs(nationalSupply-nationalDemand-S.model_residual)>1e-7)throw Error('Nationale Säulenbilanz verletzt Modellrest');
  if(Math.abs(total(4)-total(3)-r.extended)>1e-7)throw Error('Bottom-Up-Säulenbilanz verletzt');
  const line=(x0,x1,y,color,dash='dot')=>shapes.push({type:'line',x0,x1,y0:y,y1:y,line:{color,width:1,dash}});
  line(-.35,3.4,d.gebaeude,col.gebaeude);line(.65,4.4,pv,col.pv);
- line(-.35,3.4,d.gebaeude+miv,col.miv);line(.65,4.4,pv+r.budget,col.mobility_credit);
+ line(-.35,3.4,d.gebaeude+miv,col.miv);line(.65,4.4,pv+r.credit,col.mobility_credit);
  const bracket=(x,a,b,text,color)=>{shapes.push({type:'line',x0:x,x1:x,y0:a,y1:b,line:{color,width:2}});line(x-.08,x+.08,a,color,'solid');line(x-.08,x+.08,b,color,'solid');annotations.push({x,y:(a+b)/2,text,showarrow:true,ax:22,ay:0,font:{size:9,color},bgcolor:'rgba(255,255,255,.9)'});};
- bracket(.45,d.gebaeude+miv,pv+r.budget,`TD: ${fmt(r.target_extended)}`,col.target);
- bracket(3.5,r.demand+miv,r.pv+r.budget,`BU: ${fmt(r.extended)}`,col.saldo);
+ bracket(.45,d.gebaeude+miv,pv+r.credit,`TD: ${fmt(r.target_extended)}`,col.target);
+ bracket(3.5,r.demand+miv,r.pv+r.credit,`BU: ${fmt(r.extended)}`,col.saldo);
  for(const [x,v] of [[0,nationalDemand],[1,nationalSupply],[3,total(3)],[4,total(4)]])annotations.push({x,y:v,text:fmt(v),showarrow:false,yshift:12,font:{size:11}});
  Plotly.react(el('dash-balance'),traces,{barmode:'stack',height:650,autosize:true,margin:{l:50,r:20,t:35,b:220},font:{size:11},separators:',.',
   xaxis:{tickvals:[0,1,3,4],ticktext:['Top-Down<br>Bedarf','Top-Down<br>Deckung','Bottom-Up<br>Bedarf','Bottom-Up<br>Deckung'],range:[-.6,4.6]},
   yaxis:{title:{text:'Jährliche Strommenge [PJ/a]'},rangemode:'tozero'},legend:{orientation:'h',y:-.22,font:{size:10}},shapes,annotations},
   {responsive:true,displaylogo:false,toImageButtonOptions:{format:'svg'}});
- el('national-comparison-note').textContent=`National: Deckung ${fmt(nationalSupply)} − Bedarf einschließlich Export ${fmt(nationalDemand)} = ${fmt(nationalSupply-nationalDemand)} PJ/a (Quellrest). Vergleich Gebäude + MIV: Top-Down ${fmt(r.target_extended)}, Bottom-Up ${fmt(r.extended)} PJ/a. Unterschied BU − TD: Bedarf ${fmt(r.demand-d.gebaeude)}, Deckung ${fmt(r.pv-pv)}, Saldo ${fmt(r.gap)} PJ/a. Klammern beziehen sich auf Gebäude + MIV, nicht auf die nationale Gesamtsumme.`;
+ el('national-comparison-note').textContent=`National: Deckung ${fmt(nationalSupply)} − Bedarf einschließlich Export ${fmt(nationalDemand)} = ${fmt(nationalSupply-nationalDemand)} PJ/a (Modellbilanz, 5 PJ Export; Quellrest ${fmt(S.residual)} PJ/a). Vergleich Gebäude + MIV: Top-Down ${fmt(r.target_extended)}, Bottom-Up ${fmt(r.extended)} PJ/a. Unterschied BU − TD: Bedarf ${fmt(r.demand-d.gebaeude)}, Deckung ${fmt(r.pv-pv)}, Saldo ${fmt(r.gap)} PJ/a. Klammern beziehen sich auf Gebäude + MIV, nicht auf die nationale Gesamtsumme.`;
 }
 function renderTargetDistribution(){
  const rows=S.geometry.map(k=>{
