@@ -457,12 +457,12 @@ window.Quarto = {
   <ul class="collapse">
   <li><a href="#bilanzgrenze-und-einheiten" id="toc-bilanzgrenze-und-einheiten" class="nav-link" data-scroll-target="#bilanzgrenze-und-einheiten">1. Bilanzgrenze und Einheiten</a></li>
   <li><a href="#quellbilanz-vor-allokation" id="toc-quellbilanz-vor-allokation" class="nav-link" data-scroll-target="#quellbilanz-vor-allokation">2. Quellbilanz vor Allokation</a></li>
-  <li><a href="#sichtbare-stellschrauben-und-referenzannahmen" id="toc-sichtbare-stellschrauben-und-referenzannahmen" class="nav-link" data-scroll-target="#sichtbare-stellschrauben-und-referenzannahmen">3. Sichtbare Stellschrauben und Referenzannahmen</a></li>
-  <li><a href="#zentraler-pool-und-miv-budget" id="toc-zentraler-pool-und-miv-budget" class="nav-link" data-scroll-target="#zentraler-pool-und-miv-budget">4. Zentraler Pool und MIV-Budget</a></li>
-  <li><a href="#gebäudesektorsaldo-und-vollständige-zuordnungsprüfung" id="toc-gebäudesektorsaldo-und-vollständige-zuordnungsprüfung" class="nav-link" data-scroll-target="#gebäudesektorsaldo-und-vollständige-zuordnungsprüfung">5. Gebäudesektorsaldo und vollständige Zuordnungsprüfung</a></li>
-  <li><a href="#varianten-gesamtmengen-teilmengen-und-saldo" id="toc-varianten-gesamtmengen-teilmengen-und-saldo" class="nav-link" data-scroll-target="#varianten-gesamtmengen-teilmengen-und-saldo">Varianten: Gesamtmengen, Teilmengen und Saldo</a></li>
+  <li><a href="#modellannahmen-vom-29.10.2026" id="toc-modellannahmen-vom-29.10.2026" class="nav-link" data-scroll-target="#modellannahmen-vom-29.10.2026">3. Modellannahmen vom 29.10.2026</a></li>
+  <li><a href="#zentrale-großkraftwerke-und-restdeckung" id="toc-zentrale-großkraftwerke-und-restdeckung" class="nav-link" data-scroll-target="#zentrale-großkraftwerke-und-restdeckung">4. Zentrale Großkraftwerke und Restdeckung</a></li>
+  <li><a href="#vollständige-zuordnungsprüfung" id="toc-vollständige-zuordnungsprüfung" class="nav-link" data-scroll-target="#vollständige-zuordnungsprüfung">5. Vollständige Zuordnungsprüfung</a></li>
+  <li><a href="#varianten" id="toc-varianten" class="nav-link" data-scroll-target="#varianten">6. Varianten</a></li>
   <li><a href="#primärenergie-und-nutzungsbezogene-gutschrift" id="toc-primärenergie-und-nutzungsbezogene-gutschrift" class="nav-link" data-scroll-target="#primärenergie-und-nutzungsbezogene-gutschrift">7. Primärenergie und nutzungsbezogene Gutschrift</a></li>
-  <li><a href="#kontrollen-ausgaben-und-nächste-entscheidungen" id="toc-kontrollen-ausgaben-und-nächste-entscheidungen" class="nav-link" data-scroll-target="#kontrollen-ausgaben-und-nächste-entscheidungen">8. Kontrollen, Ausgaben und nächste Entscheidungen</a></li>
+  <li><a href="#kontrollen-und-ausgaben" id="toc-kontrollen-und-ausgaben" class="nav-link" data-scroll-target="#kontrollen-und-ausgaben">8. Kontrollen und Ausgaben</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -491,12 +491,12 @@ window.Quarto = {
 
 <section id="sec-allokation-notebook" class="level1">
 <h1>Quantitative sektorale Allokation</h1>
-<p>Stand: 23. Oktober 2026. Dieser Anhang berechnet die Top-down-Grundlage der PEQ-Kalibrierung: den nationalen elektrischen Gebäudesektorsaldo einschließlich MIV und ein einmalig zugeteiltes elektrisches MIV-Budget. Alle fachlichen Rechnungen stehen in diesen Zellen. Die Gebäudetypologien und ihre Flächen werden erst nach Vorliegen der aktualisierten Excel bearbeitet.</p>
+<p>Stand: 29. Oktober 2026. Dieser Anhang berechnet die Top-down-Grundlage der PEQ-Kalibrierung: den nationalen elektrischen Gebäudesektorsaldo einschließlich MIV und ein einmalig zugeteilte zentrale Restdeckung. Alle fachlichen Rechnungen stehen in diesen Zellen. Die Gebäudetypologien werden im Gebäudesektormodell abgeglichen.</p>
 <p><strong>Quellen:</strong> UBA REP-0880, Tabelle 15, S. 60 (Strombedarf) und Tabelle 16, S. 63 (Erzeugung/Nettohandel), Ausgabe ©2024, Titelblatt 2023 <span class="citation" data-cites="uba2023transition">(<a href="../../references.html#ref-uba2023transition" role="doc-biblioref">Umweltbundesamt 2024</a>)</span>. Die Zuordnungslogik folgt der in <a href="../../Kapitel/03-allokation.html" class="quarto-xref"><span>Sektorale Energieallokation</span></a> beschriebenen Weiterentwicklung der historischen Methode <span class="citation" data-cites="schneider2020lokal schneider2023context">(<a href="../../references.html#ref-schneider2020lokal" role="doc-biblioref">Schneider u.&nbsp;a. 2020</a>, <a href="../../references.html#ref-schneider2023context" role="doc-biblioref">2023</a>)</span>. Die nachfolgenden Parameter sind ausdrücklich eigene Rechenannahmen, keine vom UBA veröffentlichten Verkehrs- oder PV-Anteile.</p>
 <section id="bilanzgrenze-und-einheiten" class="level2">
 <h2 class="anchored" data-anchor-id="bilanzgrenze-und-einheiten">1. Bilanzgrenze und Einheiten</h2>
 <p>Alle Flüsse sind jährliche <strong>elektrische Endenergie in PJ/a</strong>; 1 PJ = 1/3,6 TWh. Positive Salden bedeuten Deckung minus Bedarf. Gebäude umfassen hier die UBA-Betriebsposition sowie den zugeordneten MIV. Nicht-elektrische Wärme, Brennstoffe, graue Energie und Primärenergie werden nicht mit Strom addiert. Ein virtuelles MIV-Budget ist eine Zuordnung vorhandener Erzeugung, keine zusätzliche Energiequelle.</p>
-<div id="82e4bf7e" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-10-23T17:13:10.260359Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-10-23T17:13:10.260221Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-10-23T17:13:12.351066Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-10-23T17:13:12.350034Z&quot;}}" data-execution_count="1">
+<div id="82e4bf7e" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-10-29T16:55:42.975383Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-10-29T16:55:42.974241Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-10-29T16:55:48.473377Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-10-29T16:55:48.470645Z&quot;}}" data-execution_count="1">
 <details class="code-fold">
 <summary>Berechnung anzeigen</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pathlib <span class="im">import</span> Path</span>
@@ -684,7 +684,7 @@ window.Quarto = {
 <section id="quellbilanz-vor-allokation" class="level2">
 <h2 class="anchored" data-anchor-id="quellbilanz-vor-allokation">2. Quellbilanz vor Allokation</h2>
 <p><span class="math inline">\(R_{Quelle}=G+I-D\)</span>. Nettoimporte <span class="math inline">\(I&lt;0\)</span> sind Exporte. Die gedruckte Gesamtsumme des Bedarfs wird neben der Summe der Komponenten erhalten. Die Zuordnung arbeitet mit den Komponenten, ohne ihren Unterschied zu verteilen.</p>
-<div id="b9c0d2fc" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-10-23T17:13:12.353964Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-10-23T17:13:12.353540Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-10-23T17:13:12.362745Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-10-23T17:13:12.362323Z&quot;}}" data-execution_count="2">
+<div id="b9c0d2fc" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-10-29T16:55:48.480705Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-10-29T16:55:48.479501Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-10-29T16:55:48.504282Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-10-29T16:55:48.502509Z&quot;}}" data-execution_count="2">
 <details class="code-fold">
 <summary>Berechnung anzeigen</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>generation_keys<span class="op">=</span>[<span class="st">'hydro'</span>,<span class="st">'wind'</span>,<span class="st">'biomass'</span>,<span class="st">'geothermal'</span>,<span class="st">'hydrogen_electricity'</span>,<span class="st">'pv'</span>,<span class="st">'fossil'</span>]</span>
@@ -741,27 +741,24 @@ window.Quarto = {
 </div>
 </div>
 </section>
-<section id="sichtbare-stellschrauben-und-referenzannahmen" class="level2">
-<h2 class="anchored" data-anchor-id="sichtbare-stellschrauben-und-referenzannahmen">3. Sichtbare Stellschrauben und Referenzannahmen</h2>
-<p><span class="math inline">\(f\)</span> ist der Anteil der PV außerhalb von Gebäuden; der Gebäudebeitrag beträgt <span class="math inline">\((1-f)G_{PV}\)</span>. Andere PV bleibt als <strong>separat noch nicht zugeteilter Pool</strong> erhalten, nicht als implizite MIV-Gutschrift. <span class="math inline">\(m,o,r\)</span> sind Anteile des <strong>elektrischen Verkehrsenergiebedarfs</strong> für MIV, ÖPNV und übrigen Verkehr; <span class="math inline">\(m+o+r=1\)</span>. Sie sind keine Wege- oder Personenkilometeranteile.</p>
-<p>Das Rechenbeispiel verwendet 0 % andere PV und 80/20/0 % MIV/ÖPNV/übrigen Verkehr. Dies sind austauschbare Demonstrationswerte, keine Empfehlung oder empirische Festlegung. Die dritte Verkehrskategorie bleibt als Parameter erhalten.</p>
-<p>Wasser, Wind und Biomasse werden im Rechenfall dem nicht-PV-Pool zugeordnet; die normierte Position „Geothermie/sonstige“ wird vollständig angerechnet und muss bei veränderter Abgrenzung angepasst werden. Wasserstoff-Rückverstromung wird zunächst <strong>nicht</strong> als budgetfähig angerechnet, weil ihr Herkunftsnachweis hier nicht vorliegt. Die alternative volle Anrechnung wird separat ausgewiesen. Fossile Erzeugung bleibt außerhalb des erneuerbaren Budgets.</p>
-<p>Industrie, Landwirtschaft, Energiebranchenbedarf, Umwandlung, Transportverluste und Nettoexport werden einmalig vorrangig aus dem zentralen Pool abgezogen. ÖPNV und übriger Verkehr folgen ebenfalls diesem Pool. Insbesondere bleibt der Elektrolyse-Strombedarf erhalten, auch wenn Rückverstromung angerechnet wird. Die Priorität ist eine Modellentscheidung; die UBA-Tabellen beschreiben keine solche Allokation.</p>
-<div id="6e7bbb22" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-10-23T17:13:12.364770Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-10-23T17:13:12.364524Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-10-23T17:13:12.372664Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-10-23T17:13:12.371941Z&quot;}}" data-execution_count="3">
+<section id="modellannahmen-vom-29.10.2026" class="level2">
+<h2 class="anchored" data-anchor-id="modellannahmen-vom-29.10.2026">3. Modellannahmen vom 29.10.2026</h2>
+<p>Freiflächen-PV gehört zu den zentralen Großkraftwerken. Gebäude-PV umfasst Eigenverbrauch und Einspeisung. H₂-Rückverstromung (4 PJ/a) und fossiler Strom (1 PJ/a) werden vollständig als Deckung berücksichtigt; damit wird fossiler Strom nicht als erneuerbar bezeichnet.</p>
+<p>Der Nettoexport wird für dieses Modell mit <strong>5 statt 7 PJ/a</strong> angesetzt: 457 PJ Erzeugung = 452 PJ Bedarfskomponenten + 5 PJ Export. Die Quelldaten bleiben unverändert. Der Quellrest beträgt −2 PJ/a, der Modellrest null. Dies ist eine Modellannahme zur Bilanzschließung, keine Korrektur der UBA-Quelle.</p>
+<p>Die Referenz setzt 0 % Freiflächen-PV und 80/20/0 % MIV/ÖPNV/übrigen Verkehr. Verkehrsanteile beziehen sich auf den elektrischen Energiebedarf des Verkehrs insgesamt. Industrie, Landwirtschaft, Energiebranche, Umwandlung, Verluste und Export sowie Nicht-MIV-Verkehr werden einmalig abgezogen. Der Elektrolysebedarf bleibt enthalten.</p>
+<div id="6e7bbb22" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-10-29T16:55:48.511555Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-10-29T16:55:48.510353Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-10-29T16:55:48.540374Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-10-29T16:55:48.538134Z&quot;}}" data-execution_count="3">
 <details class="code-fold">
 <summary>Berechnung anzeigen</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>parameters<span class="op">=</span>{</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    <span class="st">'other_pv_share'</span>:<span class="fl">0.0</span>,</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">'miv_share'</span>:<span class="fl">0.8</span>,</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">'public_transport_share'</span>:<span class="fl">0.2</span>,</span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">'other_transport_share'</span>:<span class="fl">0.0</span>,</span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">'eligible_nonpv_share'</span>:{<span class="st">'hydro'</span>:<span class="fl">1.0</span>,<span class="st">'wind'</span>:<span class="fl">1.0</span>,<span class="st">'biomass'</span>:<span class="fl">1.0</span>,<span class="st">'geothermal'</span>:<span class="fl">1.0</span>,<span class="st">'hydrogen_electricity'</span>:<span class="fl">0.0</span>},</span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>    <span class="st">'source'</span>:<span class="st">'Referenzfall des Publikationsentwurfs; Verkehrs- und PV-Anteile nicht empirisch festgelegt'</span>,</span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>    <span class="st">'pe_factor_electricity'</span>:<span class="va">None</span>,</span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>    <span class="st">'pe_factor_year'</span>:<span class="va">None</span>,</span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>    <span class="st">'pe_factor_source'</span>:<span class="va">None</span>,</span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>display(pd.DataFrame([{<span class="st">'Parameter'</span>:k,<span class="st">'Wert'</span>:<span class="bu">str</span>(v)} <span class="cf">for</span> k,v <span class="kw">in</span> parameters.items()]))</span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>assumptions <span class="op">=</span> <span class="bu">dict</span>(date<span class="op">=</span><span class="st">'2026-10-29'</span>, scenario<span class="op">=</span><span class="st">'transition_2040'</span>,</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    source_net_exports_pj<span class="op">=</span><span class="dv">7</span>, model_net_exports_pj<span class="op">=</span><span class="dv">5</span>, export_adjustment_pj<span class="op">=-</span><span class="dv">2</span>,</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    reason<span class="op">=</span><span class="st">'Dokumentierte Modellannahme zur Bilanzschließung bei 452 PJ Bedarfskomponenten'</span>,</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    hydrogen_electricity_included_pj<span class="op">=</span><span class="dv">4</span>, fossil_included_pj<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>parameters<span class="op">=</span><span class="bu">dict</span>(other_pv_share<span class="op">=</span><span class="fl">0.</span>,miv_share<span class="op">=</span><span class="fl">.8</span>,public_transport_share<span class="op">=</span><span class="fl">.2</span>,other_transport_share<span class="op">=</span><span class="fl">0.</span>,</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    source<span class="op">=</span><span class="st">'Modellannahmen 29.10.2026; PV- und Verkehrsanteile sind Varianten'</span>,</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>    pe_factor_electricity<span class="op">=</span><span class="va">None</span>,pe_factor_year<span class="op">=</span><span class="va">None</span>,pe_factor_source<span class="op">=</span><span class="va">None</span>)</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>model_residual<span class="op">=</span>source_generation<span class="op">-</span>assumptions[<span class="st">'model_net_exports_pj'</span>]<span class="op">-</span>source_demand</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="cf">assert</span> np.isclose(model_residual,<span class="dv">0</span>)</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>display(pd.DataFrame([assumptions]).T)</span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output cell-output-display">
 <div>
@@ -771,55 +768,41 @@ window.Quarto = {
 <thead>
 <tr class="header">
 <th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th">Parameter</th>
-<th data-quarto-table-cell-role="th">Wert</th>
+<th data-quarto-table-cell-role="th">0</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<th data-quarto-table-cell-role="th">0</th>
-<td>other_pv_share</td>
-<td>0.0</td>
+<th data-quarto-table-cell-role="th">date</th>
+<td>2026-10-29</td>
 </tr>
 <tr class="even">
-<th data-quarto-table-cell-role="th">1</th>
-<td>miv_share</td>
-<td>0.8</td>
+<th data-quarto-table-cell-role="th">scenario</th>
+<td>transition_2040</td>
 </tr>
 <tr class="odd">
-<th data-quarto-table-cell-role="th">2</th>
-<td>public_transport_share</td>
-<td>0.2</td>
+<th data-quarto-table-cell-role="th">source_net_exports_pj</th>
+<td>7</td>
 </tr>
 <tr class="even">
-<th data-quarto-table-cell-role="th">3</th>
-<td>other_transport_share</td>
-<td>0.0</td>
+<th data-quarto-table-cell-role="th">model_net_exports_pj</th>
+<td>5</td>
 </tr>
 <tr class="odd">
-<th data-quarto-table-cell-role="th">4</th>
-<td>eligible_nonpv_share</td>
-<td>{'hydro': 1.0, 'wind': 1.0, 'biomass': 1.0, 'g...</td>
+<th data-quarto-table-cell-role="th">export_adjustment_pj</th>
+<td>-2</td>
 </tr>
 <tr class="even">
-<th data-quarto-table-cell-role="th">5</th>
-<td>source</td>
-<td>Referenzfall des Publikationsentwurfs; Verkehr...</td>
+<th data-quarto-table-cell-role="th">reason</th>
+<td>Dokumentierte Modellannahme zur Bilanzschließu...</td>
 </tr>
 <tr class="odd">
-<th data-quarto-table-cell-role="th">6</th>
-<td>pe_factor_electricity</td>
-<td>None</td>
+<th data-quarto-table-cell-role="th">hydrogen_electricity_included_pj</th>
+<td>4</td>
 </tr>
 <tr class="even">
-<th data-quarto-table-cell-role="th">7</th>
-<td>pe_factor_year</td>
-<td>None</td>
-</tr>
-<tr class="odd">
-<th data-quarto-table-cell-role="th">8</th>
-<td>pe_factor_source</td>
-<td>None</td>
+<th data-quarto-table-cell-role="th">fossil_included_pj</th>
+<td>1</td>
 </tr>
 </tbody>
 </table>
@@ -828,62 +811,38 @@ window.Quarto = {
 </div>
 </div>
 </section>
-<section id="zentraler-pool-und-miv-budget" class="level2">
-<h2 class="anchored" data-anchor-id="zentraler-pool-und-miv-budget">4. Zentraler Pool und MIV-Budget</h2>
-<p><span class="math display">\[
-C=\sum_{i\ne PV} a_iG_i,\quad
-F=D_{Industrie}+D_{Landwirtschaft}+D_{Energie}+D_{Umwandlung}+D_{Verluste}+Export,
-\]</span> <span class="math display">\[
-R=C-F-(o+r)D_{Verkehr},\qquad
-M=\min\{\max(R,0),mD_{Verkehr}\}.
-\]</span></p>
-<p><span class="math inline">\(a_i\)</span> bezeichnet die gesetzte Budgetfähigkeit. Der rohe Rest <span class="math inline">\(R\)</span> bleibt sichtbar: <span class="math inline">\(R&lt;0\)</span> bedeutet einen zentralen Deckungsfehlbetrag, nicht eine negative Gutschrift. Der zugeteilte Betrag <span class="math inline">\(M\)</span> ist auf den MIV-Bedarf begrenzt; ein darüber hinausgehender Rest bleibt unverteilt. Positive Nettoimporte würden gesondert unzugeordnet bleiben; es gibt keine automatische Herkunftsanrechnung.</p>
+<section id="zentrale-großkraftwerke-und-restdeckung" class="level2">
+<h2 class="anchored" data-anchor-id="zentrale-großkraftwerke-und-restdeckung">4. Zentrale Großkraftwerke und Restdeckung</h2>
+<p><span class="math display">\[C=\sum_{i\ne PV}G_i+fG_{PV}+I_+,\qquad R=C-F-(o+r)D_{Verkehr}.\]</span></p>
+<p><span class="math inline">\(F\)</span> enthält die priorisierten Bedarfe einschließlich Modell-Nettoexport. Die Restdeckung <span class="math inline">\(R\)</span> wird vollständig Gebäude + MIV zugeordnet, ohne Obergrenze durch den MIV-Bedarf. Ein negatives <span class="math inline">\(R\)</span> wird als zentraler Fehlbetrag separat dargestellt und durch den Gebäude-PV-Überschuss ausgeglichen.</p>
 </section>
-<section id="gebäudesektorsaldo-und-vollständige-zuordnungsprüfung" class="level2">
-<h2 class="anchored" data-anchor-id="gebäudesektorsaldo-und-vollständige-zuordnungsprüfung">5. Gebäudesektorsaldo und vollständige Zuordnungsprüfung</h2>
-<p><span class="math display">\[
-B_{Geb}=(1-f)G_{PV}+M-D_{Geb}-mD_{Verkehr}.
-\]</span></p>
-<p>Der betriebliche Saldo ohne MIV wird separat gezeigt. Für den Bilanzschluss werden alle ausgeschlossenen oder noch nicht zugeordneten Erzeugungsmengen und der zentrale Rest nach MIV-Zuteilung mitgeführt: <span class="math display">\[
-B_{Geb}+R_{zentral,nachMIV}+G_{PV,sonstige}+G_{nicht\ budgetfähig}+I_+=R_{Quelle}.
-\]</span></p>
-<p>Diese Identität verhindert, dass ein Pool verschwindet oder doppelt gutgeschrieben wird. Ein negativer zentraler Rest macht den Rechenfall als unvollständig gedeckt kenntlich, auch wenn der Gebäudesaldo allein günstig aussieht.</p>
-<div id="90736e74" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-10-23T17:13:12.376526Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-10-23T17:13:12.375927Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-10-23T17:13:12.396002Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-10-23T17:13:12.394271Z&quot;}}" data-execution_count="4">
+<section id="vollständige-zuordnungsprüfung" class="level2">
+<h2 class="anchored" data-anchor-id="vollständige-zuordnungsprüfung">5. Vollständige Zuordnungsprüfung</h2>
+<p><span class="math display">\[B_{Geb+MIV}=(1-f)G_{PV}+R-D_{Geb}-mD_{Verkehr}=R_{Modell}=0.\]</span></p>
+<p>Für die Anzeige gilt: verfügbare Restdeckung <span class="math inline">\(=\max(R,0)\)</span>, zentraler Fehlbetrag <span class="math inline">\(=\max(-R,0)\)</span>. Der Fehlbetrag darf nicht durch Kappung verschwinden. Gebäude-PV plus verfügbare Restdeckung decken Gebäude, MIV und gegebenenfalls diesen zentralen Fehlbetrag.</p>
+<div id="90736e74" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-10-29T16:55:48.545412Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-10-29T16:55:48.544780Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-10-29T16:55:48.576882Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-10-29T16:55:48.574782Z&quot;}}" data-execution_count="4">
 <details class="code-fold">
 <summary>Berechnung anzeigen</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Fachliche Modellfunktion bewusst in der Notebook-Zelle, nicht in einem externen Modul.</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> allocate(p):</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> allocate(p):</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">assert</span> <span class="st">'eligible_nonpv_share'</span> <span class="kw">not</span> <span class="kw">in</span> p, <span class="st">'Veraltete Anrechnungsparameter: volle Deckungsanrechnung ist festgelegt'</span></span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> key <span class="kw">in</span> [<span class="st">'other_pv_share'</span>,<span class="st">'miv_share'</span>,<span class="st">'public_transport_share'</span>,<span class="st">'other_transport_share'</span>]:</span>
 <span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>        <span class="cf">assert</span> np.isfinite(p[key]) <span class="kw">and</span> <span class="dv">0</span><span class="op">&lt;=</span>p[key]<span class="op">&lt;=</span><span class="dv">1</span>, key</span>
 <span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">assert</span> np.isclose(<span class="bu">sum</span>(p[k] <span class="cf">for</span> k <span class="kw">in</span> [<span class="st">'miv_share'</span>,<span class="st">'public_transport_share'</span>,<span class="st">'other_transport_share'</span>]),<span class="dv">1</span>)</span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">assert</span> <span class="bu">set</span>(p[<span class="st">'eligible_nonpv_share'</span>])<span class="op">==</span>{<span class="st">'hydro'</span>,<span class="st">'wind'</span>,<span class="st">'biomass'</span>,<span class="st">'geothermal'</span>,<span class="st">'hydrogen_electricity'</span>}</span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">assert</span> <span class="bu">all</span>(np.isfinite(v) <span class="kw">and</span> <span class="dv">0</span><span class="op">&lt;=</span>v<span class="op">&lt;=</span><span class="dv">1</span> <span class="cf">for</span> v <span class="kw">in</span> p[<span class="st">'eligible_nonpv_share'</span>].values())</span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>    central<span class="op">=</span><span class="bu">sum</span>(g[k]<span class="op">*</span>share <span class="cf">for</span> k,share <span class="kw">in</span> p[<span class="st">'eligible_nonpv_share'</span>].items())</span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>    export<span class="op">=</span><span class="bu">max</span>(<span class="op">-</span>g[<span class="st">'net_imports'</span>],<span class="dv">0</span>)</span>
-<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>    fixed<span class="op">=</span><span class="bu">sum</span>(d[k] <span class="cf">for</span> k <span class="kw">in</span> [<span class="st">'industrie'</span>,<span class="st">'landwirtschaft'</span>,<span class="st">'verbrauch_sektor_energie'</span>,<span class="st">'umwandlungseinsatz'</span>,<span class="st">'transportverluste'</span>])<span class="op">+</span>export</span>
-<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>    miv<span class="op">=</span>d[<span class="st">'verkehr'</span>]<span class="op">*</span>p[<span class="st">'miv_share'</span>]</span>
-<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>    public<span class="op">=</span>d[<span class="st">'verkehr'</span>]<span class="op">*</span>p[<span class="st">'public_transport_share'</span>]</span>
-<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>    other<span class="op">=</span>d[<span class="st">'verkehr'</span>]<span class="op">*</span>p[<span class="st">'other_transport_share'</span>]</span>
-<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>    raw<span class="op">=</span>central<span class="op">-</span>fixed<span class="op">-</span>public<span class="op">-</span>other</span>
-<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>    budget<span class="op">=</span><span class="bu">min</span>(<span class="bu">max</span>(raw,<span class="dv">0</span>),miv)</span>
-<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>    pv_building<span class="op">=</span>g[<span class="st">'pv'</span>]<span class="op">*</span>(<span class="dv">1</span><span class="op">-</span>p[<span class="st">'other_pv_share'</span>])</span>
-<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>    pv_other<span class="op">=</span>g[<span class="st">'pv'</span>]<span class="op">*</span>p[<span class="st">'other_pv_share'</span>]</span>
-<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>    unassigned_nonpv<span class="op">=</span>source_generation<span class="op">-</span>g[<span class="st">'pv'</span>]<span class="op">-</span>central</span>
-<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>    building_operation<span class="op">=</span>pv_building<span class="op">-</span>d[<span class="st">'gebaeude'</span>]</span>
-<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a>    building<span class="op">=</span>building_operation<span class="op">+</span>budget<span class="op">-</span>miv</span>
-<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a>    central_after<span class="op">=</span>raw<span class="op">-</span>budget</span>
-<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a>    closure<span class="op">=</span>building<span class="op">+</span>central_after<span class="op">+</span>pv_other<span class="op">+</span>unassigned_nonpv<span class="op">+</span><span class="bu">max</span>(g[<span class="st">'net_imports'</span>],<span class="dv">0</span>)</span>
-<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a>    <span class="cf">assert</span> np.isclose(closure,source_residual), <span class="st">'Zuordnungsbilanz verletzt'</span></span>
-<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a>    <span class="cf">assert</span> <span class="dv">0</span><span class="op">&lt;=</span>budget<span class="op">&lt;=</span>miv</span>
-<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="bu">dict</span>(central_pj<span class="op">=</span>central,fixed_priority_pj<span class="op">=</span>fixed,public_transport_pj<span class="op">=</span>public,other_transport_pj<span class="op">=</span>other,</span>
-<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a>                miv_demand_pj<span class="op">=</span>miv,raw_miv_balance_pj<span class="op">=</span>raw,miv_budget_pj<span class="op">=</span>budget,</span>
-<span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a>                central_after_miv_pj<span class="op">=</span>central_after,unassigned_nonpv_pj<span class="op">=</span>unassigned_nonpv,</span>
-<span id="cb4-28"><a href="#cb4-28" aria-hidden="true" tabindex="-1"></a>                building_pv_pj<span class="op">=</span>pv_building,other_pv_pj<span class="op">=</span>pv_other,building_operation_pj<span class="op">=</span>building_operation,</span>
-<span id="cb4-29"><a href="#cb4-29" aria-hidden="true" tabindex="-1"></a>                building_target_pj<span class="op">=</span>building,source_residual_pj<span class="op">=</span>source_residual,allocation_residual_pj<span class="op">=</span>closure,</span>
-<span id="cb4-30"><a href="#cb4-30" aria-hidden="true" tabindex="-1"></a>                priority_covered<span class="op">=</span>raw<span class="op">&gt;=-</span><span class="fl">1e-9</span>)</span>
-<span id="cb4-31"><a href="#cb4-31" aria-hidden="true" tabindex="-1"></a>result<span class="op">=</span>allocate(parameters)</span>
-<span id="cb4-32"><a href="#cb4-32" aria-hidden="true" tabindex="-1"></a>result_table<span class="op">=</span>pd.DataFrame([{<span class="st">'Position'</span>:k,<span class="st">'PJ_el/a'</span>:v,<span class="st">'TWh_el/a'</span>:v<span class="op">/</span><span class="fl">3.6</span>} <span class="cf">for</span> k,v <span class="kw">in</span> result.items() <span class="cf">if</span> k<span class="op">!=</span><span class="st">'priority_covered'</span>])</span>
-<span id="cb4-33"><a href="#cb4-33" aria-hidden="true" tabindex="-1"></a>display(result_table.<span class="bu">round</span>(<span class="dv">4</span>))</span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>    pv_other<span class="op">=</span>g[<span class="st">'pv'</span>]<span class="op">*</span>p[<span class="st">'other_pv_share'</span>]<span class="op">;</span> pv_building<span class="op">=</span>g[<span class="st">'pv'</span>]<span class="op">-</span>pv_other</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>    central<span class="op">=</span><span class="bu">sum</span>(g[k] <span class="cf">for</span> k <span class="kw">in</span> generation_keys <span class="cf">if</span> k<span class="op">!=</span><span class="st">'pv'</span>)<span class="op">+</span>pv_other<span class="op">+</span><span class="bu">max</span>(g[<span class="st">'net_imports'</span>],<span class="dv">0</span>)</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>    fixed<span class="op">=</span><span class="bu">sum</span>(d[k] <span class="cf">for</span> k <span class="kw">in</span> [<span class="st">'industrie'</span>,<span class="st">'landwirtschaft'</span>,<span class="st">'verbrauch_sektor_energie'</span>,<span class="st">'umwandlungseinsatz'</span>,<span class="st">'transportverluste'</span>])<span class="op">+</span>assumptions[<span class="st">'model_net_exports_pj'</span>]</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>    miv<span class="op">=</span>d[<span class="st">'verkehr'</span>]<span class="op">*</span>p[<span class="st">'miv_share'</span>]<span class="op">;</span> public<span class="op">=</span>d[<span class="st">'verkehr'</span>]<span class="op">*</span>p[<span class="st">'public_transport_share'</span>]<span class="op">;</span> other<span class="op">=</span>d[<span class="st">'verkehr'</span>]<span class="op">*</span>p[<span class="st">'other_transport_share'</span>]</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>    credit<span class="op">=</span>central<span class="op">-</span>fixed<span class="op">-</span>public<span class="op">-</span>other</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>    operation<span class="op">=</span>pv_building<span class="op">-</span>d[<span class="st">'gebaeude'</span>]<span class="op">;</span> balance<span class="op">=</span>operation<span class="op">+</span>credit<span class="op">-</span>miv</span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>    <span class="cf">assert</span> np.isclose(balance,model_residual), <span class="st">'Zuordnungsbilanz verletzt'</span></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="bu">dict</span>(central_pj<span class="op">=</span>central,fixed_priority_pj<span class="op">=</span>fixed,public_transport_pj<span class="op">=</span>public,other_transport_pj<span class="op">=</span>other,</span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>        miv_demand_pj<span class="op">=</span>miv,central_credit_pj<span class="op">=</span>credit,available_credit_pj<span class="op">=</span><span class="bu">max</span>(credit,<span class="dv">0</span>),central_shortfall_pj<span class="op">=</span><span class="bu">max</span>(<span class="op">-</span>credit,<span class="dv">0</span>),</span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>        building_pv_pj<span class="op">=</span>pv_building,other_pv_pj<span class="op">=</span>pv_other,building_operation_pj<span class="op">=</span>operation,</span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>        building_target_pj<span class="op">=</span>balance,source_residual_pj<span class="op">=</span>source_residual,model_residual_pj<span class="op">=</span>model_residual,</span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>        allocation_residual_pj<span class="op">=</span>balance)</span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>result<span class="op">=</span>allocate(parameters)</span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>result_table<span class="op">=</span>pd.DataFrame([{<span class="st">'Position'</span>:k,<span class="st">'PJ_el/a'</span>:v,<span class="st">'TWh_el/a'</span>:v<span class="op">/</span><span class="fl">3.6</span>} <span class="cf">for</span> k,v <span class="kw">in</span> result.items()])</span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a>display(result_table.<span class="bu">round</span>(<span class="dv">4</span>))</span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output cell-output-display">
 <div>
@@ -902,14 +861,14 @@ B_{Geb}+R_{zentral,nachMIV}+G_{PV,sonstige}+G_{nicht\ budgetfähig}+I_+=R_{Quell
 <tr class="odd">
 <th data-quarto-table-cell-role="th">0</th>
 <td>central_pj</td>
-<td>303.0</td>
-<td>84.1667</td>
+<td>308.0</td>
+<td>85.5556</td>
 </tr>
 <tr class="even">
 <th data-quarto-table-cell-role="th">1</th>
 <td>fixed_priority_pj</td>
-<td>261.0</td>
-<td>72.5000</td>
+<td>259.0</td>
+<td>71.9444</td>
 </tr>
 <tr class="odd">
 <th data-quarto-table-cell-role="th">2</th>
@@ -931,63 +890,63 @@ B_{Geb}+R_{zentral,nachMIV}+G_{PV,sonstige}+G_{nicht\ budgetfähig}+I_+=R_{Quell
 </tr>
 <tr class="even">
 <th data-quarto-table-cell-role="th">5</th>
-<td>raw_miv_balance_pj</td>
-<td>24.0</td>
-<td>6.6667</td>
+<td>central_credit_pj</td>
+<td>31.0</td>
+<td>8.6111</td>
 </tr>
 <tr class="odd">
 <th data-quarto-table-cell-role="th">6</th>
-<td>miv_budget_pj</td>
-<td>24.0</td>
-<td>6.6667</td>
+<td>available_credit_pj</td>
+<td>31.0</td>
+<td>8.6111</td>
 </tr>
 <tr class="even">
 <th data-quarto-table-cell-role="th">7</th>
-<td>central_after_miv_pj</td>
+<td>central_shortfall_pj</td>
 <td>0.0</td>
 <td>0.0000</td>
 </tr>
 <tr class="odd">
 <th data-quarto-table-cell-role="th">8</th>
-<td>unassigned_nonpv_pj</td>
-<td>5.0</td>
-<td>1.3889</td>
-</tr>
-<tr class="even">
-<th data-quarto-table-cell-role="th">9</th>
 <td>building_pv_pj</td>
 <td>149.0</td>
 <td>41.3889</td>
 </tr>
-<tr class="odd">
-<th data-quarto-table-cell-role="th">10</th>
+<tr class="even">
+<th data-quarto-table-cell-role="th">9</th>
 <td>other_pv_pj</td>
 <td>0.0</td>
 <td>0.0000</td>
 </tr>
-<tr class="even">
-<th data-quarto-table-cell-role="th">11</th>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">10</th>
 <td>building_operation_pj</td>
 <td>41.0</td>
 <td>11.3889</td>
 </tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">11</th>
+<td>building_target_pj</td>
+<td>0.0</td>
+<td>0.0000</td>
+</tr>
 <tr class="odd">
 <th data-quarto-table-cell-role="th">12</th>
-<td>building_target_pj</td>
-<td>-7.0</td>
-<td>-1.9444</td>
-</tr>
-<tr class="even">
-<th data-quarto-table-cell-role="th">13</th>
 <td>source_residual_pj</td>
 <td>-2.0</td>
 <td>-0.5556</td>
 </tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">13</th>
+<td>model_residual_pj</td>
+<td>0.0</td>
+<td>0.0000</td>
+</tr>
 <tr class="odd">
 <th data-quarto-table-cell-role="th">14</th>
 <td>allocation_residual_pj</td>
-<td>-2.0</td>
-<td>-0.5556</td>
+<td>0.0</td>
+<td>0.0000</td>
 </tr>
 </tbody>
 </table>
@@ -996,11 +955,10 @@ B_{Geb}+R_{zentral,nachMIV}+G_{PV,sonstige}+G_{nicht\ budgetfähig}+I_+=R_{Quell
 </div>
 </div>
 </section>
-<section id="varianten-gesamtmengen-teilmengen-und-saldo" class="level2">
-<h2 class="anchored" data-anchor-id="varianten-gesamtmengen-teilmengen-und-saldo">Varianten: Gesamtmengen, Teilmengen und Saldo</h2>
-<p>Alle Energiemengen sind PJ Strom/a. <strong>PV gesamt = PV Gebäude + PV Freifläche</strong>. <strong>Verkehr gesamt = ÖPNV + MIV + übriger Verkehr</strong>. Die Verkehrsanteile beziehen sich auf Energie, nicht auf Wege oder Personenkilometer. Freiflächen-PV bleibt nach der gewählten Regel separat und wird nicht dem zentralen Nicht-PV-Pool zugeschlagen.</p>
-<p>Je Variante stehen Gebäudebedarf und MIV-Bedarf auf der Bedarfsseite der Gebäude-PV und der Mobilitätsgutschrift auf der Deckungsseite gegenüber. Saldo = Deckung − Bedarf. Ein positiver Gebäudesaldo kann gleichzeitig mit einer zentralen Unterdeckung auftreten; deshalb zeigt das zweite Vergleichsdiagramm beide Größen. „Budgetfähig“ bedeutet im Modell anrechenbar, nicht durch einen Herkunftsnachweis bestätigt.</p>
-<div id="887b29b8" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-10-23T17:13:12.400043Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-10-23T17:13:12.399697Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-10-23T17:13:13.520924Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-10-23T17:13:13.520324Z&quot;}}" data-execution_count="5">
+<section id="varianten" class="level2">
+<h2 class="anchored" data-anchor-id="varianten">6. Varianten</h2>
+<p>PV gesamt = Gebäude-PV + Freiflächen-PV; Verkehr gesamt = MIV + ÖPNV + übriger Verkehr. Freiflächen-PV verschiebt Deckung zwischen Gebäuden und zentralen Großkraftwerken. Der gemeinsame Top-Down-Saldo bleibt null. Negative zentrale Reste sind ein Rückgriff auf den Gebäude-PV-Überschuss.</p>
+<div id="887b29b8" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-10-29T16:55:48.582134Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-10-29T16:55:48.580915Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-10-29T16:55:51.431629Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-10-29T16:55:51.429265Z&quot;}}" data-execution_count="5">
 <details class="code-fold">
 <summary>Berechnung anzeigen</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> copy, sys</span>
@@ -1008,30 +966,27 @@ B_{Geb}+R_{zentral,nachMIV}+G_{PV,sonstige}+G_{nicht\ budgetfähig}+I_+=R_{Quell
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> Berechnungen.methodik_plots <span class="im">import</span> allocation_figures</span>
 <span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> IPython.display <span class="im">import</span> HTML</span>
 <span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>variants<span class="op">=</span>[]</span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> label,f,m,h <span class="kw">in</span> [(<span class="st">'Referenz'</span>,<span class="dv">0</span>,<span class="fl">.8</span>,<span class="dv">0</span>),(<span class="st">'20 </span><span class="sc">% F</span><span class="st">reiflächen-PV'</span>,<span class="fl">.2</span>,<span class="fl">.8</span>,<span class="dv">0</span>),(<span class="st">'60 % MIV'</span>,<span class="dv">0</span>,<span class="fl">.6</span>,<span class="dv">0</span>),</span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>                    (<span class="st">'40 % MIV: Konflikt'</span>,<span class="dv">0</span>,<span class="fl">.4</span>,<span class="dv">0</span>),(<span class="st">'H₂ vollständig angerechnet'</span>,<span class="dv">0</span>,<span class="fl">.8</span>,<span class="dv">1</span>)]:</span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>    p<span class="op">=</span>copy.deepcopy(parameters)</span>
-<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>    p.update(other_pv_share<span class="op">=</span>f,miv_share<span class="op">=</span>m,public_transport_share<span class="op">=</span><span class="dv">1</span><span class="op">-</span>m,other_transport_share<span class="op">=</span><span class="dv">0</span>)</span>
-<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>    p[<span class="st">'eligible_nonpv_share'</span>][<span class="st">'hydrogen_electricity'</span>]<span class="op">=</span>h</span>
-<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>    r<span class="op">=</span>allocate(p)</span>
-<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>    variants.append({<span class="st">'Variante'</span>:label,<span class="st">'PV gesamt'</span>:g[<span class="st">'pv'</span>],<span class="st">'PV Gebäude'</span>:r[<span class="st">'building_pv_pj'</span>],<span class="st">'PV Freifläche'</span>:r[<span class="st">'other_pv_pj'</span>],</span>
-<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>                     <span class="st">'Verkehr gesamt'</span>:d[<span class="st">'verkehr'</span>],<span class="st">'ÖPNV'</span>:r[<span class="st">'public_transport_pj'</span>],<span class="st">'MIV'</span>:r[<span class="st">'miv_demand_pj'</span>],</span>
-<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>                     <span class="st">'Übriger Verkehr'</span>:r[<span class="st">'other_transport_pj'</span>],<span class="st">'MIV-Anteil [%]'</span>:<span class="dv">100</span><span class="op">*</span>m,<span class="st">'Freiflächen-Anteil [%]'</span>:<span class="dv">100</span><span class="op">*</span>f,</span>
-<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>                     <span class="st">'H₂-Anrechnung [%]'</span>:<span class="dv">100</span><span class="op">*</span>h,<span class="st">'Gebäude'</span>:d[<span class="st">'gebaeude'</span>],<span class="st">'MIV-Budget'</span>:r[<span class="st">'miv_budget_pj'</span>],</span>
-<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>                     <span class="st">'Saldo'</span>:r[<span class="st">'building_target_pj'</span>],<span class="st">'Zentraler Rest'</span>:r[<span class="st">'central_after_miv_pj'</span>],<span class="st">'Vorrang gedeckt'</span>:r[<span class="st">'priority_covered'</span>]})</span>
-<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>comparison<span class="op">=</span>pd.DataFrame(variants)</span>
-<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>pv_columns<span class="op">=</span>[<span class="st">'Variante'</span>,<span class="st">'PV gesamt'</span>,<span class="st">'PV Gebäude'</span>,<span class="st">'PV Freifläche'</span>,<span class="st">'Freiflächen-Anteil [%]'</span>]</span>
-<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a>traffic_columns<span class="op">=</span>[<span class="st">'Variante'</span>,<span class="st">'Verkehr gesamt'</span>,<span class="st">'ÖPNV'</span>,<span class="st">'MIV'</span>,<span class="st">'Übriger Verkehr'</span>,<span class="st">'MIV-Anteil [%]'</span>]</span>
-<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a>result_columns<span class="op">=</span>[<span class="st">'Variante'</span>,<span class="st">'H₂-Anrechnung [%]'</span>,<span class="st">'MIV-Budget'</span>,<span class="st">'Saldo'</span>,<span class="st">'Zentraler Rest'</span>,<span class="st">'Vorrang gedeckt'</span>]</span>
-<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> cols <span class="kw">in</span> [pv_columns,traffic_columns,result_columns]: display(comparison[cols].<span class="bu">round</span>(<span class="dv">3</span>))</span>
-<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a>steps<span class="op">=</span>{<span class="st">'Zentraler Pool'</span>:result[<span class="st">'central_pj'</span>],<span class="st">'Industrie'</span>:<span class="op">-</span>d[<span class="st">'industrie'</span>],</span>
-<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a>       <span class="st">'Landwirtschaft'</span>:<span class="op">-</span>d[<span class="st">'landwirtschaft'</span>],<span class="st">'Energiebranche'</span>:<span class="op">-</span>d[<span class="st">'verbrauch_sektor_energie'</span>],</span>
-<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a>       <span class="st">'Umwandlung'</span>:<span class="op">-</span>d[<span class="st">'umwandlungseinsatz'</span>],<span class="st">'Verluste'</span>:<span class="op">-</span>d[<span class="st">'transportverluste'</span>],</span>
-<span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a>       <span class="st">'Nettoexport'</span>:<span class="op">-</span><span class="bu">max</span>(<span class="op">-</span>g[<span class="st">'net_imports'</span>],<span class="dv">0</span>),<span class="st">'ÖPNV'</span>:<span class="op">-</span>result[<span class="st">'public_transport_pj'</span>],</span>
-<span id="cb5-26"><a href="#cb5-26" aria-hidden="true" tabindex="-1"></a>       <span class="st">'Übriger Verkehr'</span>:<span class="op">-</span>result[<span class="st">'other_transport_pj'</span>],<span class="st">'MIV-Budget'</span>:result[<span class="st">'miv_budget_pj'</span>]}</span>
-<span id="cb5-27"><a href="#cb5-27" aria-hidden="true" tabindex="-1"></a>allocation_figures(variants,steps)</span>
-<span id="cb5-28"><a href="#cb5-28" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> name <span class="kw">in</span> [<span class="st">'zentraler_pool'</span>,<span class="st">'allokation_deckung'</span>,<span class="st">'allokation_saldo'</span>]:</span>
-<span id="cb5-29"><a href="#cb5-29" aria-hidden="true" tabindex="-1"></a>    display(HTML(<span class="ss">f'&lt;iframe title="</span><span class="sc">{</span>name<span class="sc">}</span><span class="ss">" src="../../Abbildungen/methodik/</span><span class="sc">{</span>name<span class="sc">}</span><span class="ss">.html" style="width:100%;height:700px;border:0"&gt;&lt;/iframe&gt;'</span>))</span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> label,f,m <span class="kw">in</span> [(<span class="st">'Referenz'</span>,<span class="dv">0</span>,<span class="fl">.8</span>),(<span class="st">'20 </span><span class="sc">% F</span><span class="st">reiflächen-PV'</span>,<span class="fl">.2</span>,<span class="fl">.8</span>),(<span class="st">'60 % MIV'</span>,<span class="dv">0</span>,<span class="fl">.6</span>),(<span class="st">'40 % MIV'</span>,<span class="dv">0</span>,<span class="fl">.4</span>),(<span class="st">'100 </span><span class="sc">% F</span><span class="st">reiflächen-PV'</span>,<span class="dv">1</span>,<span class="fl">.8</span>)]:</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>    p<span class="op">=</span><span class="bu">dict</span>(parameters,other_pv_share<span class="op">=</span>f,miv_share<span class="op">=</span>m,public_transport_share<span class="op">=</span><span class="dv">1</span><span class="op">-</span>m,other_transport_share<span class="op">=</span><span class="dv">0</span>)</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>    r<span class="op">=</span>allocate(p)</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>    variants.append({<span class="st">'Variante'</span>:label,<span class="st">'PV gesamt'</span>:g[<span class="st">'pv'</span>],<span class="st">'PV Gebäude'</span>:r[<span class="st">'building_pv_pj'</span>],<span class="st">'PV Freifläche'</span>:r[<span class="st">'other_pv_pj'</span>],</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>        <span class="st">'Verkehr gesamt'</span>:d[<span class="st">'verkehr'</span>],<span class="st">'ÖPNV'</span>:r[<span class="st">'public_transport_pj'</span>],<span class="st">'MIV'</span>:r[<span class="st">'miv_demand_pj'</span>],</span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>        <span class="st">'Übriger Verkehr'</span>:r[<span class="st">'other_transport_pj'</span>],<span class="st">'MIV-Anteil [%]'</span>:<span class="dv">100</span><span class="op">*</span>m,<span class="st">'Freiflächen-Anteil [%]'</span>:<span class="dv">100</span><span class="op">*</span>f,</span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>        <span class="st">'Gebäude'</span>:d[<span class="st">'gebaeude'</span>],<span class="st">'Restdeckung'</span>:r[<span class="st">'central_credit_pj'</span>],<span class="st">'Verfügbare Restdeckung'</span>:r[<span class="st">'available_credit_pj'</span>],</span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>        <span class="st">'Saldo'</span>:r[<span class="st">'building_target_pj'</span>],<span class="st">'Zentraler Fehlbetrag'</span>:r[<span class="st">'central_shortfall_pj'</span>]})</span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>comparison<span class="op">=</span>pd.DataFrame(variants)</span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>pv_columns<span class="op">=</span>[<span class="st">'Variante'</span>,<span class="st">'PV gesamt'</span>,<span class="st">'PV Gebäude'</span>,<span class="st">'PV Freifläche'</span>,<span class="st">'Freiflächen-Anteil [%]'</span>]</span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>traffic_columns<span class="op">=</span>[<span class="st">'Variante'</span>,<span class="st">'Verkehr gesamt'</span>,<span class="st">'ÖPNV'</span>,<span class="st">'MIV'</span>,<span class="st">'Übriger Verkehr'</span>,<span class="st">'MIV-Anteil [%]'</span>]</span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>result_columns<span class="op">=</span>[<span class="st">'Variante'</span>,<span class="st">'Restdeckung'</span>,<span class="st">'Saldo'</span>,<span class="st">'Zentraler Fehlbetrag'</span>]</span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> cols <span class="kw">in</span> [pv_columns,traffic_columns,result_columns]: display(comparison[cols].<span class="bu">round</span>(<span class="dv">3</span>))</span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a>steps<span class="op">=</span>{<span class="st">'Zentrale Großkraftwerke'</span>:result[<span class="st">'central_pj'</span>],<span class="st">'Industrie'</span>:<span class="op">-</span>d[<span class="st">'industrie'</span>],</span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a>    <span class="st">'Landwirtschaft'</span>:<span class="op">-</span>d[<span class="st">'landwirtschaft'</span>],<span class="st">'Energiebranche'</span>:<span class="op">-</span>d[<span class="st">'verbrauch_sektor_energie'</span>],</span>
+<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a>    <span class="st">'Umwandlung'</span>:<span class="op">-</span>d[<span class="st">'umwandlungseinsatz'</span>],<span class="st">'Verluste'</span>:<span class="op">-</span>d[<span class="st">'transportverluste'</span>],</span>
+<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a>    <span class="st">'Nettoexport (Modell)'</span>:<span class="op">-</span>assumptions[<span class="st">'model_net_exports_pj'</span>],<span class="st">'ÖPNV'</span>:<span class="op">-</span>result[<span class="st">'public_transport_pj'</span>],</span>
+<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a>    <span class="st">'Übriger Verkehr'</span>:<span class="op">-</span>result[<span class="st">'other_transport_pj'</span>],<span class="st">'Restdeckung'</span>:result[<span class="st">'central_credit_pj'</span>]}</span>
+<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a>allocation_figures(variants,steps)</span>
+<span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> name <span class="kw">in</span> [<span class="st">'zentraler_pool'</span>,<span class="st">'allokation_deckung'</span>,<span class="st">'allokation_saldo'</span>]:</span>
+<span id="cb5-26"><a href="#cb5-26" aria-hidden="true" tabindex="-1"></a>    display(HTML(<span class="ss">f'&lt;iframe title="</span><span class="sc">{</span>name<span class="sc">}</span><span class="ss">" src="../../Abbildungen/methodik/</span><span class="sc">{</span>name<span class="sc">}</span><span class="ss">.html" style="width:100%;height:700px;border:0"&gt;&lt;/iframe&gt;'</span>))</span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output cell-output-display">
 <div>
@@ -1075,7 +1030,7 @@ B_{Geb}+R_{zentral,nachMIV}+G_{PV,sonstige}+G_{nicht\ budgetfähig}+I_+=R_{Quell
 </tr>
 <tr class="even">
 <th data-quarto-table-cell-role="th">3</th>
-<td>40 % MIV: Konflikt</td>
+<td>40 % MIV</td>
 <td>149</td>
 <td>149.0</td>
 <td>0.0</td>
@@ -1083,11 +1038,11 @@ B_{Geb}+R_{zentral,nachMIV}+G_{PV,sonstige}+G_{nicht\ budgetfähig}+I_+=R_{Quell
 </tr>
 <tr class="odd">
 <th data-quarto-table-cell-role="th">4</th>
-<td>H₂ vollständig angerechnet</td>
+<td>100 % Freiflächen-PV</td>
 <td>149</td>
+<td>0.0</td>
 <td>149.0</td>
-<td>0.0</td>
-<td>0.0</td>
+<td>100.0</td>
 </tr>
 </tbody>
 </table>
@@ -1140,7 +1095,7 @@ B_{Geb}+R_{zentral,nachMIV}+G_{PV,sonstige}+G_{nicht\ budgetfähig}+I_+=R_{Quell
 </tr>
 <tr class="even">
 <th data-quarto-table-cell-role="th">3</th>
-<td>40 % MIV: Konflikt</td>
+<td>40 % MIV</td>
 <td>90</td>
 <td>54.0</td>
 <td>36.0</td>
@@ -1149,7 +1104,7 @@ B_{Geb}+R_{zentral,nachMIV}+G_{PV,sonstige}+G_{nicht\ budgetfähig}+I_+=R_{Quell
 </tr>
 <tr class="odd">
 <th data-quarto-table-cell-role="th">4</th>
-<td>H₂ vollständig angerechnet</td>
+<td>100 % Freiflächen-PV</td>
 <td>90</td>
 <td>18.0</td>
 <td>72.0</td>
@@ -1170,58 +1125,46 @@ B_{Geb}+R_{zentral,nachMIV}+G_{PV,sonstige}+G_{nicht\ budgetfähig}+I_+=R_{Quell
 <tr class="header">
 <th data-quarto-table-cell-role="th"></th>
 <th data-quarto-table-cell-role="th">Variante</th>
-<th data-quarto-table-cell-role="th">H₂-Anrechnung [%]</th>
-<th data-quarto-table-cell-role="th">MIV-Budget</th>
+<th data-quarto-table-cell-role="th">Restdeckung</th>
 <th data-quarto-table-cell-role="th">Saldo</th>
-<th data-quarto-table-cell-role="th">Zentraler Rest</th>
-<th data-quarto-table-cell-role="th">Vorrang gedeckt</th>
+<th data-quarto-table-cell-role="th">Zentraler Fehlbetrag</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <th data-quarto-table-cell-role="th">0</th>
 <td>Referenz</td>
-<td>0</td>
-<td>24.0</td>
-<td>-7.0</td>
+<td>31.0</td>
 <td>0.0</td>
-<td>True</td>
+<td>0.0</td>
 </tr>
 <tr class="even">
 <th data-quarto-table-cell-role="th">1</th>
 <td>20 % Freiflächen-PV</td>
-<td>0</td>
-<td>24.0</td>
-<td>-36.8</td>
+<td>60.8</td>
 <td>0.0</td>
-<td>True</td>
+<td>0.0</td>
 </tr>
 <tr class="odd">
 <th data-quarto-table-cell-role="th">2</th>
 <td>60 % MIV</td>
-<td>0</td>
-<td>6.0</td>
-<td>-7.0</td>
+<td>13.0</td>
 <td>0.0</td>
-<td>True</td>
+<td>0.0</td>
 </tr>
 <tr class="even">
 <th data-quarto-table-cell-role="th">3</th>
-<td>40 % MIV: Konflikt</td>
-<td>0</td>
+<td>40 % MIV</td>
+<td>-5.0</td>
 <td>0.0</td>
 <td>5.0</td>
-<td>-12.0</td>
-<td>False</td>
 </tr>
 <tr class="odd">
 <th data-quarto-table-cell-role="th">4</th>
-<td>H₂ vollständig angerechnet</td>
-<td>100</td>
-<td>28.0</td>
-<td>-3.0</td>
+<td>100 % Freiflächen-PV</td>
+<td>180.0</td>
 <td>0.0</td>
-<td>True</td>
+<td>0.0</td>
 </tr>
 </tbody>
 </table>
@@ -1241,9 +1184,9 @@ B_{Geb}+R_{zentral,nachMIV}+G_{PV,sonstige}+G_{nicht\ budgetfähig}+I_+=R_{Quell
 </section>
 <section id="primärenergie-und-nutzungsbezogene-gutschrift" class="level2">
 <h2 class="anchored" data-anchor-id="primärenergie-und-nutzungsbezogene-gutschrift">7. Primärenergie und nutzungsbezogene Gutschrift</h2>
-<p>Die sektorale Zuordnung bleibt in elektrischer Endenergie 2040. Für die spätere Bewertung mit heutigen Konversionsfaktoren gilt <span class="math inline">\(E_{PE,MIV}=M\,f_{PE,Strom}\)</span>. Das ist die Bewertung des zugeordneten Strombudgets, keine Prognose des PE-Faktors 2040. Eine vollständige physische PE-Quartiersbilanz benötigt zusätzlich die übrigen Energieträger und die zeitlichen Faktoren. Ein jährlicher Ersatzfaktor ist nur bei dokumentierter Kompatibilität mit dem Bewertungsverfahren zulässig; monatliche Gewichtungen können einen einzelnen Jahresfaktor unzureichend machen.</p>
+<p>Die sektorale Zuordnung bleibt in elektrischer Endenergie 2040. Für die spätere Bewertung mit heutigen Konversionsfaktoren gilt <span class="math inline">\(E_{PE,MIV}=R\,f_{PE,Strom}\)</span>. Das ist die Bewertung des zugeordneten Strombudgets, keine Prognose des PE-Faktors 2040. Eine vollständige physische PE-Quartiersbilanz benötigt zusätzlich die übrigen Energieträger und die zeitlichen Faktoren. Ein jährlicher Ersatzfaktor ist nur bei dokumentierter Kompatibilität mit dem Bewertungsverfahren zulässig; monatliche Gewichtungen können einen einzelnen Jahresfaktor unzureichend machen.</p>
 <p>Hier liegt kein freigegebener heutiger Faktorensatz vor. PE-Budget und spezifische Gutschrift bleiben deshalb <strong>offen</strong>, nicht null. Auch Nutzungsanteile und Ziel-NGF sind nicht neu gesetzt. Die historische Gutschrift 2023 wird durch das elektrische Rechenbeispiel nicht ersetzt.</p>
-<div id="4dba3320" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-10-23T17:13:13.524694Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-10-23T17:13:13.524015Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-10-23T17:13:13.535172Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-10-23T17:13:13.534697Z&quot;}}" data-execution_count="6">
+<div id="4dba3320" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-10-29T16:55:51.438059Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-10-29T16:55:51.437310Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-10-29T16:55:51.459612Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-10-29T16:55:51.457551Z&quot;}}" data-execution_count="6">
 <details class="code-fold">
 <summary>Berechnung anzeigen</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>factor<span class="op">=</span>parameters[<span class="st">'pe_factor_electricity'</span>]</span>
@@ -1252,8 +1195,8 @@ B_{Geb}+R_{zentral,nachMIV}+G_{PV,sonstige}+G_{nicht\ budgetfähig}+I_+=R_{Quell
 <span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
 <span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">assert</span> np.isfinite(factor) <span class="kw">and</span> factor<span class="op">&gt;=</span><span class="dv">0</span></span>
 <span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">assert</span> parameters[<span class="st">'pe_factor_year'</span>] <span class="kw">and</span> parameters[<span class="st">'pe_factor_source'</span>]</span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>    primary_energy_budget<span class="op">=</span>result[<span class="st">'miv_budget_pj'</span>]<span class="op">*</span>factor</span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>display(pd.DataFrame([{<span class="st">'Elektrisches MIV-Budget [PJ/a]'</span>:result[<span class="st">'miv_budget_pj'</span>],</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>    primary_energy_budget<span class="op">=</span>result[<span class="st">'central_credit_pj'</span>]<span class="op">*</span>factor</span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>display(pd.DataFrame([{<span class="st">'Zentrale Restdeckung [PJ/a]'</span>:result[<span class="st">'central_credit_pj'</span>],</span>
 <span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>                      <span class="st">'PE-Budget [PJ_PE/a]'</span>:primary_energy_budget,</span>
 <span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>                      <span class="st">'Status'</span>:<span class="st">'Offen: belegter Faktorensatz und nutzungsbezogene Verteilung fehlen'</span> <span class="cf">if</span> factor <span class="kw">is</span> <span class="va">None</span> <span class="cf">else</span> <span class="st">'Parametrierte Umrechnung'</span>}]))</span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
@@ -1265,7 +1208,7 @@ B_{Geb}+R_{zentral,nachMIV}+G_{PV,sonstige}+G_{nicht\ budgetfähig}+I_+=R_{Quell
 <thead>
 <tr class="header">
 <th data-quarto-table-cell-role="th"></th>
-<th data-quarto-table-cell-role="th">Elektrisches MIV-Budget [PJ/a]</th>
+<th data-quarto-table-cell-role="th">Zentrale Restdeckung [PJ/a]</th>
 <th data-quarto-table-cell-role="th">PE-Budget [PJ_PE/a]</th>
 <th data-quarto-table-cell-role="th">Status</th>
 </tr>
@@ -1273,7 +1216,7 @@ B_{Geb}+R_{zentral,nachMIV}+G_{PV,sonstige}+G_{nicht\ budgetfähig}+I_+=R_{Quell
 <tbody>
 <tr class="odd">
 <th data-quarto-table-cell-role="th">0</th>
-<td>24.0</td>
+<td>31.0</td>
 <td>None</td>
 <td>Offen: belegter Faktorensatz und nutzungsbezog...</td>
 </tr>
@@ -1284,37 +1227,37 @@ B_{Geb}+R_{zentral,nachMIV}+G_{PV,sonstige}+G_{nicht\ budgetfähig}+I_+=R_{Quell
 </div>
 </div>
 </section>
-<section id="kontrollen-ausgaben-und-nächste-entscheidungen" class="level2">
-<h2 class="anchored" data-anchor-id="kontrollen-ausgaben-und-nächste-entscheidungen">8. Kontrollen, Ausgaben und nächste Entscheidungen</h2>
-<p>Geprüft werden Quellsummen, positive Zuordnungen, Verkehrssumme, PV-Erhaltung und der vollständige Bilanzrest. Grenzfälle prüfen 0/100 % andere PV sowie 0/100 % MIV. Kleine Quellenreste werden erhalten. Outputs enthalten Parameter, Quellen-Hashes, Resultate und die fünf Varianten. Die QMD-Ergebnistabelle wird aus diesen Rechnungen erzeugt; sie enthält keine separat eingegebenen Ergebniszahlen.</p>
-<p>Für eine normative Festlegung fehlen insbesondere: begründete PV- und Verkehrsanteile, Herkunft/Anrechenbarkeit der Rückverstromung und der Sammelposition Geothermie/sonstige, Verwendung der anderen PV, Priorisierung der Systembedarfe und ein heutiger PE-Faktorensatz. Der Gebäudetypologie-Pool und eine neue Dichtekalibrierung sind ausdrücklich zurückgestellt.</p>
-<div id="0573ab1b" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-10-23T17:13:13.539326Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-10-23T17:13:13.538369Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-10-23T17:13:13.572942Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-10-23T17:13:13.571645Z&quot;}}" data-execution_count="7">
+<section id="kontrollen-und-ausgaben" class="level2">
+<h2 class="anchored" data-anchor-id="kontrollen-und-ausgaben">8. Kontrollen und Ausgaben</h2>
+<p>Die Kontrollen prüfen PV-Erhaltung, Verkehrsanteile, vollständige Zuordnung und den Modell-Bilanzschluss einschließlich negativer zentraler Reste. JSON-Schema 2 ersetzt das gekappte <code>miv_budget_pj</code> durch <code>central_credit_pj</code>; alle abhängigen Rechnungen verwenden die neue Größe. Quellen-Hashes, Quellrest und Exportannahme bleiben nachvollziehbar. PE-Faktorensatz und nutzungsbezogene Verteilung sind weiterhin offen.</p>
+<div id="0573ab1b" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-10-29T16:55:51.464870Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-10-29T16:55:51.464023Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-10-29T16:55:51.519342Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-10-29T16:55:51.517454Z&quot;}}" data-execution_count="7">
 <details class="code-fold">
 <summary>Berechnung anzeigen</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> f,m,h <span class="kw">in</span> [(<span class="dv">0</span>,<span class="dv">0</span>,<span class="dv">0</span>),(<span class="dv">1</span>,<span class="dv">1</span>,<span class="dv">0</span>),(<span class="dv">1</span>,<span class="dv">0</span>,<span class="dv">1</span>),(<span class="dv">0</span>,<span class="dv">1</span>,<span class="dv">1</span>)]:</span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>    p<span class="op">=</span>copy.deepcopy(parameters)<span class="op">;</span>p.update(other_pv_share<span class="op">=</span>f,miv_share<span class="op">=</span>m,public_transport_share<span class="op">=</span><span class="dv">1</span><span class="op">-</span>m)</span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>    p[<span class="st">'eligible_nonpv_share'</span>][<span class="st">'hydrogen_electricity'</span>]<span class="op">=</span>h</span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>    r<span class="op">=</span>allocate(p)</span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">assert</span> np.isclose(r[<span class="st">'building_pv_pj'</span>]<span class="op">+</span>r[<span class="st">'other_pv_pj'</span>],g[<span class="st">'pv'</span>])</span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">assert</span> np.isclose(r[<span class="st">'allocation_residual_pj'</span>],<span class="op">-</span><span class="dv">2</span>)</span>
-<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> bad <span class="kw">in</span> [<span class="op">-</span><span class="fl">.01</span>,<span class="fl">1.01</span>]:</span>
-<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>    p<span class="op">=</span>copy.deepcopy(parameters)<span class="op">;</span>p[<span class="st">'other_pv_share'</span>]<span class="op">=</span>bad</span>
-<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>    <span class="cf">try</span>: allocate(p)</span>
-<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">except</span> <span class="pp">AssertionError</span>: <span class="cf">pass</span></span>
-<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>: <span class="cf">raise</span> <span class="pp">AssertionError</span>(<span class="st">'Ungültiger PV-Anteil akzeptiert'</span>)</span>
-<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>payload<span class="op">=</span>{<span class="st">'parameters'</span>:parameters,<span class="st">'result'</span>:result,<span class="st">'pe_budget_pj'</span>:primary_energy_budget,<span class="st">'source_sha256'</span>:provenance}</span>
-<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>(OUT<span class="op">/</span><span class="st">'allokation.json'</span>).write_text(json.dumps(payload,ensure_ascii<span class="op">=</span><span class="va">False</span>,indent<span class="op">=</span><span class="dv">2</span>),encoding<span class="op">=</span><span class="st">'utf-8'</span>)</span>
-<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a>result_table.to_csv(OUT<span class="op">/</span><span class="st">'referenzfall.csv'</span>,index<span class="op">=</span><span class="va">False</span>)</span>
-<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a>comparison.to_csv(OUT<span class="op">/</span><span class="st">'varianten.csv'</span>,index<span class="op">=</span><span class="va">False</span>)</span>
-<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> table(frame):</span>
-<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a>    frame<span class="op">=</span>frame.<span class="bu">round</span>(<span class="dv">3</span>).copy()</span>
-<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="st">'Vorrang gedeckt'</span> <span class="kw">in</span> frame: frame[<span class="st">'Vorrang gedeckt'</span>]<span class="op">=</span>frame[<span class="st">'Vorrang gedeckt'</span>].<span class="bu">map</span>({<span class="va">True</span>:<span class="st">'ja'</span>,<span class="va">False</span>:<span class="st">'nein'</span>})</span>
-<span id="cb7-19"><a href="#cb7-19" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="st">'| '</span><span class="op">+</span><span class="st">' | '</span>.join(frame.columns)<span class="op">+</span><span class="st">' |</span><span class="ch">\n</span><span class="st">| '</span><span class="op">+</span><span class="st">' | '</span>.join([<span class="st">'---'</span>]<span class="op">*</span><span class="bu">len</span>(frame.columns))<span class="op">+</span><span class="st">' |</span><span class="ch">\n</span><span class="st">'</span><span class="op">+</span><span class="st">'</span><span class="ch">\n</span><span class="st">'</span>.join(<span class="st">'| '</span><span class="op">+</span><span class="st">' | '</span>.join(<span class="bu">map</span>(<span class="bu">str</span>,row))<span class="op">+</span><span class="st">' |'</span> <span class="cf">for</span> row <span class="kw">in</span> frame.itertuples(index<span class="op">=</span><span class="va">False</span>,name<span class="op">=</span><span class="va">None</span>))</span>
-<span id="cb7-20"><a href="#cb7-20" aria-hidden="true" tabindex="-1"></a>text<span class="op">=</span>table(comparison[pv_columns])<span class="op">+</span><span class="st">'</span><span class="ch">\n\n</span><span class="st">: PV-Aufteilung in PJ Strom/a; Freiflächenanteil bezogen auf die gesamte PV-Erzeugung. {#tbl-allokation-pv}</span><span class="ch">\n\n</span><span class="st">'</span></span>
-<span id="cb7-21"><a href="#cb7-21" aria-hidden="true" tabindex="-1"></a>text<span class="op">+=</span>table(comparison[traffic_columns])<span class="op">+</span><span class="st">'</span><span class="ch">\n\n</span><span class="st">: Verkehrsaufteilung in PJ Strom/a; MIV-Anteil bezogen auf den elektrischen Verkehrsbedarf. {#tbl-allokation-verkehr}</span><span class="ch">\n\n</span><span class="st">'</span></span>
-<span id="cb7-22"><a href="#cb7-22" aria-hidden="true" tabindex="-1"></a>text<span class="op">+=</span>table(comparison[result_columns])<span class="op">+</span><span class="st">'</span><span class="ch">\n\n</span><span class="st">: Allokationsergebnisse in PJ Strom/a. Negativer zentraler Rest kennzeichnet ungedeckte Vorrangbedarfe. {#tbl-allokation-vorlaeufig}</span><span class="ch">\n</span><span class="st">'</span></span>
-<span id="cb7-23"><a href="#cb7-23" aria-hidden="true" tabindex="-1"></a>(ROOT<span class="op">/</span><span class="st">'Kapitel/_generated/allokation-ergebnisse.qmd'</span>).write_text(text,encoding<span class="op">=</span><span class="st">'utf-8'</span>)</span>
-<span id="cb7-24"><a href="#cb7-24" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Bilanz- und Grenzfallkontrollen bestanden.'</span>)</span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> f <span class="kw">in</span> [<span class="dv">0</span>,<span class="fl">.2</span>,<span class="dv">1</span>]:</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> m <span class="kw">in</span> [<span class="dv">0</span>,<span class="fl">.4</span>,<span class="fl">.6</span>,<span class="fl">.8</span>,<span class="dv">1</span>]:</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>        r<span class="op">=</span>allocate(<span class="bu">dict</span>(parameters,other_pv_share<span class="op">=</span>f,miv_share<span class="op">=</span>m,public_transport_share<span class="op">=</span><span class="dv">1</span><span class="op">-</span>m))</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>        <span class="cf">assert</span> np.isclose(r[<span class="st">'building_pv_pj'</span>]<span class="op">+</span>r[<span class="st">'other_pv_pj'</span>],g[<span class="st">'pv'</span>])</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>        <span class="cf">assert</span> np.isclose(r[<span class="st">'allocation_residual_pj'</span>],<span class="dv">0</span>)</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>        <span class="cf">assert</span> np.isclose(r[<span class="st">'central_credit_pj'</span>],<span class="dv">90</span><span class="op">*</span>m<span class="op">-</span><span class="dv">41</span><span class="op">+</span><span class="dv">149</span><span class="op">*</span>f)</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a><span class="cf">assert</span> np.isclose(result[<span class="st">'central_credit_pj'</span>],<span class="dv">31</span>)</span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> bad <span class="kw">in</span> [<span class="op">-</span><span class="fl">.01</span>,<span class="fl">1.01</span>]:</span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>    p<span class="op">=</span>copy.deepcopy(parameters)<span class="op">;</span>p[<span class="st">'other_pv_share'</span>]<span class="op">=</span>bad</span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">try</span>: allocate(p)</span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>    <span class="cf">except</span> <span class="pp">AssertionError</span>: <span class="cf">pass</span></span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>: <span class="cf">raise</span> <span class="pp">AssertionError</span>(<span class="st">'Ungültiger PV-Anteil akzeptiert'</span>)</span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>payload<span class="op">=</span>{<span class="st">'schema_version'</span>:<span class="dv">2</span>,<span class="st">'assumptions'</span>:assumptions,<span class="st">'parameters'</span>:parameters,<span class="st">'result'</span>:result,<span class="st">'pe_budget_pj'</span>:primary_energy_budget,<span class="st">'source_sha256'</span>:provenance}</span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a>(OUT<span class="op">/</span><span class="st">'allokation.json'</span>).write_text(json.dumps(payload,ensure_ascii<span class="op">=</span><span class="va">False</span>,indent<span class="op">=</span><span class="dv">2</span>),encoding<span class="op">=</span><span class="st">'utf-8'</span>)</span>
+<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a>result_table.to_csv(OUT<span class="op">/</span><span class="st">'referenzfall.csv'</span>,index<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a>comparison.to_csv(OUT<span class="op">/</span><span class="st">'varianten.csv'</span>,index<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> table(frame):</span>
+<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a>    frame<span class="op">=</span>frame.<span class="bu">round</span>(<span class="dv">3</span>).copy()</span>
+<span id="cb7-19"><a href="#cb7-19" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="st">'Vorrang gedeckt'</span> <span class="kw">in</span> frame: frame[<span class="st">'Vorrang gedeckt'</span>]<span class="op">=</span>frame[<span class="st">'Vorrang gedeckt'</span>].<span class="bu">map</span>({<span class="va">True</span>:<span class="st">'ja'</span>,<span class="va">False</span>:<span class="st">'nein'</span>})</span>
+<span id="cb7-20"><a href="#cb7-20" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="st">'| '</span><span class="op">+</span><span class="st">' | '</span>.join(frame.columns)<span class="op">+</span><span class="st">' |</span><span class="ch">\n</span><span class="st">| '</span><span class="op">+</span><span class="st">' | '</span>.join([<span class="st">'---'</span>]<span class="op">*</span><span class="bu">len</span>(frame.columns))<span class="op">+</span><span class="st">' |</span><span class="ch">\n</span><span class="st">'</span><span class="op">+</span><span class="st">'</span><span class="ch">\n</span><span class="st">'</span>.join(<span class="st">'| '</span><span class="op">+</span><span class="st">' | '</span>.join(<span class="bu">map</span>(<span class="bu">str</span>,row))<span class="op">+</span><span class="st">' |'</span> <span class="cf">for</span> row <span class="kw">in</span> frame.itertuples(index<span class="op">=</span><span class="va">False</span>,name<span class="op">=</span><span class="va">None</span>))</span>
+<span id="cb7-21"><a href="#cb7-21" aria-hidden="true" tabindex="-1"></a>text<span class="op">=</span>table(comparison[pv_columns])<span class="op">+</span><span class="st">'</span><span class="ch">\n\n</span><span class="st">: PV-Aufteilung in PJ Strom/a; Freiflächenanteil bezogen auf die gesamte PV-Erzeugung. {#tbl-allokation-pv}</span><span class="ch">\n\n</span><span class="st">'</span></span>
+<span id="cb7-22"><a href="#cb7-22" aria-hidden="true" tabindex="-1"></a>text<span class="op">+=</span>table(comparison[traffic_columns])<span class="op">+</span><span class="st">'</span><span class="ch">\n\n</span><span class="st">: Verkehrsaufteilung in PJ Strom/a; MIV-Anteil bezogen auf den elektrischen Verkehrsbedarf. {#tbl-allokation-verkehr}</span><span class="ch">\n\n</span><span class="st">'</span></span>
+<span id="cb7-23"><a href="#cb7-23" aria-hidden="true" tabindex="-1"></a>text<span class="op">+=</span>table(comparison[result_columns])<span class="op">+</span><span class="st">'</span><span class="ch">\n\n</span><span class="st">: Allokationsergebnisse in PJ Strom/a. Restdeckung ist vorzeichenbehaftet; ein zentraler Fehlbetrag wird durch Gebäude-PV ausgeglichen. {#tbl-allokation-vorlaeufig}</span><span class="ch">\n</span><span class="st">'</span></span>
+<span id="cb7-24"><a href="#cb7-24" aria-hidden="true" tabindex="-1"></a>(ROOT<span class="op">/</span><span class="st">'Kapitel/_generated/allokation-ergebnisse.qmd'</span>).write_text(text,encoding<span class="op">=</span><span class="st">'utf-8'</span>)</span>
+<span id="cb7-25"><a href="#cb7-25" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Bilanz- und Grenzfallkontrollen bestanden.'</span>)</span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>Bilanz- und Grenzfallkontrollen bestanden.</code></pre>

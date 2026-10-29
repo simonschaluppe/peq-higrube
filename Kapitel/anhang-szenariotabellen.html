@@ -388,6 +388,7 @@ div.csl-indent {
   <ul>
   <li><a href="#stromerzeugung-strombedarf-und-bilanzreste" id="toc-stromerzeugung-strombedarf-und-bilanzreste" class="nav-link active" data-scroll-target="#stromerzeugung-strombedarf-und-bilanzreste">Stromerzeugung, Strombedarf und Bilanzreste</a></li>
   <li><a href="#endenergie-nach-sektoren" id="toc-endenergie-nach-sektoren" class="nav-link" data-scroll-target="#endenergie-nach-sektoren">Endenergie nach Sektoren</a></li>
+  <li><a href="#sec-modellbilanz-2040" id="toc-sec-modellbilanz-2040" class="nav-link" data-scroll-target="#sec-modellbilanz-2040">Quellbilanz und Modellannahme der Allokation</a></li>
   </ul>
 </nav>
     </div>
@@ -748,6 +749,52 @@ Tabelle&nbsp;A.4: Separater Sektorausweis, nicht Teil der Stromallokation. Quell
 </figure>
 </div>
 <p>Die Datenbasis für WEM/WAM 2025 verwendet REP-0995, Tabelle E (S. 12). Die in der Datenlieferung dokumentierte Abweichung zu Tabelle 19 wird nicht durch eine Mischung der beiden Tabellen aufgelöst. Transition verwendet REP-0880, Tabellen 15 und 16 <span class="citation" data-cites="uba2025szenarien uba2023transition">(<a href="../references.html#ref-uba2025szenarien" role="doc-biblioref">Umweltbundesamt 2025</a>, <a href="../references.html#ref-uba2023transition" role="doc-biblioref">2024</a>)</span>.</p>
+</section>
+<section id="sec-modellbilanz-2040" class="level2">
+<h2 class="anchored" data-anchor-id="sec-modellbilanz-2040">Quellbilanz und Modellannahme der Allokation</h2>
+<p>Die Bedarfskomponenten von Transition summieren sich auf 452 PJ/a; die veröffentlichte Gesamtsumme beträgt 450 PJ/a. Mit 457 PJ/a Erzeugung und 7 PJ/a Nettoexport ergibt die Komponentenbilanz einen Rest von −2 PJ/a. Die Ursache der Differenz zwischen Komponenten und Gesamtsumme wird hier nicht als Rundung vorausgesetzt.</p>
+<div id="tbl-exportannahme" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-exportannahme-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabelle&nbsp;A.5: Überleitung in PJ Strom/a. Explizite Modellannahme vom 29.10.2026: 5 PJ/a Nettoexport zur Bilanzschließung; keine Änderung der Originalquelle. H₂-Rückverstromung (4 PJ/a) und fossiler Strom (1 PJ/a) bleiben vollständig als Deckung enthalten.
+</figcaption>
+<div aria-describedby="tbl-exportannahme-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Position</th>
+<th style="text-align: right;">Quelle / Komponenten</th>
+<th style="text-align: right;">Allokationsmodell</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Erzeugung</td>
+<td style="text-align: right;">457</td>
+<td style="text-align: right;">457</td>
+</tr>
+<tr class="even">
+<td>Bedarfskomponenten</td>
+<td style="text-align: right;">452</td>
+<td style="text-align: right;">452</td>
+</tr>
+<tr class="odd">
+<td>Nettoexport</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr class="even">
+<td>Bilanzrest</td>
+<td style="text-align: right;">−2</td>
+<td style="text-align: right;">0</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<iframe src="../Abbildungen/methodik/bilanzreste.html" title="Quellwerte: Komponenten, Gesamtsummen und Bilanzreste" style="width:100%;height:850px;border:0" loading="lazy"></iframe>
+<p>Die Grafik zeigt die ursprünglichen Quellwerte und deren Bilanzidentitäten. Die Exportannahme wird ausschließlich im Allokationsmodell und im Kalibrierungsdashboard angewendet.</p>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">

@@ -505,7 +505,7 @@ window.Quarto = {
 <p><strong>Quelle:</strong> <code>Building-Sector_Pool 1.xlsx</code>, Lieferung 23.10.2026. <code>Strombed_estim</code> ist maßgeblich für die 900 Typen und ihre Flächen; <code>zuordnung_gfz!A:F</code> für die Dichtezuordnung. <code>Tabelle2</code> liefert ergänzende Anwendungen und die Einheiten. Die unveränderte Quelldatei ist unter <code>data/</code> versioniert. <code>daten_gebauedesektor.xlsx</code> ist eine editierbare Reinschrift ihrer gespeicherten Werte. Die gespeicherten PEExcel-Ergebnisse werden geprüft, aber nicht neu simuliert.</p>
 <p>Bezugsjahr ist <strong>2040</strong>. „Heute“ bleibt eine getrennte Quellspalte mit noch unbestätigtem Bezugsjahr. Sie ist <strong>nicht automatisch 2020</strong>. Für 2020 gibt es ein leeres ergänzbares Flächenfeld. Auch die heutige Spalte wird mit denselben gelieferten Typenkennwerten ausgewertet und ist daher keine unabhängig validierte historische Energiebilanz.</p>
 <p>Flächen: BGF in m², spezifische Energien laut <code>Tabelle2</code> in kWh/(m² NGF·a). Der aus der vorhandenen GFZ-Analyse übernommene Faktor <span class="math inline">\(r=A_{NGF}/A_{BGF}=0{,}8\)</span> ist eine einheitliche Modellannahme, keine typologiespezifische Messung. <span class="math inline">\(1\,GWh=10^6\,kWh\)</span>, <span class="math inline">\(1\,PJ=10^9/3{,}6\,kWh\)</span>. Salden sind <strong>Erzeugung bzw. Export minus Bedarf bzw. Import</strong>. Mobilität ist in den gelieferten Simulationskennwerten null und wird erst beim Top-down-Vergleich separat angesetzt. Virtuelle Dichtewerte bleiben von physischen Energieflüssen getrennt.</p>
-<div id="42e09d59" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-10-23T17:07:37.878467Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-10-23T17:07:37.877568Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-10-23T17:07:49.016041Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-10-23T17:07:49.014823Z&quot;}}" data-execution_count="1">
+<div id="42e09d59" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-10-29T16:56:28.689504Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-10-29T16:56:28.688947Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-10-29T16:56:47.086687Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-10-29T16:56:47.084582Z&quot;}}" data-execution_count="1">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pathlib <span class="im">import</span> Path</span>
@@ -573,7 +573,7 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="sec-gebaeude-datenpruefung">2. Datenprüfung, Schlüssel und Typologisierung</h2>
 <p>Der Schlüssel zerfällt in <strong>Geometrie | Baualter/Hüllstandard | Wärmeversorgung | PV | Flexibilität</strong>. Zehn geometrische Klassen sind nicht zehn energetische Klassen. <code>Neu_10cm/20cm/30cm</code> ist ein Quellcode für den Hüllstandard, kein alleiniger Beleg für Neubau: die separaten Bestand-/Neubau-/Sanierungsanteile sind zu verwenden. <code>Energetischer Standard</code> ist noch leer. Auch die Preset-Bezeichnung „Plus-Energie-Quartier“ ist keine geprüfte PEQ-Einstufung.</p>
 <p>Die gelieferte Auswertung enthält nur <code>PV30</code> und <code>noFlex</code>. Weitere Varianten im 7.200-Zeilen-Pool erhalten nicht durch einen unscharfen Join dieselben Kennwerte. Es gilt ein <strong>1:1-Join über den vollständigen Schlüssel</strong>. <code>save</code> enthält zusätzliche Projekt-/Exportstände und ist keine zweite nationale Flächenquelle.</p>
-<div id="3f2c9435" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-10-23T17:07:49.020160Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-10-23T17:07:49.019377Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-10-23T17:07:49.156714Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-10-23T17:07:49.155779Z&quot;}}" data-execution_count="2">
+<div id="3f2c9435" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-10-29T16:56:47.092806Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-10-29T16:56:47.091730Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-10-29T16:56:47.324551Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-10-29T16:56:47.323272Z&quot;}}" data-execution_count="2">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="cf">assert</span> types.Archetype.notna().<span class="bu">all</span>() <span class="kw">and</span> types.Archetype.is_unique</span>
@@ -853,7 +853,7 @@ window.Quarto = {
 <p>Für Typ <span class="math inline">\(k\)</span> und Zeitpunkt <span class="math inline">\(y\)</span> gilt <span class="math inline">\(A_{NGF,k,y}=r A_{BGF,k,y}\)</span> und <span class="math inline">\(w_{k,y}=A_{BGF,k,y}/\sum_k A_{BGF,k,y}\)</span>. Gewichte dienen der Beschreibung <strong>der gelieferten Summe</strong>. Es wird keine fremde nationale Gesamtsumme aufgezwungen.</p>
 <p><code>reduced.NGF_m2</code> und <code>Strombed_estim.Nationale BGF …</code> haben unterschiedliche Flächenbezüge und Variantenabdeckungen. Die alte Summe ist daher kein Ersatz für die neuen Flächen. Leere Werte, echte Nullen und nicht ausgeführte Varianten werden gezählt. Eine zusätzliche Kontrollaggregation über Geometrie/Hülle/Heizung zeigt den Unterschied auch bei Zusammenfassung von PV-/Flexibilitätsvarianten.</p>
 <p>Bestand, Neubau und Sanierung sind <strong>Anteile innerhalb eines Archetyps</strong>, keine booleschen Kennzeichen. Die gewichteten Flächen lauten <span class="math inline">\(A_{z,y}=\sum_k A_{BGF,k,y}s_{z,k}\)</span>. Ihre Bedeutung wird für 2040 verwendet; ein Anteil allein erklärt noch nicht die Übergänge, Abbrüche oder Sanierungsraten zwischen den Jahren.</p>
-<div id="9defcb23" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-10-23T17:07:49.160194Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-10-23T17:07:49.159649Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-10-23T17:07:49.662367Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-10-23T17:07:49.661633Z&quot;}}" data-execution_count="3">
+<div id="9defcb23" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-10-29T16:56:47.329853Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-10-29T16:56:47.328923Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-10-29T16:56:48.259157Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-10-29T16:56:48.257858Z&quot;}}" data-execution_count="3">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>area_cols<span class="op">=</span>{<span class="st">'heute'</span>:<span class="st">'Nationale BGF heute'</span>,<span class="st">'2040'</span>:<span class="st">'Nationale BGF 2040'</span>,<span class="st">'2020'</span>:<span class="st">'BGF_2020_m2'</span>}</span>
@@ -1115,7 +1115,7 @@ window.Quarto = {
 <h3 class="anchored" data-anchor-id="herkunft-der-pv-erzeugung">Herkunft der PV-Erzeugung</h3>
 <p>Die Erzeugung wird <strong>direkt aus den gespeicherten Simulationskennwerten der Excel</strong> übernommen. <code>Strombed_estim.PV_total_direct</code> bezeichnet direkt genutzten PV-Strom, <code>PV_to_Egrid</code> die Einspeisung. Ihre Summe wird gegen <code>Tabelle2.PV_total</code> geprüft. Die Kennwerte gelten je m² NGF und Jahr. Im Sektormodell findet keine neue Ertrags-, Orientierungs- oder Verschattungssimulation statt. Die Variante ist bei allen Typen <code>PV30|noFlex</code>; aus ihrem Namen wird kein zusätzlicher numerischer Ertragsfaktor abgeleitet. Die GFZ-Zuordnung verändert die PV-Erzeugung <strong>nicht</strong>.</p>
 <p>Für Typ <span class="math inline">\(k\)</span> ergibt sich die nationale PV-Erzeugung aus <span class="math inline">\(P_k=A_{BGF,k}\,r\,e_{PV,k}\)</span>, mit <span class="math inline">\(r=A_{NGF}/A_{BGF}=0{,}8\)</span>. Die Flächen kommen aus der Spalte <code>Nationale BGF 2040</code>.</p>
-<div id="740baba0" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-10-23T17:07:49.664950Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-10-23T17:07:49.664562Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-10-23T17:07:50.181280Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-10-23T17:07:50.180236Z&quot;}}" data-execution_count="4">
+<div id="740baba0" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-10-29T16:56:48.264761Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-10-29T16:56:48.263975Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-10-29T16:56:49.058477Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-10-29T16:56:49.057381Z&quot;}}" data-execution_count="4">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> c <span class="kw">in</span> [<span class="st">'Batt_total_charge_input'</span>,<span class="st">'EUIev_el'</span>,<span class="st">'PV_total_flex'</span>,<span class="st">'VRGrid_to_building'</span>,<span class="st">'EUIdhwdirect_el'</span>]:</span>
@@ -1387,7 +1387,7 @@ window.Quarto = {
 <p>Die elektrische Heizung ist nicht die gesamte Wärmeversorgung. Die Quelle enthält Fernwärme, Erdgas, Biomasse und „other“. <strong>Öl wird aus <code>EUI_other</code> nur für Schlüssel mit Heizsystem <code>Oel</code> herausgelöst</strong>. Ein anderer „other“-Betrag bleibt sonstige thermische Endenergie. Die Anwendungsaufteilung stammt aus den zugehörigen <code>EUIh_*</code>, <code>EUIdhw_*</code> und <code>EUIc_other</code>-Spalten, nicht aus angenommenen Wirkungsgraden.</p>
 <p><span class="math display">\[E_{i,y}=\sum_k A_{NGF,k,y}\,e_{i,k},\qquad E_{End,y}=E_{el,y}+\sum_{i\ne el}E_{i,y}.\]</span></p>
 <p>Der Bruttostrombedarf enthält lokal genutzten PV-Strom. Die alternativ ausgewiesene externe Lieferung enthält nur Netzbezug plus thermische Energieträger. Umweltwärme ist in diesen gelieferten Trägerkennwerten nicht als zusätzliche Endenergielieferung enthalten; diese Abgrenzung ist beim Vergleich mit nationalen Statistiken zu beachten.</p>
-<div id="96051760" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-10-23T17:07:50.183776Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-10-23T17:07:50.183546Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-10-23T17:07:50.417578Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-10-23T17:07:50.417081Z&quot;}}" data-execution_count="5">
+<div id="96051760" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-10-29T16:56:49.062915Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-10-29T16:56:49.062540Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-10-29T16:56:49.425363Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-10-29T16:56:49.424473Z&quot;}}" data-execution_count="5">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>carriers<span class="op">=</span>pd.DataFrame({<span class="st">'Strom (Bruttobedarf)'</span>:data.Strombedarf,<span class="st">'Fernwärme'</span>:data.EUI_district_heating,</span>
@@ -1568,7 +1568,7 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="sec-gebaeude-pe">6. Primärenergie: gelieferter Bewertungsstand</h2>
 <p>Die physische Import-/Exportbilanz lautet <span class="math inline">\(B_{PE,y}=\sum_k A_{NGF,k,y}(PEI_{export,k}-PEI_{import,k})\)</span>. Die gelieferten <code>PEI</code>-Werte werden aggregiert, <strong>ohne</strong> virtuelle Kontextwerte einzurechnen. Ihre Konsistenz wird gegen Netzstrom-PE plus die vier thermischen PE-Komponenten geprüft.</p>
 <p>Die sektorale Zuordnung 2040 bleibt eine Endenergieaufgabe. Die nachgelagerte PE-Bewertung soll die Kompatibilität mit heutigen Bewertungsverfahren herstellen, nicht die PE-Intensität des Energiesystems 2040 prognostizieren. Die Datei liefert bereits zeit-/typabhängig gewichtete PEI; ihr genauer Faktorensatz und dessen Bezugsjahr sind noch zu bestätigen. Ein pauschaler Jahresfaktor würde diese Ergebnisse nicht reproduzieren. Deshalb werden <strong>implizite effektive Faktoren</strong> <span class="math inline">\(f_{i,k}=PEI_{i,k}/e_{i,k}\)</span> nur diagnostisch ausgewiesen. Bei Nenner null bleibt der Quotient leer. Die Tabelle <code>PE_Faktoren</code> bereitet explizite, quellenbelegte Jahresfaktoren/Absenkpfade vor und bleibt zunächst leer.</p>
-<div id="d083f6b8" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-10-23T17:07:50.420252Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-10-23T17:07:50.419815Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-10-23T17:07:50.478443Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-10-23T17:07:50.477868Z&quot;}}" data-execution_count="6">
+<div id="d083f6b8" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-10-29T16:56:49.430127Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-10-29T16:56:49.429485Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-10-29T16:56:49.520348Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-10-29T16:56:49.519214Z&quot;}}" data-execution_count="6">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>thermal_pe<span class="op">=</span>data[[<span class="st">'PEI_district_heating'</span>,<span class="st">'PEI_natural_gas'</span>,<span class="st">'PEI_biomass'</span>,<span class="st">'PEI_other'</span>]].<span class="bu">sum</span>(axis<span class="op">=</span><span class="dv">1</span>,min_count<span class="op">=</span><span class="dv">4</span>)</span>
@@ -1778,7 +1778,7 @@ window.Quarto = {
 <p><span class="math display">\[B_D=B_{phys}+C_D,\qquad C_D=\sum_k A_{BGF,k}\mathbb E_k[c_D].\]</span></p>
 <p>Die anschließende Grafik zeigt Bedarf, PV und Kontextwert getrennt für <strong>alle 900 Typen</strong>. Geometrieauswahl und Achsenregler halten die Darstellung lesbar. Der Tooltip nennt die nationale BGF; Typen mit Nullfläche tragen national nichts bei. Für MFH_2G bleibt der nicht zugeordnete Kontextwert leer.</p>
 <p>Für den nationalen Vergleich wird die historische Formel auf alle positiv gewichteten Flächen angewandt. Das ist eine explizite Bewertungsvariante, keine Festlegung, dass jede Fläche PEQ-berechtigt ist. Eine eingeschränkte Anwendung benötigt typenspezifische PEQ-Anteile. Die physischen Kennwerte und die PE-Bilanz werden durch diese Variante nicht verändert.</p>
-<div id="7ee9d971" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-10-23T17:07:50.481004Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-10-23T17:07:50.480839Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-10-23T17:07:52.438258Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-10-23T17:07:52.437232Z&quot;}}" data-execution_count="7">
+<div id="7ee9d971" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-10-29T16:56:49.524515Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-10-29T16:56:49.523943Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-10-29T16:56:52.726607Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-10-29T16:56:52.724445Z&quot;}}" data-execution_count="7">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>mapping<span class="op">=</span>inputs[<span class="st">'GFZ_Zuordnung'</span>].copy()</span>
@@ -1981,7 +1981,7 @@ Davon betroffene Referenz-BGF [%]: 0.0</code></pre>
 <p>Zunächst wird der <strong>betriebliche Stromsaldo</strong> mit Gebäude-PV minus Gebäudestrom aus der UBA-Allokation verglichen. Erst danach werden identische MIV-Mengen auf beiden Seiten einbezogen: <span class="math display">\[B_{BU,erweitert}=B_{BU,Betrieb}+E_{MIV,Budget}-E_{MIV,Bedarf}.\]</span> Das verändert die Differenz nicht. Zusätzliche virtuelle Dichtewerte werden hier <strong>nicht</strong> addiert: Sie würden ohne freigegebene PEQ-Flächenanteile und Zielwertdefinition eine neue Bilanzgrenze erzeugen. Ebenso dürfen thermische Endenergien nicht kommentarlos mit einem reinen Stromziel verglichen werden.</p>
 <p>Der Pool enthält durchgehend PV30/noFlex und weiterhin fossile Wärmeversorgung im Zieljahr. Ein Abstand zu Transition ist daher ein <strong>inhaltlicher Szenariobefund</strong>, kein Rundungsfehler, der durch Skalieren zu beseitigen wäre. Der PEQ-Anteil ist in der Reinschrift als offenes Eingabefeld vorbereitet. Die Zahl allein, etwa ein positiver Stromsaldo eines Typs, belegt keine Standardkonformität.</p>
 <p>Das Vergleichsdiagramm verwendet drei Gruppen: <strong>Top-down (UBA-Allokation)</strong>, <strong>Bottom-up (gelieferter Gebäudepool)</strong> und <strong>Bottom-up mit historischer Dichteformel</strong>. Alle Gruppen enthalten dieselben MIV-Mengen. Die dritte Gruppe enthält zusätzlich den schraffierten virtuellen Dichtebeitrag. Ihr Saldo ist ein Bewertungssaldo in PJ-EE-Äquivalent/a; Bedarf und PV bleiben physische Jahresstrommengen. Der Ansatz macht die Wirkung der Dichteformel sichtbar, ohne sie als neue Kalibrierung auszugeben.</p>
-<div id="f7f69403" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-10-23T17:07:52.442260Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-10-23T17:07:52.441669Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-10-23T17:07:53.820066Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-10-23T17:07:53.819211Z&quot;}}" data-execution_count="8">
+<div id="f7f69403" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-10-29T16:56:52.732922Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-10-29T16:56:52.732018Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-10-29T16:56:58.050943Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-10-29T16:56:58.047816Z&quot;}}" data-execution_count="8">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>allocation_path<span class="op">=</span>ROOT<span class="op">/</span><span class="st">'Berechnungen/sektorenmodell/outputs/allokation/allokation.json'</span></span>
@@ -1989,7 +1989,7 @@ Davon betroffene Referenz-BGF [%]: 0.0</code></pre>
 <span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> val(metric):</span>
 <span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="bu">float</span>(energy.loc[energy.Stand.eq(<span class="st">'2040'</span>) <span class="op">&amp;</span> energy[<span class="st">'Größe'</span>].eq(metric),<span class="st">'PJ/a'</span>].iloc[<span class="dv">0</span>])</span>
 <span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>operating<span class="op">=</span>val(<span class="st">'Stromsaldo'</span>)</span>
-<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>extended<span class="op">=</span>operating<span class="op">+</span>top[<span class="st">'miv_budget_pj'</span>]<span class="op">-</span>top[<span class="st">'miv_demand_pj'</span>]</span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>extended<span class="op">=</span>operating<span class="op">+</span>top[<span class="st">'central_credit_pj'</span>]<span class="op">-</span>top[<span class="st">'miv_demand_pj'</span>]</span>
 <span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>comparison<span class="op">=</span>pd.DataFrame([</span>
 <span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a> {<span class="st">'Größe'</span>:<span class="st">'PV-Erzeugung'</span>,<span class="st">'Bottom-up [PJ/a]'</span>:val(<span class="st">'PV_Erzeugung'</span>),<span class="st">'Top-down [PJ/a]'</span>:top[<span class="st">'building_pv_pj'</span>]},</span>
 <span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a> {<span class="st">'Größe'</span>:<span class="st">'Gebäudestrombedarf'</span>,<span class="st">'Bottom-up [PJ/a]'</span>:val(<span class="st">'Strombedarf'</span>),<span class="st">'Top-down [PJ/a]'</span>:top[<span class="st">'building_pv_pj'</span>]<span class="op">-</span>top[<span class="st">'building_operation_pj'</span>]},</span>
@@ -2008,9 +2008,9 @@ Davon betroffene Referenz-BGF [%]: 0.0</code></pre>
 <span id="cb11-22"><a href="#cb11-22" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> Berechnungen.methodik_plots <span class="im">import</span> building_figures</span>
 <span id="cb11-23"><a href="#cb11-23" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> IPython.display <span class="im">import</span> HTML</span>
 <span id="cb11-24"><a href="#cb11-24" aria-hidden="true" tabindex="-1"></a>sector_comparison<span class="op">=</span>pd.DataFrame([</span>
-<span id="cb11-25"><a href="#cb11-25" aria-hidden="true" tabindex="-1"></a> {<span class="st">'Modell'</span>:<span class="st">'Top-down: UBA 2040'</span>,<span class="st">'Bedarf'</span>:top[<span class="st">'building_pv_pj'</span>]<span class="op">-</span>top[<span class="st">'building_operation_pj'</span>]<span class="op">+</span>top[<span class="st">'miv_demand_pj'</span>],<span class="st">'Deckung'</span>:top[<span class="st">'building_pv_pj'</span>]<span class="op">+</span>top[<span class="st">'miv_budget_pj'</span>],<span class="st">'Dichte'</span>:<span class="fl">0.</span>,<span class="st">'Saldo'</span>:top[<span class="st">'building_target_pj'</span>]},</span>
-<span id="cb11-26"><a href="#cb11-26" aria-hidden="true" tabindex="-1"></a> {<span class="st">'Modell'</span>:<span class="st">'Bottom-up: Pool'</span>,<span class="st">'Bedarf'</span>:val(<span class="st">'Strombedarf'</span>)<span class="op">+</span>top[<span class="st">'miv_demand_pj'</span>],<span class="st">'Deckung'</span>:val(<span class="st">'PV_Erzeugung'</span>)<span class="op">+</span>top[<span class="st">'miv_budget_pj'</span>],<span class="st">'Dichte'</span>:<span class="fl">0.</span>,<span class="st">'Saldo'</span>:extended},</span>
-<span id="cb11-27"><a href="#cb11-27" aria-hidden="true" tabindex="-1"></a> {<span class="st">'Modell'</span>:<span class="st">'Bottom-up + Dichte'</span>,<span class="st">'Bedarf'</span>:val(<span class="st">'Strombedarf'</span>)<span class="op">+</span>top[<span class="st">'miv_demand_pj'</span>],<span class="st">'Deckung'</span>:val(<span class="st">'PV_Erzeugung'</span>)<span class="op">+</span>top[<span class="st">'miv_budget_pj'</span>],<span class="st">'Dichte'</span>:context_pj,<span class="st">'Saldo'</span>:extended<span class="op">+</span>context_pj}])</span>
+<span id="cb11-25"><a href="#cb11-25" aria-hidden="true" tabindex="-1"></a> {<span class="st">'Modell'</span>:<span class="st">'Top-down: UBA 2040'</span>,<span class="st">'Bedarf'</span>:top[<span class="st">'building_pv_pj'</span>]<span class="op">-</span>top[<span class="st">'building_operation_pj'</span>]<span class="op">+</span>top[<span class="st">'miv_demand_pj'</span>],<span class="st">'Deckung'</span>:top[<span class="st">'building_pv_pj'</span>]<span class="op">+</span>top[<span class="st">'central_credit_pj'</span>],<span class="st">'Dichte'</span>:<span class="fl">0.</span>,<span class="st">'Saldo'</span>:top[<span class="st">'building_target_pj'</span>]},</span>
+<span id="cb11-26"><a href="#cb11-26" aria-hidden="true" tabindex="-1"></a> {<span class="st">'Modell'</span>:<span class="st">'Bottom-up: Pool'</span>,<span class="st">'Bedarf'</span>:val(<span class="st">'Strombedarf'</span>)<span class="op">+</span>top[<span class="st">'miv_demand_pj'</span>],<span class="st">'Deckung'</span>:val(<span class="st">'PV_Erzeugung'</span>)<span class="op">+</span>top[<span class="st">'central_credit_pj'</span>],<span class="st">'Dichte'</span>:<span class="fl">0.</span>,<span class="st">'Saldo'</span>:extended},</span>
+<span id="cb11-27"><a href="#cb11-27" aria-hidden="true" tabindex="-1"></a> {<span class="st">'Modell'</span>:<span class="st">'Bottom-up + Dichte'</span>,<span class="st">'Bedarf'</span>:val(<span class="st">'Strombedarf'</span>)<span class="op">+</span>top[<span class="st">'miv_demand_pj'</span>],<span class="st">'Deckung'</span>:val(<span class="st">'PV_Erzeugung'</span>)<span class="op">+</span>top[<span class="st">'central_credit_pj'</span>],<span class="st">'Dichte'</span>:context_pj,<span class="st">'Saldo'</span>:extended<span class="op">+</span>context_pj}])</span>
 <span id="cb11-28"><a href="#cb11-28" aria-hidden="true" tabindex="-1"></a>np.testing.assert_allclose(sector_comparison.Deckung<span class="op">-</span>sector_comparison.Bedarf<span class="op">+</span>sector_comparison.Dichte,sector_comparison.Saldo)</span>
 <span id="cb11-29"><a href="#cb11-29" aria-hidden="true" tabindex="-1"></a>sector_comparison.to_csv(OUT<span class="op">/</span><span class="st">'sektorvergleich_dichte.csv'</span>,index<span class="op">=</span><span class="va">False</span>)</span>
 <span id="cb11-30"><a href="#cb11-30" aria-hidden="true" tabindex="-1"></a>building_figures(data,sector_comparison)</span>
@@ -2059,8 +2059,8 @@ Davon betroffene Referenz-BGF [%]: 0.0</code></pre>
 <tr class="even">
 <th data-quarto-table-cell-role="th">3</th>
 <td>Saldo einschließlich MIV</td>
-<td>-107.247798</td>
-<td>-7.0</td>
+<td>-100.247798</td>
+<td>0.0</td>
 <td>-100.247798</td>
 </tr>
 </tbody>
@@ -2128,25 +2128,25 @@ Davon betroffene Referenz-BGF [%]: 0.0</code></pre>
 <th data-quarto-table-cell-role="th">0</th>
 <td>Top-down: UBA 2040</td>
 <td>180.00000</td>
-<td>173.000000</td>
+<td>180.000000</td>
 <td>0.000000</td>
-<td>-7.000000</td>
+<td>0.000000</td>
 </tr>
 <tr class="even">
 <th data-quarto-table-cell-role="th">1</th>
 <td>Bottom-up: Pool</td>
 <td>209.49326</td>
-<td>102.245462</td>
+<td>109.245462</td>
 <td>0.000000</td>
-<td>-107.247798</td>
+<td>-100.247798</td>
 </tr>
 <tr class="odd">
 <th data-quarto-table-cell-role="th">2</th>
 <td>Bottom-up + Dichte</td>
 <td>209.49326</td>
-<td>102.245462</td>
+<td>109.245462</td>
 <td>-57.808696</td>
-<td>-165.056495</td>
+<td>-158.056495</td>
 </tr>
 </tbody>
 </table>
@@ -2172,7 +2172,7 @@ Betrieblicher Bewertungssaldo mit Dichte: -117.05649462066046</code></pre>
 <h2 class="anchored" data-anchor-id="ergebnisexport-und-bilanzkontrollen">9. Ergebnisexport und Bilanzkontrollen</h2>
 <p>Die kleine NGF/BGF-Variation illustriert die Bedeutung des Flächenbezugs; sie ist keine Optimierung. Die Ausführung prüft eindeutige Schlüssel, Quell-Cache-Konsistenz, Anwendungen, PV- und Strombilanz, thermische Teilbilanzen, PE-Importkomponenten, nicht doppelte GFZ-Zuordnung und Erhalt jeder positiven Typenfläche in der GFZ-Matrix.</p>
 <p>Für die Fortschreibung benötigt werden: das genaue Bezugsjahr „heute“ und gegebenenfalls echte 2020-Flächen; Herleitung der Flächenentwicklung und Bestands-/Sanierungsanteile; Bestätigung von NGF/BGF je Typ; Definition und Anteil der PEQ-Klassen; alternative PV-/Flexibilitätsausstattungen; Prüfung der fossil beheizten Flächen 2040; Faktorversion der gelieferten PEI; eindeutige EE-Einheiten des historischen Dichte-Referenzstands. Die Einzelzielregel der GFZ-Zuordnung ist inzwischen bestätigt und in der Quelle ergänzt. Erst nach Klärung der noch offenen methodischen Punkte kann die nationale Zielwertfunktion neu kalibriert werden. Die aktuellen Ergebnisse sind nachvollziehbare <strong>Pool-Ergebnisse</strong>, keine Bestätigung der Klimaneutralität des Gebäudesektors.</p>
-<div id="28132261" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-10-23T17:07:53.822613Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-10-23T17:07:53.822290Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-10-23T17:07:53.904231Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-10-23T17:07:53.903297Z&quot;}}" data-execution_count="9">
+<div id="28132261" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-10-29T16:56:58.059067Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-10-29T16:56:58.057810Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-10-29T16:56:58.404065Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-10-29T16:56:58.401097Z&quot;}}" data-execution_count="9">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Null ist eine Zahl, unbekannt bleibt unbekannt: unabhängige kleine Regressionen.</span></span>
@@ -2210,7 +2210,7 @@ Betrieblicher Bewertungssaldo mit Dichte: -117.05649462066046</code></pre>
     "input_sha256": "cd09efbfbea7bc7e8cfd82b07146f72c6f3712d3a381625532b14c947dd75bc1",
     "gfz_sha256": "b17c1f98b6104a5b8ed6da4fe436ebff14d2f7708cc2043860d166b17d3f1c3b"
   },
-  "allocation_sha256": "3614c6769be82ce4a53ea0e15ae7ea872a3dbf9b94b63a6f476ecf77a8992835",
+  "allocation_sha256": "03903a76568f74be49de3c3bf973a5d3b6c21532323e24b19bfc857fce9df7b2",
   "ngf_bgf": 0.8,
   "type_count": 900,
   "positive_types_2040": 603,
@@ -2219,7 +2219,7 @@ Betrieblicher Bewertungssaldo mit Dichte: -117.05649462066046</code></pre>
   "electricity_demand_pj": 137.49326011458797,
   "pv_pj": 78.24546191661419,
   "electricity_balance_pj": -59.24779819797377,
-  "extended_balance_pj": -107.24779819797376,
+  "extended_balance_pj": -100.24779819797376,
   "gap_topdown_pj": -100.24779819797376,
   "single_target_missing_share_rows": 0,
   "affected_reference_area_pct": 0.0,
