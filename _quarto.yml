@@ -6,6 +6,7 @@ project:
   output-dir: _book
   resources:
     - Abbildungen/methodik/**
+    - Abbildungen/praxis/**
     - Abbildungen/transition_sankey.html
     - Abbildungen/mobilitaetsbudget_sankey.html
     - "!Redaktion/**"

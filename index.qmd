@@ -28,7 +28,7 @@ Welche Energie- und Klimaziele soll ein Bauprojekt erreichen – und wie lässt 
 
 ::: {.peq-project-grid}
 ::: {.peq-project-card}
-### Am Bichl III
+### [Am Bichl III](Kapitel/07-am-bichl.qmd)
 
 ![Wohnquartier Am Bichl III in Innsbruck-Igls.](Abbildungen/praxis/am-bichl-ansicht.jpeg)
 
@@ -36,25 +36,22 @@ Welche Energie- und Klimaziele soll ein Bauprojekt erreichen – und wie lässt 
 
 Ein umgesetztes Wohnquartier zeigt, wie ambitionierte Energieziele bis zur Fertigstellung nachgewiesen werden können.
 
-[Zum Projekt Am Bichl III](Kapitel/07-am-bichl.qmd)
 :::
 ::: {.peq-project-card}
-### RUGInnovation
+### [RUGInnovation](Kapitel/07-ruginnovation.qmd)
 
 [Sanierung]{.peq-tag .peq-tag-sanierung} [Wärmeversorgung]{.peq-tag .peq-tag-waerme} [Photovoltaik]{.peq-tag .peq-tag-pv}
 
 Gebäudehülle, erneuerbare Wärme und Stromerzeugung werden gemeinsam betrachtet: ein Einblick in die Bewertung eines bestehenden Wohnquartiers.
 
-[Zum Projekt RUGInnovation](Kapitel/07-ruginnovation.qmd)
 :::
 ::: {.peq-project-card}
-### Campo Breitenlee
+### [Campo Breitenlee](Kapitel/07-campo-breitenlee.qmd)
 
 [Neubau]{.peq-tag} [Mobilität]{.peq-tag .peq-tag-mobilitaet} [Nutzungsmix]{.peq-tag}
 
 Wie hängen Mobilität, unterschiedliche Nutzungen und Nutzungsdichten zusammen? Das nächste Projektporträt widmet sich dieser Planungsfrage; die Auswertung ist in Vorbereitung.
 
-[Zum Projektstand Campo Breitenlee](Kapitel/07-campo-breitenlee.qmd)
 :::
 :::
 
