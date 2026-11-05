@@ -26,26 +26,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -107,35 +88,6 @@ div.csl-indent {
   });
 </script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../styles/presets.css">
 </head>
@@ -415,13 +367,12 @@ window.Quarto = {
     <h2 id="toc-title">Inhaltsverzeichnis</h2>
    
   <ul>
-  <li><a href="#datenbasis-flächenbegriffe-und-bezugsjahre" id="toc-datenbasis-flächenbegriffe-und-bezugsjahre" class="nav-link active" data-scroll-target="#datenbasis-flächenbegriffe-und-bezugsjahre">Datenbasis, Flächenbegriffe und Bezugsjahre</a></li>
-  <li><a href="#sec-gebaeudetypologien" id="toc-sec-gebaeudetypologien" class="nav-link" data-scroll-target="#sec-gebaeudetypologien">Energetische Gebäudetypologien 2040</a></li>
-  <li><a href="#flächenentwicklung-vom-bestand-zum-zieljahr" id="toc-flächenentwicklung-vom-bestand-zum-zieljahr" class="nav-link" data-scroll-target="#flächenentwicklung-vom-bestand-zum-zieljahr">Flächenentwicklung vom Bestand zum Zieljahr</a></li>
-  <li><a href="#energetische-performance-strombedarf-und-pv" id="toc-energetische-performance-strombedarf-und-pv" class="nav-link" data-scroll-target="#energetische-performance-strombedarf-und-pv">Energetische Performance, Strombedarf und PV</a></li>
-  <li><a href="#endenergie-und-primärenergie" id="toc-endenergie-und-primärenergie" class="nav-link" data-scroll-target="#endenergie-und-primärenergie">Endenergie und Primärenergie</a></li>
-  <li><a href="#sec-gfz-verteilung" id="toc-sec-gfz-verteilung" class="nav-link" data-scroll-target="#sec-gfz-verteilung">GFZ-Verteilung des österreichischen Gebäudebestands</a></li>
-  <li><a href="#gemeinsame-typologie-dichte-matrix-und-sektoraler-abgleich" id="toc-gemeinsame-typologie-dichte-matrix-und-sektoraler-abgleich" class="nav-link" data-scroll-target="#gemeinsame-typologie-dichte-matrix-und-sektoraler-abgleich">Gemeinsame Typologie-Dichte-Matrix und sektoraler Abgleich</a></li>
+  <li><a href="#sec-gebaeudetypologien" id="toc-sec-gebaeudetypologien" class="nav-link active" data-scroll-target="#sec-gebaeudetypologien">Datenbasis und Typologie</a></li>
+  <li><a href="#flächenzuordnung-und-entwicklung" id="toc-flächenzuordnung-und-entwicklung" class="nav-link" data-scroll-target="#flächenzuordnung-und-entwicklung">Flächenzuordnung und Entwicklung</a></li>
+  <li><a href="#strom-und-endenergie" id="toc-strom-und-endenergie" class="nav-link" data-scroll-target="#strom-und-endenergie">Strom und Endenergie</a></li>
+  <li><a href="#primärenergie-und-virtuelle-bewertung" id="toc-primärenergie-und-virtuelle-bewertung" class="nav-link" data-scroll-target="#primärenergie-und-virtuelle-bewertung">Primärenergie und virtuelle Bewertung</a></li>
+  <li><a href="#sec-gfz-verteilung" id="toc-sec-gfz-verteilung" class="nav-link" data-scroll-target="#sec-gfz-verteilung">GFZ und sektoraler Abgleich</a></li>
+  <li><a href="#fortschreibung" id="toc-fortschreibung" class="nav-link" data-scroll-target="#fortschreibung">Fortschreibung</a></li>
   </ul>
 </nav>
     </div>
@@ -448,24 +399,13 @@ window.Quarto = {
 
 
 <div class="lead">
-<p>Gebäudetypologien, nationale Flächen und GFZ-Verteilungen als Bottom-up-Grundlage der PEQ-Kalibrierung</p>
+<p>32.400 simulierte Varianten, regelbasierte nationale Flächen und ein separater virtueller Bewertungsvergleich</p>
 </div>
-<p>Das Gebäudesektormodell verknüpft die Flächenstruktur des Zieljahres 2040 mit den energetischen Kennwerten der Gebäudetypen und ihren Dichteverteilungen. Es bildet die Bottom-up-Seite zur sektoralen Allokation in <a href="03-allokation.html" class="quarto-xref"><span>Sektorale Energieallokation</span></a>. Die Auswertung des Pools ergibt <strong>137,49 PJ/a Strombedarf</strong>, <strong>78,25 PJ/a PV-Erzeugung</strong> und einen <strong>betrieblichen Stromsaldo von −59,25 PJ/a</strong>. Diese Zahlen beschreiben den gelieferten Szenariostand. Der Abgleich mit UBA Transition zeigt den Szenarioabstand.</p>
-<p>Die vollständige Herleitung, Eingabetabellen, Formeln und Bilanzprüfungen stehen im ausführbaren Anhang <a href="../Berechnungen/gebaeudesektormodell/Gebaeudesektormodell.html" class="quarto-xref"><span>Gebäudesektormodell: Daten, Rechnung und Grenzen</span></a>. Die Berechnungen sind unmittelbar in dessen Notebook-Zellen enthalten.</p>
-<section id="datenbasis-flächenbegriffe-und-bezugsjahre" class="level2">
-<h2 class="anchored" data-anchor-id="datenbasis-flächenbegriffe-und-bezugsjahre">Datenbasis, Flächenbegriffe und Bezugsjahre</h2>
-<p>Grundlage ist <code>Building-Sector_Pool 1.xlsx</code>, einschließlich der am 23.10.2026 ergänzten GFZ-Anteile. Das Blatt <code>Strombed_estim</code> enthält die maßgeblichen Flächen- und Energiekennwerte, <code>zuordnung_gfz</code> die Zuordnung nach Nutzung und Geschoßklasse. Das Simulationsblatt <code>Tabelle2</code> liefert Einheiten und ergänzende Anwendungen. Alle 900 Archetypenschlüssel sind eindeutig und lassen sich vollständig mit den Simulationsergebnissen verbinden. Die gespeicherten Kennwerte stimmen mit den im Kennwertblatt referenzierten Simulationswerten überein; eine erneute PEExcel-Simulation ist damit nicht verbunden.</p>
-<p>Die nationale Flächensumme beträgt <strong>1.126,579 Mio. m² BGF für 2040</strong>, gegenüber <strong>1.112,341 Mio. m² BGF</strong> in der Quellspalte „heute“. Deren konkretes Bezugsjahr ist nicht bestätigt. Sie wird deshalb nicht mit 2020 gleichgesetzt. Die Energiekennwerte beziehen sich laut Simulationsblatt auf <strong>NGF</strong>. Für die Aggregation gilt die aus der bestehenden GFZ-Analyse übernommene einheitliche Modellannahme:</p>
-<p><span class="math display">\[
-A_{NGF,k,y}=0{,}8\,A_{BGF,k,y}.
-\]</span></p>
-<p>Für 2040 folgen daraus 901,263 Mio. m² NGF. Der Flächenfaktor ist für alle Typen einheitlich. Es erfolgt keine Skalierung auf die GFZ-Bestandsfläche von 1.058,935 Mio. m² BGF oder auf die separate Flächenannahme der THG-Allokation. Diese Größen haben unterschiedliche Grundlagen.</p>
-<p>Das ältere Blatt <code>reduced</code> enthält 696,615 Mio. m² NGF, 486 positiv gewichtete Varianten, 264 echte Nullwerte und 6.450 leere Flächenfelder. Im neuen Kennwertblatt sind 603 Typen für 2040 positiv gewichtet und 297 explizit null; Flächenwerte fehlen dort nicht. Die unterschiedlichen Flächenbezüge, Variantenabdeckungen und Summen werden in <a href="../Berechnungen/gebaeudesektormodell/Gebaeudesektormodell.html#sec-gebaeude-flaechen" class="quarto-xref"><span>3. Flächenbilanz und Fortschreibung</span></a> verglichen. Der ältere Datensatz wird nicht als additive Fläche oder Ersatzgewichtung verwendet. <code>save</code> ist ein zusätzlicher Projekt-/Presetstand und keine nationale Flächenbilanz.</p>
-</section>
+<p>Das Gebäudesektormodell verbindet PEExcel-Kennwerte mit nationalen Basisflächen. Der hier ausgewertete <strong>vorläufige Szenariostand</strong> ersetzt die frühere Beschränkung auf PV30/noFlex. Alle Annahmen und Rechenschritte sind im ausführbaren Anhang <a href="../Berechnungen/gebaeudesektormodell/Gebaeudesektormodell.html" class="quarto-xref"><span>Gebäudesektormodell: Daten, Rechnung und Grenzen</span></a> dokumentiert. Die Flächenverteilung ist eine Testannahme bis zur aktualisierten Lieferung der Bestandsflächen.</p>
 <section id="sec-gebaeudetypologien" class="level2">
-<h2 class="anchored" data-anchor-id="sec-gebaeudetypologien">Energetische Gebäudetypologien 2040</h2>
-<p>Der vollständige Typenschlüssel kombiniert <strong>Geometrie, Baualter beziehungsweise Hüllstandard, Wärmeversorgung, PV-Ausstattung und Flexibilität</strong>. Die zehn Geometrieklassen sind daher nicht mit zehn energetischen Klassen gleichzusetzen. Der ausgewertete Bestand umfasst neun Baualters-/Hüllcodes und zehn Wärmeversorgungsvarianten. Alle 900 simulierten Typen tragen die Variante <code>PV30|noFlex</code>; die übrigen PV-/Flexibilitätsvarianten des 7.200 Szenarien umfassenden Gesamtpools erhalten keine ungeprüft übertragenen Kennwerte.</p>
-<p><code>Neu_10cm</code>, <code>Neu_20cm</code> und <code>Neu_30cm</code> bezeichnen Hüllcodes. Die Zugehörigkeit zu Bestand, Neubau oder Sanierung folgt den separat gelieferten Anteilen, nicht allein dem Wort „Neu“. Das Feld „Energetischer Standard“ ist noch leer. Auch eine PEQ-Presetbezeichnung oder ein positiver Stromsaldo belegt für sich keine PEQ-Konformität.</p>
+<h2 class="anchored" data-anchor-id="sec-gebaeudetypologien">Datenbasis und Typologie</h2>
+<p>Der Parquet-Export <code>building_sector_v2</code> enthält 32.400 Simulationen: zehn Geometrien, neun Hüllcodes, zehn Versorgungsvarianten, drei PV-Dachanteile (30/70/90 %), zwei Flexibilitätszustände, zwei Wetterstandorte und drei Gebäudemassen. Weitere Presets sind teilweise an diese Merkmale gekoppelt. Quelle ist PEExcel 1.13.1_dev. Die ungewichtete Anzahl der Simulationen beschreibt keine nationale Bestandsverteilung.</p>
+<p>Die bestehenden Basisflächen werden aus <code>daten_gebauedesektor.xlsx</code> übernommen. Die 900 Basisgruppen aus Geometrie/Hülle/Versorgung sind vollständig im neuen Pool enthalten. Nationale BGF und Statusanteile bleiben Eingaben; die detaillierten Variantenflächen werden im Notebook erzeugt. Kennwerte werden nicht manuell in 32.400 Excel-Zeilen gepflegt.</p>
 <div id="tbl-gebaeude-typologien" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-gebaeude-typologien-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -565,11 +505,55 @@ Tabelle&nbsp;12.1: Gelieferte Flächen und BGF-gewichtete Dichte-Erwartungswerte
 </div>
 </figure>
 </div>
-<p>Die Geometrie MFH_2G besitzt derzeit keine positive nationale Fläche. Ihre fehlende GFZ-Zuordnung bleibt sichtbar; für sie wird kein Dichte-Erwartungswert erfunden. Für alle positiv gewichteten Typen liegt eine Zuordnung vor.</p>
+<p>Energiekennwerte beziehen sich auf NGF. Für den aktuellen Pool gilt NFA_total/GFA_total = 0,8; damit wird NGF = 0,8 × BGF verwendet. „Heute“ hat kein bestätigtes Statistikjahr und wird nicht mit 2020 gleichgesetzt. Seine Auswertung verwendet dieselben Simulationskennwerte und ist keine validierte historische Energiebilanz.</p>
 </section>
-<section id="flächenentwicklung-vom-bestand-zum-zieljahr" class="level2">
-<h2 class="anchored" data-anchor-id="flächenentwicklung-vom-bestand-zum-zieljahr">Flächenentwicklung vom Bestand zum Zieljahr</h2>
-<p>Die gelieferte Gesamtfläche steigt zwischen „heute“ und 2040 um rund 14,238 Mio. m² BGF beziehungsweise 1,28 %. Die Spalten Bestand, Neubau und Sanierung enthalten innerhalb der Archetypen Anteile, die auf jeder positiv gewichteten 2040-Fläche zusammen eins ergeben. Flächengewichtet resultiert:</p>
+<section id="flächenzuordnung-und-entwicklung" class="level2">
+<h2 class="anchored" data-anchor-id="flächenzuordnung-und-entwicklung">Flächenzuordnung und Entwicklung</h2>
+<p>Die bestehenden nationalen Basisflächen bleiben erhalten: rund 1.112,341 Mio. m² BGF heute und 1.126,579 Mio. m² BGF 2040. Die Zuweisung erfolgt über disjunkte PEQ- und Restflächen, gemeinsame PV-/Flex-Anteile sowie Wetter- und Massegewichte.</p>
+<p><strong>PEQ-Szenario:</strong> 20 % der gesamten BGF 2040 werden proportional aus den geeigneten Gruppen ausgewählt: Hüllcodes Neu_20cm/Neu_30cm mit Wärmepumpe, erneuerbarer Fernwärme oder Biomasse. Diese Teilfläche erhält PV70/Flex. Die Ausstattung allein ist kein Nachweis der PEQ-Konformität. Im Dashboard bleibt die virtuelle Bewertung interaktiv veränderbar.</p>
+<p>Die folgende Restverteilung gilt <strong>innerhalb der nicht als PEQ ausgewählten Fläche</strong> und ist ausdrücklich vorläufig:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Stand / Status</th>
+<th style="text-align: right;">PV0/noFlex</th>
+<th style="text-align: right;">PV30/noFlex</th>
+<th style="text-align: right;">PV30/Flex</th>
+<th style="text-align: right;">PV70/Flex</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Heute</td>
+<td style="text-align: right;">80 %</td>
+<td style="text-align: right;">20 %</td>
+<td style="text-align: right;">0 %</td>
+<td style="text-align: right;">0 %</td>
+</tr>
+<tr class="even">
+<td>2040 Bestand</td>
+<td style="text-align: right;">40 %</td>
+<td style="text-align: right;">40 %</td>
+<td style="text-align: right;">20 %</td>
+<td style="text-align: right;">0 %</td>
+</tr>
+<tr class="odd">
+<td>2040 Neubau</td>
+<td style="text-align: right;">0 %</td>
+<td style="text-align: right;">40 %</td>
+<td style="text-align: right;">40 %</td>
+<td style="text-align: right;">20 %</td>
+</tr>
+<tr class="even">
+<td>2040 Sanierung</td>
+<td style="text-align: right;">20 %</td>
+<td style="text-align: right;">40 %</td>
+<td style="text-align: right;">40 %</td>
+<td style="text-align: right;">0 %</td>
+</tr>
+</tbody>
+</table>
+<p>Wien und Innsbruck erhalten jeweils 50 %, leichte/mittlere/schwere Gebäudemasse jeweils ein Drittel. Dies sind Testgewichte, keine statistisch belegten Österreich-Anteile. PV90 bleibt verfügbar, erhält in diesem Startfall aber keine Fläche. Die heutige Statusstruktur wird nicht aus den 2040-Anteilen abgeleitet.</p>
 <div id="tbl-gebaeude-status" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-gebaeude-status-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -607,20 +591,16 @@ Tabelle&nbsp;12.2: Flächengewichtete Zuordnung zu Bestand, Neubau und Sanierung
 <img src="../Berechnungen/gebaeudesektormodell/outputs/flaechen.png" class="img-fluid figure-img" style="width:100.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-gebaeude-flaechen-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Abbildung&nbsp;12.1: Flächenverteilung nach Geometrie. „Heute“ bezeichnet die gleichnamige Quellspalte mit nicht festgelegtem Bezugsjahr.
+Abbildung&nbsp;12.1: Basisflächen heute und 2040 nach Geometrie.
 </figcaption>
 </figure>
 </div>
-<p>Die Neubaufläche ist nicht mit dem Nettoflächenzuwachs gleichzusetzen. Für einen nachvollziehbaren Entwicklungspfad fehlen die zeitliche Definition dieser Kategorien und eine Übergangsbilanz mit Abbruch, Ersatzneubau und Sanierung. Die Reinschrift enthält ein separates, leeres Feld für BGF 2020. Es wird nicht automatisch aus „heute“ gefüllt.</p>
+<p>Bestand/Neubau/Sanierung sind Anteile innerhalb der 2040-Basisgruppen. Neubaufläche ist nicht gleich Nettoflächenzuwachs; eine zeitliche Übergangsbilanz mit Abbruch und Ersatzneubau liegt nicht vor.</p>
 </section>
-<section id="energetische-performance-strombedarf-und-pv" class="level2">
-<h2 class="anchored" data-anchor-id="energetische-performance-strombedarf-und-pv">Energetische Performance, Strombedarf und PV</h2>
-<p>Die PV-Erzeugung wird <strong>aus der Typen-Excel übernommen</strong>: <code>PV_total_direct</code> plus <code>PV_to_Egrid</code> in <code>Strombed_estim</code>, gegengeprüft gegen <code>PV_total</code> in <code>Tabelle2</code>. Das Sektormodell simuliert keine eigenen PV-Flächen oder Erträge. Alle gelieferten Typen verwenden die Variante <code>PV30|noFlex</code>. Die nationale Erzeugung entsteht durch Multiplikation des spezifischen Ertrags mit der zugeordneten NGF; eine zusätzliche GFZ-bedingte Skalierung der PV findet nicht statt.</p>
-<p>Netzbezug und Bruttostrombedarf werden konsequent getrennt. Für die vorliegenden Varianten ohne Speicher, Flexibilität oder simulierte Mobilität gilt:</p>
-<p><span class="math display">\[
-E_{el}=E_{Netzbezug}+E_{PV,direkt},\qquad E_{PV}=E_{PV,direkt}+E_{PV,Export}.
-\]</span></p>
-<p>Der physische Stromsaldo ist sowohl als PV-Erzeugung minus Strombedarf als auch als PV-Netzeinspeisung minus Netzbezug bestimmbar. Beide Wege stimmen in der Typenprüfung überein. PV-Direktverbrauch wird nicht doppelt als Deckung angesetzt.</p>
+<section id="strom-und-endenergie" class="level2">
+<h2 class="anchored" data-anchor-id="strom-und-endenergie">Strom und Endenergie</h2>
+<p>Zusätzlich entstehen 5.400 gekennzeichnete synthetische PV0/noFlex-Varianten. Ohne Speicher und Mobilitätsladung wird deren elektrischer Nutzbedarf aus der entsprechenden PV30/noFlex-Simulation übernommen, PV-Flüsse werden null und der Bedarf durch Netzstrom gedeckt. Dies ist eine Näherung; echte PV0-Simulationen ersetzen sie künftig.</p>
+<p>Der Bruttostrombedarf wird aus EUI_el_total ohne Mobilität übernommen. PV_total umfasst direkten und flexiblen Verbrauch sowie Einspeisung. Flexible Flüsse werden in der Bilanzprüfung berücksichtigt und nicht unterschlagen.</p>
 <div id="tbl-gebaeude-strom" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-gebaeude-strom-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -639,39 +619,51 @@ Tabelle&nbsp;12.3: Strombilanz 2040 aus den gelieferten Typenkennwerten bei NGF/
 <tbody>
 <tr class="odd">
 <td>Strombedarf</td>
-<td>42,377</td>
-<td>38.192,572</td>
-<td>137,493</td>
+<td>46,097</td>
+<td>41.545,398</td>
+<td>149,563</td>
 </tr>
 <tr class="even">
 <td>PV_Erzeugung</td>
-<td>24,116</td>
-<td>21.734,851</td>
-<td>78,245</td>
+<td>41,391</td>
+<td>37.303,879</td>
+<td>134,294</td>
 </tr>
 <tr class="odd">
 <td>Grid_to_building_min</td>
-<td>34,899</td>
-<td>31.452,734</td>
-<td>113,230</td>
+<td>29,255</td>
+<td>26.366,857</td>
+<td>94,921</td>
 </tr>
 <tr class="even">
 <td>PV_total_direct</td>
-<td>7,478</td>
-<td>6.739,839</td>
-<td>24,263</td>
+<td>11,574</td>
+<td>10.431,527</td>
+<td>37,553</td>
+</tr>
+<tr class="odd">
+<td>PV_total_flex</td>
+<td>1,636</td>
+<td>1.474,222</td>
+<td>5,307</td>
+</tr>
+<tr class="even">
+<td>VRGrid_to_building</td>
+<td>3,631</td>
+<td>3.272,792</td>
+<td>11,782</td>
 </tr>
 <tr class="odd">
 <td>PV_to_Egrid</td>
-<td>16,638</td>
-<td>14.995,012</td>
-<td>53,982</td>
+<td>28,181</td>
+<td>25.398,131</td>
+<td>91,433</td>
 </tr>
 <tr class="even">
 <td>Stromsaldo</td>
-<td>-18,261</td>
-<td>-16.457,722</td>
-<td>-59,248</td>
+<td>-4,706</td>
+<td>-4.241,519</td>
+<td>-15,269</td>
 </tr>
 </tbody>
 </table>
@@ -684,15 +676,10 @@ Tabelle&nbsp;12.3: Strombilanz 2040 aus den gelieferten Typenkennwerten bei NGF/
 <img src="../Berechnungen/gebaeudesektormodell/outputs/strom_anwendungen.png" class="img-fluid figure-img" style="width:100.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-gebaeude-strom-anwendungen-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Abbildung&nbsp;12.2: Flächengewichteter spezifischer Strombedarf nach Anwendungen. Hilfsstrom wird aus den Heiz-/Warmwassersummen herausgelöst und gemeinsam mit Allgemeinstrom dargestellt.
+Abbildung&nbsp;12.2: Flächengewichteter Strombedarf nach Anwendungen.
 </figcaption>
 </figure>
 </div>
-<p>Die Kennwerte unterscheiden Heizung, Warmwasser, Kühlung, Lüftung, Hilfs-/Allgemeinstrom, Beleuchtung und Geräte/IT. Kühlung ist im gelieferten Simulationsstand null. Das ist eine Eigenschaft dieser Simulationen und keine Bestätigung, dass im nationalen Gebäudesektor 2040 kein Kühlbedarf besteht. Die detaillierte Herleitung steht in <a href="../Berechnungen/gebaeudesektormodell/Gebaeudesektormodell.html#sec-gebaeude-strom" class="quarto-xref"><span>4. Strombedarf, Erzeugung und Stromsaldo</span></a>.</p>
-</section>
-<section id="endenergie-und-primärenergie" class="level2">
-<h2 class="anchored" data-anchor-id="endenergie-und-primärenergie">Endenergie und Primärenergie</h2>
-<p>Fernwärme-, Gas-, Biomasse- und Ölbedarfe werden eigenständig bilanziert. Die Sammelgröße <code>EUI_other</code> wird bei den als <code>Oel</code> gekennzeichneten Typen Öl zugeordnet; weitere Beträge blieben separat unter sonstiger thermischer Endenergie erhalten.</p>
 <div id="tbl-gebaeude-endenergie" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-gebaeude-endenergie-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -711,33 +698,33 @@ Tabelle&nbsp;12.4: Endenergie 2040 nach Energieträgern. Strom enthält PV-Direk
 <tbody>
 <tr class="odd">
 <td>Strom (Bruttobedarf)</td>
-<td>42,377</td>
-<td>38.192,572</td>
-<td>137,493</td>
+<td>46,097</td>
+<td>41.545,398</td>
+<td>149,563</td>
 </tr>
 <tr class="even">
 <td>Fernwärme</td>
-<td>31,499</td>
-<td>28.388,612</td>
-<td>102,199</td>
+<td>37,742</td>
+<td>34.015,749</td>
+<td>122,457</td>
 </tr>
 <tr class="odd">
 <td>Gas</td>
-<td>23,631</td>
-<td>21.297,969</td>
-<td>76,673</td>
+<td>28,863</td>
+<td>26.013,019</td>
+<td>93,647</td>
 </tr>
 <tr class="even">
 <td>Biomasse</td>
-<td>21,346</td>
-<td>19.238,623</td>
-<td>69,259</td>
+<td>26,097</td>
+<td>23.520,422</td>
+<td>84,674</td>
 </tr>
 <tr class="odd">
 <td>Öl</td>
-<td>18,034</td>
-<td>16.253,386</td>
-<td>58,512</td>
+<td>22,316</td>
+<td>20.112,742</td>
+<td>72,406</td>
 </tr>
 <tr class="even">
 <td>Sonstige thermisch</td>
@@ -756,12 +743,16 @@ Tabelle&nbsp;12.4: Endenergie 2040 nach Energieträgern. Strom enthält PV-Direk
 <img src="../Berechnungen/gebaeudesektormodell/outputs/endenergie.png" class="img-fluid figure-img" style="width:100.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-gebaeude-endenergie-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Abbildung&nbsp;12.3: Endenergie des gelieferten 2040-Pools nach Energieträgern.
+Abbildung&nbsp;12.3: Endenergie nach Energieträgern.
 </figcaption>
 </figure>
 </div>
-<p>Insbesondere die verbleibenden <strong>76,67 PJ/a Gas</strong> und <strong>58,51 PJ/a Öl</strong> zeigen, dass die gelieferte Flächen-/Versorgungsstruktur kein vollständig dekarbonisiertes Szenario darstellt. Diese Mengen werden weder als Strom behandelt noch aus der Bilanz entfernt. Die Anwendungsaufteilung der thermischen Energie steht in <a href="../Berechnungen/gebaeudesektormodell/Gebaeudesektormodell.html#sec-gebaeude-endenergie" class="quarto-xref"><span>5. Endenergiebilanz nach Energieträgern und Anwendungen</span></a>.</p>
-<p>Die Primärenergiebilanz aggregiert die gelieferten Import- und Exportkennwerte. Sie enthält keine virtuellen Dichte-, Mobilitäts- oder Sanierungsgutschriften:</p>
+<p>Fossile Versorgung bleibt gemäß Basisflächen enthalten. Der Startfall wird nicht durch nachträgliche Skalierung an das nationale Ziel angepasst.</p>
+</section>
+<section id="primärenergie-und-virtuelle-bewertung" class="level2">
+<h2 class="anchored" data-anchor-id="primärenergie-und-virtuelle-bewertung">Primärenergie und virtuelle Bewertung</h2>
+<p>Die PE-Bewertung tatsächlicher Flüsse verwendet PEI_import, PEI_export und PEI_saldo_project = Export − Import. Netzbezug und flexible Bezüge sind Komponenten; thermische Energieträger werden eigenständig berücksichtigt. Virtuelle Kontextwerte werden hier nicht hinzuaddiert.</p>
+<p>Für synthetische PV0-Varianten fehlen zeitlich konsistent neu berechnete PE-Kennwerte. Deshalb bleibt die vollständige nationale PE-Bilanz offen; die physische Strombilanz ist davon unabhängig berechenbar. PE-Werte werden nicht aus PV30 kopiert.</p>
 <div id="tbl-gebaeude-pe" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-gebaeude-pe-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -769,69 +760,80 @@ Tabelle&nbsp;12.5: Gelieferter PE-Bewertungsstand; Faktorversion und Bezugsjahr 
 </figcaption>
 <div aria-describedby="tbl-gebaeude-pe-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
 <thead>
 <tr class="header">
 <th>Größe</th>
 <th>GWh_PE/a</th>
 <th>PJ_PE/a</th>
+<th>bekannter Teil [PJ PE/a]</th>
+<th>fehlende BGF [m²]</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td>PEI_grid_import</td>
-<td>59.495,871</td>
-<td>214,185</td>
+<td>offen</td>
+<td>offen</td>
+<td>108,758</td>
+<td>292.113.753,243</td>
 </tr>
 <tr class="even">
-<td>PEI_import</td>
-<td>137.528,612</td>
-<td>495,103</td>
+<td>PEI_flex_import</td>
+<td>offen</td>
+<td>offen</td>
+<td>0,000</td>
+<td>292.113.753,243</td>
 </tr>
 <tr class="odd">
-<td>PEI_export</td>
-<td>23.816,432</td>
-<td>85,739</td>
+<td>PEI_import</td>
+<td>offen</td>
+<td>offen</td>
+<td>323,694</td>
+<td>292.113.753,243</td>
 </tr>
 <tr class="even">
+<td>PEI_export</td>
+<td>offen</td>
+<td>offen</td>
+<td>145,376</td>
+<td>292.113.753,243</td>
+</tr>
+<tr class="odd">
 <td>PE_Saldo</td>
-<td>-113.712,180</td>
-<td>-409,364</td>
+<td>offen</td>
+<td>offen</td>
+<td>-178,318</td>
+<td>292.113.753,243</td>
 </tr>
 </tbody>
 </table>
 </div>
 </figure>
 </div>
-<p>Der PE-Saldo von <strong>−409,36 PJ PE/a</strong> ist ein Ergebnis des gelieferten Bewertungsstands. Die konkreten Konversionsfaktoren und ihr Bezugsjahr sind nicht bestätigt. Effektive Faktoren unterscheiden sich zwischen Typen und zwischen Import und Export; eine einfache Multiplikation sämtlicher Stromflüsse mit einem Jahresmittel würde die gelieferten PEI nicht reproduzieren. Die sektorale Aufgabe 2040 bleibt auf Endenergiebasis definiert. Eine Bewertung mit heutigen Faktoren stellt die Vergleichbarkeit mit heutigen Nachweisverfahren her und ist keine Prognose der PE-Intensitäten 2040 (<a href="../Berechnungen/gebaeudesektormodell/Gebaeudesektormodell.html#sec-gebaeude-pe" class="quarto-xref"><span>6. Primärenergie: gelieferter Bewertungsstand</span></a>).</p>
+<p>Virtual Demand/Supply und die virtuelle PE-Bilanz gehören zur ergänzenden Bewertung. Sie ersetzen weder die physische Strombilanz noch die PE-Import-/Exportbetrachtung.</p>
 </section>
 <section id="sec-gfz-verteilung" class="level2">
-<h2 class="anchored" data-anchor-id="sec-gfz-verteilung">GFZ-Verteilung des österreichischen Gebäudebestands</h2>
-<p>Die vorhandene GFZ-Hochrechnung verwendet die statistische Gebäudestruktur 2021 und BGF-gewichtete Referenzverteilungen aus Wien und Salzburg. Ihre freigegebene Ersatzregel bleibt unverändert. Die neue Zuordnung aus der Excel übersetzt Nutzung und Geschoßklasse in geometrische Poolklassen. <strong>Eine einzelne Zielklasse erhält 100 %; nur bei einer Aufteilung wird die zweite Zielspalte benutzt.</strong> Diese Regel ist vom Auftraggeber bestätigt und in der aktualisierten Datei vollständig eingetragen. Für Wohngebäude mit zwei oder drei Geschoßen werden beispielsweise EFH_2G und RH_2G mit jeweils 50 % angesetzt.</p>
-<p>Die im GFZ-Modell zusammengefasste Kategorie „Ein- und Zweifamilienhäuser“ erhält die identischen Regeln der beiden entsprechenden Excel-Nutzungen nur einmal. Dadurch wird keine Referenzfläche doppelt gezählt. Aus den zugeordneten BGF-Mengen entstehen je Geometrie bedingte GFZ-Verteilungen. Unterschiedliche energetische Varianten derselben Geometrie übernehmen im Modell dieselbe Verteilung.</p>
+<h2 class="anchored" data-anchor-id="sec-gfz-verteilung">GFZ und sektoraler Abgleich</h2>
+<p>Die bestehende GFZ-Zuordnung aus Nutzung und Geschoßklasse bleibt erhalten. Varianten derselben Geometrie übernehmen dieselbe bedingte Dichteverteilung. MFH_2G hat weiterhin keine positive Basisfläche und keine ergänzte GFZ-Zuordnung. Für eine künftig positive Fläche wäre diese zuerst zu liefern.</p>
 <div id="fig-gebaeude-gfz" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-gebaeude-gfz-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="../Berechnungen/gebaeudesektormodell/outputs/gfz_dichte.png" class="img-fluid figure-img" style="width:100.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-gebaeude-gfz-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Abbildung&nbsp;12.4: GFZ-Verteilungen und Erwartungswerte des historischen Dichte-Referenzansatzes. Die Grafik zeigt GFZ bis 8; die Aggregation umfasst das vollständige Raster bis 20.
+Abbildung&nbsp;12.4: GFZ-Verteilungen und historische elektrische Dichte-Erwartungswerte.
 </figcaption>
 </figure>
 </div>
-<p>Die Erwartungswerte in <a href="#tbl-gebaeude-typologien" class="quarto-xref">Tabelle&nbsp;<span>12.1</span></a> werden über sämtliche GFZ-Bins berechnet. Der Funktionswert am mittleren GFZ wäre wegen der Nichtlinearität nicht gleichwertig. Als elektrische Referenz dient die historische Tabellenparametrisierung aus <span class="citation" data-cites="schneider2023context">Schneider u.&nbsp;a. (<a href="../references.html#ref-schneider2023context" role="doc-biblioref">2023</a>)</span>, Gl. 7 und Tab. 5, mit 30,4, 26,4, Achsenverschiebung 0,15 und Begrenzung 62. Die gemischte EE-/PE-Beschriftung der Quellentabelle ist im Notebook dokumentiert; der Referenzansatz ist eine historische Referenz, keine normative Neufestlegung.</p>
-<p>Der Erwartungswert <span class="math inline">\(\mathbb{E}_k[c_D]\)</span> ist der BGF-gewichtete Mittelwert des Dichtewerts über die GFZ-Verteilung von Typ <span class="math inline">\(k\)</span>. Der Index <span class="math inline">\(j\)</span> bezeichnet einen GFZ-Bin, <span class="math inline">\(s_{j|k}\)</span> dessen Flächenanteil und <span class="math inline">\(d_j\)</span> seine GFZ. Der nationale virtuelle Beitrag lautet <span class="math inline">\(C_D=\sum_k A_{BGF,k}\mathbb{E}_k[c_D]\)</span>. Positive Werte entlasten die Bewertungsbilanz, negative erhöhen die Anforderung.</p>
-<p>Die virtuellen Erwartungswerte reichen hier von rund <strong>−41,63 kWh EE/(m² BGF·a)</strong> für EFH_1G bis <strong>+16,44 kWh EE/(m² BGF·a)</strong> für GWB_7G. Sie zeigen die Verteilung zusätzlicher Anforderungen und Gutschriften. Sie werden nicht als reale Stromerzeugung oder als pauschal zustehende Gutschrift aller Typen bilanziert.</p>
-<iframe src="../Abbildungen/methodik/typen_deckung.html" title="Alle Gebäudetypen: Strombedarf, PV und virtueller Dichtewert" style="width:100%;height:850px;border:0" loading="lazy"></iframe>
-<p><a href="../Abbildungen/methodik/typen_deckung.html">Grafik separat öffnen</a></p>
-<p>Die Auswahl enthält alle 900 Typen, gegliedert nach Geometrie; der Achsenregler zeigt einen lesbaren Ausschnitt. Der Tooltip nennt Archetyp und nationale Fläche. Bedarf wird negativ, PV positiv und die virtuelle Dichtekorrektur schraffiert gezeigt. MFH_2G besitzt keine zugeordnete GFZ-Verteilung und keine nationale Fläche; sein Kontextwert bleibt leer.</p>
-</section>
-<section id="gemeinsame-typologie-dichte-matrix-und-sektoraler-abgleich" class="level2">
-<h2 class="anchored" data-anchor-id="gemeinsame-typologie-dichte-matrix-und-sektoraler-abgleich">Gemeinsame Typologie-Dichte-Matrix und sektoraler Abgleich</h2>
-<p>Für Typologie <span class="math inline">\(k\)</span> und GFZ-Bin <span class="math inline">\(j\)</span> gilt:</p>
-<p><span id="eq-typologie-gfz-flaeche"><span class="math display">\[
-A_{k,j}^{2040}=A_k^{2040}s_{j|k},\qquad\sum_j s_{j|k}=1.
-\tag{12.1}\]</span></span></p>
-<p>Die erzeugte Typologie-Dichte-Matrix erhält die Fläche jedes positiv gewichteten Typs. Sie steht im Modellordner unter <code>outputs/typologie_gfz_2040.csv.gz</code> zur Verfügung. Die Referenzverteilung von 2021 wird dafür als räumliches Verteilungsmuster verwendet, nicht als zusätzliche Flächensumme.</p>
+<p>Die historische elektrische Dichtefunktion wird separat als virtueller Vergleich gezeigt. Positive und negative Beiträge sind Bewertungsgrößen und keine Stromerzeugung oder reale Last. Die nationale GFZ-Auswertung wird nicht zusätzlich in die PEExcel-Import-/Exportwerte eingerechnet.</p>
+<iframe src="../Abbildungen/methodik/typen_deckung.html" title="Typenvergleich mit virtueller Dichtebewertung" style="width:100%;height:850px;border:0" loading="lazy"></iframe>
 <div id="tbl-gebaeude-abgleich" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-gebaeude-abgleich-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -850,45 +852,41 @@ Tabelle&nbsp;12.6: Vergleich bei gleichen elektrischen Bilanzgrenzen; Top-down-Z
 <tbody>
 <tr class="odd">
 <td>PV-Erzeugung</td>
-<td>78,245</td>
+<td>134,294</td>
 <td>149,000</td>
-<td>-70,755</td>
+<td>-14,706</td>
 </tr>
 <tr class="even">
 <td>Gebäudestrombedarf</td>
-<td>137,493</td>
+<td>149,563</td>
 <td>108,000</td>
-<td>29,493</td>
+<td>41,563</td>
 </tr>
 <tr class="odd">
 <td>Betrieblicher Stromsaldo</td>
-<td>-59,248</td>
+<td>-15,269</td>
 <td>41,000</td>
-<td>-100,248</td>
+<td>-56,269</td>
 </tr>
 <tr class="even">
 <td>Saldo einschließlich MIV</td>
-<td>-100,248</td>
+<td>-56,269</td>
 <td>0,000</td>
-<td>-100,248</td>
+<td>-56,269</td>
 </tr>
 </tbody>
 </table>
 </div>
 </figure>
 </div>
-<iframe src="../Abbildungen/methodik/sektorvergleich.html" title="Sektorvergleich Top-down, Bottom-up und Dichte-Bewertung" style="width:100%;height:690px;border:0" loading="lazy"></iframe>
-<p><a href="../Abbildungen/methodik/sektorvergleich.html">Grafik separat öffnen</a></p>
-<p>Die dritte Vergleichsgruppe addiert die historische Dichtefunktion rechnerisch über <strong>alle positiv gewichteten Typen</strong>. Das ergibt einen virtuellen Beitrag von −57,81 PJ-Äquivalent/a: Der betriebliche Bewertungssaldo beträgt damit −117,06 PJ-Äquivalent/a und einschließlich derselben MIV-Zuordnung −158,06 PJ-Äquivalent/a. Die physischen Energieflüsse bleiben unverändert. Diese vollständige Anwendung ist ein transparenter Vergleichsfall; sie ersetzt keine Festlegung der PEQ-berechtigten Flächenanteile.</p>
-<p>Der Abstand zum Top-down-Saldo beträgt <strong>−100,25 PJ/a</strong>. Er ergibt sich aus geringerer PV-Erzeugung und höherem Gebäudestrombedarf des gelieferten Pools. Werden auf beiden Seiten dieselben 31 PJ/a zentrale Restdeckung und 72 PJ/a MIV-Bedarf angesetzt, bleibt diese Differenz unverändert. Sie ist ein Szenariounterschied und wird nicht durch nachträgliche Flächenskalierung oder eine neue Gutschrift geschlossen.</p>
-<p>Für die Kalibrierung in <a href="05-kontextfaktoren.html" class="quarto-xref"><span>Kalibrierung der PEQ-Energieanforderungen</span></a> fehlen die definierten PEQ-Flächenanteile, die abgestimmte Versorgung der übrigen Typen sowie alternative PV-/Flexibilitätsvarianten. Die gelieferte Typologiematrix und ihre Ergebnisse bilden die Grundlage für diese Entscheidungen. Die THG-Allokation erhält dadurch nicht automatisch eine neue Flächenbasis.</p>
+<iframe src="../Abbildungen/methodik/sektorvergleich.html" title="Physischer sektoraler Abgleich und separate Dichtebewertung" style="width:100%;height:690px;border:0" loading="lazy"></iframe>
+<p>Auf beiden Seiten werden dieselben MIV-Mengen und dieselbe zentrale Restdeckung angesetzt. Der physische Szenarioabstand bleibt dadurch unverändert. Die dritte Vergleichsgruppe ergänzt ausdrücklich einen virtuellen Dichtebeitrag; sie ist keine neue physische Bilanz.</p>
+</section>
+<section id="fortschreibung" class="level2">
+<h2 class="anchored" data-anchor-id="fortschreibung">Fortschreibung</h2>
+<p>Für neue Typologien wird der Parquet-Pfad im Notebook geändert. Vorhandene Basisflächen und Regeln bleiben verwendbar, solange die Merkmale passen. Fehlende gewichtete Varianten werden gemeldet; zusätzliche ungewichtete Varianten ändern keine nationale Fläche. Neue Flächenlieferungen ersetzen die bisherige Quelle. Nach vollständiger Notebook-Ausführung werden Bericht und Kalibrierungsdashboard aus demselben Ergebnisstand neu erzeugt.</p>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
-<div id="ref-schneider2023context" class="csl-entry" role="listitem">
-Schneider, Simon, Thomas Zelger, David Sengl, und José Baptista. 2023. <span>„A Quantitative Positive Energy District Definition with Contextual Targets“</span>. <em>Buildings</em> 13 (5): 1210. <a href="https://doi.org/10.3390/buildings13051210">https://doi.org/10.3390/buildings13051210</a>.
-</div>
-</div>
 </section>
 
 </main> <!-- /main -->
