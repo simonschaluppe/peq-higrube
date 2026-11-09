@@ -337,7 +337,12 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../Berechnungen/gebaeudesektormodell/Gebaeudesektormodell.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Gebäudesektormodell Österreich 2040</span></a>
+  <a href="../Berechnungen/gebaeudesektormodell/Gebaeudesektor_Modellierung.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Gebäudesektor – Modellierung</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Berechnungen/gebaeudesektormodell/Gebaeudesektormodell_Analyse.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Gebäudesektormodell – Analyse</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -398,12 +403,40 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<div class="callout callout-style-default callout-warning callout-titled" title="Bisherige Ergebnisse – neue Auswertung steht aus">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warnung</span>Bisherige Ergebnisse – neue Auswertung steht aus
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Aktualisierungsbedarf · 09.11.2026</strong></p>
+<p>Dieses Kapitel zeigt noch den vorläufigen Rechenstand vom 05.11.2026. Die lokale Typologie umfasst inzwischen 43.200 Simulationen. Für die neue Analyse fehlt die vollständige Flächenzuordnung des Kollegen. Die folgenden Tabellen, Diagramme und Aussagen sind deshalb noch keine Ergebnisse des neuen Analysewegs.</p>
+</div>
+</div>
 <div class="lead">
 <p>32.400 simulierte Varianten, regelbasierte nationale Flächen und ein separater virtueller Bewertungsvergleich</p>
 </div>
-<p>Das Gebäudesektormodell verbindet PEExcel-Kennwerte mit nationalen Basisflächen. Der hier ausgewertete <strong>vorläufige Szenariostand</strong> ersetzt die frühere Beschränkung auf PV30/noFlex. Alle Annahmen und Rechenschritte sind im ausführbaren Anhang <a href="../Berechnungen/gebaeudesektormodell/Gebaeudesektormodell.html" class="quarto-xref"><span>Gebäudesektormodell: Daten, Rechnung und Grenzen</span></a> dokumentiert. Die Flächenverteilung ist eine Testannahme bis zur aktualisierten Lieferung der Bestandsflächen.</p>
+<p>Das Gebäudesektormodell verbindet PEExcel-Kennwerte mit nationalen Basisflächen. Der hier ausgewertete <strong>vorläufige Szenariostand</strong> ersetzt die frühere Beschränkung auf PV30/noFlex. Alle Annahmen und Rechenschritte sind im ausführbaren Anhang <a href="../Berechnungen/gebaeudesektormodell/Gebaeudesektormodell_Analyse.html" class="quarto-xref"><span>Gebäudesektormodell-Analyse</span></a> dokumentiert. Die Flächenverteilung ist eine Testannahme bis zur aktualisierten Lieferung der Bestandsflächen.</p>
 <section id="sec-gebaeudetypologien" class="level2">
 <h2 class="anchored" data-anchor-id="sec-gebaeudetypologien">Datenbasis und Typologie</h2>
+<div class="callout callout-style-default callout-warning callout-titled" title="Datenbasis aktualisieren">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warnung</span>Datenbasis aktualisieren
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Aktualisierungsbedarf · 09.11.2026</strong></p>
+<p>Typenanzahl, Variantenabdeckung und Quellenbeschreibung auf das lokale Szenariopaket und die neue vollständige Flächentabelle umstellen. Die bisherige Excel-Reinschrift und die automatische Variantenaufteilung gehören zum archivierten Rechenweg.</p>
+</div>
+</div>
 <p>Der Parquet-Export <code>building_sector_v2</code> enthält 32.400 Simulationen: zehn Geometrien, neun Hüllcodes, zehn Versorgungsvarianten, drei PV-Dachanteile (30/70/90 %), zwei Flexibilitätszustände, zwei Wetterstandorte und drei Gebäudemassen. Weitere Presets sind teilweise an diese Merkmale gekoppelt. Quelle ist PEExcel 1.13.1_dev. Die ungewichtete Anzahl der Simulationen beschreibt keine nationale Bestandsverteilung.</p>
 <p>Die bestehenden Basisflächen werden aus <code>daten_gebauedesektor.xlsx</code> übernommen. Die 900 Basisgruppen aus Geometrie/Hülle/Versorgung sind vollständig im neuen Pool enthalten. Nationale BGF und Statusanteile bleiben Eingaben; die detaillierten Variantenflächen werden im Notebook erzeugt. Kennwerte werden nicht manuell in 32.400 Excel-Zeilen gepflegt.</p>
 <div id="tbl-gebaeude-typologien" class="quarto-float quarto-figure quarto-figure-center anchored">
@@ -509,6 +542,20 @@ Tabelle&nbsp;12.1: Gelieferte Flächen und BGF-gewichtete Dichte-Erwartungswerte
 </section>
 <section id="flächenzuordnung-und-entwicklung" class="level2">
 <h2 class="anchored" data-anchor-id="flächenzuordnung-und-entwicklung">Flächenzuordnung und Entwicklung</h2>
+<div class="callout callout-style-default callout-warning callout-titled" title="Flächenlieferung und PEQ-Auswahl ersetzen">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warnung</span>Flächenlieferung und PEQ-Auswahl ersetzen
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Aktualisierungsbedarf · 09.11.2026</strong></p>
+<p>Die unten gezeigten PV-/Flex-Anteile, Wetter-/Massegewichte und die feste 20-%-PEQ-Auswahl sind historische Testannahmen. Künftig liefert die Modellierung fertige Typenflächen für heute und 2040. Die PEQ-Bewertungsflächen werden erst im Dashboard ausgewählt.</p>
+</div>
+</div>
 <p>Die bestehenden nationalen Basisflächen bleiben erhalten: rund 1.112,341 Mio. m² BGF heute und 1.126,579 Mio. m² BGF 2040. Die Zuweisung erfolgt über disjunkte PEQ- und Restflächen, gemeinsame PV-/Flex-Anteile sowie Wetter- und Massegewichte.</p>
 <p><strong>PEQ-Szenario:</strong> 20 % der gesamten BGF 2040 werden proportional aus den geeigneten Gruppen ausgewählt: Hüllcodes Neu_20cm/Neu_30cm mit Wärmepumpe, erneuerbarer Fernwärme oder Biomasse. Diese Teilfläche erhält PV70/Flex. Die Ausstattung allein ist kein Nachweis der PEQ-Konformität. Im Dashboard bleibt die virtuelle Bewertung interaktiv veränderbar.</p>
 <p>Die folgende Restverteilung gilt <strong>innerhalb der nicht als PEQ ausgewählten Fläche</strong> und ist ausdrücklich vorläufig:</p>
@@ -599,6 +646,20 @@ Abbildung&nbsp;12.1: Basisflächen heute und 2040 nach Geometrie.
 </section>
 <section id="strom-und-endenergie" class="level2">
 <h2 class="anchored" data-anchor-id="strom-und-endenergie">Strom und Endenergie</h2>
+<div class="callout callout-style-default callout-warning callout-titled" title="Energieergebnisse neu berechnen">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warnung</span>Energieergebnisse neu berechnen
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Aktualisierungsbedarf · 09.11.2026</strong></p>
+<p>Nach Eingang der Flächenlieferung Strom- und Endenergietabellen sowie Anwendungsdiagramme neu erzeugen. Die bisherige synthetische PV0-Ergänzung entfällt im neuen Analyseweg; verwendet werden die gelieferten Simulationen.</p>
+</div>
+</div>
 <p>Zusätzlich entstehen 5.400 gekennzeichnete synthetische PV0/noFlex-Varianten. Ohne Speicher und Mobilitätsladung wird deren elektrischer Nutzbedarf aus der entsprechenden PV30/noFlex-Simulation übernommen, PV-Flüsse werden null und der Bedarf durch Netzstrom gedeckt. Dies ist eine Näherung; echte PV0-Simulationen ersetzen sie künftig.</p>
 <p>Der Bruttostrombedarf wird aus EUI_el_total ohne Mobilität übernommen. PV_total umfasst direkten und flexiblen Verbrauch sowie Einspeisung. Flexible Flüsse werden in der Bilanzprüfung berücksichtigt und nicht unterschlagen.</p>
 <div id="tbl-gebaeude-strom" class="quarto-float quarto-figure quarto-figure-center anchored">
@@ -751,6 +812,20 @@ Abbildung&nbsp;12.3: Endenergie nach Energieträgern.
 </section>
 <section id="primärenergie-und-virtuelle-bewertung" class="level2">
 <h2 class="anchored" data-anchor-id="primärenergie-und-virtuelle-bewertung">Primärenergie und virtuelle Bewertung</h2>
+<div class="callout callout-style-default callout-warning callout-titled" title="PE-Abdeckung neu bewerten">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warnung</span>PE-Abdeckung neu bewerten
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Aktualisierungsbedarf · 09.11.2026</strong></p>
+<p>Die Aussagen zu fehlenden PE-Kennwerten beziehen sich auf das frühere synthetische PV0. Mit dem neuen Bestand Import, Export, Projektsaldo und Datenabdeckung erneut berechnen. Virtuelle Kontextwerte weiterhin getrennt ausweisen.</p>
+</div>
+</div>
 <p>Die PE-Bewertung tatsächlicher Flüsse verwendet PEI_import, PEI_export und PEI_saldo_project = Export − Import. Netzbezug und flexible Bezüge sind Komponenten; thermische Energieträger werden eigenständig berücksichtigt. Virtuelle Kontextwerte werden hier nicht hinzuaddiert.</p>
 <p>Für synthetische PV0-Varianten fehlen zeitlich konsistent neu berechnete PE-Kennwerte. Deshalb bleibt die vollständige nationale PE-Bilanz offen; die physische Strombilanz ist davon unabhängig berechenbar. PE-Werte werden nicht aus PV30 kopiert.</p>
 <div id="tbl-gebaeude-pe" class="quarto-float quarto-figure quarto-figure-center anchored">
@@ -821,6 +896,20 @@ Tabelle&nbsp;12.5: Gelieferter PE-Bewertungsstand; Faktorversion und Bezugsjahr 
 </section>
 <section id="sec-gfz-verteilung" class="level2">
 <h2 class="anchored" data-anchor-id="sec-gfz-verteilung">GFZ und sektoraler Abgleich</h2>
+<div class="callout callout-style-default callout-warning callout-titled" title="GFZ-Gewichtung und Szenarioabgleich erneuern">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warnung</span>GFZ-Gewichtung und Szenarioabgleich erneuern
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Aktualisierungsbedarf · 09.11.2026</strong></p>
+<p>Die bestehende geometrische Zuordnung kann weiterverwendet werden, muss aber alle positiv belegten Typen abdecken. Gewichtete Ergebnisse und sektoralen Abstand neu berechnen. Den Bestand heute nicht als zeitgleichen Vergleich zum nationalen Ziel 2040 darstellen.</p>
+</div>
+</div>
 <p>Die bestehende GFZ-Zuordnung aus Nutzung und Geschoßklasse bleibt erhalten. Varianten derselben Geometrie übernehmen dieselbe bedingte Dichteverteilung. MFH_2G hat weiterhin keine positive Basisfläche und keine ergänzte GFZ-Zuordnung. Für eine künftig positive Fläche wäre diese zuerst zu liefern.</p>
 <div id="fig-gebaeude-gfz" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
@@ -884,6 +973,20 @@ Tabelle&nbsp;12.6: Vergleich bei gleichen elektrischen Bilanzgrenzen; Top-down-Z
 </section>
 <section id="fortschreibung" class="level2">
 <h2 class="anchored" data-anchor-id="fortschreibung">Fortschreibung</h2>
+<div class="callout callout-style-default callout-warning callout-titled" title="Neuen Notebook-Ablauf übernehmen">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warnung</span>Neuen Notebook-Ablauf übernehmen
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Aktualisierungsbedarf · 09.11.2026</strong></p>
+<p>Diese Beschreibung auf Modellierung → fertige Flächen-Excel → Analyse → bestand.parquet → Kalibrierungsdashboard umstellen. In der Analyse werden keine Flächenallokationsregeln mehr gepflegt.</p>
+</div>
+</div>
 <p>Für neue Typologien wird der Parquet-Pfad im Notebook geändert. Vorhandene Basisflächen und Regeln bleiben verwendbar, solange die Merkmale passen. Fehlende gewichtete Varianten werden gemeldet; zusätzliche ungewichtete Varianten ändern keine nationale Fläche. Neue Flächenlieferungen ersetzen die bisherige Quelle. Nach vollständiger Notebook-Ausführung werden Bericht und Kalibrierungsdashboard aus demselben Ergebnisstand neu erzeugt.</p>
 
 

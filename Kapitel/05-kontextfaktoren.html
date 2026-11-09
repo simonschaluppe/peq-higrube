@@ -385,7 +385,12 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../Berechnungen/gebaeudesektormodell/Gebaeudesektormodell.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Gebäudesektormodell Österreich 2040</span></a>
+  <a href="../Berechnungen/gebaeudesektormodell/Gebaeudesektor_Modellierung.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Gebäudesektor – Modellierung</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Berechnungen/gebaeudesektormodell/Gebaeudesektormodell_Analyse.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Gebäudesektormodell – Analyse</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -446,6 +451,20 @@ window.Quarto = {
 </header>
 
 
+<div class="callout callout-style-default callout-warning callout-titled" title="Kalibrierungsgrundlage aktualisieren">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warnung</span>Kalibrierungsgrundlage aktualisieren
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Aktualisierungsbedarf · 09.11.2026</strong></p>
+<p>Typologiekennwerte, gewichtete Flächen und die Zuordnung zu PEQ-/Nicht-PEQ-Flächen auf den neuen Analysebestand umstellen. Hinweise auf ausschließlich PV30/noFlex und frühere Auswahlannahmen sind zu überarbeiten. Neue Parameter erst nach Durchsicht des aktualisierten Bestands festlegen.</p>
+</div>
+</div>
 <div class="lead">
 <p>Nationale Zielbilanz, neue Gebäudetypologien und dichteabhängige Anforderungen in Übereinstimmung bringen</p>
 </div>
@@ -483,7 +502,7 @@ Tabelle&nbsp;13.1: Parametrisierung der neuen Energieanforderungen. Typologiespe
 <tr class="even">
 <td><span class="math inline">\(e_k\)</span>, <span class="math inline">\(p_k\)</span></td>
 <td>Typologiebezogener Energiebedarf und lokale Erzeugung</td>
-<td>Gelieferte PV30/noFlex-Kennwerte in <a href="../Berechnungen/gebaeudesektormodell/Gebaeudesektormodell.html" class="quarto-xref"><span>Gebäudesektormodell: Daten, Rechnung und Grenzen</span></a></td>
+<td>Gelieferte PV30/noFlex-Kennwerte in <a href="../Berechnungen/gebaeudesektormodell/Gebaeudesektormodell_Analyse.html" class="quarto-xref"><span>Gebäudesektormodell-Analyse</span></a></td>
 </tr>
 <tr class="odd">
 <td><span class="math inline">\(b_{k,j}^{\mathrm{ref}}\)</span></td>
@@ -578,7 +597,7 @@ B_{\mathrm{Sektor}}^{\mathrm{Modell}}(\theta)
 </section>
 <section id="kalibrierungsstand-und-ergebnisvergleich" class="level2">
 <h2 class="anchored" data-anchor-id="kalibrierungsstand-und-ergebnisvergleich">Kalibrierungsstand und Ergebnisvergleich</h2>
-<p>Unter den Annahmen des Referenzfalls ergeben sich 31 PJ/a zentrale Restdeckung und 0 PJ/a für den Gebäudesektorsaldo einschließlich MIV (<a href="03-allokation.html#sec-allokation-ergebnisse" class="quarto-xref"><span>Varianten und Stellschrauben</span></a>). Die Bottom-up-Rechnung umfasst 603 positiv gewichtete Typen, ihre GFZ-Verteilungen und die Erwartungswerte der historischen Dichtefunktion (<a href="../Berechnungen/gebaeudesektormodell/Gebaeudesektormodell.html" class="quarto-xref"><span>Gebäudesektormodell: Daten, Rechnung und Grenzen</span></a>).</p>
+<p>Unter den Annahmen des Referenzfalls ergeben sich 31 PJ/a zentrale Restdeckung und 0 PJ/a für den Gebäudesektorsaldo einschließlich MIV (<a href="03-allokation.html#sec-allokation-ergebnisse" class="quarto-xref"><span>Varianten und Stellschrauben</span></a>). Die Bottom-up-Rechnung umfasst 603 positiv gewichtete Typen, ihre GFZ-Verteilungen und die Erwartungswerte der historischen Dichtefunktion (<a href="../Berechnungen/gebaeudesektormodell/Gebaeudesektormodell_Analyse.html" class="quarto-xref"><span>Gebäudesektormodell-Analyse</span></a>).</p>
 <p>Der physische Pool-Stromsaldo beträgt −59,25 PJ/a. Einschließlich derselben einmaligen MIV-Zuordnung ergibt sich −100,25 PJ/a, also −100,25 PJ/a gegenüber dem Top-down-Beispiel. Die virtuellen Dichte-Erwartungswerte werden dabei nicht als reale Deckung hinzuaddiert. Der Pool enthält nur PV30/noFlex sowie erhebliche Gas- und Ölmengen. Eine neue Zielwertfunktion lässt sich deshalb nicht allein durch Gleichsetzen dieses Pool-Ergebnisses mit dem nationalen Ziel bestimmen. PEQ-Flächenanteile, energetische Entwicklung der übrigen Typen und alternative PV-Ausstattungen sind zuerst festzulegen.</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Geltungsbereich des Entwurfs">
 <div class="callout-header d-flex align-content-center">
@@ -593,7 +612,7 @@ B_{\mathrm{Sektor}}^{\mathrm{Modell}}(\theta)
 <p>Die 2040-Flächenmatrix, Energieaggregation und GFZ-Zuordnung sind berechnet. Die historische Dichtefunktion wird als Referenzansatz ausgewertet. PEQ-Flächenanteile, Versorgungspfade, PE-Faktorversion und typologische Sanierungswerte sind nicht normativ festgelegt. Der Ergebnisvergleich beschreibt diesen Parameterstand.</p>
 </div>
 </div>
-<p>Die Ergebnisdarstellung umfasst Flächen, Typenbeiträge, Dichtekorrektur und den Abstand zum Referenzsaldo (<a href="../Berechnungen/gebaeudesektormodell/Gebaeudesektormodell.html#sec-gebaeude-abgleich" class="quarto-xref"><span>8. Sektoraler Vergleich</span></a>). Quelldateien und Parameter sind in den Rechenanhängen versioniert.</p>
+<p>Die Ergebnisdarstellung umfasst Flächen, Typenbeiträge, Dichtekorrektur und den Abstand zum Referenzsaldo (<a href="../Berechnungen/gebaeudesektormodell/Gebaeudesektormodell_Analyse.html#sec-gebaeude-abgleich" class="quarto-xref"><span>8. Vergleich mit dem nationalen Ziel 2040</span></a>). Quelldateien und Parameter sind in den Rechenanhängen versioniert.</p>
 </section>
 <section id="sensitivitäten-und-normative-entscheidungen" class="level2">
 <h2 class="anchored" data-anchor-id="sensitivitäten-und-normative-entscheidungen">Sensitivitäten und normative Entscheidungen</h2>
