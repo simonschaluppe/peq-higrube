@@ -1,5 +1,11 @@
 # Kalibrierung der PEQ-Energieanforderungen {#sec-kalibrierung}
 
+::: {.callout-warning title="Kalibrierungsgrundlage aktualisieren"}
+**Aktualisierungsbedarf · 09.11.2026**
+
+Typologiekennwerte, gewichtete Flächen und die Zuordnung zu PEQ-/Nicht-PEQ-Flächen auf den neuen Analysebestand umstellen. Hinweise auf ausschließlich PV30/noFlex und frühere Auswahlannahmen sind zu überarbeiten. Neue Parameter erst nach Durchsicht des aktualisierten Bestands festlegen.
+:::
+
 ::: {.lead}
 Nationale Zielbilanz, neue Gebäudetypologien und dichteabhängige Anforderungen in Übereinstimmung bringen
 :::

@@ -1,5 +1,11 @@
 # Annahmen der Zielwertberechnung {#sec-anhang}
 
+::: {.callout-warning title="Methodenstand zum Gebäudesektor aktualisieren"}
+**Aktualisierungsbedarf · 09.11.2026**
+
+Historische Kalibrierungsanteile weiterhin als historische Referenz kennzeichnen. Die Beschreibung des bereits ausgewerteten neuen Pools bezieht sich auf den bisherigen Stand. Quellen, Flächen, GFZ-Gewichtung und Ergebnisverweise nach der neuen Lieferung ersetzen; die eigenständige THG-Bezugsfläche nicht ungeprüft übernehmen.
+:::
+
 ::: {.preset-anhang}
 
 Dieser Teil bündelt die Grundlagen der Anforderungen an Quartiere: nationale Zukunftsszenarien, sektorale Budgets und deren Verteilung auf Flächen und Nutzungen. Die Herleitung steht in @sec-allokation und @sec-zielwert-thg, die Anwendung in @sec-kontext. Die Annahmen zur Berechnung der Quartiersbilanz folgen in @sec-anhang-quartiersbilanzierung.

@@ -1,5 +1,11 @@
 # Sektorale Energieallokation {#sec-allokation}
 
+::: {.callout-warning title="Bottom-up-Vergleich aktualisieren"}
+**Aktualisierungsbedarf · 09.11.2026**
+
+Die nationale Top-down-Allokation bleibt ein eigener Datenstand. Der unten genannte Abstand von −100,25 PJ/a stammt aus einem früheren Gebäudepool und ist nicht mehr der zuletzt publizierte Vergleich. Den Bottom-up-Abgleich nach Lieferung und Analyse des neuen Bestands vollständig ersetzen.
+:::
+
 ::: {.lead}
 Vom nationalen Stromsystem zur Deckung von Gebäude und MIV
 :::

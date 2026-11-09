@@ -6,3 +6,4 @@ nbformat>=5.10
 nbclient>=0.10
 ipykernel>=6.29
 plotly>=6.0
+pyarrow>=18

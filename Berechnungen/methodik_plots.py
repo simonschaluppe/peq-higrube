@@ -75,7 +75,7 @@ def building_figures(types, comparison):
     fig=go.Figure()
     for gi,geom in enumerate(geometries):
         t=types.loc[types.Geometrie.eq(geom)]
-        labels=t.Archetype.str.split('|',regex=False).str[1:3].str.join(' / ')
+        labels=t[['Huelle','Heizung','PV_Klasse','Flexibilitaet','Wetter','Masse']].agg(' / '.join,axis=1)
         for col,name,c,pattern in [('Bedarf_BGF','Strombedarf (negativ)','gebaeude',''),('PV_BGF','PV-Erzeugung','pv',''),('c_D_EE_BGF','Virtueller Dichtewert','density','/')]:
             vals=-t[col] if col=='Bedarf_BGF' else t[col]
             fig.add_bar(name=name,x=labels,y=vals,marker=dict(color=COLORS[c],pattern_shape=pattern),visible=gi==0,

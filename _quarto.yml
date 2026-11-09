@@ -61,7 +61,8 @@ book:
     - Kapitel/anhang-methodenstand.qmd
     - Berechnungen/gfz_at/GFZ_AT_Analyse_Anhang.ipynb
     - Berechnungen/sektorenmodell/allokation.ipynb
-    - Berechnungen/gebaeudesektormodell/Gebaeudesektormodell.ipynb
+    - Berechnungen/gebaeudesektormodell/Gebaeudesektor_Modellierung.ipynb
+    - Berechnungen/gebaeudesektormodell/Gebaeudesektormodell_Analyse.ipynb
     - Kapitel/anhang-quartiersbilanzierung.qmd
 
 

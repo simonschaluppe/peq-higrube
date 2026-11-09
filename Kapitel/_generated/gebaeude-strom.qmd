@@ -1,10 +1,12 @@
 | Größe | kWh/(m² NGF a) | GWh/a | PJ/a |
 | --- | --- | --- | --- |
-| Strombedarf | 42,377 | 38.192,572 | 137,493 |
-| PV_Erzeugung | 24,116 | 21.734,851 | 78,245 |
-| Grid_to_building_min | 34,899 | 31.452,734 | 113,230 |
-| PV_total_direct | 7,478 | 6.739,839 | 24,263 |
-| PV_to_Egrid | 16,638 | 14.995,012 | 53,982 |
-| Stromsaldo | -18,261 | -16.457,722 | -59,248 |
+| Strombedarf | 46,097 | 41.545,398 | 149,563 |
+| PV_Erzeugung | 41,391 | 37.303,879 | 134,294 |
+| Grid_to_building_min | 29,255 | 26.366,857 | 94,921 |
+| PV_total_direct | 11,574 | 10.431,527 | 37,553 |
+| PV_total_flex | 1,636 | 1.474,222 | 5,307 |
+| VRGrid_to_building | 3,631 | 3.272,792 | 11,782 |
+| PV_to_Egrid | 28,181 | 25.398,131 | 91,433 |
+| Stromsaldo | -4,706 | -4.241,519 | -15,269 |
 
 : Strombilanz 2040 aus den gelieferten Typenkennwerten bei NGF/BGF = 0.8. {#tbl-gebaeude-strom}

@@ -1,4 +1,4 @@
-Datensatz,NGF [Mio. m²],positiv,Null,fehlend
-"reduced (NGF, alter Stand)",696.6152550776658,486,264,6450
-Strombed_estim heute (BGF × r),889.872558,585,315,0
-Strombed_estim 2040 (BGF × r),901.2629267424,603,297,0
+Stand,BGF [Mio. m²],NGF [Mio. m²],positiv,Null,fehlend
+heute,1112.3406974999998,889.8725579999999,7020,30780,0
+2040,1126.5786584309574,901.2629267447659,11502,26298,0
+2020,,,0,0,37800

@@ -1,5 +1,11 @@
 # Aussagekraft der Ergebnisse {#sec-ergebnisse}
 
+::: {.callout-warning title="Ergebnisaussagen nachziehen"}
+**Aktualisierungsbedarf · 09.11.2026**
+
+Soweit dieses Kapitel Ergebnisse des Gebäudesektors oder der PEQ-Kalibrierung zusammenfasst, sind Zahlen, Aussagen und Verweise nach der neuen Bestandsanalyse abzugleichen. Die vollständige Flächenlieferung steht noch aus; aus dem Refactoring allein entstehen keine neuen fachlichen Ergebnisse.
+:::
+
 ::: {.lead}
 Von der Zielerreichung zur nachvollziehbaren Planungsentscheidung
 :::

@@ -3,9 +3,9 @@ let selectedTypes=new Set(S.types.filter(k=>k.default_selected).map(k=>k.Archety
 let densityReferenceChecked=false;
 let groupReferenceChecked=false;
 el('selection-note').textContent=S.selection_note;
-const typeAttributes=k=>{const [geometry,age,heat,pv,flex]=k.Archetype.split('|');return {geometry,age,heat,pv,flex,heat_family:heat.startsWith('WP_')?'Wärmepumpe':heat};};
+const typeAttributes=k=>({geometry:k.Geometrie,age:k.Huelle,heat:k.Heizung,pv:k.PV_Klasse,flex:k.Flexibilitaet,weather:k.Wetter,mass:k.Masse,heat_family:k.Heizung.startsWith('WP_')?'Wärmepumpe':k.Heizung});
 const attributes=new Map(S.types.map(k=>[k.Archetype,typeAttributes(k)]));
-const filters=[['geometry','Geometrie'],['age','Baualter / Hülle'],['pv','PV-Ausstattung'],['flex','Flexibilität'],['heat_family','Heizungsfamilie / WP'],['heat','Heizung im Detail']];
+const filters=[['geometry','Geometrie'],['age','Baualter / Hülle'],['pv','PV-Ausstattung'],['flex','Flexibilität'],['heat_family','Heizungsfamilie / WP'],['heat','Heizung im Detail'],['weather','Wetter'],['mass','Gebäudemasse']];
 for(const [key,label] of filters){
  const l=document.createElement('label');l.htmlFor='filter-'+key;l.textContent=label;
  const select=document.createElement('select');select.id='filter-'+key;select.multiple=true;select.size=3;select.style.cssText='width:100%;font-size:12px';

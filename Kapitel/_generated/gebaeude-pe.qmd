@@ -1,8 +1,9 @@
-| Größe | GWh_PE/a | PJ_PE/a |
-| --- | --- | --- |
-| PEI_grid_import | 59.495,871 | 214,185 |
-| PEI_import | 137.528,612 | 495,103 |
-| PEI_export | 23.816,432 | 85,739 |
-| PE_Saldo | -113.712,180 | -409,364 |
+| Größe | GWh_PE/a | PJ_PE/a | bekannter Teil [PJ PE/a] | fehlende BGF [m²] |
+| --- | --- | --- | --- | --- |
+| PEI_grid_import | offen | offen | 108,758 | 292.113.753,243 |
+| PEI_flex_import | offen | offen | 0,000 | 292.113.753,243 |
+| PEI_import | offen | offen | 323,694 | 292.113.753,243 |
+| PEI_export | offen | offen | 145,376 | 292.113.753,243 |
+| PE_Saldo | offen | offen | -178,318 | 292.113.753,243 |
 
 : Gelieferter PE-Bewertungsstand; Faktorversion und Bezugsjahr noch zu bestätigen, ohne virtuelle Kontextwerte. {#tbl-gebaeude-pe}

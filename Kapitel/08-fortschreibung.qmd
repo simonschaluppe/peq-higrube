@@ -1,4 +1,10 @@
 ::: {.callout-note appearance="simple" icon=true}
+
+::: {.callout-warning title="Fortschreibungsweg präzisieren"}
+**Aktualisierungsbedarf · 09.11.2026**
+
+Für den Gebäudesektor künftig die getrennten Schritte Modellierung, Analyse und Dashboard dokumentieren. Benötigt werden ein gültiges Szenariopaket und die vollständige Typenflächenzuordnung; Ergebnisse werden je Bestand heute/2040 übergeben.
+:::
 {{< var versionstyp >}} vom {{< var versionsdatum >}}
 :::
 # Methodenstand und Fortschreibung {#sec-fortschreibung}

@@ -1,0 +1,16 @@
+Stand,Status,PV,Flex,Anteil
+heute,Bestand,PV0,noFlex,0.8
+heute,Bestand,PV30,noFlex,0.2
+heute,Neubau,PV0,noFlex,0.8
+heute,Neubau,PV30,noFlex,0.2
+heute,Sanierung,PV0,noFlex,0.8
+heute,Sanierung,PV30,noFlex,0.2
+2040,Bestand,PV0,noFlex,0.4
+2040,Bestand,PV30,noFlex,0.4
+2040,Bestand,PV30,Flex,0.2
+2040,Neubau,PV30,noFlex,0.4
+2040,Neubau,PV30,Flex,0.4
+2040,Neubau,PV70,Flex,0.2
+2040,Sanierung,PV0,noFlex,0.2
+2040,Sanierung,PV30,noFlex,0.4
+2040,Sanierung,PV30,Flex,0.4
