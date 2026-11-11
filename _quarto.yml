@@ -60,6 +60,7 @@ book:
     - Kapitel/anhang-szenariotabellen.qmd
     - Kapitel/anhang-methodenstand.qmd
     - Berechnungen/gfz_at/GFZ_AT_Analyse_Anhang.ipynb
+    - Berechnungen/thg_budget/03_zielwert_thg_intern_senkenvergleich.ipynb
     - Berechnungen/sektorenmodell/allokation.ipynb
     - Berechnungen/gebaeudesektormodell/Gebaeudesektor_Modellierung.ipynb
     - Berechnungen/gebaeudesektormodell/Gebaeudesektormodell_Analyse.ipynb
@@ -92,19 +93,19 @@ format:
     number-depth: 1
     collapse-level: 1
     link-external-newwindow: true
-  pdf:
-    documentclass: scrreprt
-    papersize: a4
-    pdf-engine: lualatex
-    toc: true
-    number-sections: true
-    colorlinks: true
-  docx:
-    toc: true
-    toc-depth: 3
-    toc-title: Inhaltsverzeichnis
-    number-sections: true
-    syntax-highlighting: github
+  # pdf:
+  #   documentclass: scrreprt
+  #   papersize: a4
+  #   pdf-engine: lualatex
+  #   toc: true
+  #   number-sections: true
+  #   colorlinks: true
+  # docx:
+  #   toc: true
+  #   toc-depth: 3
+  #   toc-title: Inhaltsverzeichnis
+  #   number-sections: true
+  #   syntax-highlighting: github
 
 execute:
   echo: false

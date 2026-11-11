@@ -1,0 +1,9 @@
+jahr,reihe,emissionen_Mt,einheit,quelle_id,datenversion,abgrenzung,datenstatus
+2022,GHG_TOTAL_EXCL_LULUCF,73.506582,Mt CO2e,S7,Inventar 2026 (revidiert),"ohne LULUCF, gesamte THG",kontext: NICHT CO2-Budget-kompatibel
+2023,GHG_TOTAL_EXCL_LULUCF,68.67406,Mt CO2e,S7,Inventar 2026 (revidiert),"ohne LULUCF, gesamte THG",kontext: NICHT CO2-Budget-kompatibel
+2024,GHG_TOTAL_EXCL_LULUCF,66.637831,Mt CO2e,S7,Inventar 2026 (revidiert),"ohne LULUCF, gesamte THG",kontext: NICHT CO2-Budget-kompatibel
+2025,GHG_TOTAL_EXCL_LULUCF,67.1,Mt CO2e,S8,NowCast September 2026,"ohne LULUCF, THG",vorläufig; NICHT CO2-Budget-kompatibel
+2022,CO2_TERRITORIAL,,Mt CO2,S7,Nachtrag erforderlich,"CO2-only, territorial, LULUCF-Konvention prüfen",offen; CO2-Jahreswert fehlt
+2023,CO2_TERRITORIAL,,Mt CO2,S7,Nachtrag erforderlich,"CO2-only, territorial, LULUCF-Konvention prüfen",offen; CO2-Jahreswert fehlt
+2024,CO2_TERRITORIAL,,Mt CO2,S7,Nachtrag erforderlich,"CO2-only, territorial, LULUCF-Konvention prüfen",offen; CO2-Jahreswert fehlt
+2025,CO2_TERRITORIAL,,Mt CO2,,Noch keine harmonisierte Reihe übernommen,"CO2-only, territorial, LULUCF-Konvention prüfen",offen; für 2026-Budget notwendig

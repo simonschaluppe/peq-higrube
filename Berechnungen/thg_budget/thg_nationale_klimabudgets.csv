@@ -1,0 +1,9 @@
+budget_id,quelle_name,temperatur,overshoot,wahrscheinlichkeit_pct,referenzjahr,national_budget_Mt,einheit,systemgrenze,quelle_id,datenstatus
+STEIN2022_15_NO_50,Steininger et al. via Schneider et al. 2025,"1,5 °C",ohne,50,2022,510,Mt CO2,AT territorial,S1-A1,publiziert
+STEIN2022_15_NO_66,Steininger et al. via Schneider et al. 2025,"1,5 °C",ohne,66,2022,280,Mt CO2,AT territorial,S1-A1,publiziert: L3-Referenz
+STEIN2022_15_YES_50,Steininger et al. via Schneider et al. 2025,"1,5 °C",mit,50,2022,610,Mt CO2,AT territorial,S1-A1,publiziert
+STEIN2022_15_YES_66,Steininger et al. via Schneider et al. 2025,"1,5 °C",mit,66,2022,340,Mt CO2,AT territorial,S1-A1,publiziert
+LAMBOLL2023_AT_15_50,Lamboll et al. (2023); AT-Allokation noch ausständig,"1,5 °C",nicht festgelegt,50,2023,,Mt CO2,AT territorial (noch zu allokieren),S6,offen: nationales Budget fehlt
+LAMBOLL2023_AT_15_66,Lamboll et al. (2023); AT-Allokation noch ausständig,"1,5 °C",nicht festgelegt,66,2023,,Mt CO2,AT territorial (noch zu allokieren),S6,offen: nationales Budget fehlt
+LAMBOLL2023_AT_20_50,Lamboll et al. (2023) – Globalbudget; EPC-Anteil nach Alaux et al. (2023),"2,0 °C",nicht festgelegt,50,2023,,Mt CO2,"AT territorial, EPC-Allokation als Modellübertragung (keine veröffentlichte nationale Zahl)",S6+S9,"Wird aus global 1.200 Gt (gerundet) × EPC 0,10 % berechnet"
+LAMBOLL2023_AT_20_66,Lamboll et al. (2023); AT-Allokation noch ausständig,"2,0 °C",nicht festgelegt,66,2023,,Mt CO2,AT territorial (noch zu allokieren),S6,offen: nationales Budget fehlt

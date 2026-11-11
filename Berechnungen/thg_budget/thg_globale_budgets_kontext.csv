@@ -1,0 +1,13 @@
+quelle,temperatur,wahrscheinlichkeit_pct,referenzjahr,global_budget_Gt,einheit,quelle_id,hinweis
+Lamboll 2023,"1,5 °C",50,2023,250,Gt CO2,S6,"publiziert (Haupttext), global"
+Lamboll 2023,"2,0 °C",50,2023,1220,Gt CO2,S6,präziser Artikelwert; im Abstract gerundet ca. 1.200 Gt
+Lamboll 2023,"2,0 °C",66,2023,940,Gt CO2,S6,"publiziert (Haupttext), global"
+Alaux 2023,"1,5 °C",50,2023,380,Gt CO2,S9,Tabelle 1; eigenständiger Datenstand
+Alaux 2023,"1,5 °C",67,2023,280,Gt CO2,S9,Tabelle 1; eigenständiger Datenstand
+Alaux 2023,"1,5 °C",83,2023,180,Gt CO2,S9,Tabelle 1; eigenständiger Datenstand
+Alaux 2023,"1,7 °C",50,2023,730,Gt CO2,S9,Tabelle 1; eigenständiger Datenstand
+Alaux 2023,"1,7 °C",67,2023,580,Gt CO2,S9,Tabelle 1; eigenständiger Datenstand
+Alaux 2023,"1,7 °C",83,2023,430,Gt CO2,S9,Tabelle 1; eigenständiger Datenstand
+Alaux 2023,"2,0 °C",50,2023,1230,Gt CO2,S9,Tabelle 1; Alaux-Wert ist nicht der Lamboll-Wert
+Alaux 2023,"2,0 °C",67,2023,1030,Gt CO2,S9,Tabelle 1; eigenständiger Datenstand
+Alaux 2023,"2,0 °C",83,2023,780,Gt CO2,S9,Tabelle 1; eigenständiger Datenstand
