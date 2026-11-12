@@ -67,6 +67,9 @@ div.csl-indent {
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap-631496449bf32ff9b0bb69a6bfd9195d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -380,7 +383,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../Berechnungen/thg_budget/03_zielwert_thg_intern_senkenvergleich.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">THG-Zielwert – interner Sektorvergleich</span></a>
+  <a href="../Berechnungen/thg_budget/03_zielwert_thg_intern_forster2026.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">THG-Zielwert – interne Kalibrierung ab 2026</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -697,7 +700,7 @@ Tabelle&nbsp;16.4: Datenumfang der Gebäudeflächenentwicklung.
 <div id="fig-absenkpfade" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-absenkpfade-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="../Abbildungen/absenkpfade.svg" class="img-fluid figure-img" style="width:100.0%">
+<a href="../Abbildungen/absenkpfade.svg" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Abbildung&nbsp;16.1: Angenommene Entwicklung der spezifischen Treibhausgasemissionen verschiedener Energieträger und Versorgungssysteme bis 2050."><img src="../Abbildungen/absenkpfade.svg" class="img-fluid figure-img" style="width:100.0%"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-absenkpfade-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Abbildung&nbsp;16.1: Angenommene Entwicklung der spezifischen Treibhausgasemissionen verschiedener Energieträger und Versorgungssysteme bis 2050.
@@ -1186,6 +1189,38 @@ Schneider, Simon, Thomas Zelger, Raphael Drexel, Manfred Schindler, Paul Krainer
   </div>
 </nav>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 
