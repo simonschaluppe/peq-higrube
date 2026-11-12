@@ -60,7 +60,7 @@ book:
     - Kapitel/anhang-szenariotabellen.qmd
     - Kapitel/anhang-methodenstand.qmd
     - Berechnungen/gfz_at/GFZ_AT_Analyse_Anhang.ipynb
-    - Berechnungen/thg_budget/03_zielwert_thg_intern_senkenvergleich.ipynb
+    - Berechnungen/thg_budget/03_zielwert_thg_intern_forster2026.ipynb
     - Berechnungen/sektorenmodell/allokation.ipynb
     - Berechnungen/gebaeudesektormodell/Gebaeudesektor_Modellierung.ipynb
     - Berechnungen/gebaeudesektormodell/Gebaeudesektormodell_Analyse.ipynb
@@ -93,6 +93,7 @@ format:
     number-depth: 1
     collapse-level: 1
     link-external-newwindow: true
+    lightbox: auto
   # pdf:
   #   documentclass: scrreprt
   #   papersize: a4
