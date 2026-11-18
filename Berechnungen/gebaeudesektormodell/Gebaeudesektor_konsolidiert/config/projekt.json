@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0",
+  "projekt": "Gebaeudesektormodell",
+  "hinweis": "Alle relativen Pfade beziehen sich auf den Projektordner (Ordner mit config/projekt.json). Absolute Pfade sind nur für große externe Simulationsdateien vorgesehen.",
+  "konfiguration": {
+    "szenarien": "config/szenarien.json",
+    "vergleiche": "config/vergleiche.json",
+    "uebergaenge": "config/flaechenstroeme/uebergaenge.json",
+    "rekonstruktionen": "config/flaechenstroeme/rekonstruktionen.json",
+    "bestandsentwicklung": "data/eingaben/bestandsentwicklung/Bestandsentwicklung.xlsx",
+    "massnahmen": "config/flaechenstroeme/massnahmen.json"
+  },
+  "dateien": {
+    "basis": "data/eingaben/annahmen.json",
+    "statistik": "data/referenz/statistik/Statistik_Austria_2024.xlsx",
+    "katalog": "data/referenz/typologien_43200.csv",
+    "parquet": "data/simulation/scenarios.parquet"
+  },
+  "ergebnisse": {
+    "szenarien": "results/szenarien",
+    "vergleiche": "results/vergleiche",
+    "flaechenstroeme": "results/flaechenstroeme"
+  }
+}

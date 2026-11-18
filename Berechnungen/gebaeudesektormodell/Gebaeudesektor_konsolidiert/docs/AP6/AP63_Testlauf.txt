@@ -1,0 +1,33 @@
+AP6.3 Testlauf, Prüfumgebung, 17.11.2026, Fassung 1.6.3-AP6
+Befehl: python -m unittest discover -s tests -p 'test_*.py'
+Ergebnis: Ran 101 tests in 543.3 s, OK (1.6.2: 92 Tests)
+Zusätzlich: python modell/distribution_to_json.py self-test -> OK
+Einzeln: python -m unittest test_prioren test_notebook_sicherheit -> Ran 24 tests, OK
+
+Wachstum nur aus Zielen (lokale Regeln ohne Bio->DH, Projektkopie):
+  Ableitung: 77/26 Iterationen, Restfehler 0, 177 erzwungene Nullflüsse, 1655 Zellen abgeleitet
+  Zustand ce43a7121bf5b531, 950 Mio. m2, Bilanzkontrollen OK
+  Erreichbarkeit: KEINE_KONFLIKTE, BILANZ_OK
+  Rekonstruktion Bestand_2024__Transition_2040_Wachstum: MACHBAR (96 s), geändert 380 064 322 m2, Versorgungswechsel 271 492 720 m2
+
+--- Ende des Testprotokolls ---
+is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+.........................................[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+......
+----------------------------------------------------------------------
+Ran 101 tests in 543.295s
+
+OK
+Energetische Auswertung: Nicht ausgeführt (nicht angefordert)
+Energetische Auswertung: Nicht ausgeführt (nicht angefordert)
+Energetische Auswertung: Nicht ausgeführt (nicht angefordert)
+Energetische Auswertung: Nicht ausgeführt (nicht angefordert)
+Energetische Auswertung: Nicht ausgeführt (nicht angefordert)
+Projektordner: /home/user/workspace/proj/Gebaeudesektor
+Fassung 1.6.3-AP6 (Notebook und Modell passen zusammen)
+Energetische Auswertung: Nicht ausgeführt (nicht angefordert)
+Energetische Auswertung: Nicht ausgeführt (nicht angefordert)
+Energetische Auswertung: Nicht ausgeführt (nicht angefordert)
+Haushalts-Sollwerte2024 werden für dieses Szenariojahr nicht angewendet.
+Haushalts-Sollwerte2024 werden für dieses Szenariojahr nicht angewendet.
+Energetische Auswertung: Nicht ausgeführt (nicht angefordert)

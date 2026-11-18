@@ -1,0 +1,85 @@
+{
+  "schema_version": "1.1",
+  "beschreibung": "Abgrenzung der Maßnahmenraten aus gültigen Flüssen (AP5). Festlegungen vom 16.11.2026: thermische Sanierung = alle zulässigen Qualitätswechsel; Nenner = Ausgangs-NGF; Versorgungswechselrate statt Kesseltauschrate. Ergänzung 17.11.2026 (Schema 1.1): Dekarbonisierungsrate = Bestandsfläche mit Wechsel von fossil (Erdgas, Öl) zu erneuerbar bzw. nicht fossil (biogen, Fernwärme, Strom).",
+  "nenner": "ausgangs_ngf",
+  "nenner_erlaeuterung": "r_M = 100 · A_M / (T_A · (J_B − J_A)) in % der Ausgangs-NGF pro Jahr; lineare mittlere Periodenrate, keine beobachtete Jahreszeitreihe und keine jährliche Übergangswahrscheinlichkeit.",
+  "thermische_sanierung": {
+    "bezeichnung": "Thermische Sanierungsrate",
+    "erlaeuterung": "Bestandsflüsse mit einem als Verbesserung klassifizierten Qualitätswechsel. Festlegung: alle in uebergaenge.json zulässigen Qualitätswechsel (vor1919 … 1980-89 → Neu_20cm/Neu_30cm). Andere Qualitätswechsel werden getrennt als 'nicht klassifiziert' ausgewiesen.",
+    "verbesserungen": [
+      {
+        "pre": [
+          "vor1919",
+          "1919-44",
+          "1945-59",
+          "1960-79",
+          "1980-89"
+        ],
+        "post": [
+          "Neu_20cm",
+          "Neu_30cm"
+        ]
+      }
+    ]
+  },
+  "versorgungswechsel": {
+    "bezeichnung": "Versorgungswechselrate",
+    "erlaeuterung": "Bestandsflüsse mit Änderung der Versorgungskategorie (umgangssprachlich oft 'Kesseltauschrate'). Umfasst auch Wechsel zu Wärmepumpe oder Fernwärme. Ein Kesseltausch innerhalb derselben Versorgungskategorie ist im Typenschema nicht erkennbar und nicht enthalten.",
+    "gruppen": {
+      "Wärmepumpe": [
+        "WP_Sole",
+        "WP_Wasser",
+        "WP_Luft",
+        "WP_Sole_fc"
+      ],
+      "Fernwärme": [
+        "DH"
+      ],
+      "Biomasse": [
+        "Bio"
+      ],
+      "Fossil (Erdgas/Öl)": [
+        "Erdgas",
+        "Oel"
+      ],
+      "Strom direkt": [
+        "Elektro"
+      ]
+    }
+  },
+  "dekarbonisierung": {
+    "bezeichnung": "Dekarbonisierungsrate",
+    "erlaeuterung": "Bestandsflüsse mit Wechsel von einer fossilen Versorgung (Erdgas, Öl) zu einer erneuerbaren bzw. nicht fossilen Versorgung (Biomasse, Fernwärme, Wärmepumpe, Strom direkt). Teilmenge der Versorgungswechselrate. Nicht enthalten: Wechsel innerhalb fossil (Erdgas ↔ Öl), Abriss fossil versorgter Fläche (getrennt in der Fossilbilanz) und Neubau. Fernwärme und Strom gelten nach Festlegung als erneuerbar; ihr tatsächlicher Erzeugungsmix ist im Typenschema nicht abgebildet.",
+    "fossil": [
+      "Erdgas",
+      "Oel"
+    ],
+    "erneuerbar": [
+      "WP_Sole",
+      "WP_Wasser",
+      "WP_Luft",
+      "WP_Sole_fc",
+      "DH",
+      "Bio",
+      "Elektro"
+    ]
+  },
+  "pv": {
+    "bezeichnung": "PV-Ausbaurate",
+    "erlaeuterung": "Bestandsflüsse mit höherer PV-Kategorie (betroffene NGF, nicht installierte kWp). Niedrigere Kategorie wird getrennt als Rückbau ausgewiesen.",
+    "folge": [
+      "PV0",
+      "PV30",
+      "PV70",
+      "PV90"
+    ]
+  },
+  "flex": {
+    "bezeichnung": "Flexibilisierungsrate",
+    "erlaeuterung": "Bestandsflüsse noFlex → Flex. Flex → noFlex wird getrennt ausgewiesen.",
+    "folge": [
+      "noFlex",
+      "Flex"
+    ]
+  }
+}

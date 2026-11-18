@@ -1,0 +1,119 @@
+{
+  "schema_version": "1.0",
+  "unveraenderlich": [
+    "geometry",
+    "weather",
+    "mass"
+  ],
+  "unveraendert_erlaubt": true,
+  "toleranz_m2": 0.01,
+  "max_kanten_je_block": 2000000,
+  "regeln": {
+    "quality": {
+      "typ": "gruppen",
+      "gruppen": [
+        {
+          "pre": [
+            "vor1919",
+            "1919-44",
+            "1945-59",
+            "1960-79",
+            "1980-89",
+            "1990-99"
+          ],
+          "post": [
+            "Neu_20cm",
+            "Neu_30cm"
+          ]
+        },
+        {
+          "pre": [
+            "vor1919",
+            "1919-44",
+            "1945-59"
+          ],
+          "post": [
+            "Neu_10cm"
+          ]
+        }
+      ]
+    },
+    "energy": {
+      "typ": "gruppen",
+      "gruppen": [
+        {
+          "pre": [
+            "Erdgas",
+            "Oel",
+            "Elektro"
+          ],
+          "post": [
+            "WP_Sole",
+            "WP_Wasser",
+            "WP_Luft",
+            "WP_Sole_fc",
+            "DH"
+          ]
+        },
+        {
+          "pre": [
+            "DH"
+          ],
+          "post": [
+            "WP_Sole",
+            "WP_Wasser",
+            "WP_Luft",
+            "WP_Sole_fc"
+          ]
+        },
+        {
+          "pre": [
+            "Erdgas",
+            "Oel"
+          ],
+          "post": [
+            "Bio"
+          ]
+        },
+        {
+          "pre": [
+            "Bio"
+          ],
+          "post": [
+            "WP_Sole",
+            "WP_Wasser",
+            "WP_Luft",
+            "WP_Sole_fc",
+            "DH"
+          ]
+        },
+        {
+          "pre": [
+            "Erdgas",
+            "Oel"
+          ],
+          "post": [
+            "Elektro"
+          ]
+        }
+      ]
+    },
+    "pv": {
+      "typ": "aufstieg",
+      "folge": [
+        "PV0",
+        "PV30",
+        "PV70",
+        "PV90"
+      ]
+    },
+    "flex": {
+      "typ": "aufstieg",
+      "folge": [
+        "noFlex",
+        "Flex"
+      ]
+    }
+  },
+  "optimierung": "maximale_unveraenderte_typenflaeche"
+}

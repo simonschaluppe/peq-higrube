@@ -1,0 +1,13 @@
+# Pflicht
+numpy
+pandas
+scipy
+openpyxl
+plotly
+pyarrow        # liest data/simulation/scenarios.parquet (Energieanalyse)
+ipython
+jupyter
+# Nur für automatische Notebook-Tests (tests/test_notebook_sicherheit.py)
+nbformat
+nbclient
+ipykernel

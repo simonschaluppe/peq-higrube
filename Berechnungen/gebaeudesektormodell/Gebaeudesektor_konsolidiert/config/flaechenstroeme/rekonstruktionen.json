@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0",
+  "hinweis": "Paare fester Zustände A und B. Zustände werden aus results/szenarien/<ID>/ gelesen und nie verändert. Rekonstruktionen starten nur ausdrücklich (03_Flaechenstroeme.ipynb, MODUS='Rekonstruktion', REKONSTRUIEREN=True). Optional 'flussdatei' (projektrelativ) für die geprüfte Übernahme vorhandener Flüsse.",
+  "rekonstruktionen": {
+    "Bestand_2024__Transition_2040": {
+      "beschreibung": "Konstanter Bestand 2024 → Transition 2040",
+      "szenario_a": "Bestand_2024",
+      "szenario_b": "Transition_2040",
+      "regeln": "config/flaechenstroeme/uebergaenge.json",
+      "flussdatei": null
+    },
+    "Bestand_2024__Transition_2040_Wachstum": {
+      "beschreibung": "Bestand 2024 → Transition 2040 mit Flächenwachstum auf 950 Mio. m² NGF; Neubau 80 Mio. m² und Abriss 19,9 Mio. m² aus Bestandsentwicklung.xlsx (AP4).",
+      "szenario_a": "Bestand_2024",
+      "szenario_b": "Transition_2040_Wachstum",
+      "regeln": "config/flaechenstroeme/uebergaenge.json",
+      "flussdatei": null
+    },
+    "Bestand_2024__Transition_2040_ambitioniert": {
+      "beschreibung": "Bestand 2024 → Transition 2040 mit Flächenwachstum und ambitionierten Maßnahmen.",
+      "szenario_a": "Bestand_2024",
+      "szenario_b": "Transition_2040_ambitioniert",
+      "regeln": "config/flaechenstroeme/uebergaenge.json",
+      "flussdatei": null
+    }
+  }
+}

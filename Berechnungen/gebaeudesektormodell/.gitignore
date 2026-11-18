@@ -1,3 +1,5 @@
 *_files/
 *.inspect.ndjson
 node_modules/
+/Gebaeudesektor_konsolidiert/archiv/sicherungen/results_kopie/SynthetischesZiel/Fluesse.csv
+/outputs/analyse/typen_ergebnisse.csv

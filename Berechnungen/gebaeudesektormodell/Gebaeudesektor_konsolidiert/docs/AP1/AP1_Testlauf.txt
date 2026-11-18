@@ -1,0 +1,22 @@
+test_konfiguration_und_lesemodus (test_flaechenstroeme.FlaechenstroemePfade.test_konfiguration_und_lesemodus) ... ok
+test_modell (test_notebook_sicherheit.ModellcodeOhneAbsolutePfade.test_modell) ... ok
+test_standardlauf_schreibt_nichts (test_notebook_sicherheit.NotebookAusfuehrung.test_standardlauf_schreibt_nichts) ... ok
+test_00_rechnet_nicht (test_notebook_sicherheit.NotebookStatisch.test_00_rechnet_nicht) ... ok
+test_einheitliche_startzelle (test_notebook_sicherheit.NotebookStatisch.test_einheitliche_startzelle) ... ok
+test_keine_verbotenen_muster_und_markdown (test_notebook_sicherheit.NotebookStatisch.test_keine_verbotenen_muster_und_markdown) ... ok
+test_standardwerte (test_notebook_sicherheit.NotebookStatisch.test_standardwerte) ... ok
+test_vier_notebooks (test_notebook_sicherheit.NotebookStatisch.test_vier_notebooks) ... ok
+test_eingabeveraenderung_erkannt (test_szenario.SzenarioAPI.test_eingabeveraenderung_erkannt) ... ok
+test_energie_optional_und_reproduziert (test_szenario.SzenarioAPI.test_energie_optional_und_reproduziert) ... ok
+test_katalog_flaechen_kontrollen (test_szenario.SzenarioAPI.test_katalog_flaechen_kontrollen) ... ok
+test_kennwerte_schema (test_szenario.SzenarioAPI.test_kennwerte_schema) ... ok
+test_projektpfade_relativ (test_szenario.SzenarioAPI.test_projektpfade_relativ) ... ok
+test_referenz_typenflaechen (test_szenario.SzenarioAPI.test_referenz_typenflaechen) ... ok
+test_speichern_schutz_wiederladen (test_szenario.SzenarioAPI.test_speichern_schutz_wiederladen) ... ok
+test_uebergang_nur_schnittstelle (test_szenario.SzenarioAPI.test_uebergang_nur_schnittstelle) ... ok
+test_unregistriertes_szenario (test_szenario.SzenarioAPI.test_unregistriertes_szenario) ... ok
+test_wiederholbarkeit (test_szenario.SzenarioAPI.test_wiederholbarkeit) ... ok
+test_wp_eingabe_abgewiesen (test_szenario.SzenarioAPI.test_wp_eingabe_abgewiesen) ... ok
+test_zustand_id_ortsunabhaengig (test_szenario.SzenarioAPI.test_zustand_id_ortsunabhaengig) ... ok
+Ran 20 tests in 58.172s
+OK

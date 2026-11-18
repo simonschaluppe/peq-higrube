@@ -1,0 +1,45 @@
+{
+  "schema_version": "1.0",
+  "bilanz": {
+    "hwb_bezug": "NGF",
+    "mit_hilfsenergie": true,
+    "umwelt_rw_spalte": null,
+    "umwelt_ww_spalte": null
+  },
+  "szenarien": {
+    "Bestand_2024": {
+      "beschreibung": "Kalibrierter Gebäudebestand 2024",
+      "typ": "Bestandszustand",
+      "jahr": 2024,
+      "statistikjahr": 2024,
+      "verteilungen": "data/eingaben/verteilungen/Verteilung_Bestand_2024.xlsx",
+      "ziel_ngf_m2": null
+    },
+    "Transition_2040": {
+      "beschreibung": "Illustratives Transformations-Zielbild 2040 bei konstanter Gesamtfläche",
+      "typ": "Zukunftszustand",
+      "jahr": 2040,
+      "statistikjahr": 2024,
+      "verteilungen": "data/eingaben/verteilungen/Verteilung_Transition_2040.xlsx",
+      "ziel_ngf_m2": null
+    },
+    "Transition_2040_Wachstum": {
+      "beschreibung": "Illustratives Transformations-Zielbild 2040 mit Flächenwachstum: Struktur wie Transition_2040, Gesamt-NGF 950 Mio. m²; keine zusätzliche Fläche in 1990-99 und Neu_10cm gegenüber dem Bestand (Zuwachs in Neu_20cm/Neu_30cm)",
+      "typ": "Zukunftszustand",
+      "jahr": 2040,
+      "statistikjahr": 2024,
+      "verteilungen": "data/eingaben/verteilungen/abgeleitet/Verteilung_Transition_2040_Wachstum.xlsx",
+      "prioren": {"eingabe": "data/eingaben/verteilungen/Verteilung_Transition_2040_Wachstum.xlsx", "basis": "Bestand_2024"},
+      "ziel_ngf_m2": 950000000
+    },
+    "Transition_2040_ambitioniert": {
+      "beschreibung": "Flächenentwicklung wie Wachstum, hohe Sanierung, totale Elektrifizierung/WP, weniger DH, Bio und Elektro, mehr PV",
+      "typ": "Zukunftszustand",
+      "jahr": 2040,
+      "statistikjahr": 2024,
+      "verteilungen": "data/eingaben/verteilungen/abgeleitet/Verteilung_Transition_2040_ambitioniert.xlsx",
+      "prioren": {"eingabe": "data/eingaben/verteilungen/Verteilung_Transition_2040_ambitioniert.xlsx", "basis": "Bestand_2024"},
+      "ziel_ngf_m2": 950000000
+    }
+  }
+}

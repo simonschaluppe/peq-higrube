@@ -1,0 +1,12 @@
+# Getestete Versionen (AP1/AP2, 16.11.2026)
+# Sandbox-Prüfumgebung (alle Tests in docs/AP1, docs/AP2)
+python==3.14.8
+numpy==2.5.4
+pandas==3.1.1
+scipy==1.18.1
+openpyxl==3.1.5
+plotly==7.1.0
+pyarrow==26.0.1
+ipython==9.18.1
+# Lokale Umgebung (Notebooks 00/01 lokal erfolgreich, 16.11.2026; Vollabnahme in AP7):
+# python 3.12.4, pandas 3.0.0, numpy 1.26.4, scipy 1.13.1, openpyxl 3.1.5, plotly 5.22.0, pyarrow 14.0.2

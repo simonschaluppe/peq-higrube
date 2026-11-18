@@ -1,0 +1,63 @@
+test_konfiguration_und_lesemodus (test_flaechenstroeme.FlaechenstroemePfade.test_konfiguration_und_lesemodus) ... ok
+test_modell (test_notebook_sicherheit.ModellcodeOhneAbsolutePfade.test_modell) ... ok
+ok
+test_00_rechnet_nicht (test_notebook_sicherheit.NotebookStatisch.test_00_rechnet_nicht) ... ok
+test_02_nur_modulfunktionen (test_notebook_sicherheit.NotebookStatisch.test_02_nur_modulfunktionen) ... ok
+test_einheitliche_startzelle (test_notebook_sicherheit.NotebookStatisch.test_einheitliche_startzelle) ... ok
+test_keine_verbotenen_muster_und_markdown (test_notebook_sicherheit.NotebookStatisch.test_keine_verbotenen_muster_und_markdown) ... ok
+test_standardwerte (test_notebook_sicherheit.NotebookStatisch.test_standardwerte) ... ok
+test_vier_notebooks (test_notebook_sicherheit.NotebookStatisch.test_vier_notebooks) ... ok
+test_eingabeveraenderung_erkannt (test_szenario.SzenarioAPI.test_eingabeveraenderung_erkannt) ... ok
+test_energie_optional_und_reproduziert (test_szenario.SzenarioAPI.test_energie_optional_und_reproduziert) ... ok
+test_katalog_flaechen_kontrollen (test_szenario.SzenarioAPI.test_katalog_flaechen_kontrollen) ... ok
+test_kennwerte_schema (test_szenario.SzenarioAPI.test_kennwerte_schema) ... ok
+test_projektpfade_relativ (test_szenario.SzenarioAPI.test_projektpfade_relativ) ... ok
+test_referenz_typenflaechen (test_szenario.SzenarioAPI.test_referenz_typenflaechen) ... ok
+test_speichern_schutz_wiederladen (test_szenario.SzenarioAPI.test_speichern_schutz_wiederladen) ... ok
+test_uebergang_nur_schnittstelle (test_szenario.SzenarioAPI.test_uebergang_nur_schnittstelle) ... ok
+test_unregistriertes_szenario (test_szenario.SzenarioAPI.test_unregistriertes_szenario) ... ok
+test_wiederholbarkeit (test_szenario.SzenarioAPI.test_wiederholbarkeit) ... ok
+test_wp_eingabe_abgewiesen (test_szenario.SzenarioAPI.test_wp_eingabe_abgewiesen) ... ok
+test_zustand_id_ortsunabhaengig (test_szenario.SzenarioAPI.test_zustand_id_ortsunabhaengig) ... ok
+test_drei_szenarien_gemeinsame_tabelle (test_vergleich.Mehrszenarienvergleich.test_drei_szenarien_gemeinsame_tabelle) ... ok
+test_energie_vergleichbar_wenn_berechnet (test_vergleich.Mehrszenarienvergleich.test_energie_vergleichbar_wenn_berechnet) ... ok
+test_export_schutz_und_wiederladen (test_vergleich.Mehrszenarienvergleich.test_export_schutz_und_wiederladen) ... ok
+test_flaeche_trotz_fehlender_energie (test_vergleich.Mehrszenarienvergleich.test_flaeche_trotz_fehlender_energie) ... ok
+test_gleichjaehrig_keine_jahresrate_und_zerlegung (test_vergleich.Mehrszenarienvergleich.test_gleichjaehrig_keine_jahresrate_und_zerlegung) ... ok
+test_identische_zustaende_delta_null (test_vergleich.Mehrszenarienvergleich.test_identische_zustaende_delta_null) ... ok
+ok
+test_paar_gleiche_ngf (test_vergleich.Mehrszenarienvergleich.test_paar_gleiche_ngf) ... ok
+test_auswahl_pruefung (test_vergleich.StatusRegeln.test_auswahl_pruefung) ... ok
+test_differenzregeln (test_vergleich.StatusRegeln.test_differenzregeln) ... ok
+test_register_des_projekts (test_vergleich.StatusRegeln.test_register_des_projekts) ... ok
+test_status_paar (test_vergleich.StatusRegeln.test_status_paar) ... ok
+
+----------------------------------------------------------------------
+Ran 33 tests in 103.116s
+
+OK
+--- python modell/distribution_to_json.py self-test
+test_atomic_json (__main__.run_self_tests.<locals>.Tests.test_atomic_json) ... ok
+test_diagnostic_missing (__main__.run_self_tests.<locals>.Tests.test_diagnostic_missing) ... ok
+test_diagnostic_range (__main__.run_self_tests.<locals>.Tests.test_diagnostic_range) ... ok
+test_diagnostic_sum (__main__.run_self_tests.<locals>.Tests.test_diagnostic_sum) ... ok
+test_diagnostic_text (__main__.run_self_tests.<locals>.Tests.test_diagnostic_text) ... ok
+test_direct (__main__.run_self_tests.<locals>.Tests.test_direct) ... ok
+test_excel_import (__main__.run_self_tests.<locals>.Tests.test_excel_import) ... ok
+test_grouped_wp (__main__.run_self_tests.<locals>.Tests.test_grouped_wp) ... ok
+test_impossible (__main__.run_self_tests.<locals>.Tests.test_impossible) ... ok
+test_missing_weights (__main__.run_self_tests.<locals>.Tests.test_missing_weights) ... ok
+test_no_mutation_and_direct_tables (__main__.run_self_tests.<locals>.Tests.test_no_mutation_and_direct_tables) ... ok
+test_old_result_prior_rejected (__main__.run_self_tests.<locals>.Tests.test_old_result_prior_rejected) ... ok
+test_quality_goal_parser (__main__.run_self_tests.<locals>.Tests.test_quality_goal_parser) ... ok
+test_quality_stage (__main__.run_self_tests.<locals>.Tests.test_quality_stage) ... ok
+test_repeat_and_input_edit (__main__.run_self_tests.<locals>.Tests.test_repeat_and_input_edit) ... ok
+test_result_is_not_input (__main__.run_self_tests.<locals>.Tests.test_result_is_not_input) ... ok
+test_structural_zero_and_boundary (__main__.run_self_tests.<locals>.Tests.test_structural_zero_and_boundary) ... ok
+test_tolerances (__main__.run_self_tests.<locals>.Tests.test_tolerances) ... ok
+test_zero_target_and_unused_group (__main__.run_self_tests.<locals>.Tests.test_zero_target_and_unused_group) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.839s
+
+OK

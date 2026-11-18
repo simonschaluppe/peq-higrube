@@ -1,0 +1,117 @@
+AP6 – Testlauf 17.11.2026 (1.6.0-AP6) – python -m unittest discover -s tests -v; Selbsttest distribution_to_json.py
+
+test_freigaben_und_huellendiagnose (test_bestandsbilanz.Bilanzfaelle.test_freigaben_und_huellendiagnose) ... ok
+test_gleicher_gesamtbestand_mit_neubau_und_abriss (test_bestandsbilanz.Bilanzfaelle.test_gleicher_gesamtbestand_mit_neubau_und_abriss) ... ok
+test_mehrere_massnahmen_ohne_doppelzaehlung_mit_neubau (test_bestandsbilanz.Bilanzfaelle.test_mehrere_massnahmen_ohne_doppelzaehlung_mit_neubau) ... ok
+test_nur_nettoaenderung_bekannt (test_bestandsbilanz.Bilanzfaelle.test_nur_nettoaenderung_bekannt) ... ok
+test_pruefe_fluesse_erkennt_manipulierte_externe_fluesse (test_bestandsbilanz.Bilanzfaelle.test_pruefe_fluesse_erkennt_manipulierte_externe_fluesse) ... ok
+test_rueckgang_nur_durch_abriss (test_bestandsbilanz.Bilanzfaelle.test_rueckgang_nur_durch_abriss) ... ok
+test_vorgaben_widersprechen_bilanz (test_bestandsbilanz.Bilanzfaelle.test_vorgaben_widersprechen_bilanz) ... ok
+test_wachstum_nur_durch_neubau_rate (test_bestandsbilanz.Bilanzfaelle.test_wachstum_nur_durch_neubau_rate) ... ok
+test_projektdatei_gueltig (test_bestandsbilanz.Eingabedatei.test_projektdatei_gueltig) ... ok
+test_validierungsfehler (test_bestandsbilanz.Eingabedatei.test_validierungsfehler) ... ok
+test_1_bilanzuebersicht_und_standard_liest_nur (test_bestandsbilanz.Wachstumspaar.test_1_bilanzuebersicht_und_standard_liest_nur) ... ok
+test_2_standardfreigaben_machbar_export_laden (test_bestandsbilanz.Wachstumspaar.test_2_standardfreigaben_machbar_export_laden) ... ok
+test_3_eingeschraenkte_neubaufreigabe_nicht_machbar_mit_diagnose (test_bestandsbilanz.Wachstumspaar.test_3_eingeschraenkte_neubaufreigabe_nicht_machbar_mit_diagnose) ... ok
+test_1_konfiguration_und_standard_liest_nur (test_flaechenstroeme.Projektablauf.test_1_konfiguration_und_standard_liest_nur) ... ok
+test_2_fehlender_zustand_eingaben_ungueltig (test_flaechenstroeme.Projektablauf.test_2_fehlender_zustand_eingaben_ungueltig) ... ok
+test_3_machbar_export_wiederladen_ohne_solver (test_flaechenstroeme.Projektablauf.test_3_machbar_export_wiederladen_ohne_solver) ... ok
+test_4_identische_zustaende_volle_groesse (test_flaechenstroeme.Projektablauf.test_4_identische_zustaende_volle_groesse) ... ok
+ok
+test_einzelne_erlaubte_wechsel (test_flaechenstroeme.Regelfaelle.test_einzelne_erlaubte_wechsel) ... ok
+test_identisch_unveraendert (test_flaechenstroeme.Regelfaelle.test_identisch_unveraendert) ... ok
+test_mehrfachmassnahme_ohne_doppelzaehlung (test_flaechenstroeme.Regelfaelle.test_mehrfachmassnahme_ohne_doppelzaehlung) ... ok
+test_statuszuordnung_solver (test_flaechenstroeme.Regelfaelle.test_statuszuordnung_solver) ... ok
+test_verbotene_uebergaenge (test_flaechenstroeme.Regelfaelle.test_verbotene_uebergaenge) ... ok
+test_wp_zielqualitaet_und_fernwaerme_wetter (test_flaechenstroeme.Regelfaelle.test_wp_zielqualitaet_und_fernwaerme_wetter) ... ok
+test_zeitreihenfolge_und_gesamtbilanz (test_flaechenstroeme.Regelfaelle.test_zeitreihenfolge_und_gesamtbilanz) ... ok
+test_projektdefinition (test_massnahmen.Definition.test_projektdefinition) ... ok
+test_validierungsfehler (test_massnahmen.Definition.test_validierungsfehler) ... ok
+test_einzelmassnahmen_nenner_und_annualisierung (test_massnahmen.Raten.test_einzelmassnahmen_nenner_und_annualisierung) ... ok
+test_gleiche_jahre_keine_jahresrate (test_massnahmen.Raten.test_gleiche_jahre_keine_jahresrate) ... ok
+test_identisch_keine_massnahme (test_massnahmen.Raten.test_identisch_keine_massnahme) ... ok
+test_mehrfachmassnahme_ohne_doppelzaehlung (test_massnahmen.Raten.test_mehrfachmassnahme_ohne_doppelzaehlung) ... ok
+test_neubau_abriss_getrennt_und_ausgangswert_null (test_massnahmen.Raten.test_neubau_abriss_getrennt_und_ausgangswert_null) ... ok
+test_ohne_gueltige_fluesse_keine_raten (test_massnahmen.Raten.test_ohne_gueltige_fluesse_keine_raten) ... ok
+test_rueckentwicklung_und_nicht_klassifiziert_getrennt (test_massnahmen.Raten.test_rueckentwicklung_und_nicht_klassifiziert_getrennt) ... ok
+test_minimaler_versorgungswechsel (test_massnahmen.Zielstufe.test_minimaler_versorgungswechsel) ... ok
+test_voraussetzungen_gleichwertige_zuordnungen (test_massnahmen.Zielstufe.test_voraussetzungen_gleichwertige_zuordnungen) ... ok
+test_abweichende_fassung_bricht_ab (test_notebook_sicherheit.Fassungspruefung.test_abweichende_fassung_bricht_ab) ... ok
+test_startzelle_entfernt_veraltete_module (test_notebook_sicherheit.Fassungspruefung.test_startzelle_entfernt_veraltete_module)
+Ein im Kernel noch geladener alter Modulstand wird verworfen und aus modell/ neu geladen. ... ok
+test_modell (test_notebook_sicherheit.ModellcodeOhneAbsolutePfade.test_modell) ... ok
+ok
+test_00_rechnet_nicht (test_notebook_sicherheit.NotebookStatisch.test_00_rechnet_nicht) ... ok
+test_00_zweck_workflow (test_notebook_sicherheit.NotebookStatisch.test_00_zweck_workflow) ... ok
+test_02_nur_modulfunktionen (test_notebook_sicherheit.NotebookStatisch.test_02_nur_modulfunktionen) ... ok
+test_03_nur_modulfunktionen (test_notebook_sicherheit.NotebookStatisch.test_03_nur_modulfunktionen) ... ok
+test_abschnittstexte_vollstaendig (test_notebook_sicherheit.NotebookStatisch.test_abschnittstexte_vollstaendig)
+AP6 (Abschnitt 4): vor jeder Codezelle ein Markdown-Block mit allen sechs Angaben. ... ok
+test_einheitliche_startzelle (test_notebook_sicherheit.NotebookStatisch.test_einheitliche_startzelle) ... ok
+test_fassung_je_notebook (test_notebook_sicherheit.NotebookStatisch.test_fassung_je_notebook)
+AP6: jede Startzelle prüft ihre Fassung gegen modell/fassung.py, bevor etwas geladen wird. ... ok
+test_keine_privaten_modulfunktionen (test_notebook_sicherheit.NotebookStatisch.test_keine_privaten_modulfunktionen) ... ok
+test_keine_verbotenen_muster_und_markdown (test_notebook_sicherheit.NotebookStatisch.test_keine_verbotenen_muster_und_markdown) ... ok
+test_standardwerte (test_notebook_sicherheit.NotebookStatisch.test_standardwerte) ... ok
+test_vier_notebooks (test_notebook_sicherheit.NotebookStatisch.test_vier_notebooks) ... ok
+test_drittes_szenario_wachstum (test_szenario.SzenarioAPI.test_drittes_szenario_wachstum) ... ok
+test_eingabeveraenderung_erkannt (test_szenario.SzenarioAPI.test_eingabeveraenderung_erkannt) ... ok
+test_energie_optional_und_reproduziert (test_szenario.SzenarioAPI.test_energie_optional_und_reproduziert) ... ok
+test_katalog_flaechen_kontrollen (test_szenario.SzenarioAPI.test_katalog_flaechen_kontrollen) ... ok
+test_kennwerte_schema (test_szenario.SzenarioAPI.test_kennwerte_schema) ... ok
+test_projektpfade_relativ (test_szenario.SzenarioAPI.test_projektpfade_relativ) ... ok
+test_referenz_typenflaechen (test_szenario.SzenarioAPI.test_referenz_typenflaechen) ... ok
+test_speichern_schutz_wiederladen (test_szenario.SzenarioAPI.test_speichern_schutz_wiederladen) ... ok
+test_uebergang_nur_schnittstelle (test_szenario.SzenarioAPI.test_uebergang_nur_schnittstelle) ... ok
+test_unregistriertes_szenario (test_szenario.SzenarioAPI.test_unregistriertes_szenario) ... ok
+test_wiederholbarkeit (test_szenario.SzenarioAPI.test_wiederholbarkeit) ... ok
+test_wp_eingabe_abgewiesen (test_szenario.SzenarioAPI.test_wp_eingabe_abgewiesen) ... ok
+test_zustand_id_ortsunabhaengig (test_szenario.SzenarioAPI.test_zustand_id_ortsunabhaengig) ... ok
+test_zustand_id_unabhaengig_vom_register (test_szenario.SzenarioAPI.test_zustand_id_unabhaengig_vom_register)
+AP3: Ein weiteres registriertes Szenario ändert die Zustands-IDs der übrigen nicht. ... ok
+test_drei_szenarien_gemeinsame_tabelle (test_vergleich.Mehrszenarienvergleich.test_drei_szenarien_gemeinsame_tabelle) ... ok
+test_energie_vergleichbar_wenn_berechnet (test_vergleich.Mehrszenarienvergleich.test_energie_vergleichbar_wenn_berechnet) ... ok
+test_export_schutz_und_wiederladen (test_vergleich.Mehrszenarienvergleich.test_export_schutz_und_wiederladen) ... ok
+test_flaeche_trotz_fehlender_energie (test_vergleich.Mehrszenarienvergleich.test_flaeche_trotz_fehlender_energie) ... ok
+test_gleichjaehrig_keine_jahresrate_und_zerlegung (test_vergleich.Mehrszenarienvergleich.test_gleichjaehrig_keine_jahresrate_und_zerlegung) ... ok
+test_identische_zustaende_delta_null (test_vergleich.Mehrszenarienvergleich.test_identische_zustaende_delta_null) ... ok
+ok
+test_paar_gleiche_ngf (test_vergleich.Mehrszenarienvergleich.test_paar_gleiche_ngf) ... ok
+test_auswahl_pruefung (test_vergleich.StatusRegeln.test_auswahl_pruefung) ... ok
+test_differenzregeln (test_vergleich.StatusRegeln.test_differenzregeln) ... ok
+test_register_des_projekts (test_vergleich.StatusRegeln.test_register_des_projekts) ... ok
+test_status_paar (test_vergleich.StatusRegeln.test_status_paar) ... ok
+
+----------------------------------------------------------------------
+Ran 77 tests in 490.334s
+
+OK
+Projektordner: /home/user/workspace/proj/Gebaeudesektor
+Fassung 1.6.0-AP6 (Notebook und Modell passen zusammen)
+EXIT 0
+
+--- Selbsttest ---
+test_atomic_json (__main__.run_self_tests.<locals>.Tests.test_atomic_json) ... ok
+test_diagnostic_missing (__main__.run_self_tests.<locals>.Tests.test_diagnostic_missing) ... ok
+test_diagnostic_range (__main__.run_self_tests.<locals>.Tests.test_diagnostic_range) ... ok
+test_diagnostic_sum (__main__.run_self_tests.<locals>.Tests.test_diagnostic_sum) ... ok
+test_diagnostic_text (__main__.run_self_tests.<locals>.Tests.test_diagnostic_text) ... ok
+test_direct (__main__.run_self_tests.<locals>.Tests.test_direct) ... ok
+test_excel_import (__main__.run_self_tests.<locals>.Tests.test_excel_import) ... ok
+test_grouped_wp (__main__.run_self_tests.<locals>.Tests.test_grouped_wp) ... ok
+test_impossible (__main__.run_self_tests.<locals>.Tests.test_impossible) ... ok
+test_missing_weights (__main__.run_self_tests.<locals>.Tests.test_missing_weights) ... ok
+test_no_mutation_and_direct_tables (__main__.run_self_tests.<locals>.Tests.test_no_mutation_and_direct_tables) ... ok
+test_old_result_prior_rejected (__main__.run_self_tests.<locals>.Tests.test_old_result_prior_rejected) ... ok
+test_quality_goal_parser (__main__.run_self_tests.<locals>.Tests.test_quality_goal_parser) ... ok
+test_quality_stage (__main__.run_self_tests.<locals>.Tests.test_quality_stage) ... ok
+test_repeat_and_input_edit (__main__.run_self_tests.<locals>.Tests.test_repeat_and_input_edit) ... ok
+test_result_is_not_input (__main__.run_self_tests.<locals>.Tests.test_result_is_not_input) ... ok
+test_structural_zero_and_boundary (__main__.run_self_tests.<locals>.Tests.test_structural_zero_and_boundary) ... ok
+test_tolerances (__main__.run_self_tests.<locals>.Tests.test_tolerances) ... ok
+test_zero_target_and_unused_group (__main__.run_self_tests.<locals>.Tests.test_zero_target_and_unused_group) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.921s
+
+OK

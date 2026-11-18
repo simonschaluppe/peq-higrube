@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0",
+  "hinweis": "Registrierte Mehrszenarienvergleiche (AP2). Vergleiche lesen nur gespeicherte Szenarioergebnisse; es wird nichts neu berechnet.",
+  "vergleiche": {
+    "Bestand_2024__Transition_2040": {
+      "beschreibung": "Ausgangsbestand 2024 gegen Transitionszustand 2040 (gleiche NGF).",
+      "szenarien": [
+        "Bestand_2024",
+        "Transition_2040"
+      ],
+      "referenz": "Bestand_2024",
+      "paar": [
+        "Bestand_2024",
+        "Transition_2040"
+      ]
+    },
+    "Bestand_Transition_Wachstum_2040": {
+      "beschreibung": "Bestand 2024 gegen zwei Zielbilder 2040: konstante Fläche und Flächenwachstum auf 950 Mio. m² NGF. Paar: gleichjährige Alternativen (keine Jahresraten).",
+      "szenarien": [
+        "Bestand_2024",
+        "Transition_2040",
+        "Transition_2040_Wachstum"
+      ],
+      "referenz": "Bestand_2024",
+      "paar": [
+        "Transition_2040",
+        "Transition_2040_Wachstum"
+      ]
+    },
+    "Bestand_Transition_ambitioniert_2040": {
+      "beschreibung": "Bestand 2024 gegen ambitioniertes 2040",
+      "szenarien": [
+        "Bestand_2024",
+        "Transition_2040_ambitioniert",
+        "Transition_2040_Wachstum"
+      ],
+      "referenz": "Bestand_2024",
+      "paar": [
+        "Transition_2040_ambitioniert",
+        "Transition_2040_Wachstum"
+      ]
+    }
+  },
+  "mindestabdeckung_pct": 95.0,
+  "mindestabdeckung_hinweis": "Annahme: Energiekennwerte mit Abdeckung unter diesem Wert (in % NGF) gelten als NICHT_VERGLEICHBAR, darüber und unter 100 % als BEDINGT_VERGLEICHBAR. Je Vergleich überschreibbar."
+}
