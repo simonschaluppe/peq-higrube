@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Anhang G — Gebäudesektormodell – Analyse – Klimaneutrale Plus-Energie-Quartiere</title>
+<title>Anhang F — Gebäudesektormodell – Analyse und methodische Konsolidierung – Klimaneutrale Plus-Energie-Quartiere</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -26,64 +26,10 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2" crossorigin="anonymous"></script><script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
@@ -91,7 +37,7 @@ div.csl-indent {
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
 <link href="../../Kapitel/anhang-quartiersbilanzierung.html" rel="next">
-<link href="../../Berechnungen/gebaeudesektormodell/Gebaeudesektor_Modellierung.html" rel="prev">
+<link href="../../Berechnungen/sektorenmodell/allokation.html" rel="prev">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
@@ -102,6 +48,9 @@ div.csl-indent {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap-631496449bf32ff9b0bb69a6bfd9195d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -141,36 +90,10 @@ div.csl-indent {
     document.body.classList.add('hypothesis-enabled');
   });
 </script>
+<script src="https://cdn.jsdelivr.net/npm/requirejs@2.3.6/require.min.js" integrity="sha384-c9c+LnTbwQ3aujuU7ULEPVvgLs+Fn6fJUvIGTsuu1ZcCf11fiEubah0ttpca4ntM sha384-6V1/AdqZRWk1KAlWbKBlGhN7VG4iE/yAZcO6NZPMF8od0vukrvr0tg4qY6NSrItx" crossorigin="anonymous"></script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
 
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../../styles/presets.css">
 </head>
@@ -226,7 +149,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../Kapitel/anhang-szenariotabellen.html">Anhang</a></li><li class="breadcrumb-item"><a href="../../Berechnungen/gebaeudesektormodell/Gebaeudesektormodell_Analyse.html"><span class="chapter-title">Gebäudesektormodell – Analyse</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../Kapitel/anhang-szenariotabellen.html">Anhang</a></li><li class="breadcrumb-item"><a href="../../Berechnungen/gebaeudesektormodell/Gebaeudesektormodell_Analyse.html"><span class="chapter-title">Gebäudesektormodell – Analyse und methodische Konsolidierung</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -425,12 +348,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../Berechnungen/gebaeudesektormodell/Gebaeudesektor_Modellierung.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Gebäudesektor – Modellierung</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../Berechnungen/gebaeudesektormodell/Gebaeudesektormodell_Analyse.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Gebäudesektormodell – Analyse</span></a>
+  <a href="../../Berechnungen/gebaeudesektormodell/Gebaeudesektormodell_Analyse.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Gebäudesektormodell – Analyse und methodische Konsolidierung</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -440,7 +358,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../Berechnungen/gebaeudesektormodell/Internes_Kalibrierungsdashboard.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Internes Szenario- und Kalibrierungsdashboard</span></a>
+  <a href="../../Berechnungen/gebaeudesektormodell/Internes_Kalibrierungsdashboard.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Gebäudesektormodell: Energiesystem und GFZ-Zielanalyse</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -460,31 +378,23 @@ window.Quarto = {
     <h2 id="toc-title">Inhaltsverzeichnis</h2>
    
   <ul>
-  <li><a href="#sec-gebaeudesektormodell" id="toc-sec-gebaeudesektormodell" class="nav-link active" data-scroll-target="#sec-gebaeudesektormodell">Gebäudesektormodell-Analyse</a>
-  <ul class="collapse">
-  <li><a href="#zweck-und-eingabedateien" id="toc-zweck-und-eingabedateien" class="nav-link" data-scroll-target="#zweck-und-eingabedateien">1. Zweck und Eingabedateien</a></li>
-  <li><a href="#sec-gebaeude-datenpruefung" id="toc-sec-gebaeude-datenpruefung" class="nav-link" data-scroll-target="#sec-gebaeude-datenpruefung">2. Fertige Flächenzuordnung mit Simulationen verbinden</a></li>
-  <li><a href="#sec-gebaeude-flaechen" id="toc-sec-gebaeude-flaechen" class="nav-link" data-scroll-target="#sec-gebaeude-flaechen">3. Flächenbilanz</a></li>
-  <li><a href="#sec-gebaeude-strom" id="toc-sec-gebaeude-strom" class="nav-link" data-scroll-target="#sec-gebaeude-strom">4. Physische Strombilanz</a></li>
-  <li><a href="#sec-gebaeude-endenergie" id="toc-sec-gebaeude-endenergie" class="nav-link" data-scroll-target="#sec-gebaeude-endenergie">5. Endenergiebilanz nach Energieträgern und Anwendungen</a></li>
-  <li><a href="#sec-gebaeude-pe" id="toc-sec-gebaeude-pe" class="nav-link" data-scroll-target="#sec-gebaeude-pe">6. PE-Bewertung realer Import-/Exportflüsse</a></li>
-  <li><a href="#sec-gebaeude-gfz" id="toc-sec-gebaeude-gfz" class="nav-link" data-scroll-target="#sec-gebaeude-gfz">7. GFZ-Zuordnung, Flächengewichtung und Dichte-Erwartungswert</a>
-  <ul class="collapse">
-  <li><a href="#was-bedeutet-der-erwartungswert" id="toc-was-bedeutet-der-erwartungswert" class="nav-link" data-scroll-target="#was-bedeutet-der-erwartungswert">Was bedeutet der Erwartungswert?</a></li>
-  <li><a href="#anwendung-im-vergleichsfall" id="toc-anwendung-im-vergleichsfall" class="nav-link" data-scroll-target="#anwendung-im-vergleichsfall">Anwendung im Vergleichsfall</a></li>
-  </ul></li>
-  <li><a href="#sec-gebaeude-abgleich" id="toc-sec-gebaeude-abgleich" class="nav-link" data-scroll-target="#sec-gebaeude-abgleich">8. Vergleich mit dem nationalen Ziel 2040</a></li>
-  <li><a href="#übergabe-an-dashboard-und-bericht" id="toc-übergabe-an-dashboard-und-bericht" class="nav-link" data-scroll-target="#übergabe-an-dashboard-und-bericht">9. Übergabe an Dashboard und Bericht</a></li>
-  </ul></li>
+  <li><a href="#auswahl-und-reproduzierbarkeit" id="toc-auswahl-und-reproduzierbarkeit" class="nav-link active" data-scroll-target="#auswahl-und-reproduzierbarkeit">1. Auswahl und Reproduzierbarkeit</a></li>
+  <li><a href="#was-hat-der-kollege-modelliert" id="toc-was-hat-der-kollege-modelliert" class="nav-link" data-scroll-target="#was-hat-der-kollege-modelliert">2. Was hat der Kollege modelliert?</a></li>
+  <li><a href="#annahmen-kalibrierziele-und-zwischenergebnisse-nachvollziehen" id="toc-annahmen-kalibrierziele-und-zwischenergebnisse-nachvollziehen" class="nav-link" data-scroll-target="#annahmen-kalibrierziele-und-zwischenergebnisse-nachvollziehen">3. Annahmen, Kalibrierziele und Zwischenergebnisse nachvollziehen</a></li>
+  <li><a href="#typenflächen-mit-simulationen-verbinden" id="toc-typenflächen-mit-simulationen-verbinden" class="nav-link" data-scroll-target="#typenflächen-mit-simulationen-verbinden">4. Typenflächen mit Simulationen verbinden</a></li>
+  <li><a href="#summen-rekonstruieren-und-mit-dem-rechenkern-abgleichen" id="toc-summen-rekonstruieren-und-mit-dem-rechenkern-abgleichen" class="nav-link" data-scroll-target="#summen-rekonstruieren-und-mit-dem-rechenkern-abgleichen">5. Summen rekonstruieren und mit dem Rechenkern abgleichen</a></li>
+  <li><a href="#wo-entsteht-der-abstand-zum-virtuellen-ziel" id="toc-wo-entsteht-der-abstand-zum-virtuellen-ziel" class="nav-link" data-scroll-target="#wo-entsteht-der-abstand-zum-virtuellen-ziel">6. Wo entsteht der Abstand zum virtuellen Ziel?</a></li>
+  <li><a href="#kalibrierung-und-nächste-ausarbeitung" id="toc-kalibrierung-und-nächste-ausarbeitung" class="nav-link" data-scroll-target="#kalibrierung-und-nächste-ausarbeitung">7. Kalibrierung und nächste Ausarbeitung</a></li>
+  <li><a href="#übergabe-an-website-und-dashboard" id="toc-übergabe-an-website-und-dashboard" class="nav-link" data-scroll-target="#übergabe-an-website-und-dashboard">8. Übergabe an Website und Dashboard</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../Kapitel/anhang-szenariotabellen.html">Anhang</a></li><li class="breadcrumb-item"><a href="../../Berechnungen/gebaeudesektormodell/Gebaeudesektormodell_Analyse.html"><span class="chapter-title">Gebäudesektormodell – Analyse</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../Kapitel/anhang-szenariotabellen.html">Anhang</a></li><li class="breadcrumb-item"><a href="../../Berechnungen/gebaeudesektormodell/Gebaeudesektormodell_Analyse.html"><span class="chapter-title">Gebäudesektormodell – Analyse und methodische Konsolidierung</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Anhang G — Gebäudesektormodell – Analyse</h1>
+<h1 class="title">Anhang F — Gebäudesektormodell – Analyse und methodische Konsolidierung</h1>
 </div>
 
 
@@ -501,265 +411,1804 @@ window.Quarto = {
 </header>
 
 
-<section id="sec-gebaeudesektormodell" class="level1">
-<h1>Gebäudesektormodell-Analyse</h1>
-<div class="callout callout-style-default callout-warning callout-titled" title="Neue Flächenlieferung erforderlich">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
+<p>Stand: 19. November 2026. <strong>Arbeitsfassung für Methodenbeschreibung und spätere Website-/Paper-Aufbereitung.</strong></p>
+<p>Wir rekonstruieren aus dem gelieferten Modellpaket die Typenflächen und verbinden sie mit den Simulationen. Die zentrale Bewertungsgröße ist <code>PEI_balance</code>: der Abstand zum virtuellen Ziel, einschließlich des bereits enthaltenen Dichtefaktors. Positive Werte bedeuten einen Überschuss gegenüber diesem Ziel, negative Werte eine Unterschreitung. Das virtuelle Ziel liegt bei null. Alle Typen werden unverändert verwendet; es gibt keine vorab ausgewählte PED-Teilmenge und keine automatische Zielerfüllung.</p>
+<p>Dieses Notebook trennt <strong>gelieferte Annahmen</strong>, <strong>Flächenkalibrierung</strong>, <strong>simulierte Performance</strong> und <strong>Bewertung</strong>. Die erste Konsolidierung verwendet die gelieferte GFZ (<code>FSI</code>). Eine nationale GFZ-Kohortenverteilung und das interaktive Dashboard sind nachgelagerte Schritte.</p>
+<section id="auswahl-und-reproduzierbarkeit" class="level2">
+<h2 class="anchored" data-anchor-id="auswahl-und-reproduzierbarkeit">1. Auswahl und Reproduzierbarkeit</h2>
+<p>Die Liste <code>SZENARIEN</code> steuert, welche Szenarien tatsächlich berechnet werden. <code>DETAILSZENARIO</code> steuert die vertiefte Darstellung. Für einen neuen Vergleich zuerst ein eigenes Profil in <code>config/szenarien.json</code> samt Verteilungsdatei anlegen, dann hier auswählen. Annahmen werden nicht durch nachträgliches Skalieren fertiger Ergebnisse verändert.</p>
+<p>Es werden die <strong>mitgelieferten, aufgelösten Verteilungsdateien</strong> verwendet. Für Wachstum und ambitioniertes Szenario sind dies Dateien im Unterordner <code>abgeleitet</code>. Ihre vorgelagerte Prior-Ableitung wird hier nicht erneut ausgeführt. Damit rekonstruieren wir den gelieferten Stand; eine unabhängige Reproduktion der Prior-Ableitung bleibt ein eigener Arbeitsschritt in <code>01_Szenario.ipynb</code>. Bestehende Ergebnisordner des Kollegen werden nicht überschrieben.</p>
+<div id="3fbe9020" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-11-19T16:56:06.978353Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-11-19T16:56:06.977641Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-11-19T16:56:08.608561Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-11-19T16:56:08.607588Z&quot;}}" data-execution_count="1">
+<div class="cell-output cell-output-display">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">beschreibung</th>
+<th data-quarto-table-cell-role="th">typ</th>
+<th data-quarto-table-cell-role="th">jahr</th>
+<th data-quarto-table-cell-role="th">statistikjahr</th>
+<th data-quarto-table-cell-role="th">verteilungen</th>
+<th data-quarto-table-cell-role="th">ziel_ngf_m2</th>
+<th data-quarto-table-cell-role="th">prioren</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">Bestand_2024</th>
+<td>Kalibrierter Gebäudebestand 2024</td>
+<td>Bestandszustand</td>
+<td>2024</td>
+<td>2024</td>
+<td>data/eingaben/verteilungen/Verteilung_Bestand_...</td>
+<td>None</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">Transition_2040</th>
+<td>Illustratives Transformations-Zielbild 2040 be...</td>
+<td>Zukunftszustand</td>
+<td>2040</td>
+<td>2024</td>
+<td>data/eingaben/verteilungen/Verteilung_Transiti...</td>
+<td>None</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">Transition_2040_Wachstum</th>
+<td>Illustratives Transformations-Zielbild 2040 mi...</td>
+<td>Zukunftszustand</td>
+<td>2040</td>
+<td>2024</td>
+<td>data/eingaben/verteilungen/abgeleitet/Verteilu...</td>
+<td>950000000</td>
+<td>{'eingabe': 'data/eingaben/verteilungen/Vertei...</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">Transition_2040_ambitioniert</th>
+<td>Flächenentwicklung wie Wachstum, hohe Sanierun...</td>
+<td>Zukunftszustand</td>
+<td>2040</td>
+<td>2024</td>
+<td>data/eingaben/verteilungen/abgeleitet/Verteilu...</td>
+<td>950000000</td>
+<td>{'eingabe': 'data/eingaben/verteilungen/Vertei...</td>
+</tr>
+</tbody>
+</table>
+
 </div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Warnung</span>Neue Flächenlieferung erforderlich
 </div>
-</div>
-<div class="callout-body-container callout-body">
-<p><strong>Aktualisierungsbedarf · 09.11.2026</strong></p>
-<p>Die bisherige 900-Zeilen-Excel ist noch keine vollständige Zuordnung für die lokale Typologie mit 43.200 Simulationen. Nach der Lieferung die Analyse ausführen, Bestände exportieren und Berichtstabellen prüfen. Hier liegen noch keine neuen fachlichen Ergebnisse vor.</p>
-</div>
-</div>
-<section id="zweck-und-eingabedateien" class="level2">
-<h2 class="anchored" data-anchor-id="zweck-und-eingabedateien">1. Zweck und Eingabedateien</h2>
-<p>Dieses Notebook verbindet eine <strong>fertige Flächenzuordnung</strong> mit den simulierten Energiekennwerten. Es modelliert keine neuen Flächenanteile. Die Herleitung der Flächen gehört in das Notebook Gebaeudesektor_Modellierung. Die neue vollständige Flächentabelle des Kollegen steht noch aus; die aktuelle historische Excel reicht für die neue Typologie nicht aus.</p>
-<p>Die Analyse liefert einen Bestand für „heute“ und einen für „2040“: jede Zeile enthält Simulation, Merkmale, zugeordnete BGF und Energiekennwerte. Erst im Kalibrierungsdashboard wird ausgewählt, welcher Anteil dieses Bestands virtuell nach PEQ bewertet wird. Ein PEQ-Ziel von 20 % wird hier nicht mehr vorausgesetzt.</p>
-<p>Alle fachlichen Rechenschritte stehen in diesem Notebook. Benötigt werden nur die üblichen Python-Bibliotheken und die beiden Dateien im lokalen Ordner data.</p>
-<div id="42e09d59" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-11-05T15:04:03.145817Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-11-05T15:04:03.145058Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-11-05T15:04:15.534786Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-11-05T15:04:15.532044Z&quot;}}">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> pathlib <span class="im">import</span> Path</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> hashlib, json</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> IPython.display <span class="im">import</span> display</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>ROOT <span class="op">=</span> <span class="bu">next</span>(p <span class="cf">for</span> p <span class="kw">in</span> [Path.cwd(), <span class="op">*</span>Path.cwd().parents] <span class="cf">if</span> (p <span class="op">/</span> <span class="st">'_quarto.yml'</span>).exists())</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>BASE <span class="op">=</span> ROOT <span class="op">/</span> <span class="st">'Berechnungen/gebaeudesektormodell'</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>PARQUET <span class="op">=</span> BASE <span class="op">/</span> <span class="st">'data/scenarios.parquet'</span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>INPUT <span class="op">=</span> BASE <span class="op">/</span> <span class="st">'data/Building-Sector_Pool_1.xlsx'</span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>OUT <span class="op">=</span> BASE <span class="op">/</span> <span class="st">'outputs/analyse'</span></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Publizierte Ergebnisse vom 05.11. bleiben bis zur neuen Lieferung unverändert.</span></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>GEN <span class="op">=</span> OUT <span class="op">/</span> <span class="st">'berichtstabellen'</span></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>typology <span class="op">=</span> pd.read_parquet(PARQUET)</span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>areas <span class="op">=</span> pd.read_excel(INPUT, sheet_name<span class="op">=</span><span class="st">'Strombed_estim'</span>)</span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>mapping_input <span class="op">=</span> pd.read_excel(INPUT, sheet_name<span class="op">=</span><span class="st">'zuordnung_gfz'</span>, usecols<span class="op">=</span><span class="st">'A:F'</span>)</span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>display(pd.DataFrame({<span class="st">'Quelle'</span>:[<span class="st">'Simulationen'</span>,<span class="st">'Flächenzuordnung'</span>], <span class="st">'Zeilen'</span>:[<span class="bu">len</span>(typology),<span class="bu">len</span>(areas)]}))</span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>display(areas.head())</span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="co"># Einheiten: Kennwerte je m² NGF, Flächenlieferung in m² BGF.</span></span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="co"># Aktueller Pool: einheitlich 0,8. Bei abweichenden Typen ausdrücklich anpassen.</span></span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>r <span class="op">=</span> <span class="fl">0.8</span></span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>params <span class="op">=</span> <span class="bu">dict</span>(jahr_pe_bewertung<span class="op">=</span><span class="va">None</span>, single_target_missing_share<span class="op">=</span><span class="dv">1</span>,</span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>              density_f_res<span class="op">=</span><span class="fl">30.4</span>, density_f_ed<span class="op">=</span><span class="fl">26.4</span>, density_dx<span class="op">=</span><span class="fl">.15</span>, density_cutoff<span class="op">=</span><span class="fl">62.</span>)</span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>inputs <span class="op">=</span> {<span class="st">'GFZ_Zuordnung'</span>:mapping_input}</span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> sha256(path):</span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> hashlib.sha256(Path(path).read_bytes()).hexdigest()</span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>provenance <span class="op">=</span> {<span class="st">'simulation'</span>:<span class="bu">str</span>(PARQUET.relative_to(ROOT)), <span class="st">'source_sha256'</span>:sha256(PARQUET),</span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>              <span class="st">'input_sha256'</span>:sha256(INPUT)}</span>
-<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> markdown_table(frame, caption<span class="op">=</span><span class="va">None</span>, identifier<span class="op">=</span><span class="va">None</span>):</span>
-<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Format a small table without an optional tabulate dependency."""</span></span>
-<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> fmt(v):</span>
-<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> pd.isna(v): <span class="cf">return</span> <span class="st">'offen'</span></span>
-<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="bu">isinstance</span>(v,<span class="bu">float</span>): <span class="cf">return</span> <span class="ss">f'</span><span class="sc">{</span>v<span class="sc">:,.3f}</span><span class="ss">'</span>.replace(<span class="st">','</span>,<span class="st">'X'</span>).replace(<span class="st">'.'</span>,<span class="st">','</span>).replace(<span class="st">'X'</span>,<span class="st">'.'</span>)</span>
-<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="bu">str</span>(v).replace(<span class="st">'|'</span>,<span class="st">' / '</span>).replace(<span class="st">'</span><span class="ch">\n</span><span class="st">'</span>,<span class="st">' '</span>)</span>
-<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>    result <span class="op">=</span> <span class="st">'| '</span><span class="op">+</span><span class="st">' | '</span>.join(<span class="bu">map</span>(<span class="bu">str</span>,frame.columns))<span class="op">+</span><span class="st">' |</span><span class="ch">\n</span><span class="st">'</span></span>
-<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>    result <span class="op">+=</span> <span class="st">'| '</span><span class="op">+</span><span class="st">' | '</span>.join([<span class="st">'---'</span>]<span class="op">*</span><span class="bu">len</span>(frame.columns))<span class="op">+</span><span class="st">' |</span><span class="ch">\n</span><span class="st">'</span></span>
-<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>    result <span class="op">+=</span> <span class="st">'</span><span class="ch">\n</span><span class="st">'</span>.join(<span class="st">'| '</span><span class="op">+</span><span class="st">' | '</span>.join(fmt(v) <span class="cf">for</span> v <span class="kw">in</span> row)<span class="op">+</span><span class="st">' |'</span> <span class="cf">for</span> row <span class="kw">in</span> frame.itertuples(index<span class="op">=</span><span class="va">False</span>,name<span class="op">=</span><span class="va">None</span>))</span>
-<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> caption: result <span class="op">+=</span> <span class="st">'</span><span class="ch">\n\n</span><span class="st">: '</span><span class="op">+</span>caption<span class="op">+</span>(<span class="ss">f' </span><span class="ch">{{</span><span class="ss">#</span><span class="sc">{</span>identifier<span class="sc">}</span><span class="ch">}}</span><span class="ss">'</span> <span class="cf">if</span> identifier <span class="cf">else</span> <span class="st">''</span>)<span class="op">+</span><span class="st">'</span><span class="ch">\n</span><span class="st">'</span></span>
-<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> result</span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
-</div>
-</section>
-<section id="sec-gebaeude-datenpruefung" class="level2">
-<h2 class="anchored" data-anchor-id="sec-gebaeude-datenpruefung">2. Fertige Flächenzuordnung mit Simulationen verbinden</h2>
-<p><code>Archetype</code> in der Flächendatei ist der vollständige Szenarioname aus PEExcel. Die Verbindung geschieht exakt über diesen Namen und den Batch. Kein Kürzen auf Basisarchetypen, keine Gleichverteilung über Wetter oder Masse und keine synthetische Ergänzung von PV0.</p>
-<p>Drei kurze Kontrollen schützen die Bedeutung der Rechnung: eindeutige und vollständige Zuordnung, unveränderte Flächensummen und übereinstimmende Flächeneinheiten. Fehlende Kennwerte werden in der jeweiligen Bilanz als offen ausgewiesen.</p>
-<div id="3f2c9435" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-11-05T15:04:15.540914Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-11-05T15:04:15.540129Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-11-05T15:04:23.228842Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-11-05T15:04:23.226608Z&quot;}}">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>area_columns <span class="op">=</span> [<span class="st">'Nationale BGF heute'</span>,<span class="st">'Nationale BGF 2040'</span>]</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>areas <span class="op">=</span> areas.rename(columns<span class="op">=</span>{<span class="st">'Archetype'</span>:<span class="st">'scenario_name'</span>})</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>keys <span class="op">=</span> [<span class="st">'batch'</span>,<span class="st">'scenario_name'</span>] <span class="cf">if</span> <span class="st">'batch'</span> <span class="kw">in</span> areas <span class="cf">else</span> [<span class="st">'scenario_name'</span>]</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="st">'batch'</span> <span class="kw">not</span> <span class="kw">in</span> areas <span class="kw">and</span> <span class="kw">not</span> typology.scenario_name.is_unique:</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">raise</span> <span class="pp">ValueError</span>(<span class="st">'Bitte batch ergänzen: Szenarionamen kommen in mehreren Läufen vor.'</span>)</span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>missing <span class="op">=</span> areas.loc[<span class="op">~</span>pd.MultiIndex.from_frame(areas[keys]).isin(pd.MultiIndex.from_frame(typology[keys])),keys]</span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="kw">not</span> missing.empty:</span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    display(missing.head())</span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>    <span class="cf">raise</span> <span class="pp">ValueError</span>(<span class="st">'Vollständige neue Flächentabelle fehlt: Archetype muss exakt zum scenario_name im lokalen Parquet passen. Keine automatische Variantenaufteilung.'</span>)</span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>optional <span class="op">=</span> [c <span class="cf">for</span> c <span class="kw">in</span> [<span class="st">'Bestand'</span>,<span class="st">'Neubau'</span>,<span class="st">'Sanierung'</span>,<span class="st">'Energetischer Standard'</span>] <span class="cf">if</span> c <span class="kw">in</span> areas]</span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> typology.merge(areas[keys <span class="op">+</span> area_columns <span class="op">+</span> optional], on<span class="op">=</span>keys, how<span class="op">=</span><span class="st">'left'</span>, validate<span class="op">=</span><span class="st">'one_to_one'</span>)</span>
-<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> data[area_columns].isna().<span class="bu">any</span>().<span class="bu">any</span>() <span class="kw">or</span> (data[area_columns] <span class="op">&lt;</span> <span class="dv">0</span>).<span class="bu">any</span>().<span class="bu">any</span>():</span>
-<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>    <span class="cf">raise</span> <span class="pp">ValueError</span>(<span class="st">'Jeder Typ benötigt eine nichtnegative Fläche je Stand; nicht verwendete Typen ausdrücklich mit null angeben.'</span>)</span>
-<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>np.testing.assert_allclose(data[area_columns].<span class="bu">sum</span>(),areas[area_columns].<span class="bu">sum</span>())</span>
-<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>np.testing.assert_allclose(data.NFA_total<span class="op">/</span>data.GFA_total,r)</span>
-<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Aktueller Namensaufbau: sieben Merkmale. Originalnamen bleiben unverändert.</span></span>
-<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>dimensions <span class="op">=</span> [<span class="st">'Geometrie'</span>,<span class="st">'Huelle'</span>,<span class="st">'Heizung'</span>,<span class="st">'PV_Klasse'</span>,<span class="st">'Flexibilitaet'</span>,<span class="st">'Wetter'</span>,<span class="st">'Masse'</span>]</span>
-<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>parts <span class="op">=</span> data.scenario_name.<span class="bu">str</span>.split(<span class="st">'|'</span>,expand<span class="op">=</span><span class="va">True</span>)</span>
-<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>parts.columns <span class="op">=</span> dimensions</span>
-<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> column <span class="kw">in</span> dimensions:</span>
-<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>    data[column] <span class="op">=</span> parts[column].<span class="bu">str</span>.strip()</span>
-<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>data[<span class="st">'Archetype'</span>] <span class="op">=</span> data.batch <span class="op">+</span> <span class="st">'::'</span> <span class="op">+</span> data.scenario_name</span>
-<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> column <span class="kw">in</span> [<span class="st">'Bestand'</span>,<span class="st">'Neubau'</span>,<span class="st">'Sanierung'</span>]:</span>
-<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> column <span class="kw">not</span> <span class="kw">in</span> data: data[column] <span class="op">=</span> np.nan</span>
-<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="st">'Energetischer Standard'</span> <span class="kw">not</span> <span class="kw">in</span> data: data[<span class="st">'Energetischer Standard'</span>] <span class="op">=</span> <span class="st">''</span></span>
-<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>data[<span class="st">'PEQ_Anteil_2040'</span>] <span class="op">=</span> <span class="fl">0.</span>  <span class="co"># Auswahl erfolgt erst im Dashboard.</span></span>
-<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>data[<span class="st">'BGF_2020_m2'</span>] <span class="op">=</span> np.nan</span>
-<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> year <span class="kw">in</span> [<span class="st">'heute'</span>,<span class="st">'2040'</span>]:</span>
-<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a>    data[<span class="st">'Flächenanteil '</span><span class="op">+</span>year] <span class="op">=</span> data[<span class="st">'Nationale BGF '</span><span class="op">+</span>year] <span class="op">/</span> data[<span class="st">'Nationale BGF '</span><span class="op">+</span>year].<span class="bu">sum</span>()</span>
-<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a>original_count <span class="op">=</span> <span class="bu">len</span>(data)</span>
-<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a>data[<span class="st">'Herkunft'</span>] <span class="op">=</span> <span class="st">'simuliert'</span></span>
-<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a>OUT.mkdir(parents<span class="op">=</span><span class="va">True</span>,exist_ok<span class="op">=</span><span class="va">True</span>)</span>
-<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a>GEN.mkdir(parents<span class="op">=</span><span class="va">True</span>,exist_ok<span class="op">=</span><span class="va">True</span>)</span>
-<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a>display(data[[<span class="st">'Archetype'</span>,<span class="op">*</span>dimensions,<span class="op">*</span>area_columns]].head(<span class="dv">12</span>))</span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
 </div>
 </section>
-<section id="sec-gebaeude-flaechen" class="level2">
-<h2 class="anchored" data-anchor-id="sec-gebaeude-flaechen">3. Flächenbilanz</h2>
-<p>Die Basisflächen bleiben je Geometrie/Hülle/Versorgung erhalten. NGF = BGF × 0,8; dies entspricht auch NFA_total/GFA_total im aktuellen Pool. Statusanteile sind flächengewichtet. 2020 bleibt offen. Nullflächen sind explizit ausgeschlossen, fehlende Angaben bleiben unbekannt.</p>
-<div id="9defcb23" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-11-05T15:04:23.236626Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-11-05T15:04:23.235562Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-11-05T15:04:24.260188Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-11-05T15:04:24.257862Z&quot;}}">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>area_cols <span class="op">=</span> {<span class="st">'heute'</span>: <span class="st">'Nationale BGF heute'</span>, <span class="st">'2040'</span>: <span class="st">'Nationale BGF 2040'</span>, <span class="st">'2020'</span>: <span class="st">'BGF_2020_m2'</span>}</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>areas <span class="op">=</span> []</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> year, c <span class="kw">in</span> area_cols.items():</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    areas.append({<span class="st">'Stand'</span>: year, <span class="st">'BGF [Mio. m²]'</span>: data[c].<span class="bu">sum</span>(min_count<span class="op">=</span><span class="dv">1</span>) <span class="op">/</span> <span class="fl">1000000.0</span>, <span class="st">'NGF [Mio. m²]'</span>: r <span class="op">*</span> data[c].<span class="bu">sum</span>(min_count<span class="op">=</span><span class="dv">1</span>) <span class="op">/</span> <span class="fl">1000000.0</span>, <span class="st">'positiv'</span>: <span class="bu">int</span>(data[c].gt(<span class="dv">0</span>).<span class="bu">sum</span>()), <span class="st">'Null'</span>: <span class="bu">int</span>(data[c].eq(<span class="dv">0</span>).<span class="bu">sum</span>()), <span class="st">'fehlend'</span>: <span class="bu">int</span>(data[c].isna().<span class="bu">sum</span>())})</span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>area_summary <span class="op">=</span> pd.DataFrame(areas)</span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>display(area_summary)</span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> year, share <span class="kw">in</span> [(<span class="st">'heute'</span>, <span class="st">'Flächenanteil heute'</span>), (<span class="st">'2040'</span>, <span class="st">'Flächenanteil 2040'</span>)]:</span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>    expected <span class="op">=</span> data[area_cols[year]] <span class="op">/</span> data[area_cols[year]].<span class="bu">sum</span>(min_count<span class="op">=</span><span class="dv">1</span>)</span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(year, <span class="st">'max. Abweichung der gelieferten Anteilsfelder:'</span>, <span class="bu">abs</span>(data[share] <span class="op">-</span> expected).<span class="bu">max</span>())</span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>statussum <span class="op">=</span> data[[<span class="st">'Bestand'</span>, <span class="st">'Neubau'</span>, <span class="st">'Sanierung'</span>]].<span class="bu">sum</span>(axis<span class="op">=</span><span class="dv">1</span>, min_count<span class="op">=</span><span class="dv">3</span>)</span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>status <span class="op">=</span> pd.DataFrame([{<span class="st">'Zustand'</span>: c, <span class="st">'BGF 2040 [Mio. m²]'</span>: (data[c] <span class="op">*</span> data[<span class="st">'Nationale BGF 2040'</span>]).<span class="bu">sum</span>(min_count<span class="op">=</span><span class="dv">1</span>) <span class="op">/</span> <span class="fl">1000000.0</span>} <span class="cf">for</span> c <span class="kw">in</span> [<span class="st">'Bestand'</span>, <span class="st">'Neubau'</span>, <span class="st">'Sanierung'</span>]])</span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>display(status)</span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>geometry_area <span class="op">=</span> data.groupby(<span class="st">'Geometrie'</span>)[[<span class="st">'Nationale BGF heute'</span>, <span class="st">'Nationale BGF 2040'</span>]].<span class="bu">sum</span>(min_count<span class="op">=</span><span class="dv">1</span>) <span class="op">/</span> <span class="fl">1000000.0</span></span>
-<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>display(geometry_area)</span>
-<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="dv">9</span>, <span class="dv">4</span>))</span>
-<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>geometry_area.plot.bar(ax<span class="op">=</span>ax, color<span class="op">=</span>[<span class="st">'#9aaebc'</span>, <span class="st">'#285c83'</span>])</span>
-<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>ax.<span class="bu">set</span>(ylabel<span class="op">=</span><span class="st">'BGF [Mio. m²]'</span>, xlabel<span class="op">=</span><span class="st">'Geometrische Klasse'</span>)</span>
-<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>ax.tick_params(axis<span class="op">=</span><span class="st">'x'</span>, rotation<span class="op">=</span><span class="dv">40</span>)</span>
-<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>ax.legend([<span class="st">'Heute: Jahr offen'</span>, <span class="st">'2040'</span>])</span>
-<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>fig.tight_layout()</span>
-<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a>fig.savefig(OUT <span class="op">/</span> <span class="st">'flaechen.png'</span>, dpi<span class="op">=</span><span class="dv">180</span>)</span>
-<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
-<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a>area_summary.to_csv(OUT <span class="op">/</span> <span class="st">'flaechenaudit.csv'</span>, index<span class="op">=</span><span class="va">False</span>)</span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
+<section id="was-hat-der-kollege-modelliert" class="level2">
+<h2 class="anchored" data-anchor-id="was-hat-der-kollege-modelliert">2. Was hat der Kollege modelliert?</h2>
+<ol type="1">
+<li><strong>Statistische Ausgangsfläche:</strong> Die Nettogrundflächen aus Statistik Austria 2024 werden nach Nutzung, Geschossigkeit, Bauperiode und Region eingelesen. Die Geometriezuordnung steht in den Annahmen. Regionen werden Wetterstandorten zugeordnet – hier gilt nicht mehr unsere frühere pauschale 50/50-Testannahme.</li>
+<li><strong>Qualität:</strong> Bauperioden werden über Baujahre auf Qualitätsklassen verteilt. Innerhalb der statistischen Bauperiode verwendet der Rechenkern gleich gewichtete Baujahre. Qualitätsanteile werden auf die vorgegebenen Ziele kalibriert.</li>
+<li><strong>Szenarioumfang:</strong> Ohne eigene Gesamtflächenvorgabe gilt die statistische NGF. Die Wachstumsszenarien setzen 950 Mio. m² NGF an. Die genaue Zusammensetzung kommt aus den jeweiligen Verteilungsdateien.</li>
+<li><strong>Bedingte Verteilungen:</strong> Versorgung hängt von Geometrie und Qualität ab, PV von Geometrie, Flexibilität von Versorgung und Gebäudemasse von der Nutzungsgruppe. Globale ZIEL-Zeilen werden durch Kalibrierung dieser Verteilungen erreicht; Ausschlüsse, etwa für Wärmepumpen, bleiben wirksam.</li>
+<li><strong>Typenflächen:</strong> Die jeweilige Herkunftsfläche wird mit den bedingten Anteilen multipliziert und über identische Typenschlüssel summiert. Die Produktbildung enthält Annahmen zur bedingten Unabhängigkeit: Nicht jede denkbare Korrelation zwischen PV, Versorgung, Flexibilität und Masse wird separat modelliert.</li>
+<li><strong>Simulation:</strong> Erst anschließend werden Energiekennwerte über die sieben Merkmale Geometrie, Qualität, Versorgung, PV, Flexibilität, Wetter und Masse verbunden.</li>
+</ol>
+<p><strong>Interpretation:</strong> Kalibrierung bedeutet hier Anpassung an angenommene Flächenanteile, nicht empirische Validierung der Energieperformance. Die 2040-Zustände sind Szenarien. Ob ein Übergang vom Bestand unter den Maßnahmenregeln realisierbar ist, untersucht das separate Flächenstrommodell.</p>
+<p>Der vorhandene Rechenkern bleibt die gemeinsame Quelle der Flächenbildung. Die folgenden Zellen legen seine Eingaben, Zwischenstände und Ergebnisse offen; die energetische Aggregation wird zusätzlich direkt hier gerechnet.</p>
+<div id="913ad006" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-11-19T16:56:08.610554Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-11-19T16:56:08.610303Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-11-19T16:56:29.568259Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-11-19T16:56:29.567264Z&quot;}}" data-execution_count="2">
+<div class="cell-output cell-output-stdout">
+<pre><code>Bestand_2024 : 889.873 Mio. m² NGF
+Haushalts-Sollwerte2024 werden für dieses Szenariojahr nicht angewendet.
+Transition_2040 : 889.873 Mio. m² NGF
+Haushalts-Sollwerte2024 werden für dieses Szenariojahr nicht angewendet.
+Transition_2040_Wachstum : 950.0 Mio. m² NGF
+Haushalts-Sollwerte2024 werden für dieses Szenariojahr nicht angewendet.
+Transition_2040_ambitioniert : 950.0 Mio. m² NGF</code></pre>
+</div>
 </div>
 </section>
-<section id="sec-gebaeude-strom" class="level2">
-<h2 class="anchored" data-anchor-id="sec-gebaeude-strom">4. Physische Strombilanz</h2>
-<p>Bruttobedarf folgt EUI_el_total ohne EUIev_el; Mobilität wird erst beim sektoralen Vergleich angesetzt. PV_total umfasst direkten und flexiblen Verbrauch sowie Einspeisung. Die Flussprüfung berücksichtigt deshalb PV_total_flex und VRGrid_to_building. Keine virtuellen Kontextwerte werden als Erzeugung addiert. Die Anwendungssummen schließen direktes elektrisches Warmwasser ein.</p>
-<div id="740baba0" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-11-05T15:04:24.266427Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-11-05T15:04:24.265242Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-11-05T15:04:25.416246Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-11-05T15:04:25.414404Z&quot;}}">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>data[<span class="st">'Strombedarf'</span>] <span class="op">=</span> data.EUI_el_total <span class="op">-</span> data.EUIev_el</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>data[<span class="st">'PV_Erzeugung'</span>] <span class="op">=</span> data.PV_total</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>data[<span class="st">'Stromsaldo'</span>] <span class="op">=</span> data.PV_Erzeugung <span class="op">-</span> data.Strombedarf</span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>apps <span class="op">=</span> pd.DataFrame({<span class="st">'Heizung'</span>: data.EUIh_el <span class="op">-</span> data.EUIh_el_aux, <span class="st">'Warmwasser'</span>: data.EUIdhw_el <span class="op">+</span> data.EUIdhwdirect_el <span class="op">-</span> data.Edhw_aux_el, <span class="st">'Kühlung'</span>: data.EUIc_el <span class="op">-</span> data.EUIc_el_aux, <span class="st">'Lüftung'</span>: data.EUIv_el, <span class="st">'Hilfs-/Allgemeinstrom'</span>: data.EUI_auxiliary <span class="op">+</span> data.EUIh_el_aux <span class="op">+</span> data.EUIc_el_aux <span class="op">+</span> data.Edhw_aux_el, <span class="st">'Beleuchtung'</span>: data.EUI_lighting, <span class="st">'Geräte/IT'</span>: data.EUI_plugloads})</span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> aggregate(values, area):</span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>    missing_area <span class="op">=</span> area.isna().<span class="bu">any</span>()</span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>    active <span class="op">=</span> area.gt(<span class="dv">0</span>)</span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>    covered <span class="op">=</span> active <span class="op">&amp;</span> values.notna()</span>
-<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>    known <span class="op">=</span> (values[covered] <span class="op">*</span> area[covered] <span class="op">*</span> r).<span class="bu">sum</span>(min_count<span class="op">=</span><span class="dv">1</span>)</span>
-<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>    missing <span class="op">=</span> area[active <span class="op">&amp;</span> values.isna()].<span class="bu">sum</span>()</span>
-<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="bu">dict</span>(kWh<span class="op">=</span>known <span class="cf">if</span> <span class="kw">not</span> missing_area <span class="kw">and</span> missing <span class="op">==</span> <span class="dv">0</span> <span class="cf">else</span> np.nan, bekannte_kWh<span class="op">=</span>known, fehlende_BGF_m2<span class="op">=</span>missing, Flächen_offen<span class="op">=</span>missing_area)</span>
-<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>energy_records <span class="op">=</span> []</span>
-<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> year, c <span class="kw">in</span> area_cols.items():</span>
-<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> metric <span class="kw">in</span> [<span class="st">'Strombedarf'</span>, <span class="st">'PV_Erzeugung'</span>, <span class="st">'Grid_to_building_min'</span>, <span class="st">'PV_total_direct'</span>, <span class="st">'PV_total_flex'</span>, <span class="st">'VRGrid_to_building'</span>, <span class="st">'PV_to_Egrid'</span>, <span class="st">'Stromsaldo'</span>]:</span>
-<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>        a <span class="op">=</span> aggregate(data[metric], data[c])</span>
-<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>        energy_records.append({<span class="st">'Stand'</span>: year, <span class="st">'Größe'</span>: metric, <span class="st">'kWh/(m² NGF a)'</span>: a[<span class="st">'kWh'</span>] <span class="op">/</span> (data[c].<span class="bu">sum</span>(min_count<span class="op">=</span><span class="dv">1</span>) <span class="op">*</span> r), <span class="st">'GWh/a'</span>: a[<span class="st">'kWh'</span>] <span class="op">/</span> <span class="fl">1000000.0</span>, <span class="st">'PJ/a'</span>: a[<span class="st">'kWh'</span>] <span class="op">*</span> <span class="fl">3.6e-09</span>, <span class="st">'fehlende BGF [m²]'</span>: a[<span class="st">'fehlende_BGF_m2'</span>], <span class="st">'Flächen offen'</span>: a[<span class="st">'Flächen_offen'</span>]})</span>
-<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>energy <span class="op">=</span> pd.DataFrame(energy_records)</span>
-<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>display(energy[energy.Stand.eq(<span class="st">'2040'</span>)])</span>
-<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a>weighted_apps <span class="op">=</span> apps.mul(data[<span class="st">'Nationale BGF 2040'</span>] <span class="op">*</span> r, axis<span class="op">=</span><span class="dv">0</span>)</span>
-<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a>application_total <span class="op">=</span> weighted_apps.<span class="bu">sum</span>(min_count<span class="op">=</span><span class="dv">1</span>) <span class="op">/</span> <span class="fl">1000000.0</span></span>
-<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a>display(application_total.rename(<span class="st">'GWh/a'</span>).to_frame())</span>
-<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a>by_geometry <span class="op">=</span> weighted_apps.groupby(data.Geometrie).<span class="bu">sum</span>(min_count<span class="op">=</span><span class="dv">1</span>).div((data[<span class="st">'Nationale BGF 2040'</span>] <span class="op">*</span> r).groupby(data.Geometrie).<span class="bu">sum</span>(), axis<span class="op">=</span><span class="dv">0</span>)</span>
-<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="fl">4.5</span>))</span>
-<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a>by_geometry.dropna(how<span class="op">=</span><span class="st">'all'</span>).plot.bar(stacked<span class="op">=</span><span class="va">True</span>, ax<span class="op">=</span>ax, colormap<span class="op">=</span><span class="st">'tab20'</span>)</span>
-<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a>ax.<span class="bu">set</span>(ylabel<span class="op">=</span><span class="st">'Strombedarf [kWh/(m² NGF a)]'</span>, xlabel<span class="op">=</span><span class="st">'Geometrische Klasse'</span>)</span>
-<span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a>ax.tick_params(axis<span class="op">=</span><span class="st">'x'</span>, rotation<span class="op">=</span><span class="dv">40</span>)</span>
-<span id="cb4-28"><a href="#cb4-28" aria-hidden="true" tabindex="-1"></a>ax.legend(loc<span class="op">=</span><span class="st">'upper center'</span>, bbox_to_anchor<span class="op">=</span>(<span class="fl">0.5</span>, <span class="fl">1.22</span>), ncol<span class="op">=</span><span class="dv">4</span>, fontsize<span class="op">=</span><span class="dv">8</span>)</span>
-<span id="cb4-29"><a href="#cb4-29" aria-hidden="true" tabindex="-1"></a>fig.tight_layout()</span>
-<span id="cb4-30"><a href="#cb4-30" aria-hidden="true" tabindex="-1"></a>fig.savefig(OUT <span class="op">/</span> <span class="st">'strom_anwendungen.png'</span>, dpi<span class="op">=</span><span class="dv">180</span>)</span>
-<span id="cb4-31"><a href="#cb4-31" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
-<span id="cb4-32"><a href="#cb4-32" aria-hidden="true" tabindex="-1"></a>geom_energy <span class="op">=</span> data[[<span class="st">'Strombedarf'</span>, <span class="st">'PV_Erzeugung'</span>, <span class="st">'Stromsaldo'</span>]].mul(data[<span class="st">'Nationale BGF 2040'</span>] <span class="op">*</span> r, axis<span class="op">=</span><span class="dv">0</span>).groupby(data.Geometrie).<span class="bu">sum</span>(min_count<span class="op">=</span><span class="dv">1</span>) <span class="op">/</span> <span class="fl">1000000.0</span></span>
-<span id="cb4-33"><a href="#cb4-33" aria-hidden="true" tabindex="-1"></a>display(geom_energy)</span>
-<span id="cb4-34"><a href="#cb4-34" aria-hidden="true" tabindex="-1"></a>energy.to_csv(OUT <span class="op">/</span> <span class="st">'strombilanz.csv'</span>, index<span class="op">=</span><span class="va">False</span>)</span>
-<span id="cb4-35"><a href="#cb4-35" aria-hidden="true" tabindex="-1"></a>by_geometry.to_csv(OUT <span class="op">/</span> <span class="st">'strom_anwendungen_spezifisch.csv'</span>)</span>
-<span id="cb4-36"><a href="#cb4-36" aria-hidden="true" tabindex="-1"></a>geom_energy.to_csv(OUT <span class="op">/</span> <span class="st">'strombilanz_geometrie.csv'</span>)</span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
+<section id="annahmen-kalibrierziele-und-zwischenergebnisse-nachvollziehen" class="level2">
+<h2 class="anchored" data-anchor-id="annahmen-kalibrierziele-und-zwischenergebnisse-nachvollziehen">3. Annahmen, Kalibrierziele und Zwischenergebnisse nachvollziehen</h2>
+<p>Für das gewählte Detailszenario zeigen wir die tatsächlichen Eingabedateien, die Herkunftsflächen und die erreichten globalen Anteilsziele. Die Tabellen mit bedingten Verteilungen zeigen, wie diese Ziele auf die Typen wirken. Die Bilanzkontrollen stammen aus dem gelieferten Modell; wir ergänzen keine umfangreiche parallele Testlogik.</p>
+<div id="6fbd0ae8" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-11-19T16:56:29.570629Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-11-19T16:56:29.570288Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-11-19T16:56:29.611614Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-11-19T16:56:29.611142Z&quot;}}" data-execution_count="3">
+<div class="cell-output cell-output-display">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">Angabe</th>
+<th data-quarto-table-cell-role="th">Wert</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">0</th>
+<td>beschreibung</td>
+<td>Flächenentwicklung wie Wachstum, hohe Sanierun...</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">1</th>
+<td>typ</td>
+<td>Zukunftszustand</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">2</th>
+<td>jahr</td>
+<td>2040</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">3</th>
+<td>statistikjahr</td>
+<td>2024</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">4</th>
+<td>verteilungen</td>
+<td>data/eingaben/verteilungen/abgeleitet/Verteilu...</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">5</th>
+<td>prioren</td>
+<td>{'eingabe': 'data/eingaben/verteilungen/Vertei...</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">6</th>
+<td>ziel_ngf_m2</td>
+<td>950000000</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">7</th>
+<td>ngf_zu_bgf_faktor</td>
+<td>1.25</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">8</th>
+<td>parquet_batch</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">Quelle</th>
+<th data-quarto-table-cell-role="th">Datei</th>
+<th data-quarto-table-cell-role="th">Nachweis</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">0</th>
+<td>basis</td>
+<td>data/eingaben/annahmen.json</td>
+<td>902ce130a769f13b5dcb1c25cd4277db145ca8ab4e8ac4...</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">1</th>
+<td>statistik</td>
+<td>data/referenz/statistik/Statistik_Austria_2024...</td>
+<td>2354690253deb7ad3b808b8ed57941389cce35cea53351...</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">2</th>
+<td>katalog</td>
+<td>data/referenz/typologien_43200.csv</td>
+<td>54ab85e0d27f103707371f4d227974cb449616224748c5...</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">3</th>
+<td>excel</td>
+<td>data/eingaben/verteilungen/abgeleitet/Verteilu...</td>
+<td>0dba58a6e7003145a329f82ae6ab53ab0f345daa7afc3f...</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">4</th>
+<td>szenarioregister</td>
+<td>config/szenarien.json</td>
+<td>fd9210a78d7f0063b60badcac8493cbcb85c2974b9e51b...</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">5</th>
+<td>parquet</td>
+<td>data/simulation/scenarios.parquet</td>
+<td>schwach (Pfad/Größe/Zeitstempel), kein Inhalts...</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">geometry</th>
+<th data-quarto-table-cell-role="th">quality</th>
+<th data-quarto-table-cell-role="th">weather</th>
+<th data-quarto-table-cell-role="th">ngf</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">0</th>
+<td>EFH_1G</td>
+<td>1919-44</td>
+<td>Innsbruck</td>
+<td>1.382756e+05</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">1</th>
+<td>EFH_1G</td>
+<td>1919-44</td>
+<td>Wien</td>
+<td>1.125481e+06</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">2</th>
+<td>EFH_1G</td>
+<td>1945-59</td>
+<td>Innsbruck</td>
+<td>1.935160e+05</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">3</th>
+<td>EFH_1G</td>
+<td>1945-59</td>
+<td>Wien</td>
+<td>9.564775e+05</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">4</th>
+<td>EFH_1G</td>
+<td>1990-99</td>
+<td>Innsbruck</td>
+<td>2.209117e+06</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">...</th>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">135</th>
+<td>RH_2G</td>
+<td>Neu_20cm</td>
+<td>Wien</td>
+<td>3.197451e+07</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">136</th>
+<td>RH_2G</td>
+<td>Neu_30cm</td>
+<td>Innsbruck</td>
+<td>3.415342e+07</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">137</th>
+<td>RH_2G</td>
+<td>Neu_30cm</td>
+<td>Wien</td>
+<td>3.664990e+07</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">138</th>
+<td>RH_2G</td>
+<td>vor1919</td>
+<td>Innsbruck</td>
+<td>1.255261e+06</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">139</th>
+<td>RH_2G</td>
+<td>vor1919</td>
+<td>Wien</td>
+<td>1.591158e+06</td>
+</tr>
+</tbody>
+</table>
+
+<p>140 rows × 4 columns</p>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">Verteilung</th>
+<th data-quarto-table-cell-role="th">Modus</th>
+<th data-quarto-table-cell-role="th">Kategorie</th>
+<th data-quarto-table-cell-role="th">Soll_Anteil</th>
+<th data-quarto-table-cell-role="th">Prior_Anteil</th>
+<th data-quarto-table-cell-role="th">Ist_Anteil</th>
+<th data-quarto-table-cell-role="th">Abweichung_pp</th>
+<th data-quarto-table-cell-role="th">Ist_NGF_m2</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">0</th>
+<td>Qualitaet</td>
+<td>Ziel+Tendenz</td>
+<td>vor1919</td>
+<td>0.020000</td>
+<td>0.020235</td>
+<td>0.020000</td>
+<td>2.138567e-12</td>
+<td>1.900000e+07</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">1</th>
+<td>Qualitaet</td>
+<td>Ziel+Tendenz</td>
+<td>1919-44</td>
+<td>0.020000</td>
+<td>0.019917</td>
+<td>0.020000</td>
+<td>2.421674e-12</td>
+<td>1.900000e+07</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">2</th>
+<td>Qualitaet</td>
+<td>Ziel+Tendenz</td>
+<td>1945-59</td>
+<td>0.020000</td>
+<td>0.020079</td>
+<td>0.020000</td>
+<td>2.248202e-12</td>
+<td>1.900000e+07</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">3</th>
+<td>Qualitaet</td>
+<td>Ziel+Tendenz</td>
+<td>1960-79</td>
+<td>0.000000</td>
+<td>0.000000</td>
+<td>0.000000</td>
+<td>0.000000e+00</td>
+<td>0.000000e+00</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">4</th>
+<td>Qualitaet</td>
+<td>Ziel+Tendenz</td>
+<td>1980-89</td>
+<td>0.000000</td>
+<td>0.000000</td>
+<td>0.000000</td>
+<td>0.000000e+00</td>
+<td>0.000000e+00</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">5</th>
+<td>Qualitaet</td>
+<td>Ziel+Tendenz</td>
+<td>1990-99</td>
+<td>0.082805</td>
+<td>0.081108</td>
+<td>0.082805</td>
+<td>-8.329448e-11</td>
+<td>7.866473e+07</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">6</th>
+<td>Qualitaet</td>
+<td>Ziel+Tendenz</td>
+<td>Neu_10cm</td>
+<td>0.060980</td>
+<td>0.059730</td>
+<td>0.060980</td>
+<td>7.924911e-12</td>
+<td>5.793070e+07</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">7</th>
+<td>Qualitaet</td>
+<td>Ziel+Tendenz</td>
+<td>Neu_20cm</td>
+<td>0.350000</td>
+<td>0.349316</td>
+<td>0.350000</td>
+<td>3.111400e-11</td>
+<td>3.325000e+08</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">8</th>
+<td>Qualitaet</td>
+<td>Ziel+Tendenz</td>
+<td>Neu_30cm</td>
+<td>0.446215</td>
+<td>0.449614</td>
+<td>0.446215</td>
+<td>3.744227e-11</td>
+<td>4.239046e+08</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">9</th>
+<td>Versorgung</td>
+<td>Ziel+Tendenz</td>
+<td>WP_gesamt</td>
+<td>0.550000</td>
+<td>0.549961</td>
+<td>0.550000</td>
+<td>-1.695311e-11</td>
+<td>5.225000e+08</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">10</th>
+<td>Versorgung</td>
+<td>Ziel+Tendenz</td>
+<td>DH</td>
+<td>0.300000</td>
+<td>0.299886</td>
+<td>0.300000</td>
+<td>8.643086e-12</td>
+<td>2.850000e+08</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">11</th>
+<td>Versorgung</td>
+<td>Ziel+Tendenz</td>
+<td>Bio</td>
+<td>0.150000</td>
+<td>0.150154</td>
+<td>0.150000</td>
+<td>8.321122e-12</td>
+<td>1.425000e+08</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">12</th>
+<td>Versorgung</td>
+<td>Ziel+Tendenz</td>
+<td>Erdgas</td>
+<td>0.000000</td>
+<td>0.000000</td>
+<td>0.000000</td>
+<td>0.000000e+00</td>
+<td>0.000000e+00</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">13</th>
+<td>Versorgung</td>
+<td>Ziel+Tendenz</td>
+<td>Oel</td>
+<td>0.000000</td>
+<td>0.000000</td>
+<td>0.000000</td>
+<td>0.000000e+00</td>
+<td>0.000000e+00</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">14</th>
+<td>Versorgung</td>
+<td>Ziel+Tendenz</td>
+<td>Elektro</td>
+<td>0.000000</td>
+<td>0.000000</td>
+<td>0.000000</td>
+<td>0.000000e+00</td>
+<td>0.000000e+00</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">15</th>
+<td>PV</td>
+<td>Ziel+Tendenz</td>
+<td>PV0</td>
+<td>0.500000</td>
+<td>0.500000</td>
+<td>0.500000</td>
+<td>0.000000e+00</td>
+<td>4.750000e+08</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">16</th>
+<td>PV</td>
+<td>Ziel+Tendenz</td>
+<td>PV30</td>
+<td>0.150000</td>
+<td>0.150000</td>
+<td>0.150000</td>
+<td>0.000000e+00</td>
+<td>1.425000e+08</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">17</th>
+<td>PV</td>
+<td>Ziel+Tendenz</td>
+<td>PV70</td>
+<td>0.150000</td>
+<td>0.150000</td>
+<td>0.150000</td>
+<td>0.000000e+00</td>
+<td>1.425000e+08</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">18</th>
+<td>PV</td>
+<td>Ziel+Tendenz</td>
+<td>PV90</td>
+<td>0.200000</td>
+<td>0.200000</td>
+<td>0.200000</td>
+<td>2.775558e-15</td>
+<td>1.900000e+08</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">Verteilung</th>
+<th data-quarto-table-cell-role="th">Baujahr_von</th>
+<th data-quarto-table-cell-role="th">Baujahr_bis</th>
+<th data-quarto-table-cell-role="th">Kategorie</th>
+<th data-quarto-table-cell-role="th">NGF_Gruppe_m2</th>
+<th data-quarto-table-cell-role="th">Prior_Anteil</th>
+<th data-quarto-table-cell-role="th">Ist_Anteil</th>
+<th data-quarto-table-cell-role="th">Aenderung_pp</th>
+<th data-quarto-table-cell-role="th">Nullzelle</th>
+<th data-quarto-table-cell-role="th">Ist_NGF_m2</th>
+<th data-quarto-table-cell-role="th">Geometrie</th>
+<th data-quarto-table-cell-role="th">Qualitaet</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">0</th>
+<td>Qualitaet</td>
+<td>0.0</td>
+<td>1918.0</td>
+<td>vor1919</td>
+<td>1.327568e+08</td>
+<td>0.144799</td>
+<td>0.143119</td>
+<td>-1.680450e-01</td>
+<td>False</td>
+<td>1.900000e+07</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">1</th>
+<td>Qualitaet</td>
+<td>0.0</td>
+<td>1918.0</td>
+<td>1919-44</td>
+<td>1.327568e+08</td>
+<td>0.000000</td>
+<td>0.000000</td>
+<td>0.000000e+00</td>
+<td>True</td>
+<td>0.000000e+00</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">2</th>
+<td>Qualitaet</td>
+<td>0.0</td>
+<td>1918.0</td>
+<td>1945-59</td>
+<td>1.327568e+08</td>
+<td>0.000000</td>
+<td>0.000000</td>
+<td>0.000000e+00</td>
+<td>True</td>
+<td>0.000000e+00</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">3</th>
+<td>Qualitaet</td>
+<td>0.0</td>
+<td>1918.0</td>
+<td>1960-79</td>
+<td>1.327568e+08</td>
+<td>0.000000</td>
+<td>0.000000</td>
+<td>0.000000e+00</td>
+<td>True</td>
+<td>0.000000e+00</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">4</th>
+<td>Qualitaet</td>
+<td>0.0</td>
+<td>1918.0</td>
+<td>1980-89</td>
+<td>1.327568e+08</td>
+<td>0.000000</td>
+<td>0.000000</td>
+<td>0.000000e+00</td>
+<td>True</td>
+<td>0.000000e+00</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">...</th>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">926</th>
+<td>PV</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>PV90</td>
+<td>7.699229e+07</td>
+<td>0.200000</td>
+<td>0.200000</td>
+<td>0.000000e+00</td>
+<td>False</td>
+<td>1.539846e+07</td>
+<td>NiWo_1G</td>
+<td></td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">927</th>
+<td>PV</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>PV0</td>
+<td>3.541069e+07</td>
+<td>0.500000</td>
+<td>0.500000</td>
+<td>-1.110223e-14</td>
+<td>False</td>
+<td>1.770534e+07</td>
+<td>GWB_5G</td>
+<td></td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">928</th>
+<td>PV</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>PV30</td>
+<td>3.541069e+07</td>
+<td>0.150000</td>
+<td>0.150000</td>
+<td>0.000000e+00</td>
+<td>False</td>
+<td>5.311603e+06</td>
+<td>GWB_5G</td>
+<td></td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">929</th>
+<td>PV</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>PV70</td>
+<td>3.541069e+07</td>
+<td>0.150000</td>
+<td>0.150000</td>
+<td>0.000000e+00</td>
+<td>False</td>
+<td>5.311603e+06</td>
+<td>GWB_5G</td>
+<td></td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">930</th>
+<td>PV</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>PV90</td>
+<td>3.541069e+07</td>
+<td>0.200000</td>
+<td>0.200000</td>
+<td>0.000000e+00</td>
+<td>False</td>
+<td>7.082138e+06</td>
+<td>GWB_5G</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>931 rows × 12 columns</p>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">Pruefung</th>
+<th data-quarto-table-cell-role="th">Ist</th>
+<th data-quarto-table-cell-role="th">Soll</th>
+<th data-quarto-table-cell-role="th">Status</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">0</th>
+<td>Geometrie Gebäude für Gemeinschaften/1 Geschoß...</td>
+<td>1.000000e+00</td>
+<td>1.000000e+00</td>
+<td>OK</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">1</th>
+<td>Geometrie Gebäude für Gemeinschaften/2 Geschoß...</td>
+<td>1.000000e+00</td>
+<td>1.000000e+00</td>
+<td>OK</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">2</th>
+<td>Geometrie Gebäude für Gemeinschaften/3 Geschoß...</td>
+<td>1.000000e+00</td>
+<td>1.000000e+00</td>
+<td>OK</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">3</th>
+<td>Geometrie Gebäude für Gemeinschaften/4 Geschoß...</td>
+<td>1.000000e+00</td>
+<td>1.000000e+00</td>
+<td>OK</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">4</th>
+<td>Geometrie Gebäude für Gemeinschaften/5 Geschoß...</td>
+<td>1.000000e+00</td>
+<td>1.000000e+00</td>
+<td>OK</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">...</th>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">227</th>
+<td>Masse je Nutzung</td>
+<td>0.000000e+00</td>
+<td>0.000000e+00</td>
+<td>OK</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">228</th>
+<td>Katalogumfang</td>
+<td>4.320000e+04</td>
+<td>4.320000e+04</td>
+<td>OK</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">229</th>
+<td>Übergabe-NGF</td>
+<td>9.500000e+08</td>
+<td>9.500000e+08</td>
+<td>OK</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">230</th>
+<td>Übergabe-BGF</td>
+<td>1.187500e+09</td>
+<td>1.187500e+09</td>
+<td>OK</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">231</th>
+<td>Anteilsumme</td>
+<td>1.000000e+00</td>
+<td>1.000000e+00</td>
+<td>OK</td>
+</tr>
+</tbody>
+</table>
+
+<p>232 rows × 4 columns</p>
+</div>
+</div>
 </div>
 </section>
-<section id="sec-gebaeude-endenergie" class="level2">
-<h2 class="anchored" data-anchor-id="sec-gebaeude-endenergie">5. Endenergiebilanz nach Energieträgern und Anwendungen</h2>
-<p>Die elektrische Heizung ist nicht die gesamte Wärmeversorgung. Die Quelle enthält Fernwärme, Erdgas, Biomasse und „other“. <strong>Öl wird aus <code>EUI_other</code> nur für Schlüssel mit Heizsystem <code>Oel</code> herausgelöst</strong>. Ein anderer „other“-Betrag bleibt sonstige thermische Endenergie. Die Anwendungsaufteilung stammt aus den zugehörigen <code>EUIh_*</code>, <code>EUIdhw_*</code> und <code>EUIc_other</code>-Spalten, nicht aus angenommenen Wirkungsgraden.</p>
-<p><span class="math display">\[E_{i,y}=\sum_k A_{NGF,k,y}\,e_{i,k},\qquad E_{End,y}=E_{el,y}+\sum_{i\ne el}E_{i,y}.\]</span></p>
-<p>Der Bruttostrombedarf enthält lokal genutzten PV-Strom. Die alternativ ausgewiesene externe Lieferung enthält nur Netzbezug plus thermische Energieträger. Umweltwärme ist in diesen gelieferten Trägerkennwerten nicht als zusätzliche Endenergielieferung enthalten; diese Abgrenzung ist beim Vergleich mit nationalen Statistiken zu beachten.</p>
-<div id="96051760" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-11-05T15:04:25.422271Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-11-05T15:04:25.421384Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-11-05T15:04:26.045272Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-11-05T15:04:26.043481Z&quot;}}">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>carriers <span class="op">=</span> pd.DataFrame({<span class="st">'Strom (Bruttobedarf)'</span>: data.Strombedarf, <span class="st">'Fernwärme'</span>: data.EUI_district_heating, <span class="st">'Gas'</span>: data.EUI_natural_gas, <span class="st">'Biomasse'</span>: data.EUI_biomass, <span class="st">'Öl'</span>: data.EUI_other.where(data.Heizung.eq(<span class="st">'Oel'</span>), <span class="dv">0</span>), <span class="st">'Sonstige thermisch'</span>: data.EUI_other.where(<span class="op">~</span>data.Heizung.eq(<span class="st">'Oel'</span>), <span class="dv">0</span>)})</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>thermal_apps <span class="op">=</span> []</span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> carrier, suffix <span class="kw">in</span> [(<span class="st">'Fernwärme'</span>, <span class="st">'district_heating'</span>), (<span class="st">'Gas'</span>, <span class="st">'natural_gas'</span>), (<span class="st">'Biomasse'</span>, <span class="st">'biomass'</span>), (<span class="st">'Sonstige inkl. Öl'</span>, <span class="st">'other'</span>)]:</span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>    comps <span class="op">=</span> {<span class="st">'Heizung'</span>: data[<span class="st">'EUIh_'</span> <span class="op">+</span> suffix], <span class="st">'Warmwasser'</span>: data[<span class="st">'EUIdhw_'</span> <span class="op">+</span> suffix]}</span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> suffix <span class="op">==</span> <span class="st">'other'</span>:</span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>        comps[<span class="st">'Kühlung'</span>] <span class="op">=</span> data.EUIc_other</span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> app, series <span class="kw">in</span> comps.items():</span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>        thermal_apps.append({<span class="st">'Träger'</span>: carrier, <span class="st">'Anwendung'</span>: app, <span class="st">'GWh/a'</span>: aggregate(series, data[<span class="st">'Nationale BGF 2040'</span>])[<span class="st">'kWh'</span>] <span class="op">/</span> <span class="fl">1000000.0</span>})</span>
-<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>display(pd.DataFrame(thermal_apps))</span>
-<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>ee <span class="op">=</span> []</span>
-<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> year, c <span class="kw">in</span> area_cols.items():</span>
-<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> carrier <span class="kw">in</span> carriers:</span>
-<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>        a <span class="op">=</span> aggregate(carriers[carrier], data[c])</span>
-<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>        ee.append({<span class="st">'Stand'</span>: year, <span class="st">'Träger'</span>: carrier, <span class="st">'kWh/(m² NGF a)'</span>: a[<span class="st">'kWh'</span>] <span class="op">/</span> (data[c].<span class="bu">sum</span>(min_count<span class="op">=</span><span class="dv">1</span>) <span class="op">*</span> r), <span class="st">'GWh/a'</span>: a[<span class="st">'kWh'</span>] <span class="op">/</span> <span class="fl">1000000.0</span>, <span class="st">'PJ/a'</span>: a[<span class="st">'kWh'</span>] <span class="op">*</span> <span class="fl">3.6e-09</span>})</span>
-<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>endenergy <span class="op">=</span> pd.DataFrame(ee)</span>
-<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>display(endenergy[endenergy.Stand.eq(<span class="st">'2040'</span>)])</span>
-<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>endenergy.to_csv(OUT <span class="op">/</span> <span class="st">'endenergiebilanz.csv'</span>, index<span class="op">=</span><span class="va">False</span>)</span>
-<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>pd.DataFrame(thermal_apps).to_csv(OUT <span class="op">/</span> <span class="st">'thermische_anwendungen_2040.csv'</span>, index<span class="op">=</span><span class="va">False</span>)</span>
-<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="dv">8</span>, <span class="dv">4</span>))</span>
-<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a>endenergy[endenergy.Stand.eq(<span class="st">'2040'</span>)].set_index(<span class="st">'Träger'</span>)[<span class="st">'PJ/a'</span>].plot.barh(ax<span class="op">=</span>ax, color<span class="op">=</span>[<span class="st">'#dfb42c'</span>, <span class="st">'#b85654'</span>, <span class="st">'#847d7a'</span>, <span class="st">'#527f4d'</span>, <span class="st">'#53545b'</span>, <span class="st">'#9b8c70'</span>])</span>
-<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a>ax.<span class="bu">set</span>(xlabel<span class="op">=</span><span class="st">'Jährliche Endenergie [PJ/a]'</span>, ylabel<span class="op">=</span><span class="st">''</span>)</span>
-<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a>fig.tight_layout()</span>
-<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a>fig.savefig(OUT <span class="op">/</span> <span class="st">'endenergie.png'</span>, dpi<span class="op">=</span><span class="dv">180</span>)</span>
-<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
+<section id="typenflächen-mit-simulationen-verbinden" class="level2">
+<h2 class="anchored" data-anchor-id="typenflächen-mit-simulationen-verbinden">4. Typenflächen mit Simulationen verbinden</h2>
+<p>Eine Zeile entspricht einer Typologie innerhalb eines Sektorszenarios. Leerzeichen in den gelieferten Typenschlüsseln werden bereinigt; es werden keine Varianten ergänzt. NGF und BGF stammen aus der Flächenmodellierung. Die Energieintensitäten werden auf NGF gewichtet, entsprechend der Bilanzierung des gelieferten Rechenkerns.</p>
+<p><code>PEI_balance</code> wird direkt aus dem Parquet gelesen: <strong>kein nochmaliger Abzug eines GFZ-Zielwerts, kein zusätzlicher Dichtebonus</strong>. <code>FSI</code> und <code>context_factor_density</code> dokumentieren den bereits bewerteten Kontext. Die physische Strombilanz ohne Mobilität wird daneben ausgewiesen, um später den nationalen Stromzielen gegenübergestellt werden zu können.</p>
+<div id="ab1341f8" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-11-19T16:56:29.615235Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-11-19T16:56:29.614750Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-11-19T16:56:30.764525Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-11-19T16:56:30.763889Z&quot;}}" data-execution_count="4">
+<div class="cell-output cell-output-display">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">Szenario</th>
+<th data-quarto-table-cell-role="th">Jahr</th>
+<th data-quarto-table-cell-role="th">Archetype</th>
+<th data-quarto-table-cell-role="th">batch</th>
+<th data-quarto-table-cell-role="th">geometry</th>
+<th data-quarto-table-cell-role="th">quality</th>
+<th data-quarto-table-cell-role="th">energy</th>
+<th data-quarto-table-cell-role="th">pv</th>
+<th data-quarto-table-cell-role="th">flex</th>
+<th data-quarto-table-cell-role="th">weather</th>
+<th data-quarto-table-cell-role="th">...</th>
+<th data-quarto-table-cell-role="th">EUI_el_total</th>
+<th data-quarto-table-cell-role="th">EUIev_el</th>
+<th data-quarto-table-cell-role="th">PV_total</th>
+<th data-quarto-table-cell-role="th">Strombedarf_ohne_Mobilitaet</th>
+<th data-quarto-table-cell-role="th">Stromsaldo</th>
+<th data-quarto-table-cell-role="th">PEI_balance_kWh_a</th>
+<th data-quarto-table-cell-role="th">PEI_saldo_project_kWh_a</th>
+<th data-quarto-table-cell-role="th">Strombedarf_ohne_Mobilitaet_kWh_a</th>
+<th data-quarto-table-cell-role="th">PV_total_kWh_a</th>
+<th data-quarto-table-cell-role="th">Stromsaldo_kWh_a</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">144</th>
+<td>Bestand_2024</td>
+<td>2024</td>
+<td>EFH_1G|vor1919|FW_Wien|PV30|noFlex|Wien|Leicht</td>
+<td>building_sector_v2</td>
+<td>EFH_1G</td>
+<td>vor1919</td>
+<td>FW_Wien</td>
+<td>PV30</td>
+<td>noFlex</td>
+<td>Wien</td>
+<td>...</td>
+<td>32.683824</td>
+<td>0</td>
+<td>76.161487</td>
+<td>32.683824</td>
+<td>43.477664</td>
+<td>-66957.212139</td>
+<td>-55936.486470</td>
+<td>16331.948475</td>
+<td>38057.526354</td>
+<td>21725.577879</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">145</th>
+<td>Bestand_2024</td>
+<td>2024</td>
+<td>EFH_1G|vor1919|FW_Wien|PV30|noFlex|Wien|mittel</td>
+<td>building_sector_v2</td>
+<td>EFH_1G</td>
+<td>vor1919</td>
+<td>FW_Wien</td>
+<td>PV30</td>
+<td>noFlex</td>
+<td>Wien</td>
+<td>...</td>
+<td>32.681988</td>
+<td>0</td>
+<td>76.161487</td>
+<td>32.681988</td>
+<td>43.479499</td>
+<td>-123602.102337</td>
+<td>-103253.133267</td>
+<td>30154.062496</td>
+<td>70270.456765</td>
+<td>40116.394269</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">146</th>
+<td>Bestand_2024</td>
+<td>2024</td>
+<td>EFH_1G|vor1919|FW_Wien|PV30|noFlex|Wien|schwer</td>
+<td>building_sector_v2</td>
+<td>EFH_1G</td>
+<td>vor1919</td>
+<td>FW_Wien</td>
+<td>PV30</td>
+<td>noFlex</td>
+<td>Wien</td>
+<td>...</td>
+<td>32.683765</td>
+<td>0</td>
+<td>76.161487</td>
+<td>32.683765</td>
+<td>43.477723</td>
+<td>-123634.459261</td>
+<td>-103285.490190</td>
+<td>30155.701244</td>
+<td>70270.456765</td>
+<td>40114.755521</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">156</th>
+<td>Bestand_2024</td>
+<td>2024</td>
+<td>EFH_1G|vor1919|FW_Wien|PV70|noFlex|Wien|Leicht</td>
+<td>building_sector_v2</td>
+<td>EFH_1G</td>
+<td>vor1919</td>
+<td>FW_Wien</td>
+<td>PV70</td>
+<td>noFlex</td>
+<td>Wien</td>
+<td>...</td>
+<td>32.683824</td>
+<td>0</td>
+<td>177.710138</td>
+<td>32.683824</td>
+<td>145.026314</td>
+<td>3120.262872</td>
+<td>5324.408006</td>
+<td>3266.389695</td>
+<td>17760.178965</td>
+<td>14493.789270</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">157</th>
+<td>Bestand_2024</td>
+<td>2024</td>
+<td>EFH_1G|vor1919|FW_Wien|PV70|noFlex|Wien|mittel</td>
+<td>building_sector_v2</td>
+<td>EFH_1G</td>
+<td>vor1919</td>
+<td>FW_Wien</td>
+<td>PV70</td>
+<td>noFlex</td>
+<td>Wien</td>
+<td>...</td>
+<td>32.681988</td>
+<td>0</td>
+<td>177.710138</td>
+<td>32.681988</td>
+<td>145.028149</td>
+<td>5767.243460</td>
+<td>9837.037274</td>
+<td>6030.812499</td>
+<td>32792.879824</td>
+<td>26762.067325</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">158</th>
+<td>Bestand_2024</td>
+<td>2024</td>
+<td>EFH_1G|vor1919|FW_Wien|PV70|noFlex|Wien|schwer</td>
+<td>building_sector_v2</td>
+<td>EFH_1G</td>
+<td>vor1919</td>
+<td>FW_Wien</td>
+<td>PV70</td>
+<td>noFlex</td>
+<td>Wien</td>
+<td>...</td>
+<td>32.683765</td>
+<td>0</td>
+<td>177.710138</td>
+<td>32.683765</td>
+<td>145.026373</td>
+<td>5760.772075</td>
+<td>9830.565889</td>
+<td>6031.140249</td>
+<td>32792.879824</td>
+<td>26761.739575</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">168</th>
+<td>Bestand_2024</td>
+<td>2024</td>
+<td>EFH_1G|vor1919|FW_Wien|PV90|noFlex|Wien|Leicht</td>
+<td>building_sector_v2</td>
+<td>EFH_1G</td>
+<td>vor1919</td>
+<td>FW_Wien</td>
+<td>PV90</td>
+<td>noFlex</td>
+<td>Wien</td>
+<td>...</td>
+<td>32.683824</td>
+<td>0</td>
+<td>228.484462</td>
+<td>32.683824</td>
+<td>195.800639</td>
+<td>7584.077014</td>
+<td>9053.507104</td>
+<td>2177.593130</td>
+<td>15223.010541</td>
+<td>13045.417411</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">169</th>
+<td>Bestand_2024</td>
+<td>2024</td>
+<td>EFH_1G|vor1919|FW_Wien|PV90|noFlex|Wien|mittel</td>
+<td>building_sector_v2</td>
+<td>EFH_1G</td>
+<td>vor1919</td>
+<td>FW_Wien</td>
+<td>PV90</td>
+<td>noFlex</td>
+<td>Wien</td>
+<td>...</td>
+<td>32.681988</td>
+<td>0</td>
+<td>228.484462</td>
+<td>32.681988</td>
+<td>195.802474</td>
+<td>14007.383616</td>
+<td>16720.579492</td>
+<td>4020.541666</td>
+<td>28108.182706</td>
+<td>24087.641040</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">170</th>
+<td>Bestand_2024</td>
+<td>2024</td>
+<td>EFH_1G|vor1919|FW_Wien|PV90|noFlex|Wien|schwer</td>
+<td>building_sector_v2</td>
+<td>EFH_1G</td>
+<td>vor1919</td>
+<td>FW_Wien</td>
+<td>PV90</td>
+<td>noFlex</td>
+<td>Wien</td>
+<td>...</td>
+<td>32.683765</td>
+<td>0</td>
+<td>228.484462</td>
+<td>32.683765</td>
+<td>195.800698</td>
+<td>14003.069359</td>
+<td>16716.265235</td>
+<td>4020.760166</td>
+<td>28108.182706</td>
+<td>24087.422540</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">183</th>
+<td>Bestand_2024</td>
+<td>2024</td>
+<td>EFH_1G|vor1919|FW_erneu|PV30|noFlex|Innsbruck|...</td>
+<td>building_sector_v2</td>
+<td>EFH_1G</td>
+<td>vor1919</td>
+<td>FW_erneu</td>
+<td>PV30</td>
+<td>noFlex</td>
+<td>Innsbruck</td>
+<td>...</td>
+<td>33.268587</td>
+<td>0</td>
+<td>76.161487</td>
+<td>33.268587</td>
+<td>42.892900</td>
+<td>-54870.723063</td>
+<td>-53531.754129</td>
+<td>2019.760183</td>
+<td>4623.819431</td>
+<td>2604.059248</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">184</th>
+<td>Bestand_2024</td>
+<td>2024</td>
+<td>EFH_1G|vor1919|FW_erneu|PV30|noFlex|Innsbruck|...</td>
+<td>building_sector_v2</td>
+<td>EFH_1G</td>
+<td>vor1919</td>
+<td>FW_erneu</td>
+<td>PV30</td>
+<td>noFlex</td>
+<td>Innsbruck</td>
+<td>...</td>
+<td>33.261267</td>
+<td>0</td>
+<td>76.161487</td>
+<td>33.261267</td>
+<td>42.900220</td>
+<td>-99852.353870</td>
+<td>-97413.977623</td>
+<td>3677.345681</td>
+<td>8420.368231</td>
+<td>4743.022550</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">185</th>
+<td>Bestand_2024</td>
+<td>2024</td>
+<td>EFH_1G|vor1919|FW_erneu|PV30|noFlex|Innsbruck|...</td>
+<td>building_sector_v2</td>
+<td>EFH_1G</td>
+<td>vor1919</td>
+<td>FW_erneu</td>
+<td>PV30</td>
+<td>noFlex</td>
+<td>Innsbruck</td>
+<td>...</td>
+<td>33.259384</td>
+<td>0</td>
+<td>76.161487</td>
+<td>33.259384</td>
+<td>42.902104</td>
+<td>-99834.072689</td>
+<td>-97395.696441</td>
+<td>3677.137471</td>
+<td>8420.368231</td>
+<td>4743.230759</td>
+</tr>
+</tbody>
+</table>
+
+<p>12 rows × 30 columns</p>
+</div>
+</div>
 </div>
 </section>
-<section id="sec-gebaeude-pe" class="level2">
-<h2 class="anchored" data-anchor-id="sec-gebaeude-pe">6. PE-Bewertung realer Import-/Exportflüsse</h2>
-<p>PEI_saldo_project = PEI_export − PEI_import. Netzbezug und flexible Bezüge sind Komponenten, thermische Energieträger bleiben enthalten. Die Größen sind keine virtuellen Kontextbilanzen. Für synthetisches PV0 bleiben PE-Kennwerte offen; daher wird keine vollständige nationale PE-Summe behauptet. Die physische Stromrechnung ist davon unabhängig vollständig.</p>
-<div id="d083f6b8" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-11-05T15:04:26.051085Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-11-05T15:04:26.050002Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-11-05T15:04:27.888566Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-11-05T15:04:27.886034Z&quot;}}">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>data[<span class="st">'PE_Saldo'</span>] <span class="op">=</span> data.PEI_saldo_project</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>pe_records <span class="op">=</span> []</span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> year, c <span class="kw">in</span> area_cols.items():</span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> metric <span class="kw">in</span> [<span class="st">'PEI_grid_import'</span>, <span class="st">'PEI_flex_import'</span>, <span class="st">'PEI_import'</span>, <span class="st">'PEI_export'</span>, <span class="st">'PE_Saldo'</span>]:</span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>        a <span class="op">=</span> aggregate(data[metric], data[c])</span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>        pe_records.append({<span class="st">'Stand'</span>: year, <span class="st">'Größe'</span>: metric, <span class="st">'GWh_PE/a'</span>: a[<span class="st">'kWh'</span>] <span class="op">/</span> <span class="fl">1000000.0</span>, <span class="st">'PJ_PE/a'</span>: a[<span class="st">'kWh'</span>] <span class="op">*</span> <span class="fl">3.6e-09</span>, <span class="st">'bekannter Teil [PJ PE/a]'</span>: a[<span class="st">'bekannte_kWh'</span>] <span class="op">*</span> <span class="fl">3.6e-09</span>, <span class="st">'fehlende BGF [m²]'</span>: a[<span class="st">'fehlende_BGF_m2'</span>]})</span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>primary <span class="op">=</span> pd.DataFrame(pe_records)</span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>display(primary[primary.Stand.eq(<span class="st">'2040'</span>)])</span>
-<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>implicit <span class="op">=</span> []</span>
-<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> carrier, ee_col, pe_col <span class="kw">in</span> [(<span class="st">'Netzstrom'</span>, <span class="st">'Grid_to_building_min'</span>, <span class="st">'PEI_grid_import'</span>), (<span class="st">'PV-Export'</span>, <span class="st">'PV_to_Egrid'</span>, <span class="st">'PEI_export'</span>), (<span class="st">'Fernwärme'</span>, <span class="st">'EUI_district_heating'</span>, <span class="st">'PEI_district_heating'</span>), (<span class="st">'Gas'</span>, <span class="st">'EUI_natural_gas'</span>, <span class="st">'PEI_natural_gas'</span>), (<span class="st">'Biomasse'</span>, <span class="st">'EUI_biomass'</span>, <span class="st">'PEI_biomass'</span>), (<span class="st">'Sonstige inkl. Öl'</span>, <span class="st">'EUI_other'</span>, <span class="st">'PEI_other'</span>)]:</span>
-<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>    f <span class="op">=</span> data[pe_col].div(data[ee_col].where(data[ee_col].ne(<span class="dv">0</span>)))</span>
-<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>    implicit.append(pd.DataFrame({<span class="st">'Archetype'</span>: data.Archetype, <span class="st">'Träger'</span>: carrier, <span class="st">'f_PE_effektiv'</span>: f, <span class="st">'Bezugsjahr'</span>: params[<span class="st">'jahr_pe_bewertung'</span>]}))</span>
-<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>implicit <span class="op">=</span> pd.concat(implicit, ignore_index<span class="op">=</span><span class="va">True</span>)</span>
-<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>display(implicit.groupby(<span class="st">'Träger'</span>).f_PE_effektiv.agg([<span class="st">'min'</span>, <span class="st">'max'</span>]))</span>
-<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>primary.to_csv(OUT <span class="op">/</span> <span class="st">'primaerenergiebilanz.csv'</span>, index<span class="op">=</span><span class="va">False</span>)</span>
-<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>implicit.to_csv(OUT <span class="op">/</span> <span class="st">'pe_faktoren_effektiv.csv'</span>, index<span class="op">=</span><span class="va">False</span>)</span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
+<section id="summen-rekonstruieren-und-mit-dem-rechenkern-abgleichen" class="level2">
+<h2 class="anchored" data-anchor-id="summen-rekonstruieren-und-mit-dem-rechenkern-abgleichen">5. Summen rekonstruieren und mit dem Rechenkern abgleichen</h2>
+<p>Für jeden Kennwert gilt: <strong>Jahressumme = Σ(Typen-NGF × Intensität)</strong>. Der mittlere virtuelle Zielabstand ist die Jahressumme von <code>PEI_balance</code> geteilt durch die gesamte NGF. Zusätzlich wird der NGF-Anteil mit <code>PEI_balance ≥ 0</code> gezeigt: Ein positiver Mittelwert allein sagt nicht, dass alle Typen das Ziel erreichen.</p>
+<p>Der Vergleich mit dem Rechenkern ist eine unabhängige Aggregation derselben Eingaben, keine Validierung gegen Messdaten. Da keine gespeicherten Ergebnisordner mitgeliefert wurden, können wir damit keine früheren Exportdateien des Kollegen numerisch bestätigen. <code>PEI_balance</code> ist im bisherigen Energieexport des Kollegen nicht enthalten und wird hier ergänzt.</p>
+<div id="943d909c" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-11-19T16:56:30.766875Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-11-19T16:56:30.766633Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-11-19T16:56:31.040493Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-11-19T16:56:31.039094Z&quot;}}" data-execution_count="5">
+<div class="cell-output cell-output-display">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">NGF_m2</th>
+<th data-quarto-table-cell-role="th">BGF_m2</th>
+<th data-quarto-table-cell-role="th">PEI_balance_kWh_a</th>
+<th data-quarto-table-cell-role="th">PEI_saldo_project_kWh_a</th>
+<th data-quarto-table-cell-role="th">Strombedarf_ohne_Mobilitaet_kWh_a</th>
+<th data-quarto-table-cell-role="th">PV_total_kWh_a</th>
+<th data-quarto-table-cell-role="th">Stromsaldo_kWh_a</th>
+<th data-quarto-table-cell-role="th">PEI_balance_kWh_m2_NGF_a</th>
+<th data-quarto-table-cell-role="th">NGF_Ziel_erreicht_pct</th>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">Szenario</th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">Bestand_2024</th>
+<td>889872558.0</td>
+<td>1.112341e+09</td>
+<td>-1.888234e+11</td>
+<td>-2.026946e+11</td>
+<td>3.820762e+10</td>
+<td>9.232340e+09</td>
+<td>-2.897528e+10</td>
+<td>-212.191464</td>
+<td>3.552368</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">Transition_2040</th>
+<td>889872558.0</td>
+<td>1.112341e+09</td>
+<td>-8.211322e+10</td>
+<td>-9.598449e+10</td>
+<td>3.984437e+10</td>
+<td>2.967538e+10</td>
+<td>-1.016899e+10</td>
+<td>-92.275261</td>
+<td>21.636829</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">Transition_2040_Wachstum</th>
+<td>950000000.0</td>
+<td>1.187500e+09</td>
+<td>-8.808449e+10</td>
+<td>-1.028930e+11</td>
+<td>4.384400e+10</td>
+<td>3.168050e+10</td>
+<td>-1.216350e+10</td>
+<td>-92.720517</td>
+<td>22.268776</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">Transition_2040_ambitioniert</th>
+<td>950000000.0</td>
+<td>1.187500e+09</td>
+<td>-3.416085e+10</td>
+<td>-4.896938e+10</td>
+<td>4.021570e+10</td>
+<td>3.872062e+10</td>
+<td>-1.495080e+09</td>
+<td>-35.958785</td>
+<td>33.929948</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">Szenario</th>
+<th data-quarto-table-cell-role="th">Kennwert</th>
+<th data-quarto-table-cell-role="th">Notebook_kWh</th>
+<th data-quarto-table-cell-role="th">Modell_kWh</th>
+<th data-quarto-table-cell-role="th">Differenz_kWh</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">0</th>
+<td>Bestand_2024</td>
+<td>PV_total</td>
+<td>9.232340e+09</td>
+<td>9.232340e+09</td>
+<td>0.000000</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">1</th>
+<td>Bestand_2024</td>
+<td>PEI_saldo_project</td>
+<td>-2.026946e+11</td>
+<td>-2.026946e+11</td>
+<td>0.000000</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">2</th>
+<td>Transition_2040</td>
+<td>PV_total</td>
+<td>2.967538e+10</td>
+<td>2.967538e+10</td>
+<td>0.000004</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">3</th>
+<td>Transition_2040</td>
+<td>PEI_saldo_project</td>
+<td>-9.598449e+10</td>
+<td>-9.598449e+10</td>
+<td>0.000000</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">4</th>
+<td>Transition_2040_Wachstum</td>
+<td>PV_total</td>
+<td>3.168050e+10</td>
+<td>3.168050e+10</td>
+<td>0.000000</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">5</th>
+<td>Transition_2040_Wachstum</td>
+<td>PEI_saldo_project</td>
+<td>-1.028930e+11</td>
+<td>-1.028930e+11</td>
+<td>0.000000</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">6</th>
+<td>Transition_2040_ambitioniert</td>
+<td>PV_total</td>
+<td>3.872062e+10</td>
+<td>3.872062e+10</td>
+<td>0.000000</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">7</th>
+<td>Transition_2040_ambitioniert</td>
+<td>PEI_saldo_project</td>
+<td>-4.896938e+10</td>
+<td>-4.896938e+10</td>
+<td>0.000015</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
 </div>
 </section>
-<section id="sec-gebaeude-gfz" class="level2">
-<h2 class="anchored" data-anchor-id="sec-gebaeude-gfz">7. GFZ-Zuordnung, Flächengewichtung und Dichte-Erwartungswert</h2>
-<p>Die Zuordnung aus <code>zuordnung_gfz</code> wird auf die Kategorien der vorhandenen GFZ-Hochrechnung 2021 übersetzt. Die Quellgruppen mit einer bzw. zwei Wohnungen haben identische Zuordnungen und werden <strong>einmal</strong> auf die zusammengefasste GFZ-Gruppe „Ein- und Zweifamilienhäuser“ angewendet. Die 50/50-Aufteilung zwischen EFH_2G und RH_2G wird übernommen. Die vom Auftraggeber am 23.10.2026 bestätigte Regel lautet: <strong>Eine einzige Zielklasse erhält 100 %; die zweite Zielspalte dient nur einer Aufteilung.</strong> Die aktualisierte Excel enthält diese 100-%-Werte nun explizit. Es sind keine fehlenden Quellanteile mehr zu ergänzen. Die Regel bleibt für weitere Einzelzuordnungen implementiert und wird im Audit protokolliert. MFH_2G hat keine Zuordnung und keine positive Fläche; sein Erwartungswert bleibt leer. Es wird kein Ersatz aus anderen Gebäudetypen erfunden.</p>
-<p>Aus GFZ-Referenzfläche <span class="math inline">\(R_{u,g,j}\)</span> und Zuordnungsanteil <span class="math inline">\(z_{u,g,k}\)</span> entsteht <span class="math display">\[R_{k,j}=\sum_{u,g}z_{u,g,k}R_{u,g,j},\qquad s_{j|k}=R_{k,j}/\sum_j R_{k,j}.\]</span> Diese <strong>bedingte Verteilung</strong> wird auf die unabhängig gelieferte Typenfläche übertragen: <span class="math inline">\(A_{k,j}^{2040}=A_k^{2040}s_{j|k}\)</span>. Die Referenzfläche wird nicht als zusätzliche nationale Fläche addiert. Die Annahme ist, dass Hüll- und Technikvarianten derselben Geometrie die gleiche Dichteverteilung besitzen; eine räumliche Änderung bis 2040 ist damit noch nicht modelliert. Die vorhandene freigegebene GFZ-Ersatzregel (1,696 % Referenz-BGF) bleibt unverändert.</p>
-<p>Als historische <strong>elektrische</strong> Referenz wird die Tabellenparametrisierung der PED-Typen aus Schneider et al.&nbsp;(2023), Gl. 7/Tabelle 5, verwendet <span class="citation" data-cites="schneider2023context">(<a href="../../references.html#ref-schneider2023context" role="doc-biblioref">Schneider u.&nbsp;a. 2023</a>)</span>: <span class="math display">\[c_D^{el}(d)=-\min\left(\frac{30{,}4}{d+0{,}15}-26{,}4;62\right)\quad[kWh/(m^2\,BGF\,a)].\]</span> Die Originaltabelle enthält widersprüchliche EE-/PE-Einheitenbeschriftungen (insbesondere bei der Begrenzung). Hier wird die elektrische Tabellenlesart als <strong>Referenzansatz</strong> dokumentiert; daraus entsteht keine neu freigegebene Anforderung. Die bereits PE-gewichteten Kontextwerte der Einzelsimulation werden nicht als EE ausgegeben und nicht zur GFZ-Hochrechnung benutzt. Positive <span class="math inline">\(c_D\)</span> sind virtuelle Gutschriften, negative zusätzliche Anforderungen.</p>
-<p><span class="math display">\[\mathbb E_k[GFZ]=\sum_j s_{j|k}d_j,\qquad\mathbb E_k[c_D]=\sum_j s_{j|k}c_D(d_j).\]</span> Wegen der Nichtlinearität gilt im Allgemeinen <span class="math inline">\(\mathbb E[c_D(d)]\ne c_D(\mathbb E[d])\)</span>. NGF-spezifische Kontextwerte ergeben sich durch Division durch <span class="math inline">\(r\)</span>, noch <strong>ohne PE-Umrechnung</strong>. Die Verteilung des Kontextwerts wird für jeden GFZ-Bin exportiert; die Typenerwartung beschreibt den Kalibrierungsansatz, nicht einer automatischen Gutschrift für alle Typen.</p>
-<section id="was-bedeutet-der-erwartungswert" class="level3">
-<h3 class="anchored" data-anchor-id="was-bedeutet-der-erwartungswert">Was bedeutet der Erwartungswert?</h3>
+<section id="wo-entsteht-der-abstand-zum-virtuellen-ziel" class="level2">
+<h2 class="anchored" data-anchor-id="wo-entsteht-der-abstand-zum-virtuellen-ziel">6. Wo entsteht der Abstand zum virtuellen Ziel?</h2>
+<p>Die Gruppenauswertung zeigt Flächenanteil, mittleren Zielabstand und absoluten Beitrag. So lässt sich unterscheiden, ob eine große Abweichung vor allem aus einem hohen Flächenanteil oder ungünstiger Performance entsteht. Die GFZ ist hier ausdrücklich die <strong>simulierte GFZ</strong>, keine nationale GFZ-Verteilung.</p>
+<p>Für eine spätere andere GFZ-Verteilung muss der bereits enthaltene Dichtebeitrag durch den zur Kohorte passenden Beitrag ersetzt werden. Dies gehört in einen eigenen, erklärten Bewertungsschritt; die übrige simulierte Performance bleibt unverändert. Die erste Konsolidierung nimmt diesen Eingriff noch nicht vor.</p>
+<div id="fe0c8fa3" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-11-19T16:56:31.043437Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-11-19T16:56:31.043087Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-11-19T16:56:31.527548Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-11-19T16:56:31.526684Z&quot;}}" data-execution_count="6">
+<div class="cell-output cell-output-display">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">NGF_m2</th>
+<th data-quarto-table-cell-role="th">PE_Zielabstand_kWh_a</th>
+<th data-quarto-table-cell-role="th">NGF_Anteil_pct</th>
+<th data-quarto-table-cell-role="th">PE_Zielabstand_kWh_m2_NGF_a</th>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">geometry</th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">EFH_1G</th>
+<td>5.137206e+07</td>
+<td>-1.623143e+09</td>
+<td>5.407586</td>
+<td>-31.595829</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">EFH_2G</th>
+<td>1.328859e+08</td>
+<td>-9.286618e+09</td>
+<td>13.987994</td>
+<td>-69.884129</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">GWB_5G</th>
+<td>3.541069e+07</td>
+<td>-6.995554e+08</td>
+<td>3.727441</td>
+<td>-19.755486</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">GWB_7G</th>
+<td>7.332863e+07</td>
+<td>-1.104863e+09</td>
+<td>7.718803</td>
+<td>-15.067279</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">MFH_2G</th>
+<td>8.510961e+07</td>
+<td>-3.426015e+09</td>
+<td>8.958906</td>
+<td>-40.254150</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">MFH_4G</th>
+<td>5.854559e+07</td>
+<td>-1.290145e+09</td>
+<td>6.162694</td>
+<td>-22.036582</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">NiWo_1G</th>
+<td>7.699229e+07</td>
+<td>2.068142e+09</td>
+<td>8.104451</td>
+<td>26.861676</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">NiWo_2G</th>
+<td>1.158054e+08</td>
+<td>-2.055442e+09</td>
+<td>12.190040</td>
+<td>-17.749106</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">NiWo_3G</th>
+<td>1.533035e+08</td>
+<td>-1.123637e+10</td>
+<td>16.137211</td>
+<td>-73.294942</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">RH_2G</th>
+<td>1.672463e+08</td>
+<td>-5.506836e+09</td>
+<td>17.604875</td>
+<td>-32.926500</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">NGF_m2</th>
+<th data-quarto-table-cell-role="th">PE_Zielabstand_kWh_a</th>
+<th data-quarto-table-cell-role="th">NGF_Anteil_pct</th>
+<th data-quarto-table-cell-role="th">PE_Zielabstand_kWh_m2_NGF_a</th>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">quality</th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">1919-44</th>
+<td>1.900000e+07</td>
+<td>-5.210291e+09</td>
+<td>2.000000</td>
+<td>-274.225861</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">1945-59</th>
+<td>1.900000e+07</td>
+<td>-5.407903e+09</td>
+<td>2.000000</td>
+<td>-284.626463</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">1990-99</th>
+<td>7.866473e+07</td>
+<td>-5.991800e+09</td>
+<td>8.280498</td>
+<td>-76.168821</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">Neu_10cm</th>
+<td>5.793070e+07</td>
+<td>-2.621446e+09</td>
+<td>6.097969</td>
+<td>-45.251411</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">Neu_20cm</th>
+<td>3.325000e+08</td>
+<td>-7.054950e+09</td>
+<td>35.000000</td>
+<td>-21.217895</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">Neu_30cm</th>
+<td>4.239046e+08</td>
+<td>-2.513651e+09</td>
+<td>44.621533</td>
+<td>-5.929757</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">vor1919</th>
+<td>1.900000e+07</td>
+<td>-5.360805e+09</td>
+<td>2.000000</td>
+<td>-282.147610</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">NGF_m2</th>
+<th data-quarto-table-cell-role="th">PE_Zielabstand_kWh_a</th>
+<th data-quarto-table-cell-role="th">NGF_Anteil_pct</th>
+<th data-quarto-table-cell-role="th">PE_Zielabstand_kWh_m2_NGF_a</th>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">energy</th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">Bio</th>
+<td>1.425000e+08</td>
+<td>-1.614990e+10</td>
+<td>15.000000</td>
+<td>-113.332609</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">FW_Wien</th>
+<td>1.753699e+08</td>
+<td>-1.540573e+09</td>
+<td>18.459990</td>
+<td>-8.784706</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">FW_erneu</th>
+<td>1.096301e+08</td>
+<td>-1.192831e+10</td>
+<td>11.540010</td>
+<td>-108.805082</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">WP_Luft</th>
+<td>1.744862e+08</td>
+<td>-3.181142e+09</td>
+<td>18.366974</td>
+<td>-18.231477</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">WP_Sole</th>
+<td>1.188973e+08</td>
+<td>-5.569657e+08</td>
+<td>12.515508</td>
+<td>-4.684425</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">WP_Sole_fc</th>
+<td>1.188973e+08</td>
+<td>-4.986521e+08</td>
+<td>12.515508</td>
+<td>-4.193972</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">WP_Wasser</th>
+<td>1.102191e+08</td>
+<td>-3.053053e+08</td>
+<td>11.602011</td>
+<td>-2.769985</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">NGF_m2</th>
+<th data-quarto-table-cell-role="th">PE_Zielabstand_kWh_a</th>
+<th data-quarto-table-cell-role="th">NGF_Anteil_pct</th>
+<th data-quarto-table-cell-role="th">PE_Zielabstand_kWh_m2_NGF_a</th>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">pv</th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">PV0</th>
+<td>475000000.0</td>
+<td>-4.856071e+10</td>
+<td>50.0</td>
+<td>-102.233072</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">PV30</th>
+<td>142500000.0</td>
+<td>-5.985282e+09</td>
+<td>15.0</td>
+<td>-42.001982</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">PV70</th>
+<td>142500000.0</td>
+<td>5.464587e+09</td>
+<td>15.0</td>
+<td>38.347978</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">PV90</th>
+<td>190000000.0</td>
+<td>1.492056e+10</td>
+<td>20.0</td>
+<td>78.529256</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">NGF_m2</th>
+<th data-quarto-table-cell-role="th">PE_Zielabstand_kWh_a</th>
+<th data-quarto-table-cell-role="th">NGF_Anteil_pct</th>
+<th data-quarto-table-cell-role="th">PE_Zielabstand_kWh_m2_NGF_a</th>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">flex</th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">Flex</th>
+<td>5.944866e+06</td>
+<td>9.327214e+07</td>
+<td>0.625775</td>
+<td>15.689527</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">noFlex</th>
+<td>9.440551e+08</td>
+<td>-3.425412e+10</td>
+<td>99.374225</td>
+<td>-36.284023</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+
+
+<table class="dataframe caption-top table table-sm table-striped small" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">NGF_m2</th>
+<th data-quarto-table-cell-role="th">PE_Zielabstand_kWh_a</th>
+<th data-quarto-table-cell-role="th">NGF_Anteil_pct</th>
+<th data-quarto-table-cell-role="th">PE_Zielabstand_kWh_m2_NGF_a</th>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">FSI</th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">0.666667</th>
+<td>5.137206e+07</td>
+<td>-1.623143e+09</td>
+<td>5.407586</td>
+<td>-31.595829</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">0.833333</th>
+<td>2.098782e+08</td>
+<td>-7.218476e+09</td>
+<td>22.092445</td>
+<td>-34.393641</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">1.250000</th>
+<td>8.510961e+07</td>
+<td>-3.426015e+09</td>
+<td>8.958906</td>
+<td>-40.254150</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">1.666667</th>
+<td>2.830517e+08</td>
+<td>-7.562278e+09</td>
+<td>29.794915</td>
+<td>-26.716949</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">2.500000</th>
+<td>1.533035e+08</td>
+<td>-1.123637e+10</td>
+<td>16.137211</td>
+<td>-73.294942</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">3.571429</th>
+<td>5.854559e+07</td>
+<td>-1.290145e+09</td>
+<td>6.162694</td>
+<td>-22.036582</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th">4.807692</th>
+<td>3.541069e+07</td>
+<td>-6.995554e+08</td>
+<td>3.727441</td>
+<td>-19.755486</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th">5.833333</th>
+<td>7.332863e+07</td>
+<td>-1.104863e+09</td>
+<td>7.718803</td>
+<td>-15.067279</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><a href="Gebaeudesektormodell_Analyse_files/figure-html/cell-7-output-7.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="Gebaeudesektormodell_Analyse_files/figure-html/cell-7-output-7.png" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="kalibrierung-und-nächste-ausarbeitung" class="level2">
+<h2 class="anchored" data-anchor-id="kalibrierung-und-nächste-ausarbeitung">7. Kalibrierung und nächste Ausarbeitung</h2>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 33%">
@@ -768,209 +2217,52 @@ window.Quarto = {
 </colgroup>
 <thead>
 <tr class="header">
-<th>Symbol</th>
-<th>Bedeutung</th>
-<th>Einheit</th>
+<th>Fragestellung</th>
+<th>Wo ändern?</th>
+<th>Was neu rechnen?</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><span class="math inline">\(k\)</span></td>
-<td>Energetischer Gebäudetyp; die GFZ-Verteilung folgt seiner Geometrie</td>
-<td>–</td>
+<td>Anderes registriertes Szenario</td>
+<td><code>SZENARIEN</code> / <code>DETAILSZENARIO</code> oben</td>
+<td>Notebook</td>
 </tr>
 <tr class="even">
-<td><span class="math inline">\(u,g\)</span></td>
-<td>Statistische Nutzung und Geschoßklasse</td>
-<td>–</td>
+<td>Andere PV-, Versorgungs-, Qualitäts- oder Flexanteile</td>
+<td>Eigene Verteilungsdatei und eigenes Szenarioprofil</td>
+<td>Bei Bedarf Prior-Ableitung in 01, danach dieses Notebook</td>
 </tr>
 <tr class="odd">
-<td><span class="math inline">\(j\)</span></td>
-<td>GFZ-Bin im Referenzraster</td>
-<td>–</td>
+<td>Andere Gesamtfläche 2040</td>
+<td><code>ziel_ngf_m2</code> im Szenarioprofil, konsistente Flächenannahmen</td>
+<td>Flächenbildung und Analyse</td>
 </tr>
 <tr class="even">
-<td><span class="math inline">\(d_j\)</span></td>
-<td>GFZ des Bins</td>
-<td>m² BGF / m² Grundstück</td>
+<td>Andere Typenperformance</td>
+<td>Neue Simulationen aus PEExcel</td>
+<td>Verknüpfung und Analyse; nicht nur die Ergebnisgrafik skalieren</td>
 </tr>
 <tr class="odd">
-<td><span class="math inline">\(R_{u,g,j}\)</span></td>
-<td>Referenz-BGF der Nutzung/Geschoßklasse im Bin</td>
-<td>m² BGF</td>
-</tr>
-<tr class="even">
-<td><span class="math inline">\(z_{u,g,k}\)</span></td>
-<td>Zuordnungsanteil aus <code>zuordnung_gfz</code></td>
-<td>0–1</td>
-</tr>
-<tr class="odd">
-<td><span class="math inline">\(s_{j\mid k}\)</span></td>
-<td>Anteil des Bins an der BGF von Typ <span class="math inline">\(k\)</span>; Summe über <span class="math inline">\(j\)</span> = 1</td>
-<td>0–1</td>
-</tr>
-<tr class="even">
-<td><span class="math inline">\(c_D(d_j)\)</span></td>
-<td>Dichtewert im Bin; positiv = Gutschrift, negativ = Zusatzanforderung</td>
-<td>kWh EE/(m² BGF·a)</td>
-</tr>
-<tr class="odd">
-<td><span class="math inline">\(\mathbb E_k[c_D]\)</span></td>
-<td>Mit <span class="math inline">\(s_{j\mid k}\)</span> gewichteter mittlerer Dichtewert des Typs</td>
-<td>kWh EE/(m² BGF·a)</td>
-</tr>
-<tr class="even">
-<td><span class="math inline">\(A_{BGF,k}\)</span></td>
-<td>Nationale BGF des Typs 2040</td>
-<td>m² BGF</td>
-</tr>
-<tr class="odd">
-<td><span class="math inline">\(C_{D,k}\)</span></td>
-<td>Virtueller jährlicher Beitrag des Typs: <span class="math inline">\(A_{BGF,k}\mathbb E_k[c_D]\)</span></td>
-<td>kWh EE-Äquivalent/a</td>
+<td>Andere GFZ-Verteilung / virtuelle Parameter</td>
+<td>Künftiger separater Bewertungsschritt</td>
+<td>Kontextbeitrag ersetzen, Zielabstände neu aggregieren</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Beispiel EFH_1G:</strong> Der mittlere Kontextwert beträgt −41,63 kWh EE/(m² BGF·a). Bei 1 Mio. m² BGF entspricht dies −0,150 PJ-Äquivalent/a. Das negative Vorzeichen erhöht die Anforderung an diese Geometrie; es beschreibt keine zusätzliche Stromlast.</p>
+<p>Für die wissenschaftliche Ausarbeitung sind als nächste Schritte zu dokumentieren: Herkunft und Begründung der Szenarioanteile; Unabhängigkeitsannahmen der Verteilung; empirische Vergleichswerte und Unsicherheit; Übertragung der GFZ-Verteilung auf 2040; Sensitivitäten gegenüber PV, Sanierung, Versorgung und Flächenentwicklung. Flächenkalibrierung, energetische Validierung und normative Zielbewertung werden dabei getrennt beschrieben.</p>
 </section>
-<section id="anwendung-im-vergleichsfall" class="level3">
-<h3 class="anchored" data-anchor-id="anwendung-im-vergleichsfall">Anwendung im Vergleichsfall</h3>
-<p>Die physische Typenbilanz lautet <span class="math inline">\(b_k=r(e_{PV,k}-e_{el,k})\)</span> je m² BGF. Der Vergleichsfall ergänzt sie zu <span class="math inline">\(b_{k,D}=b_k+\mathbb E_k[c_D]\)</span>. Damit gilt national:</p>
-<p><span class="math display">\[B_D=B_{phys}+C_D,\qquad C_D=\sum_k A_{BGF,k}\mathbb E_k[c_D].\]</span></p>
-<p>Die anschließende Grafik zeigt Bedarf, PV und Kontextwert getrennt für <strong>alle Typen</strong>. Geometrieauswahl und Achsenregler halten die Darstellung lesbar. Der Tooltip nennt die nationale BGF; Typen mit Nullfläche tragen national nichts bei. Für MFH_2G bleibt der nicht zugeordnete Kontextwert leer.</p>
-<p>Für den nationalen Vergleich wird die historische Formel auf alle positiv gewichteten Flächen angewandt. Das ist eine explizite Bewertungsvariante, keine Festlegung, dass jede Fläche PEQ-berechtigt ist. Eine eingeschränkte Anwendung benötigt typenspezifische PEQ-Anteile. Die physischen Kennwerte und die PE-Bilanz werden durch diese Variante nicht verändert.</p>
-<div id="7ee9d971" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-11-05T15:04:27.894967Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-11-05T15:04:27.893861Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-11-05T15:05:28.200779Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-11-05T15:05:28.199235Z&quot;}}">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>mapping <span class="op">=</span> inputs[<span class="st">'GFZ_Zuordnung'</span>].copy()</span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>use_map <span class="op">=</span> {<span class="st">'Gebäude für Gemeinschaften'</span>: <span class="st">'Gemeinschaftsgebäude'</span>, <span class="st">'Hotels und ähnliche Gebäude'</span>: <span class="st">'Hotels o.Ä.'</span>, <span class="st">'Bürogebäude'</span>: <span class="st">'Büronutzung'</span>, <span class="st">'Groß- und Einzelhandelsgebäude'</span>: <span class="st">'Groß- und Einzelhandelsgebäude'</span>, <span class="st">'Gebäude des Verkehrs- und Nachrichtenwesens'</span>: <span class="st">'Verkehrs- und Nachrichtenwesen'</span>, <span class="st">'Industrie- und Lagergebäude'</span>: <span class="st">'Industrie und Lagerung'</span>, <span class="st">'Gebäude für Kultur- und Freizeitzwecke sowie des Bildungs- und Gesundheitswesens'</span>: <span class="st">'Kultur, Freizeit, Bildung und Gesundheit'</span>, <span class="st">'Wohngebäude mit einer Wohnung'</span>: <span class="st">'Ein- und Zweifamilienhäuser'</span>, <span class="st">'Wohngebäude mit zwei Wohnungen'</span>: <span class="st">'Ein- und Zweifamilienhäuser'</span>, <span class="st">'Wohngebäude mit drei und mehr Wohnungen'</span>: <span class="st">'Mehrfamilienhaus'</span>}</span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>mapping[<span class="st">'GWR_Nutzung'</span>] <span class="op">=</span> mapping.Nutzung.<span class="bu">map</span>(use_map)</span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>mapping[<span class="st">'GK'</span>] <span class="op">=</span> mapping.Geschoss.<span class="bu">str</span>.replace(<span class="st">' Geschoße'</span>, <span class="st">''</span>, regex<span class="op">=</span><span class="va">False</span>).<span class="bu">str</span>.replace(<span class="st">' Geschoß'</span>, <span class="st">''</span>, regex<span class="op">=</span><span class="va">False</span>).replace({<span class="st">'6 bis 10'</span>: <span class="st">'6-10'</span>, <span class="st">'11 und mehr'</span>: <span class="st">'11+'</span>})</span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>mapping[<span class="st">'Einzelziel_ergänzt'</span>] <span class="op">=</span> mapping.Anteil1.isna() <span class="op">&amp;</span> mapping.Archetype1.notna() <span class="op">&amp;</span> mapping.Archetype2.isna()</span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> params[<span class="st">'single_target_missing_share'</span>] <span class="op">==</span> <span class="dv">1</span>:</span>
-<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>    mapping.loc[mapping[<span class="st">'Einzelziel_ergänzt'</span>], <span class="st">'Anteil1'</span>] <span class="op">=</span> <span class="fl">1.0</span></span>
-<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>mapping.to_csv(OUT <span class="op">/</span> <span class="st">'gfz_zuordnung_audit.csv'</span>, index<span class="op">=</span><span class="va">False</span>)</span>
-<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>unique <span class="op">=</span> mapping.drop_duplicates([<span class="st">'GWR_Nutzung'</span>, <span class="st">'GK'</span>])</span>
-<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a><span class="bu">long</span> <span class="op">=</span> []</span>
-<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> _, row <span class="kw">in</span> unique.iterrows():</span>
-<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> n <span class="kw">in</span> [<span class="dv">1</span>, <span class="dv">2</span>]:</span>
-<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> pd.notna(row[<span class="ss">f'Archetype</span><span class="sc">{</span>n<span class="sc">}</span><span class="ss">'</span>]):</span>
-<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a>            <span class="bu">long</span>.append({<span class="st">'GWR_Nutzung'</span>: row.GWR_Nutzung, <span class="st">'GK'</span>: row.GK, <span class="st">'Geometrie'</span>: row[<span class="ss">f'Archetype</span><span class="sc">{</span>n<span class="sc">}</span><span class="ss">'</span>], <span class="st">'Anteil'</span>: row[<span class="ss">f'Anteil</span><span class="sc">{</span>n<span class="sc">}</span><span class="ss">'</span>]})</span>
-<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a>links <span class="op">=</span> pd.DataFrame(<span class="bu">long</span>)</span>
-<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a>gfz <span class="op">=</span> pd.read_csv(ROOT <span class="op">/</span> <span class="st">'Berechnungen/gfz_at/outputs/recalculated/gfz_distribution_by_province_use_storeys.csv'</span>, dtype<span class="op">=</span>{<span class="st">'GK'</span>: <span class="bu">str</span>})</span>
-<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a>joined <span class="op">=</span> gfz.merge(links, on<span class="op">=</span>[<span class="st">'GWR_Nutzung'</span>, <span class="st">'GK'</span>], how<span class="op">=</span><span class="st">'left'</span>, indicator<span class="op">=</span><span class="va">True</span>)</span>
-<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a>joined[<span class="st">'zugeordnete_BGF'</span>] <span class="op">=</span> joined.BGF_m2 <span class="op">*</span> joined.Anteil</span>
-<span id="cb7-19"><a href="#cb7-19" aria-hidden="true" tabindex="-1"></a>bins <span class="op">=</span> joined.groupby([<span class="st">'Geometrie'</span>, <span class="st">'GFZ'</span>], as_index<span class="op">=</span><span class="va">False</span>).zugeordnete_BGF.<span class="bu">sum</span>()</span>
-<span id="cb7-20"><a href="#cb7-20" aria-hidden="true" tabindex="-1"></a>bins[<span class="st">'s'</span>] <span class="op">=</span> bins.zugeordnete_BGF <span class="op">/</span> bins.groupby(<span class="st">'Geometrie'</span>).zugeordnete_BGF.transform(<span class="st">'sum'</span>)</span>
-<span id="cb7-21"><a href="#cb7-21" aria-hidden="true" tabindex="-1"></a>bins[<span class="st">'c_D_EE_BGF'</span>] <span class="op">=</span> <span class="op">-</span>np.minimum(<span class="bu">float</span>(params[<span class="st">'density_f_res'</span>]) <span class="op">/</span> (bins.GFZ <span class="op">+</span> <span class="bu">float</span>(params[<span class="st">'density_dx'</span>])) <span class="op">-</span> <span class="bu">float</span>(params[<span class="st">'density_f_ed'</span>]), <span class="bu">float</span>(params[<span class="st">'density_cutoff'</span>]))</span>
-<span id="cb7-22"><a href="#cb7-22" aria-hidden="true" tabindex="-1"></a>bins[<span class="st">'c_D_EE_NGF'</span>] <span class="op">=</span> bins.c_D_EE_BGF <span class="op">/</span> r</span>
-<span id="cb7-23"><a href="#cb7-23" aria-hidden="true" tabindex="-1"></a>bins[<span class="st">'gew_GFZ'</span>] <span class="op">=</span> bins.GFZ <span class="op">*</span> bins.s</span>
-<span id="cb7-24"><a href="#cb7-24" aria-hidden="true" tabindex="-1"></a>bins[<span class="st">'gew_c'</span>] <span class="op">=</span> bins.c_D_EE_BGF <span class="op">*</span> bins.s</span>
-<span id="cb7-25"><a href="#cb7-25" aria-hidden="true" tabindex="-1"></a>density <span class="op">=</span> bins.groupby(<span class="st">'Geometrie'</span>).agg(GFZ_Mittel<span class="op">=</span>(<span class="st">'gew_GFZ'</span>, <span class="st">'sum'</span>), c_D_EE_BGF<span class="op">=</span>(<span class="st">'gew_c'</span>, <span class="st">'sum'</span>), Referenz_BGF<span class="op">=</span>(<span class="st">'zugeordnete_BGF'</span>, <span class="st">'sum'</span>))</span>
-<span id="cb7-26"><a href="#cb7-26" aria-hidden="true" tabindex="-1"></a>density[<span class="st">'c_D_EE_NGF'</span>] <span class="op">=</span> density.c_D_EE_BGF <span class="op">/</span> r</span>
-<span id="cb7-27"><a href="#cb7-27" aria-hidden="true" tabindex="-1"></a>density[<span class="st">'c_am_GFZ_Mittel'</span>] <span class="op">=</span> <span class="op">-</span>np.minimum(<span class="bu">float</span>(params[<span class="st">'density_f_res'</span>]) <span class="op">/</span> (density.GFZ_Mittel <span class="op">+</span> <span class="bu">float</span>(params[<span class="st">'density_dx'</span>])) <span class="op">-</span> <span class="bu">float</span>(params[<span class="st">'density_f_ed'</span>]), <span class="bu">float</span>(params[<span class="st">'density_cutoff'</span>]))</span>
-<span id="cb7-28"><a href="#cb7-28" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> data.merge(density[[<span class="st">'GFZ_Mittel'</span>, <span class="st">'c_D_EE_BGF'</span>, <span class="st">'c_D_EE_NGF'</span>]], left_on<span class="op">=</span><span class="st">'Geometrie'</span>, right_index<span class="op">=</span><span class="va">True</span>, how<span class="op">=</span><span class="st">'left'</span>, validate<span class="op">=</span><span class="st">'many_to_one'</span>)</span>
-<span id="cb7-29"><a href="#cb7-29" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Nach bestätigter Einzelzielregel ergänzte leere Anteile:'</span>, <span class="bu">int</span>(mapping[<span class="st">'Einzelziel_ergänzt'</span>].<span class="bu">sum</span>()), <span class="st">'Quellzeilen'</span>)</span>
-<span id="cb7-30"><a href="#cb7-30" aria-hidden="true" tabindex="-1"></a>affected <span class="op">=</span> unique.loc[unique[<span class="st">'Einzelziel_ergänzt'</span>], [<span class="st">'GWR_Nutzung'</span>, <span class="st">'GK'</span>]]</span>
-<span id="cb7-31"><a href="#cb7-31" aria-hidden="true" tabindex="-1"></a>affected_area <span class="op">=</span> gfz.merge(affected, on<span class="op">=</span>[<span class="st">'GWR_Nutzung'</span>, <span class="st">'GK'</span>]).BGF_m2.<span class="bu">sum</span>()</span>
-<span id="cb7-32"><a href="#cb7-32" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'Davon betroffene Referenz-BGF [%]:'</span>, <span class="dv">100</span> <span class="op">*</span> affected_area <span class="op">/</span> gfz.BGF_m2.<span class="bu">sum</span>())</span>
-<span id="cb7-33"><a href="#cb7-33" aria-hidden="true" tabindex="-1"></a>display(density)</span>
-<span id="cb7-34"><a href="#cb7-34" aria-hidden="true" tabindex="-1"></a>matrix <span class="op">=</span> data.loc[data[<span class="st">'Nationale BGF 2040'</span>].gt(<span class="dv">0</span>), [<span class="st">'Archetype'</span>, <span class="st">'Geometrie'</span>, <span class="st">'Nationale BGF 2040'</span>]].merge(bins[[<span class="st">'Geometrie'</span>, <span class="st">'GFZ'</span>, <span class="st">'s'</span>, <span class="st">'c_D_EE_BGF'</span>]], on<span class="op">=</span><span class="st">'Geometrie'</span>, validate<span class="op">=</span><span class="st">'many_to_many'</span>)</span>
-<span id="cb7-35"><a href="#cb7-35" aria-hidden="true" tabindex="-1"></a>matrix[<span class="st">'BGF_2040_m2'</span>] <span class="op">=</span> matrix[<span class="st">'Nationale BGF 2040'</span>] <span class="op">*</span> matrix.s</span>
-<span id="cb7-36"><a href="#cb7-36" aria-hidden="true" tabindex="-1"></a>by_type <span class="op">=</span> matrix.groupby(<span class="st">'Archetype'</span>).BGF_2040_m2.<span class="bu">sum</span>()</span>
-<span id="cb7-37"><a href="#cb7-37" aria-hidden="true" tabindex="-1"></a>matrix[[<span class="st">'Archetype'</span>, <span class="st">'Geometrie'</span>, <span class="st">'GFZ'</span>, <span class="st">'s'</span>, <span class="st">'BGF_2040_m2'</span>, <span class="st">'c_D_EE_BGF'</span>]].to_csv(OUT <span class="op">/</span> <span class="st">'typologie_gfz_2040.csv.gz'</span>, index<span class="op">=</span><span class="va">False</span>, compression<span class="op">=</span><span class="st">'gzip'</span>)</span>
-<span id="cb7-38"><a href="#cb7-38" aria-hidden="true" tabindex="-1"></a>bins.to_csv(OUT <span class="op">/</span> <span class="st">'gfz_kontext_verteilungen.csv'</span>, index<span class="op">=</span><span class="va">False</span>)</span>
-<span id="cb7-39"><a href="#cb7-39" aria-hidden="true" tabindex="-1"></a>density.to_csv(OUT <span class="op">/</span> <span class="st">'dichte_erwartungswerte.csv'</span>)</span>
-<span id="cb7-40"><a href="#cb7-40" aria-hidden="true" tabindex="-1"></a>data[[<span class="st">'Archetype'</span>, <span class="st">'Geometrie'</span>, <span class="st">'GFZ_Mittel'</span>, <span class="st">'c_D_EE_BGF'</span>, <span class="st">'c_D_EE_NGF'</span>, <span class="st">'Nationale BGF 2040'</span>]].to_csv(OUT <span class="op">/</span> <span class="st">'typologie_dichte.csv'</span>, index<span class="op">=</span><span class="va">False</span>)</span>
-<span id="cb7-41"><a href="#cb7-41" aria-hidden="true" tabindex="-1"></a>fig, axes <span class="op">=</span> plt.subplots(<span class="dv">1</span>, <span class="dv">2</span>, figsize<span class="op">=</span>(<span class="dv">11</span>, <span class="dv">4</span>))</span>
-<span id="cb7-42"><a href="#cb7-42" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> name, g <span class="kw">in</span> bins.groupby(<span class="st">'Geometrie'</span>):</span>
-<span id="cb7-43"><a href="#cb7-43" aria-hidden="true" tabindex="-1"></a>    axes[<span class="dv">0</span>].plot(g.GFZ, g.s <span class="op">*</span> <span class="dv">100</span>, label<span class="op">=</span>name)</span>
-<span id="cb7-44"><a href="#cb7-44" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">0</span>].<span class="bu">set</span>(xlim<span class="op">=</span>(<span class="dv">0</span>, <span class="dv">8</span>), xlabel<span class="op">=</span><span class="st">'GFZ'</span>, ylabel<span class="op">=</span><span class="st">'BGF-Anteil [% je GFZ-Bin 0,1]'</span>)</span>
-<span id="cb7-45"><a href="#cb7-45" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">0</span>].legend(fontsize<span class="op">=</span><span class="dv">7</span>, ncol<span class="op">=</span><span class="dv">2</span>)</span>
-<span id="cb7-46"><a href="#cb7-46" aria-hidden="true" tabindex="-1"></a>density.c_D_EE_BGF.sort_values().plot.barh(ax<span class="op">=</span>axes[<span class="dv">1</span>], color<span class="op">=</span><span class="st">'#59856b'</span>)</span>
-<span id="cb7-47"><a href="#cb7-47" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">1</span>].axvline(<span class="dv">0</span>, color<span class="op">=</span><span class="st">'black'</span>, linewidth<span class="op">=</span><span class="fl">0.6</span>)</span>
-<span id="cb7-48"><a href="#cb7-48" aria-hidden="true" tabindex="-1"></a>axes[<span class="dv">1</span>].<span class="bu">set</span>(xlabel<span class="op">=</span><span class="st">'E[c_D] [kWh EE/(m² BGF a)]'</span>, ylabel<span class="op">=</span><span class="st">''</span>)</span>
-<span id="cb7-49"><a href="#cb7-49" aria-hidden="true" tabindex="-1"></a>fig.tight_layout()</span>
-<span id="cb7-50"><a href="#cb7-50" aria-hidden="true" tabindex="-1"></a>fig.savefig(OUT <span class="op">/</span> <span class="st">'gfz_dichte.png'</span>, dpi<span class="op">=</span><span class="dv">180</span>)</span>
-<span id="cb7-51"><a href="#cb7-51" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
-<span id="cb7-52"><a href="#cb7-52" aria-hidden="true" tabindex="-1"></a>data[<span class="st">'Bedarf_BGF'</span>] <span class="op">=</span> data.Strombedarf <span class="op">*</span> r</span>
-<span id="cb7-53"><a href="#cb7-53" aria-hidden="true" tabindex="-1"></a>data[<span class="st">'PV_BGF'</span>] <span class="op">=</span> data.PV_Erzeugung <span class="op">*</span> r</span>
-<span id="cb7-54"><a href="#cb7-54" aria-hidden="true" tabindex="-1"></a>positive <span class="op">=</span> data[<span class="st">'Nationale BGF 2040'</span>].gt(<span class="dv">0</span>)</span>
-<span id="cb7-55"><a href="#cb7-55" aria-hidden="true" tabindex="-1"></a>data[<span class="st">'Dichtebeitrag_PJ'</span>] <span class="op">=</span> <span class="fl">0.0</span></span>
-<span id="cb7-56"><a href="#cb7-56" aria-hidden="true" tabindex="-1"></a>data.loc[positive, <span class="st">'Dichtebeitrag_PJ'</span>] <span class="op">=</span> data.loc[positive, <span class="st">'Nationale BGF 2040'</span>] <span class="op">*</span> data.loc[positive, <span class="st">'c_D_EE_BGF'</span>] <span class="op">*</span> <span class="fl">3.6e-09</span></span>
-<span id="cb7-57"><a href="#cb7-57" aria-hidden="true" tabindex="-1"></a>context_pj <span class="op">=</span> <span class="bu">float</span>(data.Dichtebeitrag_PJ.<span class="bu">sum</span>())</span>
-<span id="cb7-58"><a href="#cb7-58" aria-hidden="true" tabindex="-1"></a>data[[<span class="st">'Archetype'</span>, <span class="st">'Geometrie'</span>, <span class="st">'Nationale BGF 2040'</span>, <span class="st">'Bedarf_BGF'</span>, <span class="st">'PV_BGF'</span>, <span class="st">'c_D_EE_BGF'</span>, <span class="st">'Dichtebeitrag_PJ'</span>]].to_csv(OUT <span class="op">/</span> <span class="st">'typen_bewertung_dichte.csv'</span>, index<span class="op">=</span><span class="va">False</span>)</span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
+<section id="übergabe-an-website-und-dashboard" class="level2">
+<h2 class="anchored" data-anchor-id="übergabe-an-website-und-dashboard">8. Übergabe an Website und Dashboard</h2>
+<p>Die konsolidierte Typentabelle enthält alle ausgewählten Szenarien, Flächen, Merkmale, simulierte GFZ und Kennwerte. Das spätere Dashboard kann daraus ein Szenario auswählen und Beiträge filtern. Es darf keine Typen automatisch auf den Zielwert setzen. Die nationale Top-down-Strombilanz bleibt eine eigene Vergleichsebene.</p>
+<p>Der Export liegt getrennt von historischen <code>outputs/analyse</code>-Dateien und von den Ergebnissen des Kollegen. Das Notebook veröffentlicht noch keine Website und ersetzt noch kein Dashboard.</p>
+<div id="fa11cf2f" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-11-19T16:56:31.530039Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-11-19T16:56:31.529768Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-11-19T16:56:32.254087Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-11-19T16:56:32.253170Z&quot;}}" data-execution_count="7">
+<div class="cell-output cell-output-stdout">
+<pre><code>Export: Berechnungen\gebaeudesektormodell\outputs\konsolidierung</code></pre>
 </div>
-</section>
-</section>
-<section id="sec-gebaeude-abgleich" class="level2">
-<h2 class="anchored" data-anchor-id="sec-gebaeude-abgleich">8. Vergleich mit dem nationalen Ziel 2040</h2>
-<p>Dieser Vergleich betrifft ausschließlich den Bestand 2040. Der heutige Bestand wird separat beschrieben und nicht als zeitgleicher Gegenpart zu einem nationalen Ziel 2040 ausgegeben. Die gleichen Mobilitätsmengen und dieselbe zentrale Restdeckung werden auf beiden Seiten angesetzt. Die physische Bilanz bleibt von der virtuellen Dichtebewertung getrennt.</p>
-<div id="f7f69403" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-11-05T15:05:28.206771Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-11-05T15:05:28.205891Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-11-05T15:05:34.527562Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-11-05T15:05:34.525238Z&quot;}}">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>allocation_path <span class="op">=</span> ROOT <span class="op">/</span> <span class="st">'Berechnungen/sektorenmodell/outputs/allokation/allokation.json'</span></span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>allocation <span class="op">=</span> json.loads(allocation_path.read_text(encoding<span class="op">=</span><span class="st">'utf-8'</span>))</span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>top <span class="op">=</span> allocation[<span class="st">'result'</span>]</span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> val(metric):</span>
-<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="bu">float</span>(energy.loc[energy.Stand.eq(<span class="st">'2040'</span>) <span class="op">&amp;</span> energy[<span class="st">'Größe'</span>].eq(metric), <span class="st">'PJ/a'</span>].iloc[<span class="dv">0</span>])</span>
-<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>operating <span class="op">=</span> val(<span class="st">'Stromsaldo'</span>)</span>
-<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>extended <span class="op">=</span> operating <span class="op">+</span> top[<span class="st">'central_credit_pj'</span>] <span class="op">-</span> top[<span class="st">'miv_demand_pj'</span>]</span>
-<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>comparison <span class="op">=</span> pd.DataFrame([{<span class="st">'Größe'</span>: <span class="st">'PV-Erzeugung'</span>, <span class="st">'Bottom-up [PJ/a]'</span>: val(<span class="st">'PV_Erzeugung'</span>), <span class="st">'Top-down [PJ/a]'</span>: top[<span class="st">'building_pv_pj'</span>]}, {<span class="st">'Größe'</span>: <span class="st">'Gebäudestrombedarf'</span>, <span class="st">'Bottom-up [PJ/a]'</span>: val(<span class="st">'Strombedarf'</span>), <span class="st">'Top-down [PJ/a]'</span>: top[<span class="st">'building_pv_pj'</span>] <span class="op">-</span> top[<span class="st">'building_operation_pj'</span>]}, {<span class="st">'Größe'</span>: <span class="st">'Betrieblicher Stromsaldo'</span>, <span class="st">'Bottom-up [PJ/a]'</span>: operating, <span class="st">'Top-down [PJ/a]'</span>: top[<span class="st">'building_operation_pj'</span>]}, {<span class="st">'Größe'</span>: <span class="st">'Saldo einschließlich MIV'</span>, <span class="st">'Bottom-up [PJ/a]'</span>: extended, <span class="st">'Top-down [PJ/a]'</span>: top[<span class="st">'building_target_pj'</span>]}])</span>
-<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>comparison[<span class="st">'Differenz [PJ/a]'</span>] <span class="op">=</span> comparison[<span class="st">'Bottom-up [PJ/a]'</span>] <span class="op">-</span> comparison[<span class="st">'Top-down [PJ/a]'</span>]</span>
-<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>display(comparison)</span>
-<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>comparison.to_csv(OUT <span class="op">/</span> <span class="st">'abgleich_allokation.csv'</span>, index<span class="op">=</span><span class="va">False</span>)</span>
-<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'PEQ-Anteile offen:'</span>, data.PEQ_Anteil_2040.isna().<span class="bu">sum</span>(), <span class="st">'von'</span>, <span class="bu">len</span>(data))</span>
-<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>sensitivity <span class="op">=</span> pd.DataFrame([{<span class="st">'NGF/BGF'</span>: ratio, <span class="st">'Strombedarf [PJ/a]'</span>: val(<span class="st">'Strombedarf'</span>) <span class="op">*</span> ratio <span class="op">/</span> r, <span class="st">'Stromsaldo [PJ/a]'</span>: operating <span class="op">*</span> ratio <span class="op">/</span> r} <span class="cf">for</span> ratio <span class="kw">in</span> [<span class="fl">0.75</span>, <span class="fl">0.8</span>, <span class="fl">0.85</span>]])</span>
-<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a>display(sensitivity)</span>
-<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a>display(comparison)</span>
-<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a>comparison.to_csv(OUT <span class="op">/</span> <span class="st">'abgleich_allokation.csv'</span>, index<span class="op">=</span><span class="va">False</span>)</span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
-</div>
-</section>
-<section id="übergabe-an-dashboard-und-bericht" class="level2">
-<h2 class="anchored" data-anchor-id="übergabe-an-dashboard-und-bericht">9. Übergabe an Dashboard und Bericht</h2>
-<p><code>outputs/analyse/bestand.parquet</code> enthält beide Szenarien in einer Tabelle: <code>Szenario</code>, <code>BGF_m2</code>, vollständige Typenidentität, Merkmale und spezifische Energiekennwerte. <code>Szenario</code> ist entweder <code>heute</code> oder <code>2040</code>. Das Dashboard wählt genau einen Bestand. Die PEQ-Auswahl verändert die virtuelle Bewertung, nicht die gelieferten Bestandsflächen.</p>
-<p>Zusätzlich werden Tabellen und Grafiken in outputs/analyse erzeugt. Diese neue Analyse überschreibt den publizierten Stand erst nach fachlicher Durchsicht und bewusster Übernahme. Bei neuer Lieferung beide Eingabedateien aktualisieren und das Notebook von oben ausführen.</p>
-<div id="28132261" class="cell" data-quarto-private-1="{&quot;key&quot;:&quot;execution&quot;,&quot;value&quot;:{&quot;iopub.execute_input&quot;:&quot;2026-11-05T15:05:34.536400Z&quot;,&quot;iopub.status.busy&quot;:&quot;2026-11-05T15:05:34.535255Z&quot;,&quot;iopub.status.idle&quot;:&quot;2026-11-05T15:05:40.237277Z&quot;,&quot;shell.execute_reply&quot;:&quot;2026-11-05T15:05:40.235424Z&quot;}}">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>table <span class="op">=</span> geometry_area.rename(columns<span class="op">=</span>{<span class="st">'Nationale BGF heute'</span>: <span class="st">'BGF heute [Mio. m²]'</span>, <span class="st">'Nationale BGF 2040'</span>: <span class="st">'BGF 2040 [Mio. m²]'</span>}).reset_index()</span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>table <span class="op">=</span> table.merge(density[[<span class="st">'GFZ_Mittel'</span>, <span class="st">'c_D_EE_BGF'</span>]].reset_index(), on<span class="op">=</span><span class="st">'Geometrie'</span>, how<span class="op">=</span><span class="st">'left'</span>)</span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>(GEN <span class="op">/</span> <span class="st">'gebaeude-typologien.qmd'</span>).write_text(markdown_table(table, <span class="st">'Gelieferte Flächen und BGF-gewichtete Dichte-Erwartungswerte. Heute: Bezugsjahr offen; Dichtefunktion in elektrischer Energie.'</span>, <span class="st">'tbl-gebaeude-typologien'</span>), encoding<span class="op">=</span><span class="st">'utf-8'</span>)</span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>(GEN <span class="op">/</span> <span class="st">'gebaeude-strom.qmd'</span>).write_text(markdown_table(energy.loc[energy.Stand.eq(<span class="st">'2040'</span>), [<span class="st">'Größe'</span>, <span class="st">'kWh/(m² NGF a)'</span>, <span class="st">'GWh/a'</span>, <span class="st">'PJ/a'</span>]], <span class="st">'Strombilanz 2040 aus den gelieferten Typenkennwerten bei NGF/BGF = '</span> <span class="op">+</span> <span class="bu">str</span>(r) <span class="op">+</span> <span class="st">'.'</span>, <span class="st">'tbl-gebaeude-strom'</span>), encoding<span class="op">=</span><span class="st">'utf-8'</span>)</span>
-<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>(GEN <span class="op">/</span> <span class="st">'gebaeude-endenergie.qmd'</span>).write_text(markdown_table(endenergy.loc[endenergy.Stand.eq(<span class="st">'2040'</span>)].drop(columns<span class="op">=</span><span class="st">'Stand'</span>), <span class="st">'Endenergie 2040 nach Energieträgern. Strom enthält PV-Direktverbrauch; sonstige thermische Energie wird separat geführt.'</span>, <span class="st">'tbl-gebaeude-endenergie'</span>), encoding<span class="op">=</span><span class="st">'utf-8'</span>)</span>
-<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>(GEN <span class="op">/</span> <span class="st">'gebaeude-abgleich.qmd'</span>).write_text(markdown_table(comparison, <span class="st">'Vergleich bei gleichen elektrischen Bilanzgrenzen; Top-down-Zuordnungen gemäß dokumentiertem Referenzfall.'</span>, <span class="st">'tbl-gebaeude-abgleich'</span>), encoding<span class="op">=</span><span class="st">'utf-8'</span>)</span>
-<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>(GEN <span class="op">/</span> <span class="st">'gebaeude-status.qmd'</span>).write_text(markdown_table(status, <span class="st">'Flächengewichtete Zuordnung zu Bestand, Neubau und Sanierung im Zieljahr.'</span>, <span class="st">'tbl-gebaeude-status'</span>), encoding<span class="op">=</span><span class="st">'utf-8'</span>)</span>
-<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>(GEN <span class="op">/</span> <span class="st">'gebaeude-pe.qmd'</span>).write_text(markdown_table(primary.loc[primary.Stand.eq(<span class="st">'2040'</span>)].drop(columns<span class="op">=</span><span class="st">'Stand'</span>), <span class="st">'Gelieferter PE-Bewertungsstand; Faktorversion und Bezugsjahr noch zu bestätigen, ohne virtuelle Kontextwerte.'</span>, <span class="st">'tbl-gebaeude-pe'</span>), encoding<span class="op">=</span><span class="st">'utf-8'</span>)</span>
-<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>summary <span class="op">=</span> {<span class="st">'provenance'</span>: provenance, <span class="st">'allocation_sha256'</span>: sha256(allocation_path), <span class="st">'ngf_bgf'</span>: r, <span class="st">'type_count'</span>: <span class="bu">len</span>(data), <span class="st">'positive_types_2040'</span>: <span class="bu">int</span>(data[<span class="st">'Nationale BGF 2040'</span>].gt(<span class="dv">0</span>).<span class="bu">sum</span>()), <span class="st">'bgf_2040_m2'</span>: <span class="bu">float</span>(data[<span class="st">'Nationale BGF 2040'</span>].<span class="bu">sum</span>()), <span class="st">'bgf_today_m2'</span>: <span class="bu">float</span>(data[<span class="st">'Nationale BGF heute'</span>].<span class="bu">sum</span>()), <span class="st">'electricity_demand_pj'</span>: val(<span class="st">'Strombedarf'</span>), <span class="st">'pv_pj'</span>: val(<span class="st">'PV_Erzeugung'</span>), <span class="st">'electricity_balance_pj'</span>: operating, <span class="st">'extended_balance_pj'</span>: extended, <span class="st">'gap_topdown_pj'</span>: extended <span class="op">-</span> top[<span class="st">'building_target_pj'</span>], <span class="st">'single_target_missing_share_rows'</span>: <span class="bu">int</span>(mapping[<span class="st">'Einzelziel_ergänzt'</span>].<span class="bu">sum</span>()), <span class="st">'affected_reference_area_pct'</span>: <span class="dv">100</span> <span class="op">*</span> affected_area <span class="op">/</span> gfz.BGF_m2.<span class="bu">sum</span>(), <span class="st">'pe_balance_pj'</span>: <span class="bu">float</span>(primary.loc[primary.Stand.eq(<span class="st">'2040'</span>) <span class="op">&amp;</span> primary[<span class="st">'Größe'</span>].eq(<span class="st">'PE_Saldo'</span>), <span class="st">'PJ_PE/a'</span>].iloc[<span class="dv">0</span>]), <span class="st">'simulated_type_count'</span>: original_count, <span class="st">'synthetic_type_count'</span>: <span class="dv">0</span>, <span class="st">'controls'</span>: <span class="st">'All assertions passed; source values are not an independently rerun PEExcel simulation.'</span>}</span>
-<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>summary[<span class="st">'pe_balance_pj'</span>] <span class="op">=</span> summary[<span class="st">'pe_balance_pj'</span>] <span class="cf">if</span> np.isfinite(summary[<span class="st">'pe_balance_pj'</span>]) <span class="cf">else</span> <span class="va">None</span></span>
-<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>(OUT <span class="op">/</span> <span class="st">'validation.json'</span>).write_text(json.dumps(summary, ensure_ascii<span class="op">=</span><span class="va">False</span>, indent<span class="op">=</span><span class="dv">2</span>, allow_nan<span class="op">=</span><span class="va">False</span>), encoding<span class="op">=</span><span class="st">'utf-8'</span>)</span>
-<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a>data.to_csv(OUT <span class="op">/</span> <span class="st">'typen_ergebnisse.csv'</span>, index<span class="op">=</span><span class="va">False</span>)</span>
-<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a>area_summary.to_csv(OUT <span class="op">/</span> <span class="st">'flaechenbilanz.csv'</span>, index<span class="op">=</span><span class="va">False</span>)</span>
-<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a>status.to_csv(OUT <span class="op">/</span> <span class="st">'zustandsflaechen_2040.csv'</span>, index<span class="op">=</span><span class="va">False</span>)</span>
-<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(json.dumps(summary, ensure_ascii<span class="op">=</span><span class="va">False</span>, indent<span class="op">=</span><span class="dv">2</span>))</span>
-<span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a>bestandsliste <span class="op">=</span> []</span>
-<span id="cb9-17"><a href="#cb9-17" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> scenario <span class="kw">in</span> [<span class="st">'heute'</span>, <span class="st">'2040'</span>]:</span>
-<span id="cb9-18"><a href="#cb9-18" aria-hidden="true" tabindex="-1"></a>    bestand <span class="op">=</span> data.copy()</span>
-<span id="cb9-19"><a href="#cb9-19" aria-hidden="true" tabindex="-1"></a>    bestand[<span class="st">'Szenario'</span>] <span class="op">=</span> scenario</span>
-<span id="cb9-20"><a href="#cb9-20" aria-hidden="true" tabindex="-1"></a>    bestand[<span class="st">'BGF_m2'</span>] <span class="op">=</span> bestand[<span class="st">'Nationale BGF '</span> <span class="op">+</span> scenario]</span>
-<span id="cb9-21"><a href="#cb9-21" aria-hidden="true" tabindex="-1"></a>    bestandsliste.append(bestand)</span>
-<span id="cb9-22"><a href="#cb9-22" aria-hidden="true" tabindex="-1"></a>bestand <span class="op">=</span> pd.concat(bestandsliste, ignore_index<span class="op">=</span><span class="va">True</span>)</span>
-<span id="cb9-23"><a href="#cb9-23" aria-hidden="true" tabindex="-1"></a>bestand.to_parquet(OUT <span class="op">/</span> <span class="st">'bestand.parquet'</span>, index<span class="op">=</span><span class="va">False</span>)</span>
-<span id="cb9-24"><a href="#cb9-24" aria-hidden="true" tabindex="-1"></a>display(bestand.groupby(<span class="st">'Szenario'</span>).BGF_m2.<span class="bu">sum</span>().rename(<span class="st">'Nationale BGF [m²]'</span>))</span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
 </div>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
-<div id="ref-schneider2023context" class="csl-entry" role="listitem">
-Schneider, Simon, Thomas Zelger, David Sengl, und José Baptista. 2023. <span>„A Quantitative Positive Energy District Definition with Contextual Targets“</span>. <em>Buildings</em> 13 (5): 1210. <a href="https://doi.org/10.3390/buildings13051210">https://doi.org/10.3390/buildings13051210</a>.
-</div>
-</div>
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -1381,8 +2673,8 @@ Schneider, Simon, Thomas Zelger, David Sengl, und José Baptista. 2023. <span>�
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../Berechnungen/gebaeudesektormodell/Gebaeudesektor_Modellierung.html" class="pagination-link" aria-label="Gebäudesektor – Modellierung">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Gebäudesektor – Modellierung</span></span>
+      <a href="../../Berechnungen/sektorenmodell/allokation.html" class="pagination-link" aria-label="Sektorale Energieallokation – Transition 2040">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Sektorale Energieallokation – Transition 2040</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
@@ -1392,6 +2684,38 @@ Schneider, Simon, Thomas Zelger, David Sengl, und José Baptista. 2023. <span>�
   </div>
 </nav>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 
