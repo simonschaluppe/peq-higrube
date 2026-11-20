@@ -1,0 +1,133 @@
+{
+  "stand": "2026-11-19",
+  "analyse": "PEI_balance unverändert; gelieferte FSI; keine GFZ-Neuzuordnung",
+  "szenarien": {
+    "Bestand_2024": {
+      "zustand_id": "fdf47bc9a8b53a7cdf81080c8fc3e0f4c5a2c16c6c01168fd5a8aa8e5d824b77",
+      "quellen": {
+        "basis": {
+          "datei": "data/eingaben/annahmen.json",
+          "sha256": "902ce130a769f13b5dcb1c25cd4277db145ca8ab4e8ac4bba18f56386dadfae9"
+        },
+        "statistik": {
+          "datei": "data/referenz/statistik/Statistik_Austria_2024.xlsx",
+          "sha256": "2354690253deb7ad3b808b8ed57941389cce35cea533513092dcfe71403be974"
+        },
+        "katalog": {
+          "datei": "data/referenz/typologien_43200.csv",
+          "sha256": "54ab85e0d27f103707371f4d227974cb449616224748c57bd6380ef604fc69d7"
+        },
+        "excel": {
+          "datei": "data/eingaben/verteilungen/Verteilung_Bestand_2024.xlsx",
+          "sha256": "b9ca36b15543229a606586a3c44412dceb36b37e38746013213dd433d7739295"
+        },
+        "szenarioregister": {
+          "datei": "config/szenarien.json",
+          "sha256": "fd9210a78d7f0063b60badcac8493cbcb85c2974b9e51b06be9461b6dd811e1b"
+        },
+        "parquet": {
+          "datei": "data/simulation/scenarios.parquet",
+          "bytes": 23416317,
+          "mtime_ns": 1795095250142679100,
+          "nachweis": "schwach (Pfad/Größe/Zeitstempel), kein Inhaltshash"
+        }
+      }
+    },
+    "Transition_2040": {
+      "zustand_id": "4a5d7cebfebae85ac33e5554f8f3ea5ade6d3b06ffae480dfc9011d9276cdc24",
+      "quellen": {
+        "basis": {
+          "datei": "data/eingaben/annahmen.json",
+          "sha256": "902ce130a769f13b5dcb1c25cd4277db145ca8ab4e8ac4bba18f56386dadfae9"
+        },
+        "statistik": {
+          "datei": "data/referenz/statistik/Statistik_Austria_2024.xlsx",
+          "sha256": "2354690253deb7ad3b808b8ed57941389cce35cea533513092dcfe71403be974"
+        },
+        "katalog": {
+          "datei": "data/referenz/typologien_43200.csv",
+          "sha256": "54ab85e0d27f103707371f4d227974cb449616224748c57bd6380ef604fc69d7"
+        },
+        "excel": {
+          "datei": "data/eingaben/verteilungen/Verteilung_Transition_2040.xlsx",
+          "sha256": "ddae80f8d8da328f1771c8bcb73401f86ab829905d73fd3a89f7cef9db6442e9"
+        },
+        "szenarioregister": {
+          "datei": "config/szenarien.json",
+          "sha256": "fd9210a78d7f0063b60badcac8493cbcb85c2974b9e51b06be9461b6dd811e1b"
+        },
+        "parquet": {
+          "datei": "data/simulation/scenarios.parquet",
+          "bytes": 23416317,
+          "mtime_ns": 1795095250142679100,
+          "nachweis": "schwach (Pfad/Größe/Zeitstempel), kein Inhaltshash"
+        }
+      }
+    },
+    "Transition_2040_Wachstum": {
+      "zustand_id": "7b7003139b7f0911e5fd3954e85b52081cc2958e64cf2564377070279cdabecd",
+      "quellen": {
+        "basis": {
+          "datei": "data/eingaben/annahmen.json",
+          "sha256": "902ce130a769f13b5dcb1c25cd4277db145ca8ab4e8ac4bba18f56386dadfae9"
+        },
+        "statistik": {
+          "datei": "data/referenz/statistik/Statistik_Austria_2024.xlsx",
+          "sha256": "2354690253deb7ad3b808b8ed57941389cce35cea533513092dcfe71403be974"
+        },
+        "katalog": {
+          "datei": "data/referenz/typologien_43200.csv",
+          "sha256": "54ab85e0d27f103707371f4d227974cb449616224748c57bd6380ef604fc69d7"
+        },
+        "excel": {
+          "datei": "data/eingaben/verteilungen/abgeleitet/Verteilung_Transition_2040_Wachstum.xlsx",
+          "sha256": "0ef25bf4cf5c93743afe7bd3f3739be225fcd7a6d856c06d1fcfe74d77c70893"
+        },
+        "szenarioregister": {
+          "datei": "config/szenarien.json",
+          "sha256": "fd9210a78d7f0063b60badcac8493cbcb85c2974b9e51b06be9461b6dd811e1b"
+        },
+        "parquet": {
+          "datei": "data/simulation/scenarios.parquet",
+          "bytes": 23416317,
+          "mtime_ns": 1795095250142679100,
+          "nachweis": "schwach (Pfad/Größe/Zeitstempel), kein Inhaltshash"
+        }
+      }
+    },
+    "Transition_2040_ambitioniert": {
+      "zustand_id": "85d92fd10f8b2fd44dcbf365be3ba76db9610a522701ee415eae989e6e8981f9",
+      "quellen": {
+        "basis": {
+          "datei": "data/eingaben/annahmen.json",
+          "sha256": "902ce130a769f13b5dcb1c25cd4277db145ca8ab4e8ac4bba18f56386dadfae9"
+        },
+        "statistik": {
+          "datei": "data/referenz/statistik/Statistik_Austria_2024.xlsx",
+          "sha256": "2354690253deb7ad3b808b8ed57941389cce35cea533513092dcfe71403be974"
+        },
+        "katalog": {
+          "datei": "data/referenz/typologien_43200.csv",
+          "sha256": "54ab85e0d27f103707371f4d227974cb449616224748c57bd6380ef604fc69d7"
+        },
+        "excel": {
+          "datei": "data/eingaben/verteilungen/abgeleitet/Verteilung_Transition_2040_ambitioniert.xlsx",
+          "sha256": "0dba58a6e7003145a329f82ae6ab53ab0f345daa7afc3f080fe9f98d43204b9b"
+        },
+        "szenarioregister": {
+          "datei": "config/szenarien.json",
+          "sha256": "fd9210a78d7f0063b60badcac8493cbcb85c2974b9e51b06be9461b6dd811e1b"
+        },
+        "parquet": {
+          "datei": "data/simulation/scenarios.parquet",
+          "bytes": 23416317,
+          "mtime_ns": 1795095250142679100,
+          "nachweis": "schwach (Pfad/Größe/Zeitstempel), kein Inhaltshash"
+        }
+      }
+    }
+  },
+  "python": "3.13.6 (tags/v3.13.6:4e66535, Aug  6 2025, 14:36:00) [MSC v.1944 64 bit (AMD64)]",
+  "pandas": "2.3.2",
+  "prioren": "Mitgelieferte aufgelöste Verteilungen verwendet; Ableitung nicht erneut ausgeführt."
+}

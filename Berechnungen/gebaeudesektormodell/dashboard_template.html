@@ -1,164 +1,23 @@
-<div id="peq-dashboard">
+<section id="sector-dashboard">
 <style>
-#peq-dashboard{font:15px/1.45 system-ui;max-width:100%;color:#243746}
-#peq-dashboard *{box-sizing:border-box} #peq-dashboard .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(260px,100%),1fr));gap:14px}
-#peq-dashboard .controls{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
-#peq-dashboard .controls .panel{padding:10px}
-#peq-dashboard .controls h3{font-size:16px;overflow-wrap:anywhere}
-#peq-dashboard .controls label{font-size:13px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:3px}
-#peq-dashboard .controls .small{font-size:12px}
-#peq-dashboard .charts{grid-template-columns:repeat(auto-fit,minmax(min(480px,100%),1fr))}
-#peq-dashboard .panel{padding:16px;border:1px solid #c9d5dc;border-radius:10px;margin:12px 0;background:#f8fafb;min-width:0}
-#peq-dashboard label{display:block;margin:12px 0 3px;font-weight:600}
-#peq-dashboard input{width:100%} #peq-dashboard .number{float:right;color:#006b70}
-#peq-dashboard .small{overflow-wrap:anywhere;font-size:13px;color:#536574} #peq-dashboard .warning{border-left:5px solid #c96a16;padding:12px;background:#fff3df}
-#peq-dashboard .cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
-#peq-dashboard .row-title{grid-column:1/-1;font-weight:600;margin-top:8px}
-#peq-dashboard .column-title{font-weight:700;text-align:center}
-#peq-dashboard .card.total{border-top:3px solid #617b89}
-#peq-dashboard .card.saldo{background:#e1eee9}
-#peq-dashboard .card[title],#peq-dashboard label[title]{cursor:help}
-#peq-dashboard .card:focus-visible{outline:2px solid #006b70}
-#peq-dashboard .card{background:#edf2f5;padding:12px;border-radius:8px} #peq-dashboard .card strong{display:block;font-size:clamp(17px,2.2vw,23px)}
-#peq-dashboard button{padding:9px 14px;border:1px solid #6e8795;background:white;border-radius:6px;margin:4px;cursor:pointer}
-#peq-dashboard #dash-curve svg{width:100%;height:auto;display:block} #peq-dashboard summary{cursor:pointer;font-weight:bold}
-#peq-dashboard pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:12px} #peq-dashboard h3{font-size:19px}
+#sector-dashboard{font:15px/1.5 system-ui,sans-serif;color:#203b49;max-width:1400px;margin:0 auto;padding:20px}#sector-dashboard *{box-sizing:border-box}#sector-dashboard h2{margin:28px 0 10px;font-size:24px}#sector-dashboard h3{font-size:18px}#sector-dashboard .muted{color:#536a76;font-size:13px}#sector-dashboard .eyebrow{letter-spacing:.12em;font-size:12px;color:#127b78;font-weight:bold}#sector-dashboard .panel{border:1px solid #d5e1e5;border-radius:12px;padding:18px;margin:16px 0;background:#fff}#sector-dashboard .controls,#sector-dashboard .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px}#sector-dashboard label{display:block;font-size:13px;font-weight:600}#sector-dashboard select,#sector-dashboard input{width:100%;padding:9px;border:1px solid #aabfc9;border-radius:5px;background:white;color:#203b49}#sector-dashboard .card{background:#edf5f5;padding:16px;border-radius:9px}#sector-dashboard .card strong{display:block;font-size:25px;color:#126663}#sector-dashboard button{padding:9px 14px;background:#126663;color:white;border:0;border-radius:5px;cursor:pointer}#sector-dashboard .scroll{overflow-x:auto}#sector-dashboard table{border-collapse:collapse;width:100%;font-size:13px}#sector-dashboard th,#sector-dashboard td{text-align:right;padding:9px;border-bottom:1px solid #e2eaee;white-space:nowrap}#sector-dashboard th:first-child,#sector-dashboard td:first-child{text-align:left}#sector-dashboard th{background:#edf5f5}#sector-dashboard svg{display:block;width:100%;height:auto}#sector-dashboard .note{padding:12px 16px;background:#f0f5fa;border-left:4px solid #377b99}#sector-dashboard pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:12px}#sector-dashboard .neg{color:#a44736}#sector-dashboard .pos{color:#08776b}
 </style>
-<div class="warning"><strong>INTERN · Szenariowerkstatt</strong><br>Elektrische Jahresbilanz, keine vollständige Klimaneutralitäts- oder PEQ-Prüfung.</div>
-<p id="dash-source" class="small"></p>
-<div id="dash-cards" class="cards panel" aria-label="Bilanz nach Bedarf, Deckung und Saldo"></div>
-<p class="small">Je Zeile: Deckung − Bedarf = Saldo. Gebäudebetrieb + MIV ergeben die Summe darunter. Werte in PJ Strom/a; Erklärungen per Hover über Kacheln und Regler.</p>
-<div class="grid controls">
-<div class="panel"><h3>Nationale Allokation</h3><div id="national-controls"></div><p id="remainders" class="small"></p>
-<p class="small">Freiflächen-PV gehört zu den zentralen Großkraftwerken. H₂ (4 PJ/a) und fossiler Strom (1 PJ/a) werden vollständig berücksichtigt. Modellannahme: 5 statt 7 PJ/a Nettoexport.</p></div>
-<div class="panel"><h3>Typologischer Gebäudesektor</h3><div id="building-controls"></div>
-<p class="small">Senkung betrifft nur den Strombedarf. PV-Skalierung verändert die Gesamterzeugung, nicht Eigenverbrauch oder Netzbezug. Thermische Energieträger, PE und THG werden hier nicht neu simuliert. Basisflächen stammen aus Excel; Variantenanteile werden regelbasiert im Gebäudesektormodell-Notebook geändert.</p></div>
-
-</div>
-<button id="dash-reset" type="button">Referenz zurücksetzen</button><button id="dash-save" type="button">Variante als JSON sichern</button>
-<div id="dash-status" role="status" aria-live="polite" class="warning"></div>
-<div class="panel"><h3>Nationale Strombilanz und Bottom-Up-Zuordnung</h3><div id="dash-balance"></div><p id="national-comparison-note" class="small"></p><p class="small">Links: vollständige nationale Strombilanz, einschließlich Industrie, übriger Sektoren und aller Erzeugungsträger. Rechts: Gebäudebetrieb plus zugeordneter MIV. Gestrichelte Bezugslinien markieren vergleichbare Bilanzumfänge. Zentrale Restdeckung ist ein Anteil am zentralen Erzeugungsbudget und wird national nicht nochmals aufgestapelt; ihre Markierung legt keinen einzelnen Erzeugungsträger fest. Exporte werden bedarfsseitig, Importe deckungsseitig dargestellt.</p></div>
-<section id="gfz-bewertung"><h2>GFZ-Vergleich: Gebäudebetrieb mit und ohne Dichtekorrektur</h2>
-<p>Alle Typen bleiben in der Strombilanz enthalten. Die Auswahl bestimmt ausschließlich, auf welche Typen die virtuelle Dichtekorrektur angewendet wird. Dieser Vergleich enthält keine Mobilität. Ausgewählte Typen werden exakt auf den Zielsaldo gesetzt; die Anpassung kann durch Bedarfssenkung oder mehr Erzeugung erreicht werden.</p>
-<div class="grid controls"><div class="panel"><h3>Typen für die PEQ-Dichtebewertung</h3><p id="selection-note" class="small"></p>
-<label for="type-search">Typen suchen</label><input id="type-search" type="search" placeholder="z. B. MFH, Neu_30cm, WP_Luft" title="Filtert nur die angezeigte Liste. Die Auswahl anderer Typen bleibt erhalten.">
-<button id="types-default" type="button" title="Setzt nur die Typenauswahl auf den dokumentierten Startvorschlag zurück.">Startauswahl</button><button id="types-none" type="button" title="Keine virtuelle Korrektur: beide GFZ-Bilanzen müssen übereinstimmen.">Keine</button><button id="types-all" type="button" title="Wählt alle Typen mit positiver Szenariofläche aus.">Alle</button>
-<details><summary>Auswahl nach Attributen</summary><p class="small">Mehrere Werte mit Strg/Cmd markieren. Keine Markierung = alle Werte. Merkmale werden mit UND kombiniert, Werte innerhalb eines Merkmals mit ODER. Baualter enthält auch Hüllvarianten; PV-Codes sind Ausstattungskennungen, keine bestätigten kWp-Werte.</p><div id="type-filters"></div></details>
-<button id="types-matched-add" type="button">Treffer auswählen</button><button id="types-matched-remove" type="button">Treffer abwählen</button><button id="types-clear-filters" type="button">Filter zurücksetzen</button><p id="type-filter-count" class="small" aria-live="polite"></p>
-<div id="type-options" style="max-height:360px;overflow:auto"></div><p id="type-summary" class="small" aria-live="polite"></p></div><div class="panel"><h3>Virtuelle Dichtekorrektur / Zielsaldo</h3><div id="density-controls"></div><h4>Zielsaldo nach GFZ</h4><p class="small">kWh EE/(m² BGF·a): positiv = geforderter Überschuss, negativ = zulässiger Fehlbetrag.</p><div id="dash-curve"></div>
-<p class="small">Die ausgewählten PEQ-Typen werden auf den Zielsaldo angesetzt; alle übrigen behalten ihre typologische Bilanz. GFZ-Muster 2021. Einheit der Erwartungswerte: kWh EE/(m² BGF·a).</p></div></div>
-<h3>Gebäude-Betriebsenergie-Bilanz</h3><p class="small">Jährlicher Saldo ausschließlich des Gebäudebetriebs, ohne Mobilität. Top-Down: national zugeordnete Gebäude-PV minus Gebäudestrombedarf.</p><div id="gfz-totals" class="cards panel" aria-live="polite"></div>
-<div class="panel"><h3>Spezifische Bilanz nach Gebäudeklasse</h3><div id="dash-geometry"></div><p class="small">Je Geometrie drei Salden: 1. nicht ausgewählte Typen, 2. ausgewählte PEQ-Typen mit ihren typologischen Kennwerten, 3. dieselben PEQ-Typen bei Erreichen des GFZ-Dichteziels. Jede Gruppe wird durch ihre eigene BGF geteilt: kWh/(m² BGF·a). Die Balken sind deshalb nicht addierbar. Positiv = Überschuss, negativ = Fehlbetrag. Gruppen ohne Fläche haben keinen spezifischen Wert und keinen Balken; echte Nullsalden bleiben null.</p><p id="class-empty-note" class="small"></p></div>
-<p class="small">Balken: Jahresenergie je GFZ-Klasse (linke Achse). Linie: über alle Klassen bis zur jeweiligen GFZ kumulierter Saldo (rechte Achse). Standardansicht: GFZ 0–5; über „Gesamte GFZ“ ist die vollständige Verteilung sichtbar. Summen enthalten immer sämtliche GFZ-Klassen; der sichtbare Linienwert bei GFZ 5 ist eine Teilsumme. Beide Grafiken verwenden dieselben Achsengrenzen. Positive Balken = PV, negative = Bedarf. Grün = ausgewählte PEQ-Typen. Grüne Schraffur als separates Overlay ab null = Anpassung zur PEQ-Zielerreichung (Zielsaldo minus typologischer Saldo), keine Festlegung auf PV-Ausbau oder Bedarfssenkung. Positives Overlay: höherer geforderter Saldo; negatives Overlay: geringere Anforderung gegenüber der Typologie. Nutzungsfarben entsprechen der GFZ-Analyse. Hover zeigt Klasse, Nutzung und Werte.</p>
-<div class="panel"><h3>Ohne Dichtekorrektur: physischer Gebäudebetrieb</h3><div id="gfz-physical" style="width:100%;min-width:0"></div></div>
-<div class="panel"><h3>Mit PEQ-Zielerreichung: angepasster Sektorsaldo</h3><div id="gfz-corrected" style="width:100%;min-width:0"></div></div>
-</section>
-<div class="grid charts"><div class="panel"><h3>Verteilung des PEQ-Zielsaldos je Geometrietyp</h3><p class="small">BGF-gewichtete Verteilung über die vollständige GFZ-Spanne jeder Geometrieklasse: Band = 10.–90. Perzentil, dicker Abschnitt = 25.–75. Perzentil, Raute = Median, Kreis = Mittelwert. Die Verteilung beschreibt die Zielanforderung unabhängig von der aktuellen PEQ-Typenauswahl.</p><div id="dash-density"></div><p id="density-total" class="small"></p></div>
-</div>
-<details class="panel"><summary>Parameter, Ergebnisstand und Quellen-Hashes</summary><pre id="dash-audit"></pre></details>
-<script>
-(()=>{
-const S=__PAYLOAD__;
-const el=id=>document.getElementById(id), fmt=x=>new Intl.NumberFormat('de-DE',{maximumFractionDigits:2}).format(x);
-const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-let p={...S.defaults}, last;
-const spec=[
- ['national-controls','miv','MIV-Anteil',0,1,.01,100,'%'],
- ['national-controls','other_transport','Übriger Verkehr',0,1,.01,100,'%'],
- ['national-controls','free_pv','Freiflächen-PV',0,1,.01,100,'%'],
- ['building-controls','saving','Zusätzliche Strombedarfssenkung',0,1,.01,100,'%'],
- ['building-controls','pv_scale','PV relativ zum Ausgangsszenario',0,3,.05,100,'%'],
- ['building-controls','ngf_bgf','NGF / BGF',.5,1,.01,1,''],
- ['density-controls','density_f_res','f RES',0,100,.1,1,''],
- ['density-controls','density_f_ed','f ED',0,100,.1,1,''],
- ['density-controls','density_dx','GFZ-Verschiebung dx',.01,1,.01,1,''],
- ['density-controls','density_cutoff','Begrenzung',0,150,1,1,'']];
-const explanations={
- miv:'Anteil des MIV am elektrischen Verkehrsbedarf des Top-Down-Szenarios. Kein Anteil an Fahrten. ÖPNV = 100 % − MIV − übriger Verkehr; die Zentrale Restdeckung folgt aus dem verfügbaren zentralen Rest.',
- other_transport:'Anteil des übrigen Verkehrs am elektrischen Verkehrsbedarf. Verringert den ÖPNV-Restanteil; beide werden vor dem MIV aus zentraler Erzeugung gedeckt.',
- free_pv:'Anteil der nationalen PV-Erzeugung auf Freiflächen. Gebäude-PV = Gesamt-PV × (1 − Freiflächenanteil). Freiflächen-PV geht vollständig in die zentrale Restdeckung ein; die Bottom-Up-PV wird damit nicht verändert.',
- saving:'Zusätzliche proportionale Senkung aller elektrischen Bedarfe des typologischen Gebäudesektors gegenüber den PEExcel-Kennwerten. Neuer Bedarf = Ausgangsbedarf × (1 − Senkung).',
- pv_scale:'Multiplikator der PV-Erzeugungskennwerte aus PEExcel: 100 % übernimmt sie unverändert. Verändert weder den nationalen PV-Anteil noch Eigenverbrauch und Netzbezug.',
- ngf_bgf:'Verhältnis Nettogrundfläche zu Bruttogrundfläche. Nationale BGF × dieses Verhältnis × spezifischer NGF-Kennwert ergibt Bedarf bzw. PV-Erzeugung. Die virtuelle Dichtebewertung bleibt BGF-bezogen.',
- density_f_res:'Parameter f RES der Referenzkurve: Zielsaldo = min[f RES / (GFZ + dx) − f ED, Begrenzung]. Höhere Werte fordern bei gleicher GFZ einen höheren Überschuss.',
- density_f_ed:'Parameter f ED der Referenzkurve in kWh EE/(m² BGF·a). Höhere Werte senken den geforderten Zielsaldo, soweit die Begrenzung nicht greift.',
- density_dx:'Horizontale Verschiebung dx in GFZ-Einheiten im Nenner GFZ + dx. Die Erwartungswerte werden über alle hinterlegten GFZ-Bins flächengewichtet.',
- density_cutoff:'Begrenzt den maximal geforderten Überschuss: Zielsaldo ≤ Begrenzung, in kWh EE/(m² BGF·a). Keine physische Erzeugung oder Deckung.'
-};
-for(const [parent,key,label,min,max,step,scale,unit] of spec){
- const l=document.createElement('label');l.htmlFor='ctrl-'+key;l.textContent=label+' ⓘ';l.title=explanations[key];
- const out=document.createElement('span');out.id='value-'+key;out.className='number';l.append(out);
- const input=document.createElement('input');Object.assign(input,{id:'ctrl-'+key,type:'range',min,max,step,value:p[key]});
- input.title=explanations[key];input.setAttribute('aria-description',explanations[key]);
- input.addEventListener('input',()=>{p[key]=Number(input.value);render()});el(parent).append(l,input);
-}
-el('dash-source').textContent=`Excel: ${S.xlsx} · Flächen: ${S.area_column} · Bestand: ${S.bestand} · Nationale Referenz: ${S.scenario}, 2040. Typologie- oder Flächenänderungen erfordern zuerst die Ausführung des Gebäudesektormodells, danach dieses Dashboards.`;
-function calculate(p){
- const g=S.g,d=S.d;
- const central=['hydro','wind','biomass','geothermal','hydrogen_electricity','fossil'].reduce((s,k)=>s+g[k],0)+g.pv*p.free_pv+Math.max(S.model_net_imports,0);
- const fixed=['industrie','landwirtschaft','verbrauch_sektor_energie','umwandlungseinsatz','transportverluste'].reduce((s,k)=>s+d[k],0)+Math.max(-S.model_net_imports,0);
- const raw=central-fixed-d.verkehr*(1-p.miv), miv=d.verkehr*p.miv, credit=raw;
- const target=g.pv*(1-p.free_pv)-d.gebaeude;
- const demand=S.geometry.reduce((s,k)=>s+k.D,0)*p.ngf_bgf*(1-p.saving);
- const pv=S.geometry.reduce((s,k)=>s+k.P,0)*p.ngf_bgf*p.pv_scale;
- const closure=target+credit-miv;
- return {demand,pv,balance:pv-demand,target,credit,extended:pv-demand+credit-miv,target_extended:target+credit-miv,gap:pv-demand-target,raw,closure};
-}
-// Die Browserrechnung muss der im Notebook ausgeführten Referenz entsprechen.
-const check=calculate(p);
-for(const [k,v] of Object.entries(S.reference))if(Math.abs(check[k]-v)>1e-7)throw Error('Referenzabweichung: '+k);
-function bars(id, rows){
- const width=580,left=195,right=72,h=id==='dash-balance'?48:34,height=rows.length*h+35;
- const lo=Math.min(0,...rows.map(r=>r[1])), hi=Math.max(0,...rows.map(r=>r[1]));
- const x=v=>left+(v-lo)/(hi-lo||1)*(width-left-right), zero=x(0);
- let html=`<svg viewBox="0 0 ${width} ${height}" role="img" aria-label="Balkendiagramm mit beschrifteten Werten"><line x1="${zero}" x2="${zero}" y1="0" y2="${height-25}" stroke="#657784"/>`;
- rows.forEach(([label,v,color],i)=>{const y=i*h+5;html+=`<text x="0" y="${y+17}" font-size="13">${label.split('|').map((line,j)=>`<tspan x="0" dy="${j?15:0}">${esc(line)}</tspan>`).join('')}</text><rect x="${Math.min(x(v),zero)}" y="${y}" width="${Math.max(Math.abs(x(v)-zero),.5)}" height="23" fill="${color}"/><text x="${width-5}" y="${y+17}" text-anchor="end" font-size="13">${fmt(v)}</text>`});
- el(id).innerHTML=html+'</svg>';
-}
-function render(){
- for(const [,key,,min,max,step,scale,unit] of spec)el('value-'+key).textContent=fmt(p[key]*scale)+' '+unit;
- const invalid=p.miv+p.other_transport>1+1e-10;
- el('dash-save').disabled=invalid;
- if(invalid){el('dash-status').textContent='Ungültig: MIV + übriger Verkehr über 100 %. Die Diagramme zeigen den letzten gültigen Stand.';return;}
- const r=calculate(p);if(Math.abs(r.closure-S.model_residual)>1e-7)throw Error('Zuordnungsbilanz verletzt');
- const context={};for(const b of S.bins){const c=Math.min(p.density_f_res/(b.GFZ+p.density_dx)-p.density_f_ed,p.density_cutoff);context[b.Geometrie]=(context[b.Geometrie]||0)+b.s*c;}
- const virtual=S.types.filter(k=>selectedTypes.has(k.Archetype)).reduce((s,k)=>s+k.BGF*context[k.Geometrie]*3.6e-9-(k.P*p.pv_scale-k.D*(1-p.saving))*p.ngf_bgf,0);
- last={schema_version:2,assumptions:S.assumptions,source_residual_pj:S.residual,model_residual_pj:S.model_residual,internal:true,scenario:S.scenario,xlsx:S.xlsx,area_column:S.area_column,parameters:{...p},selected_density_types:[...selectedTypes],results_pj_el_a:r,virtual_density_pj_equivalent_a:virtual,provenance:S.provenance};
- el('remainders').textContent=`ÖPNV: ${fmt(100*(1-p.miv-p.other_transport))} % · Gebäude-PV: ${fmt(100*(1-p.free_pv))} %`;
- el('dash-status').textContent=(S.bestand==='heute'?'Bestand heute: Die nationale Referenz 2040 ist kein zeitgleicher Vergleich. ':'')+(r.raw<0?`Zentraler Fehlbetrag: ${fmt(-r.raw)} PJ/a; wird im Top-Down-Modell durch Gebäude-PV ausgeglichen. `:'Zentrale Vorrangbedarfe gedeckt. ')+`Quellrest: ${fmt(S.residual)} PJ/a; Modellrest: ${fmt(r.closure)} PJ/a. Nettoexport: 5 statt 7 PJ/a (Modellannahme 29.10.2026).`;
- const miv=S.d.verkehr*p.miv, tdPV=S.g.pv*(1-p.free_pv);
- const card=(label,value,tip,cls='')=>`<div class="card ${cls}" tabindex="0" title="${esc(tip)}" aria-label="${esc(label+': '+fmt(value)+' PJ Strom/a. '+tip)}">${esc(label)} ⓘ<strong>${fmt(value)}</strong><small>PJ Strom/a</small></div>`;
- const row=(title,items,total=false)=>`<div class="row-title">${esc(title)}</div>`+items.map(([l,v,t],i)=>card(l,v,t,(total?'total ':'')+(i===2?'saldo':''))).join('');
- el('dash-cards').innerHTML=['Bedarf','Deckung','Saldo'].map(t=>`<div class="column-title">${t}</div>`).join('')+
- row('(Bottom-Up) Gebäudebetrieb',[
- ['Strombedarf',r.demand,'Summe aus BGF × NGF/BGF × Strombedarfskennwert × (1 − Senkung).'],
- ['PV-Erzeugung',r.pv,'Summe aus BGF × NGF/BGF × PV-Kennwert × PV-Skalierung.'],
- ['Betriebssaldo',r.balance,`PV-Erzeugung − Strombedarf = ${fmt(r.pv)} − ${fmt(r.demand)} = ${fmt(r.balance)}.`]])+
- row('+ MIV und zentrale Zuordnung',[
- ['MIV-Strombedarf',miv,'Elektrischer Verkehrsbedarf × MIV-Anteil.'],
- [r.credit<0?'Zentraler Fehlbetrag (−)':'Zentrale Restdeckung',r.credit,'Restdeckung nach Vorrangbedarfen und Nicht-MIV-Verkehr, ohne Obergrenze. Negative Werte sind zentraler Fehlbetrag, keine negative Erzeugung.'],
- ['Zuordnungssaldo',r.credit-miv,`Zentrale Restdeckung − MIV-Strombedarf = ${fmt(r.credit)} − ${fmt(miv)} = ${fmt(r.credit-miv)}.`]])+
- row('= (Bottom-Up) Gebäude und MIV',[
- ['Gesamtbedarf',r.demand+miv,'Strombedarf Gebäudebetrieb + MIV-Strombedarf.'],
- ['Gesamtdeckung',r.pv+r.credit,'PV-Erzeugung + Zentrale Restdeckung.'],
- ['Gesamtsaldo',r.extended,`Betriebssaldo + Zuordnungssaldo = ${fmt(r.balance)} + (${fmt(r.credit-miv)}) = ${fmt(r.extended)}. Entspricht Gesamtdeckung − Gesamtbedarf.`]],true)+
- row('Vergleich: (Top-Down) Gebäude und MIV',[
- ['Zielbedarf',S.d.gebaeude+miv,'Gebäudestrombedarf des nationalen Szenarios + derselbe MIV-Strombedarf.'],
- ['Zieldeckung',tdPV+r.credit,'Nationale Gebäude-PV + dieselbe Zentrale Restdeckung.'],
- ['Zielsaldo',r.target_extended,`Gebäude-PV − Gebäudebedarf + Zentrale Restdeckung − MIV-Bedarf = ${fmt(r.target_extended)}. Zielsaldo nur Gebäudebetrieb: ${fmt(r.target)}.`]])+
- `<div class="row-title">Saldoabweichung: ${fmt(r.gap)} PJ Strom/a ⓘ <span class="small" title="Bottom-Up-Gesamtsaldo minus Top-Down-Zielsaldo. Negativ: zusätzliche Deckung oder Bedarfssenkung erforderlich; positiv: Zielsaldo überschritten.">= Bottom-Up-Gesamtsaldo − Top-Down-Zielsaldo</span></div>`;
-
- el('density-total').textContent=`Anpassung zur PEQ-Zielerreichung: ${fmt(virtual)} PJ-Äquivalent/a. Separat vom physischen Stromsaldo; kein Endenergiefluss.`;
- const values=Array.from({length:101},(_,i)=>[i/20,Math.min(p.density_f_res/(i/20+p.density_dx)-p.density_f_ed,p.density_cutoff)]);
- const low=Math.min(0,...values.map(v=>v[1])),high=Math.max(0,...values.map(v=>v[1]));
- const x=v=>55+v/5*450,y=v=>235-(v-low)/(high-low||1)*205;
- el('dash-curve').innerHTML=`<svg viewBox="0 0 580 285" role="img" aria-label="Dichtekurve nach GFZ"><path d="M55 20V235H505" fill="none" stroke="#667"/><line x1="55" x2="505" y1="${y(0)}" y2="${y(0)}" stroke="#bbc"/><polyline points="${values.map(v=>x(v[0])+','+y(v[1])).join(' ')}" fill="none" stroke="#238b45" stroke-width="3"/><text x="5" y="35" font-size="13">${fmt(high)}</text><text x="5" y="235" font-size="13">${fmt(low)}</text>${[0,1,2,3,4,5].map(i=>`<text x="${x(i)}" y="255" text-anchor="middle" font-size="13">${i}</text>`).join('')}<text x="280" y="278" font-size="13">GFZ</text></svg>`;
- renderDensity(r,virtual);
- el('dash-audit').textContent=JSON.stringify(last,null,2);
-}
+<p class="eyebrow">GEBÄUDESEKTOR · SZENARIOANALYSE</p>
+<h2>Vom Typ zum nationalen Gebäudesektor</h2>
+<p>Simulierte Performance, angenommene Flächen und Abstand zum virtuellen Ziel. Alle Typen bleiben mit ihren gelieferten Kennwerten erhalten.</p>
+<div class="panel controls"><label>Sektorszenario<select id="sd-scenario"></select></label><label>Typenschlüssel durchsuchen<input id="sd-search" type="search" placeholder="z. B. WP_Luft"></label></div>
+<div class="controls" id="sd-filters"></div>
+<p><button id="sd-reset" type="button">Filter zurücksetzen</button> <button id="sd-export" type="button">Alle Treffer als CSV</button></p>
+<p id="sd-scope" role="status" aria-live="polite"></p>
+<div id="sd-cards" class="cards"></div>
+<p class="note">Die Strombilanz enthält alle PV-Varianten unverändert. Die separate Zielanalyse für PV70/PV90 vergleicht <code>PEI_saldo_project</code> mit −Dichtefaktor(GFZ) anhand der empirischen GFZ-Verteilung. Sie verändert keine Energieflüsse.</p>
+<div class="panel"><h3>Nationaler Stromvergleich · Transition 2040</h3><p class="muted">Gesamtes ausgewähltes Szenario: Gebäudestrom ohne Mobilität und Gebäude-PV. Links: gesamtes Energiesystem; rechts: Gebäudesektor plus zugeordneter MIV und unveränderte zentrale Restdeckung. Die PE-Zielanalyse verändert diese Strommengen nicht.</p><label>Gebäudeanteil an der nationalen PV-Erzeugung: <span id="sd-pv-label"></span><input id="sd-pv-share" type="range" min="0" max="100" value="100" step="1"></label><p class="muted">Startannahme: gesamte nationale PV dem Gebäudesektor zugeordnet. Der restliche Anteil wird außerhalb des Gebäudesektors verortet. Diese Einstellung ändert nur die Top-down-Referenz.</p><label>MIV-Anteil am nationalen Verkehrsstrom: <span id="sd-miv-label"></span><input id="sd-miv" type="range" min="0" max="100" value="80" step="1"></label><div id="sd-national-chart"></div><div class="scroll" id="sd-national"></div><p id="sd-national-note"></p><p id="sd-sources" class="muted"></p></div>
+<div class="panel"><h3>Zielanalyse · Geometrie × PV70 / PV90</h3><p class="muted">Nur die hoch ausgestatteten Varianten innerhalb der gesetzten Filter. Projektsaldo und Zielwert sind NGF-gewichtet. Absolute Zielabweichung in PJ PE/a; Zielerfüllungsanteil wird für jeden Typ und jede GFZ-Kohorte einzeln geprüft.</p><div id="sd-bars"></div><div class="scroll" id="sd-groups"></div></div>
+<div class="panel"><h3>Projektperformance trifft reale GFZ-Verteilung</h3><label>Geometrie im Detail<select id="sd-gfz-geometry"></select></label><p class="muted">PV70 und PV90 separat. Die waagrechten Linien zeigen den unveränderten mittleren Projektsaldo der gefilterten Varianten. Die Zielkurve ändert sich mit der GFZ. Die Flächengrafik darunter zeigt, wie viel NGF diesen Anforderungen zugeordnet ist. Alle GFZ-Kohorten fließen in die Summen ein.</p><div id="sd-gfz-curve"></div><div id="sd-gfz-area"></div><div class="scroll" style="max-height:360px" id="sd-gfz"></div></div>
+<div class="panel"><h3>Szenarien im Vergleich</h3><p class="muted">Vollständige Szenarien, unabhängig von den Typenfiltern. Szenarionamen in der Auswahl oben wechseln den ausgewerteten Datenstand.</p><div class="scroll" id="sd-comparison"></div></div>
+<div class="panel"><h3>Typendetails</h3><p class="muted">Die 100 flächengrößten Treffer; vollständiger Export über „Alle Treffer als CSV“.</p><div class="scroll" id="sd-types"></div></div>
+<details class="panel"><summary>Methodik, Kalibrierung und Herkunft</summary><p>Flächenänderungen werden in den Szenario-Verteilungen vorgenommen und im Analyse-Notebook neu berechnet. Andere PV-Anteile und Performancewerte werden nicht durch pauschale Skalierung der PE-Bilanz vorgetäuscht. Die Szenarioauswahl vergleicht tatsächlich berechnete Flächenannahmen.</p><p>Gewichtung: NGF × Kennwert. Zielerfüllungsanteil: NGF der Typen mit PEI_balance ≥ 0 / betrachtete NGF. Positive und negative Beiträge können sich im Mittel ausgleichen. In der GFZ-Analyse bleibt der Projektsaldo konstant; der neue Zielwert ersetzt die Zielanforderung der festen Simulations-GFZ. Das räumliche Muster von 2021 wird als Annahme auf 2040 übertragen.</p><pre id="sd-audit"></pre></details>
+<script>(()=>{const S=__PAYLOAD__;
 __DENSITY_SCRIPT__
-el('dash-reset').onclick=()=>{p={...S.defaults};selectedTypes=new Set(S.types.filter(k=>k.default_selected).map(k=>k.Archetype));showTypeOptions();for(const [,key] of spec)el('ctrl-'+key).value=p[key];render();};
-el('dash-save').onclick=()=>{render();const blob=new Blob([JSON.stringify({...last,exported_at:new Date().toISOString()},null,2)],{type:'application/json'});const url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='peq-interne-variante.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);};
-render();
-})();
-</script></div>
+})();</script>
+</section>

@@ -1,5 +1,12 @@
 # Gebäudebestand und Entwicklungsszenario 2040 {#sec-gebaeudebestand}
 
+::: {.callout-note title="Neues Gebäudesektormodell · Transition 2040"}
+Das [interaktive Dashboard](../Berechnungen/gebaeudesektormodell/Internes_Kalibrierungsdashboard.ipynb) verbindet die neuen Typenflächen mit den Simulationen und stellt den Gebäudesektor dem nationalen Stromsystem gegenüber. Die separate GFZ-Analyse zeigt die Zielabweichung für PV70 und PV90 je Geometrie, ohne die Strombilanz zu verändern.
+
+Die Herleitung ist im [Analyse-Notebook](../Berechnungen/gebaeudesektormodell/Gebaeudesektormodell_Analyse.ipynb) dokumentiert. Die nachfolgenden älteren Kapitelauswertungen werden noch redaktionell angepasst.
+:::
+
+
 ::: {.callout-warning title="Bisherige Ergebnisse – neue Auswertung steht aus"}
 **Aktualisierungsbedarf · 09.11.2026**
 

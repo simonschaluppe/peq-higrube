@@ -1,46 +1,22 @@
-# Gebäudesektormodell: zwei Arbeitsschritte
+# Gebäudesektormodell: Konsolidierung und Analyse
 
-## 1. Modellierung – Kollege
-`Gebaeudesektor_Modellierung.ipynb` ist eine bewusst noch nicht ausgefüllte Vorlage.
-Hier werden später Statistik, Annahmen und Regeln der Flächenzuordnung erläutert.
-Ergebnis ist die vollständige Flächentabelle in `data/Building-Sector_Pool_1.xlsx`.
+## Einstieg
+`Gebaeudesektormodell_Analyse.ipynb` erklärt und berechnet den gelieferten Stand Schritt für Schritt. Von oben nach unten ausführen. `SZENARIEN` wählt die tatsächlich berechneten Szenarien, `DETAILSZENARIO` die vertiefte Darstellung. Benötigt werden die Pakete aus `Gebaeudesektor_konsolidiert/requirements.txt` sowie matplotlib.
 
-## 2. Analyse
-`Gebaeudesektormodell_Analyse.ipynb` liest ausschließlich:
-- `data/scenarios.parquet`: aktuelle Simulationen (derzeit 43.200 Varianten).
-- `data/Building-Sector_Pool_1.xlsx`: fertige Typenflächen und GFZ-Zuordnung.
+## Datenfluss
+Statistik und Szenario-Verteilungen → kalibrierte Typenflächen → Simulationen → sektorale Summen und virtueller Zielabstand.
 
-Blatt `Strombed_estim`: `Archetype` entspricht exakt `scenario_name` im Parquet,
-`Nationale BGF heute` und `Nationale BGF 2040` sind m² BGF. Bei mehrfach vorkommenden Szenarionamen zusätzlich
-`batch`. Für nicht belegte Typen ausdrücklich 0 eintragen. Keine automatische Verteilung
-fehlender Wetter-, Masse-, PV- oder Flexvarianten in der Analyse.
-Optional bleiben Bestand/Neubau/Sanierung und Energetischer Standard erhalten.
-`zuordnung_gfz!A:F` bleibt die geometrische Zuordnung.
+Die Flächenbildung verwendet den Rechenkern des Kollegen in `Gebaeudesektor_konsolidiert/modell`. Das Analyse-Notebook zeigt Eingaben, Herkunftskohorten, Kalibrierziele und bedingte Verteilungen. Es verbindet die Typenflächen mit dem Parquet und rekonstruiert Energiesummen unabhängig im Notebook.
 
-**Die neue vollständige Flächentabelle folgt noch.** Die aktuelle 900-Zeilen-Tabelle ist
-historisch; die Analyse stoppt deshalb verständlich vor der Berechnung. Es wird kein
-Ersatzbestand erfunden. Alle fachlichen Rechenschritte stehen direkt im Notebook.
+Die mitgelieferten aufgelösten Verteilungen werden unverändert verwendet. Eine erneute Ableitung von Prioren und die Rekonstruktion von Flächenströmen bleiben Aufgaben der Notebooks `01_Szenario.ipynb` und `03_Flaechenstroeme.ipynb` im Modellpaket. Achtung: In der gelieferten Fassung von 01 sind Berechnung, Prior-Ableitung, Export und Ersetzen aktiviert, obwohl der Einleitungstext etwas anderes sagt. Vor Ausführung die Steuerzelle lesen.
 
-## Übergabe ans Dashboard
-Die Analyse erzeugt `outputs/analyse/bestand.parquet` mit einer Zeile je Szenario und Typ:
-`Szenario` (heute/2040), `batch`, `scenario_name`, `Archetype`, `BGF_m2`, Merkmale und Kennwerte.
-Tabellen und Grafiken liegen ebenfalls unter `outputs/analyse/`.
+## Bewertung
+`PEI_balance` ist der virtuelle Zielabstand mit bereits enthaltenem Dichtefaktor; Zielerfüllung bei mindestens null. Alle Typen bleiben unverändert. Die erste Konsolidierung verwendet die simulierte GFZ (`FSI`). Das Dashboard ergänzt eine getrennte GFZ-Kohortenanalyse: unveränderter PEI_saldo_project gegenüber dem aus den Simulationsparametern berechneten Dichteziel. Diese Diagnose verändert keine Strombilanz.
 
-Im `Internes_Kalibrierungsdashboard.ipynb` wählt `BESTAND` genau einen Bestand.
-Die PEQ-Bewertungsflächen werden erst dort ausgewählt; keine erzwungene 20-%-Vorauswahl.
-Der nationale Referenzfall ist 2040. Bei heute ist dies ausdrücklich eine Zukunftsreferenz.
+## Ergebnisse
+`outputs/konsolidierung/` enthält `typenflaechen.parquet`, `szenariosummen.csv`, `summenabgleich.csv`, `szenariovergleich.png` und `herkunft.json`. Vorhandene Ergebnisse des Kollegen und historische Analyseexporte werden nicht überschrieben. Das Notebook zeigt, ob die unabhängige Summenbildung mit dem Rechenkern übereinstimmt; frühere Exporte des Kollegen waren nicht mitgeliefert.
 
-## Ausführen
-Notebooks von oben nach unten ausführen; Jupyter genügt. Optional dient
-`execute_notebook.py` nur als technischer Starter (mit `--dashboard` für das Dashboard).
-Es enthält keine fachliche Rechnung. `dashboard_template.html` und `dashboard_density.js`
-sind die Browserdarstellung; `requirements.txt` nennt die Python-Abhängigkeiten.
+## Website und Dashboard
+`Internes_Kalibrierungsdashboard.ipynb` verwendet die konsolidierten Typenflächen; Startansicht ist `Transition_2040`. Es bietet Szenarioauswahl, Typenfilter, Gruppenbeiträge, empirische GFZ-Kohorten je Geometrie, getrennte PV70/PV90-Zielanalyse, Szenarienvergleich und nationale Bedarf-/Deckungsgrafik. Die alte PEQ-Zielersetzung ist entfernt. Filter ändern keine Annahmen; die nationale PV-Allokation verändert nur die Top-down-Referenz.
 
-## Historie und Aufräumen
-`archiv/2026-11-05/` enthält den bisherigen gemischten Rechenweg einschließlich
-vorläufiger Variantenregeln, Tests und Excel-Reinschrift. Er ist nicht Teil des aktiven
-Ablaufs. `outputs/` außerhalb `analyse/` ist der historische publizierte Ergebnisstand.
-Er bleibt erhalten, bis der neue Bestand vollständig berechnet und redaktionell übernommen ist.
-Keine historische Ergebnisdatei als aktuelle Lieferung verwenden.
-
-Veröffentlichung erst nach neuer Flächenlieferung und fachlicher Durchsicht.
+Ausführen: `python Berechnungen/gebaeudesektormodell/execute_notebook.py --dashboard` aus dem Repository. Eigenständiges Dashboard: `outputs/dashboard/index.html`. Die interne Quarto-Navigation bindet das Notebook bereits ein. Die GFZ-Verteilung 2021 wird vorläufig auf die Szenarioflächen übertragen. NGF-Umschichtungen zwischen PV-Varianten bleiben ein künftiger Schritt im vorgeschalteten Notebook. Die übrigen Berichtskapitel sind noch zu aktualisieren. Eine Veröffentlichung wurde mit diesem Arbeitsschritt nicht durchgeführt.

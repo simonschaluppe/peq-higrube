@@ -16,6 +16,9 @@ project:
 lang: de
 bibliography: references.bib
 
+website:
+  comments: false
+
 comments:
   hypothesis:
     theme: clean
@@ -62,7 +65,6 @@ book:
     - Berechnungen/gfz_at/GFZ_AT_Analyse_Anhang.ipynb
     - Berechnungen/thg_budget/03_zielwert_thg_intern_forster2026.ipynb
     - Berechnungen/sektorenmodell/allokation.ipynb
-    - Berechnungen/gebaeudesektormodell/Gebaeudesektor_Modellierung.ipynb
     - Berechnungen/gebaeudesektormodell/Gebaeudesektormodell_Analyse.ipynb
     - Kapitel/anhang-quartiersbilanzierung.qmd
 
@@ -94,6 +96,7 @@ format:
     collapse-level: 1
     link-external-newwindow: true
     lightbox: auto
+    include-after-body: assets/hypothesis.html
   # pdf:
   #   documentclass: scrreprt
   #   papersize: a4

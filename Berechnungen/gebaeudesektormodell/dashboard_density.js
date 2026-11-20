@@ -1,212 +1,76 @@
-// Interaktive Entsprechung der GFZ-Referenzrechnung im Notebook.
-let selectedTypes=new Set(S.types.filter(k=>k.default_selected).map(k=>k.Archetype));
-let densityReferenceChecked=false;
-let groupReferenceChecked=false;
-el('selection-note').textContent=S.selection_note;
-const typeAttributes=k=>({geometry:k.Geometrie,age:k.Huelle,heat:k.Heizung,pv:k.PV_Klasse,flex:k.Flexibilitaet,weather:k.Wetter,mass:k.Masse,heat_family:k.Heizung.startsWith('WP_')?'Wärmepumpe':k.Heizung});
-const attributes=new Map(S.types.map(k=>[k.Archetype,typeAttributes(k)]));
-const filters=[['geometry','Geometrie'],['age','Baualter / Hülle'],['pv','PV-Ausstattung'],['flex','Flexibilität'],['heat_family','Heizungsfamilie / WP'],['heat','Heizung im Detail'],['weather','Wetter'],['mass','Gebäudemasse']];
-for(const [key,label] of filters){
- const l=document.createElement('label');l.htmlFor='filter-'+key;l.textContent=label;
- const select=document.createElement('select');select.id='filter-'+key;select.multiple=true;select.size=3;select.style.cssText='width:100%;font-size:12px';
- select.title='Mehrfachauswahl mit Strg/Cmd. Keine markierte Option = alle Werte. Innerhalb eines Merkmals gilt ODER, zwischen Merkmalen UND. Filter ändern die Auswahl erst über die Schaltflächen.';
- for(const v of [...new Set([...attributes.values()].map(a=>a[key]))].sort()){const o=document.createElement('option');o.value=v;o.textContent=v;select.append(o);}
- select.onchange=showTypeOptions;el('type-filters').append(l,select);
+const root=document.getElementById('sector-dashboard');
+const el=id=>root.querySelector('#sd-'+id);
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const fmt=x=>Number.isFinite(x)?new Intl.NumberFormat('de-DE',{maximumFractionDigits:2}).format(x):'–';
+const names={geometry:'Geometrie',quality:'Qualität / Baualter',energy:'Versorgung',pv:'PV-Ausstattung',flex:'Flexibilität',weather:'Wetter',mass:'Gebäudemasse',FSI:'Simulierte GFZ'};
+const dims=Object.keys(names).filter(k=>k!=='FSI'), idx=Object.fromEntries(S.columns.map((k,i)=>[k,i]));
+const at=(r,k)=>r[idx[k]];
+const total=rows=>rows.reduce((a,r)=>{const f=at(r,'NGF_m2'),pe=at(r,'PEI_balance');a.area+=f;a.pe+=f*pe;a.pass+=pe>=0?f:0;a.pv+=f*at(r,'PV_total');a.demand+=f*at(r,'Strombedarf_ohne_Mobilitaet');return a;},{area:0,pe:0,pass:0,pv:0,demand:0});
+const mean=a=>a.area?a.pe/a.area:NaN, share=a=>a.area?100*a.pass/a.area:NaN;
+const table=(headers,rows)=>`<table><thead><tr>${headers.map(h=>`<th scope="col">${esc(h)}</th>`).join('')}</tr></thead><tbody>${rows.map(row=>'<tr>'+row.map(x=>`<td>${esc(x)}</td>`).join('')+'</tr>').join('')}</tbody></table>`;
+const option=(v,t=v)=>`<option value="${esc(v)}">${esc(t)}</option>`;
+el('scenario').innerHTML=Object.keys(S.scenarios).map(k=>option(k,k.replaceAll('_',' '))).join('');el('scenario').value=S.start;
+
+el('filters').innerHTML=dims.map(k=>`<label>${names[k]}<select id="sd-${k}" aria-label="${names[k]}"></select></label>`).join('');
+let filtered=[];
+function refreshFilters(){const rows=S.scenarios[el('scenario').value];for(const k of dims){el(k).innerHTML=option('','Alle')+[...new Set(rows.map(r=>at(r,k)))].sort((a,b)=>String(a).localeCompare(String(b),'de',{numeric:true})).map(v=>option(v)).join('');}}
+function grouped(rows,k){const m=new Map();for(const r of rows){const v=at(r,k);if(!m.has(v))m.set(v,[]);m.get(v).push(r);}return [...m].map(([key,rs])=>({key,...total(rs)})).sort((a,b)=>b.area-a.area);}
+function groupTable(groups){return table(['Gruppe','NGF Mio. m²','NGF-Anteil %','Zielabstand kWh PE/(m² NGF·a)','Beitrag PJ PE/a','Ziel erfüllt %'],groups.map(g=>[g.key,fmt(g.area/1e6),fmt(total(filtered).area?100*g.area/total(filtered).area:NaN),fmt(mean(g)),fmt(g.pe*3.6e-9),fmt(share(g))]));}
+function bars(groups){if(!groups.length)return '<p>Keine Treffer für diese Filter.</p>';const w=920,h=groups.length*30+35,zero=555,span=300,max=Math.max(...groups.map(g=>Math.abs(g.pe*3.6e-9)),1e-9);return `<svg viewBox="0 0 ${w} ${h}" role="img" aria-label="Absolute Beiträge zum virtuellen Zielabstand"><line x1="${zero}" y1="0" x2="${zero}" y2="${h-20}" stroke="#738b97"/>${groups.map((g,i)=>{const v=g.pe*3.6e-9,l=Math.abs(v)/max*span,y=i*30+8;return `<text x="4" y="${y+15}" font-size="12">${esc(g.key)}</text><rect x="${v<0?zero-l:zero}" y="${y}" width="${l}" height="20" fill="${v<0?'#b75a46':'#198375'}"><title>${esc(g.key)}: ${fmt(v)} PJ PE/a</title></rect><text x="${v<0?zero+5:zero-5}" text-anchor="${v<0?'start':'end'}" y="${y+15}" font-size="12">${fmt(v)}</text>`;}).join('')}<text x="${zero}" y="${h-3}" text-anchor="middle" font-size="12">0 · virtuelles Ziel</text></svg>`;}
+function target(gfz){const c=S.density;return Math.min(c.cfd_fPE*(c.cfd_A/(gfz+c.cfd_dx)-c.cfd_EUI),c.cfd_cutoff);}
+function diagnosis(rows){const a=total(rows);a.project=rows.reduce((v,r)=>v+at(r,'NGF_m2')*at(r,'PEI_saldo_project'),0);a.target=rows.reduce((v,r)=>v+at(r,'NGF_m2')*at(r,'GFZ_Zielmittel'),0);a.pe=a.project-a.target;a.pass=rows.reduce((v,r)=>v+at(r,'NGF_m2')*at(r,'GFZ_Zielerfuellung'),0);return a;}
+function national(){
+ const name=el('scenario').value,a=total(S.scenarios[name]),p=Number(el('pv-share').value)/100,g=S.national_full.g,d=S.national_full.d;
+ const tdPV=g.pv*p,tdD=d.gebaeude,miv=d.verkehr*Number(el('miv').value)/100,buPV=a.pv*3.6e-9,buD=a.demand*3.6e-9;
+ el('pv-label').textContent=fmt(p*100)+' %';el('miv-label').textContent=fmt(Number(el('miv').value))+' %';
+ const others=d.industrie+d.landwirtschaft+d.verbrauch_sektor_energie+d.transportverluste+d.umwandlungseinsatz;
+ const central=g.hydro+g.wind+g.biomass+g.geothermal+g.hydrogen_electricity+g.fossil+g.pv*(1-p);
+ const credit=central-others-(d.verkehr-miv)-5;
+ el('national').innerHTML=table(['Strom [PJ/a]','Bottom-up','Top-down','Bottom-up − Top-down'],[['Gebäude-PV',fmt(buPV),fmt(tdPV),fmt(buPV-tdPV)],['Gebäudebedarf',fmt(buD),fmt(tdD),fmt(buD-tdD)],['Gebäudesaldo',fmt(buPV-buD),fmt(tdPV-tdD),fmt((buPV-buD)-(tdPV-tdD))],['MIV-Bedarf (Allokation)',fmt(miv),fmt(miv),'0'],['Zentrale Restdeckung (Allokation)',fmt(credit),fmt(credit),'0'],['Saldo Gebäude + MIV + Restdeckung',fmt(buPV+credit-buD-miv),fmt(tdPV+credit-tdD-miv),fmt(buPV-buD-tdPV+tdD)]]);
+ const palette={'Gebäude':'#437caa','MIV':'#9563b1','Übriger Verkehr':'#b39cc5','Industrie':'#64798d','Landwirtschaft':'#a9a653','Energiebranche':'#84846c','Netzverluste':'#bd8a63','Umwandlung':'#9d735d','Nettoexport':'#b1bbc2','Gebäude-PV':'#e4b936','Freiflächen-PV':'#b5952d','Wasserkraft':'#3994bb','Wind':'#67b7b2','Biomasse':'#7c9a4b','Geothermie':'#bb795b','H₂-Strom':'#9bc7cb','Fossil':'#5e6169','Zentrale Restdeckung':'#63a47c','Zentraler Fehlbetrag':'#b75a46'};
+ const cols=[{name:'Top-down Bedarf',items:[['Gebäude',tdD],['MIV',miv],['Übriger Verkehr',d.verkehr-miv],['Industrie',d.industrie],['Landwirtschaft',d.landwirtschaft],['Energiebranche',d.verbrauch_sektor_energie],['Netzverluste',d.transportverluste],['Umwandlung',d.umwandlungseinsatz],['Nettoexport',5]]},{name:'Top-down Deckung',items:[['Gebäude-PV',tdPV],['Wasserkraft',g.hydro],['Wind',g.wind],['Biomasse',g.biomass],['Geothermie',g.geothermal],['H₂-Strom',g.hydrogen_electricity],['Fossil',g.fossil],['Freiflächen-PV',g.pv*(1-p)]]},{name:'Bottom-up Bedarf',items:[['Gebäude',buD],['MIV',miv],['Zentraler Fehlbetrag',Math.max(-credit,0)]]},{name:'Bottom-up Deckung',items:[['Gebäude-PV',buPV],['Zentrale Restdeckung',Math.max(credit,0)]]}];
+ const max=Math.max(...cols.map(c=>c.items.reduce((v,x)=>v+x[1],0)))*1.12,y=v=>390-v/max*350;
+ let svg='<svg viewBox="0 0 960 640" role="img" aria-label="Nationale Strombilanz und Bottom-up-Gebäudesektor">';
+ for(let v=0;v<=max;v+=100)svg+=`<line x1="50" x2="890" y1="${y(v)}" y2="${y(v)}" stroke="#dbe4e7"/><text x="42" y="${y(v)+4}" text-anchor="end" font-size="12">${v}</text>`;
+ const xs=[100,300,570,770];cols.forEach((c,i)=>{let sum=0;for(const [label,v] of c.items){if(v<=0)continue;svg+=`<rect x="${xs[i]}" y="${y(sum+v)}" width="110" height="${v/max*350}" fill="${palette[label]}"><title>${label}: ${fmt(v)} PJ/a</title></rect>`;sum+=v;}svg+=`<text x="${xs[i]+55}" y="${y(sum)-10}" text-anchor="middle" font-size="14">${fmt(sum)}</text><text x="${xs[i]+55}" y="415" text-anchor="middle" font-size="13">${c.name}</text>`;});
+ for(const [v,x1,x2,color] of [[tdD,100,680,palette.Gebäude],[tdD+miv,100,680,palette.MIV],[tdPV,300,880,palette['Gebäude-PV']]])svg+=`<line x1="${x1}" x2="${x2}" y1="${y(v)}" y2="${y(v)}" stroke="${color}" stroke-dasharray="5 4"/>`;
+ svg+='<text x="50" y="20" font-size="13">PJ Strom/a · gleicher Maßstab</text>';
+ Object.entries(palette).forEach(([label,color],i)=>{const x=55+(i%4)*225,yy=455+Math.floor(i/4)*29;svg+=`<rect x="${x}" y="${yy}" width="12" height="12" fill="${color}"/><text x="${x+18}" y="${yy+11}" font-size="12">${label}</text>`;});el('national-chart').innerHTML=svg+'</svg>';
+ const natSupply=cols[1].items.reduce((s,x)=>s+x[1],0),natDemand=cols[0].items.reduce((s,x)=>s+x[1],0);
+ el('national-note').textContent=(name==='Bestand_2024'?'Bestand 2024 gegenüber Zukunftsreferenz 2040. ':'')+`Nationaler Modellrest: ${fmt(natSupply-natDemand)} PJ/a; Modellannahme 5 PJ Nettoexport, Quelle 7 PJ. Bottom-up-Gebäudesaldo: ${fmt(buPV-buD)} PJ/a. Abstand zum Gebäudeziel: ${fmt(buPV-buD-tdPV+tdD)} PJ/a. Die zentrale Restdeckung ist ein zugeordnetes Budget, keine zusätzliche nationale Erzeugung. Typenfilter und GFZ-Zielanalyse ändern diese Bilanz nicht.`;
 }
-function matchedTypes(){
- const query=el('type-search').value.toLowerCase();
- const rules=filters.map(([key])=>[key,new Set([...el('filter-'+key).selectedOptions].map(o=>o.value))]);
- return S.types.filter(k=>k.Archetype.toLowerCase().includes(query)&&rules.every(([key,values])=>!values.size||values.has(attributes.get(k.Archetype)[key])));
+function gfzView(){
+ const geo=el('gfz-geometry').value,bins=S.bins.filter(b=>b.Geometrie===geo).sort((a,b)=>a.GFZ-b.GFZ),rows=filtered.filter(r=>at(r,'geometry')===geo&&['PV70','PV90'].includes(at(r,'pv')));
+ if(!bins.length||!rows.length){el('gfz-curve').innerHTML='<p>Keine belegten PV70/PV90-Typen für diese Auswahl.</p>';el('gfz-area').innerHTML='';el('gfz').innerHTML='';return;}
+ const ps=['PV70','PV90'].map(pv=>{const rr=rows.filter(r=>at(r,'pv')===pv);return {pv,rows:rr,...diagnosis(rr)};}).filter(a=>a.area>0),colors={PV70:'#198375',PV90:'#815cad'};
+ const xmax=Math.max(...bins.map(b=>b.GFZ)),ymin=Math.min(...bins.map(b=>target(b.GFZ)),...ps.map(a=>a.project/a.area),0)-10,ymax=Math.max(...bins.map(b=>target(b.GFZ)),...ps.map(a=>a.project/a.area),0)+10;
+ const x=v=>70+v/xmax*780,y=v=>290-(v-ymin)/(ymax-ymin)*240;
+ let svg='<svg viewBox="0 0 940 350" role="img" aria-label="GFZ-Zielkurve und konstante Projektsalden">';
+ for(let v=Math.ceil(ymin/25)*25;v<=ymax;v+=25)svg+=`<line x1="70" x2="850" y1="${y(v)}" y2="${y(v)}" stroke="#dbe4e7"/><text x="62" y="${y(v)+4}" text-anchor="end" font-size="11">${fmt(v)}</text>`;
+ svg+=`<polyline points="${bins.map(b=>`${x(b.GFZ)},${y(target(b.GFZ))}`).join(' ')}" fill="none" stroke="#243746" stroke-width="3"/>`;
+ for(const a of ps){const v=a.project/a.area;svg+=`<line x1="70" x2="850" y1="${y(v)}" y2="${y(v)}" stroke="${colors[a.pv]}" stroke-width="2"/><text x="855" y="${y(v)+4}" font-size="12" fill="${colors[a.pv]}">${a.pv}</text>`;}
+ for(let v=0;v<=xmax;v+=Math.max(1,Math.ceil(xmax/10)))svg+=`<text x="${x(v)}" y="310" text-anchor="middle" font-size="11">${v}</text>`;
+ svg+='<text x="70" y="20" font-size="13">kWh PE/(m² NGF·a) · dunkel: Dichteziel; farbig: mittlerer Projektsaldo</text><text x="460" y="337" text-anchor="middle" font-size="12">GFZ · gesamte Verteilung</text></svg>';el('gfz-curve').innerHTML=svg;
+ const maxarea=Math.max(...bins.map(b=>b.s*ps.reduce((s,a)=>s+a.area,0))),bw=Math.max(1,780/bins.length*.8);
+ let area='<svg viewBox="0 0 940 180" role="img" aria-label="NGF-Verteilung auf GFZ-Kohorten"><text x="70" y="20" font-size="13">Zugeordnete NGF · höchste Säule '+fmt(maxarea/1e6)+' Mio. m²</text>';
+ for(const b of bins){let base=145;for(const a of ps){const h=b.s*a.area/maxarea*100;area+=`<rect x="${x(b.GFZ)-bw/2}" y="${base-h}" width="${bw}" height="${h}" fill="${colors[a.pv]}"><title>GFZ ${fmt(b.GFZ)} · ${a.pv}: ${fmt(b.s*a.area/1e6)} Mio. m² NGF</title></rect>`;base-=h;}}el('gfz-area').innerHTML=area+'</svg>';
+ const tr=[];for(const b of bins)for(const a of ps){const pass=a.rows.reduce((s,r)=>s+(at(r,'PEI_saldo_project')>=target(b.GFZ)?at(r,'NGF_m2'):0),0)/a.area;tr.push([fmt(b.GFZ),a.pv,fmt(b.s*a.area/1e6),fmt(a.project/a.area),fmt(target(b.GFZ)),fmt(a.project/a.area-target(b.GFZ)),fmt(pass*100)]);}
+ el('gfz').innerHTML=table(['GFZ','PV','NGF Mio. m²','Projektsaldo','Zielsaldo','Abstand','NGF erfüllt %'],tr);
 }
-function showTypeOptions(){
- const root=el('type-options'),open=new Set([...root.querySelectorAll('details[open]')].map(d=>d.dataset.group));root.replaceChildren();
- const matches=matchedTypes();
- el('type-filter-count').textContent=`${matches.length} Treffer; ${matches.filter(k=>selectedTypes.has(k.Archetype)).length} davon ausgewählt. Filter allein ändern keine PEQ-Zuordnung.`;
- const makeGroup=(name,items,key,byAge)=>{
-  const detail=document.createElement('details');detail.dataset.group=key;const summary=document.createElement('summary');
-  summary.textContent=`${name} (${items.filter(k=>selectedTypes.has(k.Archetype)).length}/${items.length})`;detail.append(summary);
-  const content=document.createElement('div');detail.append(content);
-  const populate=()=>{
-   if(content.childElementCount)return;
-   for(const [text,choose] of [['Gruppe auswählen',true],['Gruppe abwählen',false]]){const button=document.createElement('button');button.type='button';button.textContent=text;button.title='Wirkt auf die '+items.length+' angezeigten Treffer dieser Gruppe; andere Typen bleiben unverändert.';button.onclick=()=>{for(const k of items)choose?selectedTypes.add(k.Archetype):selectedTypes.delete(k.Archetype);showTypeOptions();render();};content.append(button);}
-   if(byAge){for(const age of [...new Set(items.map(k=>attributes.get(k.Archetype).age))].sort())content.append(makeGroup(age,items.filter(k=>attributes.get(k.Archetype).age===age),key+'/'+age,false));}
-   else for(const k of items){const label=document.createElement('label');label.style.cssText='display:flex;font-size:11px;overflow-wrap:anywhere';const input=document.createElement('input');input.type='checkbox';input.checked=selectedTypes.has(k.Archetype);input.style.cssText='width:auto;flex:none;margin-right:6px';input.setAttribute('aria-label',k.Archetype);input.title=`${fmt(k.BGF/1e6)} Mio. m² BGF; Auswahl setzt den Saldo auf den GFZ-Zielwert.`;input.onchange=()=>{input.checked?selectedTypes.add(k.Archetype):selectedTypes.delete(k.Archetype);showTypeOptions();render();};label.append(input,document.createTextNode(k.Archetype));content.append(label);}
-  };
-  detail.ontoggle=()=>{if(detail.open)populate();};if(open.has(key)){detail.open=true;populate();}return detail;
- };
- for(const geo of [...new Set(matches.map(k=>k.Geometrie))].sort())root.append(makeGroup(geo,matches.filter(k=>k.Geometrie===geo),geo,true));
+function render(){
+ const rows=S.scenarios[el('scenario').value],q=el('search').value.trim().toLowerCase();filtered=rows.filter(r=>dims.every(k=>!el(k).value||String(at(r,k))===el(k).value)&&(!q||at(r,'Archetype').toLowerCase().includes(q)));
+ const a=total(filtered),all=total(rows);el('scope').textContent=`${el('scenario').value.replaceAll('_',' ')} · ${filtered.length.toLocaleString('de-DE')} von ${rows.length.toLocaleString('de-DE')} belegten Typen · ${fmt(100*a.area/all.area)} % der Szenario-NGF`;
+ el('cards').innerHTML=[['Betrachtete NGF',fmt(a.area/1e6),'Mio. m²'],['PV-Erzeugung',fmt(a.pv*3.6e-9),'PJ Strom/a'],['Gebäudestrombedarf',fmt(a.demand*3.6e-9),'PJ Strom/a'],['Stromsaldo',fmt((a.pv-a.demand)*3.6e-9),'PJ Strom/a']].map(([label,v,u])=>`<div class="card">${label}<strong>${v}</strong><span class="muted">${u}</span></div>`).join('');
+ const high=filtered.filter(r=>['PV70','PV90'].includes(at(r,'pv'))),m=new Map();for(const r of high){const k=at(r,'geometry')+' / '+at(r,'pv');if(!m.has(k))m.set(k,[]);m.get(k).push(r);}const groups=[...m].map(([key,rr])=>({key,...diagnosis(rr)})).sort((a,b)=>a.key.localeCompare(b.key,'de',{numeric:true}));
+ el('bars').innerHTML=bars(groups);el('groups').innerHTML=table(['Geometrie / PV','NGF Mio. m²','Projekt kWh PE/(m² NGF·a)','GFZ-Zielmittel','Abstand','NGF erfüllt %'],groups.map(a=>[a.key,fmt(a.area/1e6),fmt(a.project/a.area),fmt(a.target/a.area),fmt(mean(a)),fmt(share(a))]));
+ const previous=el('gfz-geometry').value,geos=[...new Set(high.map(r=>at(r,'geometry')))];el('gfz-geometry').innerHTML=geos.map(g=>option(g)).join('');el('gfz-geometry').value=geos.includes(previous)?previous:(geos[0]||'');gfzView();
+ el('types').innerHTML=table(['Typ','NGF m²','Simulations-GFZ','Projektsaldo','GFZ-Zielmittel','GFZ-Zielabstand'],[...filtered].sort((a,b)=>at(b,'NGF_m2')-at(a,'NGF_m2')).slice(0,100).map(r=>[at(r,'Archetype'),fmt(at(r,'NGF_m2')),fmt(at(r,'FSI')),fmt(at(r,'PEI_saldo_project')),fmt(at(r,'GFZ_Zielmittel')),fmt(at(r,'GFZ_Zielabstand'))]));national();
 }
-el('type-search').oninput=showTypeOptions;
-for(const [id,choose] of [['types-matched-add',true],['types-matched-remove',false]])el(id).onclick=()=>{for(const k of matchedTypes())choose?selectedTypes.add(k.Archetype):selectedTypes.delete(k.Archetype);showTypeOptions();render();};
-el('types-clear-filters').onclick=()=>{el('type-search').value='';for(const [key] of filters)for(const o of el('filter-'+key).options)o.selected=false;showTypeOptions();};
-for(const [id,filter] of [['types-default',k=>k.default_selected],['types-all',()=>true],['types-none',()=>false]]){
- el(id).onclick=()=>{selectedTypes=new Set(S.types.filter(filter).map(k=>k.Archetype));showTypeOptions();render();};
-}
-showTypeOptions();
-function renderDensity(r,virtual){
- const areas={},selected={};let selectedArea=0;
- for(const k of S.types)if(selectedTypes.has(k.Archetype)){areas[k.Geometrie]=(areas[k.Geometrie]||0)+k.BGF;selectedArea+=k.BGF;selected[k.Geometrie]??={P:0,D:0};selected[k.Geometrie].P+=k.P;selected[k.Geometrie].D+=k.D;}
- const totalArea=S.geometry.reduce((s,k)=>s+k.BGF,0);
- el('type-summary').textContent=`${selectedTypes.size} von ${S.types.length} flächengewichteten Typen · ${fmt(selectedArea/1e6)} Mio. m² BGF · ${fmt(selectedArea/totalArea*100)} % der Szenariofläche. Suchfilter verändert die Auswahl nicht.`;
- const xs=[...new Set(S.use_bins.map(b=>b.GFZ))].sort((a,b)=>a-b), index=new Map(xs.map((x,i)=>[x,i]));
- const uses=[...Object.keys(S.use_colors),'PEQ (ausgewählt)'], series=Object.fromEntries(uses.map(u=>[u,{P:xs.map(()=>0),D:xs.map(()=>0),C:xs.map(()=>0)}]));
- const geometry=Object.fromEntries(S.geometry.map(k=>[k.Geometrie,k]));
- for(const b of S.use_bins){
-  const k=geometry[b.Geometrie];if(!k)continue;
-  const a=series[b.GWR_Nutzung],j=index.get(b.GFZ);
-  const sel=selected[b.Geometrie]||{P:0,D:0},peq=series['PEQ (ausgewählt)'];
-  a.P[j]+=(k.P-sel.P)*p.ngf_bgf*p.pv_scale*b.s;
-  a.D[j]+=(k.D-sel.D)*p.ngf_bgf*(1-p.saving)*b.s;
-  peq.P[j]+=sel.P*p.ngf_bgf*p.pv_scale*b.s;
-  peq.D[j]+=sel.D*p.ngf_bgf*(1-p.saving)*b.s;
-  const target=(areas[b.Geometrie]||0)*b.s*Math.min(p.density_f_res/(b.GFZ+p.density_dx)-p.density_f_ed,p.density_cutoff)*3.6e-9;
-  peq.C[j]+=target-(sel.P*p.pv_scale-sel.D*(1-p.saving))*p.ngf_bgf*b.s;
- }
- const sum=arr=>arr.reduce((a,b)=>a+b,0);
- const P=xs.map((_,i)=>sum(uses.map(u=>series[u].P[i]))),D=xs.map((_,i)=>sum(uses.map(u=>series[u].D[i]))),C=xs.map((_,i)=>sum(uses.map(u=>series[u].C[i])));
- const accumulate=arr=>{let total=0;return arr.map(v=>total+=v);};
- const physical=accumulate(P.map((v,i)=>v-D[i])),corrected=accumulate(P.map((v,i)=>v-D[i]+C[i]));
- const base=physical.at(-1),evaluated=corrected.at(-1),difference=base-r.balance;
- if(!densityReferenceChecked){
-  for(const [key,value] of Object.entries({demand:sum(D),pv:sum(P),virtual:sum(C),balance:base,corrected:evaluated}))
-   if(Math.abs(value-S.gfz_reference[key])>1e-7)throw Error('GFZ-Referenzabweichung Python/Browser: '+key);
-  densityReferenceChecked=true;
- }
- for(const [a,b] of [[sum(P),r.pv],[sum(D),r.demand],[sum(C),virtual],[base,r.balance]])if(Math.abs(a-b)>1e-7)throw Error('GFZ-Aggregation verletzt Flächen-/Energieerhaltung');
- last.gfz_comparison={direct_bgf_balance:r.balance,gfz_balance:base,virtual_selected:virtual,corrected_balance:evaluated,aggregation_difference:difference,selected_bgf_m2:selectedArea};
- const tile=(title,value,unit,tip)=>`<div class="card" tabindex="0" title="${esc(tip)}">${esc(title)} ⓘ<strong>${fmt(value)}</strong><small>${unit}</small></div>`;
- el('gfz-totals').innerHTML=tile('Top-Down',r.target,'PJ Strom/a',`Nationale Gebäude-PV ${fmt(S.g.pv*(1-p.free_pv))} − Gebäudestrombedarf ${fmt(S.d.gebaeude)}. Ohne MIV und ohne Mobilitätsgutschrift.`)+
- tile('Typologisch',base,'PJ Strom/a','PV − Strombedarf aller Typen. Die GFZ-Aggregation reproduziert die direkte BGF-Bilanz. Ohne Mobilität.')+
- tile('Mit Dichteausgleich',evaluated,'PJ-Äquivalent/a',`Typologischer Saldo ${fmt(base)} + PEQ-Anpassung ${fmt(virtual)} = ${fmt(evaluated)}. Ausgewählte Typen erreichen ihren GFZ-Zielsaldo.`)+
- `<div class="row-title small">Abstand zum Top-Down-Ziel: typologisch ${fmt(base-r.target)}, mit Dichteausgleich ${fmt(evaluated-r.target)} PJ/a. PEQ-Anpassung: ${fmt(virtual)} PJ/a. Kontrolle GFZ − direkte BGF-Bilanz: ${difference.toExponential(1)} PJ/a.</div>`;
- last.gfz_comparison.top_down_building_balance=r.target;
- last.gfz_comparison.gap_to_top_down=evaluated-r.target;
- if(!window.Plotly)return;
- renderNationalComparison(r);
- renderTargetDistribution();
- const green='#238b45';
- const classRows=S.geometry.map(k=>{
-  const chosen=selected[k.Geometrie]||{P:0,D:0},area=areas[k.Geometrie]||0,rest=k.BGF-area;
-  const selectedBalance=(chosen.P*p.pv_scale-chosen.D*(1-p.saving))*p.ngf_bgf;
-  const allBalance=(k.P*p.pv_scale-k.D*(1-p.saving))*p.ngf_bgf;
-  const targetMean=S.bins.filter(b=>b.Geometrie===k.Geometrie).reduce((s,b)=>s+b.s*Math.min(p.density_f_res/(b.GFZ+p.density_dx)-p.density_f_ed,p.density_cutoff),0);
-  return {geometry:k.Geometrie,non_peq_bgf_m2:rest,peq_bgf_m2:area,
-   non_peq:rest>1e-6?(allBalance-selectedBalance)/(rest*3.6e-9):null,
-   peq_typological:area>1e-6?selectedBalance/(area*3.6e-9):null,
-   peq_target:area>1e-6?targetMean:null};
- });
- last.specific_group_balances={unit:'kWh/(m² BGF·a)',denominator:'BGF der jeweiligen Gruppe innerhalb der Geometrieklasse',rows:classRows};
- if(!groupReferenceChecked){
-  for(const row of classRows){const ref=S.group_balance_reference.find(k=>k.geometry===row.geometry);
-   for(const key of ['non_peq','peq_typological','peq_target'])if(row[key]===null?ref[key]!==null:ref[key]===null||Math.abs(row[key]-ref[key])>1e-7)throw Error('Gruppensaldo weicht von Notebook ab: '+row.geometry+' / '+key);
-  }groupReferenceChecked=true;
- }
- const reconstruct=classRows.reduce((s,k)=>s+((k.non_peq||0)*k.non_peq_bgf_m2+(k.peq_typological||0)*k.peq_bgf_m2)*3.6e-9,0);
- const reconstructTarget=classRows.reduce((s,k)=>s+((k.non_peq||0)*k.non_peq_bgf_m2+(k.peq_target||0)*k.peq_bgf_m2)*3.6e-9,0);
- if(Math.abs(reconstruct-base)>1e-7||Math.abs(reconstructTarget-evaluated)>1e-7)throw Error('Spezifische Gruppenbilanz rekonstruiert Sektorsaldo nicht');
- const classTraces=[];
- for(const [key,name,color,pattern,areaKey] of [
-  ['non_peq','1 · Nicht-PEQ: typologisch','#487fa8','', 'non_peq_bgf_m2'],
-  ['peq_typological','2 · PEQ: typologisch',green,'','peq_bgf_m2'],
-  ['peq_target','3 · PEQ: Dichteziel',green,'/','peq_bgf_m2']]){
-  classTraces.push({type:'bar',orientation:'h',y:classRows.map(k=>k.geometry),x:classRows.map(k=>k[key]),name,
-   marker:{color,pattern:{shape:pattern}},customdata:classRows.map(k=>k[areaKey]/1e6),
-   hovertemplate:'%{y}<br>%{fullData.name}<br>Saldo: %{x:.2f} kWh/(m² BGF·a)<br>Bezugsfläche dieser Gruppe: %{customdata:.3f} Mio. m² BGF<extra></extra>'});
- }
- Plotly.react(el('dash-geometry'),classTraces,{barmode:'group',height:720,autosize:true,margin:{l:80,r:15,t:15,b:100},
-  xaxis:{title:{text:'Saldo [kWh/(m² BGF·a)]'},zeroline:true},yaxis:{autorange:'reversed'},
-  legend:{orientation:'h',y:-.12,font:{size:10},traceorder:'normal'},font:{size:11},separators:',.'},
-  {responsive:true,displaylogo:false});
- el('class-empty-note').textContent=classRows.filter(k=>k.non_peq===null||k.peq_target===null).map(k=>`${k.geometry}: ${k.non_peq===null?'keine Nicht-PEQ-Fläche':'keine ausgewählte PEQ-Fläche'}`).join(' · ')||'Alle dargestellten Gruppen besitzen positive Bezugsflächen.';
- last.schema_version='peq-dashboard-2';
- last.density_curve={definition:'target(gfz) = min(f_RES / (gfz + dx) - f_ED, cutoff)',
-  unit:'kWh EE/(m² BGF·a)',gfz_definition:'BGF / Grundstücksfläche',parameters:{f_RES:p.density_f_res,f_ED:p.density_f_ed,dx:p.density_dx,cutoff:p.density_cutoff},
-  application:'Ausgewählte Typen erhalten flächengewichtet den Zielsaldo. Anpassung = Zielsaldo minus typologischer Saldo. Nicht ausgewählte Typen bleiben unverändert.',
-  distribution:S.use_bins,distribution_weight:'s = BGF-Anteil von Nutzung und GFZ innerhalb der Geometrieklasse; Summe je Geometrie = 1',display_gfz_range:[0,5],calculation:'vollständige GFZ-Verteilung'};
- last.type_definitions=S.types.map(k=>({id:k.Archetype,attributes:attributes.get(k.Archetype),bgf_m2:k.BGF,
-  electricity_demand_kwh_m2_ngf_a:k.D/(k.BGF*3.6e-9),pv_generation_kwh_m2_ngf_a:k.P/(k.BGF*3.6e-9),
-  peq_selected:selectedTypes.has(k.Archetype),source_file:S.xlsx,source_area_column:S.area_column}));
- last.type_selection={selected_ids:[...selectedTypes],default_note:S.selection_note,search:el('type-search').value,
-  filters:Object.fromEntries(filters.map(([key])=>[key,[...el('filter-'+key).selectedOptions].map(o=>o.value)])),
-  semantics:'ODER innerhalb eines Attributs, UND zwischen Attributen; Filter sind Ansicht, selected_ids ist die maßgebliche Auswahl.'};
- last.national_inputs={generation:S.g,demand:S.d,scenario:S.scenario};
- const pos=P.map((v,i)=>Math.max(v,C[i])),neg=D.map((v,i)=>Math.min(-v,C[i]));
- const yrange=[Math.min(0,...neg)*1.08,Math.max(0,...pos)*1.08];
- const ymin=Math.min(0,...physical,...corrected),ymax=Math.max(0,...physical,...corrected),pad=Math.max((ymax-ymin)*.08,1);
- for(const [id,includeCorrection,line] of [['gfz-physical',false,physical],['gfz-corrected',true,corrected]]){
-  const traces=[];
-  const shortNames={'Groß- und Einzelhandelsgebäude':'Handel','Büronutzung':'Büro','Hotels o.Ä.':'Hotels','Industrie und Lagerung':'Industrie / Lager','Ein- und Zweifamilienhäuser':'EFH / ZFH','Mehrfamilienhaus':'Mehrfamilienhaus','Gemeinschaftsgebäude':'Gemeinschaft','Kultur, Freizeit, Bildung und Gesundheit':'Bildung / Kultur','Verkehrs- und Nachrichtenwesen':'Verkehr','PEQ (ausgewählt)':'PEQ (ausgewählt)'};
-  for(const u of uses){
-   for(const [field,label,sign] of [['P','PV-Erzeugung',1],['D','Strombedarf',-1],...[]]){
-    traces.push({type:'bar',x:xs,y:series[u][field].map(v=>sign*v),width:.095,
-     name:shortNames[u],legendgroup:u,showlegend:field==='P',marker:{color:(u==='PEQ (ausgewählt)'?'#238b45':S.use_colors[u]),...(field==='C'?{pattern:{shape:'/',solidity:.35}}:{})},
-     customdata:series[u][field],hovertemplate:`${esc(u)}<br>${label}<br>GFZ-Klasse: %{x:.2f} ± 0,05<br>%{customdata:.4f} ${field==='C'?'PJ-Äquivalent/a':'PJ Strom/a'}<extra></extra>`});
-   }
-  }
-  if(includeCorrection)traces.push({type:'bar',x:xs,y:C,base:0,width:.095,opacity:.75,name:'PEQ-Anpassung',marker:{color:'#238b45',pattern:{shape:'/',solidity:.35}},hovertemplate:'GFZ %{x:.2f}<br>Anpassung: %{y:.4f} PJ/a<br>Positiv: mehr Saldo gefordert<br>Negativ: geringere Anforderung<extra></extra>'});
-  traces.push({type:'scatter',mode:'lines',x:xs,y:line,yaxis:'y2',name:'Saldo (kumuliert)',line:{color:'#243746',width:2.5},hovertemplate:`Bis GFZ %{x:.2f}<br>Kumulierter Saldo: %{y:.3f} ${includeCorrection?'PJ-Äquivalent/a':'PJ Strom/a'}<extra></extra>`});
-  Plotly.react(el(id),traces,{barmode:'relative',template:'plotly_white',autosize:true,height:370,
-   margin:{l:48,r:48,t:45,b:48,autoexpand:false},font:{size:11},separators:',.',
-   xaxis:{title:{text:'GFZ (BGF / Grundstücksfläche)'},range:[0,5]},
-   updatemenus:[{type:'buttons',direction:'right',x:0,xanchor:'left',y:1.13,buttons:[
-    {label:'GFZ 0–5',method:'relayout',args:[{'xaxis.range':[0,5]}]},
-    {label:'Gesamte GFZ',method:'relayout',args:[{'xaxis.range':[0,Math.max(...xs)+.05]}]}]}],
-   yaxis:{title:{text:includeCorrection?'Klassenbeitrag [PJ-Äquivalent/a]':'Klassenbeitrag [PJ Strom/a]'},range:yrange,zeroline:true},
-   yaxis2:{title:{text:'Kumulierter Saldo [PJ'+(includeCorrection?'-Äquivalent':' Strom')+'/a]'},overlaying:'y',side:'right',range:[ymin-pad,ymax+pad],showgrid:false},
-   legend:{tracegroupgap:0,x:.99,y:.99,xanchor:'right',yanchor:'top',bgcolor:'rgba(255,255,255,.85)',font:{size:9},itemclick:false,itemdoubleclick:false},hovermode:'closest'},
-   {responsive:true,displaylogo:false,toImageButtonOptions:{format:'svg'}});
- }
-}
-function renderNationalComparison(r){
- const g=S.g,d=S.d,col=S.energy_colors,traces=[],shapes=[],annotations=[];
- const miv=d.verkehr*p.miv,pv=g.pv*(1-p.free_pv);
- const bar=(name,key,x,value)=>{if(value!==0)traces.push({type:'bar',x:[x],y:[value],width:.65,name,marker:{color:col[key]||'#72858a'},hovertemplate:'%{fullData.name}: %{y:.2f} PJ Strom/a<extra></extra>'});};
- bar('Gebäudebedarf','gebaeude',0,d.gebaeude);
- bar('MIV-Bedarf','miv',0,miv);
- bar('ÖPNV','oepnv',0,d.verkehr*(1-p.miv-p.other_transport));
- bar('Übriger Verkehr','verkehr',0,d.verkehr*p.other_transport);
- for(const [key,name] of [['industrie','Industrie'],['landwirtschaft','Landwirtschaft'],['verbrauch_sektor_energie','Energiebranche'],['umwandlungseinsatz','Umwandlung'],['transportverluste','Netzverluste']])bar(name,key,0,d[key]);
- bar('Nettoexport','net_imports',0,Math.max(-S.model_net_imports,0));
- bar('Gebäude-PV','pv',1,pv);
- for(const [key,name] of [['hydro','Wasserkraft'],['wind','Wind'],['biomass','Biomasse'],['geothermal','Geothermie'],['hydrogen_electricity','H₂-Strom'],['fossil','Fossil']])bar(name,key,1,g[key]);
- bar('Freiflächen-PV','free_pv',1,g.pv*p.free_pv);
- bar('Nettoimport','net_imports',1,Math.max(S.model_net_imports,0));
- for(const [name,key,x,v] of [['Gebäudebedarf','gebaeude',3,r.demand],['MIV-Bedarf','miv',3,miv],['Gebäude-PV','pv',4,r.pv],['Zentrale Restdeckung','mobility_credit',4,Math.max(r.credit,0)],['Zentraler Fehlbetrag','target',3,Math.max(-r.credit,0)]]){
-  if(v!==0){bar(name,key,x,v);traces.at(-1).showlegend=['Zentrale Restdeckung','Zentraler Fehlbetrag'].includes(name);}
- }
- const total=x=>traces.filter(t=>t.x[0]===x).reduce((s,t)=>s+t.y[0],0);
- const nationalDemand=total(0),nationalSupply=total(1);
- if(Math.abs(nationalSupply-nationalDemand-S.model_residual)>1e-7)throw Error('Nationale Säulenbilanz verletzt Modellrest');
- if(Math.abs(total(4)-total(3)-r.extended)>1e-7)throw Error('Bottom-Up-Säulenbilanz verletzt');
- const line=(x0,x1,y,color,dash='dot')=>shapes.push({type:'line',x0,x1,y0:y,y1:y,line:{color,width:1,dash}});
- line(-.35,3.4,d.gebaeude,col.gebaeude);line(.65,4.4,pv,col.pv);
- line(-.35,3.4,d.gebaeude+miv,col.miv);line(.65,4.4,pv+r.credit,col.mobility_credit);
- const bracket=(x,a,b,text,color)=>{shapes.push({type:'line',x0:x,x1:x,y0:a,y1:b,line:{color,width:2}});line(x-.08,x+.08,a,color,'solid');line(x-.08,x+.08,b,color,'solid');annotations.push({x,y:(a+b)/2,text,showarrow:true,ax:22,ay:0,font:{size:9,color},bgcolor:'rgba(255,255,255,.9)'});};
- bracket(.45,d.gebaeude+miv,pv+r.credit,`TD: ${fmt(r.target_extended)}`,col.target);
- bracket(3.5,r.demand+miv,r.pv+r.credit,`BU: ${fmt(r.extended)}`,col.saldo);
- for(const [x,v] of [[0,nationalDemand],[1,nationalSupply],[3,total(3)],[4,total(4)]])annotations.push({x,y:v,text:fmt(v),showarrow:false,yshift:12,font:{size:11}});
- Plotly.react(el('dash-balance'),traces,{barmode:'stack',height:650,autosize:true,margin:{l:50,r:20,t:35,b:220},font:{size:11},separators:',.',
-  xaxis:{tickvals:[0,1,3,4],ticktext:['Top-Down<br>Bedarf','Top-Down<br>Deckung','Bottom-Up<br>Bedarf','Bottom-Up<br>Deckung'],range:[-.6,4.6]},
-  yaxis:{title:{text:'Jährliche Strommenge [PJ/a]'},rangemode:'tozero'},legend:{orientation:'h',y:-.22,font:{size:10}},shapes,annotations},
-  {responsive:true,displaylogo:false,toImageButtonOptions:{format:'svg'}});
- el('national-comparison-note').textContent=`National: Deckung ${fmt(nationalSupply)} − Bedarf einschließlich Export ${fmt(nationalDemand)} = ${fmt(nationalSupply-nationalDemand)} PJ/a (Modellbilanz, 5 PJ Export; Quellrest ${fmt(S.residual)} PJ/a). Vergleich Gebäude + MIV: Top-Down ${fmt(r.target_extended)}, Bottom-Up ${fmt(r.extended)} PJ/a. Unterschied BU − TD: Bedarf ${fmt(r.demand-d.gebaeude)}, Deckung ${fmt(r.pv-pv)}, Saldo ${fmt(r.gap)} PJ/a. Klammern beziehen sich auf Gebäude + MIV, nicht auf die nationale Gesamtsumme.`;
-}
-function renderTargetDistribution(){
- const rows=S.geometry.map(k=>{
-  const bins=S.bins.filter(b=>b.Geometrie===k.Geometrie).map(b=>({v:Math.min(p.density_f_res/(b.GFZ+p.density_dx)-p.density_f_ed,p.density_cutoff),w:b.s})).sort((a,b)=>a.v-b.v);
-  const weight=bins.reduce((s,b)=>s+b.w,0);
-  const quantile=q=>{let cum=0;for(const b of bins){cum+=b.w/weight;if(cum+1e-14>=q)return b.v;}return bins.at(-1).v;};
-  return {name:k.Geometrie,lo:quantile(.1),q1:quantile(.25),median:quantile(.5),q3:quantile(.75),hi:quantile(.9),mean:bins.reduce((s,b)=>s+b.v*b.w,0)/weight};
- });
- last.target_distribution=rows;
- const traces=[];
- for(const r of rows){
-  const hover=`${r.name}<br>BGF-gewichtet: P10 ${fmt(r.lo)}, P25 ${fmt(r.q1)}<br>Median ${fmt(r.median)}, P75 ${fmt(r.q3)}, P90 ${fmt(r.hi)}<br>Mittelwert ${fmt(r.mean)} kWh/(m² BGF·a)<extra></extra>`;
-  traces.push({type:'scatter',mode:'lines',x:[r.lo,r.hi],y:[r.name,r.name],line:{color:'#8dc89e',width:5},showlegend:false,hovertemplate:hover});
-  traces.push({type:'scatter',mode:'lines',x:[r.q1,r.q3],y:[r.name,r.name],line:{color:'#238b45',width:12},showlegend:false,hovertemplate:hover});
- }
- for(const [key,name,symbol,color] of [['median','Median','diamond','#145a2b'],['mean','Mittelwert','circle','#243746']])traces.push({type:'scatter',mode:'markers',x:rows.map(r=>r[key]),y:rows.map(r=>r.name),name,marker:{symbol,color,size:9},hovertemplate:'%{y}<br>'+name+': %{x:.2f} kWh/(m² BGF·a)<extra></extra>'});
- Plotly.react(el('dash-density'),traces,{height:420,autosize:true,margin:{l:80,r:20,t:15,b:85},xaxis:{title:{text:'PEQ-Zielsaldo [kWh/(m² BGF·a)]'},zeroline:true},yaxis:{autorange:'reversed'},legend:{orientation:'h',y:-.2},font:{size:11},separators:',.'},{responsive:true,displaylogo:false});
-}
-// Gemeinsame lokale Plotly-Bibliothek, kein externer CDN-Aufruf.
-if(!window.Plotly){const script=document.createElement('script');script.src='../../Abbildungen/methodik/plotly.min.js';script.onload=()=>render();script.onerror=()=>{el('gfz-physical').textContent='Plotly konnte nicht geladen werden. Die Bilanzwerte darüber bleiben verfügbar.';};document.head.append(script);}
+// Cross-check the browser aggregation against the notebook, before displaying results.
+for(const ref of S.reference){const a=total(S.scenarios[ref.Szenario]);for(const [actual,expected] of [[a.area,ref.NGF_m2],[a.pe,ref.PE_kWh],[a.pass,ref.Ziel_m2],[a.pv,ref.PV_kWh],[a.demand,ref.Bedarf_kWh]])if(Math.abs(actual-expected)>Math.max(.01,Math.abs(expected)*1e-10))throw Error('Aggregationsabweichung: '+ref.Szenario);}
+el('comparison').innerHTML=table(['Szenario','NGF Mio. m²','PV PJ/a','Bedarf PJ/a','Stromsaldo PJ/a'],Object.entries(S.scenarios).map(([name,rows])=>{const a=total(rows);return[name.replaceAll('_',' '),fmt(a.area/1e6),fmt(a.pv*3.6e-9),fmt(a.demand*3.6e-9),fmt((a.pv-a.demand)*3.6e-9)];}));
+el('sources').textContent=S.sources.map(s=>`${s.Quelle}, ${s.Fundstelle}: ${s.Wert_PJ} PJ/a (${s.Datei})`).join(' · ');
+el('audit').textContent=JSON.stringify({data_sha256:S.data_sha256,...S.provenance},null,2);
+el('scenario').onchange=()=>{refreshFilters();el('search').value='';render();};el('gfz-geometry').onchange=gfzView;el('miv').oninput=national;el('search').oninput=render;for(const k of dims)el(k).onchange=render;el('pv-share').oninput=national;el('reset').onclick=()=>{refreshFilters();el('search').value='';render();};
+el('export').onclick=()=>{const csv='\ufeff'+[S.columns,...filtered].map(row=>row.map(v=>'"'+String(v).replaceAll('"','""')+'"').join(';')).join('\r\n');const url=URL.createObjectURL(new Blob([csv],{type:'text/csv;charset=utf-8'})),a=document.createElement('a');a.href=url;a.download=el('scenario').value+'_Typenfilter.csv';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);};
+refreshFilters();render();
